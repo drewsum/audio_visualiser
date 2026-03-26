@@ -18,7 +18,7 @@ for frequency in fc:
 plt.title('Bode Magnitude Plot')
 plt.xlabel('Frequency [Hz]')
 plt.ylabel('Magnitude [dB]')
-plt.xlim(1, 20000)
+plt.xlim(1, 50000)
 plt.ylim(-50, 10)
 plt.grid()
 plt.show()
