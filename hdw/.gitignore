@@ -1,0 +1,39 @@
+# KiCad backups and temporary files
+*.bak
+*.bck
+*-bak
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.sch-bak
+_autosave-*
+\#auto_saved_files#
+~*.lck
+*.lck
+
+# Per-user project state (window layout, visible layers, etc.)
+*.kicad_prl
+*.prl
+
+# Library caches
+fp-info-cache
+sym-lib-table.bak
+
+# Netlist / autorouter intermediates
+*.net
+*.dsn
+*.ses
+*.rules
+
+# DRC/ERC reports
+*.rpt
+*-drc.json
+*-erc.json
+
+# Plot / fabrication output (regenerate from source)
+gerbers/
+fab/
+production/
+*.gbr
+*.drl
+*.gbrjob
