@@ -4,11 +4,385 @@
 	(generator_version "10.0")
 	(uuid "97a4dfb8-0e16-46f1-9709-8d2007dd0cd3")
 	(paper "A")
+	(title_block
+		(title "Audio Visualiser DSP")
+		(date "2026-10-27")
+		(rev "A")
+		(company "Drew Maatman and Drew Koetting")
+	)
 	(lib_symbols)
-	(sheet
-		(at 38.1 102.87)
-		(size 12.7 3.81)
+	(text "11. PGOOD LEDs"
 		(exclude_from_sim no)
+		(at 15.24 138.43 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0085c49b-5029-4c90-94e6-d64619da63b7")
+	)
+	(text "https://github.com/drewsum/audio_visualiser"
+		(exclude_from_sim no)
+		(at 15.24 29.21 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0bf0ba4b-4ac3-4589-90e6-a78ea02a5fa4")
+	)
+	(text "12. Status LEDs"
+		(exclude_from_sim no)
+		(at 116.84 46.99 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "1fc00a9a-ff63-472f-9ff3-eba8b32e47a1")
+	)
+	(text "07. dsPIC33 Power"
+		(exclude_from_sim no)
+		(at 15.24 97.79 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "256e2b17-bcfc-4f1c-9d06-231bfaf7a2f3")
+	)
+	(text "02. 12V Power Input"
+		(exclude_from_sim no)
+		(at 15.24 46.99 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "288dbb64-1b22-4cc5-b3be-9e81e6b914bb")
+	)
+	(text "08. dsPIC33 GPIO"
+		(exclude_from_sim no)
+		(at 15.24 107.95 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "2dd65812-f173-4dc4-889f-321c077aad43")
+	)
+	(text "06. dsPIC33 Programming"
+		(exclude_from_sim no)
+		(at 15.24 87.63 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "42aad095-780a-428e-a0c8-e656685793e2")
+	)
+	(text "17. Audio Voltage References"
+		(exclude_from_sim no)
+		(at 116.84 97.79 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e207b1c-a453-4125-bd16-ac056003a557")
+	)
+	(text "05. 3.3V Telemetry"
+		(exclude_from_sim no)
+		(at 15.24 77.47 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "5bc594fc-03b9-470f-9b7f-5089180684a6")
+	)
+	(text "13. RCA Signal Conditioning"
+		(exclude_from_sim no)
+		(at 116.84 57.15 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "60e11820-11c6-405f-8e53-c86305dba51b")
+	)
+	(text "03. 12V Telemetry"
+		(exclude_from_sim no)
+		(at 15.24 57.15 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "64f0674f-b62e-431d-9636-642bc1a36807")
+	)
+	(text "15. Source Selection, PGAs"
+		(exclude_from_sim no)
+		(at 116.84 77.47 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "88974282-d8f6-4900-9726-ee1408c186b9")
+	)
+	(text "16. Anti-alias Filtering"
+		(exclude_from_sim no)
+		(at 116.84 87.63 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b131f45-4e4a-475a-9c73-3c904d6c41b0")
+	)
+	(text "Audio Visualiser DSP Board"
+		(exclude_from_sim no)
+		(at 15.24 25.4 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 6.35 6.35)
+				(thickness 1.27)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "9876efa0-f204-4882-9eee-20628fc6da83")
+	)
+	(text "18. LED Panel Buffers"
+		(exclude_from_sim no)
+		(at 116.84 107.95 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1cb5828-d575-4137-a0c9-2ba970651543")
+	)
+	(text "14. Speaker Signal Conditioning"
+		(exclude_from_sim no)
+		(at 116.84 67.31 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3211ba2-44df-49ea-bda9-24baf7ae6c9d")
+	)
+	(text "10. Platform ETC"
+		(exclude_from_sim no)
+		(at 15.24 128.27 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b535f6c1-4c48-4310-aacf-b4816b689643")
+	)
+	(text "09. USB UART Bridge"
+		(exclude_from_sim no)
+		(at 15.24 118.11 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "bccd1200-ec5f-484a-8c68-b717b8e59d59")
+	)
+	(text "01. Table of Contents"
+		(exclude_from_sim no)
+		(at 15.24 36.83 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c1758a52-1cf7-4712-aaa9-25a20563f924")
+	)
+	(text "19. Pushbuttons"
+		(exclude_from_sim no)
+		(at 116.84 118.11 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e18e1226-57ff-4677-803c-38b4a26eb6a9")
+	)
+	(text "21. LED Panel Connectors"
+		(exclude_from_sim no)
+		(at 116.84 138.43 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e725bf29-aa16-4b19-adc1-1d66047aa583")
+	)
+	(text "04. 3.3V Power Supply"
+		(exclude_from_sim no)
+		(at 15.24 67.31 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "f597d60c-ec6e-4bd2-9875-293e59cc948d")
+	)
+	(text "20. Mechanical"
+		(exclude_from_sim no)
+		(at 116.84 128.27 0)
+		(effects
+			(font
+				(face "Courier New")
+				(size 2.032 2.032)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "fcfd6f6a-081a-4c81-9790-05c05838cefc")
+	)
+	(sheet
+		(at 176.53 124.46)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0b5ba344-fa98-45fc-87ea-1c2bd832dac8")
+		(property "Sheetname" "Mechanical"
+			(at 176.53 123.7484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mechanical.kicad_sch"
+			(at 176.53 128.8546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 93.98)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -22,7 +396,7 @@
 		)
 		(uuid "0e59d275-c36c-4218-b5cc-8096e466612c")
 		(property "Sheetname" "dsPIC33 Power"
-			(at 38.1 102.1584 0)
+			(at 74.93 93.2684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,283 +407,7 @@
 			)
 		)
 		(property "Sheetfile" "dspic33_power.kicad_sch"
-			(at 38.1 107.2646 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 111.125 52.07)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "121d1b20-1614-4f9c-b397-46f27db3840c")
-		(property "Sheetname" "Status LEDs"
-			(at 111.125 51.3584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "status_leds.kicad_sch"
-			(at 111.125 56.4646 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "14")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 38.1 92.71)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "3d6836fb-edea-466f-ab73-f835ba2b7cb8")
-		(property "Sheetname" "dsPIC33 Programming"
-			(at 38.1 91.9984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "dspic33_programming.kicad_sch"
-			(at 38.1 97.1046 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 111.125 31.75)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "546058cd-0694-4b2f-adfe-f6c0887c2b7f")
-		(property "Sheetname" "Platform ETC"
-			(at 111.125 31.0384 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "platform_etc.kicad_sch"
-			(at 111.125 36.1446 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "12")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 38.1 62.23)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "591fe591-cb36-4c0a-afd1-91c877291a0e")
-		(property "Sheetname" "3.3V Telemetry"
-			(at 38.1 61.5184 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "POS3P3_telemetry.kicad_sch"
-			(at 38.1 66.6246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 38.1 72.39)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "806a3c52-df0b-4062-94f8-08856f5ec77e")
-		(property "Sheetname" "LED Power Supply"
-			(at 38.1 71.6784 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_power_supply.kicad_sch"
-			(at 38.1 76.7846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 38.1 82.55)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "820db009-2be6-41d5-a14a-c1721a189028")
-		(property "Sheetname" "LED Telemetry"
-			(at 38.1 81.8384 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_telemetry.kicad_sch"
-			(at 38.1 86.9446 0)
+			(at 74.93 98.3746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -328,9 +426,9 @@
 		)
 	)
 	(sheet
-		(at 38.1 52.07)
+		(at 176.53 43.18)
 		(size 12.7 3.81)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -342,9 +440,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "b2362e66-49f5-4e26-9e9f-2de376dec3c9")
-		(property "Sheetname" "3.3V Power Supply"
-			(at 38.1 51.3584 0)
+		(uuid "121d1b20-1614-4f9c-b397-46f27db3840c")
+		(property "Sheetname" "Status LEDs"
+			(at 176.53 42.4684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -354,8 +452,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "POS3P3_power_supply.kicad_sch"
-			(at 38.1 56.4646 0)
+		(property "Sheetfile" "status_leds.kicad_sch"
+			(at 176.53 47.5746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -368,13 +466,13 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "4")
+					(page "12")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 38.1 113.03)
+		(at 176.53 53.34)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -388,9 +486,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "b9973229-0ab3-4009-9568-e1a3a7a57b16")
-		(property "Sheetname" "dsPIC33 GPIO"
-			(at 38.1 112.3184 0)
+		(uuid "363750b9-a522-47db-9c7c-ad0a11bbbf3f")
+		(property "Sheetname" "RCA Signal Conditioning"
+			(at 176.53 52.6284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -400,146 +498,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "dspic33_gpio.kicad_sch"
-			(at 38.1 117.4246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "10")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 38.1 123.19)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "bb1d00b4-7cec-46a4-b31c-4e1779527b32")
-		(property "Sheetname" "USB UART Bridge"
-			(at 38.1 122.4784 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "usb_uart_bridge.kicad_sch"
-			(at 38.1 127.5846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "11")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 38.1 41.91)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "bc67f37c-ab41-4ca7-b782-e7219d2b33ee")
-		(property "Sheetname" "12V Telemetry"
-			(at 38.1 41.1984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "POS12_telemetry.kicad_sch"
-			(at 38.1 46.3046 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 111.125 41.91)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "c320f2e6-9910-42de-853d-76db6e9bdf8b")
-		(property "Sheetname" "PGOOD LEDs"
-			(at 111.125 41.1984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "pgood_leds.kicad_sch"
-			(at 111.125 46.3046 0)
+		(property "Sheetfile" "rca_signal_conditioning.kicad_sch"
+			(at 176.53 57.7346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -558,7 +518,191 @@
 		)
 	)
 	(sheet
-		(at 38.1 31.75)
+		(at 74.93 83.82)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3d6836fb-edea-466f-ab73-f835ba2b7cb8")
+		(property "Sheetname" "dsPIC33 Programming"
+			(at 74.93 83.1084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dspic33_programming.kicad_sch"
+			(at 74.93 88.2146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 176.53 134.62)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "41674a27-da8b-4996-811a-d76625b2cbde")
+		(property "Sheetname" "LED Panel Connectors"
+			(at 176.53 133.9084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_panel_connectors.kicad_sch"
+			(at 176.53 139.0146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 124.46)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "546058cd-0694-4b2f-adfe-f6c0887c2b7f")
+		(property "Sheetname" "Platform ETC"
+			(at 74.93 123.7484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "platform_etc.kicad_sch"
+			(at 74.93 128.8546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 73.66)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "591fe591-cb36-4c0a-afd1-91c877291a0e")
+		(property "Sheetname" "3.3V Telemetry"
+			(at 74.93 72.9484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "POS3P3_telemetry.kicad_sch"
+			(at 74.93 78.0546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 176.53 63.5)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -572,9 +716,469 @@
 		(fill
 			(color 0 0 0 0)
 		)
+		(uuid "5a29c93e-425e-47b5-951d-32287a4d5995")
+		(property "Sheetname" "Speaker Signal Conditioning"
+			(at 176.53 62.7884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "speaker_signal_conditoning.kicad_sch"
+			(at 176.53 67.8946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 176.53 93.98)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6411608b-521a-4c33-acf3-00a911578dd5")
+		(property "Sheetname" "Audio Voltage References"
+			(at 176.53 93.2684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio_voltage_references.kicad_sch"
+			(at 176.53 98.3746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 176.53 114.3)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "81d9ddc4-5cba-4a39-aff5-649eed05eb4c")
+		(property "Sheetname" "Pushbuttons"
+			(at 176.53 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pushbuttons.kicad_sch"
+			(at 176.53 118.6946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 63.5)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b2362e66-49f5-4e26-9e9f-2de376dec3c9")
+		(property "Sheetname" "3.3V Power Supply"
+			(at 74.93 62.7884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "POS3P3_power_supply.kicad_sch"
+			(at 74.93 67.8946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 104.14)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b9973229-0ab3-4009-9568-e1a3a7a57b16")
+		(property "Sheetname" "dsPIC33 GPIO"
+			(at 74.93 103.4284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dspic33_gpio.kicad_sch"
+			(at 74.93 108.5346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 114.3)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bb1d00b4-7cec-46a4-b31c-4e1779527b32")
+		(property "Sheetname" "USB UART Bridge"
+			(at 74.93 113.5884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb_uart_bridge.kicad_sch"
+			(at 74.93 118.6946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 53.34)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bc67f37c-ab41-4ca7-b782-e7219d2b33ee")
+		(property "Sheetname" "12V Telemetry"
+			(at 74.93 52.6284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "POS12_telemetry.kicad_sch"
+			(at 74.93 57.7346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 134.62)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c320f2e6-9910-42de-853d-76db6e9bdf8b")
+		(property "Sheetname" "PGOOD LEDs"
+			(at 74.93 133.9084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pgood_leds.kicad_sch"
+			(at 74.93 139.0146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 176.53 73.66)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c804c5c4-25b5-4e4d-bca8-934b42ea969b")
+		(property "Sheetname" "Source Selection, PGAs"
+			(at 176.53 72.9484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "source_selection_pgas.kicad_sch"
+			(at 176.53 78.0546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 176.53 104.14)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e1c767d7-d79c-4fe0-8444-e88a5c1f4a2f")
+		(property "Sheetname" "LED Panel Buffers"
+			(at 176.53 103.4284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_panel_buffers.kicad_sch"
+			(at 176.53 108.5346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "18")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 74.93 43.18)
+		(size 12.7 3.81)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
 		(uuid "eeadeafa-75b8-4cba-a8b8-51c7c2ded112")
 		(property "Sheetname" "12V Power Input"
-			(at 38.1 31.0384 0)
+			(at 74.93 42.4684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -585,7 +1189,7 @@
 			)
 		)
 		(property "Sheetfile" "POS12_power_input.kicad_sch"
-			(at 38.1 36.1446 0)
+			(at 74.93 47.5746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -599,6 +1203,52 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 176.53 83.82)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f2b9a82c-2733-4630-b590-b588e09b6263")
+		(property "Sheetname" "Anti-alias Filtering"
+			(at 176.53 83.1084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "anti_alias_filtering.kicad_sch"
+			(at 176.53 88.2146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "16")
 				)
 			)
 		)

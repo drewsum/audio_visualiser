@@ -1,0 +1,62 @@
+***********************************************************
+*
+* BAT43WS
+*
+* Taiwan Semiconductor (TSC)
+*
+* 200mA, 30V Schottky barrier diode, SOD-323F
+* IFmax = 200mA
+* VRmax = 30V
+* VFmax = 330mV @ IF = 2mA, 450mV @ 15mA, 1.0V @ 200mA
+* IRmax = 500nA  @ VR = 25V
+* CJ    = 7pF typ @ VR = 1V, 1MHz
+*
+* Source: https://services.taiwansemi.com/storage/resources/spice-model-18/BAT43WS.txt
+* (TSC model dated 2025-10-20, reproduced unchanged below)
+*
+* LOCAL ADDITION: BAT43WS_SOD323F wraps the .MODEL as a 2-pin subckt
+* with pins in the KiCad symbol's order (1 = K, 2 = A).
+*
+***********************************************************
+*******************************************************
+* Taiwan Semiconductor_
+* BAT43WS
+* 200mA, 30V SMD Schottky Barrier Diode
+* Date: 2025-10-20
+*******************************************************
+*The model describes the characteristics of typical devices and is subject to change without notice. 		*
+*SPICE model can be used for evaluating device performance, but it cannot reflect the real device 		*
+*performance under any kind of conditions, nor to replace bread boarding for final verification. 		*
+*TSC does not assume any warranty or liability whatever arising from their use. TSC does not assume 		*
+*any warranty or liability for the values and functions of the SPICE model. The simulation results of 		*
+*the SPICE model are to the best of our knowledge correct. However, users are fully responsible to verify	*
+* and validate these results under the operating conditions and its application. TSC will not bear the 		*
+*responsibility arising out of or in connection with any malfunction of the simulation model. In any kind 	*
+*of cases, the current datasheet information is the design guideline and the only actual performance 		*
+*specification. SPICE model provided by TSC is not warranted by TSC as completely and comprehensively 		*
+*representing all the specifications and operating characteristics of the semiconductor product.		*
+*
+*******************************************************
+.MODEL BAT43WS D
++ IS=840.87E-9
++ N=1.4275
++ RS=1.5197
++ IKF=1.5434
++ CJO=9.0005E-12
++ M=.63613
++ VJ=2.2548
++ ISR=10.010E-21
++ NR=4.9950
++ BV=30
++ IBV=1E-6
++ TT=7.2135E-9
+*******************************************************
+
+***********************************************************
+* LOCAL ADDITION
+* Pin order matches the KiCad Diode symbol / D_SOD-323F footprint:
+*   1 = K (cathode, band), 2 = A (anode)
+***********************************************************
+.SUBCKT BAT43WS_SOD323F K A
+D1 A K BAT43WS
+.ENDS BAT43WS_SOD323F

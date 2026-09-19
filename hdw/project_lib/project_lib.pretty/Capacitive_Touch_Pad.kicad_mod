@@ -1,0 +1,142 @@
+(footprint "Capacitive_Touch_Pad"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Wire Pad, Square, SMD Pad,  5mm x 10mm,")
+	(tags "MesurementPoint Square SMDPad 5mmx10mm ")
+	(property "Reference" "SW802"
+		(at 0 -6.1595 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f03cbb67-d4e1-4fa1-b594-28e7e7d36b63")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Cap_Touch"
+		(at 0 6.35 0)
+		(layer "F.Fab")
+		(uuid "eb7fc343-0861-4a66-99a7-57b67b0455ee")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a17d227-7736-4ea4-b36d-457fc9565aca")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "63e6a6ec-7e9e-4993-b3ae-0ce272a816cd")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -5.0165 -5.0165)
+		(end 5.0165 -5.0165)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d52e4d36-a9ec-46bc-9d82-914b8bc9cad6")
+	)
+	(fp_line
+		(start -5.0165 5.0165)
+		(end -5.0165 -5.0165)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a958b103-3a05-4e78-a636-3e78ca126a4a")
+	)
+	(fp_line
+		(start 5.0165 -5.0165)
+		(end 5.0165 5.0165)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1e296c0f-9c2b-423b-accb-f4e7fca146d3")
+	)
+	(fp_line
+		(start 5.0165 5.0165)
+		(end -5.0165 5.0165)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d86f29f5-a0aa-4cca-9581-57a1ec03e75d")
+	)
+	(fp_line
+		(start -5.1435 -5.1435)
+		(end 5.1435 -5.1435)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "582b39c0-4ef3-4fca-9763-0df3ef8436d2")
+	)
+	(fp_line
+		(start -5.1435 5.1435)
+		(end -5.1435 -5.1435)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "14360d0b-8676-4526-a6d5-9614e5d1733d")
+	)
+	(fp_line
+		(start 5.1435 -5.1435)
+		(end 5.1435 5.1435)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a034ba24-3fee-4aaf-9121-5a3d020d6c00")
+	)
+	(fp_line
+		(start 5.1435 5.1435)
+		(end -5.1435 5.1435)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b410a88b-914f-43f5-a992-bb01eba9b998")
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 10 10)
+		(layers "F.Cu")
+		(uuid "74908cc9-87e8-4dda-b99c-0e5b8718ddd1")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,751 @@
+*REF35 (PSpice format)
+*****************************************************************************
+* (C) Copyright 2023 Texas Instruments Incorporated. All rights reserved.     
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.      
+** TI and its licensors and suppliers make no warranties, either expressed   
+** or implied, with respect to this model, including the warranties of       
+** merchantability or fitness for a particular purpose. The model is        
+** provided solely on an "as is" basis. The entire risk as to its quality   
+** and performance is with the customer                                    
+*****************************************************************************	
+* Released by: Analog eLab Design Center, Texas Instruments Inc.
+* Part: REF35
+* Precision Voltage Reference
+* Date: 08/07/2023
+* Model Type: TINA
+* Simulator: TINA-TI
+* Simulator Version: 9.3.200.277 SF-TI
+* Datasheet: SNAS809A – DECEMBER 2021 – REVISED AUGUST 2022
+*
+*****************************************************************************
+* version 1.1:
+*
+*****************************************************************************	
+* REF35 SUBCIRCUIT
+* Ultra-low quiescent current: – 650 nA (typical), Precision Voltage Reference
+* Model features include Output voltage, Line Regulation,
+* Load Regulation, PSRR vs Frequency,
+* Quiescent Current vs Temperature, 
+* Line Transient response, Load Transient response, 
+* Output Short Circuit Current, Startup Turn-on time, 
+* Output voltage noise 0.1 to 100kHz, 
+* Dropout Voltage vs Current and Temperature and 
+* Output Voltage vs Temperature.
+* Model temperature range is -40 to +125 deg C.
+* NR pin to reduce noise
+* EN pin to reduce shutdown current consumption
+* Output voltage options: 
+* PRODUCT: VREF:
+* REF35102 1.024 V
+* REF35120 1.2 V
+* REF35125 1.25 V
+* REF35160 1.6 V
+* REF35180 1.8 V
+* REF35205 2.048 V
+* REF35250 2.5 V
+* REF35300 3.0 V
+* REF35330 3.3 V
+* REF35409 4.096 V
+* REF35500 5.0 V
+
+** source REF35
+.PARAM pi = 3.14159265358979
+.SUBCKT REF35102 GND EN VIN NR VREF
+.PARAM VrefSel= {1.024}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35120 GND EN VIN NR VREF
+.PARAM VrefSel= {1.2}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35125 GND EN VIN NR VREF
+.PARAM VrefSel= {1.25}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35160 GND EN VIN NR VREF
+.PARAM VrefSel= {1.6}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35180 GND EN VIN NR VREF
+.PARAM VrefSel= {1.8}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35205 GND EN VIN NR VREF
+.PARAM VrefSel= {2.048}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF3525 GND EN VIN NR VREF
+.PARAM VrefSel= {2.5}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35250 GND EN VIN NR VREF
+.PARAM VrefSel= {2.5}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35300 GND EN VIN NR VREF
+.PARAM VrefSel= {3.0}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35330 GND EN VIN NR VREF
+.PARAM VrefSel= {3.3}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35409 GND EN VIN NR VREF
+.PARAM VrefSel= {4.096}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35500 GND EN VIN NR VREF
+.PARAM VrefSel= {5.0}
+XU1         EN VIN NR VREF VREF GND REF35XX_0
++ PARAMS: Vout_={VrefSel}
+.ENDS
+
+.SUBCKT REF35XX_0 EN VIN NR OUTS OUTF GND
++ PARAMS: Vout_=1.25
+.PARAM Vref= {VOUTi}
+.PARAM VOUTi= {Vout_}
+.PARAM Ren= {1G}
+.PARAM Ien= {50n}
+.PARAM Bout= {1/Aout}
+.PARAM Aout= {VOUTi/Vref}
+.PARAM Venh0= {1.6}
+.PARAM Venl0= {0.5}
+.PARAM IenH= {Ien}
+.PARAM IenL= {Ien}
+.PARAM RthH= {Vinref/Max(IQmin - IenH, 1n)}
+.PARAM VenH= {0.7*Vinref}
+.PARAM VenL= {0.3*Vinref}
+.PARAM RthL= {Venth*RthH/(Vinref - Venth)}
+.PARAM IQmin= {10n}
+.PARAM Vinref= {3}
+.PARAM Venth= {(VenH+VenL)/2}
+.PARAM Vthres= {0}
+XRef        POR GND VIN NR Veps BANDGAP_0
++ PARAMS: VREF={VREF} ROUT=30K VENTHR=0.5 EVOUT=-10M TVOUT=5.0 NLF={50*BOUT*1}
++ FLW=100M NVR={50*BOUT*1} FH=30K VINL=1 DVODVIN={40*1.0}
++ VREFPSR={VOUTI+0.5} VREF0={1.25*BOUT} FZPSR=50K FPPSR=10MEG
++ FPPSR2=10MEG FZPSR1=50K FPPSR1=100MEG
+RthH        VIN 15 {RthH} 
+RthL        15 GND {RthL} 
+XD5         EN VIN D_DINEN_0
++ PARAMS: IEN={IenL}
+XOutput     Neg Veps VIN POR GND Vt0pmx Vt0mx NR OUTF SS Vt0 Vt0p Bias Output_0
++ PARAMS: KVPS0=4f
+XHYSTCOMP1  EN 15 PORI GND HYSTCOMPG_0
++ PARAMS: VTHRES={Vthres} VHYST={(VENH-VENL)} VOUTH=5 VOUTL=0 ROUT=100 TDEL=1N
+XD11        GND EN D_DINEN_0
++ PARAMS: IEN={IenH}
+XD4         OUTF VIN D_DIN_0
+XD3         GND OUTF D_DIN_1
+Ren         VIN EN {Ren} 
+XD2         OUTF VIN D_DIN_0
+XD1         GND OUTF D_DIN_1
+XU5         GND OUTF Neg GAINSET_0
++ PARAMS: GERR=0 GERR_TC=0 FH=1000K G={AOUT} RG=1T
+XBiasOut    VIN GND Bias Vt0pmx Vt0mx PORI SS POR Vt0p Vt0 Bias_0
+.ENDS
+
+.SUBCKT Output_0 Neg Veps VDD2 POR GND2 Vt0pmx Vt0mx Plus OUT SS Vt0 Vt0p Bias
++ PARAMS: KVPS0=4f
+.PARAM Kvps= {0}
+.PARAM Gm1= {31.41592654n}
+.PARAM Gm2= {-145.17978642n}
+.PARAM Gm3= {3.86283752m}
+.PARAM M= {1.92049974k}
+.PARAM Gm1l= {865.3684767n}
+.PARAM Gm2lh= {50.6552006u}
+.PARAM Gm2ll= {-50.6552006u}
+.PARAM Cgs= {12.3142374p}
+.PARAM Cgd= {3.07855935p}
+.PARAM Cds= {100p}
+.PARAM Gm21= {-3.86283752m}
+.PARAM Gm22= {3.86283752m}
+.PARAM Mvgs0= {1}
+.PARAM Gm21ll= {0}
+.PARAM Gm21lh= {3.07855935n}
+.PARAM Gm22ll= {0}
+.PARAM Gm22lh= {6.1571187n}
+.PARAM Iss= {34.125n}
+.PARAM Mvss= {200n}
+.PARAM Cvss= {1m}
+.PARAM Miscb= {72.38636364n}
+.PARAM Msc= {M*Miscb*1.0}
+.PARAM Gm12= {31.41592654n}
+.PARAM TCro= {2.87356322m}
+.PARAM RS= {149.99250036m}
+.PARAM Rsc= {200k}
+.PARAM Mff= {-5m}
+.PARAM Cpsrr= {1000f}
+.PARAM Rm2= {6.88801124MEG}
+.PARAM AF= {2.005}
+.PARAM KF= {1e-18*0}
+.PARAM Lambda= {1m}
+.PARAM Gm2f= {2*145.17978642n}
+*.PARAM Rm1= {2.33118151G}
+.PARAM Rm1= {6.217627G}
+.PARAM ML= {960.24987174}
+.PARAM Mscl= {M/ML*Msc}
+.PARAM RS2= {RS/Miscb}
+.PARAM Rb= {RS*M/Mb}
+.PARAM Mb= {134.43498204}
+.PARAM Idb= {48.13017905n}
+.PARAM Rdl= {10}
+.PARAM Rpm= {50MEG}
+.PARAM RDS= {100MEG}
+.PARAM KL= {500m}
+.PARAM Icompmx= {500n}
+.PARAM KLmx= {636.36363636m}
+.PARAM Gm2xsh= {0.33f}
+.PARAM G1cp= {943.91098737u}
+.PARAM VOHi= {753.45565742m}
+.PARAM VOLo= {753.45565742m}
+.PARAM VOHisu= {753.45565742m}
+.PARAM VOLosu= {753.45565742m}
+.PARAM Rfc= {258.86732556}
+.PARAM Micmp= {55.261066u}
+.PARAM Vgsmax= {771.4565552m}
+.PARAM N1= {200m}
+.PARAM Msu2= {12}
+.PARAM Gm0= {-10u}
+.PARAM Rm0= {Abs(1/Gm0)}
+.PARAM Micm= {1.36771138m}
+.PARAM Igm2fmax= {50p}
+.PARAM Nil= {250m}
+VOLo        GND2 VLo0 {VOLo}
+VOHi        VHi0 GND2 {VOHi}
+Vsh1        0 40 700M
+Vsh2        41 0 700M
+Vfflim4     0 43 1
+Vfflim3     44 0 1
+Vfflim2     0 46 1
+Vfflim1     31 0 1
+VIcmpn      49 VD1 ; Current Arrow
+VIcmpp      VD1 50 ; Current Arrow
+VCIb1       62 Vib ; Current Arrow
+VIscH       63 64 ; Current Arrow
+VIscL       VDD2 65 ; Current Arrow
+VlimLo2     GND2 VLo2 7.94647M
+VlimHi2     VHi2 GND2 7.94647M
+VlimLo      GND2 VLo 120M
+VlimHi      VHi GND2 120M
+Rvsupd      22 0 R_RES_1 200 
+XDvsup      23 22 D_LIMN1_0
++ PARAMS: N={N1} RS={0}
+CDVinDt     250 GND2  1U
+RDVinDt     VM 240 R_RES_1 1    
+VDVinDt     240 250 ; Current Arrow
+
+GVCCS4      0 23 VALUE = {IF (TIME < 1u, 1, LIMIT((-10K*(I(VDVINDT))+1),1,5))}
+C8          22 0  1U
+R26         23 0 R_RES_1 1 
+R23         Vsub2 VLo0 100 
+XD25        VGN 25 D_LIMN1_0
++ PARAMS: N={Nil} RS={RDL}
+XD24        25 VGN D_LIMN1_0
++ PARAMS: N={Nil} RS={RDL}
+XD23        VGP2 27 D_LIMN1_0
++ PARAMS: N={Nil} RS={RDL}
+XD20        27 VGP2 D_LIMN1_0
++ PARAMS: N={Nil} RS={RDL}
+XVn16       28 29 VNOISE_0
++ PARAMS: NLF=29 FLW=100m NVR=29
+R22         Vsub 31 100 
+XD19        VLo2 29 D_LIMN1_0
++ PARAMS: N={N1} RS={RDL}
+XD16        29 VHi2 D_LIMN1_0
++ PARAMS: N={N1} RS={RDL}
+XD10        VLo2 34 D_LIMN1_0
++ PARAMS: N={N1} RS={RDL}
+XD8         34 VHi2 D_LIMN1_0
++ PARAMS: N={N1} RS={RDL}
+XD5         Vsub2 35 D_LIMN1_0
++ PARAMS: N={N1} RS={0}
+XD2         35 VHi0 D_LIMN1_0
++ PARAMS: N={N1} RS={RDL}
+XD14        VLo 36 D_LIMN1_0
++ PARAMS: N={N1} RS={RDL}
+Gm2f        GND2 37 VALUE = {IF (TIME < 1u, GM2F*(V(28,GND2)-V(37,GND2)), IGM2FMAX*TANH(GM2F*(V(28,GND2)-V(37,GND2))/IGM2FMAX))}
+XD13        36 VHi D_LIMN1_0
++ PARAMS: N={N1} RS={RDL}
+R34         OUT VGN R_RES_1 200G 
+R33         VGP2 OUT R_RES_1 200G 
+C7          34 GND2  10P
+RC7_RPAR    34 GND2 1T
+R24         34 GND2 R_RES_1 {Rm0} 
+GVCCS3      GND2 34 VALUE = {V(POR,GND2)*GM0*(V(Plus,Neg))}
+C6          VGN 25  100F
+RC6_RPAR    VGN 25 1T
+C4          VGP2 27  100F
+RC4_RPAR    VGP2 27 1T
+R19         25 VGN R_RES_1 1G 
+R25         27 VGP2 R_RES_1 1G 
+*GVCCS2      27 VGP2 VALUE = {IF (TIME < 1u, 1m*V(27,VGP2), LIMIT(V(22,0),1,3)*GM22LH*TANH(V(27,VGP2)*GM22/GM22LH)-GM2XSH*GM22LH )}
+GVCCS2      27 VGP2 VALUE = {IF (TIME < 1u, GM22*V(27,VGP2), LIMIT(V(22,0),1,3)*GM22LH*TANH(V(27,VGP2)*GM22/GM22LH)) - GM2XSH*GM22LH }
+R5          38 VM R_RES_1 {1/Gm22} 
+GVCCS1      0 39 VALUE = {IF (TIME < 1n, 1m, 1M*V(POR,GND2)*(1+(V(47,0)+V(45,0))*MSU2))}
+C1          39 0  1N
+R21         39 0 R_RES_1 1K 
+R20         0 43 1K 
+R18         44 0 1K 
+XD9         43 45 D_LIM01_0
+XD3         45 44 D_LIM01_0
+GVCCS6      0 45 VALUE = {IF (TIME < 1u, 0, MICM*(-0*I(VICMPP)+I(VICMPN)))}
+C5          45 0  1p
+R6          45 0 R_RES_1 100K 
+*GVCCS5      25 VGN VALUE = {IF (TIME < 1u, 1m*V(25,VGN), LIMIT(V(22,0),1,3)*GM21LH*TANH(V(25,VGN)*GM22/GM21LH)+GM2XSH*GM21LH )}
+GVCCS5      25 VGN VALUE = {IF (TIME < 1u, GM22*V(25,VGN), LIMIT(V(22,0),1,3)*GM21LH*TANH(V(25,VGN)*GM22/GM21LH)) + GM2XSH*GM21LH }
+R31         VDD2 VGP2 R_RES_1 1T 
+R32         VGN GND2 R_RES_1 1T 
+R30         0 46 1K 
+R29         31 0 1K 
+XD22        46 47 D_LIM01_0
+XD21        47 Vsub D_LIM01_1
+GVCCS7      0 47 VALUE = {IF (TIME < 1u, 0, MICM*(I(VICMPP)-0*I(VICMPN)))}
+C2          47 0  1p
+R28         47 0 R_RES_1 100K 
+XD_D6       40 49 D_D_0
+XD_D5       50 41 D_D_0
+RScd        VD1 0 R_RES_1 200 
+Gcmp2       0 VD1 VALUE = {-(V(51,0))}
+Ccmp        51 0  1P
+RCcmp_RPAR  51 0 1T
+Rcmp        51 0 1K 
+G1cp        0 51 VALUE = {IF (TIME < 1u, 0, G1CP*V(35,GND2))}
+GIb1        Vib 53 Bias GND2  {Idb}
+XT2         54 VGP2 55 VDD2 Q_PMOS_OUT_L1_0
++ PARAMS: M={M} W=20U L=1U CGS={CGS} CGD={CGD} CDS={CDS} LAMBDA={LAMBDA}
++ RDS={RDS} AF={AF} KF={KF}
+XT1         56 VGN 57 GND2 Q_NMOS_OUT_L1_0
++ PARAMS: M={KL*M} W=20U L=1U CGS={KL*CGS} CGD={KL*CGD} CDS={KL*CDS}
++ LAMBDA={LAMBDA} RDS={RDS} AF={AF} KF={KF}
+C3          35 GND2  200P
+RC3_RPAR    35 GND2 1T
+R17         VM GND2 1K 
+R16         GND2 VLo2 1K 
+R15         VHi2 GND2 1K 
+R14         GND2 VLo 1K 
+R13         GND2 VLo0 1K 
+R12         VHi GND2 1K 
+R11         VHi0 GND2 1K 
+XD6         Vt0pmx 27 D_LIM01_2
++ PARAMS: RS={0}
+GVMPmx      Vt0pmx VDD2 VALUE = {(V(POR,GND2)*V(VDD2,63)-V(VM,38))/RDL}
+XD4         25 Vt0mx D_LIM01_2
++ PARAMS: RS={0}
+R10         Vt0mx GND2 {Rdl} 
+GVMNmx      GND2 Vt0mx VALUE = {(V(POR,GND2)*V(58,GND2)-V(VM,38))/RDL}
+Csd         POR GND2  1.5N
+Rsd         POR GND2 R_RES_1 10K 
+GPORO       GND2 POR VALUE = {LIMIT(150U*I(VCIB1)/IDB,0,100U)}
+Rb1         60 GND2 R_RES_1 {Rb/KL} 
+Rb2         VDD2 61 R_RES_1 {Rb} 
+EVMN1       Vt0 GND2 VALUE = {V(POR,GND2)*V(53,GND2)}
+EVMP1       VDD2 Vt0p VALUE = {V(POR,GND2)*V(VDD2,62)}
+R4          Vt0 GND2 1K 
+R1          VDD2 Vt0p 1K 
+XT3         53 53 60 GND2 Q_NMOS_L1_0
++ PARAMS: M={KL*MB} W=20U L=1U LAMBDA={LAMBDA}
+XM1         62 62 61 VDD2 Q_PMOS_L1_0
++ PARAMS: M={Mb} W=20U L=1U LAMBDA={LAMBDA}
+R3          53 GND2 R_RES_1 {Rpm} 
+R2          VDD2 62 R_RES_1 {Rpm} 
+Ro2         OUT 54 R_RES_2 4.662102 
+Ro1         56 OUT R_RES_2 4.662102 
+Rm2f0       37 GND2 R_RES_1 1T 
+Rm0         35 GND2 R_RES_1 {Rm0} 
+Gm0         GND2 35 VALUE = {V(POR,GND2)*GM0*(V(Plus,Neg))}
+Rsc2        VDD2 66 {RS2} 
+Rsc1        59 GND2 {RS2/(KL/KLmx)} 
+Rs1         GND2 57 R_RES_1 149.9925M 
+Rs2         VDD2 55 R_RES_1 149.9925M 
+XD12        VLo 67 D_LIM01_0
+XD11        67 VHi D_LIM01_0
+XD1         VM 38 D_LIM01_2
++ PARAMS: RS={RDL}
+Co2         29 GND2  100F
+RCo2_RPAR   29 GND2 1T
+Gm12        GND2 36 VALUE = {-GM12*V(67,GND2)}
+Rm12        67 GND2 1M 
+Gm11        67 GND2 VALUE = {V(POR,GND2)*V(39,0)*GM1*V(35,GND2)}
+Cm12        67 GND2  200P
+RCm12_RPAR  67 GND2 1T
+Rsc         SS GND2 {Rsc} 
+GVMN2       65 58 VALUE = {V(POR,GND2)*((MVSS*LIMIT(V(SS,GND2),0,2.0)/ISS+CVSS)*MISCB+VGSMAX/RPM)}
+XD_ss2      GCLn SS D_D_0_0
+XD_ss1      GCLn VDD2 D_D_1_0
+Gss         VDD2 GCLn VALUE = {V(POR,GND2)*ISS}
+GVMP2       64 GND2 VALUE = {V(POR,GND2)*((MVSS*LIMIT(V(SS,GND2),0,2.0)/ISS+CVSS)*MISCB+VGSMAX/RPM)}
+R9          VDD2 Vt0pmx {Rdl} 
+XM3         58 58 59 GND2 Q_NMOS_L1_1
++ PARAMS: M={KL/KLMX*MSC} W=20U L=1U LAMBDA={LAMBDA}
+XM2         63 63 66 VDD2 Q_PMOS_L1_0
++ PARAMS: M={MSC} W=20U L=1U LAMBDA={LAMBDA}
+R8          58 GND2 {Rpm} 
+R7          VDD2 63 {Rpm} 
+Gm2         GND2 29 VALUE = {V(POR,GND2)*(GM2*(V(36,GND2)))}
+Rm20        29 GND2 R_RES_1 {Rm2} 
+EVCVS1      VM GND2 VDD2 GND2  500M
+XD7         38 VM D_LIM1_0
+GID         38 GND2 VALUE = {V(POR,GND2)*ABS(GM22)*(VGSMAX-0.7)*2}
+Cm1         OUT Vcmp  100P
+Cm2         37 Vcmp  5.321454N
+Rfc         36 Vcmp {Rfc} 
+Rm1         36 GND2 R_RES_1 {Rm1} 
+Gm21        Vt0 25 VALUE = {V(POR,GND2)*(GM21*(V(28,GND2)+MFF*V(34,GND2)))}
+Co21        Plus Neg  1F
+RCo21_RPAR  Plus Neg 1T
+Gm1         GND2 36 VALUE = {V(POR,GND2)*GM1*(V(35,GND2)*V(39,0))}
+Co1         36 GND2  100F
+Gm22        27 Vt0p VALUE = {V(POR,GND2)*(GM22*(V(28,GND2)+MFF*V(34,GND2)))}
+Ro23        GND2 Plus R_RES_1 1T 
+Ro22        Neg GND2 R_RES_1 1T 
+Ro21        Neg Plus R_RES_1 1T 
+Rm22        27 Vt0p R_RES_1 258.877055 
+Rm21        25 Vt0 R_RES_1 258.877055 
+Co23        GND2 Plus  1F
+RCo23_RPAR  GND2 Plus 1T
+Co22        Neg GND2  1F
+RCo22_RPAR  Neg GND2 1T
+
+.MODEL R_RES_1 RES ( TCE=0 T_ABS=-273.15)
+.MODEL R_RES_2 RES ( TC1={TCro} TCE=0)
+
+.ENDS
+
+.SUBCKT Bias_0 VDD2 GND2 Bias Vt0pmx Vt0mx PORI SS POROi Vt0p Vt0
+.PARAM ISS= {12u}
+.PARAM Mvss= {200n}
+.PARAM Cvss= {1m}
+.PARAM Miscb= {1m}
+.PARAM Msc= {Mout*Miscb*0.96}
+.PARAM Gm2l= {7.539822m}
+.PARAM Mout= {3.03156924k}
+.PARAM TC1= {1.863751m}
+.PARAM TC2= {5.019897u}
+.PARAM Mqc= {19.88668}
+.PARAM y1= {944.186m}
+.PARAM m1= {18.6047m}
+.PARAM Mb= {75.7892}
+.PARAM RS= {500m}
+.PARAM Rb= {RS*Mout/Mb}
+.PARAM Lambda= {100u}
+XD4         GND2 VDD2 D_DIN_2
++ PARAMS: IS=1N
+GIb2        GND2 Bias VALUE = {IF(V(PORI,GND2)>0.9&V(VDD2,GND2)>1.5,(M1*V(VDD2,GND2)+Y1),0)}
+Rb3         Bias GND2 R_RES_1 1 
+
+.MODEL R_RES_1 RES ( TC1={TC1} TC2={TC2} TCE=0)
+
+.ENDS
+
+.SUBCKT BANDGAP_0 En Gnd Vin Vref Veps 
++ PARAMS: Evout=5m Tvout=0.5 Vref=1.25 Rout=10 Venthr=0.5 Vref0=1.25 NLF=1 FLW=0.01  NVR=1 Fh=200 Vinl=2 
++ DVoDVin=4 Vrefpsr=3 Fzpsr=20 Fppsr=1k Fzpsr1=10k Fppsr1=1000k Fppsr2=100Meg
+* Output voltage accuracy ±0.025 max, 5m typ [%]
+* Output voltage temperature coefficient 2 ppm/°C max, 0.5 typ [ppm/°C]
+.PARAM R0 = {Rout}
+.PARAM DVO_DT = { Tvout*1e-6 }
+* Using Tvout parameters 
+*.PARAM Vrefo = {Vref*(1 + Evout/100 + 2*DVO_DT)}   
+*.PARAM TC1= {DVO_DT/R0/I0}
+.PARAM TC1= {DVO_DT}
+.PARAM Mdvodt = {1}     ; Tvout is used
+* Using EDVO_DT Table 
+*.PARAM Vrefo = {Vref}
+.PARAM Vrefo = {Vref*(1 + Evout/100)}
+*.PARAM TC1= {0}
+.PARAM I0 = {Vrefo/R0}
+.PARAM Cout={1/(2*Pi*Rout*Fh)}
+.PARAM Rpsr= 1k
+.PARAM DVO_DVIN = { DVoDVin*1e-6/Vref } 
+*.PARAM Cpsr={1/(2*Pi*Rpsr*Fpsr)}
+.PARAM Gain={Vref/Vref0}
+
+Xn Vref1 Vref2 VNoise PARAMS: NLF={Gain*NLF} FLW={FLW}  NVR={Gain*NVR}
+
+* Using Evout, Tvout parameters 
+G1 Gnd Vref0 Value = {V(EN)*I0} ; Tvout is used
+R1 Gnd Vref0 RMOD2 {R0}
+CG1 Gnd Vref0 1p
+E1 Vref1 Gnd Value = { V(Vref0)*(1 + V(Veps)) }
+RE1 Vref1 Gnd 1k 
+R2 Vref2 Vref {Rout}
+C1 Vref Gnd {Cout}
+
+*G2 0 Vpsr Value = {DVO_DVIN/Rpsr*(V(Vin,Gnd)-Vrefpsr)}
+*R3 0 Vpsr {Rpsr}
+*C2 Vpsr 0 {Cpsr}
+
+.PARAM fpPSRR1= {Fppsr}
+.PARAM fzPSRR1= {Fzpsr}
+.PARAM R11ops= {(fpPSRR1/fzPSRR1 - 1)*R1ops}
+.PARAM L1ops= {R11ops/(2*pi*fpPSRR1)}
+.PARAM R10ps= {1k}
+.PARAM C2ps= {1/(2*pi*R10ps*fpPSRR2)}
+*.PARAM R11ps= {1m}
+.PARAM R1ops= {1}
+.PARAM fpPSRR10= {Fppsr1}
+.PARAM fzPSRR10= {Fzpsr1}
+.PARAM R110ops= {(fpPSRR10/fzPSRR10 - 1)*R10ops}
+.PARAM L10ops= {R110ops/(2*pi*fpPSRR10)}
+.PARAM R10ops= {1}
+
+.PARAM fpPSRR2= {Fppsr2}
+G1ops       0 Vz1 VALUE = {-DVO_DVIN*(V(Vin,Gnd)-Vrefpsr)}
+*R11ps       4 0 {R11ps} 
+R10ps       Vz100 Veps {R10ps} 
+C2ps        Veps 0  {C2ps}
+R11ops      5 0 {R11ops} 
+L1ops       5 0  {L1ops}
+R1ops       Vz1 5 {R1ops} 
+G10ops       0 Vz10 VALUE = {V(Vz1)}
+R110ops      50 0 {R110ops} 
+L10ops       50 0  {L10ops}
+R10ops       Vz10 50 {R10ops} 
+G100ops       0 Vz100 VALUE = {V(Vz10)}
+R1100ops      500 0 {R110ops} 
+L100ops       500 0  {L10ops}
+R100ops       Vz100 500 {R10ops} 
+
+.MODEL RMOD2 RES (TC1={TC1} TC2=0 TCE=0)
+.ENDS
+
+.SUBCKT VNoise 1 2
++ PARAMS: 
+* nV/RHz AT 1/F FREQ
++ NLF=1
+* FREQ FOR 1/F VAL
++ FLW=0.01
+* nV/RHz FLATBAND
++ NVR=1
+.PARAM GLF={PWR(FLW,0.25)*NLF/1164}
+.PARAM RNV={1.184*PWR(NVR,2)}
+.MODEL DVN D KF={PWR(FLW,0.5)/1E11} IS=1.0E-16
+I1 0 7 10E-3
+I2 0 8 10E-3
+D1 7 0 DVN
+D2 8 0 DVN
+R1 5 0 {RNV}
+R2 5 0 {RNV}
+E1 1 2 Value= {GLF*V(7,8) + 10*V(5)}
+RE1 1 2 1k  
+.ENDS
+
+.SUBCKT D_DINEN_0 1    2 Params: Ien=3.2u
+D1 1 2  Dph
+*.MODEL Dph D( IS=12.7389n N=1.0 XTI=0 RS=10 T_ABS=25 )
+.MODEL Dph D( IS={Ien} N=1.0 RS=10 T_ABS=27 )
+.ENDS
+
+.SUBCKT HYSTCOMPG_0 inp inm out gnd 
++ Params: Vthres=0 Vhyst=1 VoutH=5 VoutL=0 Rout=1 Tdel=1N
+*
+.PARAM Delay = {MAX(Tdel,1n)}
+.Param Rdel = {IF ( (Delay > 1E-15) & (Rout < 1), 1, Rout ) }
+.Param VoutM={(VoutH+VoutL)/2}
+.Param VthH={Vthres + 0.5*Vhyst}
+.Param VthL={Vthres - 0.5*Vhyst}
+.Param Cout={Delay/(0.693*(Rdel+1u))}
+.Param Gdlh={1/Rdel}
+.Param Gdhl={1*Gdlh}
+*
+Gthr gnd thr Value= { IF ( V(out,gnd) < {VoutM}, {VthH}, {VthL}) }
+Rthr gnd thr 1
+Gout gnd out Value= { IF ( (V(inp,inm) > V(thr,gnd)), (VoutH - V(out,gnd))*Gdlh, (VoutL - V(out,gnd))*Gdhl ) }
+Cout out gnd {Cout}
+Rout out gnd {1e5*Rdel}
+.ENDS
+
+.SUBCKT D_DIN_0 1    2
+D1 1 2  Dnh
+.MODEL Dnh D( IS=12.4889n N=1.0 XTI=0 RS=10 EG=0.94 T_ABS=27 )
+.ENDS
+
+.SUBCKT D_DIN_1 1    2
+D1 1 2  Dph
+.MODEL Dph D( IS=12.7389n N=1.0 XTI=0 RS=10 EG=0.94 T_ABS=27 )
+.ENDS
+
+.SUBCKT GAINSET_0 1 2 3 PARAMS: Gerr=0.05 Gerr_Tc=0.5 G = 2 fh=10k RG = 100000k
+* Gain error 0.05 ±0.15 % of FSR
+* Gain temperature coefficient AVDD=+5V: ±0.5,  AVDD=+2.0V: ±1.5 ppm of  FSR/°C
+
+.PARAM G_err = {(Gerr-0.0015)*0.01}
+.PARAM G_Tc = {Gerr_Tc*1e-6}
+.PARAM RG_Tc = {1*G_Tc}
+.PARAM RG2 = {(1+G_err)*RG*(G-1)/G}
+.PARAM RG1 = {(1-G_err)*RG/G}
+.PARAM G2 = {1/Max(RG2,100m)}
+.PARAM G1 = {1/Max(RG1,100m)}
+.PARAM C2 = {G2/(2*pi*fh)}
+*R1 1 3 RMOD1 {RG1}
+GR1 1 3 Value = {V(1,3)*G1}
+*R2 3 2 RMOD2 {RG2}
+*C1 1 3 {C2/1}
+GR2 3 2 Value = {V(3,2)*G2}
+C2 3 2 {C2}
+.MODEL RMOD1 RES (TC1={-RG_Tc} TC2=0 TCE=0)
+.MODEL RMOD2 RES (TC1={RG_Tc} TC2=0 TCE=0)
+.ENDS
+
+.SUBCKT D_LIMN1_0 1 2 Params: N=1 RS=100
+D1 1 2  D_LimN1
+*.MODEL D_LIM01 D( IS=10F N=0.1 RS=1 XTI=0 AF=0 KF=0 EG=0.111 T_ABS=27)
+*.MODEL D_LIM01 D( IS=10F N=0.1 RS=100 XTI=0 AF=0 KF=0 T_ABS=27)
+.MODEL D_LIMN1 D( IS=10F N={N} RS={RS} XTI=0 AF=0 KF=0 T_ABS=27)
+.ENDS
+
+.SUBCKT VNOISE_0 1 2
++ PARAMS: 
+* nV/RHz AT 1/F FREQ
++ NLF=1
+* FREQ FOR 1/F VAL
++ FLW=0.01
+* nV/RHz FLATBAND
++ NVR=1
+.PARAM GLF={PWR(FLW,0.25)*NLF/1164}
+.PARAM RNV={1.184*PWR(NVR,2)}
+.MODEL DVN D KF={PWR(FLW,0.5)/1E11} IS=1.0E-16
+I1 0 7 10E-3
+I2 0 8 10E-3
+D1 7 0 DVN
+D2 8 0 DVN
+R1 5 0 {RNV}
+R2 5 0 {RNV}
+E1 1 2 Value= {GLF*V(7,8) + 10*V(5)}
+RE1 1 2 1k  
+.ENDS
+
+.SUBCKT D_LIM01_0 1 2
+D1 1 2  D_Lim01
+*.MODEL D_LIM01 D( IS=10F N=0.1 RS=1 XTI=0 AF=0 KF=0 EG=0.111 T_ABS=27)
+.MODEL D_LIM01 D( IS=10F N=0.1 RS=100 XTI=0 AF=0 KF=0 T_ABS=27)
+.ENDS
+
+.SUBCKT D_LIM01_1 1 2
+D1 1 2  D_Lim01
+*.MODEL D_LIM01 D( IS=10F N=0.1 RS=1 XTI=0 AF=0 KF=0 EG=0.111 T_ABS=27)
+.MODEL D_LIM01 D( IS=10F N=0.1 RS=0 XTI=0 AF=0 KF=0 T_ABS=27)
+.ENDS
+
+*
+* CONNECTIONS:   A
+*                             |    C
+*                             |    |
+.SUBCKT D_D_0 1    2
+D1 1 2  DD
+.MODEL DD D( IS=1p N=0.1 RS=0 XTI=0 AF=0 KF=0 T_ABS=27)
+.ENDS D_D_0 
+
+.SUBCKT D_LIM01_2 1 2 Params: RS=100
+D1 1 2  D_Lim01
+*.MODEL D_LIM01 D( IS=10F N=0.1 RS=1 XTI=0 AF=0 KF=0 EG=0.111 T_ABS=27)
+.MODEL D_LIM01 D( IS=10F N=0.1 RS={RS} XTI=0 AF=0 KF=0 T_ABS=27)
+.ENDS
+
+.SUBCKT Q_PMOS_OUT_L1_0 D G S B PARAMS:  M = 1 W = 100U L = 10U CGS=1P CGD=100F CDs=100F LAMBDA=50m RDS = 1000G AF=1.5 KF=1.0e-18
+.PARAM VTOHP = -0.7
+.PARAM KPP = 388.479u 
+M1 D G S B Q_PMOS_OUT_L1 W = {W} L = {L} M = {M} 
+Cgd     G    D    {CGD}
+Cgs     G    S    {CGS}
+Cds     D    S    {CDS}
+.MODEL Q_PMOS_OUT_L1 PMOS LEVEL=1 L=10U W=100U KP={KPP} VTO={VTOHP} LAMBDA={LAMBDA} T_ABS=27
++ AF={AF} KF={KF/M}
+*+ AF=0 KF=0
+Rds D S R_ds {RDS}
+ .MODEL R_ds RES T_ABS=-273.15
+.ENDS
+
+.SUBCKT Q_NMOS_OUT_L1_0 D G S B PARAMS:  M = 1 W = 100U L = 10U CGS=1P CGD=100F CDs=100F LAMBDA=10m RDS = 1000G AF=1.5 KF=1.0e-18
+.PARAM VTOHN = 0.7
+.PARAM KPN = 388.479u 
+M1 D G S B Q_NMOS_OUT_L1 W = {W} L = {L} M = {M} 
+Cgd     G    D    {CGD}
+Cgs     G    S    {CGS}
+Cds     D    S    {CDS}
+.MODEL Q_NMOS_OUT_L1 NMOS LEVEL=1 L=10U W=100U KP={KPN} VTO={VTOHN} LAMBDA={LAMBDA} T_ABS=27
++ AF={AF} KF={KF/M}
+*+ AF=0 KF=0
+Rds D S R_ds {RDS}
+ .MODEL R_ds RES T_ABS=-273.15
+.ENDS
+
+.SUBCKT Q_NMOS_L1_0 D G S B PARAMS:  M = 1 W = 100U L = 10U LAMBDA=50m
+.PARAM VTOHN = 0.7
+.PARAM KPN = 388.479u 
+M1 D G S B Q_NMOS_OUT_L1  W = {W} L = {L} M = {M} 
+.MODEL Q_NMOS_OUT_L1 NMOS LEVEL=1 L=10U W=100U KP={KPN} VTO={VTOHN} LAMBDA={LAMBDA} T_ABS=27
++ AF=0 KF=0.0
+.ENDS
+
+.SUBCKT Q_PMOS_L1_0 D G S B PARAMS:  M = 1 W = 100U L = 10U LAMBDA=50m
+.PARAM VTOHP = -0.7
+.PARAM KPP = 388.479u 
+M1 D G S B Q_PMOS_OUT_L1 W = {W} L = {L} M = {M} 
+.MODEL Q_PMOS_OUT_L1 PMOS LEVEL=1 L=10U W=100U KP={KPP} VTO={VTOHP} LAMBDA={LAMBDA} T_ABS=27
++ AF=0 KF=0.0
+.ENDS
+
+.SUBCKT D_D_0_0 1    2
+D1 1 2  DD
+.MODEL DD D( IS=1.0p N=3.0 AF=0 KF=0 T_ABS=27)
+.ENDS D_D_0_0 
+
+.SUBCKT D_D_1_0 1    2
+D1 1 2  DD
+.MODEL DD D( IS=10F N=1.0 RS=10 XTI=0 AF=0 KF=0 T_ABS=27)
+.ENDS D_D_1_0 
+
+.SUBCKT Q_NMOS_L1_1 D G S B PARAMS:  M = 1 W = 100U L = 10U LAMBDA=50m
+.PARAM VTOHN = 0.7
+.PARAM KPN = 388.479u 
+M1 D G S B Q_NMOS_OUT_L1  W = {W} L = {L} M = {M} 
+.MODEL Q_NMOS_OUT_L1 NMOS LEVEL=1 L=10U W=100U KP={KPN} VTO={VTOHN} LAMBDA={LAMBDA} T_ABS=27
++ AF=0 KF=0.0
+.ENDS
+
+.SUBCKT D_LIM1_0 1 2
+D1 1 2  D_Lim1
+.MODEL D_LIM1 D( IS=10F N=1.0 RS=100 XTI=0 AF=0 KF=0 T_ABS=27)
+.ENDS
+
+.SUBCKT D_DIN_2 1    2 Params: IS=10n
+D1 1 2  Dnh
+.MODEL Dnh D( IS={IS} N=1.0 XTI=0 RS=10 T_ABS=27 )
+.ENDS
+
+
+*****************************************************************************
+* REF35160 SOT-23-6 (DBV) wrapper (added locally, not part of the TI file).
+* Nodes follow physical pin numbers so KiCad's REF35160QDBVR symbol maps 1:1.
+*   1 GND  2 GND  3 EN  4 VIN  5 NR  6 VREF
+* Pins 1 and 2 are both ground on the package; they are shorted here.
+*****************************************************************************
+.SUBCKT REF35160_DBV GND GND2 EN VIN NR VREF
+RGND GND GND2 1m
+XREF GND EN VIN NR VREF REF35160
+.ENDS REF35160_DBV

@@ -1,0 +1,923 @@
+#!/usr/bin/env python3
+"""CI helpers for the KiCad projects in this repo.
+
+Subcommands:
+  projects   List KiCad projects as a JSON matrix for GitHub Actions.
+  setup      Write global KiCad library tables (stock + external libraries).
+  hygiene    Check tracked files for junk and for the expected KiCad version.
+  check      Run ERC, DRC (with schematic parity) and library checks on a project.
+  outputs    Generate fabrication/documentation outputs for a project.
+  diff       Render visual schematic/PCB diffs between a base commit and HEAD.
+
+Everything is driven by hdw/ci-config.json. Run with --help for options.
+"""
+
+import argparse
+import base64
+import fnmatch
+import html
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+import zipfile
+from collections import Counter
+from pathlib import Path, PurePosixPath
+
+REPO = Path(__file__).resolve().parents[2]
+CONFIG_PATH = REPO / "hdw" / "ci-config.json"
+KICAD_CLI = os.environ.get("KICAD_CLI", "kicad-cli")
+MODES = ("enforce", "report", "off")
+
+# Violation types that mean a library (or a part in it) can't be found.
+LIB_TYPES = {"lib_symbol_issues", "footprint_link_issues", "lib_footprint_issues"}
+# "Copy in design differs from library" - worth knowing, never fatal.
+MISMATCH_TYPES = {"lib_symbol_mismatch", "lib_footprint_mismatch"}
+
+# Files that should never be committed (matched against each path component
+# and against the full repo-relative path).
+FORBIDDEN_PATTERNS = [
+    "*-backups", "_autosave-*", "#auto_saved_files#", "*.lck", "~*.lck",
+    "fp-info-cache", "*.kicad_prl", "*.bak", "*.bck", "*-bak", "*.kicad_sch-bak",
+    "*.kicad_pcb-bak", "*.sch-bak", ".history",
+    "*.rpt", "*-drc.json", "*-erc.json", "*.net", "*.dsn", "*.ses",
+    "*.gbr", "*.gbrjob", "*.drl", "*.gtl", "*.gbl", "*.gto", "*.gbo", "*.gts",
+    "*.gbs", "*.gtp", "*.gbp", "*.gm1", "*.gko", "*.g[0-9]", "*.g[0-9][0-9]",
+]
+# Outputs KiCad writes next to the project as <project>.<ext>; CI builds these.
+GENERATED_PROJECT_EXTS = [".step", ".stp", ".wrl", "-pos.csv", ".csv", ".ipc", ".d356"]
+VERSIONED_EXTS = {".kicad_sch", ".kicad_pcb", ".kicad_sym", ".kicad_mod"}
+
+
+# --------------------------------------------------------------------------- helpers
+
+def load_config():
+    with open(CONFIG_PATH, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def rel(path):
+    """Repo-relative POSIX path string."""
+    return Path(path).resolve().relative_to(REPO).as_posix()
+
+
+def gh_annotation(level, message, file=None, title=None):
+    """Emit a GitHub Actions workflow command (plain text when run locally)."""
+    message = message.replace("%", "%25").replace("\r", "").replace("\n", "%0A")
+    props = []
+    if file:
+        props.append(f"file={file}")
+    if title:
+        props.append(f"title={title.replace(',', ';').replace(':', ';')}")
+    print(f"::{level} {','.join(props)}::{message}" if props else f"::{level}::{message}")
+
+
+def append_summary(markdown):
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if path:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(markdown + "\n")
+
+
+def set_output(name, value):
+    path = os.environ.get("GITHUB_OUTPUT")
+    if path:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(f"{name}={value}\n")
+    else:
+        print(f"{name}={value}")
+
+
+def kicad(*args, cwd=None, fatal=True):
+    cmd = [KICAD_CLI, *map(str, args)]
+    print("$ " + " ".join(f'"{a}"' if " " in a else a for a in cmd), flush=True)
+    result = subprocess.run(cmd, cwd=cwd, text=True, capture_output=True)
+    out = (result.stdout + result.stderr).strip()
+    if out:
+        print(out, flush=True)
+    if result.returncode != 0 and fatal:
+        raise RuntimeError(f"kicad-cli exited with {result.returncode}: {' '.join(cmd)}")
+    return result.returncode == 0
+
+
+def git(*args, cwd=REPO):
+    return subprocess.run(["git", *args], cwd=cwd, check=True, text=True,
+                          capture_output=True).stdout
+
+
+def find_projects(root=REPO, config=None):
+    config = config or load_config()
+    projects = []
+    for proj_root in config.get("project_roots", ["hdw"]):
+        for pro in sorted((root / proj_root).rglob("*.kicad_pro")):
+            parts = pro.relative_to(root).parts
+            if any(p.endswith("-backups") or p.startswith(".") for p in parts):
+                continue
+            d = pro.parent.relative_to(root).as_posix()
+            projects.append({
+                "dir": d,
+                "name": pro.stem,
+                "slug": "-".join(PurePosixPath(d).parts[1:]) or pro.stem,
+            })
+    return projects
+
+
+MODE_KEYS = ("erc", "drc", "libraries", "project_lib", "pdf")
+
+
+def project_modes(config, project_dir):
+    modes = {"erc": "enforce", "drc": "enforce", "libraries": "enforce", "project_lib": "off", "pdf": "report"}
+    for source in (config.get("defaults", {}), config.get("projects", {}).get(project_dir, {})):
+        modes.update({k: v for k, v in source.items() if k in MODE_KEYS})
+    for key, value in modes.items():
+        if value not in MODES:
+            raise SystemExit(f"ci-config.json: {project_dir}: {key} must be one of {MODES}, got {value!r}")
+    return modes
+
+
+def board_layers(pcb_path):
+    """(copper layers in stack order, all layer names) from a .kicad_pcb."""
+    text = Path(pcb_path).read_text(encoding="utf-8", errors="replace")
+    m = re.search(r"\(layers\b(.*?)\n\s*\)", text, re.S)
+    if not m:
+        return ["F.Cu", "B.Cu"], set()
+    entries = re.findall(r'\(\d+\s+"([^"]+)"\s+(\w+)', m.group(1))
+    names = {n for n, _ in entries}
+    copper = [n for n, kind in entries if n.endswith(".Cu")]
+    inner = sorted((n for n in copper if n.startswith("In")), key=lambda n: int(re.sub(r"\D", "", n)))
+    copper = [n for n in ("F.Cu",) if n in copper] + inner + [n for n in ("B.Cu",) if n in copper]
+    return copper or ["F.Cu", "B.Cu"], names
+
+
+# --------------------------------------------------------------------------- projects
+
+def cmd_projects(args):
+    projects = find_projects()
+    set_output("matrix", json.dumps({"include": projects}))
+    set_output("count", str(len(projects)))
+    for p in projects:
+        print(f"  {p['dir']}  ({p['name']})", file=sys.stderr)
+
+
+# --------------------------------------------------------------------------- setup
+
+def kicad_config_dir(version):
+    base = os.environ.get("XDG_CONFIG_HOME") or os.path.join(os.path.expanduser("~"), ".config")
+    return Path(base) / "kicad" / version
+
+
+def cmd_setup(args):
+    config = load_config()
+    template_dir = Path(os.environ.get("KICAD_TEMPLATE_DIR", "/usr/share/kicad/template"))
+    cfg_dir = kicad_config_dir(config["kicad_version"])
+    cfg_dir.mkdir(parents=True, exist_ok=True)
+    libs_dir = Path(args.libs_dir).resolve()
+    libs_dir.mkdir(parents=True, exist_ok=True)
+
+    extra = {"sym": [], "fp": []}
+    for lib in config.get("external_libraries", []):
+        name = Path(lib["repo"].rstrip("/")).stem
+        dest = libs_dir / name
+        if not dest.exists():
+            clone = ["git", "clone", "--depth", "1"]
+            if lib.get("ref"):
+                clone += ["--branch", lib["ref"]]
+            subprocess.run(clone + [lib["repo"], str(dest)], check=True)
+        sha = git("rev-parse", "HEAD", cwd=dest).strip()
+        print(f"External library {lib['repo']} @ {sha}")
+        for kind, key in (("sym", "symbol_libs"), ("fp", "footprint_libs")):
+            for nick, path in lib.get(key, {}).items():
+                full = dest / path
+                if not full.exists():
+                    raise SystemExit(f"{lib['repo']}: {path} not found (library '{nick}')")
+                extra[kind].append((nick, full.as_posix()))
+
+    for kind in ("sym", "fp"):
+        template = (template_dir / f"{kind}-lib-table").read_text(encoding="utf-8").rstrip()
+        if not template.endswith(")"):
+            raise SystemExit(f"Unexpected format in {template_dir}/{kind}-lib-table")
+        entries = "".join(
+            f'\n  (lib (name "{nick}")(type "KiCad")(uri "{uri}")(options "")(descr "CI external library"))'
+            for nick, uri in extra[kind])
+        (cfg_dir / f"{kind}-lib-table").write_text(template[:-1] + entries + "\n)\n", encoding="utf-8")
+        print(f"Wrote {cfg_dir / f'{kind}-lib-table'} (+{len(extra[kind])} external)")
+
+
+# --------------------------------------------------------------------------- hygiene
+
+def check_schematic_pdf(project_dir, name, tracked):
+    """The committed <project>.pdf must exist and be at least as new as the schematics."""
+    pdf = f"{project_dir}/{name}.pdf"
+    if pdf not in tracked:
+        return pdf, (f"No schematic PDF committed. Plot the schematic to {name}.pdf "
+                     "(File > Plot > PDF, all pages) and commit it.")
+    if git("rev-parse", "--is-shallow-repository").strip() == "true":
+        return None  # history needed to compare; the workflow checks out with fetch-depth 0
+    pdf_commit = git("log", "-1", "--format=%H", "--", pdf).strip()
+    if not pdf_commit:
+        return None  # added but not yet committed
+    newer = git("rev-list", f"{pdf_commit}..HEAD", "--", f"{project_dir}/*.kicad_sch").split()
+    if newer:
+        return pdf, (f"Schematic changed in {len(newer)} commit(s) since {name}.pdf was last "
+                     f"committed ({pdf_commit[:7]}). Re-plot the schematic PDF and commit it.")
+    return None
+
+
+def cmd_hygiene(args):
+    config = load_config()
+    want = config["kicad_version"]
+    # Skip files deleted/moved in the working tree but not yet committed (only happens locally).
+    tracked = [p for p in git("ls-files", "-z").split("\0") if p and (REPO / p).exists()]
+    project_stems = {(str(PurePosixPath(p).parent), PurePosixPath(p).stem)
+                     for p in tracked if p.endswith(".kicad_pro")}
+    roots = tuple(r.rstrip("/") + "/" for r in config.get("project_roots", ["hdw"]))
+    problems = []  # (path, message, fails)
+
+    for path in tracked:
+        pp = PurePosixPath(path)
+        hit = next((pat for pat in FORBIDDEN_PATTERNS
+                    if any(fnmatch.fnmatch(part, pat) for part in pp.parts)), None)
+        if hit:
+            problems.append((path, f"should not be committed (matches '{hit}')", True))
+            continue
+        for ext in GENERATED_PROJECT_EXTS:
+            if pp.name.endswith(ext) and (str(pp.parent), pp.name[: -len(ext)]) in project_stems:
+                problems.append((path, "generated output next to the project; CI builds this - "
+                                       "remove it with 'git rm --cached'", True))
+                break
+        if pp.suffix in VERSIONED_EXTS and path.startswith(roots):
+            head = (REPO / path).read_text(encoding="utf-8", errors="replace")[:4096]
+            m = re.search(r'\(generator_version\s+"([^"]+)"\)', head)
+            found = m.group(1) if m else "unknown (pre-KiCad 7 format)"
+            if found != want:
+                problems.append((path, f"saved by KiCad {found}; this repo expects KiCad {want}. "
+                                       f"Open and re-save it in KiCad {want}.", True))
+
+    tracked_set = set(tracked)
+    for p in find_projects(config=config):
+        mode = project_modes(config, p["dir"])["pdf"]
+        issue = check_schematic_pdf(p["dir"], p["name"], tracked_set) if mode != "off" else None
+        if issue:
+            problems.append((*issue, mode == "enforce"))
+
+    lines = ["## Repository hygiene", ""]
+    if problems:
+        lines += ["| File | Problem | Result |", "|---|---|---|"]
+        for path, msg, fails in problems:
+            gh_annotation("error" if fails else "warning", msg, file=path, title="Hygiene")
+            lines.append(f"| `{path}` | {msg} | {'❌ fail' if fails else '⚠️ warning'} |")
+    else:
+        lines.append(f"All {len(tracked)} tracked files OK (KiCad {want}, no junk files, "
+                     "schematic PDFs up to date).")
+    append_summary("\n".join(lines))
+    print("\n".join(lines))
+    return 1 if any(fails for _, _, fails in problems) else 0
+
+
+# --------------------------------------------------------------------------- check
+
+def parse_lib_table(path):
+    text = path.read_text(encoding="utf-8", errors="replace")
+    return re.findall(r'\(lib\s+\(name\s+"([^"]*)"\).*?\(uri\s+"([^"]*)"\)', text, re.S)
+
+
+def check_lib_tables(proj_dir):
+    """Static check of project lib tables: portable paths that exist in the repo."""
+    findings = []
+    for table in ("sym-lib-table", "fp-lib-table"):
+        path = proj_dir / table
+        if not path.exists():
+            continue
+        for nick, uri in parse_lib_table(path):
+            where = f"{table}: library '{nick}'"
+            if re.match(r"^([A-Za-z]:[\\/]|/|\\\\)", uri):
+                findings.append((rel(path), f"{where} uses an absolute path ({uri}). "
+                                            "Use ${KIPRJMOD}/relative/path so it works on other machines."))
+            elif "${KIPRJMOD}" in uri:
+                target = Path(uri.replace("${KIPRJMOD}", str(proj_dir))).resolve()
+                if not target.exists():
+                    findings.append((rel(path), f"{where} points to {uri}, which is not in the repo."))
+                elif REPO not in target.parents:
+                    findings.append((rel(path), f"{where} points outside the repo ({uri})."))
+    return findings
+
+
+def _sexp_end(text, i):
+    """Index just past the list that opens at text[i] == '(' (string-aware)."""
+    depth, in_str, n = 0, False, len(text)
+    while i < n:
+        c = text[i]
+        if in_str:
+            if c == "\\":
+                i += 1
+            elif c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == "(":
+            depth += 1
+        elif c == ")":
+            depth -= 1
+            if depth == 0:
+                return i + 1
+        i += 1
+    raise ValueError("unbalanced s-expression")
+
+
+def _sexp_children(text, head):
+    """Yield the text of each top-level child list of a KiCad file whose head is `head`."""
+    i = text.index("(") + 1
+    end = _sexp_end(text, i - 1) - 1
+    pat = re.compile(r"\(\s*" + re.escape(head) + r"[\s)]")
+    while i < end:
+        c = text[i]
+        if c == '"':
+            j = i + 1
+            while text[j] != '"':
+                j += 2 if text[j] == "\\" else 1
+            i = j + 1
+        elif c == "(":
+            j = _sexp_end(text, i)
+            if pat.match(text, i):
+                yield text[i:j]
+            i = j
+        else:
+            i += 1
+
+
+def _schematic_files(root_sch):
+    """The root schematic plus every sheet file reachable from it."""
+    seen, todo = [], [root_sch.resolve()]
+    while todo:
+        f = todo.pop()
+        if f in seen or not f.exists():
+            continue
+        seen.append(f)
+        text = f.read_text(encoding="utf-8", errors="replace")
+        for sub in re.findall(r'\(property\s+"Sheetfile"\s+"([^"]+)"', text):
+            todo.append((f.parent / sub).resolve())
+    return seen
+
+
+def check_project_library(proj_dir, sch, pcb, lib_dir):
+    """Every symbol, footprint and 3D model the design uses must come from lib_dir.
+
+    Returns (type, file, description) findings."""
+    findings = []
+    lib_dir = lib_dir.resolve()
+
+    def resolve(uri, base):
+        uri = uri.replace("${KIPRJMOD}", str(proj_dir)).replace("\\", "/")
+        if "${" in uri:
+            return None
+        p = Path(uri)
+        return (p if p.is_absolute() else base / p).resolve()
+
+    def inside(path):
+        return path is not None and (path == lib_dir or lib_dir in path.parents)
+
+    # 1. Library tables may only point into the project library.
+    tables = {}
+    for table in ("sym-lib-table", "fp-lib-table"):
+        tables[table] = {}
+        path = proj_dir / table
+        for nick, uri in (parse_lib_table(path) if path.exists() else []):
+            target = resolve(uri, proj_dir)
+            if inside(target) and target.exists():
+                tables[table][nick] = target
+            else:
+                findings.append(("lib_table_outside_project_lib", rel(path),
+                                 f"{table}: library '{nick}' ({uri}) is not inside {rel(lib_dir)}"))
+    sym_libs, fp_libs = tables["sym-lib-table"], tables["fp-lib-table"]
+
+    sym_names = {}
+    def symbols_in(nick):
+        if nick not in sym_names:
+            text = sym_libs[nick].read_text(encoding="utf-8", errors="replace")
+            sym_names[nick] = {m.group(1) for m in (re.match(r'\(symbol\s+"([^"]*)"', s)
+                                                    for s in _sexp_children(text, "symbol")) if m}
+        return sym_names[nick]
+
+    def footprint_problem(lib_id):
+        nick, _, name = lib_id.partition(":")
+        if nick not in fp_libs:
+            return f"footprint '{lib_id}' is not from the project library"
+        if not (fp_libs[nick] / f"{name}.kicad_mod").exists():
+            return f"footprint '{lib_id}' is missing from {rel(fp_libs[nick])}"
+        return None
+
+    # 2. Placed symbols and their Footprint fields, across the whole hierarchy.
+    for f in _schematic_files(sch):
+        text = f.read_text(encoding="utf-8", errors="replace")
+        for blk in _sexp_children(text, "symbol"):
+            m = re.match(r'\(symbol\s*(?:\(lib_name\s+"[^"]*"\)\s*)?\(lib_id\s+"([^"]*)"\)', blk)
+            if not m:
+                continue
+            lib_id = m.group(1)
+            ref = re.search(r'\(property\s+"Reference"\s+"([^"]*)"', blk)
+            who = f"{ref.group(1) if ref else '?'} ({f.name})"
+            nick, _, name = lib_id.partition(":")
+            if nick not in sym_libs:
+                findings.append(("symbol_outside_project_lib", rel(f),
+                                 f"{who} uses symbol '{lib_id}', which is not from the project library"))
+            elif name not in symbols_in(nick):
+                findings.append(("symbol_missing_from_project_lib", rel(f),
+                                 f"{who} uses symbol '{lib_id}', which is missing from {rel(sym_libs[nick])}"))
+            fp = re.search(r'\(property\s+"Footprint"\s+"([^"]*)"', blk)
+            if fp and fp.group(1):
+                problem = footprint_problem(fp.group(1))
+                if problem:
+                    findings.append(("footprint_outside_project_lib", rel(f), f"{who}: {problem}"))
+
+    # 3. Board footprints and their 3D models.
+    def check_models(block, base, file, who):
+        for path in re.findall(r'\(model\s+"([^"]*)"', block):
+            target = resolve(path, base)
+            if re.match(r"^([A-Za-z]:[\\/]|/|\\\\)", path):
+                findings.append(("model_path_not_portable", file,
+                                 f"{who}: 3D model uses an absolute path ({path}). "
+                                 "Use ${KIPRJMOD}/" + os.path.relpath(lib_dir, proj_dir).replace(os.sep, "/") + "/... so it works on other machines."))
+            elif not inside(target):
+                findings.append(("model_outside_project_lib", file,
+                                 f"{who}: 3D model '{path}' is not inside {rel(lib_dir)}"))
+            elif not target.exists():
+                findings.append(("model_missing_from_project_lib", file,
+                                 f"{who}: 3D model '{path}' does not exist"))
+
+    if pcb.exists():
+        text = pcb.read_text(encoding="utf-8", errors="replace")
+        for blk in _sexp_children(text, "footprint"):
+            lib_id = re.match(r'\(footprint\s+"([^"]*)"', blk).group(1)
+            ref = re.search(r'\(property\s+"Reference"\s+"([^"]*)"', blk)
+            who = ref.group(1) if ref else lib_id
+            # "Not in schematic" footprints (logos, custom silkscreen art) are board-only
+            # graphics with no symbol behind them, so they needn't come from the library.
+            board_only = re.search(r"\(attr\b[^)]*\bboard_only\b", blk)
+            problem = None if board_only else footprint_problem(lib_id)
+            if problem:
+                findings.append(("footprint_outside_project_lib", rel(pcb), f"{who}: {problem}"))
+            check_models(blk, proj_dir, rel(pcb), who)
+
+    # 4. The project library itself must be self-contained.
+    for lib in fp_libs.values():
+        for mod in sorted(lib.glob("*.kicad_mod")):
+            check_models(mod.read_text(encoding="utf-8", errors="replace"), proj_dir, rel(mod), mod.stem)
+    for nick, lib in sym_libs.items():
+        text = lib.read_text(encoding="utf-8", errors="replace")
+        for blk in _sexp_children(text, "symbol"):
+            fp = re.search(r'\(property\s+"Footprint"\s+"([^"]*)"', blk)
+            if fp and fp.group(1) and footprint_problem(fp.group(1)):
+                name = re.match(r'\(symbol\s+"([^"]*)"', blk).group(1)
+                findings.append(("footprint_outside_project_lib", rel(lib),
+                                 f"library symbol '{name}' defaults to {footprint_problem(fp.group(1))}"))
+    return findings
+
+
+def collect_violations(report, source):
+    items = []
+    for sheet in report.get("sheets", []):
+        for v in sheet.get("violations", []):
+            if v.get("excluded"):  # excluded in the KiCad project (erc/drc_exclusions)
+                continue
+            items.append({**v, "source": source, "sheet": sheet.get("path", "/")})
+    for key in ("violations", "unconnected_items", "schematic_parity"):
+        for v in report.get(key, []):
+            if v.get("excluded"):
+                continue
+            items.append({**v, "source": source, "group": key})
+    return items
+
+
+def classify(v, modes):
+    """Return (check, fails) for a single violation."""
+    if v["type"] in LIB_TYPES:
+        return "libraries", modes["libraries"] == "enforce"
+    if v["type"] in MISMATCH_TYPES:
+        return v["source"], False
+    if v.get("group") == "schematic_parity":
+        return "drc", modes["drc"] == "enforce"
+    return v["source"], v["severity"] == "error" and modes[v["source"]] == "enforce"
+
+
+def project_file(proj_dir):
+    """The project's .kicad_pro, ignoring hidden copies (e.g. a render tool's .<name>.*-src.kicad_pro)."""
+    pros = sorted(p for p in proj_dir.glob("*.kicad_pro") if not p.name.startswith("."))
+    if len(pros) != 1:
+        raise SystemExit(f"{rel(proj_dir)}: expected one .kicad_pro, found {[p.name for p in pros] or 'none'}")
+    return pros[0]
+
+
+def cmd_check(args):
+    config = load_config()
+    proj_dir = (REPO / args.project).resolve()
+    proj_rel = rel(proj_dir)
+    pro = project_file(proj_dir)
+    name = pro.stem
+    sch, pcb = proj_dir / f"{name}.kicad_sch", proj_dir / f"{name}.kicad_pcb"
+    modes = project_modes(config, proj_rel)
+    out = Path(args.out).resolve()
+    out.mkdir(parents=True, exist_ok=True)
+
+    results = []  # dicts: check, severity, type, description, items, file, fails
+    for path, msg in (check_lib_tables(proj_dir) if modes["libraries"] != "off" else []):
+        results.append({"check": "libraries", "severity": "error", "type": "lib_table",
+                        "description": msg, "items": [], "file": path,
+                        "fails": modes["libraries"] == "enforce"})
+
+    if modes["project_lib"] != "off":
+        lib_dir = config.get("projects", {}).get(proj_rel, {}).get("project_lib_dir")
+        if not lib_dir:
+            raise SystemExit(f"ci-config.json: {proj_rel}: project_lib is {modes['project_lib']!r} "
+                             "but no project_lib_dir is set")
+        lib_path = (proj_dir / lib_dir).resolve()
+        if not lib_path.is_dir():
+            raise SystemExit(f"ci-config.json: {proj_rel}: project_lib_dir {lib_dir!r} does not exist")
+        for vtype, path, msg in check_project_library(proj_dir, sch, pcb, lib_path):
+            results.append({"check": "project_lib", "severity": "error", "type": vtype,
+                            "description": msg, "items": [], "file": path,
+                            "fails": modes["project_lib"] == "enforce"})
+
+    runs = []
+    if modes["erc"] != "off" or modes["libraries"] != "off":
+        runs.append(("erc", sch, ["sch", "erc"]))
+    if modes["drc"] != "off" or modes["libraries"] != "off":
+        if pcb.exists():
+            runs.append(("drc", pcb, ["pcb", "drc", "--schematic-parity"]))
+    for source, target, cmd in runs:
+        report_path = out / f"{name}-{source}.json"
+        kicad(*cmd, "--format", "json", "--severity-all", "--units", "mm",
+              "-o", report_path, target, cwd=proj_dir)
+        kicad(*cmd, "--format", "report", "--severity-all", "--units", "mm",
+              "-o", out / f"{name}-{source}.rpt", target, cwd=proj_dir, fatal=False)
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        for v in collect_violations(report, source):
+            check, fails = classify(v, modes)
+            if modes[check] == "off":
+                continue
+            results.append({"check": check, "severity": v["severity"], "type": v["type"],
+                            "description": v["description"],
+                            "items": [i.get("description", "") for i in v.get("items", [])],
+                            "file": rel(target), "fails": fails})
+
+    # Annotations: one per (check, type) so the PR view stays readable.
+    groups = {}
+    for r in results:
+        groups.setdefault((r["check"], r["type"], r["file"]), []).append(r)
+    for (check, vtype, file), rs in sorted(groups.items()):
+        fails = any(r["fails"] for r in rs)
+        level = "error" if fails else ("warning" if any(r["severity"] == "error" for r in rs) else "notice")
+        detail = "\n".join(f"- {r['description']}" + (f" ({'; '.join(r['items'])})" if r["items"] else "")
+                           for r in rs[:8])
+        more = f"\n...and {len(rs) - 8} more" if len(rs) > 8 else ""
+        gh_annotation(level, f"{len(rs)}x {vtype}\n{detail}{more}", file=file,
+                      title=f"{name} {check.upper()} {vtype}")
+
+    # Summary
+    lines = [f"## {name}", f"`{proj_rel}`", "", "| Check | Mode | Errors | Warnings | Result |",
+             "|---|---|---|---|---|"]
+    failed_checks = []
+    labels = {"libraries": "Libraries", "project_lib": "Project library"}
+    for check in ("libraries", "project_lib", "erc", "drc"):
+        rs = [r for r in results if r["check"] == check]
+        errors = sum(r["severity"] == "error" for r in rs)
+        warnings = len(rs) - errors
+        fails = any(r["fails"] for r in rs)
+        if modes[check] == "off":
+            status = "skipped"
+        elif fails:
+            status, _ = "❌ fail", failed_checks.append(check)
+        elif rs:
+            status = "⚠️ issues (report-only)" if modes[check] == "report" else "✅ pass (warnings)"
+        else:
+            status = "✅ pass"
+        lines.append(f"| {labels.get(check, check.upper())} | {modes[check]} "
+                     f"| {errors} | {warnings} | {status} |")
+    if results:
+        lines += ["", "<details><summary>Violations by type</summary>", "",
+                  "| Check | Type | Severity | Count | Example |", "|---|---|---|---|---|"]
+        counts = Counter((r["check"], r["type"], r["severity"]) for r in results)
+        for (check, vtype, sev), n in sorted(counts.items()):
+            ex = next(r for r in results if (r["check"], r["type"], r["severity"]) == (check, vtype, sev))
+            desc = ex["description"] + (f" ({ex['items'][0]})" if ex["items"] else "")
+            lines.append(f"| {check} | `{vtype}` | {sev} | {n} | {desc.replace('|', '/')} |")
+        lines += ["", "</details>"]
+    lines.append("")
+    summary = "\n".join(lines)
+    (out / f"{name}-summary.md").write_text(summary, encoding="utf-8")
+    append_summary(summary)
+    print(summary)
+    if failed_checks:
+        print(f"FAILED: {', '.join(failed_checks)} (enforced in hdw/ci-config.json)")
+        return 1
+    return 0
+
+
+# --------------------------------------------------------------------------- outputs
+
+def zip_dir(src, dest):
+    with zipfile.ZipFile(dest, "w", zipfile.ZIP_DEFLATED) as z:
+        for f in sorted(Path(src).rglob("*")):
+            if f.is_file():
+                z.write(f, f.relative_to(src).as_posix())
+
+
+def cmd_outputs(args):
+    config = load_config()
+    proj_dir = (REPO / args.project).resolve()
+    name = project_file(proj_dir).stem
+    sch, pcb = proj_dir / f"{name}.kicad_sch", proj_dir / f"{name}.kicad_pcb"
+    out = Path(args.out).resolve()
+    if out.exists():
+        shutil.rmtree(out)
+    fab, asm, docs, mech = out / "fab", out / "assembly", out / "docs", out / "3d"
+    for d in (fab / "gerbers", asm, docs, mech):
+        d.mkdir(parents=True, exist_ok=True)
+    tag = args.label or "local"
+    warnings = []
+
+    def optional(label, *cmd):
+        try:
+            if not kicad(*cmd, cwd=proj_dir, fatal=False):
+                warnings.append(label)
+        except OSError as e:
+            warnings.append(f"{label} ({e})")
+
+    # Documentation
+    kicad("sch", "export", "pdf", "-o", docs / f"{name}-schematic.pdf", sch, cwd=proj_dir)
+    copper, names = board_layers(pcb)
+    doc_layers = copper + [l for l in ("F.Silkscreen", "B.Silkscreen", "F.Fab", "B.Fab")
+                           if not names or l in names]
+    optional("PCB PDF", "pcb", "export", "pdf", "--mode-multipage", "--ibt",
+             "--layers", ",".join(doc_layers), "--common-layers", "Edge.Cuts",
+             "-o", docs / f"{name}-pcb.pdf", pcb)
+
+    # Fabrication
+    kicad("pcb", "export", "gerbers", "--board-plot-params", "-o", f"{fab / 'gerbers'}/", pcb, cwd=proj_dir)
+    kicad("pcb", "export", "drill", "--generate-map", "--map-format", "gerberx2",
+          "-o", f"{fab / 'gerbers'}/", pcb, cwd=proj_dir)
+    optional("IPC-D-356 netlist", "pcb", "export", "ipcd356", "-o", fab / f"{name}.d356", pcb)
+    zip_dir(fab / "gerbers", fab / f"{name}-gerbers-{tag}.zip")
+
+    # Assembly
+    kicad("pcb", "export", "pos", "--format", "csv", "--units", "mm", "--side", "both",
+          "--exclude-dnp", "-o", asm / f"{name}-pos.csv", pcb, cwd=proj_dir)
+    bom = config.get("bom", {})
+    bom_args = []
+    for key, flag in (("fields", "--fields"), ("labels", "--labels"), ("group_by", "--group-by")):
+        if bom.get(key):
+            bom_args += [flag, bom[key]]
+    kicad("sch", "export", "bom", *bom_args, "-o", asm / f"{name}-bom.csv", sch, cwd=proj_dir)
+
+    # 3D (needs 3D models / an OpenGL-capable environment; never fatal)
+    if not args.no_3d:
+        optional("STEP model", "pcb", "export", "step", "--subst-models", "--no-dnp", "-f",
+                 "-o", mech / f"{name}.step", pcb)
+        for side in ("top", "bottom"):
+            optional(f"{side} render", "pcb", "render", "--side", side, "--quality", "high",
+                     "--width", "1600", "--height", "1200", "-o", mech / f"{name}-{side}.png", pcb)
+
+    sha = os.environ.get("GITHUB_SHA") or git("rev-parse", "HEAD").strip()
+    (out / "BUILD_INFO.txt").write_text(
+        f"project: {rel(proj_dir)}\ncommit: {sha}\nlabel: {tag}\n"
+        f"kicad: {subprocess.run([KICAD_CLI, 'version'], capture_output=True, text=True).stdout.strip()}\n"
+        + (f"skipped/failed optional outputs: {', '.join(warnings)}\n" if warnings else ""),
+        encoding="utf-8")
+    for w in warnings:
+        gh_annotation("warning", f"Optional output failed: {w}", file=rel(pcb), title=f"{name} outputs")
+
+    listing = sorted(f.relative_to(out).as_posix() for f in out.rglob("*") if f.is_file())
+    append_summary(f"### {name} outputs\n\n" + "\n".join(f"- `{f}`" for f in listing
+                                                          if not f.startswith("fab/gerbers/")) + "\n")
+    print("\n".join(listing))
+
+
+# --------------------------------------------------------------------------- diff
+
+def svg_exports(proj_dir, name, dest, layers):
+    """Export schematic pages and PCB layers as SVG into dest; returns {key: svg}."""
+    files = {}
+    sch, pcb = proj_dir / f"{name}.kicad_sch", proj_dir / f"{name}.kicad_pcb"
+    if sch.exists():
+        d = dest / "sch"
+        d.mkdir(parents=True, exist_ok=True)
+        kicad("sch", "export", "svg", "-b", "-n", "-o", d, sch, cwd=proj_dir, fatal=False)
+        for f in d.glob("*.svg"):
+            files[f"schematic/{f.stem}"] = f
+    if pcb.exists():
+        d = dest / "pcb"
+        d.mkdir(parents=True, exist_ok=True)
+        for layer in layers:
+            f = d / f"{layer}.svg"
+            ok = kicad("pcb", "export", "svg", "--mode-single", "--black-and-white",
+                       "--exclude-drawing-sheet", "--page-size-mode", "2",
+                       "--layers", layer, "--common-layers", "Edge.Cuts",
+                       "-o", f, pcb, cwd=proj_dir, fatal=False)
+            if ok and f.exists():
+                files[f"pcb/{layer}"] = f
+    return files
+
+
+def magick(*args):
+    return subprocess.run(["magick", *map(str, args)], text=True, capture_output=True)
+
+
+def raster(svg, png):
+    if svg is None:
+        return None
+    subprocess.run(["rsvg-convert", "--dpi-x", "150", "--dpi-y", "150", "-b", "white",
+                    "-o", str(png), str(svg)], check=True)
+    return png
+
+
+def image_size(png):
+    w, h = magick("identify", "-format", "%w %h", png).stdout.split()
+    return int(w), int(h)
+
+
+def make_diff(old_svg, new_svg, work, key):
+    """Rasterise both sides; return (changed_pixels, old_png, new_png, diff_png)."""
+    stem = key.replace("/", "__")
+    old_png = raster(old_svg, work / f"{stem}.old.png")
+    new_png = raster(new_svg, work / f"{stem}.new.png")
+    ref = new_png or old_png
+    w, h = image_size(ref)
+    if old_png and new_png:
+        w2, h2 = image_size(old_png)
+        w, h = max(w, w2), max(h, h2)
+    grays = {}
+    for side, png in (("old", old_png), ("new", new_png)):
+        g = work / f"{stem}.{side}.gray.png"
+        if png:
+            magick(png, "-background", "white", "-flatten", "-gravity", "northwest",
+                   "-extent", f"{w}x{h}", "-colorspace", "Gray", g)
+        else:
+            magick("-size", f"{w}x{h}", "xc:white", "-colorspace", "Gray", g)
+        grays[side] = g
+    cmp = magick("compare", "-metric", "AE", "-fuzz", "10%", grays["old"], grays["new"], "null:")
+    changed = int(float(re.split(r"\s", (cmp.stdout + cmp.stderr).strip())[0] or 0))
+    diff_png = work / f"{stem}.diff.png"
+    if changed:
+        # R = new, G = old, B = both -> removed shows red, added shows green, unchanged black.
+        magick(grays["new"], grays["old"], "(", grays["old"], grays["new"], "-compose", "darken",
+               "-composite", ")", "-set", "colorspace", "sRGB", "-combine", diff_png)
+    return changed, old_png, new_png, diff_png if changed else None
+
+
+def cmd_diff(args):
+    out = Path(args.out).resolve()
+    if out.exists():
+        shutil.rmtree(out)
+    out.mkdir(parents=True)
+    base = args.base
+    changed_files = git("diff", "--name-only", f"{base}...HEAD").split()
+    if not changed_files:
+        changed_files = git("diff", "--name-only", base, "HEAD").split()
+
+    tmp = Path(tempfile.mkdtemp(prefix="kicad-diff-"))
+    base_tree = tmp / "base"
+    git("worktree", "add", "--detach", str(base_tree), base)
+    try:
+        head_projects = {p["dir"]: p for p in find_projects(REPO)}
+        base_projects = {p["dir"]: p for p in find_projects(base_tree)}
+        all_dirs = sorted(set(head_projects) | set(base_projects))
+        touched = [d for d in all_dirs
+                   if any(f.startswith(d + "/") and f.endswith((".kicad_sch", ".kicad_pcb"))
+                          for f in changed_files)]
+        report = []  # (project, key, changed, rel paths)
+        for d in touched:
+            p = head_projects.get(d) or base_projects[d]
+            name = p["name"]
+            sides = {"old": base_tree / d, "new": REPO / d}
+            layers = []
+            for side_dir in sides.values():
+                pcb = side_dir / f"{name}.kicad_pcb"
+                if pcb.exists():
+                    copper, names = board_layers(pcb)
+                    for l in copper + [l for l in ("F.Silkscreen", "B.Silkscreen", "F.Fab", "B.Fab",
+                                                   "F.Mask", "B.Mask") if not names or l in names]:
+                        if l not in layers:
+                            layers.append(l)
+            svgs = {side: (svg_exports(side_dir, name, tmp / p["slug"] / side, layers)
+                           if side_dir.exists() else {}) for side, side_dir in sides.items()}
+            work = out / p["slug"]
+            work.mkdir(parents=True, exist_ok=True)
+            for key in sorted(set(svgs["old"]) | set(svgs["new"])):
+                n, old_png, new_png, diff_png = make_diff(svgs["old"].get(key), svgs["new"].get(key),
+                                                          work, key)
+                if not n:
+                    for f in (old_png, new_png):
+                        if f:
+                            f.unlink()
+                else:
+                    report.append((p, key, n, [x.relative_to(out).as_posix() if x else None
+                                               for x in (old_png, new_png, diff_png)]))
+                for g in work.glob("*.gray.png"):
+                    g.unlink()
+
+        page = write_diff_index(out, report, base, touched)
+        lines = ["## Visual diff", "",
+                 f"Compared against `{base[:10]}`. Open the **{page.name}** artifact to view it in the "
+                 "browser (red = removed, green = added).", ""]
+        if not touched:
+            lines.append("No schematic or PCB files changed.")
+        elif not report:
+            lines.append("Schematic/PCB files changed, but nothing visible changed.")
+        else:
+            lines += ["| Project | Page / layer | Changed pixels |", "|---|---|---|"]
+            lines += [f"| {p['name']} | `{key}` | {n:,} |" for p, key, n, _ in report]
+        append_summary("\n".join(lines) + "\n")
+        print("\n".join(lines))
+        set_output("changed", "true" if report else "false")
+    finally:
+        git("worktree", "remove", "--force", str(base_tree))
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+DIFF_PAGE = "visual-diff.html"
+
+
+def write_diff_index(out, report, base, touched):
+    """Write one self-contained page (images inlined as data URIs) so CI can upload it
+    unzipped and GitHub opens it straight in the browser. Returns the page path."""
+    def data_uri(rel_path):
+        data = base64.b64encode((out / rel_path).read_bytes()).decode("ascii")
+        return f"data:image/png;base64,{data}"
+
+    def img(src, label):
+        if not src:
+            return f"<figure><div class='none'>(not present)</div><figcaption>{label}</figcaption></figure>"
+        return (f"<figure><img loading='lazy' decoding='async' alt='{html.escape(label)}' "
+                f"src='{data_uri(src)}'><figcaption>{label}</figcaption></figure>")
+
+    rows = []
+    for p, key, n, (old, new, diff) in report:
+        rows.append(f"<section><h2>{html.escape(p['name'])} &mdash; {html.escape(key)}"
+                    f" <small>({n:,} px changed)</small></h2><div class='row'>"
+                    + img(diff, "diff (red removed, green added)") + img(old, "base") + img(new, "this commit")
+                    + "</div></section>")
+    body = "\n".join(rows) or "<p>No visible changes.</p>"
+    page = out / DIFF_PAGE
+    page.write_text(f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KiCad Visual Diff</title>
+<style>
+ body{{font:14px system-ui,sans-serif;margin:16px;background:#f6f6f6;color:#222}}
+ section{{background:#fff;border:1px solid #ddd;border-radius:6px;padding:12px;margin:0 0 16px}}
+ h2{{font-size:16px;margin:0 0 8px}} small{{color:#777;font-weight:normal}}
+ .row{{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px}}
+ figure{{margin:0}} img{{width:100%;border:1px solid #ccc;background:#fff;cursor:zoom-in}}
+ figcaption{{color:#666;font-size:12px}} .none{{padding:40px;text-align:center;color:#999;border:1px dashed #ccc}}
+ #zoom{{display:none;position:fixed;inset:0;overflow:auto;background:rgba(0,0,0,.85);cursor:zoom-out;z-index:1}}
+ #zoom.on{{display:block}} #zoom img{{width:auto;max-width:none;border:0;cursor:zoom-out}}
+ @media (max-width:800px){{.row{{grid-template-columns:1fr}}}}
+</style></head><body>
+<h1>KiCad visual diff</h1><p>Base <code>{html.escape(base)}</code>; projects touched: {html.escape(', '.join(touched) or 'none')}.
+Click an image to view it at full size.</p>
+{body}
+<div id="zoom"><img alt=""></div>
+<script>
+ const zoom = document.getElementById("zoom"), big = zoom.querySelector("img");
+ document.querySelectorAll("figure img").forEach(i => i.addEventListener("click", () => {{
+   big.src = i.src; zoom.classList.add("on"); zoom.scrollTo(0, 0);
+ }}));
+ zoom.addEventListener("click", () => zoom.classList.remove("on"));
+ document.addEventListener("keydown", e => {{ if (e.key === "Escape") zoom.classList.remove("on"); }});
+</script>
+</body></html>
+""", encoding="utf-8")
+    return page
+
+
+# --------------------------------------------------------------------------- main
+
+def main():
+    for stream in (sys.stdout, sys.stderr):
+        stream.reconfigure(encoding="utf-8", errors="replace")
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = ap.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("projects")
+    s = sub.add_parser("setup")
+    s.add_argument("--libs-dir", default=os.path.join(os.path.expanduser("~"), "kicad-ext-libs"))
+    sub.add_parser("hygiene")
+    c = sub.add_parser("check")
+    c.add_argument("project", help="project directory, e.g. hdw/DSP_board/rev_a/Audio_Visualiser_DSP")
+    c.add_argument("--out", default="ci-out/reports")
+    o = sub.add_parser("outputs")
+    o.add_argument("project")
+    o.add_argument("--out", default="ci-out/outputs")
+    o.add_argument("--label", help="name suffix for zips, e.g. a tag or short SHA")
+    o.add_argument("--no-3d", action="store_true")
+    d = sub.add_parser("diff")
+    d.add_argument("--base", required=True, help="base commit to compare against")
+    d.add_argument("--out", default="ci-out/visual-diff")
+    args = ap.parse_args()
+    handler = {"projects": cmd_projects, "setup": cmd_setup, "hygiene": cmd_hygiene,
+               "check": cmd_check, "outputs": cmd_outputs, "diff": cmd_diff}[args.cmd]
+    sys.exit(handler(args) or 0)
+
+
+if __name__ == "__main__":
+    main()
