@@ -8,26 +8,24 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at -20.32 30.48 0)
+		(property "Reference" "U?"
+			(at 0 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "dsPIC33AK256MPS103"
-			(at -20.32 27.94 0)
+			(at 0 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-36-1EP_5x5mm_P0.4mm_EP3.7x3.7mm"
@@ -157,7 +155,7 @@
 				)
 			)
 			(pin power_in line
-				(at -16.51 17.78 0)
+				(at -16.51 -7.62 0)
 				(length 3.81)
 				(name "VDD"
 					(effects
@@ -193,7 +191,7 @@
 				)
 			)
 			(pin power_in line
-				(at -16.51 15.24 0)
+				(at -16.51 -10.16 0)
 				(length 3.81)
 				(name "VDD"
 					(effects
@@ -229,7 +227,7 @@
 				)
 			)
 			(pin power_in line
-				(at -16.51 12.7 0)
+				(at -16.51 -12.7 0)
 				(length 3.81)
 				(name "VDD"
 					(effects
@@ -337,7 +335,7 @@
 				)
 			)
 			(pin power_in line
-				(at -16.51 10.16 0)
+				(at -16.51 -15.24 0)
 				(length 3.81)
 				(name "VDD"
 					(effects

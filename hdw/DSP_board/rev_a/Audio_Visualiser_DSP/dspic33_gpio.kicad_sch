@@ -1,0 +1,982 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "16d19d2c-713d-4a87-8ab7-da2755d22f15")
+	(paper "A")
+	(lib_symbols
+		(symbol "dsPIC33AK256MPS103:dsPIC33AK256MPS103"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -20.32 30.48 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "dsPIC33AK256MPS103"
+				(at -20.32 27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:QFN-36-1EP_5x5mm_P0.4mm_EP3.7x3.7mm"
+				(at -20.32 25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MCU16/ProductDocuments/DataSheets/dsPIC33AK256MPS306-Family-Data-Sheet-DS70005629.pdf"
+				(at -20.32 22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "200 MHz 32-bit dsPIC33A Digital Signal Controller (DSC), FPU, High-Res PWM, High-Speed ADC, 256KB Flash, 64KB SRAM, 36-Pin VQFN, no CAN FD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Keywords" "dsPIC33A DSC digital signal controller microcontroller motor control FOC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Digi-Key PN" "DSPIC33AK256MPS103-I/M7"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(symbol "dsPIC33AK256MPS103_1_1"
+				(rectangle
+					(start -12.7 25.4)
+					(end 12.7 -30.48)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 16.51 10.16 180)
+					(length 3.81)
+					(name "AVSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 16.51 22.86 180)
+					(length 3.81)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -16.51 -20.32 0)
+					(length 3.81)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -16.51 17.78 0)
+					(length 3.81)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -16.51 -22.86 0)
+					(length 3.81)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -16.51 15.24 0)
+					(length 3.81)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -16.51 -25.4 0)
+					(length 3.81)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -16.51 12.7 0)
+					(length 3.81)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 16.51 5.08 180)
+					(length 3.81)
+					(name "SWVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 16.51 -7.62 180)
+					(length 3.81)
+					(name "Lx"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 16.51 -20.32 180)
+					(length 3.81)
+					(name "SWVSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 16.51 -27.94 180)
+					(length 3.81)
+					(name "VDDCORE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -16.51 -27.94 0)
+					(length 3.81)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -16.51 10.16 0)
+					(length 3.81)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -16.51 22.86 0)
+					(length 3.81)
+					(name "~{MCLR}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "dsPIC33AK256MPS103_2_1"
+				(rectangle
+					(start -60.96 20.32)
+					(end 60.96 -15.24)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 17.78 0)
+					(length 3.81)
+					(name "RA0/IOMAF2/SCL2/RP1/CVDAN0/AD1AN4/AD1ANN1/PGD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 5.08 0)
+					(length 3.81)
+					(name "RA7/IOMAF1/SDA2/RP8/CVDAN7/AD3AN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 15.24 0)
+					(length 3.81)
+					(name "RA1/RP2/CMP4D/CVDAN1/AD3AN0/AD3ANN1/DACOUT1/PGC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 12.7 0)
+					(length 3.81)
+					(name "RA2/RP3/CMP1A/CVDAN2/AD1AN0/OA1OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 10.16 0)
+					(length 3.81)
+					(name "RA3/RP4/CMP1C/CMPCN/CVDAN3/AD1AN2/AD1ANN2/OA1IN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 7.62 0)
+					(length 3.81)
+					(name "RA4/INT0/RP5/CMP1B/CVDAN4/AD3AN4/AD2AN5/AD1AN1/OA1IN+/UREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 0 0)
+					(length 3.81)
+					(name "RB0/RP17/CMP2A/CVDTX0/CVDAN16/AD2AN0/OA2OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 -2.54 0)
+					(length 3.81)
+					(name "RB1/RP18/CMP2C/CVDTX1/CVDAN17/AD2AN2/AD2ANN2/OA2IN-/TMS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 -5.08 0)
+					(length 3.81)
+					(name "RB2/RP19/CMP2B/CVDTX2/CVDAN18/AD2AN1/OA2IN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 -7.62 0)
+					(length 3.81)
+					(name "RB3/SDA1/RP20/CMP4A/CVDTX3/CVDAN19/AD2AN3/AD2ANN1/PGD1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 -10.16 0)
+					(length 3.81)
+					(name "RB4/SCL1/RP21/CMP4B/CVDTX4/CVDAN20/AD2AN4/PGC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -64.77 -12.7 0)
+					(length 3.81)
+					(name "RB6/RP23/ISRC0/IBIAS0/ALLCMP/CVDTX6/CVDAN22/AD3AN2/AD3ANN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 64.77 17.78 180)
+					(length 3.81)
+					(name "OSCO/CLKO/RP33/IOMAF5/RC0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 64.77 15.24 180)
+					(length 3.81)
+					(name "OSCI/RP34/IOMAF6/RC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 64.77 12.7 180)
+					(length 3.81)
+					(name "PGC3/RP35/PWM4H/IOMAD7/RC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 64.77 7.62 180)
+					(length 3.81)
+					(name "PGD3/RP38/I3CSCL1/PWM4L/IOMAD6/RC5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 64.77 10.16 180)
+					(length 3.81)
+					(name "RP37/I3CSDA1/IOMAD4/RC4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 64.77 2.54 180)
+					(length 3.81)
+					(name "RP49/PWM2H/IOMAD3/RD0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 64.77 0 180)
+					(length 3.81)
+					(name "TCK/RP50/PWM2L/IOMAD2/RD1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 64.77 -2.54 180)
+					(length 3.81)
+					(name "TDO/RP51/PWM1H/IOMAD1/RD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 64.77 -5.08 180)
+					(length 3.81)
+					(name "TDI/RP52/PWM1L/IOMAD0/RD3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "dsPIC33AK256MPS103:dsPIC33AK256MPS103")
+		(at 134.62 105.41 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29ef3395-4fb9-4700-848b-4ff6a7329d5e")
+		(property "Reference" "U?"
+			(at 134.62 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "dsPIC33AK256MPS103"
+			(at 134.62 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:QFN-36-1EP_5x5mm_P0.4mm_EP3.7x3.7mm"
+			(at 114.3 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/MCU16/ProductDocuments/DataSheets/dsPIC33AK256MPS306-Family-Data-Sheet-DS70005629.pdf"
+			(at 114.3 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "200 MHz 32-bit dsPIC33A Digital Signal Controller (DSC), FPU, High-Res PWM, High-Speed ADC, 256KB Flash, 64KB SRAM, 36-Pin VQFN, no CAN FD"
+			(at 134.62 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Keywords" "dsPIC33A DSC digital signal controller microcontroller motor control FOC"
+			(at 134.62 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key PN" "DSPIC33AK256MPS103-I/M7"
+			(at 134.62 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "16"
+			(uuid "829c2aa1-c383-478a-a45f-fb24600c0c07")
+		)
+		(pin "18"
+			(uuid "6a3f3999-42a0-48d0-be1f-f421aee74501")
+		)
+		(pin "35"
+			(uuid "e7ae31b5-2b6d-43e5-8a2d-301d81c45215")
+		)
+		(pin "3"
+			(uuid "eab83758-7815-4906-b0e0-efadd345fc14")
+		)
+		(pin "7"
+			(uuid "faa4a139-9166-4117-90c2-38227cdce401")
+		)
+		(pin "4"
+			(uuid "675d3003-8fba-4745-b1b9-37e41a9d28da")
+		)
+		(pin "20"
+			(uuid "8e324183-6088-4940-9483-b07cbfeb84a8")
+		)
+		(pin "21"
+			(uuid "42d549c9-3340-4f91-8895-b697962d8b40")
+		)
+		(pin "12"
+			(uuid "254ac767-855a-4926-81bc-800082b9e162")
+		)
+		(pin "23"
+			(uuid "45f542a7-9284-4072-a9c2-525e2e6abced")
+		)
+		(pin "32"
+			(uuid "300457aa-b5f3-47b1-a760-1db11c7111d1")
+		)
+		(pin "15"
+			(uuid "9da47e59-ea19-442d-82a4-fb0f8f7a3c51")
+		)
+		(pin "14"
+			(uuid "884dde5e-2efc-41a8-80a1-33ee56da9cf1")
+		)
+		(pin "17"
+			(uuid "a65d49e5-1fee-457d-9fae-2e1227cccb68")
+		)
+		(pin "33"
+			(uuid "e2dcf27b-ec0c-480f-8467-4f86c90a6eaf")
+		)
+		(pin "6"
+			(uuid "b04e5927-175b-4984-bb64-7747ebb94709")
+		)
+		(pin "29"
+			(uuid "dfa50be6-e3f8-4a8c-b2c8-5ff63285d14b")
+		)
+		(pin "8"
+			(uuid "55577793-9453-4a90-a709-87d294695dc0")
+		)
+		(pin "2"
+			(uuid "e911975c-95ac-4165-bc62-52c9f089ab24")
+		)
+		(pin "31"
+			(uuid "b362b664-8dc1-433d-9743-fc0481ca35db")
+		)
+		(pin "13"
+			(uuid "ba21efeb-3e85-486e-8a25-70d70e0d5e3a")
+		)
+		(pin "36"
+			(uuid "5ee0acf3-1bcd-4b19-8885-e60e69f6e4d8")
+		)
+		(pin "30"
+			(uuid "f2f29868-cd4f-429d-ad4b-600497f2e8e0")
+		)
+		(pin "10"
+			(uuid "b0290a09-d2c8-4f0f-a6ad-22db992b61dd")
+		)
+		(pin "11"
+			(uuid "78c12fd6-c72a-4f4c-a10a-0348755a1315")
+		)
+		(pin "9"
+			(uuid "c850e7d2-512d-44cd-8362-2d2a272ddfe9")
+		)
+		(pin "24"
+			(uuid "b486e7df-79a0-4cff-9377-959ed320881d")
+		)
+		(pin "19"
+			(uuid "3ff301ef-4ac6-463f-be06-77611eaf19c6")
+		)
+		(pin "22"
+			(uuid "b64f143c-9a10-424f-a60f-d1875b7794f7")
+		)
+		(pin "1"
+			(uuid "9098712f-c25f-47bc-8057-9253103c9040")
+		)
+		(pin "28"
+			(uuid "9afca752-d637-498b-b95c-ce673c6c0a69")
+		)
+		(pin "5"
+			(uuid "117da881-f73e-4fae-92fc-ab265d35a99b")
+		)
+		(pin "25"
+			(uuid "9e3cd3a3-a5e5-45b0-b6fa-e4712355127c")
+		)
+		(pin "34"
+			(uuid "52e9c773-d6ed-4073-a592-5da805d5d8a1")
+		)
+		(pin "27"
+			(uuid "fe3dffa3-408e-4704-8508-9578670e4178")
+		)
+		(pin "26"
+			(uuid "c6388e74-c4d9-43cb-bc30-ebe4a33b85d8")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "U?")
+					(unit 2)
+				)
+			)
+		)
+	)
+)
