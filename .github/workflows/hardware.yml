@@ -1,0 +1,127 @@
+# KiCad hardware CI: hygiene, ERC/DRC/library checks, fab outputs, tagged releases.
+# Behaviour per project is configured in hdw/ci-config.json; logic lives in tools/ci/kicad_ci.py.
+name: Hardware
+
+on:
+  push:
+    branches: ['**']
+    tags: ['hw-*']  # tag e.g. hw-dsp-rev_a-v1 to publish a release with fab outputs
+    paths:
+      - 'hdw/**'
+      - 'tools/ci/**'
+      - '.github/workflows/hardware.yml'
+  pull_request:
+    paths:
+      - 'hdw/**'
+      - 'tools/ci/**'
+      - '.github/workflows/hardware.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hardware-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref_type != 'tag' }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  hygiene:
+    name: Repo hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python3 tools/ci/kicad_ci.py hygiene
+
+  discover:
+    name: Find KiCad projects
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.find.outputs.matrix }}
+      count: ${{ steps.find.outputs.count }}
+    steps:
+      - uses: actions/checkout@v7
+      - id: find
+        run: python3 tools/ci/kicad_ci.py projects
+
+  check:
+    name: ERC / DRC / libraries (${{ matrix.name }})
+    needs: discover
+    if: needs.discover.outputs.count != '0'
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.discover.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Configure KiCad libraries
+        run: python3 tools/ci/kicad_ci.py setup
+      - name: Run checks
+        run: python3 tools/ci/kicad_ci.py check "${{ matrix.dir }}" --out "ci-out/reports"
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: reports-${{ matrix.slug }}
+          path: ci-out/reports
+          if-no-files-found: ignore
+
+  outputs:
+    name: Fab outputs (${{ matrix.name }})
+    needs: discover
+    if: needs.discover.outputs.count != '0'
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0-full  # -full includes the stock 3D models for STEP/renders
+      options: --user root
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.discover.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Configure KiCad libraries
+        run: python3 tools/ci/kicad_ci.py setup
+      - name: Generate outputs
+        run: |
+          label="${{ github.ref_type == 'tag' && github.ref_name || '' }}"
+          python3 tools/ci/kicad_ci.py outputs "${{ matrix.dir }}" \
+            --out "ci-out/outputs" --label "${label:-${GITHUB_SHA::7}}"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: outputs-${{ matrix.slug }}
+          path: ci-out/outputs
+
+  release:
+    name: Publish release
+    needs: [hygiene, check, outputs]
+    if: github.ref_type == 'tag' && startsWith(github.ref_name, 'hw-')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: outputs-*
+          path: dist
+      - name: Package outputs
+        run: |
+          mkdir release
+          for dir in dist/outputs-*; do
+            slug="${dir#dist/outputs-}"
+            cp "$dir"/fab/*.zip release/
+            (cd "$dir" && zip -qr "$GITHUB_WORKSPACE/release/${slug}-${GITHUB_REF_NAME}-all-outputs.zip" .)
+          done
+          ls -l release
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" release/* \
+            --title "$GITHUB_REF_NAME" --verify-tag \
+            --notes "Hardware outputs built by CI from ${GITHUB_SHA}. Gerber zips are ready to upload to a fab; the all-outputs zips also contain schematic/PCB PDFs, BOM, pick-and-place, STEP and renders."
