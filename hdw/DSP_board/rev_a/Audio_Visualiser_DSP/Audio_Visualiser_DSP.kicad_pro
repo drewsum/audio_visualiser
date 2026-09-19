@@ -366,12 +366,48 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Digi-Key PN",
+          "name": "Digi-Key PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "display_footprint",
+          "name": "display_footprint",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dielectric",
+          "name": "Dielectric",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -423,6 +459,58 @@
     [
       "97a4dfb8-0e16-46f1-9709-8d2007dd0cd3",
       "Root"
+    ],
+    [
+      "eeadeafa-75b8-4cba-a8b8-51c7c2ded112",
+      "12V Power Input"
+    ],
+    [
+      "bc67f37c-ab41-4ca7-b782-e7219d2b33ee",
+      "12V Telemetry"
+    ],
+    [
+      "b2362e66-49f5-4e26-9e9f-2de376dec3c9",
+      "3.3V Power Supply"
+    ],
+    [
+      "591fe591-cb36-4c0a-afd1-91c877291a0e",
+      "3.3V Telemetry"
+    ],
+    [
+      "806a3c52-df0b-4062-94f8-08856f5ec77e",
+      "LED Power Supply"
+    ],
+    [
+      "820db009-2be6-41d5-a14a-c1721a189028",
+      "LED Telemetry"
+    ],
+    [
+      "3d6836fb-edea-466f-ab73-f835ba2b7cb8",
+      "dsPIC33 Programming"
+    ],
+    [
+      "0e59d275-c36c-4218-b5cc-8096e466612c",
+      "dsPIC33 Power"
+    ],
+    [
+      "b9973229-0ab3-4009-9568-e1a3a7a57b16",
+      "dsPIC33 GPIO"
+    ],
+    [
+      "bb1d00b4-7cec-46a4-b31c-4e1779527b32",
+      "USB UART Bridge"
+    ],
+    [
+      "546058cd-0694-4b2f-adfe-f6c0887c2b7f",
+      "Platform ETC"
+    ],
+    [
+      "c320f2e6-9910-42de-853d-76db6e9bdf8b",
+      "PGOOD LEDs"
+    ],
+    [
+      "121d1b20-1614-4f9c-b397-46f27db3840c",
+      "Status LEDs"
     ]
   ],
   "text_variables": {},
