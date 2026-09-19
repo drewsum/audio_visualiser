@@ -47,7 +47,7 @@ FORBIDDEN_PATTERNS = [
     "*.gbs", "*.gtp", "*.gbp", "*.gm1", "*.gko", "*.g[0-9]", "*.g[0-9][0-9]",
 ]
 # Outputs KiCad writes next to the project as <project>.<ext>; CI builds these.
-GENERATED_PROJECT_EXTS = [".pdf", ".step", ".stp", ".wrl", "-pos.csv", ".csv", ".ipc", ".d356"]
+GENERATED_PROJECT_EXTS = [".step", ".stp", ".wrl", "-pos.csv", ".csv", ".ipc", ".d356"]
 VERSIONED_EXTS = {".kicad_sch", ".kicad_pcb", ".kicad_sym", ".kicad_mod"}
 
 
@@ -125,7 +125,7 @@ def find_projects(root=REPO, config=None):
 
 
 def project_modes(config, project_dir):
-    modes = {"erc": "enforce", "drc": "enforce", "libraries": "enforce"}
+    modes = {"erc": "enforce", "drc": "enforce", "libraries": "enforce", "pdf": "report"}
     modes.update(config.get("defaults", {}))
     modes.update(config.get("projects", {}).get(project_dir, {}))
     for key, value in modes.items():
@@ -204,6 +204,24 @@ def cmd_setup(args):
 
 # --------------------------------------------------------------------------- hygiene
 
+def check_schematic_pdf(project_dir, name, tracked):
+    """The committed <project>.pdf must exist and be at least as new as the schematics."""
+    pdf = f"{project_dir}/{name}.pdf"
+    if pdf not in tracked:
+        return pdf, (f"No schematic PDF committed. Plot the schematic to {name}.pdf "
+                     "(File > Plot > PDF, all pages) and commit it.")
+    if git("rev-parse", "--is-shallow-repository").strip() == "true":
+        return None  # history needed to compare; the workflow checks out with fetch-depth 0
+    pdf_commit = git("log", "-1", "--format=%H", "--", pdf).strip()
+    if not pdf_commit:
+        return None  # added but not yet committed
+    newer = git("rev-list", f"{pdf_commit}..HEAD", "--", f"{project_dir}/*.kicad_sch").split()
+    if newer:
+        return pdf, (f"Schematic changed in {len(newer)} commit(s) since {name}.pdf was last "
+                     f"committed ({pdf_commit[:7]}). Re-plot the schematic PDF and commit it.")
+    return None
+
+
 def cmd_hygiene(args):
     config = load_config()
     want = config["kicad_version"]
@@ -211,19 +229,19 @@ def cmd_hygiene(args):
     project_stems = {(str(PurePosixPath(p).parent), PurePosixPath(p).stem)
                      for p in tracked if p.endswith(".kicad_pro")}
     roots = tuple(r.rstrip("/") + "/" for r in config.get("project_roots", ["hdw"]))
-    problems = []
+    problems = []  # (path, message, fails)
 
     for path in tracked:
         pp = PurePosixPath(path)
         hit = next((pat for pat in FORBIDDEN_PATTERNS
                     if any(fnmatch.fnmatch(part, pat) for part in pp.parts)), None)
         if hit:
-            problems.append((path, f"should not be committed (matches '{hit}')"))
+            problems.append((path, f"should not be committed (matches '{hit}')", True))
             continue
         for ext in GENERATED_PROJECT_EXTS:
             if pp.name.endswith(ext) and (str(pp.parent), pp.name[: -len(ext)]) in project_stems:
                 problems.append((path, "generated output next to the project; CI builds this - "
-                                       "remove it with 'git rm --cached'"))
+                                       "remove it with 'git rm --cached'", True))
                 break
         if pp.suffix in VERSIONED_EXTS and path.startswith(roots):
             head = (REPO / path).read_text(encoding="utf-8", errors="replace")[:4096]
@@ -231,19 +249,27 @@ def cmd_hygiene(args):
             found = m.group(1) if m else "unknown (pre-KiCad 7 format)"
             if found != want:
                 problems.append((path, f"saved by KiCad {found}; this repo expects KiCad {want}. "
-                                       f"Open and re-save it in KiCad {want}."))
+                                       f"Open and re-save it in KiCad {want}.", True))
+
+    tracked_set = set(tracked)
+    for p in find_projects(config=config):
+        mode = project_modes(config, p["dir"])["pdf"]
+        issue = check_schematic_pdf(p["dir"], p["name"], tracked_set) if mode != "off" else None
+        if issue:
+            problems.append((*issue, mode == "enforce"))
 
     lines = ["## Repository hygiene", ""]
     if problems:
-        lines += ["| File | Problem |", "|---|---|"]
-        for path, msg in problems:
-            gh_annotation("error", msg, file=path, title="Hygiene")
-            lines.append(f"| `{path}` | {msg} |")
+        lines += ["| File | Problem | Result |", "|---|---|---|"]
+        for path, msg, fails in problems:
+            gh_annotation("error" if fails else "warning", msg, file=path, title="Hygiene")
+            lines.append(f"| `{path}` | {msg} | {'❌ fail' if fails else '⚠️ warning'} |")
     else:
-        lines.append(f"All {len(tracked)} tracked files OK (KiCad {want}, no backups/generated outputs).")
+        lines.append(f"All {len(tracked)} tracked files OK (KiCad {want}, no junk files, "
+                     "schematic PDFs up to date).")
     append_summary("\n".join(lines))
     print("\n".join(lines))
-    return 1 if problems else 0
+    return 1 if any(fails for _, _, fails in problems) else 0
 
 
 # --------------------------------------------------------------------------- check
