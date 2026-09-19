@@ -1,0 +1,37 @@
+{
+  "kicad_version": "10.0",
+  "project_roots": ["hdw"],
+
+  "external_libraries": [
+    {
+      "repo": "https://github.com/drewsum/KiCad_Custom_Libs_v6.git",
+      "ref": "main",
+      "symbol_libs": {
+        "Custom Library": "Custom Library.kicad_sym",
+        "Custom_Library": "Custom Library.kicad_sym"
+      },
+      "footprint_libs": {
+        "Custom Footprints Library": "Custom Footprints Library.pretty"
+      }
+    }
+  ],
+
+  "defaults": {
+    "erc": "enforce",
+    "drc": "enforce",
+    "libraries": "enforce"
+  },
+
+  "projects": {
+    "hdw/DSP_board/rev_a/Audio_Visualiser_DSP": {
+      "erc": "report",
+      "drc": "report"
+    }
+  },
+
+  "bom": {
+    "fields": "Reference,Value,Footprint,Digi-Key PN,${QUANTITY},${DNP}",
+    "labels": "Refs,Value,Footprint,Digi-Key PN,Qty,DNP",
+    "group_by": "Value,Footprint,Digi-Key PN"
+  }
+}

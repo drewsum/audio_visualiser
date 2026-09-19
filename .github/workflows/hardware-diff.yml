@@ -1,0 +1,45 @@
+# Renders before/after images of changed schematic pages and PCB layers on pull requests.
+# Download the "visual-diff" artifact and open index.html (red = removed, green = added).
+name: Hardware visual diff
+
+on:
+  pull_request:
+    paths:
+      - 'hdw/**/*.kicad_sch'
+      - 'hdw/**/*.kicad_pcb'
+      - 'tools/ci/**'
+      - '.github/workflows/hardware-diff.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hardware-diff-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  diff:
+    name: Visual diff
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Install image tools
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          apt-get update -qq
+          apt-get install -y -qq --no-install-recommends librsvg2-bin imagemagick
+      - name: Render diff
+        run: python3 tools/ci/kicad_ci.py diff --base "${{ github.event.pull_request.base.sha }}" --out ci-out/visual-diff
+      - uses: actions/upload-artifact@v7
+        with:
+          name: visual-diff
+          path: ci-out/visual-diff
