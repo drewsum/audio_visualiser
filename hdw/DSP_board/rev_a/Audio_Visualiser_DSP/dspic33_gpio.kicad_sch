@@ -4,6 +4,9 @@
 	(generator_version "10.0")
 	(uuid "16d19d2c-713d-4a87-8ab7-da2755d22f15")
 	(paper "A")
+	(title_block
+		(date "2023-12-25")
+	)
 	(lib_symbols
 		(symbol "Custom Library:74LVC1G97_Power_NOT"
 			(pin_names
@@ -428,6 +431,95 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Custom_Library:I2C_Address"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "DOC"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "Custom_Library_I2C_Address"
+				(at -11.43 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "I2C_Address_0_0"
+				(rectangle
+					(start -12.7 5.08)
+					(end 12.7 -2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "I2C 7-Bit Address:"
+					(at -11.43 2.54 0)
+					(effects
+						(font
+							(size 1.524 1.524)
+							(bold yes)
+						)
+						(justify left)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Custom_Library:R_Custom"
 			(pin_numbers
 				(hide yes)
@@ -815,6 +907,248 @@
 					(at 2.54 12.7 270)
 					(length 2.54)
 					(name "VCCB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Interface_Expansion:PCA9536DP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -8.89 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PCA9536DP"
+				(at 6.35 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:TSSOP-8_3x3mm_P0.65mm"
+				(at 25.4 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/PCA9536.pdf"
+				(at -5.08 -43.18 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "4-bit I2C-bus and SMBus IO port, TSSOP-8"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "i2c io port"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TSSOP*3x3mm*P0.65mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PCA9536DP_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "PCA9536DP_1_1"
+				(pin bidirectional line
+					(at 12.7 2.54 180)
+					(length 2.54)
+					(name "IO0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "IO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "IO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1945,6 +2279,28 @@
 		)
 		(uuid "74e53dbc-ff36-4a3f-a913-8de552b2bec0")
 	)
+	(text "RP35 = U1TX"
+		(exclude_from_sim no)
+		(at 240.03 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e353e45-f59f-4da9-97c4-6166a9e71a4e")
+	)
+	(text "RP33 = U1RX"
+		(exclude_from_sim no)
+		(at 240.03 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9be2029d-5cb2-41e9-9256-2d437bc3d884")
+	)
 	(text "RP52 = SDO2"
 		(exclude_from_sim no)
 		(at 240.03 107.95 0)
@@ -2013,6 +2369,19 @@
 			(justify left bottom)
 		)
 		(uuid "d04310ad-a48e-4a8e-8dc4-4a658b829aed")
+	)
+	(text "ADD HARDSTRAPS FOR CONFIG STUFF"
+		(exclude_from_sim no)
+		(at 140.97 26.67 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "e7d19872-9a4f-4057-9761-7ad410efdef7")
 	)
 	(text "SCL1/PGC1"
 		(exclude_from_sim no)
@@ -2158,18 +2527,18 @@
 		)
 	)
 	(global_label "USB_UART_RX"
-		(shape output)
-		(at 49.53 53.34 180)
+		(shape input)
+		(at 203.2 83.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "1a0814a8-b2b0-45ae-809b-57986da37559")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.7428 53.34 0)
+			(at 219.0666 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2177,7 +2546,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 	)
@@ -2242,6 +2611,54 @@
 		(uuid "3222479b-0e22-4dc2-9ca4-faa34ec3ee41")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 120.0234 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CPU_Trap_LED"
+		(shape output)
+		(at 255.27 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "338dfe85-cebe-4db9-9438-a5b0924c36d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 238.9802 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Reset_LED"
+		(shape output)
+		(at 256.54 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3a410c6e-cbfc-427a-b2fb-7e875d7bb22e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.9391 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2325,9 +2742,9 @@
 			)
 		)
 	)
-	(global_label "USB_UART_TX"
-		(shape input)
-		(at 49.53 55.88 180)
+	(global_label "I2C_SDA"
+		(shape bidirectional)
+		(at 127 52.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2335,9 +2752,57 @@
 			)
 			(justify right)
 		)
+		(uuid "7232c43a-148d-452b-905c-c60c7c5b9483")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 115.2835 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "USB_UART_TX"
+		(shape output)
+		(at 203.2 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
 		(uuid "7787033e-3470-40aa-bda4-f98b63218982")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.0452 55.88 0)
+			(at 218.7642 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Error_LED"
+		(shape output)
+		(at 224.79 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "793dfe31-5ceb-4fe4-afcd-cf28be76968b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 212.7335 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2373,6 +2838,30 @@
 			)
 		)
 	)
+	(global_label "PGOOD_LED_SHDN"
+		(shape output)
+		(at 223.52 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7b69b3cc-88d7-46de-a301-408db2cb860a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.499 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "DSPIC33_AUDIO_RIGHT"
 		(shape input)
 		(at 73.66 106.68 180)
@@ -2386,6 +2875,30 @@
 		(uuid "8e4aa2c6-80c9-43ff-a77d-3e402b25a0b9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 49.629 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape input)
+		(at 127 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8e9ba157-bfb4-4382-bea0-fd9ea2c0a27d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.4553 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2490,6 +3003,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "Heartbeat_LED"
+		(shape output)
+		(at 236.22 137.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d7d6bb74-edc2-42a1-86e3-d37795077120")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.6278 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -2762,6 +3299,130 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom_Library:C_Custom")
+		(at 104.14 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "06ad8803-31e2-4d22-9f82-407c0f7a1436")
+		(property "Reference" "C?"
+			(at 104.775 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 104.775 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitors_SMD:C_0603"
+			(at 105.1052 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.775 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "display_footprint" "0402"
+			(at 100.33 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 100.33 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 100.33 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Digi-Key PN" "1276-1935-1-ND"
+			(at 114.935 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "12f81f5a-6269-4573-995e-c812fdbfaa94")
+		)
+		(pin "2"
+			(uuid "db6c432a-22ab-4818-9d18-7c3d50eb837f")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 148.59 179.07 0)
 		(unit 1)
@@ -2772,7 +3433,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1500cf15-ad7f-4950-8d0c-7c6a74e46b2c")
-		(property "Reference" "#PWR0138"
+		(property "Reference" "#PWR?"
 			(at 148.59 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -2831,7 +3492,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0138")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -2947,7 +3608,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "24e6ad51-1cdf-445a-a084-dc0f968c0cc8")
-		(property "Reference" "#PWR0133"
+		(property "Reference" "#PWR?"
 			(at 137.16 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -3007,7 +3668,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0133")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -3233,7 +3894,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2ebd3333-8f01-49b1-a0d5-68624f82bd2e")
-		(property "Reference" "#PWR0120"
+		(property "Reference" "#PWR?"
 			(at 78.74 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -3292,7 +3953,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0120")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -3309,7 +3970,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4ac1d0ff-f49e-42bf-b857-9e48af129dfc")
-		(property "Reference" "#PWR0132"
+		(property "Reference" "#PWR?"
 			(at 78.74 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -3369,7 +4030,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0132")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -3386,7 +4047,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4e40724b-5659-4f62-b71a-b36cd3098783")
-		(property "Reference" "#PWR0123"
+		(property "Reference" "#PWR?"
 			(at 78.74 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -3446,7 +4107,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0123")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -3812,7 +4473,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a833df7-b278-42a7-98d4-4c8fb7a0b498")
-		(property "Reference" "#PWR0136"
+		(property "Reference" "#PWR?"
 			(at 132.08 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -3871,7 +4532,104 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0136")
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Interface_Expansion:PCA9536DP")
+		(at 139.7 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "80700ea6-93f8-410c-baf2-f6ba15267e5e")
+		(property "Reference" "U?"
+			(at 130.81 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PCA9536DP"
+			(at 146.05 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-8_3x3mm_P0.65mm"
+			(at 165.1 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.nxp.com/docs/en/data-sheet/PCA9536.pdf"
+			(at 134.62 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4-bit I2C-bus and SMBus IO port, TSSOP-8"
+			(at 139.7 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d9a53ca3-03b5-4cd6-9050-4c9f53d81802")
+		)
+		(pin "5"
+			(uuid "a5808d2d-75f3-4ea8-abd5-cee0c33670f0")
+		)
+		(pin "3"
+			(uuid "1e3b19f9-8e2d-4994-86d7-dc0a59f37fec")
+		)
+		(pin "1"
+			(uuid "590405bd-6b4f-4953-9f4a-718d2a175fa0")
+		)
+		(pin "8"
+			(uuid "bfc99124-62c0-4095-9d8f-5116c2acb6af")
+		)
+		(pin "4"
+			(uuid "aac8a120-ee0c-4452-a674-0d42064bbf47")
+		)
+		(pin "6"
+			(uuid "357d6360-4e16-4fcf-9102-91066f4f809c")
+		)
+		(pin "7"
+			(uuid "9f31f500-a275-4c4b-986e-a4054755d505")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -3888,7 +4646,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83dd7382-1180-4cc3-94f6-207a7736522a")
-		(property "Reference" "#PWR0142"
+		(property "Reference" "#PWR?"
 			(at 96.52 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -3947,7 +4705,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0142")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -3964,7 +4722,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c011ece-2018-4790-a6e8-e1cf8129692b")
-		(property "Reference" "#PWR0140"
+		(property "Reference" "#PWR?"
 			(at 114.3 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -4023,7 +4781,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0140")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -4040,7 +4798,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9eeffcd6-a3eb-4fd0-afbd-9b47a58d82e1")
-		(property "Reference" "#PWR0137"
+		(property "Reference" "#PWR?"
 			(at 148.59 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -4100,7 +4858,82 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0137")
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom_Library:I2C_Address")
+		(at 105.41 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a7ad5e17-5f83-4b69-8039-eea3250fa5ba")
+		(property "Reference" "DOC?"
+			(at 105.41 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "0x41"
+			(at 93.98 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "DOC?")
 					(unit 1)
 				)
 			)
@@ -4483,7 +5316,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4107eb3-24aa-49c0-92fd-c18f402e8b22")
-		(property "Reference" "#PWR0135"
+		(property "Reference" "#PWR?"
 			(at 132.08 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -4543,7 +5376,83 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0135")
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 62.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c54e6780-ac4f-4f07-8a7f-38a326af05ba")
+		(property "Reference" "#PWR019"
+			(at 104.14 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5678dd0-b464-4d3b-8a08-f360d61703bb")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -4560,7 +5469,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb524674-4783-4938-b438-b7ce869ed9c6")
-		(property "Reference" "#PWR0139"
+		(property "Reference" "#PWR?"
 			(at 139.7 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -4619,7 +5528,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0139")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -4636,7 +5545,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3d8b4a3-4d9f-4b0e-815f-cba2470ae0aa")
-		(property "Reference" "#PWR0134"
+		(property "Reference" "#PWR?"
 			(at 142.24 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -4696,7 +5605,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0134")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -4713,7 +5622,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d45534b7-5d0c-4d15-b1a9-46cdf4917462")
-		(property "Reference" "#PWR0141"
+		(property "Reference" "#PWR?"
 			(at 99.06 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -4772,7 +5681,236 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0141")
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 139.7 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dcfba010-60f4-4a67-b8b3-c58ec15b84e8")
+		(property "Reference" "#PWR017"
+			(at 139.7 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 139.7 38.354 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e06c57fa-fe92-4ad0-933b-c2871673f3b3")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "df65841d-9bf8-4ec5-bbd5-f2e90a752b13")
+		(property "Reference" "#PWR016"
+			(at 139.7 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e504862-1458-42aa-acf3-cf461267db18")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 104.14 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f30b11fa-cd58-4267-a4db-ad6f5e8ca280")
+		(property "Reference" "#PWR018"
+			(at 104.14 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 104.14 51.054 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 104.14 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3c91967-2120-426b-a2d7-15d4a935f5c7")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -4789,7 +5927,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f904f158-92ea-4ec1-a37b-b44f2c38076e")
-		(property "Reference" "#PWR0131"
+		(property "Reference" "#PWR?"
 			(at 78.74 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -4849,7 +5987,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "#PWR0131")
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
