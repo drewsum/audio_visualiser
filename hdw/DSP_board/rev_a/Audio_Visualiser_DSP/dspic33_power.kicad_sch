@@ -2043,22 +2043,16 @@
 		(uuid "eb31fee5-55e8-4537-bd59-5eb9f6a982cf")
 	)
 	(junction
-		(at 190.5 144.78)
+		(at 180.34 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "08ccc79c-8544-4fe8-bc26-4141c9a62b8d")
+		(uuid "0824e8ba-7b6a-40f1-a8b0-02cfc86bf97c")
 	)
 	(junction
 		(at 138.43 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14756c2a-d2c3-41ae-a1f1-e225056440c4")
-	)
-	(junction
-		(at 190.5 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1916c0fb-eeae-424d-8319-a0f01e14e318")
 	)
 	(junction
 		(at 204.47 105.41)
@@ -2101,6 +2095,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "888a2ca7-2a05-4286-8ea6-708b758058df")
+	)
+	(junction
+		(at 195.58 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9269b822-4e16-4de9-8ef3-8a442304b2a6")
+	)
+	(junction
+		(at 195.58 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9673406e-3eea-489b-8178-dc31be08958e")
+	)
+	(junction
+		(at 180.34 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a950b95f-2a80-4e94-9278-064fd63569f4")
 	)
 	(junction
 		(at 165.1 144.78)
@@ -2161,26 +2173,6 @@
 			(type default)
 		)
 		(uuid "0a40965b-cd45-4906-8456-44efbe483f62")
-	)
-	(wire
-		(pts
-			(xy 203.2 144.78) (xy 190.5 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "159dafdb-17a3-4156-ad2d-c13ecb7fbb08")
-	)
-	(wire
-		(pts
-			(xy 190.5 144.78) (xy 165.1 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b818a40-a0a9-473d-a064-42b882b74e6f")
 	)
 	(wire
 		(pts
@@ -2294,6 +2286,26 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 157.48) (xy 203.2 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "670bfc61-dc7f-4d74-9222-35bded6b139b")
+	)
+	(wire
+		(pts
+			(xy 180.34 157.48) (xy 165.1 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ae2be66-29f0-4db6-acd4-b7abc179b482")
+	)
+	(wire
+		(pts
 			(xy 132.08 144.78) (xy 144.78 144.78)
 		)
 		(stroke
@@ -2334,6 +2346,26 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 144.78) (xy 195.58 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d61bc3b-8eef-451f-8297-f85327840320")
+	)
+	(wire
+		(pts
+			(xy 195.58 154.94) (xy 195.58 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e40ccfb-0fc8-4d62-8ac9-8b100ce88bb2")
+	)
+	(wire
+		(pts
 			(xy 140.97 102.87) (xy 138.43 102.87)
 		)
 		(stroke
@@ -2371,6 +2403,16 @@
 			(type default)
 		)
 		(uuid "ac54a5b3-4e0a-428f-a869-1bba1e12f2a4")
+	)
+	(wire
+		(pts
+			(xy 195.58 144.78) (xy 203.2 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b067570f-e105-4585-9c1c-c994df6e38da")
 	)
 	(wire
 		(pts
@@ -2424,13 +2466,23 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 154.94) (xy 190.5 157.48)
+			(xy 180.34 154.94) (xy 180.34 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c0407efe-f6bc-456e-bc3e-6a51ae627c03")
+	)
+	(wire
+		(pts
+			(xy 180.34 157.48) (xy 195.58 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2520b60-1f74-434f-8984-dbfbc449c304")
 	)
 	(wire
 		(pts
@@ -2444,13 +2496,13 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 157.48) (xy 165.1 157.48)
+			(xy 180.34 144.78) (xy 195.58 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d26d0939-467e-49ca-9f0e-cdb99cf8cddd")
+		(uuid "c531387f-5a51-4675-a2af-1d7eebe6c2dc")
 	)
 	(wire
 		(pts
@@ -2494,7 +2546,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 147.32) (xy 190.5 144.78)
+			(xy 180.34 147.32) (xy 180.34 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2514,6 +2566,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 144.78) (xy 165.1 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e649b08b-b6e8-4d35-9510-82d7a2ec2675")
+	)
+	(wire
+		(pts
 			(xy 165.1 154.94) (xy 165.1 157.48)
 		)
 		(stroke
@@ -2521,16 +2583,6 @@
 			(type default)
 		)
 		(uuid "e9deb8c2-4c31-463e-a6ee-0ef67fc3ac8f")
-	)
-	(wire
-		(pts
-			(xy 203.2 157.48) (xy 190.5 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f00d82d8-4c4b-4125-b6bf-207bfc3a733b")
 	)
 	(wire
 		(pts
@@ -2878,7 +2930,7 @@
 	)
 	(symbol
 		(lib_id "Custom Library:C_Custom")
-		(at 190.5 151.13 0)
+		(at 165.1 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2888,7 +2940,7 @@
 		(dnp no)
 		(uuid "0d85d552-c768-488a-abcf-3fe1c22fedc3")
 		(property "Reference" "C?"
-			(at 191.135 148.59 0)
+			(at 165.735 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2899,7 +2951,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 191.135 153.67 0)
+			(at 165.735 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2910,7 +2962,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 191.4652 154.94 0)
+			(at 166.0652 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2921,7 +2973,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 191.135 148.59 0)
+			(at 165.735 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2932,7 +2984,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 190.5 151.13 0)
+			(at 165.1 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2943,7 +2995,7 @@
 			)
 		)
 		(property "display_footprint" "0805"
-			(at 186.69 148.59 0)
+			(at 161.29 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2954,7 +3006,7 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 186.69 151.13 0)
+			(at 161.29 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2965,7 +3017,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 186.69 153.67 0)
+			(at 161.29 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2976,7 +3028,7 @@
 			)
 		)
 		(property "Digi-Key PN" "PN"
-			(at 201.295 138.43 0)
+			(at 175.895 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3336,7 +3388,7 @@
 	)
 	(symbol
 		(lib_id "Custom Library:C_Custom")
-		(at 165.1 151.13 0)
+		(at 180.34 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3346,7 +3398,7 @@
 		(dnp no)
 		(uuid "195db6fb-53a3-4149-9404-3a256476b87f")
 		(property "Reference" "C?"
-			(at 165.735 148.59 0)
+			(at 180.975 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3357,7 +3409,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 165.735 153.67 0)
+			(at 180.975 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3368,7 +3420,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.0652 154.94 0)
+			(at 181.3052 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3379,7 +3431,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.735 148.59 0)
+			(at 180.975 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3390,7 +3442,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 165.1 151.13 0)
+			(at 180.34 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3401,7 +3453,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 161.29 148.59 0)
+			(at 176.53 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3412,7 +3464,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 161.29 151.13 0)
+			(at 176.53 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3423,7 +3475,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 161.29 153.67 0)
+			(at 176.53 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3434,7 +3486,7 @@
 			)
 		)
 		(property "Digi-Key PN" "PN"
-			(at 175.895 138.43 0)
+			(at 191.135 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4097,7 +4149,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductors_SMD:L_0805"
 			(at 181.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4130,7 +4182,7 @@
 				)
 			)
 		)
-		(property "display_footprint" "Foot"
+		(property "display_footprint" "0805"
 			(at 181.61 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4140,7 +4192,7 @@
 				)
 			)
 		)
-		(property "Ampacity" "A"
+		(property "Ampacity" "0.56A"
 			(at 181.61 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4150,8 +4202,19 @@
 				)
 			)
 		)
-		(property "Tolerance" "Tol"
+		(property "Tolerance" "10%"
 			(at 181.61 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "118-SRN2012T-100KCT-ND"
+			(at 181.61 85.09 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6557,6 +6620,131 @@
 		)
 		(pin "1"
 			(uuid "7282019d-8b0c-47e5-9232-36ded4a41f44")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/0e59d275-c36c-4218-b5cc-8096e466612c"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom Library:C_Custom")
+		(at 195.58 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b4d38a55-c22c-4f40-9e8e-aa48532c1972")
+		(property "Reference" "C?"
+			(at 196.215 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1000pF"
+			(at 196.215 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.5452 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.215 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 195.58 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "display_footprint" "0402"
+			(at 191.77 148.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 191.77 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 191.77 153.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Digi-Key PN" "PN"
+			(at 206.375 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4bcbe14c-fe55-4eab-b84d-030ee000282b")
+		)
+		(pin "1"
+			(uuid "bc1bbc51-05f3-4081-8f31-dabc97e52778")
 		)
 		(instances
 			(project "Audio_Visualiser_DSP"

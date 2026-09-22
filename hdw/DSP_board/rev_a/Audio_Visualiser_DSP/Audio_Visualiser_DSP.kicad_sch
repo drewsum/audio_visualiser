@@ -52,7 +52,7 @@
 		)
 	)
 	(sheet
-		(at 111.125 52.07)
+		(at 111.76 52.07)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -68,7 +68,7 @@
 		)
 		(uuid "121d1b20-1614-4f9c-b397-46f27db3840c")
 		(property "Sheetname" "Status LEDs"
-			(at 111.125 51.3584 0)
+			(at 111.76 51.3584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -79,7 +79,7 @@
 			)
 		)
 		(property "Sheetfile" "status_leds.kicad_sch"
-			(at 111.125 56.4646 0)
+			(at 111.76 56.4646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -98,7 +98,53 @@
 		)
 	)
 	(sheet
-		(at 111.125 72.39)
+		(at 111.76 123.19)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2f914f51-ed09-4f9d-b714-0a49d4e9af0f")
+		(property "Sheetname" "Power Button"
+			(at 111.76 122.4784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_button.kicad_sch"
+			(at 111.76 127.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 72.39)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -114,7 +160,7 @@
 		)
 		(uuid "363750b9-a522-47db-9c7c-ad0a11bbbf3f")
 		(property "Sheetname" "Left RCA Signal Conditioning"
-			(at 111.125 71.6784 0)
+			(at 111.76 71.6784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -125,7 +171,7 @@
 			)
 		)
 		(property "Sheetfile" "left_rca_signal_conditioning.kicad_sch"
-			(at 111.125 76.7846 0)
+			(at 111.76 76.7846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -190,7 +236,7 @@
 		)
 	)
 	(sheet
-		(at 111.125 31.75)
+		(at 111.76 31.75)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -206,7 +252,7 @@
 		)
 		(uuid "546058cd-0694-4b2f-adfe-f6c0887c2b7f")
 		(property "Sheetname" "Platform ETC"
-			(at 111.125 31.0384 0)
+			(at 111.76 31.0384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -217,7 +263,7 @@
 			)
 		)
 		(property "Sheetfile" "platform_etc.kicad_sch"
-			(at 111.125 36.1446 0)
+			(at 111.76 36.1446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -282,7 +328,7 @@
 		)
 	)
 	(sheet
-		(at 111.125 92.71)
+		(at 111.76 92.71)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -298,7 +344,7 @@
 		)
 		(uuid "5a29c93e-425e-47b5-951d-32287a4d5995")
 		(property "Sheetname" "Left Speaker Signal Conditioning"
-			(at 111.125 91.9984 0)
+			(at 111.76 91.9984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -309,7 +355,7 @@
 			)
 		)
 		(property "Sheetfile" "left_speaker_signal_conditoning.kicad_sch"
-			(at 111.125 97.1046 0)
+			(at 111.76 97.1046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -420,7 +466,7 @@
 		)
 	)
 	(sheet
-		(at 111.125 62.23)
+		(at 111.76 62.23)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -436,7 +482,7 @@
 		)
 		(uuid "8aa7e367-75ce-4abd-9555-3f77d74abac0")
 		(property "Sheetname" "Audio Input"
-			(at 111.125 61.5184 0)
+			(at 111.76 61.5184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -447,7 +493,7 @@
 			)
 		)
 		(property "Sheetfile" "audio_input.kicad_sch"
-			(at 111.125 66.6246 0)
+			(at 111.76 66.6246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -650,7 +696,7 @@
 		)
 	)
 	(sheet
-		(at 111.125 41.91)
+		(at 111.76 41.91)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -666,7 +712,7 @@
 		)
 		(uuid "c320f2e6-9910-42de-853d-76db6e9bdf8b")
 		(property "Sheetname" "PGOOD LEDs"
-			(at 111.125 41.1984 0)
+			(at 111.76 41.1984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -677,7 +723,7 @@
 			)
 		)
 		(property "Sheetfile" "pgood_leds.kicad_sch"
-			(at 111.125 46.3046 0)
+			(at 111.76 46.3046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -696,7 +742,7 @@
 		)
 	)
 	(sheet
-		(at 111.125 113.03)
+		(at 111.76 113.03)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -712,7 +758,7 @@
 		)
 		(uuid "c804c5c4-25b5-4e4d-bca8-934b42ea969b")
 		(property "Sheetname" "Programmable Gain Amplifiers"
-			(at 111.125 112.3184 0)
+			(at 111.76 112.3184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -723,7 +769,7 @@
 			)
 		)
 		(property "Sheetfile" "programmable_gain_amplifiers.kicad_sch"
-			(at 111.125 117.4246 0)
+			(at 111.76 117.4246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -742,7 +788,7 @@
 		)
 	)
 	(sheet
-		(at 111.125 82.55)
+		(at 111.76 82.55)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -758,7 +804,7 @@
 		)
 		(uuid "d186ce38-5541-41d0-b1cd-5d3fba74b3c4")
 		(property "Sheetname" "Right RCA Signal Conditioning"
-			(at 111.125 81.8384 0)
+			(at 111.76 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -769,7 +815,7 @@
 			)
 		)
 		(property "Sheetfile" "right_rca_signal_conditioning.kicad_sch"
-			(at 111.125 86.9446 0)
+			(at 111.76 86.9446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -788,7 +834,7 @@
 		)
 	)
 	(sheet
-		(at 111.125 102.87)
+		(at 111.76 102.87)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -804,7 +850,7 @@
 		)
 		(uuid "ddd2ba87-2328-49c2-b9a4-fb2802f22b94")
 		(property "Sheetname" "Right Speaker Signal Conditoning"
-			(at 111.125 102.1584 0)
+			(at 111.76 102.1584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -815,7 +861,7 @@
 			)
 		)
 		(property "Sheetfile" "right_speaker_signal_conditoning.kicad_sch"
-			(at 111.125 107.2646 0)
+			(at 111.76 107.2646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
