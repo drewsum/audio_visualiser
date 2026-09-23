@@ -2356,20 +2356,6 @@
 		)
 		(uuid "cace1227-7246-4e9c-809d-2b31a5cf4d8c")
 	)
-	(text "FIGURE THIS OUT"
-		(exclude_from_sim no)
-		(at 228.6 95.25 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-				(color 194 0 0 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "d04310ad-a48e-4a8e-8dc4-4a658b829aed")
-	)
 	(text "ADD HARDSTRAPS FOR CONFIG STUFF"
 		(exclude_from_sim no)
 		(at 140.97 26.67 0)
@@ -2694,30 +2680,6 @@
 			)
 		)
 	)
-	(global_label "~{LEFT_LED_SPI_CS}"
-		(shape output)
-		(at 203.2 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5fe6d627-8aa2-49b7-8b99-d63aeb83eafe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.3322 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "DSPIC33_ICSPCLK"
 		(shape input)
 		(at 88.9 146.05 180)
@@ -3027,30 +2989,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "~{RIGHT_LED_SPI_CS}"
-		(shape output)
-		(at 203.2 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e4294114-75e1-420e-ba14-f2776ad47052")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 223.5418 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
