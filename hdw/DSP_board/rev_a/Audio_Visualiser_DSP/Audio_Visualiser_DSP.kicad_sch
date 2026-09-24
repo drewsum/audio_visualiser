@@ -101,52 +101,6 @@
 		)
 	)
 	(sheet
-		(at 111.76 92.71)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "2f914f51-ed09-4f9d-b714-0a49d4e9af0f")
-		(property "Sheetname" "Power Button"
-			(at 111.76 91.9984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "power_button.kicad_sch"
-			(at 111.76 97.1046 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "21")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 111.76 62.23)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
@@ -187,7 +141,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "16")
+					(page "15")
 				)
 			)
 		)
@@ -371,7 +325,53 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "18")
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 102.87)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6411608b-521a-4c33-acf3-00a911578dd5")
+		(property "Sheetname" "Audio Voltage References"
+			(at 111.76 102.1584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio_voltage_references.kicad_sch"
+			(at 111.76 107.2646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "19")
 				)
 			)
 		)
@@ -714,7 +714,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "c804c5c4-25b5-4e4d-bca8-934b42ea969b")
-		(property "Sheetname" "Filtering, PGAs"
+		(property "Sheetname" "Source Selection, PGAs"
 			(at 111.76 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -725,7 +725,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "filtering_pgas.kicad_sch"
+		(property "Sheetfile" "source_selection_pgas.kicad_sch"
 			(at 111.76 86.9446 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -739,7 +739,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "20")
+					(page "17")
 				)
 			)
 		)
@@ -786,6 +786,52 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 92.71)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f2b9a82c-2733-4630-b590-b588e09b6263")
+		(property "Sheetname" "Anti-alias Filtering"
+			(at 111.76 91.9984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "anti_alias_filtering.kicad_sch"
+			(at 111.76 97.1046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "18")
 				)
 			)
 		)
