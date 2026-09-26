@@ -1257,7 +1257,7 @@
 		)
 		(uuid "e82a2b94-4c73-43f8-aaac-733c7ae3d6a4")
 	)
-	(global_label "Heartbeat_LED"
+	(global_label "HEARTBEAT_LED"
 		(shape input)
 		(at 76.2 58.42 180)
 		(fields_autoplaced yes)
@@ -1269,7 +1269,7 @@
 		)
 		(uuid "219535e3-154f-4027-a663-c0f1b66275d7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 59.6872 58.42 0)
+			(at 58.5192 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1281,7 +1281,7 @@
 			)
 		)
 	)
-	(global_label "Error_LED"
+	(global_label "ERROR_LED"
 		(shape input)
 		(at 76.2 109.22 180)
 		(fields_autoplaced yes)
@@ -1293,7 +1293,7 @@
 		)
 		(uuid "7fc468eb-186d-408a-b485-e35eccc52909")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.2229 109.22 0)
+			(at 62.5106 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1305,7 +1305,7 @@
 			)
 		)
 	)
-	(global_label "CPU_Trap_LED"
+	(global_label "CPU_TRAP_LED"
 		(shape input)
 		(at 127 109.22 180)
 		(fields_autoplaced yes)
@@ -1317,7 +1317,7 @@
 		)
 		(uuid "c4d9d3c4-cc87-4c20-922a-d4de1c330f51")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 110.7896 109.22 0)
+			(at 110.1658 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1329,7 +1329,7 @@
 			)
 		)
 	)
-	(global_label "Reset_LED"
+	(global_label "~{RESET_LED}"
 		(shape input)
 		(at 127 58.42 180)
 		(fields_autoplaced yes)
@@ -1341,7 +1341,7 @@
 		)
 		(uuid "e43094fe-e732-4491-95c0-d883e2e4d956")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.4785 58.42 0)
+			(at 113.855 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
