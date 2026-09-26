@@ -9,7 +9,7 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 38.1 102.87)
+		(at 38.1 82.55)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25,7 +25,7 @@
 		)
 		(uuid "0e59d275-c36c-4218-b5cc-8096e466612c")
 		(property "Sheetname" "dsPIC33 Power"
-			(at 38.1 102.1584 0)
+			(at 38.1 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36,7 +36,7 @@
 			)
 		)
 		(property "Sheetfile" "dspic33_power.kicad_sch"
-			(at 38.1 107.2646 0)
+			(at 38.1 86.9446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49,7 +49,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "9")
+					(page "7")
 				)
 			)
 		)
@@ -95,7 +95,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "14")
+					(page "12")
 				)
 			)
 		)
@@ -141,13 +141,13 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "15")
+					(page "13")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 38.1 92.71)
+		(at 38.1 72.39)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -163,7 +163,7 @@
 		)
 		(uuid "3d6836fb-edea-466f-ab73-f835ba2b7cb8")
 		(property "Sheetname" "dsPIC33 Programming"
-			(at 38.1 91.9984 0)
+			(at 38.1 71.6784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -174,7 +174,7 @@
 			)
 		)
 		(property "Sheetfile" "dspic33_programming.kicad_sch"
-			(at 38.1 97.1046 0)
+			(at 38.1 76.7846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -187,7 +187,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "8")
+					(page "6")
 				)
 			)
 		)
@@ -233,7 +233,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "12")
+					(page "10")
 				)
 			)
 		)
@@ -325,7 +325,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "16")
+					(page "14")
 				)
 			)
 		)
@@ -371,7 +371,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "19")
+					(page "17")
 				)
 			)
 		)
@@ -423,7 +423,7 @@
 		)
 	)
 	(sheet
-		(at 38.1 113.03)
+		(at 38.1 92.71)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -439,7 +439,7 @@
 		)
 		(uuid "b9973229-0ab3-4009-9568-e1a3a7a57b16")
 		(property "Sheetname" "dsPIC33 GPIO"
-			(at 38.1 112.3184 0)
+			(at 38.1 91.9984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -450,7 +450,7 @@
 			)
 		)
 		(property "Sheetfile" "dspic33_gpio.kicad_sch"
-			(at 38.1 117.4246 0)
+			(at 38.1 97.1046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -463,13 +463,13 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "10")
+					(page "8")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 38.1 123.19)
+		(at 38.1 102.87)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -485,7 +485,7 @@
 		)
 		(uuid "bb1d00b4-7cec-46a4-b31c-4e1779527b32")
 		(property "Sheetname" "USB UART Bridge"
-			(at 38.1 122.4784 0)
+			(at 38.1 102.1584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -496,7 +496,7 @@
 			)
 		)
 		(property "Sheetfile" "usb_uart_bridge.kicad_sch"
-			(at 38.1 127.5846 0)
+			(at 38.1 107.2646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -509,7 +509,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "11")
+					(page "9")
 				)
 			)
 		)
@@ -601,7 +601,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "13")
+					(page "11")
 				)
 			)
 		)
@@ -647,7 +647,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "17")
+					(page "15")
 				)
 			)
 		)
@@ -739,7 +739,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
-					(page "18")
+					(page "16")
 				)
 			)
 		)
