@@ -3738,7 +3738,7 @@
 		(at 86.36 166.37 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -3863,7 +3863,7 @@
 		(at 71.12 88.9 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -3987,13 +3987,13 @@
 		(at 173.99 80.01 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d84080b-14cb-4032-95d2-70905213b210")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR041"
 			(at 173.99 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -4053,7 +4053,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR069")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -4064,13 +4064,13 @@
 		(at 115.57 72.39 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "322904f8-a55a-4843-9037-35f6f5edb58c")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR035"
 			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -4130,7 +4130,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR063")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -4141,13 +4141,13 @@
 		(at 222.25 118.11 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3c683494-2bbe-4a37-8148-ec4da1cebd6d")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR044"
 			(at 222.25 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -4207,7 +4207,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR072")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -4219,7 +4219,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -4342,13 +4342,13 @@
 		(at 123.19 118.11 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "47786569-7515-4fca-a62f-6cdc95271747")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR036"
 			(at 123.19 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -4408,7 +4408,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR064")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -4419,7 +4419,7 @@
 		(at 137.16 87.63 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -4554,13 +4554,13 @@
 		(at 123.19 177.8 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4c693f7a-d6bd-429c-b40c-90e09770f4b6")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR038"
 			(at 123.19 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -4620,7 +4620,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR066")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -4631,7 +4631,7 @@
 		(at 48.26 114.3 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -4755,13 +4755,13 @@
 		(at 242.57 67.31 180)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66c76692-94ba-409b-a8c6-75e440be973e")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR046"
 			(at 242.57 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4821,7 +4821,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR074")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -4832,13 +4832,13 @@
 		(at 71.12 58.42 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a2208c9-4522-4a7e-af6f-1aafa74cb912")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR027"
 			(at 71.12 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -4898,7 +4898,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR055")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -4909,7 +4909,7 @@
 		(at 189.23 76.2 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5034,13 +5034,13 @@
 		(at 189.23 80.01 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e11b5a2-7ccf-4951-966f-40d22e0e9bbd")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR042"
 			(at 189.23 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -5100,7 +5100,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR070")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -5111,13 +5111,13 @@
 		(at 60.96 104.14 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e70ee1f-4a1e-43c4-a94b-30dcf279ea4b")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR024"
 			(at 60.96 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -5177,7 +5177,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR052")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5188,7 +5188,7 @@
 		(at 222.25 88.9 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5323,7 +5323,7 @@
 		(at 173.99 76.2 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5448,13 +5448,13 @@
 		(at 189.23 118.11 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "78517e07-c83a-45ea-9426-a6fa4418c802")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR043"
 			(at 189.23 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -5514,7 +5514,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR071")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5525,7 +5525,7 @@
 		(at 86.36 154.94 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5617,13 +5617,13 @@
 		(at 233.68 67.31 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e105fde-4e0e-4b5c-a5b7-c51e11854903")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR045"
 			(at 233.68 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -5683,7 +5683,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR073")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -5694,7 +5694,7 @@
 		(at 161.29 69.85 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5815,7 +5815,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5919,7 +5919,7 @@
 		(at 67.31 114.3 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -6044,13 +6044,13 @@
 		(at 104.14 184.15 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "958b12cc-bf65-4363-8585-fb92ab5cd6ed")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR033"
 			(at 104.14 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -6110,7 +6110,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR061")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -6121,7 +6121,7 @@
 		(at 90.17 68.58 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -6246,7 +6246,7 @@
 		(at 115.57 68.58 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -6371,14 +6371,14 @@
 		(at 149.86 80.01 270)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9949198a-0795-4eae-a202-e49f4bf0aa50")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR040"
 			(at 146.05 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6439,7 +6439,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR068")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -6451,7 +6451,7 @@
 		(mirror x)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -6577,13 +6577,13 @@
 		(at 71.12 85.09 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ac6caddd-595a-4a07-9a24-a19fa7bc28fb")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR029"
 			(at 71.12 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -6643,7 +6643,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR057")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -6654,7 +6654,7 @@
 		(at 71.12 68.58 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -6780,7 +6780,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -6913,13 +6913,13 @@
 		(at 137.16 123.19 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b4169550-4592-4495-addb-3bd276ba76df")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR039"
 			(at 137.16 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -6979,7 +6979,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR067")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -6990,13 +6990,13 @@
 		(at 106.68 118.11 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b46e1bc3-0992-4b70-adb3-025cdaf8bb61")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR034"
 			(at 106.68 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -7056,7 +7056,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR062")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -7067,7 +7067,7 @@
 		(at 195.58 69.85 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -7188,7 +7188,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -7311,7 +7311,7 @@
 		(at 222.25 67.31 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -7387,13 +7387,13 @@
 		(at 71.12 72.39 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d1699545-30ff-4c39-a5ca-d4dfd3617bfd")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR028"
 			(at 71.12 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -7453,7 +7453,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR056")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -7464,13 +7464,13 @@
 		(at 67.31 110.49 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d7d7387a-620b-48dc-9056-2b8505fca3b2")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR025"
 			(at 67.31 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -7530,7 +7530,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR053")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -7542,7 +7542,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -7675,13 +7675,13 @@
 		(at 90.17 72.39 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ddca92d4-fb88-4962-a1c3-e3abbeadff6c")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR032"
 			(at 90.17 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -7741,7 +7741,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR060")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -7752,13 +7752,13 @@
 		(at 123.19 167.64 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e157f3ae-080e-415c-a711-48f20b4fe806")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR037"
 			(at 123.19 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -7818,7 +7818,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR065")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -7829,7 +7829,7 @@
 		(at 242.57 67.31 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -7906,7 +7906,7 @@
 		(at 104.14 166.37 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -8030,13 +8030,13 @@
 		(at 86.36 151.13 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ea98b336-fe2d-478a-87c8-589df9f2ddca")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR030"
 			(at 86.36 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -8096,7 +8096,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR058")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -8107,13 +8107,13 @@
 		(at 67.31 118.11 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ed9b607a-a1ee-4b6b-b67a-8fcde7e80fd0")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR026"
 			(at 67.31 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -8173,7 +8173,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR054")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -8184,7 +8184,7 @@
 		(at 106.68 114.3 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -8309,13 +8309,13 @@
 		(at 86.36 170.18 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f1914f90-a495-4af3-b55c-953b1cb4306b")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR031"
 			(at 86.36 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -8375,7 +8375,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR059")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -8386,7 +8386,7 @@
 		(at 120.65 172.72 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -8484,7 +8484,7 @@
 		(at 101.6 179.07 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -8582,13 +8582,13 @@
 		(at 60.96 99.06 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f81aaaf6-1be2-47bd-bc94-e6b4ea39c34a")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR023"
 			(at 60.96 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -8648,7 +8648,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR051")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -8659,13 +8659,13 @@
 		(at 48.26 118.11 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fd0eb08b-a7b6-43d4-ab91-f128503f5ff9")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR022"
 			(at 48.26 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -8725,7 +8725,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR050")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)

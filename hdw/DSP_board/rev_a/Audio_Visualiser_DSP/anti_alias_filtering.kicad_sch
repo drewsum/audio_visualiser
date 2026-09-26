@@ -963,7 +963,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -988,7 +988,7 @@
 					)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+5V"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1020,7 +1020,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1042,7 +1042,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1080,7 +1080,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1365,6 +1365,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 63.5) (xy 74.93 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0007d184-a99a-46bf-a861-e3ac52444b04")
+	)
+	(wire
+		(pts
 			(xy 101.6 114.3) (xy 101.6 119.38)
 		)
 		(stroke
@@ -1415,16 +1425,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 114.3) (xy 74.93 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fbe27b4-81e8-47e0-a44d-7b8b1859c85b")
-	)
-	(wire
-		(pts
 			(xy 114.3 68.58) (xy 111.76 68.58)
 		)
 		(stroke
@@ -1462,6 +1462,16 @@
 			(type default)
 		)
 		(uuid "23bcd9cc-42f4-4973-90a9-c1983619255c")
+	)
+	(wire
+		(pts
+			(xy 43.18 114.3) (xy 74.93 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26ee4470-fb60-4636-9bc3-3f71d18eabf8")
 	)
 	(wire
 		(pts
@@ -1815,16 +1825,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 63.5) (xy 74.93 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a537974b-827a-4e76-8174-d1189c5b3e17")
-	)
-	(wire
-		(pts
 			(xy 95.25 63.5) (xy 101.6 63.5)
 		)
 		(stroke
@@ -2122,7 +2122,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "power:+5V")
 		(at 137.16 30.48 0)
 		(unit 1)
 		(body_style 1)
@@ -2131,8 +2131,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "032b241f-ba02-4ea1-b384-4596e836dfba")
-		(property "Reference" "#PWR0277"
+		(uuid "07bda39d-2f1e-4614-96ac-50523cb3a28b")
+		(property "Reference" "#PWR0262"
 			(at 137.16 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -2143,7 +2143,7 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
+		(property "Value" "+5V"
 			(at 137.16 26.924 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2175,7 +2175,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 137.16 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -2187,12 +2187,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fd9a1503-4038-4bb3-9a29-2e596142479e")
+			(uuid "984a8494-c4c3-4e64-a346-73cfc70aa899")
 		)
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0277")
+					(reference "#PWR0262")
 					(unit 1)
 				)
 			)
@@ -2360,83 +2360,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 119.38 58.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3281532e-6eff-4b72-a58e-2b944f1a5d23")
-		(property "Reference" "#PWR0275"
-			(at 119.38 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 119.38 54.864 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 119.38 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "90cbc9ae-04d6-4567-9f3d-641de0171c64")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0275")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Custom Library:C_Custom")
 		(at 119.38 100.33 90)
 		(unit 1)
@@ -2552,6 +2475,83 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
 					(reference "C74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 119.38 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3e10f26c-0c70-4d4a-8cab-94b7e3457866")
+		(property "Reference" "#PWR0260"
+			(at 119.38 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 119.38 54.864 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 119.38 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06ef3d1c-53b3-4736-a1ed-bed2a4c7a537")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
+					(reference "#PWR0260")
 					(unit 1)
 				)
 			)
@@ -2678,6 +2678,83 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
 					(reference "C71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 154.94 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "462edfd5-5b3b-48a9-8064-b04c4f123987")
+		(property "Reference" "#PWR0264"
+			(at 154.94 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 154.94 26.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 154.94 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b9eda28b-46ed-49fc-8ddd-533e6e63ff02")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
+					(reference "#PWR0264")
 					(unit 1)
 				)
 			)
@@ -3095,7 +3172,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6a899949-e837-40f7-a436-8872f7a06bf9")
-		(property "Reference" "#PWR0273"
+		(property "Reference" "#PWR0258"
 			(at 101.6 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3155,7 +3232,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0273")
+					(reference "#PWR0258")
 					(unit 1)
 				)
 			)
@@ -3172,7 +3249,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7708b6d6-0f69-4c3e-8cd3-83a694c33d96")
-		(property "Reference" "#PWR0274"
+		(property "Reference" "#PWR0259"
 			(at 101.6 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -3232,7 +3309,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0274")
+					(reference "#PWR0259")
 					(unit 1)
 				)
 			)
@@ -3368,7 +3445,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "963d7003-91c7-404b-98a6-f8ce8e0da943")
-		(property "Reference" "#PWR0276"
+		(property "Reference" "#PWR0261"
 			(at 119.38 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3428,7 +3505,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0276")
+					(reference "#PWR0261")
 					(unit 1)
 				)
 			)
@@ -3445,7 +3522,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96d7c013-bba9-4967-81be-62f3d0d90c99")
-		(property "Reference" "#PWR0278"
+		(property "Reference" "#PWR0263"
 			(at 137.16 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -3505,7 +3582,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0278")
+					(reference "#PWR0263")
 					(unit 1)
 				)
 			)
@@ -3893,7 +3970,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aff014cf-6c9b-4ab5-b9dc-9728c66a292b")
-		(property "Reference" "#PWR0282"
+		(property "Reference" "#PWR0267"
 			(at 163.83 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -3953,7 +4030,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0282")
+					(reference "#PWR0267")
 					(unit 1)
 				)
 			)
@@ -4311,83 +4388,6 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
 					(reference "R76")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 154.94 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c37305b0-3c48-47c1-ac3f-79ba8970e63e")
-		(property "Reference" "#PWR0279"
-			(at 154.94 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 154.94 26.924 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 154.94 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ca878e11-eb52-4364-80e7-31f0dde3cc96")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0279")
 					(unit 1)
 				)
 			)
@@ -5041,7 +5041,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "da05869f-1da0-4041-821f-f13c0e73f569")
-		(property "Reference" "#PWR0281"
+		(property "Reference" "#PWR0266"
 			(at 163.83 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -5101,7 +5101,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0281")
+					(reference "#PWR0266")
 					(unit 1)
 				)
 			)
@@ -5244,7 +5244,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ef9f5e9e-9d8d-46eb-b2a3-47797b07ba44")
-		(property "Reference" "#PWR0280"
+		(property "Reference" "#PWR0265"
 			(at 154.94 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -5304,7 +5304,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0280")
+					(reference "#PWR0265")
 					(unit 1)
 				)
 			)
