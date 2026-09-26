@@ -9,6 +9,52 @@
 	)
 	(lib_symbols)
 	(sheet
+		(at 111.76 133.35)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0b5ba344-fa98-45fc-87ea-1c2bd832dac8")
+		(property "Sheetname" "Mechanical"
+			(at 111.76 132.6384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mechanical.kicad_sch"
+			(at 111.76 137.7446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 38.1 82.55)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
@@ -377,6 +423,52 @@
 		)
 	)
 	(sheet
+		(at 111.76 123.19)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "81d9ddc4-5cba-4a39-aff5-649eed05eb4c")
+		(property "Sheetname" "Pushbuttons"
+			(at 111.76 122.4784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pushbuttons.kicad_sch"
+			(at 111.76 127.5846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 38.1 52.07)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
@@ -648,6 +740,52 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
 					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 111.76 113.03)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e1c767d7-d79c-4fe0-8444-e88a5c1f4a2f")
+		(property "Sheetname" "LED Panel Connectors"
+			(at 111.76 112.3184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_panel_connectors.kicad_sch"
+			(at 111.76 117.4246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "18")
 				)
 			)
 		)
