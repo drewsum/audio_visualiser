@@ -1,0 +1,143 @@
+.SUBCKT MCP601 1 2 3 4 5
+*              | | | | |
+*              | | | | Output
+*              | | | Negative Supply
+*              | | Positive Supply
+*              | Inverting Input
+*              Non-inverting Input
+*
+********************************************************************************
+* Software License Agreement                                                   *
+*                                                                              *
+* The software supplied herewith by Microchip Technology Incorporated (the     *
+* "Company") is intended and supplied to you, the Company's customer, for use  *
+* soley and exclusively on Microchip products.                                 *
+*                                                                              *
+* The software is owned by the Company and/or its supplier, and is protected   *
+* under applicable copyright laws. All rights are reserved. Any use in         *
+* violation of the foregoing restrictions may subject the user to criminal     *
+* sanctions under applicable laws, as well as to civil liability for the       *
+* breach of the terms and conditions of this license.                          *
+*                                                                              *
+* THIS SOFTWARE IS PROVIDED IN AN "AS IS" CONDITION. NO WARRANTIES, WHETHER    *
+* EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, IMPLIED        *
+* WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE APPLY TO  *
+* THIS SOFTWARE. THE COMPANY SHALL NOT, IN ANY CIRCUMSTANCES, BE LIABLE FOR    *
+* SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.     *
+********************************************************************************
+*
+* Macromodel for the MCP601/2/3/4 op amp family:
+*   MCP601 (single)
+*   MCP602 (dual)
+*   MCP603 (single w/ CS; chip select is not modeled)
+*   MCP604 (quad)
+*
+* Revision History:
+*   REV A: 30-Jun-99, BCB (created model)
+*   REV B: 10-Jul-99, BCB (corrected DC Iq)
+*   REV C: 30-Nov-99, BCB (".subckt" on first line, moved L, W to model)
+*   REV D: 17-Jul-02, KEB (improved model)
+*
+* Recommendations:
+*   Use PSPICE (or SPICE 2G6; other simulators may require translation)
+*   For a quick, effective design, use a combination of: data sheet
+*     specs, bench testing, and simulations with this macromodel
+*   For high impedance circuits, set GMIN=100F in the .OPTIONS
+*     statement
+*
+* Supported:
+*   Typical performance at room temperature (25 degrees C)
+*   DC, AC, Transient, and Noise analyses.
+*   Most specs, including: offsets, DC PSRR, DC CMRR, input impedance,
+*     open loop gain, voltage ranges, supply current, ... , etc.
+*
+* Not Supported:
+*   Chip select (MCP603)
+*   Variation in specs vs. Power Supply Voltage
+*   Distortion (detailed non-linear behavior)
+*   Temperature analysis
+*   Process variation
+*   Behavior outside normal operating region
+*
+* Input Stage
+V10  3 10 1.20
+R10 10 11 4.55K
+R11 10 12 4.55K
+C11 11 12 3.67P
+C12  1  0 6.00P
+E12  1 14 POLY(4) 20 0 21 0 26 0 27 0   1.00M 24.3 24.3 1 1
+I12 14  0 1.50P
+M12 11 14 15 15 NMI L=2.00U W=42.0U
+C13 14  2 3.00P
+M14 12  2 15 15 NMI L=2.00U W=42.0U
+I14  2  0 500E-15
+C14  2  0 6.00P
+I15 15  4 115U
+V16 16  4 300M
+D16 16 15 DL
+V13  3 13 1.55
+D13 14 13 DL
+*
+* Noise, PSRR, and CMRR
+I20 21 20 423U
+D20 20  0 DN1
+D21  0 21 DN1
+G26  0 26 POLY(1) 3 4   -220U 40.0U
+R26 26  0 1
+G27  0 27 POLY(2) 1 3 2 4   -176U 32.0U 32.0U
+R27 27  0 1
+*
+* Open Loop Gain, Slew Rate
+G30  0 30 POLY(1) 12 11   0 1.00K
+R30 30  0 1
+E31 31  0 POLY(1) 3 4   104 3.89
+D31 30 31 DL
+E32  0 32 POLY(1) 3 4   104 6.81
+D32 32 30 DL
+G33  0 33 POLY(1) 30 0   0 333
+R33 33  0 1
+C33 33  0 18.1M
+G34  0 34 POLY(1) 33 0   0 1.00
+R34 34  0 1.00
+C34 34  0 33.4N
+G35  0 35 POLY(2) 34 0 33 34   0 1.00 2.00
+R35 35  0 1.00
+*
+* Output Stage
+G50  0 50 POLY(1) 57 5   0 5.00
+D51 50 51 DL
+R51 51  0 1K
+D52 52 50 DL
+R52 52  0 1K
+G53  3  0 POLY(1) 51 0   115U  1M
+G54  0  4 POLY(1) 52 0   115U  -1M
+E55 55  0 POLY(2) 3 0 51 0   -10M 1 -22.0M
+D55 57 55 DLS
+E56 56  0 POLY(2) 4 0 52 0    10M 1 -21.0M
+D56 56 57 DLS
+G57  0 57 POLY(3) 3 0 4 0 35 0   0 769U 769U 1.54M
+R57 57  0 650
+R58 57  5 200M
+C58  5  0 2.00P
+*
+* Models
+.MODEL NMI NMOS
+.MODEL DL  D   N=1   IS=1F
+.MODEL DLS D   N=10M IS=1F
+.MODEL DN1 D   IS=1F KF=135E-18 AF=1
+*
+.ENDS MCP601
+
+********************************************************************************
+* MCP604 quad wrapper (added locally, not part of the Microchip file).
+* Four MCP601 macromodels sharing supplies; nodes follow the physical
+* SOIC/TSSOP-14 pin numbers so KiCad's multi-unit MCP604 symbol maps 1:1.
+*   1 OUTA  2 -INA  3 +INA  4 VDD  5 +INB  6 -INB  7 OUTB
+*   8 OUTC  9 -INC 10 +INC 11 VSS 12 +IND 13 -IND 14 OUTD
+********************************************************************************
+.SUBCKT MCP604 OUTA INAN INAP VDD INBP INBN OUTB OUTC INCN INCP VSS INDP INDN OUTD
+XA INAP INAN VDD VSS OUTA MCP601
+XB INBP INBN VDD VSS OUTB MCP601
+XC INCP INCN VDD VSS OUTC MCP601
+XD INDP INDN VDD VSS OUTD MCP601
+.ENDS MCP604

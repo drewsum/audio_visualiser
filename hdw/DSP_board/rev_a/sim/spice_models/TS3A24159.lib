@@ -1,0 +1,57 @@
+* TS3A24159 - Dual SPDT 0.3 ohm analog switch - BEHAVIORAL MODEL (ngspice)
+*
+* TI only publishes an encrypted HSPICE model (SCDM119) for this part, which
+* ngspice cannot read, so this is a hand-written behavioral model built from
+* the datasheet (SCDS238H, Aug 2022), 3 V supply, 25 C typical values:
+*   ron          0.26 ohm (VCC = 2.7 V)
+*   C(OFF) NO/NC 90 pF,  C(ON) NO/NC 224 pF,  C(ON) COM 250 pF
+*   CI (IN pin)  2 pF
+*   VIH 1.4 V min, VIL 0.5 V max  -> switching centred around ~1 V
+*   tON 20 ns typ, break-before-make
+*   Function: IN = L -> COM-NC on, IN = H -> COM-NO on
+*
+* Modelled: on resistance, off isolation (Roff), terminal capacitances,
+* control thresholds, ~20 ns switching with break-before-make.
+* Not modelled: ron vs signal voltage/VCC/temperature, leakage, charge
+* injection, THD, ESD diodes, supply-dependent behaviour.
+*
+* Pin order = physical DRC/DGS pin numbers, so KiCad's TS3A24159DRC symbol
+* maps 1:1:
+*   1 VCC  2 NO1  3 COM1  4 IN1  5 NC1  6 GND  7 NC2  8 IN2  9 COM2  10 NO2
+* TS3A24159_PAD adds pin 11 (thermal pad, tied to GND through 1 mohm).
+
+.SUBCKT TS3A24159 VCC NO1 COM1 IN1 NC1 GND NC2 IN2 COM2 NO2
++ PARAMS: RON=0.26 ROFF=1G
+X1 COM1 NO1 NC1 IN1 GND TS3A24159_CH PARAMS: RON={RON} ROFF={ROFF}
+X2 COM2 NO2 NC2 IN2 GND TS3A24159_CH PARAMS: RON={RON} ROFF={ROFF}
+* ~15 nA typical supply current
+RVCC VCC GND 220MEG
+.ENDS TS3A24159
+
+.SUBCKT TS3A24159_PAD VCC NO1 COM1 IN1 NC1 GND NC2 IN2 COM2 NO2 PAD
++ PARAMS: RON=0.26 ROFF=1G
+XSW VCC NO1 COM1 IN1 NC1 GND NC2 IN2 COM2 NO2 TS3A24159 PARAMS: RON={RON} ROFF={ROFF}
+RPAD PAD GND 1m
+.ENDS TS3A24159_PAD
+
+* One SPDT channel
+.SUBCKT TS3A24159_CH COM NO NC IN GND
++ PARAMS: RON=0.26 ROFF=1G
+* Control input: 2 pF pin capacitance, then an RC (tau = 20 ns) that sets
+* the switching delay.
+CIN IN GND 2p
+EBUF INB GND IN GND 1
+RDLY INB CTL 10k
+CDLY CTL GND 2p
+* Break-before-make: NC opens at CTL > 0.8 V, NO closes at CTL > 1.1 V,
+* so the delayed control edge always opens one side before closing the other.
+SNO COM NO  CTL GND SW_NO
+SNC COM NC  GND CTL SW_NC
+* Terminal capacitances to ground (NO/NC off = 90 pF, NO/NC on ~ 90 + 145 pF,
+* COM on ~ 145 + 90 pF, vs. datasheet 224 / 250 pF)
+CNO  NO  GND 90p
+CNC  NC  GND 90p
+CCOM COM GND 145p
+.MODEL SW_NO SW (VT=1.1  VH=0.01 RON={RON} ROFF={ROFF})
+.MODEL SW_NC SW (VT=-0.8 VH=0.01 RON={RON} ROFF={ROFF})
+.ENDS TS3A24159_CH
