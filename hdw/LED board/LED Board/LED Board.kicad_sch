@@ -420,6 +420,52 @@
 		)
 	)
 	(sheet
+		(at 139.7 35.56)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7d1d6f98-2d5a-43e3-858a-7611131c51dc")
+		(property "Sheetname" "LED_Power"
+			(at 139.7 34.8484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LED_Power.kicad_sch"
+			(at 139.7 39.9546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 59.69 120.65)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
