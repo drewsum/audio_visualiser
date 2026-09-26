@@ -1088,12 +1088,6 @@
 		(uuid "5c04f21e-f756-4110-a643-e5b8bf4a5b96")
 	)
 	(junction
-		(at 119.38 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7eed4161-e292-4e99-82ce-ef17f7baaee2")
-	)
-	(junction
 		(at 119.38 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1171,7 +1165,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 127) (xy 125.73 127)
+			(xy 113.03 127) (xy 125.73 127)
 		)
 		(stroke
 			(width 0)
@@ -1221,16 +1215,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 127) (xy 119.38 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e40b298c-935a-4e1f-9f99-b3104fb3a8d3")
-	)
-	(wire
-		(pts
 			(xy 144.78 66.04) (xy 140.97 66.04)
 		)
 		(stroke
@@ -1248,16 +1232,6 @@
 			(type default)
 		)
 		(uuid "f0eb2efa-f01a-47be-a4bd-eb9d67e2b7fa")
-	)
-	(wire
-		(pts
-			(xy 119.38 129.54) (xy 119.38 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f221e413-ebfa-4eff-9c51-6dc377b5b665")
 	)
 	(global_label "AUDIO_VREF_ENABLE"
 		(shape input)
@@ -2300,83 +2274,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 119.38 137.16 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5bf7ab32-dae9-4d76-9fce-251eb2c49630")
-		(property "Reference" "#PWR?"
-			(at 119.38 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 119.38 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6dbc1e79-e737-40f0-b7f5-c233ffcc4b31")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 133.35 55.88 0)
 		(unit 1)
@@ -2912,130 +2809,6 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5"
 					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Custom_Library:R_Custom")
-		(at 119.38 133.35 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "9d0459cd-e80c-402c-831e-e52c99f87485")
-		(property "Reference" "R?"
-			(at 117.602 130.048 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 119.38 133.35 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistors_SMD:R_0402"
-			(at 119.38 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 119.38 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "display_footprint" "0402"
-			(at 117.602 132.08 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Tolerance" "1%"
-			(at 117.602 134.366 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Wattage" "1/16W"
-			(at 117.602 136.652 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Digi-Key PN" "541-100KHCT-ND"
-			(at 119.38 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5ea88212-b68d-4c5b-9151-f8982f3f0ea7")
-		)
-		(pin "2"
-			(uuid "9641f69f-38b5-44d3-ae0a-26732521745c")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5"
-					(reference "R?")
 					(unit 1)
 				)
 			)
