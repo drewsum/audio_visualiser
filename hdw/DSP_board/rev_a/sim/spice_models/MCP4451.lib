@@ -1,0 +1,68 @@
+* MCP4451 - Quad 8-bit (257-step) I2C digital potentiometer - BEHAVIORAL MODEL
+*
+* Microchip does not publish a SPICE model for the MCP44x1 family, so this is
+* a hand-written static model built from the datasheet (DS22267A):
+*   RAB          5k / 10k / 50k / 100k (part suffix -502/-103/-503/-104)
+*   RW           75 ohm typical wiper resistance (up to 300 ohm at 2.7 V)
+*   CODE         0x000..0x100 (0..256). 0 = zero scale (W = B),
+*                256 = full scale (W = A).
+*   RWB = RAB*CODE/256 + RW,   RAW = RAB*(256-CODE)/256 + RW
+*   CA 75 pF, CW 120 pF, CB 75 pF (datasheet, f = 1 MHz, full scale)
+*
+* The wiper position is a fixed parameter per simulation - the I2C interface
+* is not modelled. Sweep it with .step / .param or KiCad's parameter fields.
+* Not modelled: RW vs voltage/current, INL/DNL, tempco, terminal voltage
+* limits, power-up/reset behaviour.
+*
+* ---------------------------------------------------------------------------
+* Single pot section. Use this per KiCad unit if you prefer to simulate one
+* potentiometer at a time.
+*   A W B  -> terminal A, wiper, terminal B
+
+.SUBCKT MCP44X1_POT A W B
++ PARAMS: RAB=10k CODE=128 RW=75 CA=75p CW=120p CB=75p
+.PARAM N = {MIN(MAX(CODE,0),256)}
+RA A X {MAX(RAB*(256-N)/256, 1m)}
+RB X B {MAX(RAB*N/256, 1m)}
+RWIP X W {RW}
+C_A A 0 {CA}
+C_W W 0 {CW}
+C_B B 0 {CB}
+.ENDS MCP44X1_POT
+
+* ---------------------------------------------------------------------------
+* Full MCP4451 in TSSOP-20 pin order, so KiCad's MCP4451-xxxx-ST symbol maps
+* 1:1 (the digital pins are just loaded with small resistors):
+*   1 P3A  2 P3W  3 P3B  4 HVC/A0  5 SCL  6 SDA  7 VSS  8 P1B  9 P1W  10 P1A
+*  11 P0A 12 P0W 13 P0B 14 NC     15 /RESET 16 A1 17 VDD 18 P2B 19 P2W 20 P2A
+* Pot capacitances return to VSS.
+
+.SUBCKT MCP4451 P3A P3W P3B HVC SCL SDA VSS P1B P1W P1A
++ P0A P0W P0B NC RESET A1 VDD P2B P2W P2A
++ PARAMS: RAB=10k RW=75 CODE0=128 CODE1=128 CODE2=128 CODE3=128
+XP0 P0A P0W P0B VSS MCP44X1_POTG PARAMS: RAB={RAB} RW={RW} CODE={CODE0}
+XP1 P1A P1W P1B VSS MCP44X1_POTG PARAMS: RAB={RAB} RW={RW} CODE={CODE1}
+XP2 P2A P2W P2B VSS MCP44X1_POTG PARAMS: RAB={RAB} RW={RW} CODE={CODE2}
+XP3 P3A P3W P3B VSS MCP44X1_POTG PARAMS: RAB={RAB} RW={RW} CODE={CODE3}
+* ~ 2.5 uA typical static supply current at 5.5 V
+RVDD VDD VSS 2.2MEG
+* Keep digital pins from floating in the netlist
+RHVC HVC VSS 1G
+RSCL SCL VSS 1G
+RSDA SDA VSS 1G
+RRST RESET VSS 1G
+RA1 A1 VSS 1G
+RNC NC VSS 1G
+.ENDS MCP4451
+
+* Pot section with an explicit capacitance return node
+.SUBCKT MCP44X1_POTG A W B G
++ PARAMS: RAB=10k CODE=128 RW=75 CA=75p CW=120p CB=75p
+.PARAM N = {MIN(MAX(CODE,0),256)}
+RA A X {MAX(RAB*(256-N)/256, 1m)}
+RB X B {MAX(RAB*N/256, 1m)}
+RWIP X W {RW}
+C_A A G {CA}
+C_W W G {CW}
+C_B B G {CB}
+.ENDS MCP44X1_POTG
