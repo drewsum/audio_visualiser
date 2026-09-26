@@ -2837,6 +2837,19 @@
 		)
 		(uuid "5dc40597-6bc5-4621-8f01-69c94f8758f2")
 	)
+	(text "TRY TO TALLY LOAD CURRENTS"
+		(exclude_from_sim no)
+		(at 114.3 30.48 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "93ba3efd-41a7-40de-9565-35062d112d67")
+	)
 	(text "UVLO threshold set to 10.8V\nOVLO threshold set to 13.2V\n\nMODE set to Circuit Breaker with Auto-Retry\n\nOutput Current Limit set to 1.2A"
 		(exclude_from_sim no)
 		(at 29.972 133.604 0)

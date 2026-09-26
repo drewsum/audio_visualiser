@@ -2736,30 +2736,6 @@
 		)
 		(uuid "e4f7f7c8-30ea-4f2b-b245-961f3955bed0")
 	)
-	(global_label "LED_DRIVER_MODE"
-		(shape output)
-		(at 199.39 78.74 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0628fbcb-7459-41ea-a124-60ac429f62da")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 219.6108 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "I2C_SDA"
 		(shape bidirectional)
 		(at 123.19 35.56 180)
@@ -3241,7 +3217,7 @@
 			)
 		)
 	)
-	(global_label "LED_DRIVER_XLAT"
+	(global_label "LED_DRIVER_LAT"
 		(shape output)
 		(at 199.39 73.66 0)
 		(fields_autoplaced yes)
@@ -3253,7 +3229,7 @@
 		)
 		(uuid "b50f4153-7bc9-4288-919c-5ab2c7f54548")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.7037 73.66 0)
+			(at 217.4942 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
