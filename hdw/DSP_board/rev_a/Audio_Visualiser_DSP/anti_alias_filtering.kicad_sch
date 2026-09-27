@@ -963,7 +963,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -988,7 +988,7 @@
 					)
 				)
 			)
-			(property "Value" "+5V"
+			(property "Value" "+3.3V"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1020,7 +1020,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1042,7 +1042,7 @@
 					)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1080,7 +1080,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1217,32 +1217,6 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "Move to MCP6024"
-		(exclude_from_sim no)
-		(at 140.97 96.52 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-				(thickness 0.762)
-				(bold yes)
-				(color 194 0 0 1)
-			)
-		)
-		(uuid "92e45eb0-25d7-4e80-8f16-f3a58f209c4f")
-	)
-	(text "10pF to GND?"
-		(exclude_from_sim no)
-		(at 234.95 92.71 0)
-		(effects
-			(font
-				(size 3.81 3.81)
-				(thickness 0.762)
-				(bold yes)
-				(color 194 0 0 1)
-			)
-		)
-		(uuid "9a1de304-2c06-47eb-8a03-6e6f1965c685")
 	)
 	(text "4-pole Sallen-Key active anti-aliasing lowpass filters\nUnity gain\nfc = 23.2kHz, Q = 0.707 each\nIf sampling at 44.1kHz, nyquist is 22.05kHz\nMust filter hard just below this\n"
 		(exclude_from_sim no)
@@ -2109,83 +2083,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 137.16 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "07bda39d-2f1e-4614-96ac-50523cb3a28b")
-		(property "Reference" "#PWR0271"
-			(at 137.16 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 137.16 26.924 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 137.16 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "984a8494-c4c3-4e64-a346-73cfc70aa899")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0271")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Operational:MCP604")
 		(at 184.15 66.04 0)
 		(unit 4)
@@ -2207,7 +2104,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MCP604"
+		(property "Value" "MCP6024"
 			(at 184.15 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2251,7 +2148,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP601_MCP604.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6021_MCP6024.lib"
 			(at 184.15 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2262,7 +2159,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "MCP604"
+		(property "Sim.Name" "MCP6024"
 			(at 184.15 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2468,83 +2365,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 119.38 58.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3e10f26c-0c70-4d4a-8cab-94b7e3457866")
-		(property "Reference" "#PWR0269"
-			(at 119.38 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 119.38 54.864 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 119.38 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "06ef3d1c-53b3-4736-a1ed-bed2a4c7a537")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0269")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Custom_Library:C_Custom")
 		(at 101.6 72.39 0)
 		(mirror y)
@@ -2671,83 +2491,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 154.94 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "462edfd5-5b3b-48a9-8064-b04c4f123987")
-		(property "Reference" "#PWR0273"
-			(at 154.94 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 154.94 26.924 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 154.94 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 154.94 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 154.94 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b9eda28b-46ed-49fc-8ddd-533e6e63ff02")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
-					(reference "#PWR0273")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Operational:MCP604")
 		(at 121.92 66.04 0)
 		(unit 1)
@@ -2769,7 +2512,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MCP604"
+		(property "Value" "MCP6024"
 			(at 121.92 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2813,7 +2556,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP601_MCP604.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6021_MCP6024.lib"
 			(at 121.92 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2824,7 +2567,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "MCP604"
+		(property "Sim.Name" "MCP6024"
 			(at 121.92 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -4262,6 +4005,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 119.38 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "be20a35a-ebd3-45bb-b27b-74e8247a51d4")
+		(property "Reference" "#PWR0252"
+			(at 119.38 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 119.38 54.864 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 119.38 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3cc333d-ae36-4733-8810-77e2102b0e06")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
+					(reference "#PWR0252")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom_Library:R_Custom")
 		(at 140.97 114.3 270)
 		(unit 1)
@@ -4402,7 +4222,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MCP604"
+		(property "Value" "MCP6024"
 			(at 184.15 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4446,7 +4266,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP601_MCP604.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6021_MCP6024.lib"
 			(at 184.15 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4457,7 +4277,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "MCP604"
+		(property "Sim.Name" "MCP6024"
 			(at 184.15 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4801,7 +4621,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MCP604"
+		(property "Value" "MCP6024"
 			(at 121.92 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5221,6 +5041,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 154.94 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e86521d5-0f83-46a7-9475-fdc559dcfb14")
+		(property "Reference" "#PWR0247"
+			(at 154.94 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 154.94 26.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 154.94 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33288ead-df2f-40ae-a5e9-38f72d05299d")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
+					(reference "#PWR0247")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 154.94 38.1 0)
 		(unit 1)
@@ -5319,7 +5216,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MCP604"
+		(property "Value" "MCP6024"
 			(at 121.92 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5363,7 +5260,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP601_MCP604.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6021_MCP6024.lib"
 			(at 121.92 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -5374,7 +5271,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "MCP604"
+		(property "Sim.Name" "MCP6024"
 			(at 121.92 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -5454,6 +5351,83 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
 					(reference "U26")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 137.16 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fbcf348b-1c57-4955-8d10-cfe1e8278ac2")
+		(property "Reference" "#PWR0246"
+			(at 137.16 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 137.16 26.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 137.16 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ba0c678-4a5e-4e88-b1cd-09dab519ea32")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
+					(reference "#PWR0246")
+					(unit 1)
 				)
 			)
 		)
