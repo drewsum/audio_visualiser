@@ -105,6 +105,13 @@ R35 35  0 1.00
 *
 * Output Stage
 G50  0 50 POLY(1) 57 5   0 5.00
+* LOCAL ADDITION: R50. Node 50 otherwise only sees D51/D52, which are both
+* off at low output current, so it floats (~40 fS). ngspice then can't find
+* a DC operating point once two or more MCP601s are cascaded, falls back to
+* transient-op, and lands on a false bias point that wrecks AC results.
+* 1 MEG diverts < 1 uA from the output-current sense path; Iq, Isc and
+* open-loop gain are unchanged to within 0.3 %.
+R50 50  0 1MEG
 D51 50 51 DL
 R51 51  0 1K
 D52 52 50 DL
