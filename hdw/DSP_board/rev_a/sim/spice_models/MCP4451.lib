@@ -35,7 +35,7 @@ C_B B 0 {CB}
 * 1:1 (the digital pins are just loaded with small resistors):
 *   1 P3A  2 P3W  3 P3B  4 HVC/A0  5 SCL  6 SDA  7 VSS  8 P1B  9 P1W  10 P1A
 *  11 P0A 12 P0W 13 P0B 14 NC     15 /RESET 16 A1 17 VDD 18 P2B 19 P2W 20 P2A
-* Pot capacitances return to VSS.
+* Pot capacitances and terminal leakage return to VSS.
 
 .SUBCKT MCP4451 P3A P3W P3B HVC SCL SDA VSS P1B P1W P1A
 + P0A P0W P0B NC RESET A1 VDD P2B P2W P2A
@@ -65,4 +65,9 @@ RWIP X W {RW}
 C_A A G {CA}
 C_W W G {CW}
 C_B B G {CB}
+* Terminal leakage (datasheet IL ~100 nA max). Also gives every terminal a DC
+* path so an unused or partly open section doesn't leave floating nodes.
+RL_A A G 1G
+RL_W W G 1G
+RL_B B G 1G
 .ENDS MCP44X1_POTG

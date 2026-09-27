@@ -43,15 +43,17 @@ CIN IN GND 2p
 EBUF INB GND IN GND 1
 RDLY INB CTL 10k
 CDLY CTL GND 2p
-* Break-before-make: NC opens at CTL > 0.8 V, NO closes at CTL > 1.1 V,
-* so the delayed control edge always opens one side before closing the other.
-SNO COM NO  CTL GND SW_NO
-SNC COM NC  GND CTL SW_NC
 * Terminal capacitances to ground (NO/NC off = 90 pF, NO/NC on ~ 90 + 145 pF,
 * COM on ~ 145 + 90 pF, vs. datasheet 224 / 250 pF)
 CNO  NO  GND 90p
 CNC  NC  GND 90p
 CCOM COM GND 145p
-.MODEL SW_NO SW (VT=1.1  VH=0.01 RON={RON} ROFF={ROFF})
-.MODEL SW_NC SW (VT=-0.8 VH=0.01 RON={RON} ROFF={ROFF})
+* Break-before-make: NC opens around CTL = 0.8 V, NO closes around CTL = 1.1 V,
+* so the delayed control edge always opens one side before closing the other.
+* The switches are behavioral conductances (B sources), not ngspice SW
+* elements: ngspice treats SW as open (ROFF) in .ac analysis whatever its DC
+* state, which would block the signal in any AC sim. A 20 mV tanh transition
+* keeps the control smooth for the solver; no hysteresis is modelled.
+BNO COM NO I = V(COM,NO) * (1/{ROFF} + (1/{RON} - 1/{ROFF}) * 0.5*(1 + tanh((V(CTL)-1.1)/0.02)))
+BNC COM NC I = V(COM,NC) * (1/{ROFF} + (1/{RON} - 1/{ROFF}) * 0.5*(1 - tanh((V(CTL)-0.8)/0.02)))
 .ENDS TS3A24159_CH

@@ -1,0 +1,55 @@
+***********************************************************
+*
+* BAT54SW
+*
+* Nexperia
+*
+* Schottky barrier double diodes
+* IFmax = 200mA
+* VRmax = 30V
+* VFmax = 800mV    @ IF = 100mA
+* IRmax = 2µA      @ VR = 25V
+*
+* Source: https://assets.nexperia.com/documents/spice-model/BAT54SW.txt
+*
+* Nexperia's file models a single diode (1 = anode, 2 = cathode). Its header
+* lists common-cathode pinning, which is wrong for the SW (series) part.
+* LOCAL ADDITION: BAT54SW_SOT323 below wraps two of them in the real series
+* configuration, with pins in the KiCad symbol's order.
+*
+***********************************************************
+*
+* The resistor R1
+* does not reflect physical devices
+* but improve only modeling in the
+* reverse mode of operation.
+*
+.SUBCKT BAT54SW 1 2
+R1 1 2 3.6E+07
+D1 1 2 BAT54SW
+*
+.MODEL BAT54SW D
++    IS = 2.117E-07
++    N = 1.016
++    BV = 36
++    IBV = 1.196E-06
++    RS = 2.637
++    CJO = 1.114E-11
++    VJ = 0.2013
++    M = 0.3868
++    FC = 0
++    TT = 7E-9
++    EG = 0.69
++    XTI = 2
+.ENDS
+*
+***********************************************************
+* LOCAL ADDITION: series pair, SOT-323.
+*   Pin 1 A   = anode of D1
+*   Pin 2 K   = cathode of D2
+*   Pin 3 COM = cathode of D1 / anode of D2
+***********************************************************
+.SUBCKT BAT54SW_SOT323 A K COM
+XD1 A COM BAT54SW
+XD2 COM K BAT54SW
+.ENDS BAT54SW_SOT323
