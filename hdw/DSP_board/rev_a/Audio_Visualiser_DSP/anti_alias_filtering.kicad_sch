@@ -1218,7 +1218,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "4-pole Sallen-Key active anti-aliasing lowpass filters\nUnity gain\nfc = 23.2kHz, Q = 0.707 each\nIf sampling at 44.1kHz, nyquist is 22.05kHz\nMust filter hard just below this\n"
+	(text "4-pole Sallen-Key active anti-aliasing lowpass filters\nUnity gain\nfc = 23.2kHz, Q = 0.707 each\nIf sampling at 44.1kHz, nyquist is 22.05kHz\nMust filter hard around this frequency"
 		(exclude_from_sim no)
 		(at 134.62 151.13 0)
 		(effects

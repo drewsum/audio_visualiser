@@ -2908,13 +2908,14 @@
 		)
 		(uuid "f6da0f8f-30f8-4eb5-bae4-033449dca85c")
 	)
-	(text "Enable internal pullups in firmware"
+	(text "Enable internal pullups in firmware\nThis keeps programming interface free when in reset"
 		(exclude_from_sim no)
-		(at 63.5 135.89 0)
+		(at 30.48 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "fbec9997-7a6e-446a-ada5-f7b08f98ffc7")
 	)
@@ -5593,8 +5594,8 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57c4f54b-12af-421a-9ab7-4e7055d7d24d")
