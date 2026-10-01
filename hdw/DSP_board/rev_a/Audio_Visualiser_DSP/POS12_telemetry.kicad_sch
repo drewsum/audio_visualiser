@@ -1534,6 +1534,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 132.08 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8fcc7878-3249-4f48-855a-4367a254a495")
 		)
@@ -1660,6 +1671,17 @@
 			)
 		)
 		(property "Digi-Key PN" ""
+			(at 132.08 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
 			(at 132.08 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -1840,6 +1862,17 @@
 		)
 		(property "Configuration" "Telemetry"
 			(at 121.92 105.918 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 132.08 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2181,6 +2214,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 154.686 145.034 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/bc67f37c-ab41-4ca7-b782-e7219d2b33ee"
@@ -2488,6 +2532,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 154.686 76.962 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/bc67f37c-ab41-4ca7-b782-e7219d2b33ee"
@@ -2618,6 +2673,17 @@
 				)
 			)
 		)
+		(property "Sim.Type" ""
+			(at 109.22 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "85ca391c-4dd7-4780-94d1-818253494b16")
 		)
@@ -2710,6 +2776,17 @@
 		)
 		(property "Configuration" "Telemetry"
 			(at 139.7 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 132.08 53.34 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
