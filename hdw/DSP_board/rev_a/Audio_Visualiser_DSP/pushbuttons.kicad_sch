@@ -3501,7 +3501,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "002cd671-790f-4c9f-a8fe-5495dff74e39")
-		(property "Reference" "C?"
+		(property "Reference" "C1901"
 			(at 65.405 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3609,7 +3609,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C?")
+					(reference "C1901")
 					(unit 1)
 				)
 			)
@@ -3626,7 +3626,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "0235ddb3-e003-4ac0-9139-d2877fceb26e")
-		(property "Reference" "C90"
+		(property "Reference" "C1911"
 			(at 137.795 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3734,7 +3734,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C90")
+					(reference "C1911")
 					(unit 1)
 				)
 			)
@@ -3751,7 +3751,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "081969a8-7984-4026-93be-48a362a75400")
-		(property "Reference" "#PWR0410"
+		(property "Reference" "#PWR01904"
 			(at 66.04 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -3811,7 +3811,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0410")
+					(reference "#PWR01904")
 					(unit 1)
 				)
 			)
@@ -3828,7 +3828,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0a9d5709-f602-479a-b441-a960849cc637")
-		(property "Reference" "#PWR0307"
+		(property "Reference" "#PWR01923"
 			(at 114.3 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3888,7 +3888,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0307")
+					(reference "#PWR01923")
 					(unit 1)
 				)
 			)
@@ -3906,7 +3906,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0ca390d9-25d2-408f-a029-d268bdfed149")
-		(property "Reference" "SW2"
+		(property "Reference" "SW1901"
 			(at 39.37 36.83 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3966,7 +3966,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "SW2")
+					(reference "SW1901")
 					(unit 1)
 				)
 			)
@@ -3984,7 +3984,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "158d5b40-bfc3-4310-80c1-422b5f5a06cf")
-		(property "Reference" "#PWR0292"
+		(property "Reference" "#PWR01902"
 			(at 45.72 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -4044,7 +4044,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0292")
+					(reference "#PWR01902")
 					(unit 1)
 				)
 			)
@@ -4062,7 +4062,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c60cc3e-48ca-4d0d-90e8-a6252da008f5")
-		(property "Reference" "#PWR0295"
+		(property "Reference" "#PWR01912"
 			(at 93.98 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -4122,7 +4122,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0295")
+					(reference "#PWR01912")
 					(unit 1)
 				)
 			)
@@ -4139,7 +4139,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1ca9e5cb-17f0-4ffb-92c0-7fd44e61e390")
-		(property "Reference" "#PWR0393"
+		(property "Reference" "#PWR01915"
 			(at 93.98 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4199,7 +4199,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0393")
+					(reference "#PWR01915")
 					(unit 1)
 				)
 			)
@@ -4216,7 +4216,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1dd78690-52c0-4855-9f64-dfb4534ffcd5")
-		(property "Reference" "#PWR0297"
+		(property "Reference" "#PWR01910"
 			(at 85.09 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4276,7 +4276,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0297")
+					(reference "#PWR01910")
 					(unit 1)
 				)
 			)
@@ -4293,7 +4293,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "25ea3d35-b884-4d0f-86ea-c37783b04bd7")
-		(property "Reference" "R82"
+		(property "Reference" "R1901"
 			(at 54.61 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4402,7 +4402,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R82")
+					(reference "R1901")
 					(unit 1)
 				)
 			)
@@ -4419,7 +4419,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2631b70c-d703-47a9-a8f4-c6770d69dc91")
-		(property "Reference" "#PWR0312"
+		(property "Reference" "#PWR01946"
 			(at 167.64 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4479,7 +4479,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0312")
+					(reference "#PWR01946")
 					(unit 1)
 				)
 			)
@@ -4496,7 +4496,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2762456e-4664-4d7b-bc92-f657cf8ccb7d")
-		(property "Reference" "#PWR0400"
+		(property "Reference" "#PWR01917"
 			(at 97.79 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -4556,7 +4556,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0400")
+					(reference "#PWR01917")
 					(unit 1)
 				)
 			)
@@ -4573,7 +4573,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34df857c-9009-4a3d-b51c-379f960e8e2b")
-		(property "Reference" "#PWR0399"
+		(property "Reference" "#PWR01939"
 			(at 144.78 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -4633,7 +4633,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0399")
+					(reference "#PWR01939")
 					(unit 1)
 				)
 			)
@@ -4650,7 +4650,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3553243d-d2d2-4fa6-8ec7-cfb60c9a2ece")
-		(property "Reference" "#PWR0306"
+		(property "Reference" "#PWR01922"
 			(at 114.3 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4710,7 +4710,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0306")
+					(reference "#PWR01922")
 					(unit 1)
 				)
 			)
@@ -4727,7 +4727,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "359b8c66-98ee-48b4-87a9-37bab16f82d1")
-		(property "Reference" "U?"
+		(property "Reference" "U1905"
 			(at 115.824 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4814,7 +4814,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "U?")
+					(reference "U1905")
 					(unit 1)
 				)
 			)
@@ -4831,7 +4831,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3653cb84-a845-455a-9342-c1dbeeb4ada5")
-		(property "Reference" "#PWR0313"
+		(property "Reference" "#PWR01938"
 			(at 144.78 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -4891,7 +4891,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0313")
+					(reference "#PWR01938")
 					(unit 1)
 				)
 			)
@@ -4908,7 +4908,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "374868d0-cb4e-4fc4-95a0-b851ca9e009b")
-		(property "Reference" "#PWR0417"
+		(property "Reference" "#PWR01905"
 			(at 66.04 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -4968,7 +4968,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0417")
+					(reference "#PWR01905")
 					(unit 1)
 				)
 			)
@@ -4985,7 +4985,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3f13daae-19b9-4a0c-bdbc-431675ca545c")
-		(property "Reference" "#PWR0408"
+		(property "Reference" "#PWR01929"
 			(at 114.3 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -5045,7 +5045,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0408")
+					(reference "#PWR01929")
 					(unit 1)
 				)
 			)
@@ -5062,7 +5062,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4050c2e9-caa4-4532-9c49-515fa9c0b82a")
-		(property "Reference" "#PWR0416"
+		(property "Reference" "#PWR01949"
 			(at 187.96 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -5122,7 +5122,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0416")
+					(reference "#PWR01949")
 					(unit 1)
 				)
 			)
@@ -5139,7 +5139,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "40de203f-5c1b-480b-8514-b6e3f74d8d86")
-		(property "Reference" "#PWR0299"
+		(property "Reference" "#PWR01901"
 			(at 39.37 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -5199,7 +5199,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0299")
+					(reference "#PWR01901")
 					(unit 1)
 				)
 			)
@@ -5217,7 +5217,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "45dc5170-bac3-4c8a-9cbd-9e545be946c7")
-		(property "Reference" "C?"
+		(property "Reference" "C1905"
 			(at 93.345 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5335,7 +5335,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C?")
+					(reference "C1905")
 					(unit 1)
 				)
 			)
@@ -5353,7 +5353,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4f0193a5-2687-4483-bdf4-4c7bc19bf0e1")
-		(property "Reference" "C?"
+		(property "Reference" "C1906"
 			(at 93.345 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5461,7 +5461,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C?")
+					(reference "C1906")
 					(unit 1)
 				)
 			)
@@ -5478,7 +5478,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "5756252e-8481-4c33-938f-47f713538af2")
-		(property "Reference" "R83"
+		(property "Reference" "R1902"
 			(at 54.61 39.37 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5587,7 +5587,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R83")
+					(reference "R1902")
 					(unit 1)
 				)
 			)
@@ -5604,7 +5604,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57563a6a-ce7d-4222-a651-2c625355523e")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR01933"
 			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -5664,7 +5664,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0303")
+					(reference "#PWR01933")
 					(unit 1)
 				)
 			)
@@ -5682,7 +5682,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57a4e13b-aaab-4afc-82a5-ebc0e940f19c")
-		(property "Reference" "C?"
+		(property "Reference" "C1907"
 			(at 113.665 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5790,7 +5790,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C?")
+					(reference "C1907")
 					(unit 1)
 				)
 			)
@@ -5807,7 +5807,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "59f4ff3c-6bab-495f-ba24-987d2f63e978")
-		(property "Reference" "#PWR0296"
+		(property "Reference" "#PWR01909"
 			(at 85.09 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -5867,7 +5867,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0296")
+					(reference "#PWR01909")
 					(unit 1)
 				)
 			)
@@ -5884,7 +5884,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5c0eb7c6-a899-4a7f-80fc-d8f80c151bfa")
-		(property "Reference" "#PWR0397"
+		(property "Reference" "#PWR01935"
 			(at 130.81 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5944,7 +5944,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0397")
+					(reference "#PWR01935")
 					(unit 1)
 				)
 			)
@@ -5961,7 +5961,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5cd21c8e-a0ee-4488-ba4e-1d8357b13a48")
-		(property "Reference" "R86"
+		(property "Reference" "R1906"
 			(at 96.52 70.866 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6079,7 +6079,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R86")
+					(reference "R1906")
 					(unit 1)
 				)
 			)
@@ -6096,7 +6096,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5d1a7f46-f915-4422-bac6-818e676a1b43")
-		(property "Reference" "U31"
+		(property "Reference" "U1904"
 			(at 115.824 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6194,7 +6194,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "U31")
+					(reference "U1904")
 					(unit 1)
 				)
 			)
@@ -6212,7 +6212,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "60dca81e-774a-4874-8278-d10ee3a08694")
-		(property "Reference" "C?"
+		(property "Reference" "C1913"
 			(at 169.545 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6320,7 +6320,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C?")
+					(reference "C1913")
 					(unit 1)
 				)
 			)
@@ -6337,7 +6337,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "621d2d8e-40dd-4571-b1c6-6a19c10d8015")
-		(property "Reference" "#PWR0413"
+		(property "Reference" "#PWR01944"
 			(at 158.75 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6397,7 +6397,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0413")
+					(reference "#PWR01944")
 					(unit 1)
 				)
 			)
@@ -6414,7 +6414,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66239b88-925c-4f08-af77-5782c3f0793e")
-		(property "Reference" "#PWR0305"
+		(property "Reference" "#PWR01937"
 			(at 137.16 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6474,7 +6474,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0305")
+					(reference "#PWR01937")
 					(unit 1)
 				)
 			)
@@ -6491,7 +6491,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "69f75020-88c9-4104-ad1d-fac2a6be1b0c")
-		(property "Reference" "R?"
+		(property "Reference" "R1916"
 			(at 190.5 145.796 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6599,7 +6599,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R?")
+					(reference "R1916")
 					(unit 1)
 				)
 			)
@@ -6616,7 +6616,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f03cce4-1701-4ae1-8ede-54ca9a22d921")
-		(property "Reference" "#PWR0398"
+		(property "Reference" "#PWR01936"
 			(at 130.81 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -6676,7 +6676,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0398")
+					(reference "#PWR01936")
 					(unit 1)
 				)
 			)
@@ -6694,7 +6694,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71d6f1d9-1616-421e-8910-1190bb257746")
-		(property "Reference" "C?"
+		(property "Reference" "C1908"
 			(at 113.665 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6802,7 +6802,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C?")
+					(reference "C1908")
 					(unit 1)
 				)
 			)
@@ -6819,7 +6819,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72cdde53-2e05-43a8-ab74-39b67cc03175")
-		(property "Reference" "#PWR0301"
+		(property "Reference" "#PWR01930"
 			(at 115.57 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6879,7 +6879,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0301")
+					(reference "#PWR01930")
 					(unit 1)
 				)
 			)
@@ -6896,7 +6896,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "73d26ccc-dd7d-49e3-bb01-eebd9d56501e")
-		(property "Reference" "#PWR0394"
+		(property "Reference" "#PWR01916"
 			(at 93.98 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -6956,7 +6956,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0394")
+					(reference "#PWR01916")
 					(unit 1)
 				)
 			)
@@ -6974,7 +6974,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "745c8131-159b-4fb8-ba8e-2c60fd926401")
-		(property "Reference" "C?"
+		(property "Reference" "C1903"
 			(at 81.915 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7082,7 +7082,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C?")
+					(reference "C1903")
 					(unit 1)
 				)
 			)
@@ -7099,7 +7099,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "760bbfdc-f42e-4060-87ea-14b58eef7c7a")
-		(property "Reference" "#PWR0407"
+		(property "Reference" "#PWR01928"
 			(at 114.3 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -7159,7 +7159,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0407")
+					(reference "#PWR01928")
 					(unit 1)
 				)
 			)
@@ -7177,7 +7177,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "763daf18-763e-4be2-9621-99d02fa79e66")
-		(property "Reference" "R87"
+		(property "Reference" "R1911"
 			(at 130.81 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7280,7 +7280,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R87")
+					(reference "R1911")
 					(unit 1)
 				)
 			)
@@ -7297,7 +7297,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77e05b26-bc71-47d8-abbc-25abcef6bd1a")
-		(property "Reference" "R?"
+		(property "Reference" "R1903"
 			(at 68.58 133.096 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7405,7 +7405,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R?")
+					(reference "R1903")
 					(unit 1)
 				)
 			)
@@ -7423,7 +7423,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7a20e514-21f7-43cb-bc26-56c3860cd318")
-		(property "Reference" "#PWR0293"
+		(property "Reference" "#PWR01906"
 			(at 77.47 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7483,7 +7483,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0293")
+					(reference "#PWR01906")
 					(unit 1)
 				)
 			)
@@ -7501,7 +7501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a7baf69-04bb-4455-a694-93d76932666d")
-		(property "Reference" "#PWR0300"
+		(property "Reference" "#PWR01921"
 			(at 100.33 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -7562,7 +7562,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0300")
+					(reference "#PWR01921")
 					(unit 1)
 				)
 			)
@@ -7579,7 +7579,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e67788f-a966-4d89-879e-513cb95bf359")
-		(property "Reference" "R84"
+		(property "Reference" "R1905"
 			(at 93.98 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7688,7 +7688,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R84")
+					(reference "R1905")
 					(unit 1)
 				)
 			)
@@ -7705,7 +7705,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e7317ae-7863-4dcb-8a34-47476ea0b1ee")
-		(property "Reference" "#PWR0395"
+		(property "Reference" "#PWR01924"
 			(at 114.3 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -7765,7 +7765,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0395")
+					(reference "#PWR01924")
 					(unit 1)
 				)
 			)
@@ -7782,7 +7782,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "88af1a28-12fd-4940-bfb2-4967a7f519d0")
-		(property "Reference" "#PWR0304"
+		(property "Reference" "#PWR01934"
 			(at 130.81 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7842,7 +7842,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0304")
+					(reference "#PWR01934")
 					(unit 1)
 				)
 			)
@@ -7859,7 +7859,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8b1aeb24-d634-4aca-b05f-a3288223d613")
-		(property "Reference" "#PWR0404"
+		(property "Reference" "#PWR01931"
 			(at 128.27 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -7919,7 +7919,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0404")
+					(reference "#PWR01931")
 					(unit 1)
 				)
 			)
@@ -7937,7 +7937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f4e2030-d6f6-490b-b562-8e4fa4e3afdd")
-		(property "Reference" "SW3"
+		(property "Reference" "SW1903"
 			(at 73.66 87.6299 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8011,7 +8011,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "SW3")
+					(reference "SW1903")
 					(unit 1)
 				)
 			)
@@ -8028,7 +8028,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8fd77c15-9caf-44c0-8f40-cd420fa09508")
-		(property "Reference" "R?"
+		(property "Reference" "R1913"
 			(at 147.32 120.396 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8136,7 +8136,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R?")
+					(reference "R1913")
 					(unit 1)
 				)
 			)
@@ -8153,7 +8153,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "91304dc6-69ce-4e85-ab58-04020dbd9922")
-		(property "Reference" "#PWR0403"
+		(property "Reference" "#PWR01927"
 			(at 114.3 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -8213,7 +8213,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0403")
+					(reference "#PWR01927")
 					(unit 1)
 				)
 			)
@@ -8230,7 +8230,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "92249b02-2f52-468d-8d27-1c134e84163b")
-		(property "Reference" "R88"
+		(property "Reference" "R1915"
 			(at 170.18 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8338,7 +8338,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R88")
+					(reference "R1915")
 					(unit 1)
 				)
 			)
@@ -8355,7 +8355,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9264151b-7d66-4110-ad3b-b8a4d767af06")
-		(property "Reference" "U?"
+		(property "Reference" "U1902"
 			(at 99.314 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8442,7 +8442,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "U?")
+					(reference "U1902")
 					(unit 1)
 				)
 			)
@@ -8459,7 +8459,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96d87fcb-e265-422e-b46b-26d027f8a87a")
-		(property "Reference" "#PWR0411"
+		(property "Reference" "#PWR01907"
 			(at 82.55 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -8519,7 +8519,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0411")
+					(reference "#PWR01907")
 					(unit 1)
 				)
 			)
@@ -8536,7 +8536,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96d93ab6-0621-409a-820f-ccc83fc106c7")
-		(property "Reference" "#PWR0409"
+		(property "Reference" "#PWR01932"
 			(at 128.27 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -8596,7 +8596,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0409")
+					(reference "#PWR01932")
 					(unit 1)
 				)
 			)
@@ -8614,7 +8614,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "9afab1fe-4699-483a-b11f-ad6850f2a424")
-		(property "Reference" "C87"
+		(property "Reference" "C1902"
 			(at 74.93 55.2196 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8717,7 +8717,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C87")
+					(reference "C1902")
 					(unit 1)
 				)
 			)
@@ -8734,7 +8734,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9deb7e16-7570-42af-9614-6bd6df3ce26c")
-		(property "Reference" "U?"
+		(property "Reference" "U1903"
 			(at 99.314 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8821,7 +8821,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "U?")
+					(reference "U1903")
 					(unit 1)
 				)
 			)
@@ -8838,7 +8838,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a0d1ae23-1b80-474e-bc4e-56c670765f52")
-		(property "Reference" "#PWR0418"
+		(property "Reference" "#PWR01908"
 			(at 82.55 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -8898,7 +8898,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0418")
+					(reference "#PWR01908")
 					(unit 1)
 				)
 			)
@@ -8916,7 +8916,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a784bd74-df1b-4d5a-92b5-de3c3748dc01")
-		(property "Reference" "C?"
+		(property "Reference" "C1910"
 			(at 130.175 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9024,7 +9024,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C?")
+					(reference "C1910")
 					(unit 1)
 				)
 			)
@@ -9041,7 +9041,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a7c1c039-4ab3-477c-baf6-7dc9ea3a0983")
-		(property "Reference" "#PWR0415"
+		(property "Reference" "#PWR01948"
 			(at 170.18 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -9101,7 +9101,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0415")
+					(reference "#PWR01948")
 					(unit 1)
 				)
 			)
@@ -9118,7 +9118,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a7d7bab8-4afc-44a0-a5bb-7e83ded24dc1")
-		(property "Reference" "#PWR0405"
+		(property "Reference" "#PWR01919"
 			(at 97.79 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -9178,7 +9178,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0405")
+					(reference "#PWR01919")
 					(unit 1)
 				)
 			)
@@ -9196,7 +9196,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "a8eb6488-1a86-4f48-8e2d-25674366ee83")
-		(property "Reference" "C91"
+		(property "Reference" "C1912"
 			(at 155.575 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9304,7 +9304,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C91")
+					(reference "C1912")
 					(unit 1)
 				)
 			)
@@ -9321,7 +9321,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aa28afd3-1f3f-48c9-ad58-27748e1b50c0")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR01913"
 			(at 93.98 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9381,7 +9381,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0302")
+					(reference "#PWR01913")
 					(unit 1)
 				)
 			)
@@ -9400,7 +9400,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ada4d27e-09ce-4d1d-bc26-919e0f41c68c")
-		(property "Reference" "J8"
+		(property "Reference" "J1902"
 			(at 38.1 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9472,7 +9472,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "J8")
+					(reference "J1902")
 					(unit 1)
 				)
 			)
@@ -9489,7 +9489,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "afa02740-d487-4501-97f6-d258c2b3bcbb")
-		(property "Reference" "R?"
+		(property "Reference" "R1909"
 			(at 130.81 145.796 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9597,7 +9597,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R?")
+					(reference "R1909")
 					(unit 1)
 				)
 			)
@@ -9614,7 +9614,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b1be6435-f4c3-4d3d-99bb-0e8208def264")
-		(property "Reference" "R89"
+		(property "Reference" "R1912"
 			(at 147.32 83.566 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9732,7 +9732,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R89")
+					(reference "R1912")
 					(unit 1)
 				)
 			)
@@ -9749,7 +9749,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b434f72d-fc53-40db-8626-6a23bdd62613")
-		(property "Reference" "#PWR0414"
+		(property "Reference" "#PWR01947"
 			(at 170.18 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -9809,7 +9809,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0414")
+					(reference "#PWR01947")
 					(unit 1)
 				)
 			)
@@ -9826,7 +9826,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b9649c04-3be1-4806-92d0-e3446ef201c8")
-		(property "Reference" "#PWR0310"
+		(property "Reference" "#PWR01942"
 			(at 156.21 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -9886,7 +9886,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0310")
+					(reference "#PWR01942")
 					(unit 1)
 				)
 			)
@@ -9903,7 +9903,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "be18ff54-6558-46a4-872e-adc34f512676")
-		(property "Reference" "#PWR0396"
+		(property "Reference" "#PWR01925"
 			(at 114.3 127 0)
 			(hide yes)
 			(show_name no)
@@ -9963,7 +9963,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0396")
+					(reference "#PWR01925")
 					(unit 1)
 				)
 			)
@@ -9980,7 +9980,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c21e0b52-41ae-4c9c-9f61-432e897dbda5")
-		(property "Reference" "R?"
+		(property "Reference" "R1914"
 			(at 157.48 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10099,7 +10099,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R?")
+					(reference "R1914")
 					(unit 1)
 				)
 			)
@@ -10118,7 +10118,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6c70e71-9fa0-4edd-9082-aa70161fb425")
-		(property "Reference" "SW?"
+		(property "Reference" "SW1902"
 			(at 49.53 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10189,7 +10189,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "SW?")
+					(reference "SW1902")
 					(unit 1)
 				)
 			)
@@ -10206,7 +10206,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c72da35e-21df-47c7-9020-8c2312203dde")
-		(property "Reference" "#PWR0392"
+		(property "Reference" "#PWR01903"
 			(at 59.69 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -10266,7 +10266,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0392")
+					(reference "#PWR01903")
 					(unit 1)
 				)
 			)
@@ -10283,7 +10283,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb32b0d4-3c9c-4a2a-83f0-208522895a3f")
-		(property "Reference" "#PWR0406"
+		(property "Reference" "#PWR01920"
 			(at 97.79 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -10343,7 +10343,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0406")
+					(reference "#PWR01920")
 					(unit 1)
 				)
 			)
@@ -10360,7 +10360,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb796955-bcba-4e20-a2ac-c2fe7e903aa2")
-		(property "Reference" "#PWR0311"
+		(property "Reference" "#PWR01943"
 			(at 156.21 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -10420,7 +10420,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0311")
+					(reference "#PWR01943")
 					(unit 1)
 				)
 			)
@@ -10437,7 +10437,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ccb0965e-e9fd-4387-98c2-98a2d1a4e09d")
-		(property "Reference" "#PWR0308"
+		(property "Reference" "#PWR01940"
 			(at 151.13 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -10497,7 +10497,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0308")
+					(reference "#PWR01940")
 					(unit 1)
 				)
 			)
@@ -10515,7 +10515,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d86be3f0-1bdb-4189-a4fe-ffe8b36e6e3d")
-		(property "Reference" "C89"
+		(property "Reference" "C1909"
 			(at 130.175 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10633,7 +10633,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C89")
+					(reference "C1909")
 					(unit 1)
 				)
 			)
@@ -10650,7 +10650,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d8a7d097-df9a-4862-8f5b-fc2b8ab68f39")
-		(property "Reference" "R?"
+		(property "Reference" "R1910"
 			(at 130.81 168.656 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10758,7 +10758,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R?")
+					(reference "R1910")
 					(unit 1)
 				)
 			)
@@ -10776,7 +10776,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dbc1815e-540f-4c96-b14f-0306b14085fd")
-		(property "Reference" "U?"
+		(property "Reference" "U1907"
 			(at 172.72 137.4392 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10847,7 +10847,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "U?")
+					(reference "U1907")
 					(unit 1)
 				)
 			)
@@ -10864,7 +10864,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dcbebebd-16f3-46ac-8f26-d741efec2be2")
-		(property "Reference" "R?"
+		(property "Reference" "R1904"
 			(at 85.09 133.096 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10972,7 +10972,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R?")
+					(reference "R1904")
 					(unit 1)
 				)
 			)
@@ -10989,7 +10989,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e08ab643-f282-40cc-896a-9a041e2587f8")
-		(property "Reference" "R?"
+		(property "Reference" "R1907"
 			(at 96.52 107.696 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11097,7 +11097,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R?")
+					(reference "R1907")
 					(unit 1)
 				)
 			)
@@ -11115,7 +11115,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "e44ac125-f20c-48bb-b1ca-955f77eb6e23")
-		(property "Reference" "C88"
+		(property "Reference" "C1904"
 			(at 84.455 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11223,7 +11223,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "C88")
+					(reference "C1904")
 					(unit 1)
 				)
 			)
@@ -11240,7 +11240,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e8c686ed-35b4-4b3c-87f3-c7522b29ee4f")
-		(property "Reference" "#PWR0309"
+		(property "Reference" "#PWR01941"
 			(at 151.13 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -11300,7 +11300,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0309")
+					(reference "#PWR01941")
 					(unit 1)
 				)
 			)
@@ -11317,7 +11317,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e9936d7c-c377-4221-b8f9-1f1525d9eccf")
-		(property "Reference" "#PWR0401"
+		(property "Reference" "#PWR01918"
 			(at 97.79 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -11377,7 +11377,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0401")
+					(reference "#PWR01918")
 					(unit 1)
 				)
 			)
@@ -11394,7 +11394,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ea491050-ce17-4baf-92c3-aac1128e0325")
-		(property "Reference" "#PWR0402"
+		(property "Reference" "#PWR01926"
 			(at 114.3 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -11454,7 +11454,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0402")
+					(reference "#PWR01926")
 					(unit 1)
 				)
 			)
@@ -11472,7 +11472,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "ebbb059f-af97-469c-b5e5-4708fb7a3a88")
-		(property "Reference" "U29"
+		(property "Reference" "U1901"
 			(at 96.52 31.115 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11560,7 +11560,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "U29")
+					(reference "U1901")
 					(unit 1)
 				)
 			)
@@ -11577,7 +11577,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee6ad307-7903-40e0-8ae0-5053da70bf82")
-		(property "Reference" "#PWR0294"
+		(property "Reference" "#PWR01911"
 			(at 93.98 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -11637,7 +11637,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0294")
+					(reference "#PWR01911")
 					(unit 1)
 				)
 			)
@@ -11654,7 +11654,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "ee6b7b62-175a-4968-9b4f-d00b456b152f")
-		(property "Reference" "U32"
+		(property "Reference" "U1906"
 			(at 152.654 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11741,7 +11741,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "U32")
+					(reference "U1906")
 					(unit 1)
 				)
 			)
@@ -11758,7 +11758,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ee7f6ee2-9607-4ca1-a407-4f93c07cdf73")
-		(property "Reference" "#PWR0298"
+		(property "Reference" "#PWR01914"
 			(at 93.98 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -11818,7 +11818,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0298")
+					(reference "#PWR01914")
 					(unit 1)
 				)
 			)
@@ -11837,7 +11837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9a4fd33-5799-40f1-982e-bcdff0f7d033")
-		(property "Reference" "J7"
+		(property "Reference" "J1901"
 			(at 38.1 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11896,7 +11896,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "J7")
+					(reference "J1901")
 					(unit 1)
 				)
 			)
@@ -11913,7 +11913,7 @@
 		(in_pos_files yes)
 		(dnp yes)
 		(uuid "fd7c9a1d-2735-42d7-a7db-a90a60b9da35")
-		(property "Reference" "R85"
+		(property "Reference" "R1908"
 			(at 118.11 45.466 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12021,7 +12021,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "R85")
+					(reference "R1908")
 					(unit 1)
 				)
 			)
@@ -12038,7 +12038,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ff4afa84-5224-45c8-ada9-16148261d851")
-		(property "Reference" "#PWR0412"
+		(property "Reference" "#PWR01945"
 			(at 158.75 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -12098,7 +12098,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "#PWR0412")
+					(reference "#PWR01945")
 					(unit 1)
 				)
 			)
