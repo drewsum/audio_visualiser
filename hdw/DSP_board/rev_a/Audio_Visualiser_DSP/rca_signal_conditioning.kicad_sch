@@ -143,230 +143,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_Coaxial_x2_Isolated"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0.254 3.048 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_Coaxial_x2_Isolated"
-				(at 2.921 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_Coaxial_x2_Isolated_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.778 0)
-					(mid 0.222 -1.8079)
-					(end -1.778 -0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.778 0.508)
-					(mid 0.2221 1.8084)
-					(end 1.778 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.508)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Conn_Coaxial_x2_Isolated_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "In1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "Ext1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Conn_Coaxial_x2_Isolated_2_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "In2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "Ext2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Custom Library:+1.6V_AUDIO_REF"
 			(power global)
 			(pin_names
@@ -1720,216 +1496,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:VSIN"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.0254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "V"
-				(at 2.54 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "VSIN"
-				(at 2.54 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Voltage source, sinusoidal"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=+ 2=-"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Params" "dc=0 ampl=1 f=1k ac=1"
-				(at 2.54 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Sim.Type" "SIN"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Device" "V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "ki_keywords" "simulation ac vac"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VSIN_0_0"
-				(arc
-					(start -1.27 0)
-					(mid -0.635 0.6323)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.27 0)
-					(mid 0.635 -0.6323)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "+"
-					(at 0 1.905 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "VSIN_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "VSIN_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -2184,6 +1750,301 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "rca_jack:Switchcraft_PJRAN2X1U_X"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Switchcraft_PJRAN2X1U_X"
+				(at 2.921 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "rca_jack:Switchcraft_PJRAN2X1U_X"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.switchcraft.com/assets/1/24/pjran2x1u__x_series_cd.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Switchcraft PJRAN2X1U__X dual right-angle RCA jack with NC shunt. Unit A: 1=sleeve, 2=tip, 3=shunt. Unit B: 4=sleeve, 5=tip, 6=shunt."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Digi-Key PN" "PJRAN2X1U01AUX"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "RCA phono cinch jack dual switched Switchcraft PJRAN2X1U01X PJRAN2X1U01AUX PJRAN2X1U02X PJRAN2X1U02AUX"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*PJRAN2X1U*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Switchcraft_PJRAN2X1U_X_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy -2.032 -2.54) (xy -2.032 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.254) (xy -2.286 -0.762) (xy -1.778 -0.762) (xy -2.032 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Switchcraft_PJRAN2X1U_X_1_1"
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Sleeve_A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "Tip_A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "Shunt_A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Switchcraft_PJRAN2X1U_X_2_1"
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Sleeve_B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "Tip_B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "Shunt_B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "AC coupling cap and DC bias injection resistor form a high-pass filter\nf_c = 1 / (2π · Rbias · Cin)\nC = 2.2uF\nR = 20k\nf_c = 3.3Hz"
 		(exclude_from_sim no)
@@ -2220,12 +2081,6 @@
 		(uuid "5d2fa645-b772-40bb-b3b2-af7731780c7f")
 	)
 	(junction
-		(at 86.36 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "746a8b5b-1500-4c85-b45a-5b3c24385b5e")
-	)
-	(junction
 		(at 149.86 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2238,12 +2093,6 @@
 		(uuid "79a0ab0f-9efe-4862-a077-70d12f3dc702")
 	)
 	(junction
-		(at 86.36 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a8e6ace6-2211-4409-beaf-bf5a92c21dee")
-	)
-	(junction
 		(at 149.86 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2254,6 +2103,14 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7d448d5-207b-4e45-bf4e-f4174fdfc987")
+	)
+	(no_connect
+		(at 78.74 128.27)
+		(uuid "17a6d64c-b6f8-4959-b6d5-842726a7033d")
+	)
+	(no_connect
+		(at 78.74 64.77)
+		(uuid "4dcc3902-ae87-435d-806e-e3ba9a9696cf")
 	)
 	(wire
 		(pts
@@ -2287,16 +2144,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 125.73) (xy 86.36 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34f8cb27-70aa-4a9b-9e4d-3718ef4c9a3d")
-	)
-	(wire
-		(pts
 			(xy 115.57 62.23) (xy 102.87 62.23)
 		)
 		(stroke
@@ -2304,16 +2151,6 @@
 			(type default)
 		)
 		(uuid "47b9b640-8e90-4023-a1ee-3dc0ecba949e")
-	)
-	(wire
-		(pts
-			(xy 86.36 62.23) (xy 95.25 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48a734ab-968d-4aaf-933a-581b80187ce7")
 	)
 	(wire
 		(pts
@@ -2344,16 +2181,6 @@
 			(type default)
 		)
 		(uuid "90021d1c-da20-4877-8afb-01719b46070f")
-	)
-	(wire
-		(pts
-			(xy 86.36 62.23) (xy 86.36 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "917646da-410c-42d5-bfc3-e65e44bc13e1")
 	)
 	(wire
 		(pts
@@ -2397,7 +2224,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 62.23) (xy 86.36 62.23)
+			(xy 78.74 62.23) (xy 95.25 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2414,16 +2241,6 @@
 			(type default)
 		)
 		(uuid "ac5c53f8-f98f-4648-9347-08526650ec48")
-	)
-	(wire
-		(pts
-			(xy 86.36 125.73) (xy 86.36 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb958f05-a37a-4554-be04-99cbff179d66")
 	)
 	(wire
 		(pts
@@ -2467,7 +2284,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 125.73) (xy 95.25 125.73)
+			(xy 78.74 125.73) (xy 95.25 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2696,18 +2513,40 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 86.36 82.55 0)
-		(unit 1)
+		(lib_id "rca_jack:Switchcraft_PJRAN2X1U_X")
+		(at 73.66 62.23 0)
+		(mirror y)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0f995ad7-76a6-4516-bb58-3337adcd14f6")
-		(property "Reference" "#PWR01301"
-			(at 86.36 88.9 0)
+		(fields_autoplaced yes)
+		(uuid "0500a55e-3fc6-474d-8818-7317dced45be")
+		(property "Reference" "J1301"
+			(at 73.9774 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Switchcraft_PJRAN2X1U_X"
+			(at 73.9774 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "rca_jack:Switchcraft_PJRAN2X1U_X"
+			(at 73.66 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2717,18 +2556,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 86.36 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 82.55 0)
+		(property "Datasheet" "https://www.switchcraft.com/assets/1/24/pjran2x1u__x_series_cd.pdf"
+			(at 73.66 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2738,8 +2567,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 86.36 82.55 0)
+		(property "Description" "Switchcraft PJRAN2X1U__X dual right-angle RCA jack with NC shunt. Unit A: 1=sleeve, 2=tip, 3=shunt. Unit B: 4=sleeve, 5=tip, 6=shunt."
+			(at 73.66 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2749,8 +2578,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 82.55 0)
+		(property "Digi-Key PN" "PJRAN2X1U01AUX"
+			(at 73.66 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2759,218 +2588,30 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "a761fa87-ac8b-4324-a0f8-79989c01ab21")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 86.36 146.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "232dcd15-3224-4425-9a07-6715ad8749cd")
-		(property "Reference" "#PWR01302"
-			(at 86.36 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 86.36 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2478e9b7-9c25-41ae-9eba-989598051230")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:VSIN")
-		(at 86.36 140.97 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2ec96daa-294d-4eec-a9c6-b11d815c8ce0")
-		(property "Reference" "V1302"
-			(at 88.9 138.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VSIN"
-			(at 88.9 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 86.36 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage source, sinusoidal"
-			(at 86.36 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 86.36 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Params" "dc=0 ampl=2.83 f=1k ac=1"
-			(at 88.9 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Sim.Type" "SIN"
-			(at 86.36 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 86.36 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "3df9aba7-f993-494b-9db0-11e984df380d")
 		)
 		(pin "2"
-			(uuid "04c380bd-a785-4b7f-a3b8-c19d60101151")
+			(uuid "86a0f1a8-eac7-490e-b766-242a20a600c8")
+		)
+		(pin "5"
+			(uuid "b08ca3ac-608d-40a2-b7e3-43bfbac209f9")
+		)
+		(pin "6"
+			(uuid "c38c2eda-125c-429a-8fb1-0065870e2a6b")
+		)
+		(pin "3"
+			(uuid "b076ecea-57ae-4b35-a9db-3c93abd0bfcc")
+		)
+		(pin "1"
+			(uuid "da24eda8-f279-469f-9a21-d3f64619bd42")
+		)
+		(pin "4"
+			(uuid "209d982c-3ff8-4050-953f-be1a312306c6")
 		)
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "V1302")
-					(unit 1)
+					(reference "J1301")
+					(unit 2)
 				)
 			)
 		)
@@ -3445,93 +3086,6 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
 					(reference "#PWR01307")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_Coaxial_x2_Isolated")
-		(at 73.66 62.23 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4cfc5da5-25d1-4343-8da4-8d923b163a00")
-		(property "Reference" "J1301"
-			(at 73.9774 55.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Left"
-			(at 73.9774 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 73.66 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "54dde5e4-8205-49c7-b669-220305cd12ed")
-		)
-		(pin "4"
-			(uuid "3bf5b79c-c9f7-49d8-b2c8-65b828386d9d")
-		)
-		(pin "2"
-			(uuid "1303f538-36f9-44ca-8cf9-74c1731ef7dc")
-		)
-		(pin "1"
-			(uuid "b23e4ffe-1693-4402-9d7f-b619121aaf73")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "J1301")
 					(unit 1)
 				)
 			)
@@ -4178,132 +3732,6 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
 					(reference "D1302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:VSIN")
-		(at 86.36 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "94dc6205-7d6d-457b-be56-6c11943c211a")
-		(property "Reference" "V1301"
-			(at 88.9 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VSIN"
-			(at 88.9 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 86.36 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage source, sinusoidal"
-			(at 86.36 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 86.36 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Params" "dc=0 ampl=0.8 f=1k ac=1"
-			(at 88.9 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Sim.Type" "SIN"
-			(at 86.36 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 86.36 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "3ef56412-b186-4866-8b21-e860714d5f60")
-		)
-		(pin "2"
-			(uuid "e35267e6-00c0-4c39-9444-92e809f47711")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "V1301")
 					(unit 1)
 				)
 			)
@@ -5247,19 +4675,19 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_Coaxial_x2_Isolated")
+		(lib_id "rca_jack:Switchcraft_PJRAN2X1U_X")
 		(at 73.66 125.73 0)
 		(mirror y)
-		(unit 2)
+		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ed1a23d6-c7f3-4f0b-89cf-cb5abd339502")
-		(property "Reference" "J1302"
+		(uuid "f3cd149e-a531-4bea-8cb3-ae9bb7989355")
+		(property "Reference" "J1301"
 			(at 73.9774 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5269,7 +4697,7 @@
 				)
 			)
 		)
-		(property "Value" "Right"
+		(property "Value" "Switchcraft_PJRAN2X1U_X"
 			(at 73.9774 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5279,7 +4707,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "rca_jack:Switchcraft_PJRAN2X1U_X"
 			(at 73.66 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5290,7 +4718,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.switchcraft.com/assets/1/24/pjran2x1u__x_series_cd.pdf"
 			(at 73.66 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5301,7 +4729,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "Switchcraft PJRAN2X1U__X dual right-angle RCA jack with NC shunt. Unit A: 1=sleeve, 2=tip, 3=shunt. Unit B: 4=sleeve, 5=tip, 6=shunt."
 			(at 73.66 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5312,23 +4740,40 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "54dde5e4-8205-49c7-b669-220305cd12ee")
-		)
-		(pin "4"
-			(uuid "3bf5b79c-c9f7-49d8-b2c8-65b828386d9e")
+		(property "Digi-Key PN" "PJRAN2X1U01AUX"
+			(at 73.66 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "9ac9e0c6-d14b-43b8-84c9-747c801425ee")
+			(uuid "86a0f1a8-eac7-490e-b766-242a20a600c8")
+		)
+		(pin "5"
+			(uuid "b08ca3ac-608d-40a2-b7e3-43bfbac209f9")
+		)
+		(pin "6"
+			(uuid "c38c2eda-125c-429a-8fb1-0065870e2a6b")
+		)
+		(pin "3"
+			(uuid "b076ecea-57ae-4b35-a9db-3c93abd0bfcc")
 		)
 		(pin "1"
-			(uuid "9d8ba332-5ce2-4ccf-af64-c0079b0825c7")
+			(uuid "da24eda8-f279-469f-9a21-d3f64619bd42")
+		)
+		(pin "4"
+			(uuid "209d982c-3ff8-4050-953f-be1a312306c6")
 		)
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "J1302")
-					(unit 2)
+					(reference "J1301")
+					(unit 1)
 				)
 			)
 		)

@@ -3901,7 +3901,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -11857,7 +11857,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 38.1 24.13 0)
 			(hide yes)
 			(show_name no)
