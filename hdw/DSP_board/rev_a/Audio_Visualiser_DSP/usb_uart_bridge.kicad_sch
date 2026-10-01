@@ -2950,7 +2950,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Logic_LevelTranslator:TXB0102YZP"
+		(symbol "Logic_LevelTranslator:TXB0102DCU"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2966,7 +2966,7 @@
 					)
 				)
 			)
-			(property "Value" "TXB0102YZP"
+			(property "Value" "TXB0102DCU"
 				(at 3.81 11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2977,7 +2977,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_BGA:Texas_DSBGA-8_0.9x1.9mm_Layout2x4_P0.5mm"
+			(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
 				(at 0 -13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2999,7 +2999,7 @@
 					)
 				)
 			)
-			(property "Description" "2-Bit Bidirectional Voltage-Level Translator With Auto Direction Sensing and ±15-kV ESD Protection, DSBGA-8"
+			(property "Description" "2-Bit Bidirectional Voltage-Level Translator With Auto Direction Sensing and ±15-kV ESD Protection, VSSOP-8"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3021,7 +3021,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Texas*DSBGA*0.9x1.9mm*Layout2x4*P0.5mm*"
+			(property "ki_fp_filters" "VSSOP*2.3x2mm*P0.5mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3032,7 +3032,7 @@
 					)
 				)
 			)
-			(symbol "TXB0102YZP_0_1"
+			(symbol "TXB0102DCU_0_1"
 				(rectangle
 					(start -7.62 10.16)
 					(end 7.62 -10.16)
@@ -3189,7 +3189,7 @@
 					)
 				)
 			)
-			(symbol "TXB0102YZP_1_1"
+			(symbol "TXB0102DCU_1_1"
 				(pin bidirectional line
 					(at 10.16 -2.54 180)
 					(length 2.54)
@@ -3200,25 +3200,7 @@
 							)
 						)
 					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3236,25 +3218,7 @@
 							)
 						)
 					)
-					(number "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 12.7 270)
-					(length 2.54)
-					(name "VCCB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "B2"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3272,25 +3236,7 @@
 							)
 						)
 					)
-					(number "C1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 7.62 0)
-					(length 2.54)
-					(name "OE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3308,7 +3254,7 @@
 							)
 						)
 					)
-					(number "D1"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3326,7 +3272,61 @@
 							)
 						)
 					)
-					(number "D2"
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "OE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 12.7 270)
+					(length 2.54)
+					(name "VCCB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4776,7 +4776,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "311-100KLRCT-ND"
 			(at 82.55 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -4878,7 +4878,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "732-11993-1-ND"
 			(at 151.638 279.146 0)
 			(hide yes)
 			(show_name no)
@@ -4981,7 +4981,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05B104KB5NNNCCT-ND"
 			(at 14.605 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -5225,7 +5225,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05A106MP6NUN8CT-ND"
 			(at 170.18 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -5414,6 +5414,17 @@
 				)
 			)
 		)
+		(property "Digi-Key PN" "670-DX07S016JA1R1500CT-ND"
+			(at 240.03 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "B6"
 			(uuid "3db7c658-a77f-43cb-9541-f7782228bbe6")
 		)
@@ -5566,7 +5577,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05B104KB5NNNCCT-ND"
 			(at 151.765 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -5700,7 +5711,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "311-100KLRCT-ND"
 			(at 177.8 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -5987,7 +5998,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "311-1.00KLRCT-ND"
 			(at 124.46 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -6478,7 +6489,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "YAG3503CT-ND"
 			(at 195.58 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6613,7 +6624,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05B104KB5NNNCCT-ND"
 			(at 104.775 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6977,7 +6988,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05A106MP6NUN8CT-ND"
 			(at 115.57 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -7308,7 +7319,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "732-11992-1-ND"
 			(at 164.338 279.146 0)
 			(hide yes)
 			(show_name no)
@@ -8672,7 +8683,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05B104KB5NNNCCT-ND"
 			(at 161.925 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -8959,7 +8970,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "311-100KLRCT-ND"
 			(at 69.85 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -9093,7 +9104,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "311-100KLRCT-ND"
 			(at 190.5 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -9196,7 +9207,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05B104KB5NNNCCT-ND"
 			(at 104.775 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -9340,7 +9351,7 @@
 				)
 			)
 		)
-		(property "Ampacity" "0.7A"
+		(property "Ampacity" "1.3A"
 			(at 204.47 83.82 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9352,6 +9363,17 @@
 		)
 		(property "Sim.Type" ""
 			(at 204.47 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "490-16508-1-ND"
+			(at 204.47 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9625,7 +9647,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "311-1.00KLRCT-ND"
 			(at 41.91 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -10102,7 +10124,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "YAG3503CT-ND"
 			(at 208.28 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -10292,7 +10314,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Logic_LevelTranslator:TXB0102YZP")
+		(lib_id "Logic_LevelTranslator:TXB0102DCU")
 		(at 130.81 39.37 0)
 		(mirror y)
 		(unit 1)
@@ -10313,7 +10335,7 @@
 				)
 			)
 		)
-		(property "Value" "TXB0102YZP"
+		(property "Value" "TXB0102DCU"
 			(at 127 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10324,7 +10346,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_BGA:Texas_DSBGA-8_0.9x1.9mm_Layout2x4_P0.5mm"
+		(property "Footprint" "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
 			(at 130.81 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -10346,7 +10368,7 @@
 				)
 			)
 		)
-		(property "Description" "2-Bit Bidirectional Voltage-Level Translator With Auto Direction Sensing and ±15-kV ESD Protection, DSBGA-8"
+		(property "Description" "2-Bit Bidirectional Voltage-Level Translator With Auto Direction Sensing and ±15-kV ESD Protection, VSSOP-8"
 			(at 130.81 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -10368,28 +10390,39 @@
 				)
 			)
 		)
-		(pin "B2"
+		(property "Digi-Key PN" "296-22862-1-ND"
+			(at 130.81 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
 			(uuid "a7aea6db-5475-4f05-a198-475b39e177a3")
 		)
-		(pin "D2"
+		(pin "5"
 			(uuid "394b516d-e5e9-4085-b174-7b55e02fd1a3")
 		)
-		(pin "C2"
+		(pin "6"
 			(uuid "be171cd7-50a9-4bb7-a4e3-936aaf26fef8")
 		)
-		(pin "B1"
+		(pin "2"
 			(uuid "458a5f12-d2fb-4f1c-b6be-104d5638bb48")
 		)
-		(pin "A2"
+		(pin "8"
 			(uuid "6d44382b-0c33-412a-889a-afcbd420dbe3")
 		)
-		(pin "D1"
+		(pin "4"
 			(uuid "ca5b65e9-66b9-4be1-8a02-2cc55ef54646")
 		)
-		(pin "A1"
+		(pin "1"
 			(uuid "0500e161-511b-48f8-8213-fc6927330530")
 		)
-		(pin "C1"
+		(pin "3"
 			(uuid "40f064b3-7822-4255-be47-d12b7d0d1254")
 		)
 		(instances
@@ -10650,7 +10683,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "311-1.00KLRCT-ND"
 			(at 29.21 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -11013,7 +11046,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05A106MP6NUN8CT-ND"
 			(at 113.03 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -11223,7 +11256,7 @@
 				(justify left)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "YAG3503CT-ND"
 			(at 111.76 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -11415,7 +11448,7 @@
 				(justify right)
 			)
 		)
-		(property "Ampacity" "0.7A"
+		(property "Ampacity" "1.3A"
 			(at 248.92 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11427,6 +11460,17 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 247.65 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "490-16508-1-ND"
 			(at 247.65 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11703,7 +11747,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05A106MP6NUN8CT-ND"
 			(at 45.72 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -11839,7 +11883,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "1276-CL05A106MP6NUN8CT-ND"
 			(at 66.04 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -12017,7 +12061,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" ""
+		(property "Digi-Key PN" "732-11992-1-ND"
 			(at 292.608 307.594 0)
 			(hide yes)
 			(show_name no)
