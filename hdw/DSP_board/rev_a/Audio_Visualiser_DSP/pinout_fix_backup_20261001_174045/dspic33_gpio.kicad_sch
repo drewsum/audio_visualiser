@@ -1464,7 +1464,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
+			(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
 				(at -20.32 25.4 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1799,25 +1799,6 @@
 						)
 					)
 					(number "48"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -16.51 -27.94 0)
-					(length 3.81)
-					(hide yes)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "49"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4462,7 +4443,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
+		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
 			(at 114.3 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -4676,9 +4657,6 @@
 		)
 		(pin "47"
 			(uuid "b4c981e9-91a1-42ea-91d2-599f79fb72e0")
-		)
-		(pin "49"
-			(uuid "4da05bb7-3c7b-4bc3-9e77-532c731d709a")
 		)
 		(instances
 			(project "Audio_Visualiser_DSP"
