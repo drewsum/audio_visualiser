@@ -368,10 +368,10 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Digi-Key PN",
           "name": "Digi-Key PN",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -380,13 +380,13 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Voltage",
           "name": "Voltage",
-          "show": false
+          "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Dielectric",
           "name": "Dielectric",
           "show": true
@@ -434,7 +434,7 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Tolerance",
           "name": "Tolerance",
           "show": true
@@ -446,7 +446,7 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Wattage",
           "name": "Wattage",
           "show": true
@@ -467,6 +467,42 @@
           "group_by": false,
           "label": "Baud_Rate",
           "name": "Baud_Rate",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Library",
+          "name": "Sim.Library",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Name",
+          "name": "Sim.Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Params",
+          "name": "Sim.Params",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
           "show": false
         }
       ],
