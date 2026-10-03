@@ -2698,6 +2698,19 @@
 		)
 		(uuid "14e7dd55-391e-4569-9508-0e5891fb628f")
 	)
+	(text "Add jumper for signal source"
+		(exclude_from_sim no)
+		(at 49.53 41.91 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "283aaa8d-dabe-4eca-839f-ee385afb68c0")
+	)
 	(text "SDA1/PGD1"
 		(exclude_from_sim no)
 		(at 36.83 97.79 0)
@@ -3512,7 +3525,7 @@
 			)
 		)
 	)
-	(global_label "~{POT_RESET}"
+	(global_label "AUDIO_CHAIN_ENABLE"
 		(shape input)
 		(at 229.87 134.62 180)
 		(fields_autoplaced yes)
@@ -3525,7 +3538,7 @@
 		)
 		(uuid "8c639262-7e6e-49a3-80c7-8375504deeba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 216.604 134.62 0)
+			(at 206.6856 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3702,30 +3715,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "AUDIO_VREF_ENABLE"
-		(shape output)
-		(at 69.85 76.2 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d6751c65-1d26-4a28-bb3a-18c3530c8141")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 47.6938 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)

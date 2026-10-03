@@ -1233,7 +1233,7 @@
 		)
 		(uuid "f0eb2efa-f01a-47be-a4bd-eb9d67e2b7fa")
 	)
-	(global_label "AUDIO_VREF_ENABLE"
+	(global_label "AUDIO_CHAIN_ENABLE"
 		(shape input)
 		(at 113.03 127 180)
 		(fields_autoplaced yes)
@@ -1245,7 +1245,7 @@
 		)
 		(uuid "8d249b54-edc6-437f-a1fb-c3e403ddf985")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.8738 127 0)
+			(at 89.8456 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1257,7 +1257,7 @@
 			)
 		)
 	)
-	(global_label "AUDIO_VREF_ENABLE"
+	(global_label "AUDIO_CHAIN_ENABLE"
 		(shape input)
 		(at 113.03 63.5 180)
 		(fields_autoplaced yes)
@@ -1269,7 +1269,7 @@
 		)
 		(uuid "dc1e7662-8a87-434a-9957-d368aba9beaf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.8738 63.5 0)
+			(at 89.8456 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -980,9 +980,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:BAT54SW"
+		(symbol "Diode:BAT54J"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0)
+				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -990,41 +994,27 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
-				(at 0.635 -3.81 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "BAT54SW"
-				(at -6.35 3.175 0)
+			(property "Value" "BAT54J"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
-				(at 1.905 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf"
-				(at -3.048 0 0)
+			(property "Footprint" "Diode_SMD:D_SOD-323F"
+				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1034,7 +1024,7 @@
 					)
 				)
 			)
-			(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1045,7 +1035,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "dual schottky diode"
+			(property "Description" "30V 200mA Schottky diode, SOD-323F"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1056,7 +1046,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?323*"
+			(property "ki_keywords" "diode Schottky"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1067,13 +1057,24 @@
 					)
 				)
 			)
-			(symbol "BAT54SW_0_1"
+			(property "ki_fp_filters" "D*SOD?323F*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BAT54J_0_1"
 				(polyline
 					(pts
-						(xy -4.445 1.27) (xy -4.445 -1.27) (xy -2.54 0) (xy -4.445 1.27)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1082,10 +1083,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 0) (xy -1.27 0)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1094,162 +1095,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.175 -1.27) (xy -3.175 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 1.27) (xy -1.905 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy -3.175 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 1.27) (xy -1.905 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 0) (xy 1.905 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 1.27) (xy 1.905 -1.27) (xy 3.81 0) (xy 1.905 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 -1.27) (xy 3.175 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 1.27) (xy 4.445 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -1.27) (xy 3.175 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -1.27) (xy 3.81 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.445 1.27) (xy 4.445 1.016)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -1260,11 +1106,11 @@
 					)
 				)
 			)
-			(symbol "BAT54SW_1_1"
+			(symbol "BAT54J_1_1"
 				(pin passive line
-					(at -7.62 0 0)
-					(length 3.81)
-					(name "A"
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1280,9 +1126,9 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "K"
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1290,24 +1136,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 5.08)
-					(name "COM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2075,10 +1903,10 @@
 		(uuid "04698c4e-26f0-4db9-88f6-051c53f007e3")
 	)
 	(junction
-		(at 172.72 125.73)
+		(at 175.26 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5d2fa645-b772-40bb-b3b2-af7731780c7f")
+		(uuid "19042921-bc2d-4644-a430-f91e415d3691")
 	)
 	(junction
 		(at 149.86 62.23)
@@ -2087,10 +1915,10 @@
 		(uuid "7781a279-fdf7-4daf-adc7-f14253c542e9")
 	)
 	(junction
-		(at 172.72 62.23)
+		(at 175.26 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "79a0ab0f-9efe-4862-a077-70d12f3dc702")
+		(uuid "85701c82-4656-4372-8232-5169849a2f6f")
 	)
 	(junction
 		(at 149.86 125.73)
@@ -2144,6 +1972,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 62.23) (xy 200.66 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28a69bbe-ab2c-4421-bf5d-d5abb9b21318")
+	)
+	(wire
+		(pts
 			(xy 115.57 62.23) (xy 102.87 62.23)
 		)
 		(stroke
@@ -2151,6 +1989,16 @@
 			(type default)
 		)
 		(uuid "47b9b640-8e90-4023-a1ee-3dc0ecba949e")
+	)
+	(wire
+		(pts
+			(xy 175.26 125.73) (xy 175.26 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e246ef8-e558-4c84-b6ef-08b8b9854c6c")
 	)
 	(wire
 		(pts
@@ -2174,6 +2022,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 123.19) (xy 175.26 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e05f9ae-4e2e-488a-818b-0a6b9774adf4")
+	)
+	(wire
+		(pts
 			(xy 139.7 62.23) (xy 149.86 62.23)
 		)
 		(stroke
@@ -2181,26 +2039,6 @@
 			(type default)
 		)
 		(uuid "90021d1c-da20-4877-8afb-01719b46070f")
-	)
-	(wire
-		(pts
-			(xy 172.72 62.23) (xy 200.66 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91905010-048c-4817-b603-541fd831f3d6")
-	)
-	(wire
-		(pts
-			(xy 172.72 125.73) (xy 200.66 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91ac8989-d7b7-4783-8a0d-353f7679f711")
 	)
 	(wire
 		(pts
@@ -2214,13 +2052,33 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 125.73) (xy 172.72 125.73)
+			(xy 175.26 125.73) (xy 200.66 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b10be68-66a8-4288-aa4b-9a0f0efbf360")
+	)
+	(wire
+		(pts
+			(xy 149.86 125.73) (xy 175.26 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a407c8a5-239a-4e24-bc83-639522fb227c")
+	)
+	(wire
+		(pts
+			(xy 175.26 59.69) (xy 175.26 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a67eee71-1f98-4e09-88d5-fff9115c2f27")
 	)
 	(wire
 		(pts
@@ -2244,7 +2102,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 62.23) (xy 172.72 62.23)
+			(xy 149.86 62.23) (xy 175.26 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2271,6 +2129,16 @@
 			(type default)
 		)
 		(uuid "ed4f576c-5d4b-4f5c-bd37-133073c44628")
+	)
+	(wire
+		(pts
+			(xy 175.26 62.23) (xy 175.26 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed74c526-7eff-4fe3-8965-56583c809f48")
 	)
 	(wire
 		(pts
@@ -2629,6 +2497,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 175.26 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "16c88379-e3f3-4a6b-bca2-ebbca0de25cd")
+		(property "Reference" "#PWR01301"
+			(at 175.26 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1114608e-8df4-4931-bcea-bea284b68de1")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
+					(reference "#PWR01301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 127 152.4 90)
 		(unit 1)
 		(body_style 1)
@@ -2965,6 +2910,165 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
 					(reference "C1302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BAT54J")
+		(at 175.26 119.38 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "413e93fb-9058-44f1-a05d-f16b9deff1e3")
+		(property "Reference" "D?"
+			(at 177.8 117.7924 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT54J"
+			(at 177.8 120.3324 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323F"
+			(at 170.815 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+			(at 175.26 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
+			(at 175.26 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "455f6b99-4f40-4a11-a506-9f305f6407b2")
+		)
+		(pin "1"
+			(uuid "72e19480-9053-49e7-9f6f-d42d3fc15c77")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
+					(reference "D?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 175.26 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4235697a-1103-408c-8dbc-c0eea6c25dc5")
+		(property "Reference" "#PWR01308"
+			(at 175.26 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 175.26 112.014 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 175.26 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5b4e9d8-90b8-45d1-98ff-97209f93d364")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
+					(reference "#PWR01308")
 					(unit 1)
 				)
 			)
@@ -3333,83 +3437,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 177.8 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "696729c5-1376-476d-bf89-61a6d459877c")
-		(property "Reference" "#PWR01311"
-			(at 177.8 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 177.8 137.16 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "730af6ca-e4c5-42c9-8285-988d375da6ac")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01311")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Custom Library:R_Custom")
 		(at 99.06 125.73 270)
 		(unit 1)
@@ -3689,6 +3716,165 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:BAT54J")
+		(at 175.26 132.08 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "818fbcb2-843f-428a-a2b2-e37f342a6253")
+		(property "Reference" "D?"
+			(at 177.8 130.4924 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT54J"
+			(at 177.8 133.0324 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323F"
+			(at 170.815 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
+			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ebb4f33f-ab95-4228-ae59-5496501493d9")
+		)
+		(pin "1"
+			(uuid "bad7a7b9-a516-4ce8-a527-5fa7ffc0471f")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
+					(reference "D?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8549fbcc-59dc-473a-9ae3-2c4b51e68f42")
+		(property "Reference" "#PWR01309"
+			(at 175.26 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f9d8ad88-29b7-4622-bb6e-d6773c6c8339")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
+					(reference "#PWR01309")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:SD15C-01F")
 		(at 115.57 132.08 270)
 		(unit 1)
@@ -3837,9 +4023,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54SW")
-		(at 177.8 125.73 270)
-		(mirror x)
+		(lib_id "Diode:BAT54J")
+		(at 175.26 55.88 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3847,9 +4032,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "98b26d36-18cc-4d39-b989-e647f854110a")
-		(property "Reference" "D1304"
-			(at 180.34 121.92 90)
+		(fields_autoplaced yes)
+		(uuid "8ada9d04-8e41-448b-9e12-e3e4d14b7819")
+		(property "Reference" "D?"
+			(at 177.8 54.2924 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3859,8 +4045,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BAT54SW"
-			(at 180.34 124.46 90)
+		(property "Value" "BAT54J"
+			(at 177.8 56.8324 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3870,20 +4056,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
-			(at 180.975 123.825 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf"
-			(at 177.8 128.778 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323F"
+			(at 170.815 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3893,8 +4067,8 @@
 				)
 			)
 		)
-		(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
-			(at 177.8 125.73 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+			(at 175.26 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3904,63 +4078,8 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 180.34 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW_SOT323"
-			(at 180.34 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 180.34 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=A 2=K 3=COM"
-			(at 180.34 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 177.8 125.73 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key PN" "BAT54SWT1GOSCT-ND"
-			(at 177.8 125.73 0)
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
+			(at 175.26 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3971,26 +4090,23 @@
 			)
 		)
 		(pin "2"
-			(uuid "0b4b1263-8479-4635-94b6-9907aa0fec1f")
-		)
-		(pin "3"
-			(uuid "ccc6f1ee-d71d-461a-bc80-55a035612fa8")
+			(uuid "808ef137-9b4c-47ef-af9d-af8ab966cea5")
 		)
 		(pin "1"
-			(uuid "ad5cd494-b0f2-4219-9448-5c0c0635543d")
+			(uuid "86a9d502-77da-459e-b93a-3e18f0a70641")
 		)
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "D1304")
+					(reference "D?")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 177.8 118.11 0)
+		(lib_id "Diode:BAT54J")
+		(at 175.26 68.58 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3998,9 +4114,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9e92e350-8adb-481d-a98b-4ec716bf5830")
-		(property "Reference" "#PWR01310"
-			(at 177.8 121.92 0)
+		(fields_autoplaced yes)
+		(uuid "8d2c9bc3-ec97-4d6a-b88a-00868b7a347d")
+		(property "Reference" "D?"
+			(at 177.8 66.9924 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT54J"
+			(at 177.8 69.5324 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323F"
+			(at 170.815 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4010,18 +4149,8 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 177.8 114.554 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 118.11 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+			(at 175.26 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4031,8 +4160,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 177.8 118.11 0)
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
+			(at 175.26 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4042,24 +4171,16 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 177.8 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "2"
+			(uuid "1abaf1cc-57f7-43f3-a50c-819c1fa1c399")
 		)
 		(pin "1"
-			(uuid "aeb4bfea-8aa8-4b5a-aecb-1fdb22f50167")
+			(uuid "9e3e8807-b5c6-46f5-927e-c4c7c21a7980")
 		)
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01310")
+					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -4331,83 +4452,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 177.8 54.61 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ba2ec507-bad1-4369-94ef-57a2e76a79a8")
-		(property "Reference" "#PWR01308"
-			(at 177.8 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 177.8 51.054 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 177.8 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "65d2083b-9583-4b74-a974-3d77dae0b116")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01308")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:NetTie_3")
 		(at 124.46 152.4 0)
 		(unit 1)
@@ -4502,8 +4546,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 177.8 69.85 0)
+		(lib_id "power:+3.3V")
+		(at 175.26 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4511,9 +4555,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d75b6371-972f-49dc-a16e-a7a416a5124d")
-		(property "Reference" "#PWR01309"
-			(at 177.8 76.2 0)
+		(uuid "c9b15743-0e04-469a-8372-44c9920c06b5")
+		(property "Reference" "#PWR01302"
+			(at 175.26 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4523,8 +4567,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 177.8 73.66 0)
+		(property "Value" "+3.3V"
+			(at 175.26 48.514 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4534,7 +4578,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 177.8 69.85 0)
+			(at 175.26 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4545,7 +4589,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 69.85 0)
+			(at 175.26 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4555,8 +4599,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 177.8 69.85 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 175.26 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4567,164 +4611,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7c998045-63cf-4f5d-875f-f2d348f97dc3")
+			(uuid "3784d8c7-00f1-4fb2-b624-91212beaad26")
 		)
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01309")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BAT54SW")
-		(at 177.8 62.23 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e12a315f-3591-494a-97e5-98b7728d88e2")
-		(property "Reference" "D1303"
-			(at 180.34 58.42 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BAT54SW"
-			(at 180.34 60.96 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
-			(at 180.975 60.325 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf"
-			(at 177.8 65.278 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Vr 30V, If 200mA, Dual schottky barrier diode, in series, SOT-323"
-			(at 177.8 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 180.34 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW_SOT323"
-			(at 180.34 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 180.34 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=A 2=K 3=COM"
-			(at 180.34 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 177.8 62.23 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key PN" "BAT54SWT1GOSCT-ND"
-			(at 177.8 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f8ae1eca-ff7a-44b0-89a4-2e4324ce8232")
-		)
-		(pin "3"
-			(uuid "fa2c62a2-15b2-48f0-ad75-6ebc364bdec4")
-		)
-		(pin "1"
-			(uuid "ea4b3bbe-bf47-443d-855b-341b408c2d20")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "D1303")
+					(reference "#PWR01302")
 					(unit 1)
 				)
 			)
