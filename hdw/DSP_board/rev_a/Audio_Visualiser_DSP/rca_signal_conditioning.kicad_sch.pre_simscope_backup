@@ -2386,7 +2386,7 @@
 		(mirror y)
 		(unit 2)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -2972,50 +2972,6 @@
 			)
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
-			(at 175.26 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 175.26 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 175.26 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 175.26 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
 			(at 175.26 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -3826,50 +3782,6 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 175.26 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 175.26 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 175.26 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
-			(at 175.26 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "ebb4f33f-ab95-4228-ae59-5496501493d9")
 		)
@@ -4177,50 +4089,6 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 175.26 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 175.26 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 175.26 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
-			(at 175.26 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "808ef137-9b4c-47ef-af9d-af8ab966cea5")
 		)
@@ -4293,50 +4161,6 @@
 			)
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
-			(at 175.26 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 175.26 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 175.26 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 175.26 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
 			(at 175.26 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -4935,7 +4759,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)

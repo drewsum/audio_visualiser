@@ -4986,7 +4986,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5123,7 +5123,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5779,7 +5779,7 @@
 				)
 			)
 		)
-		(property "Sim.Params" "RAB=10k RW=75 CODE0=128 CODE1=128 CODE2=128 CODE3=128"
+		(property "Sim.Params" "RAB=10k RW=75 CODE0=200 CODE1=200 CODE2=200 CODE3=200"
 			(at 219.71 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -8350,7 +8350,7 @@
 				)
 			)
 		)
-		(property "Sim.Params" "RAB=10k RW=75 CODE0=128 CODE1=128 CODE2=128 CODE3=128"
+		(property "Sim.Params" "RAB=10k RW=75 CODE0=200 CODE1=200 CODE2=200 CODE3=200"
 			(at 214.63 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -8566,7 +8566,7 @@
 				)
 			)
 		)
-		(property "Sim.Params" "RAB=10k RW=75 CODE0=128 CODE1=128 CODE2=128 CODE3=128"
+		(property "Sim.Params" "RAB=10k RW=75 CODE0=200 CODE1=200 CODE2=200 CODE3=200"
 			(at 132.08 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -9194,7 +9194,7 @@
 				)
 			)
 		)
-		(property "Sim.Params" "RAB=10k RW=75 CODE0=128 CODE1=128 CODE2=128 CODE3=128"
+		(property "Sim.Params" "RAB=10k RW=75 CODE0=200 CODE1=200 CODE2=200 CODE3=200"
 			(at 132.08 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -9824,7 +9824,7 @@
 				)
 			)
 		)
-		(property "Sim.Params" "RAB=10k RW=75 CODE0=128 CODE1=128 CODE2=128 CODE3=128"
+		(property "Sim.Params" "RAB=10k RW=75 CODE0=200 CODE1=200 CODE2=200 CODE3=200"
 			(at 210.82 69.85 0)
 			(hide yes)
 			(show_name no)

@@ -1809,16 +1809,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 60.96) (xy 44.45 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00f0f631-7d39-4b1a-a155-5af405581c49")
-	)
-	(wire
-		(pts
 			(xy 41.91 137.16) (xy 44.45 137.16)
 		)
 		(stroke
@@ -1826,16 +1816,6 @@
 			(type default)
 		)
 		(uuid "0d3d21f7-e9d5-400e-91d1-7410c401c78d")
-	)
-	(wire
-		(pts
-			(xy 41.91 58.42) (xy 44.45 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0dee610d-f059-4a16-be65-30820cd84384")
 	)
 	(wire
 		(pts
@@ -2016,6 +1996,16 @@
 			(type default)
 		)
 		(uuid "587b6479-14b0-4ba8-89a1-90d937aa83cd")
+	)
+	(wire
+		(pts
+			(xy 41.91 60.96) (xy 44.45 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59488c93-d287-44ac-8919-771cb25ac51c")
 	)
 	(wire
 		(pts
@@ -2309,6 +2299,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 58.42) (xy 44.45 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0cec32e-0794-4b72-906f-29d1f705cd66")
+	)
+	(wire
+		(pts
 			(xy 52.07 58.42) (xy 60.96 58.42)
 		)
 		(stroke
@@ -2546,7 +2546,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -3127,50 +3127,6 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 109.22 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 109.22 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 109.22 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
-			(at 109.22 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "227b188d-16a3-4d9f-a25e-c8a908ff6d25")
 		)
@@ -3268,7 +3224,7 @@
 		(at 78.74 67.31 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -3531,50 +3487,6 @@
 			)
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
-			(at 91.44 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 91.44 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 91.44 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 91.44 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
 			(at 91.44 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3881,50 +3793,6 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 109.22 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 109.22 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 109.22 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
-			(at 109.22 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "fefd78e9-c61d-4272-85e7-ba93910c5c6f")
 		)
@@ -3945,7 +3813,7 @@
 		(at 60.96 67.31 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -4355,50 +4223,6 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 91.44 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 91.44 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 91.44 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
-			(at 91.44 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "5178aefe-24fd-4143-85c6-87f3389e1be6")
 		)
@@ -4471,50 +4295,6 @@
 			)
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
-			(at 91.44 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 91.44 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 91.44 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 91.44 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
 			(at 91.44 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4735,7 +4515,7 @@
 		(at 60.96 143.51 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5394,50 +5174,6 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6N11.lib"
-			(at 134.62 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "MCP6N11"
-			(at 134.62 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 134.62 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=VFG 2=VIM 3=VIP 4=VSS 5=VREF 6=VOUT 7=VDD 8=EN/CAL"
-			(at 134.62 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "6"
 			(uuid "6a30aef0-0d57-4155-abb2-2cef0673d7bb")
 		)
@@ -5771,50 +5507,6 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6N11.lib"
-			(at 134.62 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "MCP6N11"
-			(at 134.62 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 134.62 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=VFG 2=VIM 3=VIP 4=VSS 5=VREF 6=VOUT 7=VDD 8=EN/CAL"
-			(at 134.62 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "6"
 			(uuid "70cf6a1c-58b7-42d0-89a2-4cd82b09e5ab")
 		)
@@ -6086,7 +5778,7 @@
 		(at 78.74 143.51 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -6484,50 +6176,6 @@
 			)
 		)
 		(property "Description" "30V 200mA Schottky diode, SOD-323F"
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 91.44 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
 			(at 91.44 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7002,7 +6650,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -7468,50 +7116,6 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 109.22 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 109.22 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 109.22 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
-			(at 109.22 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "09ff2cc8-1be1-4915-b891-81cb811afe35")
 		)
@@ -7825,50 +7429,6 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
-			(at 109.22 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Name" "BAT54SW"
-			(at 109.22 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 109.22 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=2 2=1"
-			(at 109.22 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "1d69812f-3369-4b1c-a53b-dea4b8f1ba60")
 		)
@@ -7890,7 +7450,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -8025,7 +7585,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
