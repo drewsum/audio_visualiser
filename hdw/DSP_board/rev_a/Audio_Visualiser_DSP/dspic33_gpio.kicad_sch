@@ -4013,6 +4013,30 @@
 			)
 		)
 	)
+	(global_label "~{LED_BUF_OE}"
+		(shape input)
+		(at 243.84 148.59 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "acda76c0-7c71-4250-8b40-7841732dbc68")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 258.3761 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "LED_DRIVER_LAT"
 		(shape output)
 		(at 199.39 73.66 0)
