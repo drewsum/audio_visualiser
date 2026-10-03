@@ -2316,7 +2316,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03ea6fcf-f164-44de-8f0e-07bcbf71ae08")
-		(property "Reference" "#PWR01306"
+		(property "Reference" "#PWR01304"
 			(at 149.86 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -2374,7 +2374,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01306")
+					(reference "#PWR01304")
 					(unit 1)
 				)
 			)
@@ -2386,7 +2386,7 @@
 		(mirror y)
 		(unit 2)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -2506,7 +2506,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "16c88379-e3f3-4a6b-bca2-ebbca0de25cd")
-		(property "Reference" "#PWR01301"
+		(property "Reference" "#PWR01307"
 			(at 175.26 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -2566,7 +2566,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01301")
+					(reference "#PWR01307")
 					(unit 1)
 				)
 			)
@@ -2584,7 +2584,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3843fb36-f39e-4d25-9c08-28f7cd3cca2d")
-		(property "Reference" "#PWR01305"
+		(property "Reference" "#PWR01303"
 			(at 133.35 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -2645,7 +2645,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01305")
+					(reference "#PWR01303")
 					(unit 1)
 				)
 			)
@@ -2927,7 +2927,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "413e93fb-9058-44f1-a05d-f16b9deff1e3")
-		(property "Reference" "D?"
+		(property "Reference" "D1305"
 			(at 177.8 117.7924 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2982,6 +2982,50 @@
 				)
 			)
 		)
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
+			(at 175.26 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "BAT54SW"
+			(at 175.26 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 175.26 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=2 2=1"
+			(at 175.26 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "455f6b99-4f40-4a11-a506-9f305f6407b2")
 		)
@@ -2991,7 +3035,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "D?")
+					(reference "D1305")
 					(unit 1)
 				)
 			)
@@ -3085,7 +3129,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4bd7fa71-da42-4da8-8a8c-f52cbea8ef7e")
-		(property "Reference" "#PWR01303"
+		(property "Reference" "#PWR01301"
 			(at 115.57 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3145,7 +3189,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01303")
+					(reference "#PWR01301")
 					(unit 1)
 				)
 			)
@@ -3164,7 +3208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c6b8198-7450-4a58-8e21-a52cd7aa0434")
-		(property "Reference" "#PWR01307"
+		(property "Reference" "#PWR01305"
 			(at 149.86 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -3222,7 +3266,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01307")
+					(reference "#PWR01305")
 					(unit 1)
 				)
 			)
@@ -3370,7 +3414,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6244f67c-e425-497b-97d4-43e73b5a714e")
-		(property "Reference" "#PWR01304"
+		(property "Reference" "#PWR01302"
 			(at 115.57 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -3430,7 +3474,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01304")
+					(reference "#PWR01302")
 					(unit 1)
 				)
 			)
@@ -3727,7 +3771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "818fbcb2-843f-428a-a2b2-e37f342a6253")
-		(property "Reference" "D?"
+		(property "Reference" "D1306"
 			(at 177.8 130.4924 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3782,6 +3826,50 @@
 				)
 			)
 		)
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
+			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "BAT54SW"
+			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=2 2=1"
+			(at 175.26 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ebb4f33f-ab95-4228-ae59-5496501493d9")
 		)
@@ -3791,7 +3879,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "D?")
+					(reference "D1306")
 					(unit 1)
 				)
 			)
@@ -4034,7 +4122,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ada9d04-8e41-448b-9e12-e3e4d14b7819")
-		(property "Reference" "D?"
+		(property "Reference" "D1303"
 			(at 177.8 54.2924 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4089,6 +4177,50 @@
 				)
 			)
 		)
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
+			(at 175.26 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "BAT54SW"
+			(at 175.26 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 175.26 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=2 2=1"
+			(at 175.26 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "808ef137-9b4c-47ef-af9d-af8ab966cea5")
 		)
@@ -4098,7 +4230,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "D?")
+					(reference "D1303")
 					(unit 1)
 				)
 			)
@@ -4116,7 +4248,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d2c9bc3-ec97-4d6a-b88a-00868b7a347d")
-		(property "Reference" "D?"
+		(property "Reference" "D1304"
 			(at 177.8 66.9924 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4171,6 +4303,50 @@
 				)
 			)
 		)
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "BAT54SW"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=2 2=1"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1abaf1cc-57f7-43f3-a50c-819c1fa1c399")
 		)
@@ -4180,7 +4356,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "D?")
+					(reference "D1304")
 					(unit 1)
 				)
 			)
@@ -4556,7 +4732,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c9b15743-0e04-469a-8372-44c9920c06b5")
-		(property "Reference" "#PWR01302"
+		(property "Reference" "#PWR01306"
 			(at 175.26 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -4616,7 +4792,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/363750b9-a522-47db-9c7c-ad0a11bbbf3f"
-					(reference "#PWR01302")
+					(reference "#PWR01306")
 					(unit 1)
 				)
 			)
@@ -4759,7 +4935,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
