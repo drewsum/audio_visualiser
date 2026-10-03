@@ -239,6 +239,52 @@
 		)
 	)
 	(sheet
+		(at 111.76 143.51)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "41674a27-da8b-4996-811a-d76625b2cbde")
+		(property "Sheetname" "LED Panel Connectors"
+			(at 111.76 142.7984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_panel_connectors.kicad_sch"
+			(at 111.76 147.9046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 111.76 31.75)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
