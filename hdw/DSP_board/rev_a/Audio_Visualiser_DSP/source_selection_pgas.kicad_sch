@@ -3147,6 +3147,59 @@
 		)
 		(uuid "4f0c3781-68e8-4c8a-9b48-3d0c5bddace4")
 	)
+	(text "High = Speaker\nLow = RCA"
+		(exclude_from_sim no)
+		(at 19.05 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "554a0d66-dd18-4bc8-a6e1-a53fa60f3ac6")
+	)
+	(text "This digipot can both attenuate and amplify depending on setting\nAt reset, wiper is midpoint, so Av = 1"
+		(exclude_from_sim no)
+		(at 95.25 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "684e2778-6197-4904-b075-c3d4a4af9846")
+	)
+	(text "Inverted"
+		(exclude_from_sim no)
+		(at 177.8 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7a872818-0ab5-4305-bfa4-6a7b9050e003")
+	)
+	(text "This digipot can both attenuate and amplify depending on setting\nAt reset, wiper is midpoint, so Av = 1"
+		(exclude_from_sim no)
+		(at 95.25 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b73f0e51-1d23-419f-9a41-cbe1a5ddb1fe")
+	)
+	(text "Inverted"
+		(exclude_from_sim no)
+		(at 177.8 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cc344776-4b50-4bcc-960a-ee8a8c565ddb")
+	)
 	(junction
 		(at 152.4 109.22)
 		(diameter 0)
@@ -3184,7 +3237,7 @@
 		(uuid "a67c8909-1618-4d5b-be51-db9a6df378ae")
 	)
 	(junction
-		(at 220.98 72.39)
+		(at 229.87 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b656c448-c430-4266-9ae3-d18224fc2e4b")
@@ -3196,7 +3249,7 @@
 		(uuid "ecc44de2-c856-47be-b5bb-aebb563b83c7")
 	)
 	(junction
-		(at 220.98 69.85)
+		(at 229.87 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f418c5a4-ab2b-4a15-90b6-6f7aa4dbdf7f")
@@ -3283,7 +3336,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 72.39) (xy 218.44 72.39)
+			(xy 229.87 72.39) (xy 227.33 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3383,7 +3436,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 69.85) (xy 220.98 72.39)
+			(xy 229.87 69.85) (xy 229.87 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3413,7 +3466,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 67.31) (xy 220.98 67.31)
+			(xy 227.33 67.31) (xy 229.87 67.31)
 		)
 		(stroke
 			(width 0)
@@ -3483,7 +3536,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 74.93) (xy 220.98 72.39)
+			(xy 229.87 74.93) (xy 229.87 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3503,7 +3556,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 69.85) (xy 220.98 69.85)
+			(xy 227.33 69.85) (xy 229.87 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3593,7 +3646,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 67.31) (xy 220.98 69.85)
+			(xy 229.87 67.31) (xy 229.87 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4229,7 +4282,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 220.98 74.93 0)
+		(at 229.87 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4239,7 +4292,7 @@
 		(dnp no)
 		(uuid "0eb56db1-ade5-4014-8c35-6f65129177ab")
 		(property "Reference" "#PWR01522"
-			(at 220.98 81.28 0)
+			(at 229.87 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4250,7 +4303,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 220.98 78.74 0)
+			(at 229.87 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4260,7 +4313,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 220.98 74.93 0)
+			(at 229.87 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4271,7 +4324,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 220.98 74.93 0)
+			(at 229.87 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4282,7 +4335,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 74.93 0)
+			(at 229.87 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9717,7 +9770,7 @@
 	)
 	(symbol
 		(lib_id "Potentiometer_Digital:MCP4451-xxxx-ML")
-		(at 210.82 69.85 180)
+		(at 219.71 69.85 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9728,7 +9781,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7732f8d-2601-4ca8-a8df-e40d2b69fa82")
 		(property "Reference" "U1503"
-			(at 210.82 60.96 0)
+			(at 219.71 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9738,7 +9791,7 @@
 			)
 		)
 		(property "Value" "MCP4451-103E/ML"
-			(at 210.82 63.5 0)
+			(at 219.71 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9748,7 +9801,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
-			(at 207.3402 64.9224 0)
+			(at 216.2302 64.9224 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9759,7 +9812,7 @@
 			)
 		)
 		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/22267A_MCP4431.pdf"
-			(at 207.3402 62.3824 0)
+			(at 216.2302 62.3824 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9770,7 +9823,7 @@
 			)
 		)
 		(property "Description" "Quad 8 Bit Digital Potentiometer, I²C, Volatile Memory, TSSOP-20"
-			(at 210.82 69.85 0)
+			(at 219.71 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9781,7 +9834,7 @@
 			)
 		)
 		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP4451.lib"
-			(at 210.82 69.85 0)
+			(at 219.71 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9792,7 +9845,7 @@
 			)
 		)
 		(property "Sim.Name" "MCP4451"
-			(at 210.82 69.85 0)
+			(at 219.71 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9803,7 +9856,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 210.82 69.85 0)
+			(at 219.71 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9814,7 +9867,7 @@
 			)
 		)
 		(property "Sim.Pins" "19=P3A 20=P3W 1=P3B 2=HVC 3=SCL 4=SDA 5=VSS 6=P1B 7=P1W 8=P1A 9=P0A 10=P0W 11=P0B 12=NC 13=RESET 14=A1 15=VDD 16=P2B 17=P2W 18=P2A"
-			(at 210.82 69.85 0)
+			(at 219.71 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9825,7 +9878,7 @@
 			)
 		)
 		(property "Sim.Params" "RAB=10k RW=75 CODE0=128 CODE1=128 CODE2=128 CODE3=128"
-			(at 210.82 69.85 0)
+			(at 219.71 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9836,7 +9889,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 210.82 69.85 0)
+			(at 219.71 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9847,7 +9900,7 @@
 			)
 		)
 		(property "Digi-Key PN" "MCP4451-103E/ML-ND"
-			(at 210.82 69.85 0)
+			(at 219.71 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

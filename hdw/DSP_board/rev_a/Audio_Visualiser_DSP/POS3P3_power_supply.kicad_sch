@@ -1916,7 +1916,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:BAT48JFILM"
+		(symbol "Diode:BAT54J"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1939,7 +1939,7 @@
 					)
 				)
 			)
-			(property "Value" "BAT48JFILM"
+			(property "Value" "BAT54J"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1949,7 +1949,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SOD-323"
+			(property "Footprint" "Diode_SMD:D_SOD-323F"
 				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1960,7 +1960,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "www.st.com/resource/en/datasheet/bat48.pdf"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1971,7 +1971,7 @@
 					)
 				)
 			)
-			(property "Description" "40V 0.35A Small Signal Schottky Diode, SOD-323"
+			(property "Description" "30V 200mA Schottky diode, SOD-323F"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1993,7 +1993,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*SOD?323*"
+			(property "ki_fp_filters" "D*SOD?323F*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2004,7 +2004,7 @@
 					)
 				)
 			)
-			(symbol "BAT48JFILM_0_1"
+			(symbol "BAT54J_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
@@ -2042,7 +2042,7 @@
 					)
 				)
 			)
-			(symbol "BAT48JFILM_1_1"
+			(symbol "BAT54J_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -5609,109 +5609,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT48JFILM")
-		(at 86.36 154.94 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "79a3ab47-dbe3-4373-af5c-2f77217c1b22")
-		(property "Reference" "D401"
-			(at 89.408 153.162 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "BAT48JFILM"
-			(at 89.408 155.702 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 90.805 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "www.st.com/resource/en/datasheet/bat48.pdf"
-			(at 86.36 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key PN" "497-5711-1-ND"
-			(at 86.36 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 86.36 154.94 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b6328eb5-aa0f-4d58-ad10-5c5f2875b57b")
-		)
-		(pin "2"
-			(uuid "8531427c-0a60-4c4c-b68e-98b039bfba4b")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "D401")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 233.68 67.31 0)
 		(unit 1)
@@ -7375,6 +7272,132 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "R407")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:BAT54J")
+		(at 86.36 154.94 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bd4062dc-7a89-4914-961e-7177da9259f0")
+		(property "Reference" "D?"
+			(at 88.9 156.5276 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BAT54J"
+			(at 88.9 153.9876 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323F"
+			(at 81.915 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
+			(at 86.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
+			(at 86.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
+			(at 86.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Name" "BAT54SW"
+			(at 86.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 86.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=2 2=1"
+			(at 86.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "41a6aa31-bbe3-401b-831b-5cc661265b69")
+		)
+		(pin "1"
+			(uuid "0b04ce46-fac2-449c-8a76-0f02e1946a2f")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
+					(reference "D?")
 					(unit 1)
 				)
 			)
