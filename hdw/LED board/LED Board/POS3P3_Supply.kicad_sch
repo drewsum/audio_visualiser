@@ -2916,6 +2916,12 @@
 		(uuid "7c836f9e-76e6-48e2-8783-d74453772b2e")
 	)
 	(junction
+		(at 175.26 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0855c9b6-ce20-4046-b48b-b80dae574dfa")
+	)
+	(junction
 		(at 123.19 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2932,12 +2938,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "31527c5a-a830-4728-94d0-b33611fc6299")
-	)
-	(junction
-		(at 173.99 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "366c542d-4193-487c-b0ec-17b81278f20a")
 	)
 	(junction
 		(at 189.23 100.33)
@@ -2982,12 +2982,6 @@
 		(uuid "d69e4279-ad7a-4701-bb53-35729f0de596")
 	)
 	(junction
-		(at 90.17 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d98f5108-07a6-4b2b-84dc-7f1505f648d9")
-	)
-	(junction
 		(at 189.23 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3006,7 +3000,7 @@
 		(uuid "f62d98b4-8719-4b77-a619-075e99fbf311")
 	)
 	(junction
-		(at 71.12 59.69)
+		(at 85.09 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6df39c1-2e43-428c-ade7-cae5fc9c0ebf")
@@ -3053,7 +3047,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 59.69) (xy 71.12 64.77)
+			(xy 85.09 59.69) (xy 85.09 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3093,7 +3087,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 59.69) (xy 90.17 59.69)
+			(xy 71.12 59.69) (xy 115.57 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3120,16 +3114,6 @@
 			(type default)
 		)
 		(uuid "2e94f782-7a81-4eb4-b8f7-93b91109ca4d")
-	)
-	(wire
-		(pts
-			(xy 165.1 69.85) (xy 173.99 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31633109-1965-4088-9ccb-82050e0fe372")
 	)
 	(wire
 		(pts
@@ -3213,6 +3197,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 69.85) (xy 175.26 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "666a010c-fa40-4238-bd74-9e3f4be96505")
+	)
+	(wire
+		(pts
 			(xy 123.19 115.57) (xy 123.19 110.49)
 		)
 		(stroke
@@ -3220,16 +3214,6 @@
 			(type default)
 		)
 		(uuid "6b00ceb6-e808-440b-a115-53e25d8c7ecc")
-	)
-	(wire
-		(pts
-			(xy 90.17 59.69) (xy 115.57 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c5aa3d3-fcb9-4307-8273-c39ea63a677c")
 	)
 	(wire
 		(pts
@@ -3333,16 +3317,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 72.39) (xy 189.23 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97163550-459f-448b-a21a-30c2d7ac10d5")
-	)
-	(wire
-		(pts
 			(xy 86.36 158.75) (xy 86.36 161.29)
 		)
 		(stroke
@@ -3390,6 +3364,16 @@
 			(type default)
 		)
 		(uuid "b0f0259c-c45c-4155-a3b3-1686b0077665")
+	)
+	(wire
+		(pts
+			(xy 189.23 69.85) (xy 189.23 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b95e0dee-9d52-40d1-a1ed-23d1ef216fba")
 	)
 	(wire
 		(pts
@@ -3453,23 +3437,13 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 72.39) (xy 173.99 69.85)
+			(xy 175.26 69.85) (xy 189.23 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dbfbd862-3768-4147-9b41-25d30900cc0c")
-	)
-	(wire
-		(pts
-			(xy 90.17 59.69) (xy 90.17 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "deba28ee-2f5b-436c-bb2d-4554a28a0bc9")
+		(uuid "d8f31df9-07d5-4730-8a67-4d7d5f6578b2")
 	)
 	(wire
 		(pts
@@ -3513,7 +3487,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 69.85) (xy 189.23 69.85)
+			(xy 165.1 69.85) (xy 175.26 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3734,6 +3708,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 175.26 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "06183c10-ed51-4743-ab7c-c31dfbf3c3a2")
+		(property "Reference" "#PWR021"
+			(at 175.26 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd277a57-b7a6-4025-a478-81a10114cf10")
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom Library:C_Custom")
 		(at 86.36 166.37 0)
 		(unit 1)
@@ -3861,6 +3912,12 @@
 			(uuid "249817ca-e30d-40d6-a230-bf048d47bd52")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "C403")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "C403")
@@ -3996,86 +4053,15 @@
 			(uuid "6629f1a7-bf79-4828-a363-1334c871227a")
 		)
 		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
 					(reference "R403")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 173.99 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2d84080b-14cb-4032-95d2-70905213b210")
-		(property "Reference" "#PWR0420"
-			(at 173.99 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 173.99 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 173.99 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e05c9069-8761-4aea-a9ea-355b752a0779")
-		)
-		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR0420")
+					(reference "R403")
 					(unit 1)
 				)
 			)
@@ -4150,6 +4136,12 @@
 			(uuid "e01b9532-3e42-4037-9854-bfddb224aa1b")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0414")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0414")
@@ -4227,6 +4219,12 @@
 			(uuid "e5f12da9-b075-48c7-9298-33e0dc10c118")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0423")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0423")
@@ -4362,6 +4360,12 @@
 			(uuid "575e0b60-b987-4dcc-8a45-be13a1b8f1f6")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "R410")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "R410")
@@ -4439,6 +4443,12 @@
 			(uuid "cb60f076-1616-4530-be5c-374c559a4f24")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0415")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0415")
@@ -4468,7 +4478,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS62130A"
+		(property "Value" "TPS62150A"
 			(at 137.16 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4511,7 +4521,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "296-39446-1-ND"
+		(property "Digi-Key PN" ""
 			(at 137.16 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -4585,6 +4595,12 @@
 			(uuid "02ada9ae-fc8a-407c-9dec-732bbab2fbe6")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "U402")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "U402")
@@ -4662,9 +4678,151 @@
 			(uuid "dd9a1a58-9061-4841-bf46-bcf0281d4399")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0417")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0417")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom_Library:C_Custom")
+		(at 189.23 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4df5ed6c-e617-4117-876f-a1b47c1da0b3")
+		(property "Reference" "C?"
+			(at 189.865 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 189.865 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitors_SMD:C_1206"
+			(at 190.1952 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.865 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "display_footprint" "1206"
+			(at 185.42 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 185.42 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 185.42 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Digi-Key PN" "1276-1075-1-ND"
+			(at 200.025 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 189.23 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00eb3909-0885-4026-bbce-bc2563084c09")
+		)
+		(pin "2"
+			(uuid "ebfe5e08-3a3f-4256-af96-fcc29664a9c6")
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -4797,6 +4955,12 @@
 			(uuid "218d68da-355a-43d1-a8d5-ccb35f24a481")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "R402")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "R402")
@@ -4874,6 +5038,12 @@
 			(uuid "351d01b4-581f-49cd-8159-b9bae7c2001f")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0425")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0425")
@@ -4951,222 +5121,15 @@
 			(uuid "a028e854-f9a3-4f6e-9d48-7ac77c319a3b")
 		)
 		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
 					(reference "#PWR0406")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Custom Library:C_Custom")
-		(at 189.23 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6d54d1ec-abf1-4faf-a61c-3d6d5e08ae2f")
-		(property "Reference" "C408"
-			(at 189.865 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 189.865 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitors_SMD:C_0805"
-			(at 190.1952 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.865 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 189.23 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "display_footprint" "0805"
-			(at 185.42 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Voltage" "10V"
-			(at 185.42 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Dielectric" "X7R"
-			(at 185.42 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Digi-Key PN" "490-14381-1-ND"
-			(at 200.025 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 189.23 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "dfb591fa-fe04-4c07-9c3d-9bf648338418")
-		)
-		(pin "1"
-			(uuid "38cf4870-9d69-4286-bb8d-9358a0bacce4")
-		)
-		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "C408")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 189.23 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6e11b5a2-7ccf-4951-966f-40d22e0e9bbd")
-		(property "Reference" "#PWR0421"
-			(at 189.23 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 189.23 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 189.23 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 189.23 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 189.23 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c75d3845-830b-4584-ac3a-10c55fa71271")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR0421")
+					(reference "#PWR0406")
 					(unit 1)
 				)
 			)
@@ -5241,6 +5204,12 @@
 			(uuid "7e6090b1-6ee5-4fe7-978a-fcbdd06b15ea")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0403")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0403")
@@ -5387,145 +5356,15 @@
 			(uuid "1fb54d28-603c-433c-b760-d72146a724b2")
 		)
 		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
 					(reference "R409")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Custom Library:C_Custom")
-		(at 173.99 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "75869f51-f686-4e8c-aaac-8b466dfad2a0")
-		(property "Reference" "C407"
-			(at 174.625 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 174.625 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitors_SMD:C_0805"
-			(at 174.9552 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 174.625 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 173.99 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "display_footprint" "0805"
-			(at 170.18 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Voltage" "10V"
-			(at 170.18 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Dielectric" "X7R"
-			(at 170.18 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Digi-Key PN" "490-14381-1-ND"
-			(at 184.785 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 173.99 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3f5ebb2e-5d2c-455b-ad15-bd163148fd6d")
-		)
-		(pin "1"
-			(uuid "931390e8-3477-4e7f-94b6-ba257c621b59")
-		)
-		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "C407")
+					(reference "R409")
 					(unit 1)
 				)
 			)
@@ -5600,6 +5439,12 @@
 			(uuid "7725993b-53a1-40b0-9ae1-526fc9e915a1")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0422")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0422")
@@ -5703,6 +5548,12 @@
 			(uuid "8531427c-0a60-4c4c-b68e-98b039bfba4b")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "D401")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "D401")
@@ -5780,6 +5631,12 @@
 			(uuid "33a6f22a-2374-450b-85bc-50d48835655c")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0424")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0424")
@@ -5819,7 +5676,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductors_SMD:L_Vishay_IHLP-2020"
+		(property "Footprint" "Inductor_SMD:L_Vishay_IHLP-2020"
 			(at 161.29 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5862,7 +5719,7 @@
 				)
 			)
 		)
-		(property "Ampacity" "6.7A"
+		(property "Ampacity" "5.8A"
 			(at 161.29 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5882,7 +5739,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "541-1236-1-ND"
+		(property "Digi-Key PN" ""
 			(at 161.29 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5911,6 +5768,12 @@
 			(uuid "b8c21c46-4416-41ef-83dc-eb9c557cb27c")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "L401")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "L401")
@@ -6027,6 +5890,12 @@
 			(uuid "97208906-15a8-4fca-8e9c-305637a5772b")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "U401")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "U401")
@@ -6163,9 +6032,151 @@
 			(uuid "7d4c4381-155d-4599-a31f-b7e01746db28")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "C401")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "C401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom_Library:C_Custom")
+		(at 175.26 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8f872078-a6d0-4e8e-ad25-cb2033f7bfff")
+		(property "Reference" "C?"
+			(at 175.895 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 175.895 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitors_SMD:C_1206"
+			(at 176.2252 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.895 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "display_footprint" "1206"
+			(at 171.45 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 171.45 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 171.45 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Digi-Key PN" "1276-1075-1-ND"
+			(at 186.055 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 175.26 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98b1abab-4f2d-4b58-95fa-97b9b4cd4351")
+		)
+		(pin "2"
+			(uuid "7b0079eb-b092-4f4b-9db7-4f09531a15b3")
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -6240,145 +6251,15 @@
 			(uuid "3780014d-774b-4a3c-9057-9be604393ff0")
 		)
 		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
 					(reference "#PWR0412")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Custom_Library:C_Custom")
-		(at 90.17 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "969cc011-3b66-4d88-aeab-6729715d2c2e")
-		(property "Reference" "C404"
-			(at 90.805 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 90.805 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitors_SMD:C_1206"
-			(at 91.1352 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.805 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 90.17 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "display_footprint" "1206"
-			(at 86.36 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Voltage" "25V"
-			(at 86.36 68.58 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Dielectric" "X5R"
-			(at 86.36 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Digi-Key PN" "1276-1075-1-ND"
-			(at 100.965 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 90.17 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0d94068d-d9d0-4e3c-a11d-0358a26ce897")
-		)
-		(pin "2"
-			(uuid "716ed09f-676e-4f07-971d-7474c9a176a0")
-		)
-		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "C404")
+					(reference "#PWR0412")
 					(unit 1)
 				)
 			)
@@ -6512,6 +6393,12 @@
 			(uuid "5805448c-58df-424d-9585-426c95d751d2")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "C406")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "C406")
@@ -6591,6 +6478,12 @@
 			(uuid "cd18eac6-7265-49cd-b1c9-d98fe8f8831f")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0419")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0419")
@@ -6729,6 +6622,12 @@
 			(uuid "28e9ac31-8d59-43c0-a6f2-f8cb7bc6c292")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "R401")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "R401")
@@ -6806,6 +6705,12 @@
 			(uuid "749783ae-8a69-4962-ab42-42afef291b59")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0408")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0408")
@@ -6816,7 +6721,7 @@
 	)
 	(symbol
 		(lib_id "Custom_Library:C_Custom")
-		(at 71.12 68.58 0)
+		(at 85.09 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -6826,7 +6731,7 @@
 		(dnp no)
 		(uuid "b019fddd-3ee1-44cc-8902-b8c5d5f6708a")
 		(property "Reference" "C402"
-			(at 71.755 66.04 0)
+			(at 85.725 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6837,7 +6742,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 71.755 71.12 0)
+			(at 85.725 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6848,7 +6753,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors_SMD:C_1206"
-			(at 72.0852 72.39 0)
+			(at 86.0552 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6859,7 +6764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.755 66.04 0)
+			(at 85.725 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6870,7 +6775,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 68.58 0)
+			(at 85.09 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6881,7 +6786,7 @@
 			)
 		)
 		(property "display_footprint" "1206"
-			(at 67.31 66.04 0)
+			(at 81.28 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6892,7 +6797,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 67.31 68.58 0)
+			(at 81.28 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6903,7 +6808,7 @@
 			)
 		)
 		(property "Dielectric" "X5R"
-			(at 67.31 71.12 0)
+			(at 81.28 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6914,7 +6819,7 @@
 			)
 		)
 		(property "Digi-Key PN" "1276-1075-1-ND"
-			(at 81.915 55.88 0)
+			(at 95.885 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6925,7 +6830,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 71.12 68.58 0)
+			(at 85.09 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6942,6 +6847,12 @@
 			(uuid "5ef9c2bb-ca73-4f77-9c33-5638173ce5e2")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "C402")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "C402")
@@ -7087,6 +6998,12 @@
 			(uuid "e27e7c21-9940-4509-b067-71a2a9ff10fd")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "R405")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "R405")
@@ -7164,6 +7081,12 @@
 			(uuid "c5c2708a-7caf-4980-b75a-b4d4c9dcdac3")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0418")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0418")
@@ -7241,6 +7164,12 @@
 			(uuid "b7efb862-d323-4f5c-8be3-e76a7f8dbb2a")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0413")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0413")
@@ -7262,6 +7191,7 @@
 		(uuid "b73795ec-f315-4f30-8da2-974ce41fb642")
 		(property "Reference" "R407"
 			(at 195.58 72.39 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7372,6 +7302,12 @@
 			(uuid "493851b5-2cd2-4c47-9d46-e56c25168ab9")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "R407")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "R407")
@@ -7507,6 +7443,12 @@
 			(uuid "2506ad71-7a41-48bb-9f4a-86f67ef77899")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "R406")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "R406")
@@ -7594,6 +7536,12 @@
 			(uuid "1abdd549-e3e4-4019-bc19-b62793b34c0e")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "TP401")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "TP401")
@@ -7604,7 +7552,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 72.39 0)
+		(at 85.09 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -7614,7 +7562,7 @@
 		(dnp no)
 		(uuid "d1699545-30ff-4c39-a5ca-d4dfd3617bfd")
 		(property "Reference" "#PWR0407"
-			(at 71.12 78.74 0)
+			(at 85.09 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7625,7 +7573,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 76.2 0)
+			(at 85.09 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7635,7 +7583,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 72.39 0)
+			(at 85.09 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7646,7 +7594,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 72.39 0)
+			(at 85.09 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7657,7 +7605,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 72.39 0)
+			(at 85.09 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7671,6 +7619,12 @@
 			(uuid "6c32149f-cfd2-4291-bb0b-459d05fc87aa")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0407")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0407")
@@ -7748,6 +7702,12 @@
 			(uuid "cb5628ea-1fe4-4fbe-a779-da1e38df285a")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0404")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0404")
@@ -7893,86 +7853,15 @@
 			(uuid "decfe1af-ecee-49bb-b6aa-e9685e0c9c53")
 		)
 		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
 					(reference "R408")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 90.17 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ddca92d4-fb88-4962-a1c3-e3abbeadff6c")
-		(property "Reference" "#PWR0411"
-			(at 90.17 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 90.17 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 90.17 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e48e7e3d-9ac1-4204-8730-d9161e156fc3")
-		)
-		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "#PWR0411")
+					(reference "R408")
 					(unit 1)
 				)
 			)
@@ -8047,6 +7936,12 @@
 			(uuid "645fc309-2469-4a50-bf5e-faf7f1d8b071")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0416")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0416")
@@ -8124,6 +8019,12 @@
 			(uuid "a64713b2-b4ba-4b20-af43-6fadd0aa811c")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#FLG0401")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#FLG0401")
@@ -8259,6 +8160,12 @@
 			(uuid "185ee801-6732-4561-9e48-c03c614b45d0")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "R404")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "R404")
@@ -8336,6 +8243,12 @@
 			(uuid "600333bc-4465-483c-b6d2-c70d0cf90aaa")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0409")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0409")
@@ -8413,6 +8326,12 @@
 			(uuid "e94919cf-7e34-4ef5-9060-517431f995e8")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0405")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0405")
@@ -8549,6 +8468,12 @@
 			(uuid "198c818f-5070-40ba-9a33-2b741e22442e")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "C405")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "C405")
@@ -8626,6 +8551,12 @@
 			(uuid "0e9d7c11-a9cb-43d2-90f3-fc4a117cafa8")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0410")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0410")
@@ -8735,6 +8666,12 @@
 			(uuid "e0f4241d-080f-4aed-8aa6-36177c67403e")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "Q402")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "Q402")
@@ -8844,6 +8781,12 @@
 			(uuid "bfa4ab91-50e3-46b5-bb45-fea3b52c0f1f")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "Q401")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "Q401")
@@ -8921,9 +8864,92 @@
 			(uuid "4b22b038-f0b1-440f-9db9-68a7a09cc05f")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0402")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 189.23 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa257d8b-9aa1-4a27-9f99-e049d052b2cf")
+		(property "Reference" "#PWR022"
+			(at 189.23 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "706904ee-746a-4c15-b4fc-de63f38fb997")
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -8998,6 +9024,12 @@
 			(uuid "d3fac8ab-4d6c-4c6d-aba0-4219f7bc09d5")
 		)
 		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "#PWR0401")
+					(unit 1)
+				)
+			)
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0401")
