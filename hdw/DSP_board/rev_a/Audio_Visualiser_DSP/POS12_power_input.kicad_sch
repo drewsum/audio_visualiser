@@ -2837,9 +2837,22 @@
 		)
 		(uuid "5dc40597-6bc5-4621-8f01-69c94f8758f2")
 	)
-	(text "TRY TO TALLY LOAD CURRENTS"
+	(text "Explore shunt drop/dissipation at rated current"
 		(exclude_from_sim no)
-		(at 114.3 30.48 0)
+		(at 163.83 64.77 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 0.762)
+				(bold yes)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "6db4e0bf-97d7-4772-9175-601466d311f2")
+	)
+	(text "1.2A is not enough, this device will most likely need to be changed"
+		(exclude_from_sim no)
+		(at 128.27 26.67 0)
 		(effects
 			(font
 				(size 3.81 3.81)
@@ -3582,6 +3595,438 @@
 			(type default)
 		)
 		(uuid "fce462e6-50bb-4b8c-be41-9cc5f37370fb")
+	)
+	(table
+		(column_count 4)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 21.59 21.59 21.59 21.59)
+		(row_heights 2.54 11.43 7.62 7.62 2.54 2.54)
+		(uuid "f8d5f4ca-33aa-40c4-b1ce-02a5b39db39c")
+		(cells
+			(table_cell "Load"
+				(exclude_from_sim no)
+				(at 13.97 167.64 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "4a223cd2-2aee-4775-8ba1-5d9148ff2ad0")
+			)
+			(table_cell "Draw"
+				(exclude_from_sim no)
+				(at 35.56 167.64 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "5f786df3-bffa-4374-bb8a-1665291c8046")
+			)
+			(table_cell "Quantity"
+				(exclude_from_sim no)
+				(at 57.15 167.64 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d63f56d8-ca74-4029-aa41-10f0d3c39a93")
+			)
+			(table_cell "Total"
+				(exclude_from_sim no)
+				(at 78.74 167.64 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "459e016f-e9a9-42de-98cf-c4f42d17ecfd")
+			)
+			(table_cell "LED Panel VLED\n256 * 0.02A 8 3V = 15.36W / 12V = 1.28A / 80% efficiency"
+				(exclude_from_sim no)
+				(at 13.97 170.18 0)
+				(size 21.59 11.43)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "4f2682a3-a93d-4e55-bde2-54728c9d6617")
+			)
+			(table_cell "1.6A"
+				(exclude_from_sim no)
+				(at 35.56 170.18 0)
+				(size 21.59 11.43)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "351e0a65-f48b-48d5-88e3-875245bb9ca4")
+			)
+			(table_cell "2"
+				(exclude_from_sim no)
+				(at 57.15 170.18 0)
+				(size 21.59 11.43)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "5c2a34dd-ba26-429e-b35c-086517eae0cb")
+			)
+			(table_cell "3.2A"
+				(exclude_from_sim no)
+				(at 78.74 170.18 0)
+				(size 21.59 11.43)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "543fb476-6445-406d-844c-bbdbc35af141")
+			)
+			(table_cell "LED Panel POS3P3\n1A * 3.3V / 12V / 80% efficiency"
+				(exclude_from_sim no)
+				(at 13.97 181.61 0)
+				(size 21.59 7.62)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "3d372111-dfbb-44bd-a86a-3b7a8d33020e")
+			)
+			(table_cell "0.344A"
+				(exclude_from_sim no)
+				(at 35.56 181.61 0)
+				(size 21.59 7.62)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "3bfa21e4-5fab-4ce6-a480-43456435c2a5")
+			)
+			(table_cell "2"
+				(exclude_from_sim no)
+				(at 57.15 181.61 0)
+				(size 21.59 7.62)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "30552bfa-4c3d-4958-a12c-b760783b3e4f")
+			)
+			(table_cell "0.688A"
+				(exclude_from_sim no)
+				(at 78.74 181.61 0)
+				(size 21.59 7.62)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "459d17a7-93cb-426c-b610-c4343e33ac1d")
+			)
+			(table_cell "Local POS3P3\n1A * 3.3V / 12V / 80% efficiency"
+				(exclude_from_sim no)
+				(at 13.97 189.23 0)
+				(size 21.59 7.62)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "5c5ce722-a6a3-4ae4-add3-dd2d96c4a1aa")
+			)
+			(table_cell "0.344A"
+				(exclude_from_sim no)
+				(at 35.56 189.23 0)
+				(size 21.59 7.62)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "a62ad1d5-6f72-4038-b519-b6c7083ae880")
+			)
+			(table_cell "1"
+				(exclude_from_sim no)
+				(at 57.15 189.23 0)
+				(size 21.59 7.62)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "1f984599-60cd-439b-97e4-06fb04779c23")
+			)
+			(table_cell "0.344A"
+				(exclude_from_sim no)
+				(at 78.74 189.23 0)
+				(size 21.59 7.62)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "8c23692d-0e4b-4716-9f5b-a93e85a56f19")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 13.97 196.85 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "0c2ca7e4-7a66-4464-8b4d-f8a22cea938b")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 35.56 196.85 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "1e1ff605-6cdd-443f-b9f7-c16943309674")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 57.15 196.85 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "0489e6de-9a98-416c-8b51-e8845d72b7eb")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 78.74 196.85 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "37d52713-074d-4d8b-a84c-9218f0c99b5e")
+			)
+			(table_cell "Total"
+				(exclude_from_sim no)
+				(at 13.97 199.39 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "d41b6a29-70da-46e8-911a-3ae1558080a5")
+			)
+			(table_cell ""
+				(exclude_from_sim no)
+				(at 35.56 199.39 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "1857324c-830f-4008-aa4a-69d6cc9dc2ad")
+			)
+			(table_cell "50.784W"
+				(exclude_from_sim no)
+				(at 57.15 199.39 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "4523c1b4-1127-43a3-82a2-eaae837e36d8")
+			)
+			(table_cell "4.232A"
+				(exclude_from_sim no)
+				(at 78.74 199.39 0)
+				(size 21.59 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "e4bb879d-1241-403c-a1d8-160f4da2069f")
+			)
+		)
 	)
 	(global_label "POS12_SNS-"
 		(shape passive)
