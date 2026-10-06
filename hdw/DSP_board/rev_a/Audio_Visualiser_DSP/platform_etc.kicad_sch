@@ -2512,7 +2512,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0586d7e9-6b15-40ef-9862-0829d1aa6b59")
 		(property "Reference" "C1001"
 			(at 59.055 44.45 0)
@@ -2645,6 +2645,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "C1001")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -2658,7 +2665,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "079b18ea-0851-4151-ab6d-b32ccd065211")
 		(property "Reference" "C1003"
 			(at 92.075 44.45 0)
@@ -2791,6 +2798,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "C1003")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -2804,7 +2818,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "08b79507-5ca5-4a59-943f-1f7e762aa297")
 		(property "Reference" "#PWR01002"
 			(at 58.42 57.15 0)
@@ -2950,6 +2964,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "J1003")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -2964,7 +2984,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "12259034-3b43-40cc-8b3a-29bd00b3c50b")
 		(property "Reference" "U1002"
 			(at 180.34 46.99 0)
@@ -3083,6 +3103,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "U1002")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -3096,7 +3123,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "287c8d8a-dc52-44dd-aa41-41fa51e59b1f")
 		(property "Reference" "#PWR01004"
 			(at 74.93 57.15 0)
@@ -3242,6 +3269,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "J1002")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -3336,6 +3369,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "J1004")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -3426,7 +3465,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "4418295c-ade9-4d70-8d6d-b86ed7bce567")
 		(property "Reference" "#PWR01014"
 			(at 173.99 97.79 0)
@@ -3576,6 +3615,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "DOC1001")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -3589,7 +3634,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "5a19ea62-585e-4d39-95f9-dfb5b0586b47")
 		(property "Reference" "#PWR01011"
 			(at 173.99 49.53 0)
@@ -3739,6 +3784,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "DOC1002")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -3752,7 +3803,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6b41995b-8775-4979-b675-5482f94b89d1")
 		(property "Reference" "U1001"
 			(at 107.95 80.01 0)
@@ -3878,6 +3929,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "U1001")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -3891,7 +3949,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6d440a48-3df0-489c-bc87-7c8fe7ca1301")
 		(property "Reference" "C1005"
 			(at 174.625 85.09 0)
@@ -4025,6 +4083,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "C1005")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -4115,7 +4180,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "86867b52-4b3d-432b-9a29-0be7ef12ac0a")
 		(property "Reference" "#PWR01008"
@@ -4194,7 +4259,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "894c4b65-29eb-4b68-bbd4-e6f11889ad99")
 		(property "Reference" "D1001"
@@ -4318,6 +4383,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "D1001")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -4332,7 +4404,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "925f1d69-144a-4a24-a4c9-56c949315156")
 		(property "Reference" "#PWR01012"
 			(at 173.99 78.74 0)
@@ -4409,7 +4481,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a81eb174-fa82-42f7-865e-88831341f773")
 		(property "Reference" "C1004"
 			(at 108.585 44.45 0)
@@ -4542,6 +4614,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "C1004")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -4624,6 +4703,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "J1001")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -4714,7 +4799,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c9b97492-b12c-4704-932a-3c57f3a39e37")
 		(property "Reference" "#PWR01013"
 			(at 173.99 87.63 0)
@@ -4791,7 +4876,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "cfef8a73-5907-4b4e-815e-6758eb5bd9be")
 		(property "Reference" "#PWR01005"
 			(at 91.44 57.15 0)
@@ -4945,7 +5030,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d5d332f7-0936-4b53-9646-1d45a7f1f481")
 		(property "Reference" "C1002"
 			(at 75.565 44.45 0)
@@ -5078,6 +5163,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
 					(reference "C1002")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -5091,7 +5183,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e6e16d6b-5ee1-4b0a-9146-4b23805656af")
 		(property "Reference" "#PWR01001"
 			(at 58.42 34.29 0)
@@ -5168,7 +5260,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f480b023-2aa5-4c30-9171-e065adf2631a")
 		(property "Reference" "#PWR01007"
 			(at 96.52 83.82 0)
@@ -5245,7 +5337,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fa901a28-a49a-4229-91a3-10a330ca9f0c")
 		(property "Reference" "#FLG01001"
 			(at 120.65 36.195 0)
@@ -5322,7 +5414,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fd06c440-0c19-4957-b6cc-7f9870df2bef")
 		(property "Reference" "#PWR01009"
 			(at 107.95 57.15 0)

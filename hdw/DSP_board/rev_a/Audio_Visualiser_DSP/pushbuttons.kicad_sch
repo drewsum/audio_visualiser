@@ -5,159 +5,6 @@
 	(uuid "f6bcbdc2-b7a7-4342-ae75-797e28f095e0")
 	(paper "A")
 	(lib_symbols
-		(symbol "Connector:Screw_Terminal_01x01"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Screw_Terminal_01x01"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "screw terminal"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Screw_Terminal_01x01_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
 				(offset 1.016)
@@ -2887,6 +2734,12 @@
 		(uuid "654e4d6e-da2d-4425-9c0f-d8ae41d0dd74")
 	)
 	(junction
+		(at 45.72 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "801eb4e8-b5d9-49f2-a7f9-52c85676eb9a")
+	)
+	(junction
 		(at 184.15 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2988,6 +2841,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 24.13) (xy 48.26 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b2bc86c-fc59-4965-b6bc-2d337ecdfcf3")
+	)
+	(wire
+		(pts
 			(xy 77.47 81.28) (xy 77.47 83.82)
 		)
 		(stroke
@@ -3055,6 +2918,16 @@
 			(type default)
 		)
 		(uuid "64bef037-ff4e-4f32-aec6-84ed0fe5bf67")
+	)
+	(wire
+		(pts
+			(xy 43.18 26.67) (xy 45.72 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6882312d-c6b0-4669-b19c-5410630427d8")
 	)
 	(wire
 		(pts
@@ -3198,6 +3071,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 24.13) (xy 45.72 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a39b43ac-a523-4bd3-925f-11f5be1eb34e")
+	)
+	(wire
+		(pts
 			(xy 60.96 36.83) (xy 60.96 41.91)
 		)
 		(stroke
@@ -3208,7 +3091,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 24.13) (xy 48.26 24.13)
+			(xy 43.18 24.13) (xy 45.72 24.13)
 		)
 		(stroke
 			(width 0)
@@ -3622,6 +3505,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "C1905")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -3699,6 +3588,10 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "#PWR01911")
 					(unit 1)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -3788,6 +3681,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "SW1901")
 					(unit 1)
+					(variant
+						(name "Default")
+						(dnp yes)
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -3866,6 +3766,10 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "#PWR01901")
 					(unit 1)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -3953,6 +3857,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "N1901")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -4245,6 +4155,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "R1901")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -4397,6 +4313,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "DOC1901")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -4474,6 +4396,10 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "#PWR01910")
 					(unit 1)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -4551,6 +4477,129 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "#PWR01918")
 					(unit 1)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 38.1 24.13 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44dfd9e8-f110-4061-b391-26ed927aa77f")
+		(property "Reference" "J1901"
+			(at 38.1 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Power"
+			(at 38.1 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+			(at 38.1 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 38.1 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Configuration" ""
+			(at 76.2 -52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 38.1 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "277-1247-ND"
+			(at 38.1 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9d6bd037-0f5a-403c-8909-53870d515f9b")
+		)
+		(pin "2"
+			(uuid "985f4140-c304-4309-961e-648b2f1ce6be")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
+					(reference "J1901")
+					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -4698,6 +4747,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "C1903")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -4835,6 +4891,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "R1902")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -4912,6 +4974,10 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "#PWR01915")
 					(unit 1)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -5135,6 +5201,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "R1904")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -5261,6 +5334,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "U1902")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -5624,6 +5704,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "R1906")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -5727,6 +5813,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "J1903")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -5805,6 +5897,10 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "#PWR01902")
 					(unit 1)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -5897,7 +5993,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7e67788f-a966-4d89-879e-513cb95bf359")
 		(property "Reference" "R1903"
 			(at 93.98 21.59 90)
@@ -6021,6 +6117,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "R1903")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -6098,6 +6201,10 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "#PWR01916")
 					(unit 1)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -6212,6 +6319,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "SW1902")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -6348,6 +6462,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "R1909")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -6480,6 +6600,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "C1901")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -6617,6 +6743,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "C1906")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -6694,6 +6826,10 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "#PWR01907")
 					(unit 1)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -6807,6 +6943,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "J1902")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -6953,6 +7096,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "R1907")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -7177,6 +7327,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "R1908")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -7556,6 +7713,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "C1904")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -7693,6 +7857,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "C1902")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -7887,6 +8057,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "U1901")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -8079,6 +8255,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "U1903")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -8156,95 +8338,10 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "#PWR01908")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x01")
-		(at 38.1 24.13 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f9a4fd33-5799-40f1-982e-bcdff0f7d033")
-		(property "Reference" "J1901"
-			(at 38.1 17.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Power Button"
-			(at 38.1 20.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-			(at 38.1 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 38.1 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 38.1 24.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d1a0d2a2-07c7-4fdf-9225-ff8bf2ea5bfa")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
-					(reference "J1901")
-					(unit 1)
+					(variant
+						(name "Development")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -8381,6 +8478,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/81d9ddc4-5cba-4a39-aff5-649eed05eb4c"
 					(reference "R1905")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)

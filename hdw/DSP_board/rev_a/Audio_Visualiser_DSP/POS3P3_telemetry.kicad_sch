@@ -1422,7 +1422,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0ed8b792-761a-4b63-8226-9b4c69e936ba")
 		(property "Reference" "#PWR0508"
 			(at 132.08 148.59 0)
@@ -1499,7 +1499,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1f10d74f-8cfe-47da-8f1e-2b92e6a1f7e0")
 		(property "Reference" "#PWR0506"
 			(at 132.08 110.49 0)
@@ -1576,7 +1576,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "46fde3fa-82e8-4314-ac0f-2b8952bb01fa")
 		(property "Reference" "U501"
 			(at 125.73 41.91 0)
@@ -1704,6 +1704,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/591fe591-cb36-4c0a-afd1-91c877291a0e"
 					(reference "U501")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -1717,7 +1724,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "561fcf40-e90b-49d6-86fa-167654610c82")
 		(property "Reference" "#PWR0501"
@@ -1869,6 +1876,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/591fe591-cb36-4c0a-afd1-91c877291a0e"
 					(reference "DOC501")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -1882,7 +1895,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "66b1d4a3-9f63-412e-af72-c4cf3db0a84f")
 		(property "Reference" "#PWR0503"
 			(at 132.08 72.39 0)
@@ -1959,7 +1972,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "684fdcba-b334-49b2-991f-2028402cd031")
 		(property "Reference" "#PWR0502"
 			(at 132.08 44.45 0)
@@ -2109,6 +2122,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/591fe591-cb36-4c0a-afd1-91c877291a0e"
 					(reference "DOC502")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -2122,7 +2141,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "88223848-f9ef-469f-b24c-295bd27e4502")
 		(property "Reference" "#PWR0505"
 			(at 132.08 90.17 0)
@@ -2199,7 +2218,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "aa13b50d-f5ca-4d8b-9469-35b783afc45d")
 		(property "Reference" "C502"
 			(at 132.715 77.47 0)
@@ -2333,6 +2352,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/591fe591-cb36-4c0a-afd1-91c877291a0e"
 					(reference "C502")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -2346,7 +2372,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "af276476-0a64-4965-952c-a52ec676e3d2")
 		(property "Reference" "C503"
 			(at 132.715 146.05 0)
@@ -2480,6 +2506,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/591fe591-cb36-4c0a-afd1-91c877291a0e"
 					(reference "C503")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -2493,7 +2526,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ceb86453-36ff-49ac-8688-805bd96104a1")
 		(property "Reference" "#PWR0509"
 			(at 132.08 158.75 0)
@@ -2570,7 +2603,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "dce7e738-8634-49d7-a662-f6cc2318edb1")
 		(property "Reference" "#PWR0504"
 			(at 132.08 80.01 0)
@@ -2648,7 +2681,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e2901042-e8cf-4015-9c48-439eea1a8e86")
 		(property "Reference" "#PWR0507"
 			(at 132.08 139.7 0)
@@ -2726,7 +2759,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fbc1a8a9-8b92-490a-8433-f6b0fc7627d5")
 		(property "Reference" "U502"
 			(at 138.43 107.95 0)
@@ -2845,6 +2878,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/591fe591-cb36-4c0a-afd1-91c877291a0e"
 					(reference "U502")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -2858,7 +2898,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fc3fd6d9-ad55-4e70-9682-6d9731a6d9aa")
 		(property "Reference" "C501"
 			(at 109.855 53.34 0)
@@ -2992,6 +3032,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/591fe591-cb36-4c0a-afd1-91c877291a0e"
 					(reference "C501")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
