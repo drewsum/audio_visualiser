@@ -28,8 +28,6 @@
 
 All sims were run with digipot code = 128 (wiper -> midpoint), meaning the PGAs are not attenuating or amplifying the signal at all, merely inverting
 
-The high-pass filtering on the RCA signal path is due to AC coupling capacitors, the speaker level signal chain does not employ an AC coupling capacitor (uses an instrumentation amp instead) so it does not have this.
-
 The signal chain employs the following vendor spice models:
 * BAT54SW.lib
 * MCP4451.lib
