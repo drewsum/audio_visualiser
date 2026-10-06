@@ -4941,6 +4941,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "C804")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -5031,7 +5037,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0c304329-aa93-4118-909d-121ad714e3e9")
 		(property "Reference" "R806"
 			(at 123.444 41.91 0)
@@ -5160,6 +5166,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "R806")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -5496,6 +5509,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "U701")
 					(unit 2)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -5733,6 +5752,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "H801")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -5865,6 +5890,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "R804")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -5997,6 +6028,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "R807")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -6129,6 +6166,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "R801")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -6378,6 +6421,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "J801")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -6468,7 +6517,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "49886a20-952b-47b5-8677-64cf43c326dc")
 		(property "Reference" "R803"
 			(at 98.044 41.91 0)
@@ -6597,6 +6646,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "R803")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -6683,6 +6739,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "DOC801")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -7231,7 +7293,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b454306e-41d4-4b91-ab7e-ca8eb8d10ed6")
 		(property "Reference" "R805"
 			(at 110.744 41.91 0)
@@ -7360,6 +7422,13 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "R805")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+						(dnp no)
+					)
 				)
 			)
 		)
@@ -7725,6 +7794,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "C803")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -7937,6 +8012,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "C805")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -8148,6 +8229,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "C801")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -8433,6 +8520,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "R802")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -8552,6 +8645,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "U801")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -8749,6 +8848,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "U803")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -8884,6 +8989,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "C802")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -9282,6 +9393,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "U805")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -9550,6 +9667,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "U802")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
