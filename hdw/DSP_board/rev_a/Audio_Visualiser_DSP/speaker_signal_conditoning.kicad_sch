@@ -2015,16 +2015,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 58.42) (xy 69.85 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0026b6c8-8d19-4581-ad00-f6bb1051d4c3")
-	)
-	(wire
-		(pts
 			(xy 54.61 60.96) (xy 59.69 60.96)
 		)
 		(stroke
@@ -2665,6 +2655,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 58.42) (xy 69.85 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d42463d6-bc27-4379-80bb-0e3fedd84b09")
+	)
+	(wire
+		(pts
 			(xy 54.61 71.12) (xy 57.15 71.12)
 		)
 		(stroke
@@ -2875,7 +2875,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -2947,9 +2947,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim no)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim no)
 					)
 				)
 			)
@@ -7171,7 +7173,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -7243,9 +7245,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim no)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim no)
 					)
 				)
 			)

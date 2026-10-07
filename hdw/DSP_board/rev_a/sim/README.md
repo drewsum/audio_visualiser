@@ -4,10 +4,10 @@
 
 | Color  | Signal |
 |--------|--------|
-| Red    | Time Domain RCA Audio Signal (1Vpp) |
+| Red    | Time Domain RCA Audio Signal (1.8Vpp) |
 | Green  | Frequency Domain RCA Audio Signal |
 | Blue   | Time/Frequency Domain ADC Audio Signal |
-| Orange | Time Domain Speaker Level Audio Signal (5Vpp) |
+| Orange | Time Domain Speaker Level Audio Signal (12Vpp) |
 | Yellow | Frequency Domain Speaker Level Audio Signal |
 
 ## RCA Input
@@ -27,8 +27,6 @@
 ![Speaker Frequency Domain](output/speaker_frequency_domain.png)
 
 All sims were run with digipot code = 128 (wiper -> midpoint), meaning the PGAs are not attenuating or amplifying the signal at all, merely inverting
-
-The high-pass filtering on the RCA signal path is due to AC coupling capacitors, the speaker level signal chain does not employ an AC coupling capacitor (uses an instrumentation amp instead) so it does not have this.
 
 The signal chain employs the following vendor spice models:
 * BAT54SW.lib
