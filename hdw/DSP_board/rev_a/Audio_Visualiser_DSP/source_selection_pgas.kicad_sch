@@ -1311,6 +1311,164 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_02x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_02x01"
+				(at 1.27 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_2x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_02x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 3.81 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Custom Library:+1.6V_AUDIO_REF"
 			(power global)
 			(pin_names
@@ -3201,6 +3359,12 @@
 		(uuid "cc344776-4b50-4bcc-960a-ee8a8c565ddb")
 	)
 	(junction
+		(at 189.23 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05242b6c-ff37-4bd4-9c7f-c8ca394ab418")
+	)
+	(junction
 		(at 152.4 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3229,6 +3393,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "963c5fe8-948a-4fda-9b24-3a8a644ce4a1")
+	)
+	(junction
+		(at 189.23 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ff01e0a-5b91-4f9b-984e-4dff835734a7")
 	)
 	(junction
 		(at 229.87 120.65)
@@ -3273,6 +3443,16 @@
 			(type default)
 		)
 		(uuid "084f26d9-8940-4a7c-8e82-c169a9e3957b")
+	)
+	(wire
+		(pts
+			(xy 189.23 55.88) (xy 242.57 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a311f82-2927-4f36-b611-ce0102cd7246")
 	)
 	(wire
 		(pts
@@ -3346,7 +3526,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 106.68) (xy 242.57 106.68)
+			(xy 152.4 106.68) (xy 189.23 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3436,6 +3616,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 106.68) (xy 242.57 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54e92222-3921-4426-8e62-fd57ff567d35")
+	)
+	(wire
+		(pts
 			(xy 229.87 69.85) (xy 229.87 72.39)
 		)
 		(stroke
@@ -3446,7 +3636,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 55.88) (xy 242.57 55.88)
+			(xy 189.23 106.68) (xy 189.23 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f030d3e-1290-4040-b80b-e997bab15148")
+	)
+	(wire
+		(pts
+			(xy 152.4 55.88) (xy 189.23 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3703,6 +3903,16 @@
 			(type default)
 		)
 		(uuid "cf3e15fb-a69b-42c0-8ad3-9a905517b152")
+	)
+	(wire
+		(pts
+			(xy 189.23 55.88) (xy 189.23 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf473744-b1e2-47bd-9329-231cbbfc2d32")
 	)
 	(wire
 		(pts
@@ -4297,7 +4507,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0eb56db1-ade5-4014-8c35-6f65129177ab")
-		(property "Reference" "#PWR01522"
+		(property "Reference" "#PWR01524"
 			(at 229.87 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -4357,7 +4567,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01522")
+					(reference "#PWR01524")
 					(unit 1)
 				)
 			)
@@ -4374,7 +4584,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0fc344e3-8bf0-4ec9-a03e-27c2b1145df9")
-		(property "Reference" "#PWR01519"
+		(property "Reference" "#PWR01521"
 			(at 214.63 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -4434,7 +4644,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01519")
+					(reference "#PWR01521")
 					(unit 1)
 				)
 			)
@@ -4985,7 +5195,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1eb1448a-2b5f-4131-8d12-0622c0abfcf6")
-		(property "Reference" "#PWR01520"
+		(property "Reference" "#PWR01522"
 			(at 214.63 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -5045,7 +5255,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01520")
+					(reference "#PWR01522")
 					(unit 1)
 				)
 			)
@@ -5190,6 +5400,83 @@
 					(variant
 						(name "Development")
 					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 189.23 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2019056d-1541-40bd-93a2-29ea780691ef")
+		(property "Reference" "#PWR01518"
+			(at 189.23 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 189.23 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d21e53f4-52b3-47d4-a61d-a1c5f27b2737")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
+					(reference "#PWR01518")
+					(unit 1)
 				)
 			)
 		)
@@ -5699,7 +5986,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "434dd8be-1bf3-40d6-8383-e35d63e8962e")
-		(property "Reference" "#PWR01525"
+		(property "Reference" "#PWR01527"
 			(at 237.49 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -5759,7 +6046,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01525")
+					(reference "#PWR01527")
 					(unit 1)
 				)
 			)
@@ -7090,6 +7377,83 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 189.23 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7f34acd2-7d4f-4a7d-b4c7-426075f45d26")
+		(property "Reference" "#PWR01517"
+			(at 189.23 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 189.23 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86a57f6b-2e96-4f60-9e8a-c4d8cecd66dc")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
+					(reference "#PWR01517")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 46.99 135.89 0)
 		(unit 1)
 		(body_style 1)
@@ -7176,7 +7540,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "834c904b-03db-405d-b7b1-b9716ebd2990")
-		(property "Reference" "#PWR01526"
+		(property "Reference" "#PWR01528"
 			(at 255.27 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -7236,7 +7600,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01526")
+					(reference "#PWR01528")
 					(unit 1)
 				)
 			)
@@ -7320,6 +7684,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_02x01")
+		(at 189.23 63.5 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a029648-a90a-48e2-aedd-c8018226b874")
+		(property "Reference" "J1501"
+			(at 191.77 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_02x01"
+			(at 191.77 66.0399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 189.23 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a4f39dee-e80f-4835-b581-d11504f9b1ad")
+		)
+		(pin "1"
+			(uuid "0a4b1133-4c16-4565-a968-7a49d05632ee")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
+					(reference "J1501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 255.27 142.24 0)
 		(unit 1)
@@ -7330,7 +7776,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8dc61b5f-5e25-463e-bbaf-d2429f5e32da")
-		(property "Reference" "#PWR01527"
+		(property "Reference" "#PWR01529"
 			(at 255.27 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -7390,7 +7836,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01527")
+					(reference "#PWR01529")
 					(unit 1)
 				)
 			)
@@ -7407,7 +7853,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ded190f-2606-4fc7-85e2-07f9329070c5")
-		(property "Reference" "#PWR01523"
+		(property "Reference" "#PWR01525"
 			(at 229.87 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -7467,7 +7913,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01523")
+					(reference "#PWR01525")
 					(unit 1)
 				)
 			)
@@ -7942,6 +8388,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_02x01")
+		(at 189.23 114.3 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b03a366-4fd8-43d6-92f9-f275264c21eb")
+		(property "Reference" "J1502"
+			(at 191.77 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_02x01"
+			(at 191.77 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 189.23 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e82ad68e-98cb-4be5-b476-77317890b592")
+		)
+		(pin "1"
+			(uuid "15cb8dfc-7f05-4cc8-80ed-de3233be0833")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
+					(reference "J1502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom_Library:C_Custom")
 		(at 46.99 132.08 0)
 		(mirror y)
@@ -8095,7 +8623,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "af73a783-f825-4459-8ba8-8af96f0c8532")
-		(property "Reference" "#PWR01521"
+		(property "Reference" "#PWR01523"
 			(at 217.17 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -8155,7 +8683,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01521")
+					(reference "#PWR01523")
 					(unit 1)
 				)
 			)
@@ -8250,7 +8778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be61c8e7-087c-425f-bb4f-4592b5c32ce7")
-		(property "Reference" "#PWR01517"
+		(property "Reference" "#PWR01519"
 			(at 195.58 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -8311,7 +8839,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01517")
+					(reference "#PWR01519")
 					(unit 1)
 				)
 			)
@@ -9190,7 +9718,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dab300bd-df1b-49bd-90b5-401a398aaa5e")
-		(property "Reference" "#PWR01524"
+		(property "Reference" "#PWR01526"
 			(at 237.49 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -9250,7 +9778,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01524")
+					(reference "#PWR01526")
 					(unit 1)
 				)
 			)
@@ -9679,7 +10207,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3bc0b6a-eabb-4297-9ff2-c4bb5dc62d03")
-		(property "Reference" "#PWR01518"
+		(property "Reference" "#PWR01520"
 			(at 195.58 156.21 0)
 			(hide yes)
 			(show_name no)
@@ -9740,7 +10268,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
-					(reference "#PWR01518")
+					(reference "#PWR01520")
 					(unit 1)
 				)
 			)
