@@ -3263,7 +3263,7 @@
 	)
 	(rectangle
 		(start 13.97 13.97)
-		(end 68.58 180.34)
+		(end 73.66 180.34)
 		(stroke
 			(width 0)
 			(type dash)
@@ -3274,7 +3274,7 @@
 		(uuid "0e07758d-e4c0-4df9-8d3e-d35a6cf6e6d0")
 	)
 	(rectangle
-		(start 68.58 13.97)
+		(start 73.66 13.97)
 		(end 170.815 170.18)
 		(stroke
 			(width 0)
@@ -3318,7 +3318,7 @@
 	)
 	(text "This digipot can both attenuate and amplify depending on setting\nAt reset, wiper is midpoint, so Av = 1"
 		(exclude_from_sim no)
-		(at 95.25 91.44 0)
+		(at 100.33 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3339,7 +3339,7 @@
 	)
 	(text "This digipot can both attenuate and amplify depending on setting\nAt reset, wiper is midpoint, so Av = 1"
 		(exclude_from_sim no)
-		(at 95.25 142.24 0)
+		(at 100.33 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3359,13 +3359,7 @@
 		(uuid "cc344776-4b50-4bcc-960a-ee8a8c565ddb")
 	)
 	(junction
-		(at 189.23 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05242b6c-ff37-4bd4-9c7f-c8ca394ab418")
-	)
-	(junction
-		(at 152.4 109.22)
+		(at 157.48 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21fce867-51e2-4440-a2d2-a0d1cc18af6e")
@@ -3377,28 +3371,28 @@
 		(uuid "2ac99c30-f717-405d-9579-d2aac84d29f4")
 	)
 	(junction
-		(at 93.98 109.22)
+		(at 189.23 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6160c93d-7708-459a-ab75-f2bdd790a4ce")
+	)
+	(junction
+		(at 99.06 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "767afec7-6994-49c6-b93c-1ac886295464")
 	)
 	(junction
-		(at 93.98 58.42)
+		(at 99.06 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d60bf97-0e9c-44d9-904b-d27a5154a49d")
 	)
 	(junction
-		(at 152.4 58.42)
+		(at 157.48 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "963c5fe8-948a-4fda-9b24-3a8a644ce4a1")
-	)
-	(junction
-		(at 189.23 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9ff01e0a-5b91-4f9b-984e-4dff835734a7")
 	)
 	(junction
 		(at 229.87 120.65)
@@ -3407,16 +3401,34 @@
 		(uuid "a67c8909-1618-4d5b-be51-db9a6df378ae")
 	)
 	(junction
+		(at 57.15 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adbbc795-df9b-484a-89c2-757aefd5e081")
+	)
+	(junction
 		(at 229.87 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b656c448-c430-4266-9ae3-d18224fc2e4b")
 	)
 	(junction
+		(at 57.15 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec1f6650-d3d4-418e-a53b-c8c66cd25fd2")
+	)
+	(junction
 		(at 229.87 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ecc44de2-c856-47be-b5bb-aebb563b83c7")
+	)
+	(junction
+		(at 189.23 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eef593a0-af32-4d65-9590-56eebd785fcb")
 	)
 	(junction
 		(at 229.87 69.85)
@@ -3426,7 +3438,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 106.68) (xy 129.54 106.68)
+			(xy 109.22 106.68) (xy 134.62 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3436,23 +3448,13 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 60.96) (xy 134.62 60.96)
+			(xy 133.35 60.96) (xy 139.7 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "084f26d9-8940-4a7c-8e82-c169a9e3957b")
-	)
-	(wire
-		(pts
-			(xy 189.23 55.88) (xy 242.57 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a311f82-2927-4f36-b611-ce0102cd7246")
 	)
 	(wire
 		(pts
@@ -3466,7 +3468,17 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 58.42) (xy 93.98 71.12)
+			(xy 189.23 106.68) (xy 242.57 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b91f3ce-65e5-4a34-b707-a33d9ee871db")
+	)
+	(wire
+		(pts
+			(xy 99.06 58.42) (xy 99.06 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3476,7 +3488,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 121.92) (xy 152.4 121.92)
+			(xy 139.7 121.92) (xy 157.48 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3496,7 +3508,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 124.46) (xy 134.62 121.92)
+			(xy 139.7 124.46) (xy 139.7 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3506,7 +3518,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 121.92) (xy 93.98 121.92)
+			(xy 78.74 121.92) (xy 99.06 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3526,7 +3538,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 106.68) (xy 189.23 106.68)
+			(xy 157.48 106.68) (xy 189.23 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3536,7 +3548,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 55.88) (xy 93.98 58.42)
+			(xy 99.06 55.88) (xy 99.06 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3566,13 +3578,23 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 58.42) (xy 93.98 58.42)
+			(xy 96.52 58.42) (xy 99.06 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "43a7626b-006c-460a-8e3d-d94d2706c142")
+	)
+	(wire
+		(pts
+			(xy 54.61 106.68) (xy 57.15 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49a9f942-7c9b-43f7-8c65-90bdc3a6346e")
 	)
 	(wire
 		(pts
@@ -3586,7 +3608,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 55.88) (xy 96.52 55.88)
+			(xy 99.06 55.88) (xy 101.6 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3596,7 +3618,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 111.76) (xy 73.66 111.76)
+			(xy 81.28 111.76) (xy 78.74 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3613,16 +3635,6 @@
 			(type default)
 		)
 		(uuid "54ccfbf7-4202-4e22-b86d-e7f4570b23a1")
-	)
-	(wire
-		(pts
-			(xy 189.23 106.68) (xy 242.57 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54e92222-3921-4426-8e62-fd57ff567d35")
 	)
 	(wire
 		(pts
@@ -3646,7 +3658,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 55.88) (xy 189.23 55.88)
+			(xy 157.48 55.88) (xy 189.23 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3656,7 +3668,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 58.42) (xy 152.4 71.12)
+			(xy 157.48 58.42) (xy 157.48 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3676,7 +3688,27 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 55.88) (xy 129.54 73.66)
+			(xy 57.15 55.88) (xy 57.15 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "849daa66-55d2-4da4-9e07-978406e7e927")
+	)
+	(wire
+		(pts
+			(xy 189.23 55.88) (xy 242.57 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84aac9e7-fb4e-4142-aa79-ccf6e07ddb77")
+	)
+	(wire
+		(pts
+			(xy 134.62 55.88) (xy 134.62 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3686,7 +3718,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 58.42) (xy 152.4 58.42)
+			(xy 154.94 58.42) (xy 157.48 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3696,7 +3728,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 106.68) (xy 129.54 124.46)
+			(xy 134.62 106.68) (xy 134.62 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3716,7 +3748,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 109.22) (xy 93.98 121.92)
+			(xy 99.06 109.22) (xy 99.06 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3726,7 +3758,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 109.22) (xy 152.4 106.68)
+			(xy 157.48 109.22) (xy 157.48 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3746,7 +3778,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 106.68) (xy 134.62 106.68)
+			(xy 137.16 106.68) (xy 139.7 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3766,7 +3798,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 60.96) (xy 73.66 60.96)
+			(xy 81.28 60.96) (xy 78.74 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3776,7 +3808,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 111.76) (xy 73.66 121.92)
+			(xy 78.74 111.76) (xy 78.74 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3786,7 +3818,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 109.22) (xy 93.98 109.22)
+			(xy 96.52 109.22) (xy 99.06 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3796,7 +3828,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 55.88) (xy 132.08 55.88)
+			(xy 139.7 55.88) (xy 137.16 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3826,16 +3858,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 106.68) (xy 76.2 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abaa9409-beae-4d7f-bf04-6a91a3a78f59")
-	)
-	(wire
-		(pts
 			(xy 229.87 120.65) (xy 229.87 123.19)
 		)
 		(stroke
@@ -3856,7 +3878,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 71.12) (xy 93.98 71.12)
+			(xy 78.74 71.12) (xy 99.06 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3866,7 +3888,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 58.42) (xy 152.4 55.88)
+			(xy 157.48 58.42) (xy 157.48 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3876,7 +3898,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 109.22) (xy 152.4 109.22)
+			(xy 154.94 109.22) (xy 157.48 109.22)
 		)
 		(stroke
 			(width 0)
@@ -3886,7 +3908,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 109.22) (xy 152.4 121.92)
+			(xy 157.48 109.22) (xy 157.48 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3896,7 +3918,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 55.88) (xy 132.08 73.66)
+			(xy 137.16 55.88) (xy 137.16 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3916,7 +3938,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 73.66) (xy 134.62 71.12)
+			(xy 139.7 73.66) (xy 139.7 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3926,13 +3948,43 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 55.88) (xy 76.2 55.88)
+			(xy 57.15 55.88) (xy 81.28 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7b2ddf2-27d9-4ffd-aca7-110455e76a84")
+	)
+	(wire
+		(pts
+			(xy 54.61 55.88) (xy 57.15 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d83bb380-41d9-489c-9055-09a142acac9b")
+	)
+	(wire
+		(pts
+			(xy 57.15 106.68) (xy 81.28 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daf54799-5786-46e2-a451-f7bf34d15c76")
+	)
+	(wire
+		(pts
+			(xy 57.15 106.68) (xy 57.15 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e02c2fc9-60f6-44b4-9872-201dc877e43d")
 	)
 	(wire
 		(pts
@@ -3946,7 +3998,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 111.76) (xy 134.62 111.76)
+			(xy 133.35 111.76) (xy 139.7 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3956,7 +4008,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 124.46) (xy 132.08 106.68)
+			(xy 137.16 124.46) (xy 137.16 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3966,7 +4018,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 55.88) (xy 129.54 55.88)
+			(xy 109.22 55.88) (xy 134.62 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3976,7 +4028,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 60.96) (xy 73.66 71.12)
+			(xy 78.74 60.96) (xy 78.74 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3986,7 +4038,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 106.68) (xy 96.52 106.68)
+			(xy 99.06 106.68) (xy 101.6 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3996,7 +4048,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 106.68) (xy 93.98 109.22)
+			(xy 99.06 106.68) (xy 99.06 109.22)
 		)
 		(stroke
 			(width 0)
@@ -4006,7 +4058,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 71.12) (xy 152.4 71.12)
+			(xy 139.7 71.12) (xy 157.48 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4285,7 +4337,7 @@
 	)
 	(symbol
 		(lib_id "Custom_Library:R_Custom")
-		(at 100.33 55.88 270)
+		(at 105.41 55.88 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4295,7 +4347,7 @@
 		(dnp no)
 		(uuid "075736d5-6cc4-4f38-9691-d134f2c7c59a")
 		(property "Reference" "R1502"
-			(at 100.33 53.34 90)
+			(at 105.41 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4305,7 +4357,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 100.33 55.88 90)
+			(at 105.41 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4315,7 +4367,7 @@
 			)
 		)
 		(property "Footprint" "Resistors_SMD:R_0402"
-			(at 100.33 55.88 0)
+			(at 105.41 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4326,7 +4378,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 55.88 0)
+			(at 105.41 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4337,7 +4389,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.33 55.88 0)
+			(at 105.41 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4347,7 +4399,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 100.33 58.42 90)
+			(at 105.41 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4357,7 +4409,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 100.33 60.96 90)
+			(at 105.41 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4367,7 +4419,7 @@
 			)
 		)
 		(property "Wattage" "1/16W"
-			(at 100.33 63.5 90)
+			(at 105.41 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4377,7 +4429,7 @@
 			)
 		)
 		(property "Digi-Key PN" "311-1.00KLRCT-ND"
-			(at 110.49 63.5 0)
+			(at 115.57 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4388,7 +4440,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 100.33 55.88 90)
+			(at 105.41 55.88 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4652,7 +4704,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 81.28 66.04 0)
+		(at 86.36 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4662,7 +4714,7 @@
 		(dnp no)
 		(uuid "1b549c0d-36d7-4959-8f35-95a0e4250bee")
 		(property "Reference" "#PWR01510"
-			(at 81.28 72.39 0)
+			(at 86.36 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4673,7 +4725,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 69.85 0)
+			(at 86.36 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4683,7 +4735,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 66.04 0)
+			(at 86.36 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4694,7 +4746,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 66.04 0)
+			(at 86.36 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4705,7 +4757,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 66.04 0)
+			(at 86.36 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4729,7 +4781,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP604")
-		(at 142.24 58.42 0)
+		(at 147.32 58.42 0)
 		(mirror x)
 		(unit 4)
 		(body_style 1)
@@ -4740,7 +4792,7 @@
 		(dnp no)
 		(uuid "1c18a5c2-df3c-477f-a570-2085022c7063")
 		(property "Reference" "U1502"
-			(at 142.24 64.77 0)
+			(at 147.32 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4751,7 +4803,7 @@
 			)
 		)
 		(property "Value" "MCP6024"
-			(at 142.24 53.34 0)
+			(at 147.32 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4762,7 +4814,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 140.97 60.96 0)
+			(at 146.05 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4773,7 +4825,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf"
-			(at 143.51 63.5 0)
+			(at 148.59 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4784,7 +4836,7 @@
 			)
 		)
 		(property "Description" "Quad 2.7V to 6.0V Single Supply CMOS Op Amps, DIP-14/SOIC-14/TSSOP-14"
-			(at 142.24 58.42 0)
+			(at 147.32 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4795,7 +4847,7 @@
 			)
 		)
 		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6021_MCP6024.lib"
-			(at 142.24 58.42 0)
+			(at 147.32 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4806,7 +4858,7 @@
 			)
 		)
 		(property "Sim.Name" "MCP6024"
-			(at 142.24 58.42 0)
+			(at 147.32 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4817,7 +4869,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 142.24 58.42 0)
+			(at 147.32 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4828,7 +4880,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=OUTA 2=INAN 3=INAP 4=VDD 5=INBP 6=INBN 7=OUTB 8=OUTC 9=INCN 10=INCP 11=VSS 12=INDP 13=INDN 14=OUTD"
-			(at 142.24 58.42 0)
+			(at 147.32 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4839,7 +4891,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 142.24 58.42 0)
+			(at 147.32 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4850,7 +4902,7 @@
 			)
 		)
 		(property "Digi-Key PN" "MCP6024T-I/STCT-ND"
-			(at 142.24 58.42 0)
+			(at 147.32 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4919,7 +4971,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 35.56 0)
+		(at 153.67 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -4929,7 +4981,7 @@
 		(dnp no)
 		(uuid "1cfbc143-b819-4446-93f2-bb82958c5245")
 		(property "Reference" "#PWR01516"
-			(at 148.59 41.91 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4940,7 +4992,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.59 39.37 0)
+			(at 153.67 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4950,7 +5002,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 35.56 0)
+			(at 153.67 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4961,7 +5013,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 35.56 0)
+			(at 153.67 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4972,7 +5024,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 35.56 0)
+			(at 153.67 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4996,7 +5048,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP604")
-		(at 142.24 109.22 0)
+		(at 147.32 109.22 0)
 		(mirror x)
 		(unit 3)
 		(body_style 1)
@@ -5007,7 +5059,7 @@
 		(dnp no)
 		(uuid "1eabb567-4dcf-436d-9fb1-5069cd67507f")
 		(property "Reference" "U1502"
-			(at 142.24 115.57 0)
+			(at 147.32 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5018,7 +5070,7 @@
 			)
 		)
 		(property "Value" "MCP6024"
-			(at 142.24 104.14 0)
+			(at 147.32 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5029,7 +5081,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 140.97 111.76 0)
+			(at 146.05 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5040,7 +5092,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf"
-			(at 143.51 114.3 0)
+			(at 148.59 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5051,7 +5103,7 @@
 			)
 		)
 		(property "Description" "Quad 2.7V to 6.0V Single Supply CMOS Op Amps, DIP-14/SOIC-14/TSSOP-14"
-			(at 142.24 109.22 0)
+			(at 147.32 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5062,7 +5114,7 @@
 			)
 		)
 		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6021_MCP6024.lib"
-			(at 142.24 109.22 0)
+			(at 147.32 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5073,7 +5125,7 @@
 			)
 		)
 		(property "Sim.Name" "MCP6024"
-			(at 142.24 109.22 0)
+			(at 147.32 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5084,7 +5136,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 142.24 109.22 0)
+			(at 147.32 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5095,7 +5147,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=OUTA 2=INAN 3=INAP 4=VDD 5=INBP 6=INBN 7=OUTB 8=OUTC 9=INCN 10=INCP 11=VSS 12=INDP 13=INDN 14=OUTD"
-			(at 142.24 109.22 0)
+			(at 147.32 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5106,7 +5158,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 142.24 109.22 0)
+			(at 147.32 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5117,7 +5169,7 @@
 			)
 		)
 		(property "Digi-Key PN" "MCP6024T-I/STCT-ND"
-			(at 142.24 109.22 0)
+			(at 147.32 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5263,7 +5315,7 @@
 	)
 	(symbol
 		(lib_id "Custom_Library:C_Custom")
-		(at 130.81 31.75 0)
+		(at 135.89 31.75 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5274,7 +5326,7 @@
 		(dnp no)
 		(uuid "1ef188c8-d9f1-446b-a77c-cea6edb6c575")
 		(property "Reference" "C1503"
-			(at 130.175 29.21 0)
+			(at 135.255 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5285,7 +5337,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 130.175 34.29 0)
+			(at 135.255 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5296,7 +5348,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors_SMD:C_0402"
-			(at 129.8448 35.56 0)
+			(at 134.9248 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5307,7 +5359,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.175 29.21 0)
+			(at 135.255 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5318,7 +5370,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 31.75 0)
+			(at 135.89 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5329,7 +5381,7 @@
 			)
 		)
 		(property "Digi-Key PN" "1276-CL05B104KB5NNNCCT-ND"
-			(at 120.015 19.05 0)
+			(at 125.095 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5340,7 +5392,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 134.62 29.21 0)
+			(at 139.7 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5351,7 +5403,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 134.62 31.75 0)
+			(at 139.7 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5362,7 +5414,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 134.62 34.29 0)
+			(at 139.7 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5373,7 +5425,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 130.81 31.75 0)
+			(at 135.89 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5483,7 +5535,7 @@
 	)
 	(symbol
 		(lib_id "Custom_Library:C_Custom")
-		(at 148.59 31.75 0)
+		(at 153.67 31.75 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5494,7 +5546,7 @@
 		(dnp no)
 		(uuid "25e2c460-b5d5-498d-a344-045b01285f5a")
 		(property "Reference" "C1504"
-			(at 147.955 29.21 0)
+			(at 153.035 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5505,7 +5557,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 147.955 34.29 0)
+			(at 153.035 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5516,7 +5568,7 @@
 			)
 		)
 		(property "Footprint" "Capacitors_SMD:C_0402"
-			(at 147.6248 35.56 0)
+			(at 152.7048 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5527,7 +5579,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.955 29.21 0)
+			(at 153.035 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5538,7 +5590,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 148.59 31.75 0)
+			(at 153.67 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5549,7 +5601,7 @@
 			)
 		)
 		(property "Digi-Key PN" "445-9116-1-ND"
-			(at 137.795 19.05 0)
+			(at 142.875 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5560,7 +5612,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 152.4 29.21 0)
+			(at 157.48 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5571,7 +5623,7 @@
 			)
 		)
 		(property "Voltage" "10V"
-			(at 152.4 31.75 0)
+			(at 157.48 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5582,7 +5634,7 @@
 			)
 		)
 		(property "Dielectric" "X7S"
-			(at 152.4 34.29 0)
+			(at 157.48 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5593,7 +5645,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 148.59 31.75 0)
+			(at 153.67 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5626,7 +5678,7 @@
 	)
 	(symbol
 		(lib_id "Custom Library:+1.6V_AUDIO_REF")
-		(at 128.27 60.96 90)
+		(at 133.35 60.96 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5636,7 +5688,7 @@
 		(dnp no)
 		(uuid "2785daeb-8ba1-474d-bb23-ea85cc54d5b1")
 		(property "Reference" "#PWR01511"
-			(at 132.08 60.96 0)
+			(at 137.16 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5647,7 +5699,7 @@
 			)
 		)
 		(property "Value" "+1.6V_AREF_LEFT"
-			(at 124.46 60.9599 90)
+			(at 129.54 60.9599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5658,7 +5710,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 60.96 0)
+			(at 133.35 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5668,7 +5720,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 60.96 0)
+			(at 133.35 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5678,7 +5730,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 60.96 0)
+			(at 133.35 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5884,6 +5936,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 57.15 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2af93c95-0379-403b-acac-8586f9dfec7a")
+		(property "Reference" "#PWR01530"
+			(at 57.15 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "148fb232-e83e-4c58-a756-631b96770159")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
+					(reference "#PWR01530")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom Library:I2C_Address")
 		(at 240.03 158.75 0)
 		(unit 1)
@@ -5964,6 +6093,94 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
 					(reference "DOC1501")
+					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x01")
+		(at 57.15 63.5 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "33dfc332-0883-4779-b079-0393dda9536a")
+		(property "Reference" "J1503"
+			(at 59.69 63.4999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mux Left TP"
+			(at 59.69 66.0399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 57.15 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8815f820-ea82-4c1a-a2bd-e14e14537735")
+		)
+		(pin "1"
+			(uuid "d2a229b2-c827-4368-8beb-e797baba4cc4")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
+					(reference "J1503")
 					(unit 1)
 					(variant
 						(name "Default")
@@ -6637,7 +6854,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 130.81 27.94 0)
+		(at 135.89 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6647,7 +6864,7 @@
 		(dnp no)
 		(uuid "55763803-bbcf-4509-a41a-4fbb6ed9312d")
 		(property "Reference" "#PWR01513"
-			(at 130.81 31.75 0)
+			(at 135.89 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6658,7 +6875,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 130.81 24.384 0)
+			(at 135.89 24.384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6668,7 +6885,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 27.94 0)
+			(at 135.89 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6679,7 +6896,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 27.94 0)
+			(at 135.89 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6690,7 +6907,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 130.81 27.94 0)
+			(at 135.89 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6898,7 +7115,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 148.59 27.94 0)
+		(at 153.67 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6908,7 +7125,7 @@
 		(dnp no)
 		(uuid "6b348106-e41d-4d1f-b4e9-0c2dab8a4e5b")
 		(property "Reference" "#PWR01515"
-			(at 148.59 31.75 0)
+			(at 153.67 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6919,7 +7136,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 148.59 24.384 0)
+			(at 153.67 24.384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6929,7 +7146,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 27.94 0)
+			(at 153.67 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6940,7 +7157,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 27.94 0)
+			(at 153.67 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6951,7 +7168,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 148.59 27.94 0)
+			(at 153.67 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7692,7 +7909,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8a029648-a90a-48e2-aedd-c8018226b874")
 		(property "Reference" "J1501"
@@ -7706,7 +7923,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_02x01"
+		(property "Value" "Gain Left TP"
 			(at 191.77 66.0399 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7761,6 +7978,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
 					(reference "J1501")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -7921,7 +8144,7 @@
 	)
 	(symbol
 		(lib_id "Custom_Library:R_Custom")
-		(at 100.33 106.68 270)
+		(at 105.41 106.68 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7931,7 +8154,7 @@
 		(dnp no)
 		(uuid "947b13e8-0cc4-4c6c-bdc7-1a0363a2530d")
 		(property "Reference" "R1503"
-			(at 100.33 104.14 90)
+			(at 105.41 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7941,7 +8164,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 100.33 106.68 90)
+			(at 105.41 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7951,7 +8174,7 @@
 			)
 		)
 		(property "Footprint" "Resistors_SMD:R_0402"
-			(at 100.33 106.68 0)
+			(at 105.41 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7962,7 +8185,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 106.68 0)
+			(at 105.41 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7973,7 +8196,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 100.33 106.68 0)
+			(at 105.41 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7983,7 +8206,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 100.33 109.22 90)
+			(at 105.41 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7993,7 +8216,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 100.33 111.76 90)
+			(at 105.41 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8003,7 +8226,7 @@
 			)
 		)
 		(property "Wattage" "1/16W"
-			(at 100.33 114.3 90)
+			(at 105.41 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8013,7 +8236,7 @@
 			)
 		)
 		(property "Digi-Key PN" "311-1.00KLRCT-ND"
-			(at 110.49 114.3 0)
+			(at 115.57 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8024,7 +8247,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 100.33 106.68 90)
+			(at 105.41 106.68 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8057,7 +8280,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP604")
-		(at 83.82 58.42 0)
+		(at 88.9 58.42 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8067,7 +8290,7 @@
 		(dnp no)
 		(uuid "94e195b7-11e8-4b22-9cf8-5ee89e77f3c9")
 		(property "Reference" "U1502"
-			(at 83.82 54.61 0)
+			(at 88.9 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8078,7 +8301,7 @@
 			)
 		)
 		(property "Value" "MCP6024"
-			(at 83.82 63.5 0)
+			(at 88.9 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8089,7 +8312,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 82.55 55.88 0)
+			(at 87.63 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8100,7 +8323,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf"
-			(at 85.09 53.34 0)
+			(at 90.17 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8111,7 +8334,7 @@
 			)
 		)
 		(property "Description" "Quad 2.7V to 6.0V Single Supply CMOS Op Amps, DIP-14/SOIC-14/TSSOP-14"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8122,7 +8345,7 @@
 			)
 		)
 		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6021_MCP6024.lib"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8133,7 +8356,7 @@
 			)
 		)
 		(property "Sim.Name" "MCP6024"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8144,7 +8367,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8155,7 +8378,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=OUTA 2=INAN 3=INAP 4=VDD 5=INBP 6=INBN 7=OUTB 8=OUTC 9=INCN 10=INCP 11=VSS 12=INDP 13=INDN 14=OUTD"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8166,7 +8389,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8177,7 +8400,7 @@
 			)
 		)
 		(property "Digi-Key PN" "MCP6024T-I/STCT-ND"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8396,7 +8619,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9b03a366-4fd8-43d6-92f9-f275264c21eb")
 		(property "Reference" "J1502"
@@ -8410,7 +8633,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_02x01"
+		(property "Value" "Gain Right TP"
 			(at 191.77 116.8399 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8465,6 +8688,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
 					(reference "J1502")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -8691,7 +8920,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 81.28 50.8 0)
+		(at 86.36 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8701,7 +8930,7 @@
 		(dnp no)
 		(uuid "afee96c2-b254-4901-8156-1588700e477d")
 		(property "Reference" "#PWR01509"
-			(at 81.28 54.61 0)
+			(at 86.36 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8712,7 +8941,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 81.28 47.244 0)
+			(at 86.36 47.244 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8722,7 +8951,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 50.8 0)
+			(at 86.36 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8733,7 +8962,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 50.8 0)
+			(at 86.36 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8744,7 +8973,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 81.28 50.8 0)
+			(at 86.36 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8762,6 +8991,94 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
 					(reference "#PWR01509")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_02x01")
+		(at 57.15 114.3 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "b9189295-860a-42ea-ba16-f93dd97076dc")
+		(property "Reference" "J1504"
+			(at 59.69 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Mux Right TP"
+			(at 59.69 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 57.15 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b41754c3-d04c-41a8-b6a3-2e2679b29cb6")
+		)
+		(pin "1"
+			(uuid "28e3e5ee-057c-4dc1-936f-b6eeb4898a45")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
+					(reference "J1504")
+					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -8917,6 +9234,83 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
 					(reference "#PWR01503")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 57.15 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c5fbbf75-a835-43a0-9788-1eca95ce5290")
+		(property "Reference" "#PWR01531"
+			(at 57.15 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ff7c5822-68e1-47f1-93d5-07caa52f7d37")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/c804c5c4-25b5-4e4d-bca8-934b42ea969b"
+					(reference "#PWR01531")
 					(unit 1)
 				)
 			)
@@ -9146,7 +9540,7 @@
 	)
 	(symbol
 		(lib_id "Potentiometer_Digital:MCP4451-xxxx-ML")
-		(at 132.08 81.28 270)
+		(at 137.16 81.28 270)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9157,7 +9551,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca4d77a5-9e14-46ea-b23c-76a2b218c310")
 		(property "Reference" "U1503"
-			(at 138.43 80.0099 90)
+			(at 143.51 80.0099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9168,7 +9562,7 @@
 			)
 		)
 		(property "Value" "MCP4451-103E/ML"
-			(at 138.43 82.5499 90)
+			(at 143.51 82.5499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9179,7 +9573,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
-			(at 127.1524 84.7598 0)
+			(at 132.2324 84.7598 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9190,7 +9584,7 @@
 			)
 		)
 		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/22267A_MCP4431.pdf"
-			(at 124.6124 84.7598 0)
+			(at 129.6924 84.7598 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9201,7 +9595,7 @@
 			)
 		)
 		(property "Description" "Quad 8 Bit Digital Potentiometer, I²C, Volatile Memory, TSSOP-20"
-			(at 132.08 81.28 0)
+			(at 137.16 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9212,7 +9606,7 @@
 			)
 		)
 		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP4451.lib"
-			(at 132.08 81.28 0)
+			(at 137.16 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9223,7 +9617,7 @@
 			)
 		)
 		(property "Sim.Name" "MCP4451"
-			(at 132.08 81.28 0)
+			(at 137.16 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9234,7 +9628,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 132.08 81.28 0)
+			(at 137.16 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9245,7 +9639,7 @@
 			)
 		)
 		(property "Sim.Pins" "19=P3A 20=P3W 1=P3B 2=HVC 3=SCL 4=SDA 5=VSS 6=P1B 7=P1W 8=P1A 9=P0A 10=P0W 11=P0B 12=NC 13=RESET 14=A1 15=VDD 16=P2B 17=P2W 18=P2A"
-			(at 132.08 81.28 0)
+			(at 137.16 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9256,7 +9650,7 @@
 			)
 		)
 		(property "Sim.Params" "RAB=10k RW=75 CODE0=128 CODE1=128 CODE2=128 CODE3=128"
-			(at 132.08 81.28 0)
+			(at 137.16 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9267,7 +9661,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 132.08 81.28 90)
+			(at 137.16 81.28 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9278,7 +9672,7 @@
 			)
 		)
 		(property "Digi-Key PN" "MCP4451-103E/ML-ND"
-			(at 132.08 81.28 0)
+			(at 137.16 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9368,7 +9762,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 35.56 0)
+		(at 135.89 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -9378,7 +9772,7 @@
 		(dnp no)
 		(uuid "d7699651-8f18-4761-a4bf-ef1eadcd332e")
 		(property "Reference" "#PWR01514"
-			(at 130.81 41.91 0)
+			(at 135.89 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9389,7 +9783,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 39.37 0)
+			(at 135.89 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9399,7 +9793,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 35.56 0)
+			(at 135.89 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9410,7 +9804,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 35.56 0)
+			(at 135.89 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9421,7 +9815,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 35.56 0)
+			(at 135.89 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9445,7 +9839,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP604")
-		(at 83.82 109.22 0)
+		(at 88.9 109.22 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9455,7 +9849,7 @@
 		(dnp no)
 		(uuid "d80c1f35-fd8e-4806-9371-9eaa5c96f525")
 		(property "Reference" "U1502"
-			(at 83.82 119.38 0)
+			(at 88.9 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9465,7 +9859,7 @@
 			)
 		)
 		(property "Value" "MCP6024"
-			(at 83.82 116.84 0)
+			(at 88.9 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9475,7 +9869,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 82.55 106.68 0)
+			(at 87.63 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9486,7 +9880,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf"
-			(at 85.09 104.14 0)
+			(at 90.17 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9497,7 +9891,7 @@
 			)
 		)
 		(property "Description" "Quad 2.7V to 6.0V Single Supply CMOS Op Amps, DIP-14/SOIC-14/TSSOP-14"
-			(at 83.82 109.22 0)
+			(at 88.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9508,7 +9902,7 @@
 			)
 		)
 		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6021_MCP6024.lib"
-			(at 83.82 109.22 0)
+			(at 88.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9519,7 +9913,7 @@
 			)
 		)
 		(property "Sim.Name" "MCP6024"
-			(at 83.82 109.22 0)
+			(at 88.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9530,7 +9924,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 83.82 109.22 0)
+			(at 88.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9541,7 +9935,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=OUTA 2=INAN 3=INAP 4=VDD 5=INBP 6=INBN 7=OUTB 8=OUTC 9=INCN 10=INCP 11=VSS 12=INDP 13=INDN 14=OUTD"
-			(at 83.82 109.22 0)
+			(at 88.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9552,7 +9946,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 83.82 109.22 0)
+			(at 88.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9563,7 +9957,7 @@
 			)
 		)
 		(property "Digi-Key PN" "MCP6024T-I/STCT-ND"
-			(at 83.82 109.22 0)
+			(at 88.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9633,7 +10027,7 @@
 	(symbol
 		(lib_name "+1.6V_AUDIO_REF_1")
 		(lib_id "Custom Library:+1.6V_AUDIO_REF")
-		(at 128.27 111.76 90)
+		(at 133.35 111.76 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9643,7 +10037,7 @@
 		(dnp no)
 		(uuid "d8a934f3-b1a0-43a3-b4f5-0d7a12dc4367")
 		(property "Reference" "#PWR01512"
-			(at 132.08 111.76 0)
+			(at 137.16 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9654,7 +10048,7 @@
 			)
 		)
 		(property "Value" "+1.6V_AREF_RIGHT"
-			(at 124.46 111.7599 90)
+			(at 129.54 111.7599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9665,7 +10059,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 111.76 0)
+			(at 133.35 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9675,7 +10069,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 111.76 0)
+			(at 133.35 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9685,7 +10079,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 111.76 0)
+			(at 133.35 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9786,7 +10180,7 @@
 	)
 	(symbol
 		(lib_id "Potentiometer_Digital:MCP4451-xxxx-ML")
-		(at 132.08 132.08 270)
+		(at 137.16 132.08 270)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9797,7 +10191,7 @@
 		(fields_autoplaced yes)
 		(uuid "db577f44-8dfd-45fc-a91a-218f7575e7f0")
 		(property "Reference" "U1503"
-			(at 138.43 130.8099 90)
+			(at 143.51 130.8099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9808,7 +10202,7 @@
 			)
 		)
 		(property "Value" "MCP4451-103E/ML"
-			(at 138.43 133.3499 90)
+			(at 143.51 133.3499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9819,7 +10213,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
-			(at 127.1524 135.5598 0)
+			(at 132.2324 135.5598 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9830,7 +10224,7 @@
 			)
 		)
 		(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/22267A_MCP4431.pdf"
-			(at 124.6124 135.5598 0)
+			(at 129.6924 135.5598 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9841,7 +10235,7 @@
 			)
 		)
 		(property "Description" "Quad 8 Bit Digital Potentiometer, I²C, Volatile Memory, TSSOP-20"
-			(at 132.08 132.08 0)
+			(at 137.16 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9852,7 +10246,7 @@
 			)
 		)
 		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP4451.lib"
-			(at 132.08 132.08 0)
+			(at 137.16 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9863,7 +10257,7 @@
 			)
 		)
 		(property "Sim.Name" "MCP4451"
-			(at 132.08 132.08 0)
+			(at 137.16 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9874,7 +10268,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 132.08 132.08 0)
+			(at 137.16 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9885,7 +10279,7 @@
 			)
 		)
 		(property "Sim.Pins" "19=P3A 20=P3W 1=P3B 2=HVC 3=SCL 4=SDA 5=VSS 6=P1B 7=P1W 8=P1A 9=P0A 10=P0W 11=P0B 12=NC 13=RESET 14=A1 15=VDD 16=P2B 17=P2W 18=P2A"
-			(at 132.08 132.08 0)
+			(at 137.16 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9896,7 +10290,7 @@
 			)
 		)
 		(property "Sim.Params" "RAB=10k RW=75 CODE0=128 CODE1=128 CODE2=128 CODE3=128"
-			(at 132.08 132.08 0)
+			(at 137.16 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9907,7 +10301,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 132.08 132.08 90)
+			(at 137.16 132.08 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9918,7 +10312,7 @@
 			)
 		)
 		(property "Digi-Key PN" "MCP4451-103E/ML-ND"
-			(at 132.08 132.08 0)
+			(at 137.16 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10008,7 +10402,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:MCP604")
-		(at 83.82 58.42 0)
+		(at 88.9 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10018,7 +10412,7 @@
 		(dnp no)
 		(uuid "de9fdb69-04bd-4912-95d3-38e2a87f6f1f")
 		(property "Reference" "U1502"
-			(at 83.82 52.07 0)
+			(at 88.9 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10029,7 +10423,7 @@
 			)
 		)
 		(property "Value" "MCP6024"
-			(at 83.82 63.5 0)
+			(at 88.9 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10040,7 +10434,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 82.55 55.88 0)
+			(at 87.63 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10051,7 +10445,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf"
-			(at 85.09 53.34 0)
+			(at 90.17 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10062,7 +10456,7 @@
 			)
 		)
 		(property "Description" "Quad 2.7V to 6.0V Single Supply CMOS Op Amps, DIP-14/SOIC-14/TSSOP-14"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10073,7 +10467,7 @@
 			)
 		)
 		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\MCP6021_MCP6024.lib"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10084,7 +10478,7 @@
 			)
 		)
 		(property "Sim.Name" "MCP6024"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10095,7 +10489,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10106,7 +10500,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=OUTA 2=INAN 3=INAP 4=VDD 5=INBP 6=INBN 7=OUTB 8=OUTC 9=INCN 10=INCP 11=VSS 12=INDP 13=INDN 14=OUTD"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10117,7 +10511,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10128,7 +10522,7 @@
 			)
 		)
 		(property "Digi-Key PN" "MCP6024T-I/STCT-ND"
-			(at 83.82 58.42 0)
+			(at 88.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

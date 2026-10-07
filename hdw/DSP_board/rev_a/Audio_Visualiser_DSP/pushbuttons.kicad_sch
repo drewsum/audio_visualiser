@@ -4495,7 +4495,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "44dfd9e8-f110-4061-b391-26ed927aa77f")
 		(property "Reference" "J1901"
@@ -4596,9 +4596,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(dnp no)
 					)
 					(variant
 						(name "Development")
+						(dnp no)
 					)
 				)
 			)
