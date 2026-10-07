@@ -2628,7 +2628,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "3c738990-4e2c-4d0a-a88b-9bf41a59a6df")
 		(property "Reference" "J1602"
@@ -2642,7 +2642,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_02x01"
+		(property "Value" "ADC Right TP"
 			(at 218.44 124.4599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2697,6 +2697,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
 					(reference "J1602")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
@@ -5939,7 +5945,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ebe99388-4a06-4149-b055-4b72fb8717a4")
 		(property "Reference" "J1601"
@@ -5953,7 +5959,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_02x01"
+		(property "Value" "ADC Left TP"
 			(at 218.44 73.6599 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6008,6 +6014,12 @@
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/f2b9a82c-2733-4630-b590-b588e09b6263"
 					(reference "J1601")
 					(unit 1)
+					(variant
+						(name "Default")
+					)
+					(variant
+						(name "Development")
+					)
 				)
 			)
 		)
