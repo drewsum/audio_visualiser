@@ -2338,6 +2338,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 116.84) (xy 57.15 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03b064aa-654d-4206-9f1d-fefcd4f7f641")
+	)
+	(wire
+		(pts
 			(xy 64.77 134.62) (xy 67.31 134.62)
 		)
 		(stroke
@@ -2408,16 +2418,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 134.62) (xy 57.15 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16f9030e-b219-4c81-8dff-a5ab35347f4b")
-	)
-	(wire
-		(pts
 			(xy 86.36 71.12) (xy 86.36 55.88)
 		)
 		(stroke
@@ -2425,16 +2425,6 @@
 			(type default)
 		)
 		(uuid "1942ae9f-bc7a-46ef-8143-1ea9249d534d")
-	)
-	(wire
-		(pts
-			(xy 36.83 71.12) (xy 57.15 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fc8a972-0fb5-49e1-9a89-c0b0cb221909")
 	)
 	(wire
 		(pts
@@ -2658,6 +2648,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 134.62) (xy 57.15 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61e37eee-e416-4bee-9bd6-3206f4b9c7ec")
+	)
+	(wire
+		(pts
 			(xy 198.12 128.27) (xy 198.12 127)
 		)
 		(stroke
@@ -2715,16 +2715,6 @@
 			(type default)
 		)
 		(uuid "781c3b82-6d6d-4aa8-8ab4-b5db84dfe280")
-	)
-	(wire
-		(pts
-			(xy 36.83 116.84) (xy 57.15 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "807f7cd5-71c7-43da-8493-c1b28e392a5d")
 	)
 	(wire
 		(pts
@@ -2855,6 +2845,16 @@
 			(type default)
 		)
 		(uuid "9e6a6564-42d0-4988-96aa-e510167c5d8f")
+	)
+	(wire
+		(pts
+			(xy 36.83 71.12) (xy 57.15 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ee73db9-8971-4890-9bf3-b8a4fce767ac")
 	)
 	(wire
 		(pts
@@ -3731,7 +3731,7 @@
 		(at 36.83 60.96 270)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -3806,9 +3806,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim no)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim no)
 					)
 				)
 			)
@@ -4423,7 +4425,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -4551,9 +4553,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim yes)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim yes)
 					)
 				)
 			)
@@ -5371,7 +5375,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -5495,9 +5499,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim yes)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim yes)
 					)
 				)
 			)
@@ -6863,7 +6869,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -6991,9 +6997,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim yes)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim yes)
 					)
 				)
 			)
@@ -7453,7 +7461,7 @@
 		(at 95.25 173.99 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -7582,9 +7590,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim yes)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim yes)
 					)
 				)
 			)
@@ -8429,7 +8439,7 @@
 		(at 36.83 124.46 270)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -8504,9 +8514,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim no)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim no)
 					)
 				)
 			)
@@ -8595,7 +8607,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -8723,9 +8735,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim yes)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim yes)
 					)
 				)
 			)
@@ -8737,7 +8751,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -8865,9 +8879,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim yes)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim yes)
 					)
 				)
 			)
@@ -9901,7 +9917,7 @@
 		(at 95.25 191.77 0)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -10030,9 +10046,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim yes)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim yes)
 					)
 				)
 			)
@@ -10044,7 +10062,7 @@
 		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
@@ -10168,9 +10186,11 @@
 					(unit 1)
 					(variant
 						(name "Default")
+						(exclude_from_sim yes)
 					)
 					(variant
 						(name "Development")
+						(exclude_from_sim yes)
 					)
 				)
 			)

@@ -562,8 +562,11 @@
         "uuid": "97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
       }
     ],
-    "used_designators": "#PWR1530-1531,J1302-1303,J1403-1404,J1503-1504",
+    "used_designators": "#PWR1331-1341,#PWR1423-1424,#PWR1530-1531,#PWR1719,#GND1301,J1302-1303,J1403-1404,J1503-1504,V1301-1306,V1401,V1701",
     "variants": [
+      {
+        "name": "Default"
+      },
       {
         "description": "Add telemetry, elapsed time counter, capacitve touch power button",
         "name": "Development"
