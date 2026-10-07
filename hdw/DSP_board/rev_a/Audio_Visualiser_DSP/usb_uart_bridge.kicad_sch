@@ -3734,6 +3734,17 @@
 		)
 		(uuid "91f6dcb2-43af-4b40-9d94-8b31ae87c9f8")
 	)
+	(text "Datasheet gives conflicting rules\nSays VCCB > VCCA, but says outputs go HiZ\nwhen either supply is not up"
+		(exclude_from_sim no)
+		(at 77.47 16.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aba21107-e171-4a0c-843b-21edebd275b4")
+	)
 	(junction
 		(at 222.25 107.95)
 		(diameter 0)
