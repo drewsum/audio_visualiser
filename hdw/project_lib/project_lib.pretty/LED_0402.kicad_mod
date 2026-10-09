@@ -1,0 +1,228 @@
+(footprint "LED_0402"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "LED 0402 smd package")
+	(tags "LED led 0402 SMD smd SMT smt smdled SMDLED smtled SMTLED")
+	(property "Reference" "REF**"
+		(at 0 -1.2 0)
+		(layer "F.SilkS")
+		(uuid "e8841d56-2721-4c2d-bb52-2c953b7a0151")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED_0402"
+		(at 0 1.4 0)
+		(layer "F.Fab")
+		(uuid "166737da-a839-4510-b94a-34af3c0c62b8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "97352323-1637-4f95-a80b-e5642fd970e0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bb16efc9-cdb4-4d45-ae4a-7687076c35a0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.95 -0.45)
+		(end -0.95 0.45)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b9674b71-9887-45d6-a3c6-91e033913405")
+	)
+	(fp_line
+		(start -0.95 -0.45)
+		(end 0.5 -0.45)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2838ea3c-f34f-4efa-ad96-869ad83dedb7")
+	)
+	(fp_line
+		(start -0.95 0.45)
+		(end 0.5 0.45)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4fd9b9e5-262e-489e-9e8e-93e3c205d84a")
+	)
+	(fp_line
+		(start -1 -0.5)
+		(end 1 -0.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7de73b07-3bec-4d40-8f8e-2c5d62c7785e")
+	)
+	(fp_line
+		(start -1 0.5)
+		(end -1 -0.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3d91d160-9f11-4728-8ccd-100c9c218b38")
+	)
+	(fp_line
+		(start 1 -0.5)
+		(end 1 0.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f7ff4566-a15c-4edb-a472-2e894b92d6d5")
+	)
+	(fp_line
+		(start 1 0.5)
+		(end -1 0.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d4a06241-7d0a-40ce-aef1-74d1ec8751bd")
+	)
+	(fp_line
+		(start -0.5 -0.25)
+		(end 0.5 -0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a366ec9c-dc0a-42cf-86e7-5dd5b389b9c9")
+	)
+	(fp_line
+		(start -0.5 0.25)
+		(end -0.5 -0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cdb91099-760f-4efb-9c61-cc1c02665a3f")
+	)
+	(fp_line
+		(start -0.15 -0.2)
+		(end -0.15 0.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "22722515-e57f-40d6-80fe-fa43d1cdb679")
+	)
+	(fp_line
+		(start -0.15 0)
+		(end 0.15 -0.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f2d01c2b-375e-4748-864f-1ea22949a819")
+	)
+	(fp_line
+		(start 0.15 -0.2)
+		(end 0.15 0.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0eaf57f9-f890-4023-9dbc-2a628ce2c755")
+	)
+	(fp_line
+		(start 0.15 0.2)
+		(end -0.15 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "62f40402-2686-41aa-96e7-1ce315e40865")
+	)
+	(fp_line
+		(start 0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9b65a5c7-6088-4843-8c65-0555427bc3b7")
+	)
+	(fp_line
+		(start 0.5 0.25)
+		(end -0.5 0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9b66f41b-4564-4f5b-95a9-8083b4b185fb")
+	)
+	(pad "1" smd rect
+		(at -0.55 0 180)
+		(size 0.6 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5369f926-2674-480b-8292-ab8e05712a0e")
+	)
+	(pad "2" smd rect
+		(at 0.55 0 180)
+		(size 0.6 0.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9e4c2fd0-e9f9-48ed-acd3-b2daf099d7a4")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../../../project_lib/3d_models/LED_0402_1005Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

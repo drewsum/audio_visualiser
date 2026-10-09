@@ -1,0 +1,257 @@
+(footprint "Switchcraft_PJRAN2X1U_X"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Switchcraft PJRAN2X1U__X series dual RCA phono jack, right angle, PC mount, unshielded. Pads 1-3 = jack A (sleeve/tip/shunt), 4-6 = jack B. https://www.switchcraft.com/assets/1/24/pjran2x1u__x_series_cd.pdf")
+	(tags "RCA phono jack dual right-angle Switchcraft PJRAN2X1U01X PJRAN2X1U02X")
+	(property "Reference" "REF**"
+		(at 7.5 -7.4 0)
+		(layer "F.SilkS")
+		(uuid "35f10602-4ed2-497b-a6bd-f2d6876f535b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Switchcraft_PJRAN2X1U_X"
+		(at 7.5 15 0)
+		(layer "F.Fab")
+		(uuid "70c57445-d503-4389-8f07-34babe40f3d8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.switchcraft.com/assets/1/24/pjran2x1u__x_series_cd.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db4cd3c2-870c-4c2d-8bd9-8c17bcdae514")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "557e66ef-85ab-4eee-983b-20d7adbabb80")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -5.11 -6.11)
+		(end 20.11 4.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "550f43c1-bb4a-4b35-8063-7d910dfb8fde")
+	)
+	(fp_poly
+		(pts
+			(xy -5.5 0) (xy -6.3 -0.5) (xy -6.3 0.5)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "c55aedae-60d6-4595-a5b5-bd330ef4dcb3")
+	)
+	(fp_line
+		(start -7 4)
+		(end 22 4)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(layer "Dwgs.User")
+		(uuid "228ec028-08a0-41d6-a369-c571ec003189")
+	)
+	(fp_line
+		(start -7 6)
+		(end 22 6)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(layer "Dwgs.User")
+		(uuid "782876f0-2537-4eb7-9765-48b11f41610b")
+	)
+	(fp_rect
+		(start -5.25 -6.25)
+		(end 20.25 13.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b28ebeea-ca27-40b8-964f-ef0cafae092f")
+	)
+	(fp_rect
+		(start -5 -6)
+		(end 20 4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "4d3fb3fc-1655-4d16-b7d1-a49bb43e444c")
+	)
+	(fp_rect
+		(start -4.15 4)
+		(end 4.15 13.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0c6ba904-792b-44c3-80d9-51ec3e8b30a1")
+	)
+	(fp_rect
+		(start 10.85 4)
+		(end 19.15 13.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "75a11a0b-3e43-4b54-a166-3640cc4157b5")
+	)
+	(fp_text user "Housing front face (4.0mm fwd of sleeve row)"
+		(at 7.5 3.3 0)
+		(layer "Dwgs.User")
+		(uuid "deedfaef-d97d-45f3-8867-6a0e88376b65")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+		)
+	)
+	(fp_text user "2.0mm panel per DS (hatched)"
+		(at 7.5 6.7 0)
+		(layer "Dwgs.User")
+		(uuid "62458879-6ffa-492a-90f8-008b2a9aaa69")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+		)
+	)
+	(fp_text user "A"
+		(at 0 8.75 0)
+		(layer "F.Fab")
+		(uuid "f2fd0167-2348-4538-9c7c-de1318149ef4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 7.5 -1 0)
+		(layer "F.Fab")
+		(uuid "f2fc3816-b768-4f00-ac22-fefa9ff2c015")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "B"
+		(at 15 8.75 0)
+		(layer "F.Fab")
+		(uuid "eec662b0-3812-4954-b0f5-764c7d2f5d59")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 3.4 2.2)
+		(drill oval 2.5 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "18ee9666-7cae-44e0-adbc-2464a4804716")
+	)
+	(pad "2" thru_hole oval
+		(at -3.75 -3.7)
+		(size 1.9 3.4)
+		(drill oval 1 2.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "aef61692-9801-4b58-82d1-91b250c50c02")
+	)
+	(pad "3" thru_hole oval
+		(at 3.75 -3.7)
+		(size 1.9 3.4)
+		(drill oval 1 2.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "53b0cb58-e59f-4c0d-944e-a86f2d3f6654")
+	)
+	(pad "4" thru_hole oval
+		(at 15 0)
+		(size 3.4 2.2)
+		(drill oval 2.5 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "abfe4104-029e-43dc-a768-58384dd4b636")
+	)
+	(pad "5" thru_hole oval
+		(at 11.25 -3.7)
+		(size 1.9 3.4)
+		(drill oval 1 2.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dacc4a8a-0a53-4476-bd70-21cc2a2df127")
+	)
+	(pad "6" thru_hole oval
+		(at 18.75 -3.7)
+		(size 1.9 3.4)
+		(drill oval 1 2.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9ce46b51-8b29-4103-9396-fbd7db9279c9")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../../../project_lib/3d_models/Switchcraft_PJRAN2X1U01X.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

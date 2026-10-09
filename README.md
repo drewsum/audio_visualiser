@@ -16,7 +16,7 @@ GitHub Actions checks every KiCad project under `hdw/` automatically (`.github/w
 | Release | Pushing a tag starting with `hw-` (e.g. `hw-dsp-rev_a-v1`) publishes those outputs as a GitHub release. |
 | Visual diff | On PRs, renders changed schematic pages and PCB layers (red = removed, green = added). |
 
-Per-project settings live in `hdw/ci-config.json`. Each of `erc`, `drc`, `libraries`, `project_lib` and `pdf` is `enforce` (fail the build), `report` (annotate only) or `off`. `project_lib` also needs `project_lib_dir` (relative to the project folder, e.g. `"../project_lib"`): the lib tables may only point into that folder, every placed symbol and board footprint (and every symbol's Footprint field) must exist in those libraries, and every 3D model path must resolve to a file inside it. ERC/DRC items excluded in KiCad are not counted. Personal libraries that aren't in this repo are listed under `external_libraries` and cloned by CI under the same nicknames.
+Per-project settings live in `hdw/ci-config.json`. Each of `erc`, `drc`, `libraries`, `project_lib` and `pdf` is `enforce` (fail the build), `report` (annotate only) or `off`. `project_lib` also needs `project_lib_dir` (relative to the project folder, e.g. `"../../../project_lib"`): the lib tables may only point into that folder, every placed symbol and board footprint (and every symbol's Footprint field) must exist in those libraries, and every 3D model path must resolve to a file inside it. ERC/DRC items excluded in KiCad are not counted. Personal libraries that aren't in this repo are listed under `external_libraries` and cloned by CI under the same nicknames.
 
 To run the checks locally:
 
