@@ -214,7 +214,7 @@
 		(uuid "9e4c2fd0-e9f9-48ed-acd3-b2daf099d7a4")
 	)
 	(embedded_fonts no)
-	(model "${KISYS3DMOD}/LEDs.3dshapes/LED_0402.wrl"
+	(model "${KIPRJMOD}/../project_lib/3d_models/LED_0402_1005Metric.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -222,7 +222,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 180)
+			(xyz 0 0 0)
 		)
 	)
 )
