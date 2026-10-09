@@ -260,7 +260,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|698500|685800|0262770a-7e59-4c2b-b801-fc461b27be00|78b66ebd-467c-4401-8715-bbd36b967b8d|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5",
+        "Intentional: U701 RA3 senses AREF net that carries #FLG01701"
+      ],
+      [
+        "pin_to_pin|698500|914400|15ea31ae-9109-4a4a-9e8c-dedfe8a01eb0|ff512f8e-a361-474e-a50f-92818cb37dfb|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5",
+        "Intentional: U701 RB1 senses AREF net that carries #FLG01702"
+      ],
+      [
+        "pin_to_pin|1612900|673100|9423f59a-1032-418f-90e3-8064abe5780d|78b66ebd-467c-4401-8715-bbd36b967b8d|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5",
+        "Intentional: U1701 output drives AREF net flagged by #FLG01701"
+      ],
+      [
+        "pin_to_pin|1612900|1181100|2aea031f-d4e8-495d-97e9-803863e7120c|ff512f8e-a361-474e-a50f-92818cb37dfb|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5|/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/6411608b-521a-4c33-acf3-00a911578dd5",
+        "Intentional: U1701 output drives AREF net flagged by #FLG01702"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -794,7 +811,7 @@
         "uuid": "97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#FLG904",
     "variants": [
       {
         "name": "Default"

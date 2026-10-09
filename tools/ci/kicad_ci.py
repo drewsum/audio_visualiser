@@ -124,10 +124,13 @@ def find_projects(root=REPO, config=None):
     return projects
 
 
+MODE_KEYS = ("erc", "drc", "libraries", "project_lib", "pdf")
+
+
 def project_modes(config, project_dir):
-    modes = {"erc": "enforce", "drc": "enforce", "libraries": "enforce", "pdf": "report"}
-    modes.update(config.get("defaults", {}))
-    modes.update(config.get("projects", {}).get(project_dir, {}))
+    modes = {"erc": "enforce", "drc": "enforce", "libraries": "enforce", "project_lib": "off", "pdf": "report"}
+    for source in (config.get("defaults", {}), config.get("projects", {}).get(project_dir, {})):
+        modes.update({k: v for k, v in source.items() if k in MODE_KEYS})
     for key, value in modes.items():
         if value not in MODES:
             raise SystemExit(f"ci-config.json: {project_dir}: {key} must be one of {MODES}, got {value!r}")
@@ -300,13 +303,185 @@ def check_lib_tables(proj_dir):
     return findings
 
 
+def _sexp_end(text, i):
+    """Index just past the list that opens at text[i] == '(' (string-aware)."""
+    depth, in_str, n = 0, False, len(text)
+    while i < n:
+        c = text[i]
+        if in_str:
+            if c == "\\":
+                i += 1
+            elif c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == "(":
+            depth += 1
+        elif c == ")":
+            depth -= 1
+            if depth == 0:
+                return i + 1
+        i += 1
+    raise ValueError("unbalanced s-expression")
+
+
+def _sexp_children(text, head):
+    """Yield the text of each top-level child list of a KiCad file whose head is `head`."""
+    i = text.index("(") + 1
+    end = _sexp_end(text, i - 1) - 1
+    pat = re.compile(r"\(\s*" + re.escape(head) + r"[\s)]")
+    while i < end:
+        c = text[i]
+        if c == '"':
+            j = i + 1
+            while text[j] != '"':
+                j += 2 if text[j] == "\\" else 1
+            i = j + 1
+        elif c == "(":
+            j = _sexp_end(text, i)
+            if pat.match(text, i):
+                yield text[i:j]
+            i = j
+        else:
+            i += 1
+
+
+def _schematic_files(root_sch):
+    """The root schematic plus every sheet file reachable from it."""
+    seen, todo = [], [root_sch.resolve()]
+    while todo:
+        f = todo.pop()
+        if f in seen or not f.exists():
+            continue
+        seen.append(f)
+        text = f.read_text(encoding="utf-8", errors="replace")
+        for sub in re.findall(r'\(property\s+"Sheetfile"\s+"([^"]+)"', text):
+            todo.append((f.parent / sub).resolve())
+    return seen
+
+
+def check_project_library(proj_dir, sch, pcb, lib_dir):
+    """Every symbol, footprint and 3D model the design uses must come from lib_dir.
+
+    Returns (type, file, description) findings."""
+    findings = []
+    lib_dir = lib_dir.resolve()
+
+    def resolve(uri, base):
+        uri = uri.replace("${KIPRJMOD}", str(proj_dir)).replace("\\", "/")
+        if "${" in uri:
+            return None
+        p = Path(uri)
+        return (p if p.is_absolute() else base / p).resolve()
+
+    def inside(path):
+        return path is not None and (path == lib_dir or lib_dir in path.parents)
+
+    # 1. Library tables may only point into the project library.
+    tables = {}
+    for table in ("sym-lib-table", "fp-lib-table"):
+        tables[table] = {}
+        path = proj_dir / table
+        for nick, uri in (parse_lib_table(path) if path.exists() else []):
+            target = resolve(uri, proj_dir)
+            if inside(target) and target.exists():
+                tables[table][nick] = target
+            else:
+                findings.append(("lib_table_outside_project_lib", rel(path),
+                                 f"{table}: library '{nick}' ({uri}) is not inside {rel(lib_dir)}"))
+    sym_libs, fp_libs = tables["sym-lib-table"], tables["fp-lib-table"]
+
+    sym_names = {}
+    def symbols_in(nick):
+        if nick not in sym_names:
+            text = sym_libs[nick].read_text(encoding="utf-8", errors="replace")
+            sym_names[nick] = {m.group(1) for m in (re.match(r'\(symbol\s+"([^"]*)"', s)
+                                                    for s in _sexp_children(text, "symbol")) if m}
+        return sym_names[nick]
+
+    def footprint_problem(lib_id):
+        nick, _, name = lib_id.partition(":")
+        if nick not in fp_libs:
+            return f"footprint '{lib_id}' is not from the project library"
+        if not (fp_libs[nick] / f"{name}.kicad_mod").exists():
+            return f"footprint '{lib_id}' is missing from {rel(fp_libs[nick])}"
+        return None
+
+    # 2. Placed symbols and their Footprint fields, across the whole hierarchy.
+    for f in _schematic_files(sch):
+        text = f.read_text(encoding="utf-8", errors="replace")
+        for blk in _sexp_children(text, "symbol"):
+            m = re.match(r'\(symbol\s*(?:\(lib_name\s+"[^"]*"\)\s*)?\(lib_id\s+"([^"]*)"\)', blk)
+            if not m:
+                continue
+            lib_id = m.group(1)
+            ref = re.search(r'\(property\s+"Reference"\s+"([^"]*)"', blk)
+            who = f"{ref.group(1) if ref else '?'} ({f.name})"
+            nick, _, name = lib_id.partition(":")
+            if nick not in sym_libs:
+                findings.append(("symbol_outside_project_lib", rel(f),
+                                 f"{who} uses symbol '{lib_id}', which is not from the project library"))
+            elif name not in symbols_in(nick):
+                findings.append(("symbol_missing_from_project_lib", rel(f),
+                                 f"{who} uses symbol '{lib_id}', which is missing from {rel(sym_libs[nick])}"))
+            fp = re.search(r'\(property\s+"Footprint"\s+"([^"]*)"', blk)
+            if fp and fp.group(1):
+                problem = footprint_problem(fp.group(1))
+                if problem:
+                    findings.append(("footprint_outside_project_lib", rel(f), f"{who}: {problem}"))
+
+    # 3. Board footprints and their 3D models.
+    def check_models(block, base, file, who):
+        for path in re.findall(r'\(model\s+"([^"]*)"', block):
+            target = resolve(path, base)
+            if re.match(r"^([A-Za-z]:[\\/]|/|\\\\)", path):
+                findings.append(("model_path_not_portable", file,
+                                 f"{who}: 3D model uses an absolute path ({path}). "
+                                 "Use ${KIPRJMOD}/../" + lib_dir.name + "/... so it works on other machines."))
+            elif not inside(target):
+                findings.append(("model_outside_project_lib", file,
+                                 f"{who}: 3D model '{path}' is not inside {rel(lib_dir)}"))
+            elif not target.exists():
+                findings.append(("model_missing_from_project_lib", file,
+                                 f"{who}: 3D model '{path}' does not exist"))
+
+    if pcb.exists():
+        text = pcb.read_text(encoding="utf-8", errors="replace")
+        for blk in _sexp_children(text, "footprint"):
+            lib_id = re.match(r'\(footprint\s+"([^"]*)"', blk).group(1)
+            ref = re.search(r'\(property\s+"Reference"\s+"([^"]*)"', blk)
+            who = ref.group(1) if ref else lib_id
+            problem = footprint_problem(lib_id)
+            if problem:
+                findings.append(("footprint_outside_project_lib", rel(pcb), f"{who}: {problem}"))
+            check_models(blk, proj_dir, rel(pcb), who)
+
+    # 4. The project library itself must be self-contained.
+    for lib in fp_libs.values():
+        for mod in sorted(lib.glob("*.kicad_mod")):
+            check_models(mod.read_text(encoding="utf-8", errors="replace"), proj_dir, rel(mod), mod.stem)
+    for nick, lib in sym_libs.items():
+        text = lib.read_text(encoding="utf-8", errors="replace")
+        for blk in _sexp_children(text, "symbol"):
+            fp = re.search(r'\(property\s+"Footprint"\s+"([^"]*)"', blk)
+            if fp and fp.group(1) and footprint_problem(fp.group(1)):
+                name = re.match(r'\(symbol\s+"([^"]*)"', blk).group(1)
+                findings.append(("footprint_outside_project_lib", rel(lib),
+                                 f"library symbol '{name}' defaults to {footprint_problem(fp.group(1))}"))
+    return findings
+
+
 def collect_violations(report, source):
     items = []
     for sheet in report.get("sheets", []):
         for v in sheet.get("violations", []):
+            if v.get("excluded"):  # excluded in the KiCad project (erc/drc_exclusions)
+                continue
             items.append({**v, "source": source, "sheet": sheet.get("path", "/")})
     for key in ("violations", "unconnected_items", "schematic_parity"):
         for v in report.get(key, []):
+            if v.get("excluded"):
+                continue
             items.append({**v, "source": source, "group": key})
     return items
 
@@ -338,6 +513,19 @@ def cmd_check(args):
         results.append({"check": "libraries", "severity": "error", "type": "lib_table",
                         "description": msg, "items": [], "file": path,
                         "fails": modes["libraries"] == "enforce"})
+
+    if modes["project_lib"] != "off":
+        lib_dir = config.get("projects", {}).get(proj_rel, {}).get("project_lib_dir")
+        if not lib_dir:
+            raise SystemExit(f"ci-config.json: {proj_rel}: project_lib is {modes['project_lib']!r} "
+                             "but no project_lib_dir is set")
+        lib_path = (proj_dir / lib_dir).resolve()
+        if not lib_path.is_dir():
+            raise SystemExit(f"ci-config.json: {proj_rel}: project_lib_dir {lib_dir!r} does not exist")
+        for vtype, path, msg in check_project_library(proj_dir, sch, pcb, lib_path):
+            results.append({"check": "project_lib", "severity": "error", "type": vtype,
+                            "description": msg, "items": [], "file": path,
+                            "fails": modes["project_lib"] == "enforce"})
 
     runs = []
     if modes["erc"] != "off" or modes["libraries"] != "off":
@@ -378,7 +566,8 @@ def cmd_check(args):
     lines = [f"## {name}", f"`{proj_rel}`", "", "| Check | Mode | Errors | Warnings | Result |",
              "|---|---|---|---|---|"]
     failed_checks = []
-    for check in ("libraries", "erc", "drc"):
+    labels = {"libraries": "Libraries", "project_lib": "Project library"}
+    for check in ("libraries", "project_lib", "erc", "drc"):
         rs = [r for r in results if r["check"] == check]
         errors = sum(r["severity"] == "error" for r in rs)
         warnings = len(rs) - errors
@@ -391,7 +580,7 @@ def cmd_check(args):
             status = "⚠️ issues (report-only)" if modes[check] == "report" else "✅ pass (warnings)"
         else:
             status = "✅ pass"
-        lines.append(f"| {check.upper() if check != 'libraries' else 'Libraries'} | {modes[check]} "
+        lines.append(f"| {labels.get(check, check.upper())} | {modes[check]} "
                      f"| {errors} | {warnings} | {status} |")
     if results:
         lines += ["", "<details><summary>Violations by type</summary>", "",
