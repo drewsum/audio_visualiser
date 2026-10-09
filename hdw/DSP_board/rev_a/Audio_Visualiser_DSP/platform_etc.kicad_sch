@@ -2921,7 +2921,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
 			(at 137.16 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -3230,7 +3230,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
 			(at 99.06 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -3318,7 +3318,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical"
 			(at 187.96 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4293,7 +4293,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BAT54J"
+		(property "Value" "BAT43WS"
 			(at 60.96 34.6074 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4390,6 +4390,17 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(property "Digi-Key PN" "BAT43WSRRGCT-ND"
+			(at 58.42 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -4680,7 +4691,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
 			(at 73.66 138.43 0)
 			(hide yes)
 			(show_name no)
