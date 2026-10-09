@@ -1926,16 +1926,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 143.51) (xy 129.54 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d90a824-59b7-4557-9e5f-690004c75eff")
-	)
-	(wire
-		(pts
 			(xy 120.65 40.64) (xy 107.95 40.64)
 		)
 		(stroke
@@ -2003,16 +1993,6 @@
 			(type default)
 		)
 		(uuid "6deeea53-5c68-45a0-8c09-a0bc0de0cf88")
-	)
-	(wire
-		(pts
-			(xy 129.54 140.97) (xy 132.08 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78fb7be6-4bec-4c46-8baa-9e23c7c445a5")
 	)
 	(wire
 		(pts
@@ -2326,30 +2306,6 @@
 			)
 		)
 	)
-	(global_label "ADC_AUDIO_LEFT"
-		(shape passive)
-		(at 132.08 135.89 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a052f6a4-805b-4b86-96da-7cc59c4e7848")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.6733 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "RIGHT_LED_DRIVER_SPI_SCK"
 		(shape passive)
 		(at 182.88 148.59 180)
@@ -2483,30 +2439,6 @@
 		(uuid "f6dd43fc-0305-4b30-91f5-696ca045cf28")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 155.9691 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "ADC_AUDIO_RIGHT"
-		(shape passive)
-		(at 132.08 138.43 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f980f7ff-ae23-4d1a-9bbd-c2a71cba17ae")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.4637 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2900,94 +2832,6 @@
 					(variant
 						(name "Development")
 						(dnp no)
-					)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "project_lib:Conn_01x03")
-		(at 137.16 138.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "0dbffa08-e34e-4161-93a2-68032cd2e5d1")
-		(property "Reference" "J1003"
-			(at 137.16 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AUDIO"
-			(at 137.16 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "project_lib:PinSocket_1x03_P2.54mm_Vertical"
-			(at 137.16 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 137.16 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b819d5d6-bad8-420b-ad8c-2014479d8c03")
-		)
-		(pin "1"
-			(uuid "c971ba0e-9faf-4478-9d66-7d62c45aff58")
-		)
-		(pin "3"
-			(uuid "aeda80d2-7d64-455e-990c-07a56460a655")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
-					(reference "J1003")
-					(unit 1)
-					(variant
-						(name "Default")
-					)
-					(variant
-						(name "Development")
 					)
 				)
 			)
@@ -3477,83 +3321,6 @@
 					(variant
 						(name "Development")
 					)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "project_lib:GND")
-		(at 129.54 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "43c90f87-f1d5-4ebc-a561-e881f7ee7dd9")
-		(property "Reference" "#PWR01010"
-			(at 129.54 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 129.54 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 129.54 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cfe724e0-787e-4341-8ac1-ac70afea0737")
-		)
-		(instances
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/546058cd-0694-4b2f-adfe-f6c0887c2b7f"
-					(reference "#PWR01010")
-					(unit 1)
 				)
 			)
 		)
