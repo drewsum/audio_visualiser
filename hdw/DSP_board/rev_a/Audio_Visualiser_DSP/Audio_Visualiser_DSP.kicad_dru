@@ -1,0 +1,59 @@
+(version 1)
+
+# JLCPCB multilayer FR-4 custom rules
+# Basis: jlcpcb.com/capabilities/pcb-capabilities (checked 2026-10-09)
+# Assumes 1 oz finished outer / 0.5 oz inner copper and the
+# "0.2mm/(0.3/0.35mm)" via option. Global minimums (Board Setup >
+# Constraints) cover vias: 0.2 drill, 0.3 dia, 0.05 ring, 0.2 hole-to-hole,
+# 0.2 hole-to-copper, 0.09/0.09 track/space, 0.2 routed edge clearance.
+# If outer copper goes to 2 oz, raise track/space to 0.15/0.15.
+#
+# NOTE: KiCad 10 silently ignores this whole file if any value lacks units.
+# Always write "0.15mm", never "0.15".
+
+# ---------------- Plated through-hole pads ----------------
+
+# Multilayer 1 oz: absolute min 0.15, recommended >= 0.20
+(rule "JLC PTH pad annular ring"
+	(constraint annular_width (min 0.15mm))
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'"))
+
+# PTH to track: min 0.28 (0.35 recommended), outer layers
+(rule "JLC PTH hole clearance outer"
+	(layer outer)
+	(constraint hole_clearance (min 0.28mm))
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'"))
+
+# Inner layer PTH pad hole to copper: 0.3
+(rule "JLC PTH hole clearance inner"
+	(layer inner)
+	(constraint hole_clearance (min 0.3mm))
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'"))
+
+# Pad hole to pad hole: 0.45 (via-to-via stays at the global 0.2)
+(rule "JLC pad hole to pad hole"
+	(constraint hole_to_hole (min 0.45mm))
+	(condition "A.Type == 'Pad' && B.Type == 'Pad'"))
+
+# ---------------- Non-plated holes ----------------
+
+(rule "JLC NPTH min drill"
+	(constraint hole_size (min 0.5mm))
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'NPTH, mechanical'"))
+
+# ---------------- All holes ----------------
+
+# Larger holes are CNC-routed; flag anything over 6.3 for review
+(rule "JLC max drill"
+	(constraint hole_size (max 6.3mm))
+	(condition "A.Type == 'Via' || A.Type == 'Pad'"))
+
+# ---------------- Fine-pitch footprints ----------------
+
+# SMD pads within the same footprint (0.4 mm pitch DSBGA/QFN etc.) may sit
+# closer than the netclass clearance. JLC pad-to-pad/track floor is 0.1 mm;
+# 1:1 mask leaves a >= 0.1 mm dam (green/red/yellow/blue/purple mask).
+# Pads in different footprints still use the netclass clearance.
+(rule "Fine-pitch pads within footprint"
+	(constraint clearance (min 0.1mm))
+	(condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Pad_Type == 'SMD' && B.Pad_Type == 'SMD' && A.Parent == B.Parent"))
