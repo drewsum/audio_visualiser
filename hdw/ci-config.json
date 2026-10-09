@@ -20,13 +20,16 @@
     "erc": "enforce",
     "drc": "enforce",
     "libraries": "report",
+    "project_lib": "off",
     "pdf": "report"
   },
 
   "projects": {
     "hdw/DSP_board/rev_a/Audio_Visualiser_DSP": {
       "erc": "report",
-      "drc": "report"
+      "drc": "report",
+      "project_lib": "enforce",
+      "project_lib_dir": "../project_lib"
     }
   },
 
