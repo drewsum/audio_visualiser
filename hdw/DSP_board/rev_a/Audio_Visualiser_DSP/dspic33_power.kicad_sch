@@ -4519,7 +4519,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductors_SMD:L_0805"
+		(property "Footprint" "Inductor_SMD:L_Wuerth_PMCI-252012"
 			(at 181.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4530,7 +4530,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe252012f.ashx"
 			(at 181.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4541,7 +4541,7 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "Inductor, Murata DFE252012F-100M=P2 (10uH 20%, 0.95A Irms, 1.4A Isat, 480mOhm max, 2.5x2.0x1.2mm)"
 			(at 181.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4552,7 +4552,7 @@
 				)
 			)
 		)
-		(property "display_footprint" "0805"
+		(property "display_footprint" "1008"
 			(at 181.61 81.28 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4562,7 +4562,7 @@
 				)
 			)
 		)
-		(property "Ampacity" "0.56A"
+		(property "Ampacity" "0.95A"
 			(at 181.61 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4572,7 +4572,7 @@
 				)
 			)
 		)
-		(property "Tolerance" "10%"
+		(property "Tolerance" "20%"
 			(at 181.61 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4582,7 +4582,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "118-SRN2012T-100KCT-ND"
+		(property "Digi-Key PN" "490-13050-1-ND"
 			(at 181.61 85.09 90)
 			(hide yes)
 			(show_name no)
