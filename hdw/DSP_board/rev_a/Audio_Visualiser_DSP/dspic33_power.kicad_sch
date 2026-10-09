@@ -9,7 +9,7 @@
 		(rev "A")
 	)
 	(lib_symbols
-		(symbol "Custom Library:+1.2V_ETH"
+		(symbol "project_lib:+1.2V_ETH"
 			(power global)
 			(pin_names
 				(offset 0)
@@ -143,7 +143,146 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom Library:+3.3VA_MZ"
+		(symbol "project_lib:+3.3V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project_lib:+3.3VA_MZ"
 			(power global)
 			(pin_names
 				(offset 0)
@@ -280,7 +419,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom Library:C_Custom"
+		(symbol "project_lib:C_Custom"
 			(pin_numbers
 				(hide yes)
 			)
@@ -479,7 +618,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom Library:FB_Custom"
+		(symbol "project_lib:FB_Custom"
 			(pin_numbers
 				(hide yes)
 			)
@@ -677,7 +816,122 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom Library:GNDA_MZ"
+		(symbol "project_lib:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project_lib:GNDA_MZ"
 			(power global)
 			(pin_names
 				(offset 0)
@@ -790,7 +1044,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom Library:L_Custom"
+		(symbol "project_lib:L_Custom"
 			(pin_numbers
 				(hide yes)
 			)
@@ -998,7 +1252,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "dsPIC33AK256MPS105:dsPIC33AK256MPS105"
+		(symbol "project_lib:dsPIC33AK256MPS105"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1026,7 +1280,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
+			(property "Footprint" "project_lib:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
 				(at -20.32 25.4 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1997,260 +2251,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "Fsw = 3MHz\nLoad current in the hundreds of mA range\nInductor copied from dev board of similar device"
 		(exclude_from_sim no)
@@ -2890,7 +2890,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 88.9 104.14 0)
 		(unit 1)
 		(body_style 1)
@@ -2967,7 +2967,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 204.47 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -3045,7 +3045,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 63.5 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -3077,7 +3077,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 64.4652 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -3187,7 +3187,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 165.1 151.13 0)
 		(unit 1)
 		(body_style 1)
@@ -3219,7 +3219,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805"
+		(property "Footprint" "project_lib:C_0805"
 			(at 166.0652 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -3329,7 +3329,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 204.47 115.57 0)
 		(unit 1)
 		(body_style 1)
@@ -3407,7 +3407,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 132.08 160.02 0)
 		(unit 1)
 		(body_style 1)
@@ -3485,7 +3485,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 88.9 171.45 0)
 		(unit 1)
 		(body_style 1)
@@ -3563,7 +3563,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:FB_Custom")
+		(lib_id "project_lib:FB_Custom")
 		(at 148.59 157.48 90)
 		(unit 1)
 		(body_style 1)
@@ -3593,7 +3593,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductors_SMD:L_0402"
+		(property "Footprint" "project_lib:L_0402"
 			(at 148.59 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -3690,7 +3690,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 180.34 151.13 0)
 		(unit 1)
 		(body_style 1)
@@ -3722,7 +3722,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 181.3052 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -3832,7 +3832,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 63.5 57.15 0)
 		(unit 1)
 		(body_style 1)
@@ -3864,7 +3864,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 64.4652 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3974,7 +3974,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 63.5 171.45 0)
 		(unit 1)
 		(body_style 1)
@@ -4052,7 +4052,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 63.5 167.64 0)
 		(unit 1)
 		(body_style 1)
@@ -4084,7 +4084,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805"
+		(property "Footprint" "project_lib:C_0805"
 			(at 64.4652 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -4194,7 +4194,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 88.9 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -4271,7 +4271,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 204.47 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -4303,7 +4303,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 205.4352 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4413,7 +4413,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 88.9 163.83 0)
 		(unit 1)
 		(body_style 1)
@@ -4490,7 +4490,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:L_Custom")
+		(lib_id "project_lib:L_Custom")
 		(at 181.61 85.09 90)
 		(unit 1)
 		(body_style 1)
@@ -4520,7 +4520,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Wuerth_PMCI-252012"
+		(property "Footprint" "project_lib:L_Wuerth_PMCI-252012"
 			(at 181.61 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4627,7 +4627,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 63.5 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -4705,7 +4705,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 63.5 53.34 0)
 		(unit 1)
 		(body_style 1)
@@ -4782,7 +4782,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 229.87 111.76 0)
 		(unit 1)
 		(body_style 1)
@@ -4814,7 +4814,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805"
+		(property "Footprint" "project_lib:C_0805"
 			(at 230.8352 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4924,7 +4924,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 63.5 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -5002,7 +5002,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 63.5 111.76 0)
 		(unit 1)
 		(body_style 1)
@@ -5080,7 +5080,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 63.5 137.16 0)
 		(unit 1)
 		(body_style 1)
@@ -5158,7 +5158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 63.5 104.14 0)
 		(unit 1)
 		(body_style 1)
@@ -5235,7 +5235,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 88.9 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -5312,7 +5312,7 @@
 		)
 	)
 	(symbol
-		(lib_id "dsPIC33AK256MPS105:dsPIC33AK256MPS105")
+		(lib_id "project_lib:dsPIC33AK256MPS105")
 		(at 157.48 77.47 0)
 		(unit 1)
 		(body_style 1)
@@ -5343,7 +5343,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
+		(property "Footprint" "project_lib:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
 			(at 137.16 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -5577,7 +5577,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 229.87 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -5655,7 +5655,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 88.9 57.15 0)
 		(unit 1)
 		(body_style 1)
@@ -5687,7 +5687,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 89.8652 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -5797,7 +5797,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:GNDA_MZ")
+		(lib_id "project_lib:GNDA_MZ")
 		(at 203.2 157.48 90)
 		(unit 1)
 		(body_style 1)
@@ -5876,7 +5876,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 63.5 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -5953,7 +5953,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 88.9 111.76 0)
 		(unit 1)
 		(body_style 1)
@@ -6031,7 +6031,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 88.9 167.64 0)
 		(unit 1)
 		(body_style 1)
@@ -6063,7 +6063,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805"
+		(property "Footprint" "project_lib:C_0805"
 			(at 89.8652 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -6173,7 +6173,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:+3.3VA_MZ")
+		(lib_id "project_lib:+3.3VA_MZ")
 		(at 203.2 144.78 270)
 		(unit 1)
 		(body_style 1)
@@ -6252,7 +6252,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 173.99 97.79 90)
 		(unit 1)
 		(body_style 1)
@@ -6331,7 +6331,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 138.43 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -6408,7 +6408,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 88.9 53.34 0)
 		(unit 1)
 		(body_style 1)
@@ -6485,7 +6485,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 138.43 107.95 0)
 		(unit 1)
 		(body_style 1)
@@ -6563,7 +6563,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:+3.3VA_MZ")
+		(lib_id "project_lib:+3.3VA_MZ")
 		(at 173.99 54.61 270)
 		(unit 1)
 		(body_style 1)
@@ -6642,7 +6642,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 229.87 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -6719,7 +6719,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 63.5 133.35 0)
 		(unit 1)
 		(body_style 1)
@@ -6751,7 +6751,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 64.4652 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -6861,7 +6861,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:GNDA_MZ")
+		(lib_id "project_lib:GNDA_MZ")
 		(at 173.99 67.31 90)
 		(unit 1)
 		(body_style 1)
@@ -6940,7 +6940,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 88.9 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -7018,7 +7018,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 229.87 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -7050,7 +7050,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0805"
+		(property "Footprint" "project_lib:C_0805"
 			(at 230.8352 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -7160,7 +7160,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 195.58 151.13 0)
 		(unit 1)
 		(body_style 1)
@@ -7192,7 +7192,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 196.5452 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7302,7 +7302,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 88.9 133.35 0)
 		(unit 1)
 		(body_style 1)
@@ -7334,7 +7334,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 89.8652 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -7444,7 +7444,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:+1.2V_ETH")
+		(lib_id "project_lib:+1.2V_ETH")
 		(at 229.87 102.87 0)
 		(unit 1)
 		(body_style 1)
@@ -7520,7 +7520,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 204.47 111.76 0)
 		(unit 1)
 		(body_style 1)
@@ -7552,7 +7552,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 205.4352 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -7662,7 +7662,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 63.5 107.95 0)
 		(unit 1)
 		(body_style 1)
@@ -7694,7 +7694,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 64.4652 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -7804,7 +7804,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 63.5 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -7881,7 +7881,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 88.9 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -7913,7 +7913,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 89.8652 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -8023,7 +8023,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 229.87 115.57 0)
 		(unit 1)
 		(body_style 1)
@@ -8101,7 +8101,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 63.5 163.83 0)
 		(unit 1)
 		(body_style 1)
@@ -8178,7 +8178,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 88.9 137.16 0)
 		(unit 1)
 		(body_style 1)
@@ -8256,7 +8256,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 132.08 142.24 0)
 		(unit 1)
 		(body_style 1)
@@ -8333,7 +8333,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 88.9 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -8411,7 +8411,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 88.9 107.95 0)
 		(unit 1)
 		(body_style 1)
@@ -8443,7 +8443,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 89.8652 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -8553,7 +8553,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:FB_Custom")
+		(lib_id "project_lib:FB_Custom")
 		(at 148.59 144.78 90)
 		(unit 1)
 		(body_style 1)
@@ -8583,7 +8583,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductors_SMD:L_0402"
+		(property "Footprint" "project_lib:L_0402"
 			(at 148.59 144.78 0)
 			(hide yes)
 			(show_name no)

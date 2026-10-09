@@ -1,0 +1,272 @@
+(footprint "SameSky_PJ-051AH"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Same Sky (formerly CUI) PJ-051AH DC barrel jack, 2.0mm pin (mates 2.1x5.5mm plugs), 5A, right angle, through hole, shielded. Pad 1 = center pin, 2 = sleeve (+ shield tabs), 3 = NC switch. Per DS rev 1.06 recommended PCB layout. https://www.sameskydevices.com/product/resource/pj-051ah.pdf")
+	(tags "DC power jack barrel connector 2.1mm 5.5mm right angle CUI Same Sky PJ-051AH")
+	(property "Reference" "REF**"
+		(at -4.55 -11.5 0)
+		(layer "F.SilkS")
+		(uuid "91576885-e1a7-402e-a2d2-1f56998b83de")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SameSky_PJ-051AH"
+		(at -4.55 2.4 0)
+		(layer "F.Fab")
+		(uuid "43424449-2935-433d-8636-fb85b697d3e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.sameskydevices.com/product/resource/pj-051ah.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ce1fd035-50a2-41e2-8e3e-82cac00c23ae")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "DC barrel jack, 2.1x5.5mm, 5A, right angle THT, shielded"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ef3a59fb-05ad-47dd-a947-ee2c70a99021")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -10.41 -9.71)
+		(end -10.41 0.61)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "846d81ec-079c-4ae3-978c-133ed8e45fbd")
+	)
+	(fp_line
+		(start -10.41 -9.71)
+		(end -9.16 -9.71)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "dcb5f405-1a21-49be-b8af-1db24b66d93f")
+	)
+	(fp_line
+		(start -10.41 0.61)
+		(end -9.16 0.61)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d57ea22d-f712-44aa-9dc2-19ef736ec52e")
+	)
+	(fp_line
+		(start -5.44 -9.71)
+		(end -1.71 -9.71)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "856e752e-f910-4998-80c6-48d35cd7d723")
+	)
+	(fp_line
+		(start -5.44 0.61)
+		(end -1.71 0.61)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "00645540-6b1e-492d-9979-b72a970ea508")
+	)
+	(fp_line
+		(start 1.31 -7.49)
+		(end 1.31 -4.51)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a1a11d98-d102-4d9d-9988-57b4ccbca08c")
+	)
+	(fp_line
+		(start 1.31 -2.29)
+		(end 1.31 -1.11)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e5ce0933-3070-4b50-8b3e-79ca6b20ebdf")
+	)
+	(fp_poly
+		(pts
+			(xy 1.85 0) (xy 2.65 -0.5) (xy 2.65 0.5)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "5ee3aca0-a045-48fe-ab44-8c9562ba6137")
+	)
+	(fp_line
+		(start -10.3 -11.1)
+		(end -10.3 2)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(layer "Dwgs.User")
+		(uuid "619f855d-1c1f-4429-a52c-31b2eb4886cc")
+	)
+	(fp_rect
+		(start -10.55 -10.6)
+		(end 1.7 1.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "60760f96-dc79-449a-a2d3-2b28cec39cb3")
+	)
+	(fp_line
+		(start -11.8 -3.3)
+		(end 1.2 -3.3)
+		(stroke
+			(width 0.1)
+			(type dash_dot)
+		)
+		(layer "F.Fab")
+		(uuid "82707199-85d0-4dbe-bf86-6d6d1e7bd14c")
+	)
+	(fp_line
+		(start -10.3 -6.3)
+		(end -10.3 -0.3)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "c461c80c-9fce-4598-b420-c767fd3b8ef6")
+	)
+	(fp_rect
+		(start -10.3 -9.6)
+		(end 1.2 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b8f45272-518e-4722-b172-bc95b6199123")
+	)
+	(fp_text user "Front face / board edge (plug inserts from here)"
+		(at -11.6 -3.3 90)
+		(layer "Dwgs.User")
+		(uuid "36263b2a-5d69-494a-b8f9-f605f12002b1")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+		)
+	)
+	(fp_text user "MOUTH"
+		(at -9 -1.1 0)
+		(layer "F.Fab")
+		(uuid "7fb094ad-7ffe-4229-9ca7-06bb2110eb3a")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.09)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -3.55 -5.5 0)
+		(layer "F.Fab")
+		(uuid "8c220c61-ddc4-4183-b1fd-5a2c366f0426")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -6.3 -3.3)
+		(size 2.55 2.55)
+		(drill 2.55)
+		(layers "*.Cu" "*.Mask")
+		(uuid "91cc4b38-1e5d-47b8-8f41-2a0a8f1c1804")
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 2.9 1.7)
+		(drill oval 2 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "15f7b692-1cd0-47fa-993a-f0db4f63d114")
+	)
+	(pad "2" thru_hole oval
+		(at -7.3 -9.5)
+		(size 3.2 1.7)
+		(drill oval 2.3 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "03fd0f27-65df-41f5-b217-db46080cbeec")
+	)
+	(pad "2" thru_hole oval
+		(at -7.3 0.4)
+		(size 3.2 1.7)
+		(drill oval 2.3 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "79b82421-dbca-451c-afe2-2b47725a16b9")
+	)
+	(pad "2" thru_hole oval
+		(at 0 -8.6)
+		(size 2.9 1.7)
+		(drill oval 2 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cb618d0a-46a2-4998-8142-4819b84ce924")
+	)
+	(pad "3" thru_hole oval
+		(at 0 -3.4)
+		(size 2.9 1.7)
+		(drill oval 2 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d72aa1b8-118b-49ac-9f30-de0ec0a8979d")
+	)
+	(embedded_fonts no)
+)
