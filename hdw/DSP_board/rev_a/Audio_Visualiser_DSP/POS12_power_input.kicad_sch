@@ -2758,7 +2758,7 @@
 	)
 	(text "+3.58V output at +13.2Vin\n+3.21V output at +12.0Vin"
 		(exclude_from_sim no)
-		(at 231.394 90.678 0)
+		(at 193.294 90.678 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2845,7 +2845,7 @@
 		(uuid "dda6cb22-5669-4b52-9c80-0ef563c68f79")
 	)
 	(junction
-		(at 217.17 97.79)
+		(at 179.07 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fcd6d7ff-9b4f-4e7f-93a4-ae4066c70e4e")
@@ -2892,7 +2892,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 97.79) (xy 217.17 95.25)
+			(xy 179.07 97.79) (xy 179.07 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2992,7 +2992,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 99.06) (xy 217.17 97.79)
+			(xy 179.07 99.06) (xy 179.07 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3162,7 +3162,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 97.79) (xy 217.17 97.79)
+			(xy 153.67 97.79) (xy 179.07 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3172,7 +3172,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 97.79) (xy 217.17 97.79)
+			(xy 184.15 97.79) (xy 179.07 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3762,7 +3762,7 @@
 	)
 	(global_label "POS12_PGOOD"
 		(shape output)
-		(at 222.25 97.79 0)
+		(at 184.15 97.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3772,7 +3772,7 @@
 		)
 		(uuid "ad750c06-6c31-4f2e-a55a-4d4f6338084b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.1692 97.79 0)
+			(at 200.0692 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3928,7 +3928,7 @@
 	)
 	(symbol
 		(lib_id "Custom_Library:R_Custom")
-		(at 217.17 91.44 0)
+		(at 179.07 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -3938,7 +3938,7 @@
 		(dnp no)
 		(uuid "0f0e407c-1f08-43a2-9dd5-89526c030885")
 		(property "Reference" "R208"
-			(at 215.138 91.44 0)
+			(at 177.038 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3949,7 +3949,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 217.17 91.44 90)
+			(at 179.07 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3959,7 +3959,7 @@
 			)
 		)
 		(property "Footprint" "Resistors_SMD:R_0402"
-			(at 217.17 91.44 0)
+			(at 179.07 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3970,7 +3970,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 91.44 0)
+			(at 179.07 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3981,7 +3981,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 217.17 91.44 0)
+			(at 179.07 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3992,7 +3992,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 219.71 89.408 0)
+			(at 181.61 89.408 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4003,7 +4003,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 219.71 91.44 0)
+			(at 181.61 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4014,7 +4014,7 @@
 			)
 		)
 		(property "Wattage" "1/16W"
-			(at 219.964 93.472 0)
+			(at 181.864 93.472 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4025,7 +4025,7 @@
 			)
 		)
 		(property "Digi-Key PN" "311-10.0KLRCT-ND"
-			(at 217.17 91.44 0)
+			(at 179.07 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4036,7 +4036,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 217.17 91.44 0)
+			(at 179.07 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4710,7 +4710,7 @@
 	)
 	(symbol
 		(lib_id "Custom_Library:R_Custom")
-		(at 217.17 102.87 0)
+		(at 179.07 102.87 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -4720,7 +4720,7 @@
 		(dnp no)
 		(uuid "3a1f6ce4-1ea8-4eca-b74d-18999b10c7c9")
 		(property "Reference" "R209"
-			(at 214.884 102.87 0)
+			(at 176.784 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4731,7 +4731,7 @@
 			)
 		)
 		(property "Value" "3.65k"
-			(at 217.17 102.87 90)
+			(at 179.07 102.87 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4741,7 +4741,7 @@
 			)
 		)
 		(property "Footprint" "Resistors_SMD:R_0402"
-			(at 217.17 102.87 0)
+			(at 179.07 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4752,7 +4752,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 102.87 0)
+			(at 179.07 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4763,7 +4763,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 217.17 102.87 0)
+			(at 179.07 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4774,7 +4774,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 219.71 101.092 0)
+			(at 181.61 101.092 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4785,7 +4785,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 219.71 103.632 0)
+			(at 181.61 103.632 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4796,7 +4796,7 @@
 			)
 		)
 		(property "Wattage" "1/16W"
-			(at 219.71 106.172 0)
+			(at 181.61 106.172 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4807,7 +4807,7 @@
 			)
 		)
 		(property "Digi-Key PN" "311-3.65KLRCT-ND"
-			(at 224.79 92.71 0)
+			(at 186.69 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4818,7 +4818,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 217.17 102.87 0)
+			(at 179.07 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5899,7 +5899,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 217.17 106.68 0)
+		(at 179.07 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -5909,7 +5909,7 @@
 		(dnp no)
 		(uuid "591c2acd-1a0e-4007-a4ed-cea1da43a03d")
 		(property "Reference" "#PWR0209"
-			(at 217.17 113.03 0)
+			(at 179.07 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5920,7 +5920,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 217.17 110.49 0)
+			(at 179.07 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5930,7 +5930,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 106.68 0)
+			(at 179.07 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5941,7 +5941,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 106.68 0)
+			(at 179.07 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5952,7 +5952,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 217.17 106.68 0)
+			(at 179.07 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7390,7 +7390,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 217.17 87.63 0)
+		(at 179.07 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -7400,7 +7400,7 @@
 		(dnp no)
 		(uuid "cb1003fb-472e-4a19-a8e0-abedbf96bf65")
 		(property "Reference" "#PWR0208"
-			(at 217.17 91.44 0)
+			(at 179.07 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7411,7 +7411,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 217.17 84.074 0)
+			(at 179.07 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7421,7 +7421,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 87.63 0)
+			(at 179.07 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7432,7 +7432,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 87.63 0)
+			(at 179.07 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7443,7 +7443,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 217.17 87.63 0)
+			(at 179.07 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
