@@ -1290,15 +1290,15 @@
 		(uuid "7400fe85-c762-43f2-9572-5784248ab039")
 	)
 	(embedded_fonts no)
-	(model "${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Angled_1x08_Pitch2.54mm.wrl"
+	(model "${KIPRJMOD}/../project_lib/3d_models/PinHeader_1x08_P2.54mm_Horizontal.step"
 		(offset
-			(xyz 0 9 0)
+			(xyz 0 17.78 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 90)
+			(xyz 0 0 0)
 		)
 	)
 )
