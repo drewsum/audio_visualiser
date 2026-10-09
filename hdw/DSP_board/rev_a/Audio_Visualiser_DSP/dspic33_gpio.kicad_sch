@@ -4287,30 +4287,6 @@
 			)
 		)
 	)
-	(global_label "Reset_LED"
-		(shape input)
-		(at 64.77 168.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a839a6ee-1405-4041-95c1-7b2ec3e0e06e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.2485 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "AUDIO_CHAIN_ENABLE"
 		(shape output)
 		(at 224.79 27.94 0)
@@ -4452,6 +4428,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "~{RESET_LED}"
+		(shape input)
+		(at 64.77 168.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e236f9d7-c1b3-478a-bfe8-faa78464707a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 51.625 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -5157,7 +5157,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11411b5b-1a95-4917-b7e5-5007858c9407")
-		(property "Reference" "U804"
+		(property "Reference" "U701"
 			(at 134.62 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5398,7 +5398,7 @@
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
-					(reference "U804")
+					(reference "U701")
 					(unit 2)
 					(variant
 						(name "Default")
