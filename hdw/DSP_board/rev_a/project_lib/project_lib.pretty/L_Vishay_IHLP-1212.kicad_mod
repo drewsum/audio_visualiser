@@ -1,0 +1,229 @@
+(footprint "L_Vishay_IHLP-1212"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Inductor, Vishay, IHLP series, 3.0mmx3.0mm")
+	(tags "inductor vishay ihlp smd")
+	(property "Reference" "REF**"
+		(at 0 -2.524 0)
+		(layer "F.SilkS")
+		(uuid "ca9e7964-9097-4355-a481-7c0a21d47091")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Vishay_IHLP-1212"
+		(at 0 3.024 0)
+		(layer "F.Fab")
+		(uuid "b4dcfcb4-ae06-4072-a0bf-6f5005737737")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "be1c4647-4006-40cf-9089-d45fc4c2526a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd2ca7c1-e3f3-480a-9523-3d9512b3048a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.624 -1.624)
+		(end 1.624 -1.624)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3c43781f-fba3-4e7a-a119-64fac801dcd3")
+	)
+	(fp_line
+		(start -1.624 -0.9)
+		(end -1.624 -1.624)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3e216051-b6c3-4ab2-8d28-a14f6449f359")
+	)
+	(fp_line
+		(start -1.624 0.9)
+		(end -1.624 1.624)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f86747f0-7f55-4077-ae27-0239689f6494")
+	)
+	(fp_line
+		(start -1.624 1.624)
+		(end 1.624 1.624)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2f9b41df-87e0-4f44-bb3e-36127994d021")
+	)
+	(fp_line
+		(start 1.624 -1.624)
+		(end 1.624 -0.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bcafa8ac-d2f8-4973-93a3-442f191aa510")
+	)
+	(fp_line
+		(start 1.624 1.624)
+		(end 1.624 0.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2fa0a19c-db5b-4495-b24b-8263ac96a0ce")
+	)
+	(fp_line
+		(start -2.35 -1.8)
+		(end -2.35 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1a38084b-8298-44ad-b582-763f944e7929")
+	)
+	(fp_line
+		(start -2.35 1.8)
+		(end 2.35 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a01e1924-34c0-4850-a52a-6f2a86278053")
+	)
+	(fp_line
+		(start 2.35 -1.8)
+		(end -2.35 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9df89343-4681-4a88-8dbb-85a8a31b16ed")
+	)
+	(fp_line
+		(start 2.35 1.8)
+		(end 2.35 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a46724ae-a600-468f-832f-61efd099a520")
+	)
+	(fp_line
+		(start -1.524 -1.524)
+		(end -1.524 1.524)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "eee61cf9-36b4-4fa3-bd1b-a616236a4a6b")
+	)
+	(fp_line
+		(start -1.524 1.524)
+		(end 1.524 1.524)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7f13b1b8-2237-49ed-9db7-d946a49fb9fd")
+	)
+	(fp_line
+		(start 1.524 -1.524)
+		(end -1.524 -1.524)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "41c90c63-e50e-48e7-ba90-9d32d5574879")
+	)
+	(fp_line
+		(start 1.524 1.524)
+		(end 1.524 -1.524)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d11fa6df-6a59-4f83-a16f-4ed37b3d0d92")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "296f0ba9-6d47-4981-8d41-05bb65ee27e8")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.105)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.35 0)
+		(size 1.5 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "285e0d88-5515-42cf-a431-6c7e1a0d25e7")
+	)
+	(pad "2" smd rect
+		(at 1.35 0)
+		(size 1.5 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e1e6bbdc-c0c0-4141-8d06-033a151b109d")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../project_lib/3d_models/L_Vishay_IHLP-1212.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

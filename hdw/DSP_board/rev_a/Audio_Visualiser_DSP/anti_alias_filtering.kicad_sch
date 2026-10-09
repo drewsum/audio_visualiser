@@ -9,7 +9,618 @@
 		(rev "A")
 	)
 	(lib_symbols
-		(symbol "Amplifier_Operational:MCP604"
+		(symbol "project_lib:+3.3V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project_lib:C_Custom"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Custom"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "display_footprint" "Foot"
+				(at -3.81 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Voltage" "V"
+				(at -3.81 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Dielectric" "Er"
+				(at -3.81 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Digi-Key PN" "PN"
+				(at 10.795 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Custom_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Custom_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project_lib:Conn_02x01"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_02x01"
+				(at 1.27 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_2x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_02x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 3.81 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project_lib:GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project_lib:MCP604"
 			(pin_names
 				(offset 0.127)
 			)
@@ -417,552 +1028,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_02x01"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 1.27 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_02x01"
-				(at 1.27 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, double row, 02x01, this symbol is compatible with counter-clockwise, top-bottom and odd-even numbering schemes., script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_2x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_02x01_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 3.81 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 0.127)
-					(end 2.54 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Custom Library:C_Custom"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Custom"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "display_footprint" "Foot"
-				(at -3.81 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Voltage" "V"
-				(at -3.81 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Dielectric" "Er"
-				(at -3.81 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Digi-Key PN" "PN"
-				(at 10.795 12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Custom_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Custom_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Custom_Library:C_Custom"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Custom_Library_C_Custom"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "display_footprint" "Foot"
-				(at -3.81 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Voltage" "V"
-				(at -3.81 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Dielectric" "Er"
-				(at -3.81 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Digi-Key PN" "PN"
-				(at 10.795 12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Custom_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Custom_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Custom_Library:R_Custom"
+		(symbol "project_lib:R_Custom"
 			(pin_numbers
 				(hide yes)
 			)
@@ -985,7 +1051,7 @@
 					)
 				)
 			)
-			(property "Value" "Custom_Library_R_Custom"
+			(property "Value" "R_Custom"
 				(at 0 0 90)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1017,7 +1083,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1069,13 +1135,24 @@
 					)
 				)
 			)
+			(property "ki_keywords" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "R_Custom_0_1"
 				(rectangle
 					(start 1.016 2.54)
 					(end -1.016 -2.54)
 					(stroke
 						(width 0.254)
-						(type solid)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -1112,260 +1189,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+3.3V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2294,7 +2117,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:MCP604")
+		(lib_id "project_lib:MCP604")
 		(at 184.15 66.04 0)
 		(unit 4)
 		(body_style 1)
@@ -2326,7 +2149,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "project_lib:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 182.88 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2483,7 +2306,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 119.38 100.33 90)
 		(unit 1)
 		(body_style 1)
@@ -2514,7 +2337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 123.19 99.3648 0)
 			(hide yes)
 			(show_name no)
@@ -2621,7 +2444,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x01")
+		(lib_id "project_lib:Conn_02x01")
 		(at 215.9 121.92 270)
 		(unit 1)
 		(body_style 1)
@@ -2654,7 +2477,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+		(property "Footprint" "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 			(at 215.9 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -2711,7 +2534,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 101.6 72.39 0)
 		(mirror y)
 		(unit 1)
@@ -2744,7 +2567,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 100.6348 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2854,7 +2677,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:MCP604")
+		(lib_id "project_lib:MCP604")
 		(at 121.92 66.04 0)
 		(unit 1)
 		(body_style 1)
@@ -2886,7 +2709,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "project_lib:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 120.65 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3043,7 +2866,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 119.38 49.53 90)
 		(unit 1)
 		(body_style 1)
@@ -3074,7 +2897,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 123.19 48.5648 0)
 			(hide yes)
 			(show_name no)
@@ -3181,7 +3004,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 153.67 63.5 270)
 		(unit 1)
 		(body_style 1)
@@ -3211,7 +3034,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 153.67 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3317,7 +3140,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 101.6 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -3394,7 +3217,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 101.6 127 0)
 		(unit 1)
 		(body_style 1)
@@ -3471,7 +3294,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 215.9 78.74 0)
 		(unit 1)
 		(body_style 1)
@@ -3548,7 +3371,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 215.9 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -3625,7 +3448,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 91.44 63.5 270)
 		(unit 1)
 		(body_style 1)
@@ -3655,7 +3478,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 91.44 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3761,7 +3584,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 119.38 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -3838,7 +3661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 137.16 38.1 0)
 		(unit 1)
 		(body_style 1)
@@ -3915,7 +3738,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 163.83 72.39 0)
 		(mirror y)
 		(unit 1)
@@ -3948,7 +3771,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 162.8648 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4058,7 +3881,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 78.74 63.5 270)
 		(unit 1)
 		(body_style 1)
@@ -4088,7 +3911,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 78.74 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4194,7 +4017,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 163.83 123.19 0)
 		(mirror y)
 		(unit 1)
@@ -4227,7 +4050,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 162.8648 127 0)
 			(hide yes)
 			(show_name no)
@@ -4337,7 +4160,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 163.83 127 0)
 		(unit 1)
 		(body_style 1)
@@ -4414,7 +4237,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 78.74 114.3 270)
 		(unit 1)
 		(body_style 1)
@@ -4444,7 +4267,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 78.74 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -4550,7 +4373,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 140.97 63.5 270)
 		(unit 1)
 		(body_style 1)
@@ -4580,7 +4403,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 140.97 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4686,7 +4509,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 119.38 58.42 0)
 		(unit 1)
 		(body_style 1)
@@ -4763,7 +4586,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 140.97 114.3 270)
 		(unit 1)
 		(body_style 1)
@@ -4793,7 +4616,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 140.97 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -4899,7 +4722,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:MCP604")
+		(lib_id "project_lib:MCP604")
 		(at 184.15 116.84 0)
 		(unit 3)
 		(body_style 1)
@@ -4931,7 +4754,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "project_lib:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 182.88 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5088,7 +4911,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 153.67 114.3 270)
 		(unit 1)
 		(body_style 1)
@@ -5118,7 +4941,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 153.67 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5224,7 +5047,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 91.44 114.3 270)
 		(unit 1)
 		(body_style 1)
@@ -5254,7 +5077,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 91.44 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5360,7 +5183,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:MCP604")
+		(lib_id "project_lib:MCP604")
 		(at 121.92 66.04 0)
 		(unit 5)
 		(body_style 1)
@@ -5392,7 +5215,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "project_lib:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 120.65 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5505,7 +5328,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 181.61 100.33 90)
 		(unit 1)
 		(body_style 1)
@@ -5536,7 +5359,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 185.42 99.3648 0)
 			(hide yes)
 			(show_name no)
@@ -5643,7 +5466,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 163.83 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -5720,7 +5543,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 137.16 34.29 0)
 		(mirror y)
 		(unit 1)
@@ -5753,7 +5576,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 136.1948 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -5863,7 +5686,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 154.94 30.48 0)
 		(unit 1)
 		(body_style 1)
@@ -5940,7 +5763,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x01")
+		(lib_id "project_lib:Conn_02x01")
 		(at 215.9 71.12 270)
 		(unit 1)
 		(body_style 1)
@@ -5973,7 +5796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+		(property "Footprint" "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 			(at 215.9 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -6030,7 +5853,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 154.94 38.1 0)
 		(unit 1)
 		(body_style 1)
@@ -6107,7 +5930,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:MCP604")
+		(lib_id "project_lib:MCP604")
 		(at 121.92 116.84 0)
 		(unit 2)
 		(body_style 1)
@@ -6139,7 +5962,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+		(property "Footprint" "project_lib:TSSOP-14_4.4x5mm_P0.65mm"
 			(at 120.65 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -6296,7 +6119,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 137.16 30.48 0)
 		(unit 1)
 		(body_style 1)
@@ -6373,7 +6196,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 181.61 49.53 90)
 		(unit 1)
 		(body_style 1)
@@ -6404,7 +6227,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 185.42 48.5648 0)
 			(hide yes)
 			(show_name no)
@@ -6511,7 +6334,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 101.6 123.19 0)
 		(mirror y)
 		(unit 1)
@@ -6544,7 +6367,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 100.6348 127 0)
 			(hide yes)
 			(show_name no)
@@ -6654,7 +6477,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 154.94 34.29 0)
 		(mirror y)
 		(unit 1)
@@ -6687,7 +6510,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 153.9748 38.1 0)
 			(hide yes)
 			(show_name no)

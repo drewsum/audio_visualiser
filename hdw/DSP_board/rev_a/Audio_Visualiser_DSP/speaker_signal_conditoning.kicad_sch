@@ -9,7 +9,7 @@
 		(rev "A")
 	)
 	(lib_symbols
-		(symbol "+1.6V_AUDIO_REF_1"
+		(symbol "project_lib:+1.6V_AUDIO_REF"
 			(power global)
 			(pin_names
 				(offset 0)
@@ -83,7 +83,7 @@
 					)
 				)
 			)
-			(symbol "+1.6V_AUDIO_REF_1_0_1"
+			(symbol "+1.6V_AUDIO_REF_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -121,7 +121,7 @@
 					)
 				)
 			)
-			(symbol "+1.6V_AUDIO_REF_1_1_1"
+			(symbol "+1.6V_AUDIO_REF_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -144,9 +144,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Screw_Terminal_01x02"
+		(symbol "project_lib:+3.3V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016)
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -154,18 +158,19 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Screw_Terminal_01x02"
-				(at 0 -5.08 0)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -196,7 +201,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -207,7 +212,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "screw terminal"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -218,7 +223,111 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project_lib:BAT54J"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BAT54J"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "project_lib:D_SOD-323F"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -229,36 +338,58 @@
 					)
 				)
 			)
-			(symbol "Screw_Terminal_01x02_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+			(property "Description" "30V 200mA Schottky diode, SOD-323F"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?323F*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BAT54J_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
 						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -267,54 +398,22 @@
 				)
 				(polyline
 					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.1524)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "BAT54J_1_1"
 				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -330,9 +429,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -350,7 +449,206 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x02"
+		(symbol "project_lib:C_Custom"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Custom"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "display_footprint" "Foot"
+				(at -3.81 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Voltage" "V"
+				(at -3.81 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Dielectric" "Er"
+				(at -3.81 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Digi-Key PN" "PN"
+				(at 10.795 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Custom_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Custom_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project_lib:Conn_01x02"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -508,42 +806,46 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom Library:+1.6V_AUDIO_REF"
+		(symbol "project_lib:GND"
 			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR011"
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "Value" "+1.6V_AREF_LEFT"
-				(at 0.0001 3.81 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -554,13 +856,14 @@
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -571,7 +874,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "POWER, PWR"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -582,34 +885,10 @@
 					)
 				)
 			)
-			(symbol "+1.6V_AUDIO_REF_0_1"
+			(symbol "GND_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -620,352 +899,10 @@
 					)
 				)
 			)
-			(symbol "+1.6V_AUDIO_REF_1_1"
+			(symbol "GND_1_1"
 				(pin power_in line
-					(at 0 0 90)
+					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "+1.6V_AREF_LEFT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Custom Library:R_Custom"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Custom"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "display_footprint" "Foot"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Tolerance" "Tol"
-				(at 5.08 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Wattage" "W"
-				(at 7.62 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Digi-Key PN" "PN"
-				(at 7.62 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "ki_keywords" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_Custom_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Custom_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Custom_Library:C_Custom"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Custom_Library_C_Custom"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "display_footprint" "Foot"
-				(at -3.81 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Voltage" "V"
-				(at -3.81 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Dielectric" "Er"
-				(at -3.81 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Digi-Key PN" "PN"
-				(at 10.795 12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Custom_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Custom_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
 					(name ""
 						(effects
 							(font
@@ -981,354 +918,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom_Library:R_Custom"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at -2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Custom_Library_R_Custom"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "display_footprint" "Foot"
-				(at 2.54 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Tolerance" "Tol"
-				(at 5.08 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Wattage" "W"
-				(at 7.62 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Digi-Key PN" "PN"
-				(at 7.62 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(symbol "R_Custom_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Custom_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Diode:BAT54J"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "BAT54J"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SOD-323F"
-				(at 0 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "30V 200mA Schottky diode, SOD-323F"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "D*SOD?323F*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "BAT54J_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BAT54J_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "MCP6N11:MCP6N11-001"
+		(symbol "project_lib:MCP6N11-001"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1356,7 +949,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+			(property "Footprint" "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1605,13 +1198,12 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
-			(power global)
+		(symbol "project_lib:R_Custom"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -1619,19 +1211,18 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
+			(property "Reference" "R"
+				(at -2.54 0 90)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
+			(property "Value" "R_Custom"
+				(at 0 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1662,7 +1253,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1673,7 +1264,48 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "display_footprint" "Foot"
+				(at 2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "Tol"
+				(at 5.08 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Wattage" "W"
+				(at 7.62 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Digi-Key PN" "PN"
+				(at 7.62 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "ki_keywords" "Resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1684,37 +1316,12 @@
 					)
 				)
 			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
+			(symbol "R_Custom_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -1722,11 +1329,11 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
+			(symbol "R_Custom_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1734,6 +1341,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1744,13 +1369,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "project_lib:Screw_Terminal_01x02"
 			(pin_names
-				(offset 0)
+				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -1758,19 +1379,18 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
+			(property "Reference" "J"
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
+			(property "Value" "Screw_Terminal_01x02"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1801,7 +1421,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1812,7 +1432,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
+			(property "ki_keywords" "screw terminal"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1823,25 +1443,103 @@
 					)
 				)
 			)
-			(symbol "GND_0_1"
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Screw_Terminal_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
 					)
 					(stroke
-						(width 0)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1849,6 +1547,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2871,7 +2587,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
+		(lib_id "project_lib:Conn_01x02")
 		(at 49.53 147.32 0)
 		(mirror y)
 		(unit 1)
@@ -2902,7 +2618,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+		(property "Footprint" "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 			(at 49.53 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -2959,7 +2675,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 116.84 71.12 0)
 		(unit 1)
 		(body_style 1)
@@ -3036,7 +2752,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 179.07 64.77 0)
 		(mirror y)
 		(unit 1)
@@ -3068,7 +2784,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 179.07 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -3177,7 +2893,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 149.86 26.67 0)
 		(unit 1)
 		(body_style 1)
@@ -3254,7 +2970,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 167.64 34.29 0)
 		(unit 1)
 		(body_style 1)
@@ -3331,7 +3047,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54J")
+		(lib_id "project_lib:BAT54J")
 		(at 134.62 67.31 270)
 		(unit 1)
 		(body_style 1)
@@ -3364,7 +3080,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
+		(property "Footprint" "project_lib:D_SOD-323F"
 			(at 130.175 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3474,7 +3190,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 134.62 71.12 0)
 		(unit 1)
 		(body_style 1)
@@ -3551,7 +3267,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 104.14 67.31 0)
 		(unit 1)
 		(body_style 1)
@@ -3582,7 +3298,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 104.14 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3691,7 +3407,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 157.48 143.51 0)
 		(unit 1)
 		(body_style 1)
@@ -3768,7 +3484,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54J")
+		(lib_id "project_lib:BAT54J")
 		(at 116.84 52.07 270)
 		(unit 1)
 		(body_style 1)
@@ -3801,7 +3517,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
+		(property "Footprint" "project_lib:D_SOD-323F"
 			(at 112.395 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3911,7 +3627,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 149.86 106.68 0)
 		(mirror y)
 		(unit 1)
@@ -3944,7 +3660,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 148.8948 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -4054,7 +3770,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 157.48 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -4131,7 +3847,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54J")
+		(lib_id "project_lib:BAT54J")
 		(at 134.62 52.07 270)
 		(unit 1)
 		(body_style 1)
@@ -4164,7 +3880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
+		(property "Footprint" "project_lib:D_SOD-323F"
 			(at 130.175 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4274,7 +3990,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 86.36 67.31 0)
 		(unit 1)
 		(body_style 1)
@@ -4305,7 +4021,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 86.36 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4414,7 +4130,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 167.64 106.68 0)
 		(mirror y)
 		(unit 1)
@@ -4447,7 +4163,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 166.6748 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -4557,7 +4273,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 116.84 147.32 0)
 		(unit 1)
 		(body_style 1)
@@ -4634,7 +4350,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54J")
+		(lib_id "project_lib:BAT54J")
 		(at 116.84 67.31 270)
 		(unit 1)
 		(body_style 1)
@@ -4667,7 +4383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
+		(property "Footprint" "project_lib:D_SOD-323F"
 			(at 112.395 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4777,7 +4493,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54J")
+		(lib_id "project_lib:BAT54J")
 		(at 116.84 143.51 270)
 		(unit 1)
 		(body_style 1)
@@ -4810,7 +4526,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
+		(property "Footprint" "project_lib:D_SOD-323F"
 			(at 112.395 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4920,7 +4636,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 167.64 102.87 0)
 		(unit 1)
 		(body_style 1)
@@ -4997,7 +4713,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "project_lib:Screw_Terminal_01x02")
 		(at 49.53 58.42 0)
 		(mirror y)
 		(unit 1)
@@ -5029,7 +4745,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "project_lib:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 49.53 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -5116,7 +4832,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 86.36 143.51 0)
 		(unit 1)
 		(body_style 1)
@@ -5147,7 +4863,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 86.36 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -5256,7 +4972,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 167.64 30.48 0)
 		(mirror y)
 		(unit 1)
@@ -5289,7 +5005,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 166.6748 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5399,7 +5115,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 157.48 67.31 0)
 		(unit 1)
 		(body_style 1)
@@ -5476,7 +5192,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
+		(lib_id "project_lib:Screw_Terminal_01x02")
 		(at 49.53 134.62 0)
 		(mirror y)
 		(unit 1)
@@ -5508,7 +5224,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "project_lib:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 49.53 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -5595,7 +5311,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 149.86 30.48 0)
 		(mirror y)
 		(unit 1)
@@ -5628,7 +5344,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_0402"
+		(property "Footprint" "project_lib:C_0402"
 			(at 148.8948 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5738,7 +5454,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MCP6N11:MCP6N11-001")
+		(lib_id "project_lib:MCP6N11-001")
 		(at 160.02 135.89 0)
 		(unit 1)
 		(body_style 1)
@@ -5770,7 +5486,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+		(property "Footprint" "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
 			(at 160.02 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -5901,8 +5617,7 @@
 		)
 	)
 	(symbol
-		(lib_name "+1.6V_AUDIO_REF_1")
-		(lib_id "Custom Library:+1.6V_AUDIO_REF")
+		(lib_id "project_lib:+1.6V_AUDIO_REF")
 		(at 83.82 157.48 90)
 		(unit 1)
 		(body_style 1)
@@ -5978,7 +5693,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 134.62 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -6055,7 +5770,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 134.62 147.32 0)
 		(unit 1)
 		(body_style 1)
@@ -6132,7 +5847,7 @@
 		)
 	)
 	(symbol
-		(lib_id "MCP6N11:MCP6N11-001")
+		(lib_id "project_lib:MCP6N11-001")
 		(at 160.02 59.69 0)
 		(unit 1)
 		(body_style 1)
@@ -6164,7 +5879,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+		(property "Footprint" "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
 			(at 160.02 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6295,7 +6010,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:+1.6V_AUDIO_REF")
+		(lib_id "project_lib:+1.6V_AUDIO_REF")
 		(at 83.82 81.28 90)
 		(unit 1)
 		(body_style 1)
@@ -6371,7 +6086,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 149.86 102.87 0)
 		(unit 1)
 		(body_style 1)
@@ -6448,7 +6163,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 134.62 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -6525,7 +6240,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 104.14 143.51 0)
 		(unit 1)
 		(body_style 1)
@@ -6556,7 +6271,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 104.14 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -6665,7 +6380,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 116.84 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -6742,7 +6457,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 73.66 137.16 270)
 		(unit 1)
 		(body_style 1)
@@ -6773,7 +6488,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 73.66 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -6883,7 +6598,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54J")
+		(lib_id "project_lib:BAT54J")
 		(at 116.84 128.27 270)
 		(unit 1)
 		(body_style 1)
@@ -6916,7 +6631,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
+		(property "Footprint" "project_lib:D_SOD-323F"
 			(at 112.395 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -7026,7 +6741,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 167.64 26.67 0)
 		(unit 1)
 		(body_style 1)
@@ -7103,7 +6818,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 116.84 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -7180,7 +6895,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 149.86 34.29 0)
 		(unit 1)
 		(body_style 1)
@@ -7257,7 +6972,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
+		(lib_id "project_lib:Conn_01x02")
 		(at 49.53 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -7288,7 +7003,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+		(property "Footprint" "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 			(at 49.53 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -7345,7 +7060,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 73.66 58.42 270)
 		(unit 1)
 		(body_style 1)
@@ -7376,7 +7091,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 73.66 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7486,7 +7201,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 149.86 110.49 0)
 		(unit 1)
 		(body_style 1)
@@ -7563,7 +7278,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 179.07 151.13 0)
 		(mirror y)
 		(unit 1)
@@ -7595,7 +7310,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 179.07 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -7704,7 +7419,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 73.66 60.96 270)
 		(unit 1)
 		(body_style 1)
@@ -7735,7 +7450,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 73.66 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7845,7 +7560,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 73.66 134.62 270)
 		(unit 1)
 		(body_style 1)
@@ -7876,7 +7591,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 73.66 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -7986,7 +7701,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54J")
+		(lib_id "project_lib:BAT54J")
 		(at 134.62 143.51 270)
 		(unit 1)
 		(body_style 1)
@@ -8019,7 +7734,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
+		(property "Footprint" "project_lib:D_SOD-323F"
 			(at 130.175 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8129,7 +7844,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
+		(lib_id "project_lib:+3.3V")
 		(at 157.48 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -8206,7 +7921,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "project_lib:GND")
 		(at 167.64 110.49 0)
 		(unit 1)
 		(body_style 1)
@@ -8283,7 +7998,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT54J")
+		(lib_id "project_lib:BAT54J")
 		(at 134.62 128.27 270)
 		(unit 1)
 		(body_style 1)
@@ -8316,7 +8031,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323F"
+		(property "Footprint" "project_lib:D_SOD-323F"
 			(at 130.175 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8426,7 +8141,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 179.07 140.97 0)
 		(mirror y)
 		(unit 1)
@@ -8458,7 +8173,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 179.07 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -8567,7 +8282,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom_Library:R_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 179.07 74.93 0)
 		(mirror y)
 		(unit 1)
@@ -8599,7 +8314,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistors_SMD:R_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 179.07 74.93 0)
 			(hide yes)
 			(show_name no)

@@ -96,7 +96,7 @@
 			(description "Add telemetry, elapsed time counter, capacitve touch power button")
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "00263d15-04f2-4554-bb3c-b22cd185e6ce")
 		(at 176.6894 59.3004)
@@ -365,7 +365,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x07_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "004a5d2b-a310-44c5-804a-6a820b9d0c9b")
 		(at 178.9794 76.6854)
@@ -679,7 +679,7 @@
 			(uuid "609b141e-4bb2-42a6-a21c-3a892e81d525")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x07_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x07_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -691,7 +691,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "00502f59-a2d9-423a-ad9e-83757b7a7e13")
 		(at 119.4994 119.4054)
@@ -961,7 +961,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:Texas_DSBGA-12_1.65x1.39mm_Layout3x4_P0.4mm"
+	(footprint "project_lib:Texas_DSBGA-12_1.65x1.39mm_Layout3x4_P0.4mm"
 		(layer "F.Cu")
 		(uuid "0129b671-9567-4980-a35e-38f6e7018faa")
 		(at 111.3094 145.5354)
@@ -1418,7 +1418,7 @@
 			(dnp no)
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Package_BGA.3dshapes/Texas_DSBGA-12_1.36x1.86mm_Layout3x4_P0.5mm.wrl"
+		(model "${KIPRJMOD}/../project_lib/3d_models/Texas_DSBGA-12_1.36x1.86mm_Layout3x4_P0.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1430,7 +1430,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "020bc425-37b8-44b6-84a8-1cf7837d7a9a")
 		(at 170.5594 103.9104)
@@ -1699,7 +1699,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "02ff0c20-d48f-4645-880c-44df6ab79b87")
 		(at 124.6994 66.9404)
@@ -1968,7 +1968,7 @@
 			)
 		)
 	)
-	(footprint "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm"
+	(footprint "project_lib:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm"
 		(layer "F.Cu")
 		(uuid "042b8570-7920-4e1c-87c7-fb23cbc9710c")
 		(at 146.3994 111.4654)
@@ -2187,7 +2187,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "045ce995-aad5-4811-937c-6003fc22b374")
 		(at 172.2994 64.8204)
@@ -2455,7 +2455,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_1206"
+	(footprint "project_lib:C_1206"
 		(layer "F.Cu")
 		(uuid "04f94241-0c51-46ee-83ea-254a46576cb7")
 		(at 118.5994 53.8804)
@@ -2723,7 +2723,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "05a1f4c7-2524-4eb4-961e-8f2d65731e83")
 		(at 117.7994 50.6304)
@@ -3116,7 +3116,7 @@
 			(uuid "e36727ce-9ff1-46bb-88ca-180ac3dc96cc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3128,7 +3128,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "06a618c8-72aa-4e34-a0cd-a095991f9d09")
 		(at 104.0294 123.5604)
@@ -3396,7 +3396,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "07392fcf-fdae-4db6-a76e-d2f63f6d8640")
 		(at 175.5094 142.1704)
@@ -3664,7 +3664,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "0783f795-8d08-44c4-aea4-ce4089a7acdd")
 		(at 93.8294 142.4704)
@@ -4037,7 +4037,7 @@
 			(uuid "c768b308-bc9c-4da7-b172-9b9b1093c2fa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4049,7 +4049,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "08a23b30-c1b7-4eb7-8521-a5f83b1c6401")
 		(at 108.0794 129.6804)
@@ -4317,7 +4317,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "08f4d2bd-dc68-4ce1-847e-d0481b7d84b5")
 		(at 137.7894 63.7354)
@@ -4651,7 +4651,7 @@
 			(uuid "93502732-b8c7-4bfa-a7a5-07f1734616d0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4663,7 +4663,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "0906e084-45ac-486d-85e2-381b58640b81")
 		(at 146.9594 95.2704)
@@ -4931,7 +4931,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:Test_Point"
+	(footprint "project_lib:Test_Point"
 		(layer "F.Cu")
 		(uuid "09670d20-3099-4237-af27-617ed1c31801")
 		(at 173.4754 105.4134)
@@ -5038,7 +5038,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Diode_SMD:D_SOD-323"
+	(footprint "project_lib:D_SOD-323"
 		(layer "F.Cu")
 		(uuid "0b575b3a-e20b-4430-a4db-fa13469e977f")
 		(at 133.4944 69.6354)
@@ -5385,7 +5385,7 @@
 			(uuid "d97043fd-9794-476a-8e26-11c4aefcc2ae")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5397,7 +5397,7 @@
 			)
 		)
 	)
-	(footprint "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+	(footprint "project_lib:VSSOP-8_3x3mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "0c6f7fff-291b-4854-8c33-72cafe53d753")
 		(at 168.8894 89.4404)
@@ -5793,7 +5793,7 @@
 			(uuid "0d2a7774-7fee-4bd6-baeb-e0a49ac20329")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_3x3mm_P0.65mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/VSSOP-8_3x3mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5805,7 +5805,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "0c9f6c69-c27e-4615-bdff-f4328ab01e60")
 		(at 173.4094 112.1504)
@@ -6073,7 +6073,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "0ee8d157-9e7a-4943-ba20-985101f11112")
 		(at 173.4094 108.0304)
@@ -6341,7 +6341,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0805"
+	(footprint "project_lib:C_0805"
 		(layer "F.Cu")
 		(uuid "0f4621c9-408c-443c-8480-dd8fdac7d728")
 		(at 125.6494 124.4504)
@@ -6609,7 +6609,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "0f7923eb-96d1-49d9-a91b-95312ff9c9ee")
 		(at 97.1294 127.6804)
@@ -6878,7 +6878,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "102ea60e-c3a4-4ea4-9db2-47a5aa05d11b")
 		(at 108.0794 140.9504)
@@ -7163,7 +7163,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "106c9f51-4dee-4aae-b1a2-88f3d730f37f")
 		(at 154.4594 79.7404)
@@ -7536,7 +7536,7 @@
 			(uuid "945ffd80-36e1-47b0-a2ea-a4dd7922e492")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7548,7 +7548,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "10f43b63-e115-4d7a-8dce-8eab3e37b7b7")
 		(at 154.4594 86.7604)
@@ -7921,7 +7921,7 @@
 			(uuid "e3fc7cbc-ffc9-44e0-a8ba-945aea8fc1a1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7933,7 +7933,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "11b8a691-d624-4943-9ada-227c27a63bad")
 		(at 117.7994 43.6104)
@@ -8326,7 +8326,7 @@
 			(uuid "503cedf9-b0a7-40a6-916b-4d2b05c2684d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8338,7 +8338,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0805"
+	(footprint "project_lib:C_0805"
 		(layer "F.Cu")
 		(uuid "11df77fa-8fe2-4d4b-89f4-20caf78e02d2")
 		(at 94.1294 115.1504)
@@ -8606,7 +8606,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "12156eeb-68bc-4e6a-8bed-be5de8e82771")
 		(at 179.3394 59.3004)
@@ -8892,7 +8892,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "12232a14-44c1-4247-b108-b2d46138c310")
 		(at 187.1094 140.2404)
@@ -9161,7 +9161,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "128b84ee-b5da-4466-bd95-572615133579")
 		(at 176.2794 128.0654)
@@ -9420,7 +9420,7 @@
 			(uuid "b64ac7d8-e050-4c2d-9334-a7ea8ff546a4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9432,7 +9432,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "14471ede-8d03-44d5-b224-0166ae106311")
 		(at 169.8394 137.0954)
@@ -9702,7 +9702,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "14f2a201-6dc3-45d3-815a-3c4a8082dfcb")
 		(at 127.3494 133.5904)
@@ -9984,7 +9984,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "160d95d6-e653-4aec-b6f1-7d28a06ed431")
 		(at 127.3494 60.4004)
@@ -10253,7 +10253,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "164ee65d-16ba-40a3-a576-348eda93f0f3")
 		(at 129.9994 69.1204)
@@ -10522,7 +10522,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "1695ef10-2c02-4ccd-8381-d6dae58f8740")
 		(at 99.9794 137.9204)
@@ -10790,7 +10790,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "1840c5dd-7c53-4dd1-96fb-b1bb42734f89")
 		(at 119.4994 111.1904)
@@ -11058,7 +11058,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "188a9d6d-de83-4fbc-bb15-c40f50aaf333")
 		(at 97.9294 119.4404)
@@ -11326,7 +11326,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "1ae38a96-2f93-4036-acff-84cebc6c7495")
 		(at 182.7994 87.1504)
@@ -11611,7 +11611,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "1b7679c8-b377-4866-aaf5-265e77ee8922")
 		(at 129.9994 66.9404)
@@ -11880,7 +11880,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "1bb5953d-045b-4c73-947c-2be2b9cbf1bd")
 		(at 185.4594 128.0654)
@@ -12139,7 +12139,7 @@
 			(uuid "e1ee03cb-e49f-45b2-8a27-951d545ca0d9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12151,7 +12151,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "1cef35b2-0c43-4004-abef-885a7e20cf4c")
 		(at 157.8494 130.9204)
@@ -12419,7 +12419,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "1d6fa5eb-8329-4deb-b40f-a0f20b24823d")
 		(at 161.0094 80.9704)
@@ -12687,7 +12687,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "1d721fe7-5a4f-4d8b-a5b9-6cd30a438459")
 		(at 154.9994 129.0404)
@@ -12956,7 +12956,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "1de0c5fb-a749-4c7f-9cfb-a408ac9672af")
 		(at 127.3494 131.4104)
@@ -13225,7 +13225,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "1e19d78a-5a65-466e-89ea-eb48c7b31685")
 		(at 97.9294 123.5604)
@@ -13493,7 +13493,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "1e260ab2-220d-4cb2-8e3e-dd2b1cc7c766")
 		(at 93.8294 145.9804)
@@ -13866,7 +13866,7 @@
 			(uuid "d8b11d49-4014-43ba-a12c-0fd2966f5fd6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13878,7 +13878,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "1f9cc814-f5b5-4ec4-b30a-2989ae2c6696")
 		(at 154.9994 133.4004)
@@ -14147,7 +14147,7 @@
 			)
 		)
 	)
-	(footprint "Package_SON:Texas_S-PVSON-N10"
+	(footprint "project_lib:Texas_S-PVSON-N10"
 		(layer "F.Cu")
 		(uuid "20377a73-cbf5-4ddd-bb16-030275799824")
 		(at 179.7094 142.2854)
@@ -14784,7 +14784,7 @@
 			(uuid "fb0ee720-4a09-4b15-95e7-3ac087ddf272")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_S-PVSON-N10.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/Texas_S-PVSON-N10.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14796,7 +14796,7 @@
 			)
 		)
 	)
-	(footprint "barrel_jack:SameSky_PJ-051AH"
+	(footprint "project_lib:SameSky_PJ-051AH"
 		(layer "F.Cu")
 		(uuid "2053e9f9-d708-4ec6-9f81-4dd0f7bec980")
 		(at 163.3744 111.7654)
@@ -15114,7 +15114,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "22202d25-3588-45c1-81f6-982e90d85cad")
 		(at 187.1094 142.4204)
@@ -15383,7 +15383,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "22ac3ae9-5577-4261-adb5-82301c556429")
 		(at 169.8394 139.1454)
@@ -15653,7 +15653,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "23592daa-d77c-466c-b504-ac16ef22cf81")
 		(at 145.7294 64.4604)
@@ -15921,7 +15921,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "23ee104e-a8ef-468d-833d-2e7a70ad487f")
 		(at 129.9994 71.3004)
@@ -16190,7 +16190,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "2456f413-1305-49a4-a975-3fbeb55cd162")
 		(at 145.7294 68.5804)
@@ -16458,7 +16458,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "250b3990-d93a-42b0-882f-e484fb9b9391")
 		(at 96.4294 104.4704)
@@ -16726,7 +16726,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:PICKIT4_Header"
+	(footprint "project_lib:PICKIT4_Header"
 		(layer "F.Cu")
 		(uuid "25761ee9-c81e-4b88-99b7-59e1d41903b4")
 		(at 125.6994 120.7454)
@@ -18087,7 +18087,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "274ff09c-c930-4923-96af-f8036dc5c5cd")
 		(at 154.4594 76.2304)
@@ -18460,7 +18460,7 @@
 			(uuid "d9dd1f0f-7351-43ab-9cea-be764340fe36")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18472,7 +18472,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
+	(footprint "project_lib:PinHeader_1x01_P2.54mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "27cc81df-ea72-4557-badb-1e21cc6026e6")
 		(at 153.3194 116.0854)
@@ -18778,7 +18778,7 @@
 			(uuid "28a51b23-021b-4b7b-b2a9-1931b9d87190")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x01_P2.54mm_Horizontal.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinHeader_1x01_P2.54mm_Horizontal.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -18790,7 +18790,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
+	(footprint "project_lib:QFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm"
 		(layer "F.Cu")
 		(uuid "287e2f3a-136e-4971-b847-51a7ff9b1929")
 		(at 189.2844 136.0254)
@@ -19538,7 +19538,7 @@
 			)
 		)
 	)
-	(footprint "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm"
+	(footprint "project_lib:SOIC-8_3.9x4.9mm_Pitch1.27mm"
 		(layer "F.Cu")
 		(uuid "28c97852-47ab-4a56-815c-233f8f688cfc")
 		(at 188.5794 87.2854)
@@ -19911,7 +19911,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "28d6d461-bf74-4c68-8724-6c35ba8eb08d")
 		(at 183.5694 76.6854)
@@ -20181,7 +20181,7 @@
 			(uuid "74fc8e09-e640-4c85-8c85-e5b78e8cc526")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x03_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20193,7 +20193,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "2997b3d9-3d56-472d-a01b-ae086982a0f3")
 		(at 161.0094 83.0304)
@@ -20461,7 +20461,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:Texas_DSBGA-12_1.65x1.39mm_Layout3x4_P0.4mm"
+	(footprint "project_lib:Texas_DSBGA-12_1.65x1.39mm_Layout3x4_P0.4mm"
 		(layer "F.Cu")
 		(uuid "29f53029-f634-43b8-8fd2-c0f5ee5bdcd9")
 		(at 116.5394 93.6854)
@@ -20918,7 +20918,7 @@
 			(dnp no)
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Package_BGA.3dshapes/Texas_DSBGA-12_1.36x1.86mm_Layout3x4_P0.5mm.wrl"
+		(model "${KIPRJMOD}/../project_lib/3d_models/Texas_DSBGA-12_1.36x1.86mm_Layout3x4_P0.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -20930,7 +20930,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "2ad83112-43d6-442b-9696-9af84cb8b917")
 		(at 145.7294 62.4004)
@@ -21198,7 +21198,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "2afb588a-9c4f-4bc2-864c-be00198c1a14")
 		(at 143.7994 117.3004)
@@ -21467,7 +21467,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323"
+	(footprint "project_lib:D_SOD-323"
 		(layer "F.Cu")
 		(uuid "2ce016b4-bdc6-4311-9c8a-0fcff835ce52")
 		(at 133.4944 60.7854)
@@ -21814,7 +21814,7 @@
 			(uuid "1944e25e-1a76-402d-8f7a-dcfaed00ade9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21826,7 +21826,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_1206"
+	(footprint "project_lib:C_1206"
 		(layer "F.Cu")
 		(uuid "2d1bc776-5e68-4380-8106-6f2b43c1f276")
 		(at 118.5994 57.0404)
@@ -22094,7 +22094,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "2d8a0f00-fecf-4c49-8716-bb4f4076bcb8")
 		(at 157.9594 91.2704)
@@ -22362,7 +22362,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "2e28ed80-5e6e-4e71-9161-cc5b435785ef")
 		(at 154.4594 83.2504)
@@ -22735,7 +22735,7 @@
 			(uuid "5ba7132c-de26-44ca-af08-ff115db799ca")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -22747,7 +22747,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "2e2fd9ba-daeb-450a-86d0-838e4cf2fc8c")
 		(at 141.1494 121.6604)
@@ -23016,7 +23016,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "2e461963-8328-47c3-89c7-a15530dfc788")
 		(at 163.8594 85.3904)
@@ -23285,7 +23285,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "2e46c5dd-232d-4bd2-b012-7abc94a88443")
 		(at 127.3494 66.9404)
@@ -23554,7 +23554,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "2e55ee15-6f6e-46e5-9ea6-4a0495ada9f0")
 		(at 98.7394 90.3654)
@@ -23813,7 +23813,7 @@
 			(uuid "e24a3411-40e6-44c3-bca5-e9ddd181006e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23825,7 +23825,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "2e6bf7fc-56a1-4ce2-9fd2-4c019f092bf7")
 		(at 161.0094 85.0904)
@@ -24093,7 +24093,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "2ea37843-c0eb-4840-9bd7-fae009078a5c")
 		(at 100.9794 121.5004)
@@ -24361,7 +24361,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0805"
+	(footprint "project_lib:C_0805"
 		(layer "F.Cu")
 		(uuid "2ee3207f-1635-4c6a-ab01-82d4d2f40564")
 		(at 94.1294 109.5104)
@@ -24629,7 +24629,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "2f432591-9e2e-4b35-9791-4f07989de0d3")
 		(at 192.7494 76.6854)
@@ -24899,7 +24899,7 @@
 			(uuid "1874b1ad-03fe-4b5a-8082-fd1e0cb7d322")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x03_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -24911,7 +24911,7 @@
 			)
 		)
 	)
-	(footprint "Inductors_SMD:L_0402"
+	(footprint "project_lib:L_0402"
 		(layer "F.Cu")
 		(uuid "32d66584-82df-4ade-8223-37c7e9d3f3f3")
 		(at 152.4994 140.1954)
@@ -25168,7 +25168,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323"
+	(footprint "project_lib:D_SOD-323"
 		(layer "F.Cu")
 		(uuid "335d7a91-0d60-43dd-b2d8-39dd5d534cf7")
 		(at 133.4944 66.6854)
@@ -25515,7 +25515,7 @@
 			(uuid "8fb6fbc6-9c10-4a86-ba3c-4573e98a1550")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -25527,7 +25527,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "335d7dea-e047-40df-8e9d-970046b45e5d")
 		(at 167.9094 103.9104)
@@ -25796,7 +25796,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "3392f02d-d302-4d6c-b8f9-16c79028b088")
 		(at 188.1594 76.6854)
@@ -26066,7 +26066,7 @@
 			(uuid "5aae44b8-f84a-4123-b4ad-766ca736abb7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x03_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26078,7 +26078,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "3408f56e-d9f0-4632-8102-f6823e235134")
 		(at 124.6994 64.7604)
@@ -26347,7 +26347,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "34ff6c88-7f52-41ac-af3b-b9145a0e52ab")
 		(at 172.2994 56.5804)
@@ -26615,7 +26615,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "35202cde-8660-4354-b8c4-c86496ddfbc5")
 		(at 179.3394 61.4804)
@@ -26884,7 +26884,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "36784ef2-4954-478d-98b7-d7720351072b")
 		(at 163.8594 81.0304)
@@ -27153,7 +27153,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "38b4c260-6df0-4a51-ab82-d024214151da")
 		(at 108.0794 145.0704)
@@ -27438,7 +27438,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "39276065-03ea-47de-9d58-81ff74d07fc0")
 		(at 124.6994 62.5804)
@@ -27707,7 +27707,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "393b442c-7bb5-4a88-9337-4beedc817db9")
 		(at 181.2394 105.7904)
@@ -27975,7 +27975,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+	(footprint "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
 		(layer "F.Cu")
 		(uuid "394abaf6-193f-4f14-85e6-40a4960fbc87")
 		(at 142.7844 93.6954)
@@ -28356,7 +28356,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "39d676df-c666-4b24-8058-463c1920109f")
 		(at 173.4094 110.0904)
@@ -28624,7 +28624,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "3a39d509-3b35-46d8-8a0c-a831db5c9fe2")
 		(at 129.9994 62.5804)
@@ -28893,7 +28893,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "3b52c94a-dfb0-448b-8884-075ffe2cac32")
 		(at 182.7994 85.0904)
@@ -29178,7 +29178,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "3b61d4a6-d90f-44d3-a709-a9ca5f54b272")
 		(at 127.3494 135.7704)
@@ -29447,7 +29447,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "3bd1eaf0-43fe-4bce-8f6a-e063611a4f90")
 		(at 137.7644 75.8654)
@@ -29781,7 +29781,7 @@
 			(uuid "2caddebd-fbd1-4e4d-b560-42cff549bae1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -29793,7 +29793,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-323_SC-70"
+	(footprint "project_lib:SOT-323_SC-70"
 		(layer "F.Cu")
 		(uuid "3e129be6-e474-40df-8088-a3fb984a8cce")
 		(at 141.7994 124.4454)
@@ -30170,7 +30170,7 @@
 			(uuid "b7e7ef42-97df-4a75-9c08-2e18e891e84d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-323_SC-70.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30182,7 +30182,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "3f71d2c4-51aa-4644-add7-cfbcce433a82")
 		(at 112.6994 120.0904)
@@ -30451,7 +30451,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "3f8035da-bc26-4ffb-9db5-f33da32aed5e")
 		(at 137.7644 81.7654)
@@ -30785,7 +30785,7 @@
 			(uuid "3825f243-3c94-4ade-be6f-9a77f1d387bf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -30797,7 +30797,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "40c1dbf2-a62c-49d9-b268-aa16bd69eed3")
 		(at 145.7294 70.6404)
@@ -31065,7 +31065,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "40ee3b88-cae4-4c18-a04b-22cd2005930a")
 		(at 170.5594 110.4504)
@@ -31334,7 +31334,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "41ad4d55-f585-4cc9-afd9-34de6c3b3d96")
 		(at 99.9794 131.7404)
@@ -31602,7 +31602,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "420b5fe9-cf00-46e3-95b4-fc4cb34dc751")
 		(at 99.9794 133.8004)
@@ -31870,7 +31870,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "431954a9-a787-49e7-9adb-397df843fe4d")
 		(at 167.9094 101.7304)
@@ -32139,7 +32139,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
+	(footprint "project_lib:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
 		(layer "F.Cu")
 		(uuid "43bdd7c7-9a69-496c-8203-ced2abb18beb")
 		(at 100.9044 112.2254)
@@ -33043,7 +33043,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "43ed8adc-30cd-40a4-a687-32fa7a516351")
 		(at 146.9594 89.0904)
@@ -33311,7 +33311,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "4479ce4c-3bbb-4016-8164-fff0633f8eb9")
 		(at 124.6994 137.9504)
@@ -33580,7 +33580,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "45332da5-a7e5-41cb-9f94-5685a0ca281d")
 		(at 101.9294 96.2904)
@@ -33849,7 +33849,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "45fc828e-a86a-4b9c-8b5a-1d6a716be4ea")
 		(at 181.2394 109.9104)
@@ -34117,7 +34117,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "47be1ae4-29b3-4dbd-9956-faa1b32669eb")
 		(at 93.3794 102.4104)
@@ -34385,7 +34385,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "47e72d8a-b20e-4afa-9567-b79eb427ec2f")
 		(at 143.7994 121.6604)
@@ -34654,7 +34654,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "48af19ad-bfe5-4f3f-b376-d4608fbfae05")
 		(at 176.6894 63.6604)
@@ -34927,7 +34927,7 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_THT:SW_PUSH_6mm"
+	(footprint "project_lib:SW_PUSH_6mm"
 		(layer "F.Cu")
 		(uuid "492c7107-8d4c-4042-9bca-90e56ad64161")
 		(at 177.3894 51.6854)
@@ -35313,7 +35313,7 @@
 			(dnp yes)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SW_PUSH_6mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35325,7 +35325,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-323_SC-70"
+	(footprint "project_lib:SOT-323_SC-70"
 		(layer "F.Cu")
 		(uuid "499c6d38-fdc0-42f7-bdb5-db00e9556fa6")
 		(at 130.6494 133.2254)
@@ -35702,7 +35702,7 @@
 			(uuid "32e1b252-af64-43b1-aea9-2b327cf155e1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-323_SC-70.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -35714,7 +35714,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "49d5bb5c-d857-4e97-8ab8-ed047efe5e97")
 		(at 178.3894 103.9104)
@@ -35983,7 +35983,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "49f7f2d2-c3c7-4994-8776-9394f519cc59")
 		(at 181.2394 103.7304)
@@ -36251,7 +36251,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "4a02c9a9-854e-4a15-9f64-887d4668df69")
 		(at 152.3494 133.4004)
@@ -36520,7 +36520,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "4a175472-ad76-477f-869b-8873a63511ff")
 		(at 115.9994 113.4504)
@@ -36894,7 +36894,7 @@
 			(uuid "1a294b49-cd5b-47a2-a0c2-1b6a16f57ee7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -36906,7 +36906,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "4a9952a0-c11f-4303-b80e-48eb6f697af9")
 		(at 138.2994 110.2204)
@@ -37174,7 +37174,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "4b94d7a4-13a4-4f4a-a261-0acd4718c655")
 		(at 137.7644 90.6154)
@@ -37508,7 +37508,7 @@
 			(uuid "63eb2d7c-b31c-4eb1-9033-f8a185d9b0c2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37520,7 +37520,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm"
+	(footprint "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm"
 		(layer "F.Cu")
 		(uuid "4bfa6fc4-b7bb-4731-9c3d-6bd78969866f")
 		(at 112.2594 141.8104)
@@ -37932,7 +37932,7 @@
 			(dnp no)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -37944,7 +37944,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "4dae7948-8706-4b79-8c5d-954192cd472a")
 		(at 138.2994 116.4004)
@@ -38212,7 +38212,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "4f4ef9da-f419-4042-ab35-f5b8e90137c4")
 		(at 191.8044 91.9854)
@@ -38563,7 +38563,7 @@
 			(dnp no)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38575,7 +38575,7 @@
 			)
 		)
 	)
-	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+	(footprint "project_lib:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "5060c722-0f79-4956-88b5-eb9812000596")
 		(at 162.1194 56.6204)
@@ -38973,7 +38973,7 @@
 			(dnp yes)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -38985,7 +38985,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "5065457b-e19b-4ae0-897a-3adcd4a2809f")
 		(at 152.3494 129.0404)
@@ -39254,7 +39254,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "51276aa7-8bfe-4f77-97f0-6659c56e7801")
 		(at 142.0844 66.6854)
@@ -39588,7 +39588,7 @@
 			(uuid "7158d2de-779e-4766-af57-98c2de7be252")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -39600,7 +39600,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "52e0b11a-8219-4626-a4a5-e4d5f79b7882")
 		(at 187.1094 144.6004)
@@ -39869,7 +39869,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "531bb647-8548-407c-a9bd-efe75e3ee1dd")
 		(at 179.3394 63.6604)
@@ -40138,7 +40138,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "53363a20-ae98-4df0-9569-0359e00fd9c5")
 		(at 136.3994 142.0104)
@@ -40511,7 +40511,7 @@
 			(uuid "49911127-db85-487d-a303-42dec2219a33")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -40523,7 +40523,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "5370f4dd-0fe3-43dd-8d7f-55566846e07a")
 		(at 178.3894 106.0904)
@@ -40809,7 +40809,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "5452badf-8341-4b6c-b9ca-ca5e9c97499c")
 		(at 182.7994 93.3304)
@@ -41094,7 +41094,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0805"
+	(footprint "project_lib:C_0805"
 		(layer "F.Cu")
 		(uuid "54725f15-f226-401c-bce7-91c2badf8ea0")
 		(at 125.6494 140.4504)
@@ -41362,7 +41362,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+	(footprint "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
 		(layer "F.Cu")
 		(uuid "56665bc2-2f47-4a29-ade7-bdb0f9c5c144")
 		(at 142.7844 89.9904)
@@ -41743,7 +41743,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "568b5be5-8b5a-41d0-b1a7-dea8fd90aee5")
 		(at 99.9794 129.6804)
@@ -42011,7 +42011,7 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_3mm"
+	(footprint "project_lib:MountingHole_3mm"
 		(layer "F.Cu")
 		(uuid "56f07b17-8201-44d5-aee6-9aaa8c832875")
 		(at 193.0394 57.1354)
@@ -42140,7 +42140,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitors_SMD:C_0805"
+	(footprint "project_lib:C_0805"
 		(layer "F.Cu")
 		(uuid "57e7b8ec-e0bf-4158-a51d-2adfbf93657e")
 		(at 125.6494 146.0904)
@@ -42408,7 +42408,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "57efb39f-a9b4-4129-8d50-31dca8283eab")
 		(at 145.7294 60.3404)
@@ -42676,7 +42676,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "585128b3-e996-4ed6-8594-0e1175c502d2")
 		(at 119.4994 117.3554)
@@ -42946,7 +42946,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "5919d503-56f5-45cf-a48c-9570fb9516e5")
 		(at 99.2794 100.6504)
@@ -43215,7 +43215,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "595437c8-551a-42d1-8713-a33122df71f5")
 		(at 124.6994 71.3004)
@@ -43484,7 +43484,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "59adb97c-8786-4ecc-9257-a27a1a6fe9a7")
 		(at 185.2894 60.0504)
@@ -43875,7 +43875,7 @@
 			(dnp yes)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -43887,7 +43887,7 @@
 			)
 		)
 	)
-	(footprint "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+	(footprint "project_lib:VSSOP-8_3x3mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "59ca7da9-eb73-472a-a38d-0228c510f174")
 		(at 168.8894 94.0954)
@@ -44283,7 +44283,7 @@
 			(uuid "f2560ad1-570d-447f-a155-6aedba2d4fc6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_3x3mm_P0.65mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/VSSOP-8_3x3mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44295,7 +44295,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "5a0ad6b0-409e-4be6-9d82-3683aa0d93ea")
 		(at 108.0794 135.8604)
@@ -44563,7 +44563,7 @@
 			)
 		)
 	)
-	(footprint "Package_SO:VSSOP-8_2.3x2mm_P0.5mm"
+	(footprint "project_lib:VSSOP-8_2.3x2mm_P0.5mm"
 		(layer "F.Cu")
 		(uuid "5b19255a-e3b8-45c5-9787-ff495c221bf0")
 		(at 165.2294 134.0204)
@@ -44919,7 +44919,7 @@
 			(uuid "204d0fd3-cf9c-4f41-a5c9-76663ef7b39c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_2.3x2mm_P0.5mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/VSSOP-8_2.3x2mm_P0.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -44931,7 +44931,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "5ba2aa4d-6dfc-43c6-841b-f9602feedd78")
 		(at 178.3894 114.8104)
@@ -45200,7 +45200,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "5d3a7c69-80d5-4fe4-a5cd-90c6cb0cb210")
 		(at 99.2794 102.8304)
@@ -45469,7 +45469,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0805"
+	(footprint "project_lib:C_0805"
 		(layer "F.Cu")
 		(uuid "5d9027a0-6e52-4794-81a3-8f5bcf6769d9")
 		(at 94.1294 120.7904)
@@ -45737,7 +45737,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "5d9f09d4-ed79-48e3-a2a0-02280af6b27e")
 		(at 180.8694 128.0654)
@@ -45996,7 +45996,7 @@
 			(uuid "410a1a0c-efac-4397-9027-6cffe01deffc")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46008,7 +46008,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Convex_8x0602"
+	(footprint "project_lib:R_Array_Convex_8x0602"
 		(layer "F.Cu")
 		(uuid "5dbf94c4-03c3-435c-8e69-1e926df4d797")
 		(at 158.5094 77.1654)
@@ -46359,7 +46359,7 @@
 			(uuid "d33d444d-236d-4eef-99f9-b286923d16bf")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_8x0602.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/R_Array_Convex_8x0602.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -46371,7 +46371,7 @@
 			)
 		)
 	)
-	(footprint "Inductors_SMD:L_0402"
+	(footprint "project_lib:L_0402"
 		(layer "F.Cu")
 		(uuid "5e2149d5-fc33-4c3a-91d6-ba37136d61b6")
 		(at 138.2494 123.3054)
@@ -46628,7 +46628,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "5f42a17a-6d3b-4ad0-9d06-9827091f5ad5")
 		(at 154.9994 131.2204)
@@ -46897,7 +46897,7 @@
 			)
 		)
 	)
-	(footprint "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X"
+	(footprint "project_lib:CP_EIA-7343-43_Kemet-X"
 		(layer "F.Cu")
 		(uuid "60264ab1-1f7b-415e-9528-59a373d30d04")
 		(at 169.3594 116.7154)
@@ -47158,7 +47158,7 @@
 			(uuid "5ee94320-7a4b-4352-bd41-cb58c9916a3a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Capacitor_Tantalum_SMD.3dshapes/CP_EIA-7343-43_Kemet-X.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/CP_EIA-7343-43_Kemet-X.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -47170,7 +47170,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "602ccff5-e105-46b0-92a0-5cbe571ee761")
 		(at 93.3794 104.4704)
@@ -47438,7 +47438,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "63b21047-037f-4a40-9bee-567dd2b86213")
 		(at 175.5094 140.1104)
@@ -47706,7 +47706,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm"
+	(footprint "project_lib:QFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm"
 		(layer "F.Cu")
 		(uuid "64074a13-ecf4-4602-8577-7263516b86f5")
 		(at 131.6844 137.5454)
@@ -48334,7 +48334,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "643ceeaf-5a24-419b-beeb-91a35b0b5877")
 		(at 157.9594 83.0304)
@@ -48602,7 +48602,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "6574b857-7de9-4cd8-992f-83b03852e10e")
 		(at 172.2994 62.7604)
@@ -48887,7 +48887,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "661eab05-41cd-466c-a06c-5246e56554aa")
 		(at 127.3494 64.7604)
@@ -49156,7 +49156,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "66b256b2-caa8-4720-8955-433ff43148ea")
 		(at 129.9994 60.4004)
@@ -49425,7 +49425,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "6770885a-ecc9-4ceb-b4d1-196bcedf9f99")
 		(at 124.6994 69.1204)
@@ -49694,7 +49694,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "6778c7ac-fd60-4bdd-bd30-15ac989fc675")
 		(at 154.9994 135.5804)
@@ -49963,7 +49963,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_1206"
+	(footprint "project_lib:C_1206"
 		(layer "F.Cu")
 		(uuid "67a02c60-24ad-497b-9b48-809e790a5fb4")
 		(at 135.3994 129.7204)
@@ -50231,7 +50231,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "686f3205-58e5-4ee7-9e12-90c901654e53")
 		(at 160.8994 135.0404)
@@ -50499,7 +50499,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "68b7bae9-e9ae-4dad-9eeb-cd447b785554")
 		(at 149.5494 61.6054)
@@ -50758,7 +50758,7 @@
 			(uuid "cc57e7d5-e00b-4704-a311-13dd6a99f49c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -50770,7 +50770,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "69029c3d-1c8d-4427-b42a-ef5bc388fc42")
 		(at 182.7994 89.2104)
@@ -51055,7 +51055,7 @@
 			)
 		)
 	)
-	(footprint "Connector_USB:USB_C_Receptacle_JAE_DX07S016JA1R1500"
+	(footprint "project_lib:USB_C_Receptacle_JAE_DX07S016JA1R1500"
 		(layer "F.Cu")
 		(uuid "697ec305-7c08-48c4-be01-1163ee47a5a6")
 		(at 162.3194 140.9254)
@@ -51534,7 +51534,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "69c23e9f-288c-4b4a-9f0e-4e2bf0fc9427")
 		(at 103.0294 133.7654)
@@ -51804,7 +51804,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "69cc6511-c33d-4bff-be6c-a2352f5c5448")
 		(at 119.4994 115.3054)
@@ -52074,7 +52074,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "69d9fd3c-77a2-445c-84bf-85da3c7ce2b3")
 		(at 137.7644 87.6654)
@@ -52408,7 +52408,7 @@
 			(uuid "6dfa3b29-61b7-4bea-b615-0941567608f2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -52420,7 +52420,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "6b66288e-6130-45b0-a622-32d5897d8458")
 		(at 143.8594 79.8404)
@@ -52689,7 +52689,7 @@
 			)
 		)
 	)
-	(footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+	(footprint "project_lib:TSSOP-14_4.4x5mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "6bd40794-68d7-4b16-99d4-6d20b054460d")
 		(at 116.6294 130.0304)
@@ -53209,7 +53209,7 @@
 			(uuid "aaf63a01-3b08-4b85-ac78-88446d81ae98")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/TSSOP-14_4.4x5mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -53221,7 +53221,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "6c11e570-c260-40d8-bef7-30b8a7d5a951")
 		(at 97.1294 136.4004)
@@ -53490,7 +53490,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "6caab50f-a95a-4556-b7dd-93ba9e61a69e")
 		(at 146.5094 79.8404)
@@ -53759,7 +53759,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "6d4044ec-369d-416f-b106-8705f130aff6")
 		(at 137.7894 60.7854)
@@ -54093,7 +54093,7 @@
 			(uuid "df2d189d-4bb8-4c1b-a3a5-602b839c83a3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -54105,7 +54105,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "6d7d2d5d-e6c9-4176-8301-541a88d7d6df")
 		(at 100.9794 119.4404)
@@ -54373,7 +54373,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "6f62c8f0-8040-45bf-9963-52e23ac3f562")
 		(at 152.3494 126.8604)
@@ -54642,7 +54642,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "6f8bdac0-e999-4c71-9c10-c1a180a5c128")
 		(at 154.4594 90.2704)
@@ -55016,7 +55016,7 @@
 			(uuid "6c17a009-ca5f-4233-90b2-b5f17bc757aa")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -55028,7 +55028,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "7000e7f4-f4ce-481e-92b5-bd43e088d8ec")
 		(at 127.3494 129.2304)
@@ -55314,7 +55314,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.65x2.65mm"
+	(footprint "project_lib:QFN-24-1EP_4x4mm_P0.5mm_EP2.65x2.65mm"
 		(layer "F.Cu")
 		(uuid "70024c47-1832-4d87-bb6c-ace9a7b5fe99")
 		(at 165.9544 128.9254)
@@ -56023,7 +56023,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "703dd723-9a14-406a-b18a-c4575541ba16")
 		(at 149.1594 75.4804)
@@ -56292,7 +56292,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:DHVQFN-20-1EP_2.5x4.5mm_P0.5mm_EP1x3mm"
+	(footprint "project_lib:DHVQFN-20-1EP_2.5x4.5mm_P0.5mm_EP1x3mm"
 		(layer "F.Cu")
 		(uuid "72665af0-d729-4f3f-bdf0-c5fea26a3ab0")
 		(at 172.3094 83.6904)
@@ -56947,7 +56947,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "72c55716-2fb6-4ecf-92b0-1a285983f3f3")
 		(at 141.2094 79.8404)
@@ -57216,7 +57216,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "73455e39-f1d9-4050-85f6-c14c62b908ea")
 		(at 137.7644 93.5654)
@@ -57550,7 +57550,7 @@
 			(uuid "8930de46-a45e-4b2d-b9d9-1c5093985e50")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -57562,7 +57562,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:Test_Point"
+	(footprint "project_lib:Test_Point"
 		(layer "F.Cu")
 		(uuid "74283482-a935-4e58-8272-ab354b29fd38")
 		(at 173.4754 102.2314)
@@ -57669,7 +57669,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "74337044-d848-4c48-9c23-d71e54f760b4")
 		(at 137.7644 96.5154)
@@ -58003,7 +58003,7 @@
 			(uuid "e474ce73-68d1-4cad-88eb-eaf5167e3bf3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -58015,7 +58015,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "74c57263-7a93-41b3-ae91-ee7de7f190de")
 		(at 124.6994 60.4004)
@@ -58284,7 +58284,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "755dd1ea-ed13-4c4e-8453-8f43a54df144")
 		(at 112.6994 113.5504)
@@ -58553,7 +58553,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:Test_Point"
+	(footprint "project_lib:Test_Point"
 		(layer "F.Cu")
 		(uuid "75734ef0-6aa0-428f-a1bd-b0ddccd8781b")
 		(at 169.9054 143.8114)
@@ -58660,7 +58660,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "7583b7ca-f103-4496-be59-a72886a39169")
 		(at 108.0794 133.8004)
@@ -58928,7 +58928,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "76ef4de3-9cca-4554-8ace-95f6eb1c8a2c")
 		(at 163.8594 87.5704)
@@ -59197,7 +59197,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "78b28ebe-14dc-4e08-bcb9-a48146375449")
 		(at 96.4294 102.4104)
@@ -59465,7 +59465,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Convex_8x0602"
+	(footprint "project_lib:R_Array_Convex_8x0602"
 		(layer "F.Cu")
 		(uuid "78e97fd9-7c4a-4f64-be61-c1b0d8bf6570")
 		(at 162.6594 77.1654)
@@ -59816,7 +59816,7 @@
 			(uuid "02c7b8d2-f64c-46d3-afe4-88321d8f9514")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_8x0602.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/R_Array_Convex_8x0602.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -59828,7 +59828,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "7912e121-685a-4685-a2a5-9bea71e8297e")
 		(at 112.6994 111.3704)
@@ -60097,7 +60097,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "79be4e7d-1959-4245-b3d7-e06390c24faf")
 		(at 117.7994 40.1004)
@@ -60490,7 +60490,7 @@
 			(uuid "d89c4683-0b35-413d-8744-5326ee7237c9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -60502,7 +60502,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "7a0372b0-7203-4a28-ab6a-daf3ccf2f495")
 		(at 175.5094 133.9304)
@@ -60770,7 +60770,7 @@
 			)
 		)
 	)
-	(footprint "Inductors_SMD:L_0402"
+	(footprint "project_lib:L_0402"
 		(layer "F.Cu")
 		(uuid "7b9fe23f-c009-46d2-bfa8-3b8a3aae9459")
 		(at 138.2494 118.6054)
@@ -61027,7 +61027,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:DHVQFN-20-1EP_2.5x4.5mm_P0.5mm_EP1x3mm"
+	(footprint "project_lib:DHVQFN-20-1EP_2.5x4.5mm_P0.5mm_EP1x3mm"
 		(layer "F.Cu")
 		(uuid "7bd0130f-7956-4b39-ac3f-94f35b7c16d3")
 		(at 167.5594 83.6904)
@@ -61682,7 +61682,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "7bec864f-7145-46eb-9675-74934cac023e")
 		(at 93.8294 131.9404)
@@ -62055,7 +62055,7 @@
 			(uuid "f88ae531-92b2-4983-ae87-e128c73b2b1b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -62067,7 +62067,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "7cd03fc8-b31d-401c-a7d0-32b1e465a98e")
 		(at 96.4294 98.2904)
@@ -62335,7 +62335,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "7daf1a5b-03b9-4a48-bae0-40fbd8c74e9a")
 		(at 160.8994 128.8604)
@@ -62603,7 +62603,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "7f089fee-274b-401e-bff1-455531e83041")
 		(at 176.6894 61.4804)
@@ -62872,7 +62872,7 @@
 			)
 		)
 	)
-	(footprint "Inductors_SMD:L_0402"
+	(footprint "project_lib:L_0402"
 		(layer "F.Cu")
 		(uuid "7fc15a74-65a8-490e-a4ac-d144213c941e")
 		(at 107.0294 117.5254)
@@ -63129,7 +63129,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:Capacitive_Touch_Pad"
+	(footprint "project_lib:Capacitive_Touch_Pad"
 		(layer "F.Cu")
 		(uuid "80391809-38fc-44e9-9a26-6a3a7e35184e")
 		(at 181.0679 43.9639)
@@ -63299,7 +63299,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "809a3fbf-1d94-457f-be0e-64bf71254838")
 		(at 97.9294 121.5004)
@@ -63567,7 +63567,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "80dc9c0d-c98c-429a-83c9-df40c8ddf4d1")
 		(at 172.2994 58.6404)
@@ -63835,7 +63835,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "811b136c-a526-4b1f-9b53-47846fde20fc")
 		(at 97.1294 138.5804)
@@ -64104,7 +64104,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "811f0c94-2267-4124-9da7-ea9f579bcbd7")
 		(at 193.3594 112.1504)
@@ -64478,7 +64478,7 @@
 			(uuid "2550bea0-8a6f-4c25-9e41-3ad8776c58c2")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -64490,7 +64490,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "81288ede-5d45-45ec-a536-c5ec0b02a2f5")
 		(at 157.9594 80.9704)
@@ -64758,7 +64758,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0612"
+	(footprint "project_lib:R_0612"
 		(layer "F.Cu")
 		(uuid "8179286b-3ac2-4438-8700-a4fd348b0baf")
 		(at 161.0994 120.9054)
@@ -65027,7 +65027,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "81861efd-096b-43cf-994a-3246b5e172ac")
 		(at 170.5594 108.2704)
@@ -65313,7 +65313,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "81bc00e2-382e-479b-8822-d8b53e096703")
 		(at 142.0844 69.6354)
@@ -65647,7 +65647,7 @@
 			(uuid "5529de7e-683a-47d3-8acf-8789485d9e16")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -65659,7 +65659,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "82141694-72e9-4678-bfe5-74ae4983bcaf")
 		(at 167.9094 110.4504)
@@ -65945,7 +65945,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "823bc2d5-a94f-4f24-9750-108abaffa9b2")
 		(at 163.8594 89.7504)
@@ -66214,7 +66214,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "82ad9230-c0c2-476e-94c2-5c5e721c0235")
 		(at 97.1294 132.0404)
@@ -66483,7 +66483,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "830adead-e0ce-41dd-b06b-b18d71b55c83")
 		(at 110.9294 132.0404)
@@ -66752,7 +66752,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "83c994aa-5587-4ec4-96e2-41efe2513b19")
 		(at 113.3094 91.1604)
@@ -67037,7 +67037,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "845b1623-0c0c-4a40-9cd8-09537d89fab7")
 		(at 115.9994 116.9604)
@@ -67411,7 +67411,7 @@
 			(uuid "7be41df1-4f53-4a86-89e6-2c581d042e9f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -67423,7 +67423,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "84dae569-a55d-454d-b963-e3ca6b26ac36")
 		(at 110.9294 127.6804)
@@ -67692,7 +67692,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "86697e58-346f-4611-8beb-539234119f93")
 		(at 146.7694 83.2254)
@@ -67951,7 +67951,7 @@
 			(uuid "6ede10b0-ca47-407e-8a69-90114ff95f90")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -67963,7 +67963,7 @@
 			)
 		)
 	)
-	(footprint "TO_SOT_Packages_SMD:SOT-23-6"
+	(footprint "project_lib:SOT-23-6_Legacy"
 		(layer "F.Cu")
 		(uuid "86bbc14b-2cab-402c-a5e9-51a8c68b4156")
 		(at 160.9794 64.8354)
@@ -68227,7 +68227,7 @@
 			(uuid "abd59166-d8d0-442d-a4e1-5a07fa7c4373")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-23-6.wrl"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-23-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -68239,7 +68239,7 @@
 			)
 		)
 	)
-	(footprint "Connector_IDC:IDC-Header_2x15_P2.54mm_Vertical"
+	(footprint "project_lib:IDC-Header_2x15_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "87117eaa-ba13-4d4a-b6a1-b9fb04dbdadd")
 		(at 97.0944 44.3854)
@@ -68944,7 +68944,7 @@
 			(uuid "99483a6f-5bfe-46f0-86c0-8f6e787adc5b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x15_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/IDC-Header_2x15_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -68956,7 +68956,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "879c14c7-2079-408a-94af-5771bb371903")
 		(at 101.9294 100.6504)
@@ -69225,7 +69225,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "87d866b2-ac2c-4223-8f38-c1d469e55ede")
 		(at 154.9994 126.8604)
@@ -69494,7 +69494,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "87e21abe-35ce-4c3d-9996-1dde349f50a5")
 		(at 142.1794 83.2254)
@@ -69753,7 +69753,7 @@
 			(uuid "0f71eb1e-7ec2-48ad-a49d-f4919a6da918")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -69765,7 +69765,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "880882e0-d734-4160-b57a-f6bc1b4c3e2c")
 		(at 175.5094 135.9904)
@@ -70033,7 +70033,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "883e4fc8-ea92-42d6-8b5b-faba6731b565")
 		(at 108.0794 127.6204)
@@ -70301,7 +70301,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "887e5639-2284-4bec-8f7a-1c333f913e67")
 		(at 110.9294 134.2204)
@@ -70570,7 +70570,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0805"
+	(footprint "project_lib:C_0805"
 		(layer "F.Cu")
 		(uuid "89778a8f-95e7-4cd9-9831-d54ec798be3e")
 		(at 94.1294 117.9704)
@@ -70838,7 +70838,7 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_3mm"
+	(footprint "project_lib:MountingHole_3mm"
 		(layer "F.Cu")
 		(uuid "897c681b-8fdc-45af-a81f-2768b2617702")
 		(at 193.0394 42.0354)
@@ -70967,7 +70967,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "899fb08b-210d-47fd-91ad-a59b086df9f6")
 		(at 154.1394 61.6054)
@@ -71226,7 +71226,7 @@
 			(uuid "5b275119-7918-480e-a3f8-aca5653ed48a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -71238,7 +71238,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "89ca4ddf-804b-4eb1-8205-0d52f79cc95e")
 		(at 93.3794 98.2904)
@@ -71506,7 +71506,7 @@
 			)
 		)
 	)
-	(footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+	(footprint "project_lib:TSSOP-14_4.4x5mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "8b0e75b6-c2f9-48fe-ab71-f2fa17ad480d")
 		(at 105.4094 91.5104)
@@ -72026,7 +72026,7 @@
 			(uuid "53f20fe4-ee0d-4096-908b-437c75bc59f7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/TSSOP-14_4.4x5mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -72038,7 +72038,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "8b8d003b-72c6-4d20-b806-f6cdcf472183")
 		(at 146.4494 117.3004)
@@ -72307,7 +72307,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "8ce6c9f1-f7b0-41fa-bf91-58c3a9954129")
 		(at 193.3594 115.6604)
@@ -72668,7 +72668,7 @@
 			(uuid "fb2d83cf-487b-4493-a5f6-7865e7dfa618")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -72680,7 +72680,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "8d741654-a1d3-4797-9194-e190b4cc6c3a")
 		(at 169.8394 141.1954)
@@ -72950,7 +72950,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "8ee66b7f-ffff-4cf0-be51-2f946cfd396d")
 		(at 137.7894 66.6854)
@@ -73284,7 +73284,7 @@
 			(uuid "8bf2a6cd-3459-4d80-88b9-9153b05fdc3f")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -73296,7 +73296,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "8f0d403c-7f0a-4042-90ec-67b6e3127e50")
 		(at 181.2394 101.6704)
@@ -73564,7 +73564,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "90520122-9efb-4be9-8db8-0127bea57d06")
 		(at 157.8494 132.9804)
@@ -73832,7 +73832,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_1206"
+	(footprint "project_lib:C_1206"
 		(layer "F.Cu")
 		(uuid "909f2a8f-f011-454c-9a64-2c18e58cdd36")
 		(at 135.3994 132.8804)
@@ -74100,7 +74100,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "91218079-8c4b-4ac2-9b20-0523a50f40de")
 		(at 182.7994 91.2704)
@@ -74385,7 +74385,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "916958c5-f65d-497a-9b2c-de05796fa5b2")
 		(at 137.7644 78.8154)
@@ -74719,7 +74719,7 @@
 			(uuid "02ea08a9-58e6-4667-85e8-a6a4d513b554")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -74731,7 +74731,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "916b316c-7bc6-4bd1-93df-6de301495c25")
 		(at 170.5594 101.7304)
@@ -75000,7 +75000,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "9275b57a-4ac9-499e-8b63-25588d77922b")
 		(at 100.9794 117.3804)
@@ -75268,7 +75268,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "93976704-b620-44d2-b339-654ff97716a9")
 		(at 113.3094 89.1004)
@@ -75553,7 +75553,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "93dc2d0a-45d0-4bd5-b8f9-529237aa3f1c")
 		(at 115.9994 109.9404)
@@ -75927,7 +75927,7 @@
 			(uuid "2087a76a-a512-48da-954c-0ad7741c14e1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -75939,7 +75939,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "950629c3-6a82-4e89-ad55-b941e80a1b2d")
 		(at 181.9894 61.4804)
@@ -76225,7 +76225,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "95d1dd7f-2bb5-41a3-8439-dbc9b3dde9c3")
 		(at 163.8594 83.2104)
@@ -76494,7 +76494,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "9670e377-509c-4218-ab5a-27a7516e602f")
 		(at 124.6994 133.5904)
@@ -76763,7 +76763,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "968b88c5-d113-4561-b55c-4d61db7a5be9")
 		(at 143.7994 119.4804)
@@ -77032,7 +77032,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "97e6d107-6c46-46a1-ab08-936653645d46")
 		(at 167.9094 108.2704)
@@ -77301,7 +77301,7 @@
 			)
 		)
 	)
-	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+	(footprint "project_lib:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "97e8dab2-e75f-4455-b510-9aac5bec6b50")
 		(at 162.1194 44.4954)
@@ -77703,7 +77703,7 @@
 			(dnp no)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -77715,7 +77715,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "99044d0f-edcf-4ff5-ad8b-0e257c262a1e")
 		(at 108.0794 143.0104)
@@ -78000,7 +78000,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "99ef5df7-63e9-4e7e-bb5b-250fab9b7b14")
 		(at 161.0094 89.2104)
@@ -78268,7 +78268,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "9acc87d1-5d6e-4279-a604-4ca54a5db44a")
 		(at 160.8994 126.8004)
@@ -78536,7 +78536,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "9b451511-af63-4ae1-90d2-8a71544d46d8")
 		(at 160.8994 132.9804)
@@ -78804,7 +78804,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "9b6dca81-c15c-41f7-96d1-d251693ac619")
 		(at 99.9794 127.6204)
@@ -79072,7 +79072,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "9c2b87b6-c7bd-4711-941d-8044c786b1e0")
 		(at 157.8494 126.8004)
@@ -79340,7 +79340,7 @@
 			)
 		)
 	)
-	(footprint "TPS259474:Texas_RPW0010A_VQFN-HR-10_2x2mm_P0.45mm"
+	(footprint "project_lib:Texas_RPW0010A_VQFN-HR-10_2x2mm_P0.45mm"
 		(layer "F.Cu")
 		(uuid "9cd3f628-6d7b-42f8-8b78-71615207efba")
 		(at 166.5444 121.8004)
@@ -79714,7 +79714,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "9dd5836c-9b4e-4704-9661-756d36c127ac")
 		(at 100.9794 123.5604)
@@ -79982,7 +79982,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "9e1af6cf-3bf7-4754-b141-b793474f1a72")
 		(at 97.1294 140.7604)
@@ -80251,7 +80251,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "9e227e1d-3155-40ad-9962-bc56d2535973")
 		(at 103.0294 137.8654)
@@ -80521,7 +80521,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "9e9a733a-4309-46cb-b399-c8580df35a81")
 		(at 146.4494 119.4804)
@@ -80790,7 +80790,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "9ea4fc1f-ce76-48cf-9698-da3c839c2475")
 		(at 190.0494 128.0654)
@@ -81049,7 +81049,7 @@
 			(uuid "3aa3a79d-fe3c-45f2-959a-ebc9b0294997")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -81061,7 +81061,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "a019d4a8-1324-43af-8e4a-6fb23fad8a9f")
 		(at 129.9994 64.7604)
@@ -81330,7 +81330,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "a260f061-17c0-424d-9f65-e4aa8e330e0c")
 		(at 103.0294 135.8154)
@@ -81600,7 +81600,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "a379b5d3-570d-4ee0-83cc-6e94c28c7c5a")
 		(at 175.5094 138.0504)
@@ -81868,7 +81868,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:Test_Point"
+	(footprint "project_lib:Test_Point"
 		(layer "F.Cu")
 		(uuid "a39318dd-fe8d-46e9-b273-487b903c7610")
 		(at 145.3654 124.3414)
@@ -81975,7 +81975,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "a48b13cc-2a13-48a9-be54-1ddd084ef4b6")
 		(at 137.7894 69.6354)
@@ -82309,7 +82309,7 @@
 			(uuid "e9469502-ba48-4113-a11a-4dd6d3206378")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -82321,7 +82321,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "a57f8942-70bf-4cb1-8871-582bc33bfd01")
 		(at 157.9594 87.1504)
@@ -82589,7 +82589,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "a6216a99-6bbd-4369-8299-258b12dc3b05")
 		(at 110.9294 129.8604)
@@ -82858,7 +82858,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "a663ea66-92da-4f94-a577-c5948aadcb41")
 		(at 103.0294 131.7154)
@@ -83128,7 +83128,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
+	(footprint "project_lib:VQFN-48-1EP_6x6mm_P0.4mm_EP4.1x4.1mm"
 		(layer "F.Cu")
 		(uuid "a6e4af29-7cef-4d45-8f3a-b98c94c87d00")
 		(at 187.2644 114.4354)
@@ -84083,7 +84083,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "a7afc7f2-79b8-434f-a442-bbb2b33a4c12")
 		(at 181.9894 63.6604)
@@ -84352,7 +84352,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+	(footprint "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
 		(layer "F.Cu")
 		(uuid "a7b7a208-5476-42af-96ce-06832c1f2e59")
 		(at 153.9044 43.8954)
@@ -84733,7 +84733,7 @@
 			)
 		)
 	)
-	(footprint "Inductors_SMD:L_0402"
+	(footprint "project_lib:L_0402"
 		(layer "F.Cu")
 		(uuid "a7e5e174-4be4-4046-9b1e-bfc157e534e0")
 		(at 152.4994 137.8454)
@@ -84990,7 +84990,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x06_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "a7eced39-29af-46e7-addc-2c7ce17a9a33")
 		(at 173.0694 40.5554)
@@ -85306,7 +85306,7 @@
 			(uuid "fb6a7b1f-4f43-45f3-8b96-11e0265071e7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x06_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x06_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -85318,7 +85318,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "a811b66d-4625-4831-8f83-a77bb962d4d5")
 		(at 119.4994 113.2504)
@@ -85586,7 +85586,7 @@
 			)
 		)
 	)
-	(footprint "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+	(footprint "project_lib:VSSOP-8_3x3mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "a9cdf12c-98f7-402c-af2f-a3c6a15204da")
 		(at 191.0594 103.0204)
@@ -85982,7 +85982,7 @@
 			(uuid "7e9c2082-0ddd-4b9a-b4ee-b2af9255b23c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/VSSOP-8_3x3mm_P0.65mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/VSSOP-8_3x3mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -85994,7 +85994,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "ab4dedd8-df25-4c31-b56a-710ffad5a792")
 		(at 178.3894 110.4504)
@@ -86280,7 +86280,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-23-6"
+	(footprint "project_lib:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "ab84c034-04a5-4ccd-9791-5976bfaaf617")
 		(at 114.8294 135.7004)
@@ -86708,7 +86708,7 @@
 			(uuid "551e5a75-65b0-4894-9b9c-8252843c102c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-23-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -86720,7 +86720,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "abe797b1-0a65-4abb-ae4d-23d79f116bb5")
 		(at 145.7294 66.5204)
@@ -86988,7 +86988,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "ac321c43-3165-4423-be96-c3b9c13b719a")
 		(at 143.8594 75.4804)
@@ -87257,7 +87257,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "adaa5115-e749-400d-a59d-3912689000a1")
 		(at 141.1494 119.4804)
@@ -87526,7 +87526,7 @@
 			)
 		)
 	)
-	(footprint "Button_Switch_THT:SW_PUSH_6mm"
+	(footprint "project_lib:SW_PUSH_6mm"
 		(layer "F.Cu")
 		(uuid "aebf166a-724d-4aea-8fc1-eae8b6bfd173")
 		(at 138.7994 102.6654)
@@ -87895,7 +87895,7 @@
 			(uuid "cfe78257-8a91-4424-a044-0d05cda87543")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_PUSH_6mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SW_PUSH_6mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -87907,7 +87907,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "b0bb719b-3b86-4049-91d2-bd724a4bf3d9")
 		(at 99.2794 96.2904)
@@ -88176,7 +88176,7 @@
 			)
 		)
 	)
-	(footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm"
+	(footprint "project_lib:TSSOP-8_3x3mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "b19e4489-7a57-4dba-a59f-c3ecd6f52111")
 		(at 190.8294 107.6304)
@@ -88515,7 +88515,7 @@
 			(uuid "3810acb0-16f6-4843-ac1e-30362a7b191e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-8_3x3mm_P0.65mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/TSSOP-8_3x3mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -88527,7 +88527,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "b1a837b4-ffb5-4439-90d1-36b621011ca1")
 		(at 124.6994 135.7704)
@@ -88813,7 +88813,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0612"
+	(footprint "project_lib:R_0612"
 		(layer "F.Cu")
 		(uuid "b21d0842-14ba-404b-b77d-9088a4040ebf")
 		(at 136.3294 137.4454)
@@ -89082,7 +89082,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323"
+	(footprint "project_lib:D_SOD-323"
 		(layer "F.Cu")
 		(uuid "b22e125c-b0d3-41df-b87b-557fb18d53e5")
 		(at 133.4944 63.7354)
@@ -89429,7 +89429,7 @@
 			(uuid "a99f1700-3911-4db4-ac21-980c8f45f898")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -89441,7 +89441,7 @@
 			)
 		)
 	)
-	(footprint "rca_jack:Switchcraft_PJRAN2X1U_X"
+	(footprint "project_lib:Switchcraft_PJRAN2X1U_X"
 		(layer "F.Cu")
 		(uuid "b2de69ef-446b-4468-87a5-32d459e1ea97")
 		(at 130.2344 45.0354)
@@ -89745,7 +89745,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "b2fe84b7-a243-47d6-8a76-db323a09d27e")
 		(at 93.3794 96.2304)
@@ -90013,7 +90013,7 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_3mm"
+	(footprint "project_lib:MountingHole_3mm"
 		(layer "F.Cu")
 		(uuid "b3304c73-57e3-4b1a-92ea-fdd834bafb95")
 		(at 193.0394 64.6854)
@@ -90142,7 +90142,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "b376a0aa-3265-4ce3-ab15-1a90c951595b")
 		(at 142.0844 63.7354)
@@ -90476,7 +90476,7 @@
 			(uuid "b2381cc9-8a63-4b7f-ab94-9165fd5d9718")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -90488,7 +90488,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "b382cfe0-cf21-4c58-80b4-fa6de8fe10ce")
 		(at 172.2994 60.7004)
@@ -90773,7 +90773,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "b3d9d491-c8c4-41bb-a525-5193381f7579")
 		(at 152.3494 135.5804)
@@ -91042,7 +91042,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "b5c86ccf-1b35-4d26-8139-e15f9c0ebfae")
 		(at 104.0294 119.4404)
@@ -91310,7 +91310,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "b6e7d889-bf10-4394-bbcc-16fa1ce5bd14")
 		(at 178.3894 108.2704)
@@ -91579,7 +91579,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "b848c314-5275-4903-9f90-20c4e54ea28a")
 		(at 157.9594 89.2104)
@@ -91847,7 +91847,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "b981f9fc-6063-4369-93e4-c15fd60ecec0")
 		(at 97.1294 129.8604)
@@ -92116,7 +92116,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "bb1daaed-043b-4039-a651-40c3fa8dc483")
 		(at 141.7994 114.5404)
@@ -92490,7 +92490,7 @@
 			(uuid "69afcab3-716f-4050-81bb-ea20434f1cb9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -92502,7 +92502,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "be00fcfd-3fce-4973-8099-e4fd5da94e3f")
 		(at 93.8294 135.4504)
@@ -92875,7 +92875,7 @@
 			(uuid "5af49ec5-150f-4067-bae3-ada88d946881")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -92887,7 +92887,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "be4b0d72-81fa-43f1-b821-2460a00767a9")
 		(at 93.8294 138.9604)
@@ -93260,7 +93260,7 @@
 			(uuid "d9bf53e2-fc15-4423-a741-29da76271636")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -93272,7 +93272,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "bf2b477b-5978-45c6-91ae-ee3f47196314")
 		(at 104.0294 121.5004)
@@ -93540,7 +93540,7 @@
 			)
 		)
 	)
-	(footprint "Inductor_SMD:L_Wuerth_PMCI-252012"
+	(footprint "project_lib:L_Wuerth_PMCI-252012"
 		(layer "F.Cu")
 		(uuid "bf3388c4-70bf-41c0-b03e-6f345f83208f")
 		(at 107.1994 110.0204)
@@ -93863,7 +93863,7 @@
 			(uuid "82683bd5-1338-40e2-80d5-8d5a2a9a6cf3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Wuerth_PMCI-252012.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/L_Wuerth_PMCI-252012.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -93875,7 +93875,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Convex_8x0602"
+	(footprint "project_lib:R_Array_Convex_8x0602"
 		(layer "F.Cu")
 		(uuid "c0d01993-4cbd-47f9-8d59-8c454adb9466")
 		(at 166.8094 77.1654)
@@ -94226,7 +94226,7 @@
 			(uuid "dda0c121-4095-4d2a-9973-07f388deb656")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_8x0602.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/R_Array_Convex_8x0602.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -94238,7 +94238,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "c405de65-dac9-476b-9f54-0d925f4cd324")
 		(at 127.3494 69.1204)
@@ -94507,7 +94507,7 @@
 			)
 		)
 	)
-	(footprint "Connector_IDC:IDC-Header_2x15_P2.54mm_Vertical"
+	(footprint "project_lib:IDC-Header_2x15_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "c46128f2-eb37-4517-9843-9dab353a5e33")
 		(at 109.0794 44.3854)
@@ -95212,7 +95212,7 @@
 			(uuid "05e9be06-1747-4a21-8a2a-4a0029449a57")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x15_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/IDC-Header_2x15_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -95224,7 +95224,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "c4655318-0bf2-49e3-a195-a8fde763eebb")
 		(at 143.8594 77.6604)
@@ -95493,7 +95493,7 @@
 			)
 		)
 	)
-	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+	(footprint "project_lib:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "c7006ed3-ae27-46a3-b0c9-9b3bcb20d68c")
 		(at 126.9394 80.6254)
@@ -95887,7 +95887,7 @@
 			(uuid "26dee697-8ac2-4a63-8444-99392db87710")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -95899,7 +95899,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "c7fa73b5-c6fd-4948-89d5-869a650c4f1f")
 		(at 146.5094 77.6604)
@@ -96168,7 +96168,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "c867198c-d95b-41b3-8836-3ee0cfd825bd")
 		(at 178.3894 112.6304)
@@ -96454,7 +96454,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm"
+	(footprint "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm"
 		(layer "F.Cu")
 		(uuid "c89390e3-adf5-4b39-95cd-476b294422dd")
 		(at 186.9794 92.4004)
@@ -96866,7 +96866,7 @@
 			(dnp no)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -96878,7 +96878,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "c8a217eb-ad42-4a52-9401-569d233f3aef")
 		(at 112.6994 117.9104)
@@ -97147,7 +97147,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "c8f3b1a3-265d-48c1-8c7d-5314841fc891")
 		(at 160.8994 130.9204)
@@ -97415,7 +97415,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "c9753827-7d7c-449f-94d8-bc6d2d752794")
 		(at 104.0294 117.3804)
@@ -97683,7 +97683,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "c9ba9491-c2c4-4128-b366-e213823b136e")
 		(at 139.6994 133.2904)
@@ -97951,7 +97951,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "c9f1a775-6e38-4072-9436-2c0a718faa1c")
 		(at 175.5094 144.2304)
@@ -98219,7 +98219,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x03_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "c9f8df13-32c0-4e46-95b1-e8a95c53b77c")
 		(at 185.0594 102.9354)
@@ -98502,7 +98502,7 @@
 			(uuid "76bd8d66-0180-4b1c-8cc8-34da49d538a8")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x03_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x03_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -98514,7 +98514,7 @@
 			)
 		)
 	)
-	(footprint "Diodes_SMD:D_SMA"
+	(footprint "project_lib:D_SMA"
 		(layer "F.Cu")
 		(uuid "cabc6fdb-1963-4efc-86c3-ef7b22f5432f")
 		(at 155.0494 120.6554)
@@ -98816,7 +98816,7 @@
 			(uuid "b7a0c9b9-aa3f-4585-84ad-9e513f040342")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Diodes_SMD.3dshapes/D_SMA.wrl"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SMA.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -98828,7 +98828,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "cbbeeb97-e035-427f-9410-d15a80b90bee")
 		(at 181.2394 107.8504)
@@ -99096,7 +99096,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "cc531436-db7d-45e9-b7ae-ea2e479ab1ff")
 		(at 146.9594 93.2104)
@@ -99364,7 +99364,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "cd0bbc10-0f7a-44e3-8a02-1b89ea8690b1")
 		(at 127.3494 62.5804)
@@ -99633,7 +99633,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "ce38017f-723b-4b10-808f-f637accbd105")
 		(at 96.4294 96.2304)
@@ -99901,7 +99901,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "ceae851e-9642-427f-a548-53ca969a608e")
 		(at 141.7994 111.0304)
@@ -100294,7 +100294,7 @@
 			(uuid "dd0160ae-08e2-491b-a558-01436f944c8b")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -100306,7 +100306,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "cf565f0f-2205-43ee-a943-c51a94e9021c")
 		(at 141.2094 75.4804)
@@ -100575,7 +100575,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "d260d224-233a-4638-a394-af030375826b")
 		(at 124.6994 131.4104)
@@ -100844,7 +100844,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "d47b099e-929a-4a99-9dea-e6f2f5c80f47")
 		(at 136.5944 145.1554)
@@ -101178,7 +101178,7 @@
 			(uuid "7fe51a3f-f354-497a-a960-22fc9fb796db")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -101190,7 +101190,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "d47d9ad9-31cb-4277-bdeb-a863e23ac9e7")
 		(at 167.9094 106.0904)
@@ -101459,7 +101459,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "d535ed95-7f89-43b0-a1fc-360577f107ea")
 		(at 101.9294 98.4704)
@@ -101728,7 +101728,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "d593a12b-97f4-4f21-946a-16b775e0b3c5")
 		(at 152.3494 131.2204)
@@ -101997,7 +101997,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "d64c8f0f-0340-4fb6-a195-93b2f0b28834")
 		(at 103.0294 127.6154)
@@ -102267,7 +102267,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "d6854697-b08d-4345-bcf2-7fb77bf1fead")
 		(at 142.0844 60.7854)
@@ -102601,7 +102601,7 @@
 			(uuid "f8845b2f-b73a-4ff7-a9ac-9719c5e7a2ec")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -102613,7 +102613,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-323_SC-70"
+	(footprint "project_lib:SOT-323_SC-70"
 		(layer "F.Cu")
 		(uuid "d8907974-be57-4eae-88b4-5acdf44fa371")
 		(at 130.6494 129.8354)
@@ -102990,7 +102990,7 @@
 			(uuid "5eb6b38a-e6b2-4858-8b7c-622e683c7764")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-323_SC-70.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -103002,7 +103002,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "d93aed5f-8ae4-470f-9d8e-f7cea1f773f9")
 		(at 117.7994 47.1204)
@@ -103395,7 +103395,7 @@
 			(uuid "baebe538-6205-4158-98f4-adfc7827310c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -103407,7 +103407,7 @@
 			)
 		)
 	)
-	(footprint "Inductors_SMD:L_Vishay_IHLP-1212"
+	(footprint "project_lib:L_Vishay_IHLP-1212"
 		(layer "F.Cu")
 		(uuid "d9bb34b4-5d63-4484-9cb7-62822459790e")
 		(at 131.5494 142.4954)
@@ -103705,7 +103705,7 @@
 			(uuid "0f190dbc-c115-4584-917d-f8bdc64709e6")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/Inductors_SMD.3dshapes/L_Vishay_IHLP-1212.wrl"
+		(model "${KIPRJMOD}/../project_lib/3d_models/L_Vishay_IHLP-1212.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -103717,7 +103717,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "d9be7dfc-9174-442d-89f5-d3778b2bd61c")
 		(at 112.6994 115.7304)
@@ -103986,7 +103986,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "da4d64eb-1cee-40c7-8a00-55ed062f70f5")
 		(at 178.3894 101.7304)
@@ -104255,7 +104255,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "dc11f983-bd76-421b-9c6a-099a6bc41d50")
 		(at 127.3494 71.3004)
@@ -104524,7 +104524,7 @@
 			)
 		)
 	)
-	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+	(footprint "project_lib:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "dc125788-d6dd-4491-8ddc-a73244fcf8c3")
 		(at 126.9394 92.7504)
@@ -104918,7 +104918,7 @@
 			(uuid "cda30457-f898-49b6-9138-50b5b592f2d3")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -104930,7 +104930,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "dc5e5774-5458-4a2c-bf90-1caedf626dc5")
 		(at 146.5094 75.4804)
@@ -105199,7 +105199,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "dd54ab18-1154-4d99-8248-ec127623fbd1")
 		(at 99.2794 105.0104)
@@ -105468,7 +105468,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "dde0f362-49ee-4df7-ba9e-141df09143ce")
 		(at 157.9594 85.0904)
@@ -105736,7 +105736,7 @@
 			)
 		)
 	)
-	(footprint "Resistor_SMD:R_Array_Convex_8x0602"
+	(footprint "project_lib:R_Array_Convex_8x0602"
 		(layer "F.Cu")
 		(uuid "de04e12e-ba3d-4486-95c1-d1547461abff")
 		(at 170.9594 77.1654)
@@ -106087,7 +106087,7 @@
 			(uuid "823c2201-f0a5-4243-b73b-d2780d71599d")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_Array_Convex_8x0602.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/R_Array_Convex_8x0602.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -106099,7 +106099,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+	(footprint "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
 		(layer "F.Cu")
 		(uuid "deb57218-28f7-4599-a405-f4227033f75f")
 		(at 153.9044 40.1904)
@@ -106480,7 +106480,7 @@
 			)
 		)
 	)
-	(footprint "Inductors_SMD:L_0402"
+	(footprint "project_lib:L_0402"
 		(layer "F.Cu")
 		(uuid "def03a38-0129-45c2-b137-850952365949")
 		(at 138.2494 120.9554)
@@ -106737,7 +106737,7 @@
 			)
 		)
 	)
-	(footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+	(footprint "project_lib:TSSOP-14_4.4x5mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "e1128ea5-a8a6-4e7e-bb2f-2522bdc8347f")
 		(at 181.4094 136.3404)
@@ -107257,7 +107257,7 @@
 			(uuid "9fc0e61a-6243-4d2d-b90c-9e3aaf55c3f6")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/TSSOP-14_4.4x5mm_P0.65mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -107269,7 +107269,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "e290d1ec-22ae-49ba-a7b4-1ac756cc2af4")
 		(at 97.9294 117.3804)
@@ -107537,7 +107537,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "e30ed7b0-840c-4a22-9fcf-88784823f995")
 		(at 138.2994 114.3404)
@@ -107805,7 +107805,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "e3dc64be-7ab0-4a88-b6d6-f27fdc317164")
 		(at 124.6994 129.2304)
@@ -108074,7 +108074,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "e3f56fb2-27b6-4f22-bcfe-9d7798c0ec24")
 		(at 161.0094 87.1504)
@@ -108342,7 +108342,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "e560e2e3-e962-479b-9e0c-b7e5e0afc178")
 		(at 141.2094 77.6604)
@@ -108611,7 +108611,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "e7032a9e-0afd-455c-9b57-4ecc25fca32c")
 		(at 157.8494 128.8604)
@@ -108879,7 +108879,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "e71b7ad5-cd08-4938-8e99-69c15dd55a5d")
 		(at 149.1594 79.8404)
@@ -109148,7 +109148,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "ea362d3d-9927-45b4-b0b8-4a724071b786")
 		(at 96.4294 100.3504)
@@ -109416,7 +109416,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "ea53a99b-d417-478a-9074-2d9175c58327")
 		(at 97.1294 134.2204)
@@ -109685,7 +109685,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0805"
+	(footprint "project_lib:C_0805"
 		(layer "F.Cu")
 		(uuid "eab10b0e-bcb1-4930-a63b-cc0d3bae3429")
 		(at 94.1294 112.3304)
@@ -109953,7 +109953,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "eb1182b1-fd10-41b1-841b-467232067f6d")
 		(at 149.1594 77.6604)
@@ -110222,7 +110222,7 @@
 			)
 		)
 	)
-	(footprint "TO_SOT_Packages_SMD:SOT-23-6"
+	(footprint "project_lib:SOT-23-6_Legacy"
 		(layer "F.Cu")
 		(uuid "eb29dd5d-5224-41e0-bf30-391445d1acf9")
 		(at 153.4494 143.6954)
@@ -110485,7 +110485,7 @@
 			(uuid "4cbbc14c-6d51-466e-be81-0e6355361bc6")
 		)
 		(embedded_fonts no)
-		(model "${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-23-6.wrl"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-23-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -110497,7 +110497,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "ec45b371-1490-461e-8710-8924047938e0")
 		(at 146.4494 121.6604)
@@ -110766,7 +110766,7 @@
 			)
 		)
 	)
-	(footprint "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm"
+	(footprint "project_lib:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm"
 		(layer "F.Cu")
 		(uuid "ed653e17-7b9b-4094-be54-71efce1a3d32")
 		(at 117.4894 89.9604)
@@ -111178,7 +111178,7 @@
 			(dnp no)
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -111190,7 +111190,7 @@
 			)
 		)
 	)
-	(footprint "LEDs:LED_0402"
+	(footprint "project_lib:LED_0402"
 		(layer "F.Cu")
 		(uuid "ed6da022-0731-4d4f-8d47-0d20ff3ffd11")
 		(at 103.0294 129.6654)
@@ -111460,7 +111460,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "ee24b72c-3cf1-417b-96c1-5a662f6293e7")
 		(at 181.9894 59.3004)
@@ -111746,7 +111746,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "ee767592-c4a0-4aec-8f90-484e1380a750")
 		(at 119.4994 109.1304)
@@ -112014,7 +112014,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "ee9c0929-01c2-428f-ad73-8b3831594f08")
 		(at 93.8294 128.4304)
@@ -112387,7 +112387,7 @@
 			(uuid "1dda15c0-6ba4-45bf-84c8-7abe1aadeed7")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -112399,7 +112399,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "ef838906-cc9f-419b-b35e-5f1c0367a775")
 		(at 99.2794 98.4704)
@@ -112668,7 +112668,7 @@
 			)
 		)
 	)
-	(footprint "Inductors_SMD:L_0402"
+	(footprint "project_lib:L_0402"
 		(layer "F.Cu")
 		(uuid "efc4f854-fbec-4678-b222-7fef360c90fc")
 		(at 107.0294 119.8754)
@@ -112925,7 +112925,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "f0045c49-ef86-4bdc-a25c-01573604da13")
 		(at 139.6994 131.2304)
@@ -113193,7 +113193,7 @@
 			)
 		)
 	)
-	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+	(footprint "project_lib:PinSocket_1x02_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f1115877-5aca-4f0e-bca7-d24219bfe0c9")
 		(at 94.1494 90.3654)
@@ -113452,7 +113452,7 @@
 			(uuid "db654780-a90a-4523-8eac-20f3beb9bfa1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/PinSocket_1x02_P2.54mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -113464,7 +113464,7 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_3mm"
+	(footprint "project_lib:MountingHole_3mm"
 		(layer "F.Cu")
 		(uuid "f1d24c34-bdfc-47b9-b2aa-47866cdaa827")
 		(at 193.0394 49.5854)
@@ -113593,7 +113593,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "f1d42fa8-d0f1-4aa3-9a5e-7a1da05bc30d")
 		(at 138.2994 112.2804)
@@ -113861,7 +113861,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0805"
+	(footprint "project_lib:C_0805"
 		(layer "F.Cu")
 		(uuid "f1fd4b6d-028e-41c5-afa3-6f96d2c0a1a0")
 		(at 125.6494 143.2704)
@@ -114129,7 +114129,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "f2bdad86-e5c6-458f-815b-cdeb5a23c852")
 		(at 172.2994 66.8804)
@@ -114397,7 +114397,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "f3ecf0ce-06c8-4f45-8b33-f995dea2876c")
 		(at 185.2894 63.5604)
@@ -114771,7 +114771,7 @@
 			(uuid "6c5eff0a-4576-45e6-b426-e6d2176d3dc0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -114783,7 +114783,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "f473f88e-bd97-43f2-b7a0-e00a43366b66")
 		(at 127.3494 137.9504)
@@ -115052,7 +115052,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "f47a0601-0d5a-432c-bab0-ef0c7208023a")
 		(at 141.1494 117.3004)
@@ -115321,7 +115321,7 @@
 			)
 		)
 	)
-	(footprint "Diode_SMD:D_SOD-323F"
+	(footprint "project_lib:D_SOD-323F"
 		(layer "F.Cu")
 		(uuid "f485af78-6730-40f8-bae5-7033f03e3d74")
 		(at 137.7644 84.7154)
@@ -115655,7 +115655,7 @@
 			(uuid "33f45eea-3aa5-42fd-93b0-4c9c561b0a57")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-323F.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/D_SOD-323F.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -115667,7 +115667,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "f4c56c19-9110-45c8-87b4-d399b88bb5da")
 		(at 93.3794 100.3504)
@@ -115935,7 +115935,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "f5fb4268-f561-41cc-af31-489e295c0443")
 		(at 113.3094 93.2204)
@@ -116220,7 +116220,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "f6412d1f-5536-4341-b247-72225ea40bc9")
 		(at 112.6994 109.1904)
@@ -116489,7 +116489,7 @@
 			)
 		)
 	)
-	(footprint "Resistors_SMD:R_0402"
+	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "f66490ef-426a-4b69-a74f-5993d4c401fc")
 		(at 170.5594 106.0904)
@@ -116758,7 +116758,7 @@
 			)
 		)
 	)
-	(footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+	(footprint "project_lib:SOT-363_SC-70-6"
 		(layer "F.Cu")
 		(uuid "f6cddf05-3676-4b00-86de-b0052a939c87")
 		(at 170.0094 133.9204)
@@ -117132,7 +117132,7 @@
 			(uuid "ed58e60b-5338-475f-a533-6f3b2d8ef030")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-363_SC-70-6.step"
+		(model "${KIPRJMOD}/../project_lib/3d_models/SOT-363_SC-70-6.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -117144,7 +117144,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "f9519a5c-78df-4880-b0b8-f16b1cb6ab57")
 		(at 108.0794 131.7404)
@@ -117412,7 +117412,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:Test_Point"
+	(footprint "project_lib:Test_Point"
 		(layer "F.Cu")
 		(uuid "f97b7aa9-9b0f-4556-ab80-a3ea9cc755bc")
 		(at 139.9654 141.7614)
@@ -117519,7 +117519,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "f9889ddc-4528-46b7-bb9f-bd902704ccc0")
 		(at 99.9794 135.8604)
@@ -117787,7 +117787,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "fc59d657-c1fa-411d-a99c-f381255f5b8f")
 		(at 139.6994 129.1704)
@@ -118055,7 +118055,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "fcc136ff-4f49-4d16-9b7e-e0571d1ee769")
 		(at 157.8494 135.0404)
@@ -118323,7 +118323,7 @@
 			)
 		)
 	)
-	(footprint "Capacitors_SMD:C_0402"
+	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "fe045bae-3702-4c51-852b-0a8fccd60108")
 		(at 146.9594 91.1504)

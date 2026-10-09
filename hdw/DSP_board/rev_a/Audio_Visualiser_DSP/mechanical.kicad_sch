@@ -9,7 +9,106 @@
 		(rev "A")
 	)
 	(lib_symbols
-		(symbol "Custom Library:Screw"
+		(symbol "project_lib:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "project_lib:Screw"
 			(pin_numbers
 				(hide yes)
 			)
@@ -282,7 +381,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom Library:Standoff"
+		(symbol "project_lib:Standoff"
 			(pin_numbers
 				(hide yes)
 			)
@@ -547,108 +646,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "H"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mounting Hole without connection"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MountingHole_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(symbol
-		(lib_id "Custom Library:Screw")
+		(lib_id "project_lib:Screw")
 		(at 139.7 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -738,7 +738,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "project_lib:MountingHole")
 		(at 139.7 55.88 0)
 		(unit 1)
 		(body_style 1)
@@ -768,7 +768,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
+		(property "Footprint" "project_lib:MountingHole_3mm"
 			(at 139.7 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -828,7 +828,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:Standoff")
+		(lib_id "project_lib:Standoff")
 		(at 139.7 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -918,7 +918,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:Standoff")
+		(lib_id "project_lib:Standoff")
 		(at 114.3 128.27 0)
 		(unit 1)
 		(body_style 1)
@@ -1008,7 +1008,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:Screw")
+		(lib_id "project_lib:Screw")
 		(at 114.3 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -1098,7 +1098,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:Screw")
+		(lib_id "project_lib:Screw")
 		(at 114.3 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -1188,7 +1188,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:Standoff")
+		(lib_id "project_lib:Standoff")
 		(at 139.7 153.67 0)
 		(unit 1)
 		(body_style 1)
@@ -1278,7 +1278,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "project_lib:MountingHole")
 		(at 114.3 68.58 0)
 		(unit 1)
 		(body_style 1)
@@ -1308,7 +1308,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
+		(property "Footprint" "project_lib:MountingHole_3mm"
 			(at 114.3 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -1368,7 +1368,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:Screw")
+		(lib_id "project_lib:Screw")
 		(at 139.7 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -1458,7 +1458,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "project_lib:MountingHole")
 		(at 139.7 68.58 0)
 		(unit 1)
 		(body_style 1)
@@ -1488,7 +1488,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
+		(property "Footprint" "project_lib:MountingHole_3mm"
 			(at 139.7 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -1548,7 +1548,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "project_lib:MountingHole")
 		(at 114.3 55.88 0)
 		(unit 1)
 		(body_style 1)
@@ -1578,7 +1578,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_3mm"
+		(property "Footprint" "project_lib:MountingHole_3mm"
 			(at 114.3 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -1638,7 +1638,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:Standoff")
+		(lib_id "project_lib:Standoff")
 		(at 114.3 153.67 0)
 		(unit 1)
 		(body_style 1)
