@@ -5403,7 +5403,7 @@
 		)
 	)
 	(symbol
-		(lib_id "project_lib:FB_Custom")
+		(lib_id "project_lib:R_Custom")
 		(at 149.86 87.63 90)
 		(unit 1)
 		(body_style 1)
@@ -5412,9 +5412,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "561b8be0-33c1-4c59-8d70-e7c50403783b")
-		(property "Reference" "FB603"
-			(at 149.86 88.9 90)
+		(uuid "51ae77cf-d455-4f42-8e2e-5030aa955c3e")
+		(property "Reference" "R?"
+			(at 149.86 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5423,8 +5423,8 @@
 				)
 			)
 		)
-		(property "Value" "220"
-			(at 149.86 85.725 90)
+		(property "Value" "10"
+			(at 149.86 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5433,7 +5433,7 @@
 				)
 			)
 		)
-		(property "Footprint" "project_lib:L_0402"
+		(property "Footprint" "project_lib:R_0402"
 			(at 149.86 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -5455,9 +5455,8 @@
 				)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" ""
 			(at 149.86 87.63 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5467,7 +5466,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 149.86 83.82 90)
+			(at 149.86 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5476,13 +5475,34 @@
 				)
 			)
 		)
-		(property "Ampacity" "1.3A"
-			(at 149.86 81.28 90)
+		(property "Tolerance" "1%"
+			(at 149.86 82.55 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Wattage" "1/16W"
+			(at 149.86 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "311-10.0LRCT-ND"
+			(at 139.7 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
 				)
 			)
 		)
@@ -5497,27 +5517,16 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "490-16508-1-ND"
-			(at 149.86 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "1"
+			(uuid "807d60b8-6656-4985-8413-047d250ca4c2")
 		)
 		(pin "2"
-			(uuid "4f2c18cd-e286-43c2-983c-1b351c79194b")
-		)
-		(pin "1"
-			(uuid "966ef476-647d-49dc-b24f-6daa102baa04")
+			(uuid "7c35b63b-cdc9-410f-aff9-9940137a42eb")
 		)
 		(instances
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/3d6836fb-edea-466f-ab73-f835ba2b7cb8"
-					(reference "FB603")
+					(reference "R?")
 					(unit 1)
 					(variant
 						(name "Default")
