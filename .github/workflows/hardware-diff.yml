@@ -28,6 +28,9 @@ jobs:
     container:
       image: kicad/kicad:10.0
       options: --user root
+      credentials:  # authenticated pulls avoid Docker Hub's anonymous rate limit
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v7
         with:
