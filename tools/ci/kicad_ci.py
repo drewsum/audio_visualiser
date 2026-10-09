@@ -228,7 +228,8 @@ def check_schematic_pdf(project_dir, name, tracked):
 def cmd_hygiene(args):
     config = load_config()
     want = config["kicad_version"]
-    tracked = [p for p in git("ls-files", "-z").split("\0") if p]
+    # Skip files deleted/moved in the working tree but not yet committed (only happens locally).
+    tracked = [p for p in git("ls-files", "-z").split("\0") if p and (REPO / p).exists()]
     project_stems = {(str(PurePosixPath(p).parent), PurePosixPath(p).stem)
                      for p in tracked if p.endswith(".kicad_pro")}
     roots = tuple(r.rstrip("/") + "/" for r in config.get("project_roots", ["hdw"]))
@@ -437,7 +438,7 @@ def check_project_library(proj_dir, sch, pcb, lib_dir):
             if re.match(r"^([A-Za-z]:[\\/]|/|\\\\)", path):
                 findings.append(("model_path_not_portable", file,
                                  f"{who}: 3D model uses an absolute path ({path}). "
-                                 "Use ${KIPRJMOD}/../" + lib_dir.name + "/... so it works on other machines."))
+                                 "Use ${KIPRJMOD}/" + os.path.relpath(lib_dir, proj_dir).replace(os.sep, "/") + "/... so it works on other machines."))
             elif not inside(target):
                 findings.append(("model_outside_project_lib", file,
                                  f"{who}: 3D model '{path}' is not inside {rel(lib_dir)}"))
