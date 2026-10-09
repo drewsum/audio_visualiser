@@ -2,20 +2,6 @@
   "kicad_version": "10.0",
   "project_roots": ["hdw"],
 
-  "external_libraries": [
-    {
-      "repo": "https://github.com/drewsum/KiCad_Custom_Libs_v6.git",
-      "ref": "main",
-      "symbol_libs": {
-        "Custom Library": "Custom Library.kicad_sym",
-        "Custom_Library": "Custom Library.kicad_sym"
-      },
-      "footprint_libs": {
-        "Custom Footprints Library": "Custom Footprints Library.pretty"
-      }
-    }
-  ],
-
   "defaults": {
     "erc": "enforce",
     "drc": "enforce",
