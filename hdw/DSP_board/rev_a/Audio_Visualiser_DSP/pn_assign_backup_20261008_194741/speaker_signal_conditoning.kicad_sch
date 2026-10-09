@@ -1355,7 +1355,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+			(property "Footprint" "Housings_DFN_QFN:DFN-8-1EP_2x3mm_Pitch0.5mm"
 				(at 0 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3374,7 +3374,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/BAT42WS%20SERIES_J2606.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 			(at 134.62 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3385,7 +3385,7 @@
 				)
 			)
 		)
-		(property "Description" "30V 200mA Schottky diode, SOD-323F (TSC BAT43WS)"
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 134.62 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3396,7 +3396,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT43WS.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
 			(at 134.62 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3407,7 +3407,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "BAT43WS_SOD323F"
+		(property "Sim.Name" "BAT54SW"
 			(at 134.62 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3429,7 +3429,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=2 2=1"
 			(at 134.62 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3811,7 +3811,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/BAT42WS%20SERIES_J2606.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 			(at 116.84 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3822,7 +3822,7 @@
 				)
 			)
 		)
-		(property "Description" "30V 200mA Schottky diode, SOD-323F (TSC BAT43WS)"
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 116.84 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3833,7 +3833,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT43WS.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
 			(at 116.84 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3844,7 +3844,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "BAT43WS_SOD323F"
+		(property "Sim.Name" "BAT54SW"
 			(at 116.84 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3866,7 +3866,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=2 2=1"
 			(at 116.84 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4174,7 +4174,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/BAT42WS%20SERIES_J2606.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 			(at 134.62 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4185,7 +4185,7 @@
 				)
 			)
 		)
-		(property "Description" "30V 200mA Schottky diode, SOD-323F (TSC BAT43WS)"
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 134.62 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4196,7 +4196,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT43WS.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
 			(at 134.62 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4207,7 +4207,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "BAT43WS_SOD323F"
+		(property "Sim.Name" "BAT54SW"
 			(at 134.62 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4229,7 +4229,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=2 2=1"
 			(at 134.62 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -4677,7 +4677,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/BAT42WS%20SERIES_J2606.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 			(at 116.84 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4688,7 +4688,7 @@
 				)
 			)
 		)
-		(property "Description" "30V 200mA Schottky diode, SOD-323F (TSC BAT43WS)"
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 116.84 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4699,7 +4699,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT43WS.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
 			(at 116.84 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4710,7 +4710,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "BAT43WS_SOD323F"
+		(property "Sim.Name" "BAT54SW"
 			(at 116.84 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4732,7 +4732,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=2 2=1"
 			(at 116.84 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4820,7 +4820,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/BAT42WS%20SERIES_J2606.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 			(at 116.84 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4831,7 +4831,7 @@
 				)
 			)
 		)
-		(property "Description" "30V 200mA Schottky diode, SOD-323F (TSC BAT43WS)"
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 116.84 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4842,7 +4842,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT43WS.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
 			(at 116.84 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4853,7 +4853,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "BAT43WS_SOD323F"
+		(property "Sim.Name" "BAT54SW"
 			(at 116.84 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4875,7 +4875,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=2 2=1"
 			(at 116.84 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -5769,7 +5769,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+		(property "Footprint" "Housings_DFN_QFN:DFN-8-1EP_2x3mm_Pitch0.5mm"
 			(at 160.02 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -6163,7 +6163,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm"
+		(property "Footprint" "Housings_DFN_QFN:DFN-8-1EP_2x3mm_Pitch0.5mm"
 			(at 160.02 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6926,7 +6926,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/BAT42WS%20SERIES_J2606.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 			(at 116.84 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -6937,7 +6937,7 @@
 				)
 			)
 		)
-		(property "Description" "30V 200mA Schottky diode, SOD-323F (TSC BAT43WS)"
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 116.84 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -6948,7 +6948,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT43WS.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
 			(at 116.84 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -6959,7 +6959,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "BAT43WS_SOD323F"
+		(property "Sim.Name" "BAT54SW"
 			(at 116.84 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -6981,7 +6981,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=2 2=1"
 			(at 116.84 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8029,7 +8029,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/BAT42WS%20SERIES_J2606.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8040,7 +8040,7 @@
 				)
 			)
 		)
-		(property "Description" "30V 200mA Schottky diode, SOD-323F (TSC BAT43WS)"
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8051,7 +8051,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT43WS.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
 			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8062,7 +8062,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "BAT43WS_SOD323F"
+		(property "Sim.Name" "BAT54SW"
 			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8084,7 +8084,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=2 2=1"
 			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8326,7 +8326,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://services.taiwansemi.com/storage/resources/datasheet/BAT42WS%20SERIES_J2606.pdf"
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/BAT54J.pdf"
 			(at 134.62 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8337,7 +8337,7 @@
 				)
 			)
 		)
-		(property "Description" "30V 200mA Schottky diode, SOD-323F (TSC BAT43WS)"
+		(property "Description" "30V 200mA Schottky diode, SOD-323F"
 			(at 134.62 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8348,7 +8348,7 @@
 				)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT43WS.lib"
+		(property "Sim.Library" "C:\\Users\\drewm\\Documents\\KiCad Projects\\Projects\\audio_visualiser\\hdw\\DSP_board\\rev_a\\sim\\spice_models\\BAT54SW.lib"
 			(at 134.62 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8359,7 +8359,7 @@
 				)
 			)
 		)
-		(property "Sim.Name" "BAT43WS_SOD323F"
+		(property "Sim.Name" "BAT54SW"
 			(at 134.62 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -8381,7 +8381,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" "1=2 2=1"
 			(at 134.62 128.27 0)
 			(hide yes)
 			(show_name no)
