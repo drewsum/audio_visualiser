@@ -788,6 +788,52 @@
 		)
 	)
 	(sheet
+		(at 139.7 57.15)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ea6fcf81-437e-4612-929d-18972fd90c24")
+		(property "Sheetname" "led_panel_connector"
+			(at 139.7 56.4384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_panel_connector.kicad_sch"
+			(at 139.7 61.5446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 59.69 181.61)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
