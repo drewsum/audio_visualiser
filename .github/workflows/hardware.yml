@@ -1,4 +1,4 @@
-# KiCad hardware CI: hygiene, ERC/DRC/library checks, fab outputs, tagged releases.
+# KiCad hardware CI: hygiene, ERC/DRC/library checks, fab outputs, visual diff, tagged releases.
 # Behaviour per project is configured in hdw/ci-config.json; logic lives in tools/ci/kicad_ci.py.
 name: Hardware
 
@@ -103,6 +103,68 @@ jobs:
         with:
           name: outputs-${{ matrix.slug }}
           path: ci-out/outputs
+
+  # Runs on every pipeline run. Base commit per trigger:
+  #   pull_request      -> PR base
+  #   push              -> previous tip of the branch (falls back to merge-base with the
+  #                        default branch for new branches / force pushes)
+  #   tag               -> previous hw-* tag, else parent commit
+  #   workflow_dispatch -> parent commit
+  # Download the "visual-diff" artifact and open index.html (red = removed, green = added).
+  visual-diff:
+    name: Visual diff
+    runs-on: ubuntu-latest
+    container:
+      image: kicad/kicad:10.0
+      options: --user root
+      credentials:  # authenticated pulls avoid Docker Hub's anonymous rate limit
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Install image tools
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          apt-get update -qq
+          apt-get install -y -qq --no-install-recommends librsvg2-bin imagemagick
+      - name: Pick base commit
+        id: base
+        env:
+          EVENT: ${{ github.event_name }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          BEFORE: ${{ github.event.before }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          exists() { [ -n "$1" ] && git cat-file -e "$1^{commit}" 2>/dev/null; }
+          base=""
+          if [ "$EVENT" = pull_request ]; then
+            base="$PR_BASE"
+          elif [ "$GITHUB_REF_TYPE" = tag ]; then
+            base=$(git describe --tags --abbrev=0 --match 'hw-*' HEAD^ 2>/dev/null || true)
+          elif [ "$EVENT" = push ] && [ "$BEFORE" != 0000000000000000000000000000000000000000 ] && exists "$BEFORE"; then
+            base="$BEFORE"
+          elif [ "$EVENT" = push ] && [ "$GITHUB_REF_NAME" != "$DEFAULT_BRANCH" ]; then
+            base=$(git merge-base HEAD "origin/$DEFAULT_BRANCH" 2>/dev/null || true)
+          fi
+          # Last resort: the parent commit (none exists for a root commit).
+          if ! exists "$base" || [ "$(git rev-parse "$base")" = "$(git rev-parse HEAD)" ]; then
+            base=$(git rev-parse -q --verify HEAD^ || true)
+          fi
+          echo "sha=$base" >> "$GITHUB_OUTPUT"
+          echo "Comparing ${base:-<nothing>} -> $(git rev-parse HEAD)"
+      - name: Render diff
+        if: steps.base.outputs.sha != ''
+        run: python3 tools/ci/kicad_ci.py diff --base "${{ steps.base.outputs.sha }}" --out ci-out/visual-diff
+      - name: No base commit
+        if: steps.base.outputs.sha == ''
+        run: echo "## Visual diff"$'\n\n'"No earlier commit to compare against." >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
+        if: steps.base.outputs.sha != ''
+        with:
+          name: visual-diff
+          path: ci-out/visual-diff
 
   release:
     name: Publish release
