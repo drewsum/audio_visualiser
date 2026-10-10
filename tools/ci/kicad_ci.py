@@ -837,7 +837,7 @@ def write_diff_index(out, report, base, touched):
                     f"<figcaption>{label}</figcaption></figure>")
         rows.append(f"<section><h2>{html.escape(p['name'])} &mdash; {html.escape(key)}"
                     f" <small>({n:,} px changed)</small></h2><div class='row'>"
-                    + img(diff, "diff (red removed, green added)") + img(old, "base") + img(new, "PR")
+                    + img(diff, "diff (red removed, green added)") + img(old, "base") + img(new, "this commit")
                     + "</div></section>")
     body = "\n".join(rows) or "<p>No visible changes.</p>"
     (out / "index.html").write_text(f"""<!doctype html>
