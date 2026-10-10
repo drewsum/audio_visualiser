@@ -2910,7 +2910,7 @@
 	)
 	(symbol
 		(lib_id "project_lib:GND")
-		(at 48.26 132.08 0)
+		(at 41.91 132.08 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2921,7 +2921,7 @@
 		(dnp no)
 		(uuid "0366eb77-da21-4fdf-9aa3-833f03763358")
 		(property "Reference" "#PWR02102"
-			(at 48.26 138.43 0)
+			(at 41.91 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2932,7 +2932,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.26 135.89 0)
+			(at 41.91 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2942,7 +2942,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 132.08 0)
+			(at 41.91 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2953,7 +2953,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 132.08 0)
+			(at 41.91 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2964,7 +2964,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 132.08 0)
+			(at 41.91 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3107,7 +3107,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 99.06 66.04 270)
-		(unit 1)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3212,7 +3212,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2103")
-					(unit 1)
+					(unit 2)
 					(variant
 						(name "Default")
 					)
@@ -3406,7 +3406,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 41.91 129.54 270)
-		(unit 2)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3511,7 +3511,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2102")
-					(unit 2)
+					(unit 1)
 					(variant
 						(name "Default")
 					)
@@ -4219,7 +4219,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 41.91 66.04 270)
-		(unit 2)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -4324,7 +4324,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2101")
-					(unit 2)
+					(unit 1)
 					(variant
 						(name "Default")
 					)
@@ -4675,7 +4675,7 @@
 	)
 	(symbol
 		(lib_id "project_lib:GND")
-		(at 99.06 68.58 0)
+		(at 92.71 68.58 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4686,7 +4686,7 @@
 		(dnp no)
 		(uuid "4520418c-c814-4480-8c8d-570ac2187b4b")
 		(property "Reference" "#PWR02103"
-			(at 99.06 74.93 0)
+			(at 92.71 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4697,7 +4697,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 72.39 0)
+			(at 92.71 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4707,7 +4707,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 68.58 0)
+			(at 92.71 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4718,7 +4718,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 68.58 0)
+			(at 92.71 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4729,7 +4729,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 68.58 0)
+			(at 92.71 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4911,7 +4911,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 67.31 66.04 270)
-		(unit 3)
+		(unit 5)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -5016,7 +5016,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2101")
-					(unit 3)
+					(unit 5)
 					(variant
 						(name "Default")
 					)
@@ -5188,7 +5188,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 67.31 129.54 270)
-		(unit 3)
+		(unit 5)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -5293,7 +5293,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2102")
-					(unit 3)
+					(unit 5)
 					(variant
 						(name "Default")
 					)
@@ -5384,7 +5384,7 @@
 	)
 	(symbol
 		(lib_id "project_lib:GND")
-		(at 99.06 132.08 0)
+		(at 92.71 132.08 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5395,7 +5395,7 @@
 		(dnp no)
 		(uuid "5b998961-0611-4eb1-8e74-2f0348900988")
 		(property "Reference" "#PWR02104"
-			(at 99.06 138.43 0)
+			(at 92.71 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5406,7 +5406,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 135.89 0)
+			(at 92.71 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5416,7 +5416,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 132.08 0)
+			(at 92.71 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5427,7 +5427,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 132.08 0)
+			(at 92.71 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5438,7 +5438,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 132.08 0)
+			(at 92.71 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5539,7 +5539,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 118.11 129.54 270)
-		(unit 3)
+		(unit 5)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -5644,7 +5644,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2104")
-					(unit 3)
+					(unit 5)
 					(variant
 						(name "Default")
 					)
@@ -5658,7 +5658,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 54.61 66.04 270)
-		(unit 5)
+		(unit 3)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -5763,7 +5763,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2101")
-					(unit 5)
+					(unit 3)
 					(variant
 						(name "Default")
 					)
@@ -6327,7 +6327,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 118.11 66.04 270)
-		(unit 3)
+		(unit 5)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -6432,7 +6432,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2103")
-					(unit 3)
+					(unit 5)
 					(variant
 						(name "Default")
 					)
@@ -6604,7 +6604,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 92.71 66.04 270)
-		(unit 2)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -6709,7 +6709,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2103")
-					(unit 2)
+					(unit 1)
 					(variant
 						(name "Default")
 					)
@@ -6958,7 +6958,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 105.41 66.04 270)
-		(unit 5)
+		(unit 3)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7063,7 +7063,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2103")
-					(unit 5)
+					(unit 3)
 					(variant
 						(name "Default")
 					)
@@ -7077,7 +7077,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 105.41 129.54 270)
-		(unit 5)
+		(unit 3)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7182,7 +7182,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2104")
-					(unit 5)
+					(unit 3)
 					(variant
 						(name "Default")
 					)
@@ -7432,7 +7432,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 48.26 129.54 270)
-		(unit 1)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7537,7 +7537,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2102")
-					(unit 1)
+					(unit 2)
 					(variant
 						(name "Default")
 					)
@@ -7550,7 +7550,7 @@
 	)
 	(symbol
 		(lib_id "project_lib:GND")
-		(at 48.26 68.58 0)
+		(at 41.91 68.58 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -7561,7 +7561,7 @@
 		(dnp no)
 		(uuid "a7280577-3550-44ea-bcec-614bdc78df82")
 		(property "Reference" "#PWR02101"
-			(at 48.26 74.93 0)
+			(at 41.91 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7572,7 +7572,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 48.26 72.39 0)
+			(at 41.91 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7582,7 +7582,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 68.58 0)
+			(at 41.91 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7593,7 +7593,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 68.58 0)
+			(at 41.91 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7604,7 +7604,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 68.58 0)
+			(at 41.91 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7747,7 +7747,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 92.71 129.54 270)
-		(unit 2)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7852,7 +7852,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2104")
-					(unit 2)
+					(unit 1)
 					(variant
 						(name "Default")
 					)
@@ -8244,7 +8244,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 48.26 66.04 270)
-		(unit 1)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8349,7 +8349,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2101")
-					(unit 1)
+					(unit 2)
 					(variant
 						(name "Default")
 					)
@@ -8442,7 +8442,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 99.06 129.54 270)
-		(unit 1)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8547,7 +8547,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2104")
-					(unit 1)
+					(unit 2)
 					(variant
 						(name "Default")
 					)
@@ -8956,7 +8956,7 @@
 	(symbol
 		(lib_id "project_lib:PESD3V3L5UY")
 		(at 54.61 129.54 270)
-		(unit 5)
+		(unit 3)
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -9061,7 +9061,7 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/41674a27-da8b-4996-811a-d76625b2cbde"
 					(reference "D2102")
-					(unit 5)
+					(unit 3)
 					(variant
 						(name "Default")
 					)
