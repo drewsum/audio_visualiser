@@ -452,7 +452,10 @@ def check_project_library(proj_dir, sch, pcb, lib_dir):
             lib_id = re.match(r'\(footprint\s+"([^"]*)"', blk).group(1)
             ref = re.search(r'\(property\s+"Reference"\s+"([^"]*)"', blk)
             who = ref.group(1) if ref else lib_id
-            problem = footprint_problem(lib_id)
+            # "Not in schematic" footprints (logos, custom silkscreen art) are board-only
+            # graphics with no symbol behind them, so they needn't come from the library.
+            board_only = re.search(r"\(attr\b[^)]*\bboard_only\b", blk)
+            problem = None if board_only else footprint_problem(lib_id)
             if problem:
                 findings.append(("footprint_outside_project_lib", rel(pcb), f"{who}: {problem}"))
             check_models(blk, proj_dir, rel(pcb), who)
