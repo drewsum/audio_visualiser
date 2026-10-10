@@ -31284,7 +31284,7 @@
 				)
 			)
 		)
-		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts
@@ -152056,7 +152056,7 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "3.937"
+		(gr_text "100"
 			(at 189.35 99.098 90)
 			(layer "User.1")
 			(uuid "65c7a5f8-5370-4b64-9719-41666c8cc070")
@@ -152094,7 +152094,7 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "3.937"
+		(gr_text "100"
 			(at 132.296 159.124 0)
 			(layer "User.1")
 			(uuid "b6d0d46b-4fff-46f5-98ff-54be670e5288")
