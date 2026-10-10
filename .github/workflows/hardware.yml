@@ -1,11 +1,11 @@
-# KiCad hardware CI: hygiene, ERC/DRC/library checks, fab outputs, visual diff, tagged releases.
+# KiCad hardware CI: hygiene, ERC/DRC/library checks and visual diff.
+# Fab outputs and releases are manual: python3 tools/ci/kicad_ci.py outputs <project dir> --out <dir>
 # Behaviour per project is configured in hdw/ci-config.json; logic lives in tools/ci/kicad_ci.py.
 name: Hardware
 
 on:
   push:
     branches: ['**']
-    tags: ['hw-*']  # tag e.g. hw-dsp-rev_a-v1 to publish a release with fab outputs
     paths:
       - 'hdw/**'
       - 'tools/ci/**'
@@ -22,7 +22,7 @@ permissions:
 
 concurrency:
   group: hardware-${{ github.ref }}
-  cancel-in-progress: ${{ github.ref_type != 'tag' }}
+  cancel-in-progress: true
 
 defaults:
   run:
@@ -76,39 +76,10 @@ jobs:
           path: ci-out/reports
           if-no-files-found: ignore
 
-  outputs:
-    name: Fab outputs (${{ matrix.name }})
-    needs: discover
-    if: needs.discover.outputs.count != '0'
-    runs-on: ubuntu-latest
-    container:
-      image: kicad/kicad:10.0-full  # -full includes the stock 3D models for STEP/renders
-      options: --user root
-      credentials:  # authenticated pulls avoid Docker Hub's anonymous rate limit
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJSON(needs.discover.outputs.matrix) }}
-    steps:
-      - uses: actions/checkout@v7
-      - name: Configure KiCad libraries
-        run: python3 tools/ci/kicad_ci.py setup
-      - name: Generate outputs
-        run: |
-          label="${{ github.ref_type == 'tag' && github.ref_name || '' }}"
-          python3 tools/ci/kicad_ci.py outputs "${{ matrix.dir }}" \
-            --out "ci-out/outputs" --label "${label:-${GITHUB_SHA::7}}"
-      - uses: actions/upload-artifact@v7
-        with:
-          name: outputs-${{ matrix.slug }}
-          path: ci-out/outputs
-
   # Runs on every pipeline run. Base commit per trigger:
   #   pull_request      -> PR base
   #   push              -> previous tip of the branch (falls back to merge-base with the
   #                        default branch for new branches / force pushes)
-  #   tag               -> previous hw-* tag, else parent commit
   #   workflow_dispatch -> parent commit
   # Download the "visual-diff" artifact and open index.html (red = removed, green = added).
   visual-diff:
@@ -141,8 +112,6 @@ jobs:
           base=""
           if [ "$EVENT" = pull_request ]; then
             base="$PR_BASE"
-          elif [ "$GITHUB_REF_TYPE" = tag ]; then
-            base=$(git describe --tags --abbrev=0 --match 'hw-*' HEAD^ 2>/dev/null || true)
           elif [ "$EVENT" = push ] && [ "$BEFORE" != 0000000000000000000000000000000000000000 ] && exists "$BEFORE"; then
             base="$BEFORE"
           elif [ "$EVENT" = push ] && [ "$GITHUB_REF_NAME" != "$DEFAULT_BRANCH" ]; then
@@ -165,33 +134,3 @@ jobs:
         with:
           name: visual-diff
           path: ci-out/visual-diff
-
-  release:
-    name: Publish release
-    needs: [hygiene, check, outputs]
-    if: github.ref_type == 'tag' && startsWith(github.ref_name, 'hw-')
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/download-artifact@v8
-        with:
-          pattern: outputs-*
-          path: dist
-      - name: Package outputs
-        run: |
-          mkdir release
-          for dir in dist/outputs-*; do
-            slug="${dir#dist/outputs-}"
-            cp "$dir"/fab/*.zip release/
-            (cd "$dir" && zip -qr "$GITHUB_WORKSPACE/release/${slug}-${GITHUB_REF_NAME}-all-outputs.zip" .)
-          done
-          ls -l release
-      - name: Create GitHub release
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-        run: |
-          gh release create "$GITHUB_REF_NAME" release/* \
-            --title "$GITHUB_REF_NAME" --verify-tag \
-            --notes "Hardware outputs built by CI from ${GITHUB_SHA}. Gerber zips are ready to upload to a fab; the all-outputs zips also contain schematic/PCB PDFs, BOM, pick-and-place, STEP and renders."
