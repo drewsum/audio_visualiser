@@ -1,11 +1,11 @@
-# KiCad hardware CI: hygiene, ERC/DRC/library checks, fab outputs, tagged releases.
+# KiCad hardware CI: hygiene, ERC/DRC/library checks and visual diff.
+# Fab outputs and releases are manual: python3 tools/ci/kicad_ci.py outputs <project dir> --out <dir>
 # Behaviour per project is configured in hdw/ci-config.json; logic lives in tools/ci/kicad_ci.py.
 name: Hardware
 
 on:
   push:
     branches: ['**']
-    tags: ['hw-*']  # tag e.g. hw-dsp-rev_a-v1 to publish a release with fab outputs
     paths:
       - 'hdw/**'
       - 'tools/ci/**'
@@ -22,7 +22,7 @@ permissions:
 
 concurrency:
   group: hardware-${{ github.ref }}
-  cancel-in-progress: ${{ github.ref_type != 'tag' }}
+  cancel-in-progress: true
 
 defaults:
   run:
@@ -76,60 +76,61 @@ jobs:
           path: ci-out/reports
           if-no-files-found: ignore
 
-  outputs:
-    name: Fab outputs (${{ matrix.name }})
-    needs: discover
-    if: needs.discover.outputs.count != '0'
+  # Runs on every pipeline run. Base commit per trigger:
+  #   pull_request      -> PR base
+  #   push              -> previous tip of the branch (falls back to merge-base with the
+  #                        default branch for new branches / force pushes)
+  #   workflow_dispatch -> parent commit
+  # Download the "visual-diff" artifact and open index.html (red = removed, green = added).
+  visual-diff:
+    name: Visual diff
     runs-on: ubuntu-latest
     container:
-      image: kicad/kicad:10.0-full  # -full includes the stock 3D models for STEP/renders
+      image: kicad/kicad:10.0
       options: --user root
       credentials:  # authenticated pulls avoid Docker Hub's anonymous rate limit
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    strategy:
-      fail-fast: false
-      matrix: ${{ fromJSON(needs.discover.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v7
-      - name: Configure KiCad libraries
-        run: python3 tools/ci/kicad_ci.py setup
-      - name: Generate outputs
-        run: |
-          label="${{ github.ref_type == 'tag' && github.ref_name || '' }}"
-          python3 tools/ci/kicad_ci.py outputs "${{ matrix.dir }}" \
-            --out "ci-out/outputs" --label "${label:-${GITHUB_SHA::7}}"
-      - uses: actions/upload-artifact@v7
         with:
-          name: outputs-${{ matrix.slug }}
-          path: ci-out/outputs
-
-  release:
-    name: Publish release
-    needs: [hygiene, check, outputs]
-    if: github.ref_type == 'tag' && startsWith(github.ref_name, 'hw-')
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/download-artifact@v8
-        with:
-          pattern: outputs-*
-          path: dist
-      - name: Package outputs
+          fetch-depth: 0
+      - name: Install image tools
         run: |
-          mkdir release
-          for dir in dist/outputs-*; do
-            slug="${dir#dist/outputs-}"
-            cp "$dir"/fab/*.zip release/
-            (cd "$dir" && zip -qr "$GITHUB_WORKSPACE/release/${slug}-${GITHUB_REF_NAME}-all-outputs.zip" .)
-          done
-          ls -l release
-      - name: Create GitHub release
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          apt-get update -qq
+          apt-get install -y -qq --no-install-recommends librsvg2-bin imagemagick
+      - name: Pick base commit
+        id: base
         env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
+          EVENT: ${{ github.event_name }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          BEFORE: ${{ github.event.before }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
-          gh release create "$GITHUB_REF_NAME" release/* \
-            --title "$GITHUB_REF_NAME" --verify-tag \
-            --notes "Hardware outputs built by CI from ${GITHUB_SHA}. Gerber zips are ready to upload to a fab; the all-outputs zips also contain schematic/PCB PDFs, BOM, pick-and-place, STEP and renders."
+          exists() { [ -n "$1" ] && git cat-file -e "$1^{commit}" 2>/dev/null; }
+          base=""
+          if [ "$EVENT" = pull_request ]; then
+            base="$PR_BASE"
+          elif [ "$EVENT" = push ] && [ "$BEFORE" != 0000000000000000000000000000000000000000 ] && exists "$BEFORE"; then
+            base="$BEFORE"
+          elif [ "$EVENT" = push ] && [ "$GITHUB_REF_NAME" != "$DEFAULT_BRANCH" ]; then
+            base=$(git merge-base HEAD "origin/$DEFAULT_BRANCH" 2>/dev/null || true)
+          fi
+          # Last resort: the parent commit (none exists for a root commit).
+          if ! exists "$base" || [ "$(git rev-parse "$base")" = "$(git rev-parse HEAD)" ]; then
+            base=$(git rev-parse -q --verify HEAD^ || true)
+          fi
+          echo "sha=$base" >> "$GITHUB_OUTPUT"
+          echo "Comparing ${base:-<nothing>} -> $(git rev-parse HEAD)"
+      - name: Render diff
+        if: steps.base.outputs.sha != ''
+        run: python3 tools/ci/kicad_ci.py diff --base "${{ steps.base.outputs.sha }}" --out ci-out/visual-diff
+      - name: No base commit
+        if: steps.base.outputs.sha == ''
+        run: echo "## Visual diff"$'\n\n'"No earlier commit to compare against." >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
+        if: steps.base.outputs.sha != ''
+        with:
+          name: visual-diff
+          path: ci-out/visual-diff
