@@ -81,7 +81,8 @@ jobs:
   #   push              -> previous tip of the branch (falls back to merge-base with the
   #                        default branch for new branches / force pushes)
   #   workflow_dispatch -> parent commit
-  # Download the "visual-diff" artifact and open index.html (red = removed, green = added).
+  # The result is uploaded unzipped as visual-diff.html (images inlined), so clicking the
+  # artifact or the link in the run summary opens it in the browser (red = removed, green = added).
   visual-diff:
     name: Visual diff
     runs-on: ubuntu-latest
@@ -129,8 +130,13 @@ jobs:
       - name: No base commit
         if: steps.base.outputs.sha == ''
         run: echo "## Visual diff"$'\n\n'"No earlier commit to compare against." >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v7
+      - name: Upload diff page
+        id: upload
         if: steps.base.outputs.sha != ''
+        uses: actions/upload-artifact@v7
         with:
-          name: visual-diff
-          path: ci-out/visual-diff
+          path: ci-out/visual-diff/visual-diff.html
+          archive: false  # single unzipped file: opens straight in the browser
+      - name: Link diff page in summary
+        if: steps.upload.outputs.artifact-url != ''
+        run: echo "**[Open the visual diff](${{ steps.upload.outputs.artifact-url }})**" >> "$GITHUB_STEP_SUMMARY"

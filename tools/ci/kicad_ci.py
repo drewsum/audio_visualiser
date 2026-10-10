@@ -13,6 +13,7 @@ Everything is driven by hdw/ci-config.json. Run with --help for options.
 """
 
 import argparse
+import base64
 import fnmatch
 import html
 import json
@@ -808,10 +809,10 @@ def cmd_diff(args):
                 for g in work.glob("*.gray.png"):
                     g.unlink()
 
-        write_diff_index(out, report, base, touched)
+        page = write_diff_index(out, report, base, touched)
         lines = ["## Visual diff", "",
-                 f"Compared against `{base[:10]}`. Download the **visual-diff** artifact and open "
-                 "`index.html` (red = removed, green = added).", ""]
+                 f"Compared against `{base[:10]}`. Open the **{page.name}** artifact to view it in the "
+                 "browser (red = removed, green = added).", ""]
         if not touched:
             lines.append("No schematic or PCB files changed.")
         elif not report:
@@ -827,20 +828,31 @@ def cmd_diff(args):
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+DIFF_PAGE = "visual-diff.html"
+
+
 def write_diff_index(out, report, base, touched):
+    """Write one self-contained page (images inlined as data URIs) so CI can upload it
+    unzipped and GitHub opens it straight in the browser. Returns the page path."""
+    def data_uri(rel_path):
+        data = base64.b64encode((out / rel_path).read_bytes()).decode("ascii")
+        return f"data:image/png;base64,{data}"
+
+    def img(src, label):
+        if not src:
+            return f"<figure><div class='none'>(not present)</div><figcaption>{label}</figcaption></figure>"
+        return (f"<figure><img loading='lazy' decoding='async' alt='{html.escape(label)}' "
+                f"src='{data_uri(src)}'><figcaption>{label}</figcaption></figure>")
+
     rows = []
     for p, key, n, (old, new, diff) in report:
-        def img(src, label):
-            if not src:
-                return f"<figure><div class='none'>(not present)</div><figcaption>{label}</figcaption></figure>"
-            return (f"<figure><a href='{html.escape(src)}'><img loading='lazy' src='{html.escape(src)}'></a>"
-                    f"<figcaption>{label}</figcaption></figure>")
         rows.append(f"<section><h2>{html.escape(p['name'])} &mdash; {html.escape(key)}"
                     f" <small>({n:,} px changed)</small></h2><div class='row'>"
                     + img(diff, "diff (red removed, green added)") + img(old, "base") + img(new, "this commit")
                     + "</div></section>")
     body = "\n".join(rows) or "<p>No visible changes.</p>"
-    (out / "index.html").write_text(f"""<!doctype html>
+    page = out / DIFF_PAGE
+    page.write_text(f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KiCad Visual Diff</title>
 <style>
@@ -848,14 +860,27 @@ def write_diff_index(out, report, base, touched):
  section{{background:#fff;border:1px solid #ddd;border-radius:6px;padding:12px;margin:0 0 16px}}
  h2{{font-size:16px;margin:0 0 8px}} small{{color:#777;font-weight:normal}}
  .row{{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px}}
- figure{{margin:0}} img{{width:100%;border:1px solid #ccc;background:#fff}}
+ figure{{margin:0}} img{{width:100%;border:1px solid #ccc;background:#fff;cursor:zoom-in}}
  figcaption{{color:#666;font-size:12px}} .none{{padding:40px;text-align:center;color:#999;border:1px dashed #ccc}}
+ #zoom{{display:none;position:fixed;inset:0;overflow:auto;background:rgba(0,0,0,.85);cursor:zoom-out;z-index:1}}
+ #zoom.on{{display:block}} #zoom img{{width:auto;max-width:none;border:0;cursor:zoom-out}}
  @media (max-width:800px){{.row{{grid-template-columns:1fr}}}}
 </style></head><body>
-<h1>KiCad visual diff</h1><p>Base <code>{html.escape(base)}</code>; projects touched: {html.escape(', '.join(touched) or 'none')}</p>
+<h1>KiCad visual diff</h1><p>Base <code>{html.escape(base)}</code>; projects touched: {html.escape(', '.join(touched) or 'none')}.
+Click an image to view it at full size.</p>
 {body}
+<div id="zoom"><img alt=""></div>
+<script>
+ const zoom = document.getElementById("zoom"), big = zoom.querySelector("img");
+ document.querySelectorAll("figure img").forEach(i => i.addEventListener("click", () => {{
+   big.src = i.src; zoom.classList.add("on"); zoom.scrollTo(0, 0);
+ }}));
+ zoom.addEventListener("click", () => zoom.classList.remove("on"));
+ document.addEventListener("keydown", e => {{ if (e.key === "Escape") zoom.classList.remove("on"); }});
+</script>
 </body></html>
 """, encoding="utf-8")
+    return page
 
 
 # --------------------------------------------------------------------------- main

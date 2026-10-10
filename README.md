@@ -12,7 +12,7 @@ GitHub Actions checks every KiCad project under `hdw/` automatically (`.github/w
 |---|---|
 | Repo hygiene | Fails on committed backups, lock files or caches, and on files not saved by KiCad 10.0. Checks that each project's schematic PDF (`<project>.pdf`) is committed and was re-plotted after the last schematic change. |
 | ERC / DRC / libraries | Runs ERC, and DRC with schematic parity. Also checks that every symbol and footprint library resolves on a clean machine (project lib tables must use `${KIPRJMOD}`). For projects with a project library, checks that every placed symbol, footprint and 3D model comes from it. |
-| Visual diff | On every run, renders changed schematic pages and PCB layers against the previous commit or PR base (red = removed, green = added). |
+| Visual diff | On every run, renders changed schematic pages and PCB layers against the previous commit or PR base (red = removed, green = added). The result is a single `visual-diff.html` artifact that opens directly in the browser; the run summary links to it. |
 
 Per-project settings live in `hdw/ci-config.json`. Each of `erc`, `drc`, `libraries`, `project_lib` and `pdf` is `enforce` (fail the build), `report` (annotate only) or `off`. `project_lib` also needs `project_lib_dir` (relative to the project folder, e.g. `"../../../project_lib"`): the lib tables may only point into that folder, every placed symbol and board footprint (and every symbol's Footprint field) must exist in those libraries, and every 3D model path must resolve to a file inside it. ERC/DRC items excluded in KiCad are not counted. Personal libraries that aren't in this repo are listed under `external_libraries` and cloned by CI under the same nicknames.
 
