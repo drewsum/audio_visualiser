@@ -620,19 +620,19 @@
         "pattern": "GND*"
       },
       {
-        "netclass": "90_ohm_dp_outer",
+        "netclass": "50_ohm_se_outer",
         "pattern": "*SDO*"
       },
       {
-        "netclass": "90_ohm_dp_outer",
+        "netclass": "50_ohm_se_outer",
         "pattern": "*SCK*"
       },
       {
-        "netclass": "90_ohm_dp_outer",
+        "netclass": "50_ohm_se_outer",
         "pattern": "*BLANK*"
       },
       {
-        "netclass": "90_ohm_dp_outer",
+        "netclass": "50_ohm_se_outer",
         "pattern": "*LAT*"
       },
       {
@@ -652,8 +652,24 @@
         "pattern": "*PGOOD*"
       },
       {
-        "netclass": "90_ohm_dp_outer",
+        "netclass": "50_ohm_se_outer",
         "pattern": "*ICSP*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "CHGND"
+      },
+      {
+        "netclass": "50_ohm_se_outer",
+        "pattern": "*TX*"
+      },
+      {
+        "netclass": "50_ohm_se_outer",
+        "pattern": "*RX*"
+      },
+      {
+        "netclass": "90_ohm_dp_outer",
+        "pattern": "*BRIDGE_D*"
       }
     ]
   },
@@ -932,7 +948,7 @@
         "uuid": "97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR830,R808",
     "variants": [
       {
         "name": "Default"
