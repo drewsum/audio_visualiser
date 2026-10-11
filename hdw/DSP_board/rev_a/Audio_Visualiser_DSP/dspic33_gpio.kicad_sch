@@ -3403,6 +3403,12 @@
 		(color 0 0 0 0)
 		(uuid "d50de8d2-a171-4e78-872b-dfa188dd59af")
 	)
+	(junction
+		(at 190.5 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dffdf105-5276-49db-92cb-86e2ae46fcc7")
+	)
 	(no_connect
 		(at 133.35 30.48)
 		(uuid "e11e5eb6-556e-4223-a763-b892c623c1f7")
@@ -3429,6 +3435,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 27.94) (xy 190.5 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "131979eb-c891-404f-ae16-4134b36491ff")
+	)
+	(wire
+		(pts
 			(xy 92.71 140.97) (xy 123.19 140.97)
 		)
 		(stroke
@@ -3436,6 +3452,26 @@
 			(type default)
 		)
 		(uuid "1d585ae6-1af9-42db-8ec8-fa87698e8b66")
+	)
+	(wire
+		(pts
+			(xy 190.5 27.94) (xy 196.85 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e7f23e0-6d48-46ca-b5ae-e592a427a8a0")
+	)
+	(wire
+		(pts
+			(xy 184.15 27.94) (xy 190.5 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff9c01f-26d0-4e39-8982-4641a7bd6073")
 	)
 	(wire
 		(pts
@@ -3691,7 +3727,7 @@
 	)
 	(global_label "DSPIC_AUDIO_CHAIN_ENABLE"
 		(shape input)
-		(at 196.85 27.94 180)
+		(at 184.15 27.94 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3701,7 +3737,7 @@
 		)
 		(uuid "15e4c226-1bbd-4b46-8cda-f35e16f0da98")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 167.0737 27.94 0)
+			(at 154.3737 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6029,6 +6065,138 @@
 		)
 	)
 	(symbol
+		(lib_id "project_lib:R_Custom")
+		(at 190.5 36.83 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2cdf301c-4891-498b-895a-ad5d02b3a772")
+		(property "Reference" "R808"
+			(at 192.024 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 190.5 36.83 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "project_lib:R_0402"
+			(at 190.5 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "display_footprint" "0402"
+			(at 185.674 34.798 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 185.928 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Wattage" "1/16W"
+			(at 185.166 38.608 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "311-10.0KLRCT-ND"
+			(at 182.88 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 190.5 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f274b87b-7e74-487c-a02c-baca8ff6bc35")
+		)
+		(pin "2"
+			(uuid "98a13b20-baef-4456-86f8-a3184c3b20bf")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "R808")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "project_lib:+3.3V")
 		(at 204.47 40.64 0)
 		(unit 1)
@@ -6581,6 +6749,82 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "DOC801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "project_lib:GND")
+		(at 190.5 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "64c1aeda-59e2-46ca-9821-aa80a033d790")
+		(property "Reference" "#PWR0830"
+			(at 190.5 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8bb3f16-bcd3-4526-9ff2-89edc39e75d3")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "#PWR0830")
 					(unit 1)
 				)
 			)
