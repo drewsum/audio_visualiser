@@ -20,6 +20,85 @@
       },
       "ground_sense": null,
       "phases": []
+    },
+    {
+      "name": "+3.3V",
+      "output": {
+        "ref": "L401",
+        "net": "Net-(C406-Pad1)",
+        "pins": []
+      },
+      "voltage": 3.3,
+      "kind": "smps",
+      "efficiency": 0.9,
+      "quiescent_a": 0.0,
+      "input": {
+        "ref": "U402",
+        "net": "+12V",
+        "pins": []
+      },
+      "sense": {
+        "ref": "R409",
+        "net": "+3.3V",
+        "pins": []
+      },
+      "ground": {
+        "ref": "U402",
+        "net": "GND",
+        "pins": []
+      },
+      "ground_sense": {
+        "ref": "R410",
+        "net": "GND",
+        "pins": []
+      },
+      "phases": []
+    },
+    {
+      "name": "+5V_USB",
+      "output": {
+        "ref": "J901",
+        "net": "Net-(FB901-Pad2)",
+        "pins": []
+      },
+      "voltage": 5.0,
+      "kind": "source",
+      "efficiency": 0.9,
+      "quiescent_a": 0.0,
+      "input": null,
+      "sense": null,
+      "ground": {
+        "ref": "J901",
+        "net": "GND",
+        "pins": []
+      },
+      "ground_sense": null,
+      "phases": []
+    },
+    {
+      "name": "+3.3V_USB",
+      "output": {
+        "ref": "U901",
+        "net": "+3.3V_USB",
+        "pins": []
+      },
+      "voltage": 3.3,
+      "kind": "ldo",
+      "efficiency": 0.9,
+      "quiescent_a": 0.0,
+      "input": {
+        "ref": "U901",
+        "net": "+5V_USB",
+        "pins": []
+      },
+      "sense": null,
+      "ground": {
+        "ref": "U901",
+        "net": "GND",
+        "pins": []
+      },
+      "ground_sense": null,
+      "phases": []
     }
   ],
   "loads": [
@@ -1250,6 +1329,90 @@
         "pins": []
       },
       "resistance": 0.01
+    },
+    {
+      "name": "R406",
+      "side_a": {
+        "ref": "R406",
+        "net": "Net-(C406-Pad1)",
+        "pins": []
+      },
+      "side_b": {
+        "ref": "R406",
+        "net": "+3.3V",
+        "pins": []
+      },
+      "resistance": 0.02
+    },
+    {
+      "name": "R610",
+      "side_a": {
+        "ref": "R610",
+        "net": "+3.3V",
+        "pins": []
+      },
+      "side_b": {
+        "ref": "R610",
+        "net": "Net-(X601-Vdd)",
+        "pins": []
+      },
+      "resistance": 10.0
+    },
+    {
+      "name": "FB701",
+      "side_a": {
+        "ref": "FB701",
+        "net": "+3.3V",
+        "pins": []
+      },
+      "side_b": {
+        "ref": "FB701",
+        "net": "+3.3VA_DSP",
+        "pins": []
+      },
+      "resistance": 0.14
+    },
+    {
+      "name": "FB702",
+      "side_a": {
+        "ref": "FB702",
+        "net": "GNDA_DSP",
+        "pins": []
+      },
+      "side_b": {
+        "ref": "FB702",
+        "net": "GND",
+        "pins": []
+      },
+      "resistance": 0.14
+    },
+    {
+      "name": "FB901",
+      "side_a": {
+        "ref": "FB901",
+        "net": "Net-(FB901-Pad2)",
+        "pins": []
+      },
+      "side_b": {
+        "ref": "FB901",
+        "net": "Net-(U904-EN)",
+        "pins": []
+      },
+      "resistance": 0.14
+    },
+    {
+      "name": "U904",
+      "side_a": {
+        "ref": "U904",
+        "net": "Net-(U904-EN)",
+        "pins": []
+      },
+      "side_b": {
+        "ref": "U904",
+        "net": "+5V_USB",
+        "pins": []
+      },
+      "resistance": 0.097
     }
   ],
   "settings": {
