@@ -54,6 +54,1172 @@
       },
       "tolerance_pct": 5.0,
       "groups": []
+    },
+    {
+      "name": "U701 dsPIC VDD",
+      "supply": {
+        "ref": "U701",
+        "net": "+3.3V",
+        "pins": [
+          "15",
+          "28",
+          "36",
+          "41",
+          "46"
+        ]
+      },
+      "current": 0.0346,
+      "ground": {
+        "ref": "U701",
+        "net": "GND",
+        "pins": [
+          "14",
+          "27",
+          "35",
+          "43",
+          "45",
+          "49"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U701 dsPIC AVDD",
+      "supply": {
+        "ref": "U701",
+        "net": "+3.3VA_DSP",
+        "pins": [
+          "7"
+        ]
+      },
+      "current": 0.0074,
+      "ground": {
+        "ref": "U701",
+        "net": "GNDA_DSP",
+        "pins": [
+          "6"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "X601 oscillator",
+      "supply": {
+        "ref": "X601",
+        "net": "Net-(X601-Vdd)",
+        "pins": [
+          "4"
+        ]
+      },
+      "current": 0.007,
+      "ground": {
+        "ref": "X601",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1301 MCP6N11",
+      "supply": {
+        "ref": "U1301",
+        "net": "+3.3V",
+        "pins": [
+          "7"
+        ]
+      },
+      "current": 0.0011,
+      "ground": {
+        "ref": "U1301",
+        "net": "GND",
+        "pins": [
+          "4",
+          "9"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1302 MCP6N11",
+      "supply": {
+        "ref": "U1302",
+        "net": "+3.3V",
+        "pins": [
+          "7"
+        ]
+      },
+      "current": 0.0011,
+      "ground": {
+        "ref": "U1302",
+        "net": "GND",
+        "pins": [
+          "4",
+          "9"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1401 MCP6N11",
+      "supply": {
+        "ref": "U1401",
+        "net": "+3.3V",
+        "pins": [
+          "7"
+        ]
+      },
+      "current": 0.0011,
+      "ground": {
+        "ref": "U1401",
+        "net": "GND",
+        "pins": [
+          "4",
+          "9"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1402 MCP6N11",
+      "supply": {
+        "ref": "U1402",
+        "net": "+3.3V",
+        "pins": [
+          "7"
+        ]
+      },
+      "current": 0.0011,
+      "ground": {
+        "ref": "U1402",
+        "net": "GND",
+        "pins": [
+          "4",
+          "9"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1502 MCP6024",
+      "supply": {
+        "ref": "U1502",
+        "net": "+3.3V",
+        "pins": [
+          "4"
+        ]
+      },
+      "current": 0.0054,
+      "ground": {
+        "ref": "U1502",
+        "net": "GND",
+        "pins": [
+          "11"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1601 MCP6024",
+      "supply": {
+        "ref": "U1601",
+        "net": "+3.3V",
+        "pins": [
+          "4"
+        ]
+      },
+      "current": 0.0054,
+      "ground": {
+        "ref": "U1601",
+        "net": "GND",
+        "pins": [
+          "11"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1701 MCP6024",
+      "supply": {
+        "ref": "U1701",
+        "net": "+3.3V",
+        "pins": [
+          "4"
+        ]
+      },
+      "current": 0.0054,
+      "ground": {
+        "ref": "U1701",
+        "net": "GND",
+        "pins": [
+          "11"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1501 TS3A24159",
+      "supply": {
+        "ref": "U1501",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 5e-05,
+      "ground": {
+        "ref": "U1501",
+        "net": "GND",
+        "pins": [
+          "6",
+          "11"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1503 MCP4451",
+      "supply": {
+        "ref": "U1503",
+        "net": "+3.3V",
+        "pins": [
+          "15"
+        ]
+      },
+      "current": 0.0006,
+      "ground": {
+        "ref": "U1503",
+        "net": "GND",
+        "pins": [
+          "2",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "14",
+          "21"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1702 REF35",
+      "supply": {
+        "ref": "U1702",
+        "net": "+3.3V",
+        "pins": [
+          "4"
+        ]
+      },
+      "current": 3e-06,
+      "ground": {
+        "ref": "U1702",
+        "net": "GND",
+        "pins": [
+          "1",
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U801 PCA9536",
+      "supply": {
+        "ref": "U801",
+        "net": "+3.3V",
+        "pins": [
+          "8"
+        ]
+      },
+      "current": 0.00029,
+      "ground": {
+        "ref": "U801",
+        "net": "GND",
+        "pins": [
+          "4"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U803 TCA9801",
+      "supply": {
+        "ref": "U803",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "8"
+        ]
+      },
+      "current": 0.00275,
+      "ground": {
+        "ref": "U803",
+        "net": "GND",
+        "pins": [
+          "4"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1807 TCA9801",
+      "supply": {
+        "ref": "U1807",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "8"
+        ]
+      },
+      "current": 0.00275,
+      "ground": {
+        "ref": "U1807",
+        "net": "GND",
+        "pins": [
+          "4"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1809 TCA9801",
+      "supply": {
+        "ref": "U1809",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "8"
+        ]
+      },
+      "current": 0.00275,
+      "ground": {
+        "ref": "U1809",
+        "net": "GND",
+        "pins": [
+          "4"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1803 74VHC541",
+      "supply": {
+        "ref": "U1803",
+        "net": "+3.3V",
+        "pins": [
+          "20"
+        ]
+      },
+      "current": 0.001,
+      "ground": {
+        "ref": "U1803",
+        "net": "GND",
+        "pins": [
+          "10",
+          "21"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1804 74VHC541",
+      "supply": {
+        "ref": "U1804",
+        "net": "+3.3V",
+        "pins": [
+          "20"
+        ]
+      },
+      "current": 0.001,
+      "ground": {
+        "ref": "U1804",
+        "net": "GND",
+        "pins": [
+          "10",
+          "21"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U903 TXB0102 VCCB",
+      "supply": {
+        "ref": "U903",
+        "net": "+3.3V",
+        "pins": [
+          "7"
+        ]
+      },
+      "current": 4e-06,
+      "ground": {
+        "ref": "U903",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "J1903 encoder module",
+      "supply": {
+        "ref": "J1903",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.045,
+      "ground": {
+        "ref": "J1903",
+        "net": "GND",
+        "pins": [
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U401 74LVC1G97",
+      "supply": {
+        "ref": "U401",
+        "net": "+3.3V",
+        "pins": [
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U401",
+        "net": "GND",
+        "pins": [
+          "1",
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U601 74LVC1G97",
+      "supply": {
+        "ref": "U601",
+        "net": "+3.3V",
+        "pins": [
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U601",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3",
+          "6"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U802 74LVC1G97",
+      "supply": {
+        "ref": "U802",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U802",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U805 74LVC1G97",
+      "supply": {
+        "ref": "U805",
+        "net": "+3.3V",
+        "pins": [
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U805",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3",
+          "6"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1101 74LVC1G97",
+      "supply": {
+        "ref": "U1101",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1101",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1102 74LVC1G97",
+      "supply": {
+        "ref": "U1102",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1102",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1103 74LVC1G97",
+      "supply": {
+        "ref": "U1103",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1103",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1104 74LVC1G97",
+      "supply": {
+        "ref": "U1104",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1104",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1105 74LVC1G97",
+      "supply": {
+        "ref": "U1105",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1105",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1106 74LVC1G97",
+      "supply": {
+        "ref": "U1106",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1106",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1201 74LVC1G97",
+      "supply": {
+        "ref": "U1201",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1201",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1202 74LVC1G97",
+      "supply": {
+        "ref": "U1202",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1202",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1203 74LVC1G97",
+      "supply": {
+        "ref": "U1203",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1203",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1801 74LVC1G97",
+      "supply": {
+        "ref": "U1801",
+        "net": "+3.3V",
+        "pins": [
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1801",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1802 74LVC1G97",
+      "supply": {
+        "ref": "U1802",
+        "net": "+3.3V",
+        "pins": [
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1802",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1805 74LVC1G97",
+      "supply": {
+        "ref": "U1805",
+        "net": "+3.3V",
+        "pins": [
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1805",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1806 74LVC1G97",
+      "supply": {
+        "ref": "U1806",
+        "net": "+3.3V",
+        "pins": [
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1806",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1808 74LVC1G97",
+      "supply": {
+        "ref": "U1808",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1808",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U1902 74LVC1G97",
+      "supply": {
+        "ref": "U1902",
+        "net": "+3.3V",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U1902",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "R1102 LED",
+      "supply": {
+        "ref": "R1102",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U1101",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R1103 LED",
+      "supply": {
+        "ref": "R1103",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U1102",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R1104 LED",
+      "supply": {
+        "ref": "R1104",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U1103",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R1105 LED",
+      "supply": {
+        "ref": "R1105",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U1104",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R1106 LED",
+      "supply": {
+        "ref": "R1106",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U1105",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R1107 LED",
+      "supply": {
+        "ref": "R1107",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U1106",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R1203 LED",
+      "supply": {
+        "ref": "R1203",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U1201",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R1204 LED",
+      "supply": {
+        "ref": "R1204",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U1202",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R1206 LED",
+      "supply": {
+        "ref": "R1206",
+        "net": "+3.3V",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U1203",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "U902 74LVC1G97",
+      "supply": {
+        "ref": "U902",
+        "net": "+3.3V_USB",
+        "pins": [
+          "1",
+          "5"
+        ]
+      },
+      "current": 1e-05,
+      "ground": {
+        "ref": "U902",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "U903 TXB0102 VCCA",
+      "supply": {
+        "ref": "U903",
+        "net": "+3.3V_USB",
+        "pins": [
+          "3"
+        ]
+      },
+      "current": 4e-06,
+      "ground": {
+        "ref": "U903",
+        "net": "GND",
+        "pins": [
+          "2"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
+    },
+    {
+      "name": "R901 LED",
+      "supply": {
+        "ref": "R901",
+        "net": "+3.3V_USB",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U901",
+        "net": "GND",
+        "pins": [
+          "2",
+          "25"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R902 LED",
+      "supply": {
+        "ref": "R902",
+        "net": "+3.3V_USB",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U901",
+        "net": "GND",
+        "pins": [
+          "2",
+          "25"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "R906 LED",
+      "supply": {
+        "ref": "R906",
+        "net": "+3.3V_USB",
+        "pins": [
+          "1"
+        ]
+      },
+      "current": 0.0013,
+      "ground": {
+        "ref": "U902",
+        "net": "GND",
+        "pins": [
+          "2",
+          "3"
+        ]
+      },
+      "tolerance_pct": null,
+      "groups": []
+    },
+    {
+      "name": "U901 CP2104",
+      "supply": {
+        "ref": "U901",
+        "net": "+5V_USB",
+        "pins": [
+          "7",
+          "8"
+        ]
+      },
+      "current": 0.0187,
+      "ground": {
+        "ref": "U901",
+        "net": "GND",
+        "pins": [
+          "2",
+          "25"
+        ]
+      },
+      "tolerance_pct": 3.0,
+      "groups": []
     }
   ],
   "links": [
