@@ -1,0 +1,114 @@
+{
+  "vrms": [
+    {
+      "name": "12V",
+      "output": {
+        "ref": "J201",
+        "net": "+12Vin",
+        "pins": []
+      },
+      "voltage": 12.0,
+      "kind": "source",
+      "efficiency": 0.9,
+      "quiescent_a": 0.0,
+      "input": null,
+      "sense": null,
+      "ground": {
+        "ref": "J201",
+        "net": "GND",
+        "pins": []
+      },
+      "ground_sense": null,
+      "phases": []
+    }
+  ],
+  "loads": [
+    {
+      "name": "J2101",
+      "supply": {
+        "ref": "J2101",
+        "net": "+12V",
+        "pins": []
+      },
+      "current": 1.944,
+      "ground": {
+        "ref": "J2101",
+        "net": "GND",
+        "pins": []
+      },
+      "tolerance_pct": 5.0,
+      "groups": []
+    },
+    {
+      "name": "J2102",
+      "supply": {
+        "ref": "J2102",
+        "net": "+12V",
+        "pins": []
+      },
+      "current": 1.944,
+      "ground": {
+        "ref": "J2102",
+        "net": "GND",
+        "pins": []
+      },
+      "tolerance_pct": 5.0,
+      "groups": []
+    }
+  ],
+  "links": [
+    {
+      "name": "U201",
+      "side_a": {
+        "ref": "U201",
+        "net": "+12Vin",
+        "pins": []
+      },
+      "side_b": {
+        "ref": "U201",
+        "net": "Net-(U201-OUT)",
+        "pins": []
+      },
+      "resistance": 0.0282
+    },
+    {
+      "name": "R207",
+      "side_a": {
+        "ref": "R207",
+        "net": "Net-(U201-OUT)",
+        "pins": []
+      },
+      "side_b": {
+        "ref": "R207",
+        "net": "+12V",
+        "pins": []
+      },
+      "resistance": 0.01
+    }
+  ],
+  "settings": {
+    "max_edge_mm": 0.5,
+    "min_angle_deg": 28.0,
+    "simplify_mm": 0.003,
+    "circle_quad_segs": 4,
+    "min_edge_mm": 0.02,
+    "grading": 0.2,
+    "plating_mm": 0.025,
+    "rho_ohm_mm": 1.724e-05,
+    "tcr_per_c": 0.00393,
+    "rho_by_layer": {},
+    "tol": 1e-10,
+    "max_iter": 2000
+  },
+  "via_current_limit_a": 0.02,
+  "thermal": {
+    "enabled": false,
+    "ambient_c": 25.0,
+    "iterations": 3,
+    "airflow_m_s": 0.0,
+    "grid_mm": 0.0,
+    "laminate_k_w_mk": 0.0
+  },
+  "html_report": false,
+  "format_version": 1
+}
