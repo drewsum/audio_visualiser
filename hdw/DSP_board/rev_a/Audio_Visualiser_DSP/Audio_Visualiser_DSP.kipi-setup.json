@@ -19,7 +19,8 @@
         "pins": []
       },
       "ground_sense": null,
-      "phases": []
+      "phases": [],
+      "current_limit_a": null
     },
     {
       "name": "+3.3V",
@@ -52,7 +53,8 @@
         "net": "GND",
         "pins": []
       },
-      "phases": []
+      "phases": [],
+      "current_limit_a": 1.0
     },
     {
       "name": "+5V_USB",
@@ -73,7 +75,8 @@
         "pins": []
       },
       "ground_sense": null,
-      "phases": []
+      "phases": [],
+      "current_limit_a": null
     },
     {
       "name": "+3.3V_USB",
@@ -98,7 +101,8 @@
         "pins": []
       },
       "ground_sense": null,
-      "phases": []
+      "phases": [],
+      "current_limit_a": null
     }
   ],
   "loads": [
@@ -1411,12 +1415,26 @@
   "thermal": {
     "enabled": false,
     "ambient_c": 25.0,
-    "iterations": 3,
+    "iterations": 1,
     "airflow_m_s": 0.0,
     "grid_mm": 0.0,
     "laminate_k_w_mk": 0.0
   },
   "html_report": false,
-  "excluded_nets": [],
+  "nets": [
+    "+12V",
+    "+12Vin",
+    "+3.3V",
+    "+3.3V_USB",
+    "+5V_USB",
+    "Net-(C406-Pad1)",
+    "Net-(U201-OUT)",
+    "GND",
+    "GNDA_DSP",
+    "+3.3VA_DSP",
+    "Net-(FB901-Pad2)",
+    "Net-(U904-EN)",
+    "Net-(X601-Vdd)"
+  ],
   "format_version": 1
 }
