@@ -186296,6 +186296,67 @@
 		)
 	)
 	(zone
+		(layers "F.Cu" "B.Cu" "In2.Cu" "In3.Cu")
+		(uuid "068bf815-6b63-4e50-919f-279d04c8e36d")
+		(hatch edge 0.5)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.127)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 32.385 52.1208) (xy 41.5036 52.1208) (xy 41.5036 53.721) (xy 32.385 53.721)
+			)
+		)
+	)
+	(zone
+		(layers "F.Cu" "B.Cu" "In3.Cu")
+		(uuid "128050ec-f272-43d4-82dd-50c81ed00ef1")
+		(hatch edge 0.5)
+		(connect_pads yes
+			(clearance 0)
+		)
+		(min_thickness 0.127)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 34.2646 41.8846) (xy 37.465 41.8846) (xy 37.465 37.719) (xy 39.497 37.719) (xy 39.497 31.6738)
+				(xy 34.2646 31.6738)
+			)
+		)
+	)
+	(zone
 		(net "+12V")
 		(layer "B.Cu")
 		(uuid "2872ae91-d4d4-4f1d-a5f6-0cc922ac5ede")
