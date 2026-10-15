@@ -20,7 +20,11 @@
       },
       "ground_sense": null,
       "phases": [],
-      "current_limit_a": null
+      "current_limit_a": 5.0,
+      "dropout_v": 0.0,
+      "vin_min": null,
+      "vin_max": null,
+      "bandwidth_khz": null
     },
     {
       "name": "+3.3V",
@@ -54,7 +58,11 @@
         "pins": []
       },
       "phases": [],
-      "current_limit_a": 1.0
+      "current_limit_a": 1.0,
+      "dropout_v": 0.0,
+      "vin_min": 10.8,
+      "vin_max": 13.2,
+      "bandwidth_khz": 50.0
     },
     {
       "name": "+5V_USB",
@@ -76,7 +84,11 @@
       },
       "ground_sense": null,
       "phases": [],
-      "current_limit_a": null
+      "current_limit_a": null,
+      "dropout_v": 0.0,
+      "vin_min": null,
+      "vin_max": null,
+      "bandwidth_khz": null
     },
     {
       "name": "+3.3V_USB",
@@ -102,7 +114,11 @@
       },
       "ground_sense": null,
       "phases": [],
-      "current_limit_a": null
+      "current_limit_a": null,
+      "dropout_v": 0.0,
+      "vin_min": null,
+      "vin_max": null,
+      "bandwidth_khz": null
     }
   ],
   "loads": [
@@ -1296,7 +1312,8 @@
         "net": "Net-(U201-OUT)",
         "pins": []
       },
-      "resistance": 0.0282
+      "resistance": 0.0282,
+      "esl_h": null
     },
     {
       "name": "R207",
@@ -1310,7 +1327,8 @@
         "net": "+12V",
         "pins": []
       },
-      "resistance": 0.01
+      "resistance": 0.01,
+      "esl_h": null
     },
     {
       "name": "R406",
@@ -1324,7 +1342,8 @@
         "net": "+3.3V",
         "pins": []
       },
-      "resistance": 0.02
+      "resistance": 0.02,
+      "esl_h": null
     },
     {
       "name": "R610",
@@ -1338,7 +1357,8 @@
         "net": "Net-(X601-Vdd)",
         "pins": []
       },
-      "resistance": 10.0
+      "resistance": 10.0,
+      "esl_h": null
     },
     {
       "name": "FB701",
@@ -1352,7 +1372,8 @@
         "net": "+3.3VA_DSP",
         "pins": []
       },
-      "resistance": 0.14
+      "resistance": 0.14,
+      "esl_h": null
     },
     {
       "name": "FB702",
@@ -1366,7 +1387,8 @@
         "net": "GND",
         "pins": []
       },
-      "resistance": 0.14
+      "resistance": 0.14,
+      "esl_h": null
     },
     {
       "name": "FB901",
@@ -1380,7 +1402,8 @@
         "net": "Net-(U904-EN)",
         "pins": []
       },
-      "resistance": 0.14
+      "resistance": 0.14,
+      "esl_h": null
     },
     {
       "name": "U904",
@@ -1394,11 +1417,12 @@
         "net": "+5V_USB",
         "pins": []
       },
-      "resistance": 0.097
+      "resistance": 0.097,
+      "esl_h": null
     }
   ],
   "settings": {
-    "max_edge_mm": 0.5,
+    "max_edge_mm": 0.3,
     "min_angle_deg": 28.0,
     "simplify_mm": 0.003,
     "circle_quad_segs": 4,
@@ -1415,10 +1439,12 @@
   "thermal": {
     "enabled": false,
     "ambient_c": 25.0,
-    "iterations": 1,
+    "iterations": 3,
     "airflow_m_s": 0.0,
     "grid_mm": 0.0,
-    "laminate_k_w_mk": 0.0
+    "laminate_k_w_mk": 0.0,
+    "max_temp_c": null,
+    "max_rise_c": null
   },
   "html_report": false,
   "nets": [
@@ -1436,5 +1462,161 @@
     "Net-(U904-EN)",
     "Net-(X601-Vdd)"
   ],
+  "excluded_nets": [],
+  "caps": [
+    {
+      "name": "0.1uF",
+      "capacitance_f": 1e-07,
+      "esl_h": 5e-10,
+      "esr_ohm": 0.02,
+      "refs": [
+        "C202",
+        "C302",
+        "C303",
+        "C401",
+        "C405",
+        "C502",
+        "C503",
+        "C601",
+        "C602",
+        "C603",
+        "C701",
+        "C702",
+        "C703",
+        "C704",
+        "C706",
+        "C707",
+        "C708",
+        "C709",
+        "C712",
+        "C714",
+        "C801",
+        "C802",
+        "C803",
+        "C804",
+        "C805",
+        "C901",
+        "C904",
+        "C907",
+        "C908",
+        "C909",
+        "C1005",
+        "C1101",
+        "C1102",
+        "C1103",
+        "C1104",
+        "C1105",
+        "C1106",
+        "C1201",
+        "C1202",
+        "C1203",
+        "C1303",
+        "C1304",
+        "C1401",
+        "C1402",
+        "C1501",
+        "C1503",
+        "C1505",
+        "C1605",
+        "C1701",
+        "C1704",
+        "C1801",
+        "C1802",
+        "C1803",
+        "C1804",
+        "C1805",
+        "C1806",
+        "C1807",
+        "C1808",
+        "C1809",
+        "C1810",
+        "C1811",
+        "C1902",
+        "C1904",
+        "C1906"
+      ]
+    },
+    {
+      "name": "10uF",
+      "capacitance_f": 9.999999999999999e-06,
+      "esl_h": 1e-09,
+      "esr_ohm": 0.001,
+      "refs": [
+        "C402",
+        "C403",
+        "C406",
+        "C407",
+        "C604",
+        "C705",
+        "C710",
+        "C711",
+        "C716",
+        "C902",
+        "C903",
+        "C905",
+        "C910",
+        "C2101",
+        "C2102"
+      ]
+    },
+    {
+      "name": "1uF",
+      "capacitance_f": 1e-06,
+      "esl_h": 5e-10,
+      "esr_ohm": 0.005,
+      "refs": [
+        "C1305",
+        "C1306",
+        "C1403",
+        "C1404",
+        "C1502",
+        "C1504",
+        "C1506",
+        "C1606",
+        "C1705"
+      ]
+    },
+    {
+      "name": "1000pF",
+      "capacitance_f": 1e-09,
+      "esl_h": 5e-10,
+      "esr_ohm": 0.02,
+      "refs": [
+        "C713"
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "name": "U701",
+      "rail": {
+        "ref": "U701",
+        "net": "+3.3V",
+        "pins": []
+      },
+      "ground": {
+        "ref": "U701",
+        "net": "GND",
+        "pins": []
+      },
+      "target_ohm": 0.33,
+      "target_hz": 6366200.0,
+      "target_custom": false,
+      "target_points": []
+    }
+  ],
+  "ac": {
+    "f_start_hz": 1000.0,
+    "f_stop_hz": 300000000.0,
+    "points_per_decade": 250,
+    "field_points_per_decade": 20,
+    "max_edge_mm": 1.0,
+    "grading": 0.3,
+    "min_edge_mm": 0.03,
+    "loss_tangent": 0.02,
+    "default_er": 4.3,
+    "rail": "+3.3V",
+    "ground": "GND"
+  },
   "format_version": 1
 }
