@@ -1,0 +1,1519 @@
+vrms:
+- name: 12V
+  output:
+    ref: J201
+    net: +12Vin
+    pins: []
+  voltage: 12.0
+  kind: source
+  efficiency: 0.9
+  quiescent_a: 0.0
+  input: null
+  sense: null
+  ground:
+    ref: J201
+    net: GND
+    pins: []
+  ground_sense: null
+  phases: []
+  current_limit_a: 5.0
+  dropout_v: 0.0
+  vin_min: null
+  vin_max: null
+  vin_pct: false
+  acc_min: null
+  acc_max: null
+  acc_pct: true
+  load_line_mohm: 0.0
+  bandwidth_khz: null
+- name: +3.3V
+  output:
+    ref: L401
+    net: Net-(C406-Pad1)
+    pins: []
+  voltage: 3.3
+  kind: smps
+  efficiency: 0.9
+  quiescent_a: 0.0
+  input:
+    ref: U402
+    net: +12V
+    pins: []
+  sense:
+    ref: R409
+    net: +3.3V
+    pins: []
+  ground:
+    ref: U402
+    net: GND
+    pins: []
+  ground_sense:
+    ref: R410
+    net: GND
+    pins: []
+  phases: []
+  current_limit_a: 1.0
+  dropout_v: 0.0
+  vin_min: 10.8
+  vin_max: 13.2
+  vin_pct: false
+  acc_min: -1.8
+  acc_max: 1.8
+  acc_pct: true
+  load_line_mohm: 0.0
+  bandwidth_khz: 50.0
+- name: +5V_USB
+  output:
+    ref: J901
+    net: Net-(FB901-Pad2)
+    pins: []
+  voltage: 5.0
+  kind: source
+  efficiency: 0.9
+  quiescent_a: 0.0
+  input: null
+  sense: null
+  ground:
+    ref: J901
+    net: GND
+    pins: []
+  ground_sense: null
+  phases: []
+  current_limit_a: null
+  dropout_v: 0.0
+  vin_min: null
+  vin_max: null
+  vin_pct: false
+  acc_min: null
+  acc_max: null
+  acc_pct: true
+  load_line_mohm: 0.0
+  bandwidth_khz: null
+- name: +3.3V_USB
+  output:
+    ref: U901
+    net: +3.3V_USB
+    pins: []
+  voltage: 3.3
+  kind: ldo
+  efficiency: 0.9
+  quiescent_a: 0.0
+  input:
+    ref: U901
+    net: +5V_USB
+    pins: []
+  sense: null
+  ground:
+    ref: U901
+    net: GND
+    pins: []
+  ground_sense: null
+  phases: []
+  current_limit_a: null
+  dropout_v: 0.0
+  vin_min: null
+  vin_max: null
+  vin_pct: false
+  acc_min: null
+  acc_max: null
+  acc_pct: true
+  load_line_mohm: 0.0
+  bandwidth_khz: null
+loads:
+- name: J2101
+  supply:
+    ref: J2101
+    net: +12V
+    pins: []
+  current: 1.944
+  ground:
+    ref: J2101
+    net: GND
+    pins: []
+  tol_min: -5.0
+  tol_max: 5.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: J2102
+  supply:
+    ref: J2102
+    net: +12V
+    pins: []
+  current: 1.944
+  ground:
+    ref: J2102
+    net: GND
+    pins: []
+  tol_min: -5.0
+  tol_max: 5.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U701 dsPIC VDD
+  supply:
+    ref: U701
+    net: +3.3V
+    pins:
+    - '15'
+    - '28'
+    - '36'
+    - '41'
+    - '46'
+  current: 0.0346
+  ground:
+    ref: U701
+    net: GND
+    pins:
+    - '14'
+    - '27'
+    - '35'
+    - '43'
+    - '45'
+    - '49'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U701 dsPIC AVDD
+  supply:
+    ref: U701
+    net: +3.3VA_DSP
+    pins:
+    - '7'
+  current: 0.0074
+  ground:
+    ref: U701
+    net: GNDA_DSP
+    pins:
+    - '6'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: X601 oscillator
+  supply:
+    ref: X601
+    net: Net-(X601-Vdd)
+    pins:
+    - '4'
+  current: 0.007
+  ground:
+    ref: X601
+    net: GND
+    pins:
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1301 MCP6N11
+  supply:
+    ref: U1301
+    net: +3.3V
+    pins:
+    - '7'
+  current: 0.0011
+  ground:
+    ref: U1301
+    net: GND
+    pins:
+    - '4'
+    - '9'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1302 MCP6N11
+  supply:
+    ref: U1302
+    net: +3.3V
+    pins:
+    - '7'
+  current: 0.0011
+  ground:
+    ref: U1302
+    net: GND
+    pins:
+    - '4'
+    - '9'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1401 MCP6N11
+  supply:
+    ref: U1401
+    net: +3.3V
+    pins:
+    - '7'
+  current: 0.0011
+  ground:
+    ref: U1401
+    net: GND
+    pins:
+    - '4'
+    - '9'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1402 MCP6N11
+  supply:
+    ref: U1402
+    net: +3.3V
+    pins:
+    - '7'
+  current: 0.0011
+  ground:
+    ref: U1402
+    net: GND
+    pins:
+    - '4'
+    - '9'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1502 MCP6024
+  supply:
+    ref: U1502
+    net: +3.3V
+    pins:
+    - '4'
+  current: 0.0054
+  ground:
+    ref: U1502
+    net: GND
+    pins:
+    - '11'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1601 MCP6024
+  supply:
+    ref: U1601
+    net: +3.3V
+    pins:
+    - '4'
+  current: 0.0054
+  ground:
+    ref: U1601
+    net: GND
+    pins:
+    - '11'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1701 MCP6024
+  supply:
+    ref: U1701
+    net: +3.3V
+    pins:
+    - '4'
+  current: 0.0054
+  ground:
+    ref: U1701
+    net: GND
+    pins:
+    - '11'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1501 TS3A24159
+  supply:
+    ref: U1501
+    net: +3.3V
+    pins:
+    - '1'
+  current: 5.0e-05
+  ground:
+    ref: U1501
+    net: GND
+    pins:
+    - '6'
+    - '11'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1503 MCP4451
+  supply:
+    ref: U1503
+    net: +3.3V
+    pins:
+    - '15'
+  current: 0.0006
+  ground:
+    ref: U1503
+    net: GND
+    pins:
+    - '2'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    - '9'
+    - '10'
+    - '11'
+    - '14'
+    - '21'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1702 REF35
+  supply:
+    ref: U1702
+    net: +3.3V
+    pins:
+    - '4'
+  current: 3.0e-06
+  ground:
+    ref: U1702
+    net: GND
+    pins:
+    - '1'
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U801 PCA9536
+  supply:
+    ref: U801
+    net: +3.3V
+    pins:
+    - '8'
+  current: 0.00029
+  ground:
+    ref: U801
+    net: GND
+    pins:
+    - '4'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U803 TCA9801
+  supply:
+    ref: U803
+    net: +3.3V
+    pins:
+    - '1'
+    - '8'
+  current: 0.00275
+  ground:
+    ref: U803
+    net: GND
+    pins:
+    - '4'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1807 TCA9801
+  supply:
+    ref: U1807
+    net: +3.3V
+    pins:
+    - '1'
+    - '8'
+  current: 0.00275
+  ground:
+    ref: U1807
+    net: GND
+    pins:
+    - '4'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1809 TCA9801
+  supply:
+    ref: U1809
+    net: +3.3V
+    pins:
+    - '1'
+    - '8'
+  current: 0.00275
+  ground:
+    ref: U1809
+    net: GND
+    pins:
+    - '4'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1803 74VHC541
+  supply:
+    ref: U1803
+    net: +3.3V
+    pins:
+    - '20'
+  current: 0.001
+  ground:
+    ref: U1803
+    net: GND
+    pins:
+    - '10'
+    - '21'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1804 74VHC541
+  supply:
+    ref: U1804
+    net: +3.3V
+    pins:
+    - '20'
+  current: 0.001
+  ground:
+    ref: U1804
+    net: GND
+    pins:
+    - '10'
+    - '21'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U903 TXB0102 VCCB
+  supply:
+    ref: U903
+    net: +3.3V
+    pins:
+    - '7'
+  current: 4.0e-06
+  ground:
+    ref: U903
+    net: GND
+    pins:
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: J1903 encoder module
+  supply:
+    ref: J1903
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.045
+  ground:
+    ref: J1903
+    net: GND
+    pins:
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U401 74LVC1G97
+  supply:
+    ref: U401
+    net: +3.3V
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U401
+    net: GND
+    pins:
+    - '1'
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U601 74LVC1G97
+  supply:
+    ref: U601
+    net: +3.3V
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U601
+    net: GND
+    pins:
+    - '2'
+    - '3'
+    - '6'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U802 74LVC1G97
+  supply:
+    ref: U802
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U802
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U805 74LVC1G97
+  supply:
+    ref: U805
+    net: +3.3V
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U805
+    net: GND
+    pins:
+    - '2'
+    - '3'
+    - '6'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1101 74LVC1G97
+  supply:
+    ref: U1101
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1101
+    net: GND
+    pins:
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1102 74LVC1G97
+  supply:
+    ref: U1102
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1102
+    net: GND
+    pins:
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1103 74LVC1G97
+  supply:
+    ref: U1103
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1103
+    net: GND
+    pins:
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1104 74LVC1G97
+  supply:
+    ref: U1104
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1104
+    net: GND
+    pins:
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1105 74LVC1G97
+  supply:
+    ref: U1105
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1105
+    net: GND
+    pins:
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1106 74LVC1G97
+  supply:
+    ref: U1106
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1106
+    net: GND
+    pins:
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1201 74LVC1G97
+  supply:
+    ref: U1201
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1201
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1202 74LVC1G97
+  supply:
+    ref: U1202
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1202
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1203 74LVC1G97
+  supply:
+    ref: U1203
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1203
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1801 74LVC1G97
+  supply:
+    ref: U1801
+    net: +3.3V
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1801
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1802 74LVC1G97
+  supply:
+    ref: U1802
+    net: +3.3V
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1802
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1805 74LVC1G97
+  supply:
+    ref: U1805
+    net: +3.3V
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1805
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1806 74LVC1G97
+  supply:
+    ref: U1806
+    net: +3.3V
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1806
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1808 74LVC1G97
+  supply:
+    ref: U1808
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1808
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U1902 74LVC1G97
+  supply:
+    ref: U1902
+    net: +3.3V
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1902
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R1102 LED
+  supply:
+    ref: R1102
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U1101
+    net: GND
+    pins:
+    - '2'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R1103 LED
+  supply:
+    ref: R1103
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U1102
+    net: GND
+    pins:
+    - '2'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R1104 LED
+  supply:
+    ref: R1104
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U1103
+    net: GND
+    pins:
+    - '2'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R1105 LED
+  supply:
+    ref: R1105
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U1104
+    net: GND
+    pins:
+    - '2'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R1106 LED
+  supply:
+    ref: R1106
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U1105
+    net: GND
+    pins:
+    - '2'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R1107 LED
+  supply:
+    ref: R1107
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U1106
+    net: GND
+    pins:
+    - '2'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R1203 LED
+  supply:
+    ref: R1203
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U1201
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R1204 LED
+  supply:
+    ref: R1204
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U1202
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R1206 LED
+  supply:
+    ref: R1206
+    net: +3.3V
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U1203
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U902 74LVC1G97
+  supply:
+    ref: U902
+    net: +3.3V_USB
+    pins:
+    - '1'
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U902
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: U903 TXB0102 VCCA
+  supply:
+    ref: U903
+    net: +3.3V_USB
+    pins:
+    - '3'
+  current: 4.0e-06
+  ground:
+    ref: U903
+    net: GND
+    pins:
+    - '2'
+  tol_min: -3.0
+  tol_max: 3.0
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R901 LED
+  supply:
+    ref: R901
+    net: +3.3V_USB
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U901
+    net: GND
+    pins:
+    - '2'
+    - '25'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R902 LED
+  supply:
+    ref: R902
+    net: +3.3V_USB
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U901
+    net: GND
+    pins:
+    - '2'
+    - '25'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+- name: R906 LED
+  supply:
+    ref: R906
+    net: +3.3V_USB
+    pins:
+    - '1'
+  current: 0.0013
+  ground:
+    ref: U902
+    net: GND
+    pins:
+    - '2'
+    - '3'
+  tol_min: null
+  tol_max: null
+  tol_pct: true
+  groups: []
+  dissipation_w: null
+links:
+- name: U201
+  side_a:
+    ref: U201
+    net: +12Vin
+    pins: []
+  side_b:
+    ref: U201
+    net: Net-(U201-OUT)
+    pins: []
+  resistance: 0.0282
+  esl_h: null
+- name: R207
+  side_a:
+    ref: R207
+    net: Net-(U201-OUT)
+    pins: []
+  side_b:
+    ref: R207
+    net: +12V
+    pins: []
+  resistance: 0.01
+  esl_h: null
+- name: R406
+  side_a:
+    ref: R406
+    net: Net-(C406-Pad1)
+    pins: []
+  side_b:
+    ref: R406
+    net: +3.3V
+    pins: []
+  resistance: 0.02
+  esl_h: null
+- name: R610
+  side_a:
+    ref: R610
+    net: +3.3V
+    pins: []
+  side_b:
+    ref: R610
+    net: Net-(X601-Vdd)
+    pins: []
+  resistance: 10.0
+  esl_h: null
+- name: FB701
+  side_a:
+    ref: FB701
+    net: +3.3V
+    pins: []
+  side_b:
+    ref: FB701
+    net: +3.3VA_DSP
+    pins: []
+  resistance: 0.14
+  esl_h: null
+- name: FB702
+  side_a:
+    ref: FB702
+    net: GNDA_DSP
+    pins: []
+  side_b:
+    ref: FB702
+    net: GND
+    pins: []
+  resistance: 0.14
+  esl_h: null
+- name: FB901
+  side_a:
+    ref: FB901
+    net: Net-(FB901-Pad2)
+    pins: []
+  side_b:
+    ref: FB901
+    net: Net-(U904-EN)
+    pins: []
+  resistance: 0.14
+  esl_h: null
+- name: U904
+  side_a:
+    ref: U904
+    net: Net-(U904-EN)
+    pins: []
+  side_b:
+    ref: U904
+    net: +5V_USB
+    pins: []
+  resistance: 0.097
+  esl_h: null
+settings:
+  max_edge_mm: 0.3
+  min_angle_deg: 28.0
+  simplify_mm: 0.003
+  circle_quad_segs: 4
+  min_edge_mm: 0.02
+  grading: 0.2
+  via_rules:
+  - kind: micro
+    plating_mm: 0.025
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: buried
+    plating_mm: 0.025
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: blind
+    plating_mm: 0.025
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: blind_buried
+    plating_mm: 0.025
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: through
+    plating_mm: 0.025
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: pth
+    plating_mm: 0.025
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  - kind: any
+    plating_mm: 0.025
+    drill_min_mm: 0.0
+    drill_max_mm: null
+    fill: nonconductive
+    fill_rho_ohm_mm: null
+  rho_ohm_mm: 1.724e-05
+  tcr_per_c: 0.00393
+  rho_by_layer: {}
+  tcr_by_layer: {}
+  conductor_by_layer: {}
+  tol: 1.0e-10
+  max_iter: 2000
+via_current_limit_a: null
+thermal:
+  enabled: false
+  ambient_c: 25.0
+  iterations: 5
+  airflow_m_s: 0.0
+  grid_mm: 0.0
+  load_power: false
+  max_temp_c: null
+  max_rise_c: null
+html_report: false
+nets:
+- +12V
+- +12Vin
+- +3.3V
+- +3.3V_USB
+- +3.3VA_DSP
+- +5V_USB
+- Net-(C406-Pad1)
+- Net-(U201-OUT)
+- GND
+- GNDA_DSP
+- Net-(FB901-Pad2)
+- Net-(U904-EN)
+- Net-(X601-Vdd)
+excluded_nets: []
+stackup: null
+caps:
+- name: 0.1uF
+  capacitance_f: 1.0e-07
+  esl_h: 5.0e-10
+  esr_ohm: 0.02
+  refs:
+  - C202
+  - C302
+  - C303
+  - C401
+  - C405
+  - C502
+  - C503
+  - C601
+  - C602
+  - C603
+  - C701
+  - C702
+  - C703
+  - C704
+  - C706
+  - C707
+  - C708
+  - C709
+  - C712
+  - C714
+  - C801
+  - C802
+  - C803
+  - C804
+  - C805
+  - C901
+  - C904
+  - C907
+  - C908
+  - C909
+  - C1005
+  - C1101
+  - C1102
+  - C1103
+  - C1104
+  - C1105
+  - C1106
+  - C1201
+  - C1202
+  - C1203
+  - C1303
+  - C1304
+  - C1401
+  - C1402
+  - C1501
+  - C1503
+  - C1505
+  - C1605
+  - C1701
+  - C1704
+  - C1801
+  - C1802
+  - C1803
+  - C1804
+  - C1805
+  - C1806
+  - C1807
+  - C1808
+  - C1809
+  - C1810
+  - C1811
+  - C1902
+  - C1904
+  - C1906
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+- name: 10uF
+  capacitance_f: 9.999999999999999e-06
+  esl_h: 1.0e-09
+  esr_ohm: 0.001
+  refs:
+  - C402
+  - C403
+  - C406
+  - C407
+  - C604
+  - C705
+  - C710
+  - C711
+  - C716
+  - C902
+  - C903
+  - C905
+  - C910
+  - C2101
+  - C2102
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+- name: 1uF
+  capacitance_f: 1.0e-06
+  esl_h: 5.0e-10
+  esr_ohm: 0.005
+  refs:
+  - C1305
+  - C1306
+  - C1403
+  - C1404
+  - C1502
+  - C1504
+  - C1506
+  - C1606
+  - C1705
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+- name: 1000pF
+  capacitance_f: 1.0e-09
+  esl_h: 5.0e-10
+  esr_ohm: 0.02
+  refs:
+  - C713
+  rated_v: null
+  kept_at_rated_pct: 40.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+- name: 100uF
+  capacitance_f: 9.999999999999999e-05
+  esl_h: 7.0e-10
+  esr_ohm: 0.009000000000000001
+  refs:
+  - C203
+  rated_v: 25.0
+  kept_at_rated_pct: 100.0
+  dielectric: ''
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: null
+probes:
+- name: U701 dsPIC VDD
+  rail:
+    ref: U701
+    net: +3.3V
+    pins:
+    - '15'
+    - '28'
+    - '36'
+    - '41'
+    - '46'
+  ground:
+    ref: U701
+    net: GND
+    pins:
+    - '14'
+    - '27'
+    - '35'
+    - '43'
+    - '45'
+    - '49'
+  target_ohm: 1.10632295896
+  target_hz: 91997076.93169999
+  target_custom: false
+  target_points: []
+- name: J2101
+  rail:
+    ref: J2101
+    net: +12V
+    pins: []
+  ground:
+    ref: J2101
+    net: GND
+    pins: []
+  target_ohm: 0.21286402822
+  target_hz: 1637396.5339
+  target_custom: false
+  target_points: []
+- name: J2102
+  rail:
+    ref: J2102
+    net: +12V
+    pins: []
+  ground:
+    ref: J2102
+    net: GND
+    pins: []
+  target_ohm: 0.20765694051400002
+  target_hz: 1637396.5339
+  target_custom: false
+  target_points: []
+ac:
+  f_start_hz: 1000.0
+  f_stop_hz: 300000000.0
+  points_per_decade: 250
+  field_points_per_decade: 20
+  max_edge_mm: 1.0
+  grading: 0.3
+  min_edge_mm: 0.03
+  loss_tangent: 0.02
+  default_er: 4.3
+  rail: 12V
+  ground: GND
+  html_report: true
+  dc_bias: false
+  mfg_tolerance: false
+  aging: false
+  aging_hours: 87600.0
+  temperature: none
+  temperature_c: 25.0
+format_version: 1
