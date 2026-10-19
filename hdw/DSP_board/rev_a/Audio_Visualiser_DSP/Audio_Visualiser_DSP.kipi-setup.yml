@@ -21,9 +21,11 @@ vrms:
   vin_min: null
   vin_max: null
   vin_pct: false
+  vin_dv: false
   acc_min: null
   acc_max: null
   acc_pct: true
+  acc_dv: false
   load_line_mohm: 0.0
   bandwidth_khz: null
 - name: +3.3V
@@ -57,9 +59,11 @@ vrms:
   vin_min: 10.8
   vin_max: 13.2
   vin_pct: false
+  vin_dv: false
   acc_min: -1.8
   acc_max: 1.8
   acc_pct: true
+  acc_dv: false
   load_line_mohm: 0.0
   bandwidth_khz: 50.0
 - name: +5V_USB
@@ -84,9 +88,11 @@ vrms:
   vin_min: null
   vin_max: null
   vin_pct: false
+  vin_dv: false
   acc_min: null
   acc_max: null
   acc_pct: true
+  acc_dv: false
   load_line_mohm: 0.0
   bandwidth_khz: null
 - name: +3.3V_USB
@@ -94,10 +100,10 @@ vrms:
     ref: U901
     net: +3.3V_USB
     pins: []
-  voltage: 3.3
+  voltage: 3.45
   kind: ldo
   efficiency: 0.9
-  quiescent_a: 0.0
+  quiescent_a: 0.00011999999999999999
   input:
     ref: U901
     net: +5V_USB
@@ -109,14 +115,16 @@ vrms:
     pins: []
   ground_sense: null
   phases: []
-  current_limit_a: null
+  current_limit_a: 0.1
   dropout_v: 0.0
-  vin_min: null
-  vin_max: null
+  vin_min: 3.0
+  vin_max: 5.25
   vin_pct: false
-  acc_min: null
-  acc_max: null
-  acc_pct: true
+  vin_dv: false
+  acc_min: 3.3
+  acc_max: 3.6
+  acc_pct: false
+  acc_dv: false
   load_line_mohm: 0.0
   bandwidth_khz: null
 loads:
@@ -133,8 +141,8 @@ loads:
   tol_min: -5.0
   tol_max: 5.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: J2102
   supply:
     ref: J2102
@@ -148,8 +156,8 @@ loads:
   tol_min: -5.0
   tol_max: 5.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U701 dsPIC VDD
   supply:
     ref: U701
@@ -174,8 +182,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U701 dsPIC AVDD
   supply:
     ref: U701
@@ -191,8 +199,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: X601 oscillator
   supply:
     ref: X601
@@ -208,8 +216,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1301 MCP6N11
   supply:
     ref: U1301
@@ -226,8 +234,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1302 MCP6N11
   supply:
     ref: U1302
@@ -244,8 +252,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1401 MCP6N11
   supply:
     ref: U1401
@@ -262,8 +270,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1402 MCP6N11
   supply:
     ref: U1402
@@ -280,8 +288,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1502 MCP6024
   supply:
     ref: U1502
@@ -297,8 +305,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1601 MCP6024
   supply:
     ref: U1601
@@ -314,8 +322,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1701 MCP6024
   supply:
     ref: U1701
@@ -331,8 +339,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1501 TS3A24159
   supply:
     ref: U1501
@@ -349,8 +357,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1503 MCP4451
   supply:
     ref: U1503
@@ -375,8 +383,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1702 REF35
   supply:
     ref: U1702
@@ -393,8 +401,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U801 PCA9536
   supply:
     ref: U801
@@ -410,8 +418,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U803 TCA9801
   supply:
     ref: U803
@@ -428,8 +436,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1807 TCA9801
   supply:
     ref: U1807
@@ -446,8 +454,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1809 TCA9801
   supply:
     ref: U1809
@@ -464,8 +472,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1803 74VHC541
   supply:
     ref: U1803
@@ -482,8 +490,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1804 74VHC541
   supply:
     ref: U1804
@@ -500,8 +508,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U903 TXB0102 VCCB
   supply:
     ref: U903
@@ -517,8 +525,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: J1903 encoder module
   supply:
     ref: J1903
@@ -534,8 +542,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U401 74LVC1G97
   supply:
     ref: U401
@@ -552,8 +560,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U601 74LVC1G97
   supply:
     ref: U601
@@ -571,8 +579,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U802 74LVC1G97
   supply:
     ref: U802
@@ -590,8 +598,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U805 74LVC1G97
   supply:
     ref: U805
@@ -609,8 +617,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1101 74LVC1G97
   supply:
     ref: U1101
@@ -627,8 +635,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1102 74LVC1G97
   supply:
     ref: U1102
@@ -645,8 +653,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1103 74LVC1G97
   supply:
     ref: U1103
@@ -663,8 +671,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1104 74LVC1G97
   supply:
     ref: U1104
@@ -681,8 +689,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1105 74LVC1G97
   supply:
     ref: U1105
@@ -699,8 +707,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1106 74LVC1G97
   supply:
     ref: U1106
@@ -717,8 +725,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1201 74LVC1G97
   supply:
     ref: U1201
@@ -736,8 +744,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1202 74LVC1G97
   supply:
     ref: U1202
@@ -755,8 +763,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1203 74LVC1G97
   supply:
     ref: U1203
@@ -774,8 +782,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1801 74LVC1G97
   supply:
     ref: U1801
@@ -792,8 +800,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1802 74LVC1G97
   supply:
     ref: U1802
@@ -810,8 +818,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1805 74LVC1G97
   supply:
     ref: U1805
@@ -828,8 +836,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1806 74LVC1G97
   supply:
     ref: U1806
@@ -846,8 +854,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1808 74LVC1G97
   supply:
     ref: U1808
@@ -865,8 +873,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U1902 74LVC1G97
   supply:
     ref: U1902
@@ -884,8 +892,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R1102 LED
   supply:
     ref: R1102
@@ -901,8 +909,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R1103 LED
   supply:
     ref: R1103
@@ -918,8 +926,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R1104 LED
   supply:
     ref: R1104
@@ -935,8 +943,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R1105 LED
   supply:
     ref: R1105
@@ -952,8 +960,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R1106 LED
   supply:
     ref: R1106
@@ -969,8 +977,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R1107 LED
   supply:
     ref: R1107
@@ -986,8 +994,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R1203 LED
   supply:
     ref: R1203
@@ -1004,8 +1012,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R1204 LED
   supply:
     ref: R1204
@@ -1022,8 +1030,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R1206 LED
   supply:
     ref: R1206
@@ -1040,8 +1048,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U902 74LVC1G97
   supply:
     ref: U902
@@ -1059,8 +1067,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: U903 TXB0102 VCCA
   supply:
     ref: U903
@@ -1076,8 +1084,8 @@ loads:
   tol_min: -3.0
   tol_max: 3.0
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R901 LED
   supply:
     ref: R901
@@ -1094,8 +1102,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R902 LED
   supply:
     ref: R902
@@ -1112,8 +1120,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 - name: R906 LED
   supply:
     ref: R906
@@ -1130,8 +1138,8 @@ loads:
   tol_min: null
   tol_max: null
   tol_pct: true
+  tol_dv: false
   groups: []
-  dissipation_w: null
 links:
 - name: U201
   side_a:
@@ -1258,7 +1266,7 @@ settings:
     drill_min_mm: 0.0
     drill_max_mm: null
     fill: nonconductive
-    fill_rho_ohm_mm: null
+    fill_rho_ohm_mm: 1.0
   - kind: pth
     plating_mm: 0.025
     drill_min_mm: 0.0
@@ -1280,15 +1288,16 @@ settings:
   max_iter: 2000
 via_current_limit_a: null
 thermal:
-  enabled: false
+  enabled: true
   ambient_c: 25.0
   iterations: 5
   airflow_m_s: 0.0
   grid_mm: 0.0
   load_power: false
-  max_temp_c: null
-  max_rise_c: null
-html_report: false
+  max_temp_c: 40.0
+  max_rise_c: 20.0
+html_report: true
+report_format: pdf
 nets:
 - +12V
 - +12Vin
@@ -1505,11 +1514,13 @@ ac:
   max_edge_mm: 1.0
   grading: 0.3
   min_edge_mm: 0.03
+  grade_near_rail_only: true
   loss_tangent: 0.02
   default_er: 4.3
   rail: 12V
   ground: GND
   html_report: true
+  report_format: html
   dc_bias: false
   mfg_tolerance: false
   aging: false
