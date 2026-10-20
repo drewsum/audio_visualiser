@@ -30,12 +30,13 @@ vrms:
   bandwidth_khz: null
   mesh_sense: false
   sense_points: []
+  nominal_v: null
 - name: +3.3V
   output:
     ref: L401
     net: Net-(C406-Pad1)
     pins: []
-  voltage: 3.32800316
+  voltage: 3.3
   kind: smps
   efficiency: 0.9
   quiescent_a: 0.0
@@ -66,10 +67,11 @@ vrms:
   acc_max: 3.433454998
   acc_pct: false
   acc_dv: false
-  load_line_mohm: 0.0
+  load_line_mohm: 1.65
   bandwidth_khz: 50.0
   mesh_sense: false
   sense_points: []
+  nominal_v: 3.32800316
 - name: +5V_USB
   output:
     ref: J901
@@ -101,6 +103,7 @@ vrms:
   bandwidth_khz: null
   mesh_sense: false
   sense_points: []
+  nominal_v: null
 - name: +3.3V_USB
   output:
     ref: U901
@@ -135,6 +138,7 @@ vrms:
   bandwidth_khz: null
   mesh_sense: false
   sense_points: []
+  nominal_v: null
 loads:
 - name: J2101
   supply:
@@ -1362,12 +1366,12 @@ via_current_limit_a: null
 thermal:
   enabled: true
   ambient_c: 25.0
-  iterations: 5
+  iterations: 3
   airflow_m_s: 0.0
   grid_mm: 0.0
   load_power: false
-  max_temp_c: 40.0
-  max_rise_c: 20.0
+  max_temp_c: 65.0
+  max_rise_c: 40.0
 html_report: true
 report_format: pdf
 nets:
