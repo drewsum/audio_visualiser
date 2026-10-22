@@ -63,9 +63,9 @@ vrms:
   vin_max: 13.2
   vin_pct: false
   vin_dv: false
-  acc_min: 3.228774614
-  acc_max: 3.433454998
-  acc_pct: false
+  acc_min: -2.15834503
+  acc_max: 4.04409085
+  acc_pct: true
   acc_dv: false
   load_line_mohm: 1.65
   bandwidth_khz: 50.0
@@ -1267,7 +1267,7 @@ links:
     net: +3.3VA_DSP
     pins: []
   resistance: 0.14
-  esl_h: null
+  esl_h: 3.50140803906e-07
   diode_vf: 0.0
 - name: FB702
   side_a:
@@ -1279,7 +1279,7 @@ links:
     net: GND
     pins: []
   resistance: 0.14
-  esl_h: null
+  esl_h: 3.50140803906e-07
   diode_vf: 0.0
 - name: FB901
   side_a:
@@ -1391,9 +1391,9 @@ nets:
 excluded_nets: []
 stackup: null
 caps:
-- name: 0.1uF
+- name: 0.1uF 0402
   capacitance_f: 1.0e-07
-  esl_h: 5.0e-10
+  esl_h: 2.0000000000000003e-10
   esr_ohm: 0.02
   refs:
   - C202
@@ -1460,18 +1460,41 @@ caps:
   - C1902
   - C1904
   - C1906
-  rated_v: null
+  rated_v: 16.0
+  kept_at_rated_pct: 49.0
+  dielectric: X7R
+  aging_pct_per_decade: 2.0
+  mfg_tolerance_pct: 10.0
+- name: 100uF Tantalum
+  capacitance_f: 9.999999999999999e-05
+  esl_h: 2.5e-09
+  esr_ohm: 0.3
+  refs:
+  - C203
+  rated_v: 25.0
   kept_at_rated_pct: 40.0
   dielectric: ''
   aging_pct_per_decade: 0.0
-  mfg_tolerance_pct: null
-- name: 10uF
+  mfg_tolerance_pct: 20.0
+- name: 10uF 1206
   capacitance_f: 9.999999999999999e-06
-  esl_h: 1.0e-09
-  esr_ohm: 0.001
+  esl_h: 1.2e-09
+  esr_ohm: 0.002
   refs:
   - C402
   - C403
+  - C2101
+  - C2102
+  rated_v: 25.0
+  kept_at_rated_pct: 40.0
+  dielectric: X5R
+  aging_pct_per_decade: 3.0
+  mfg_tolerance_pct: 10.0
+- name: 10uF 0805
+  capacitance_f: 9.999999999999999e-06
+  esl_h: 8.000000000000001e-10
+  esr_ohm: 0.0012
+  refs:
   - C406
   - C407
   - C604
@@ -1479,21 +1502,40 @@ caps:
   - C710
   - C711
   - C716
+  rated_v: 10.0
+  kept_at_rated_pct: 40.0
+  dielectric: X7R
+  aging_pct_per_decade: 2.0
+  mfg_tolerance_pct: 10.0
+- name: 1000pF 0402
+  capacitance_f: 1.0e-09
+  esl_h: 5.0e-10
+  esr_ohm: 0.02
+  refs:
+  - C713
+  rated_v: 50.0
+  kept_at_rated_pct: 100.0
+  dielectric: C0G
+  aging_pct_per_decade: 0.0
+  mfg_tolerance_pct: 5.0
+- name: 10uF 0402
+  capacitance_f: 9.999999999999999e-06
+  esl_h: 5.0e-10
+  esr_ohm: 0.00552
+  refs:
   - C902
   - C903
   - C905
   - C910
-  - C2101
-  - C2102
-  rated_v: null
+  rated_v: 10.0
   kept_at_rated_pct: 40.0
-  dielectric: ''
-  aging_pct_per_decade: 0.0
-  mfg_tolerance_pct: null
-- name: 1uF
+  dielectric: X5R
+  aging_pct_per_decade: 3.0
+  mfg_tolerance_pct: 23.0
+- name: 1uF 0402
   capacitance_f: 1.0e-06
   esl_h: 5.0e-10
-  esr_ohm: 0.005
+  esr_ohm: 0.02
   refs:
   - C1305
   - C1306
@@ -1504,33 +1546,11 @@ caps:
   - C1506
   - C1606
   - C1705
-  rated_v: null
-  kept_at_rated_pct: 40.0
-  dielectric: ''
-  aging_pct_per_decade: 0.0
-  mfg_tolerance_pct: null
-- name: 1000pF
-  capacitance_f: 1.0e-09
-  esl_h: 5.0e-10
-  esr_ohm: 0.02
-  refs:
-  - C713
-  rated_v: null
-  kept_at_rated_pct: 40.0
-  dielectric: ''
-  aging_pct_per_decade: 0.0
-  mfg_tolerance_pct: null
-- name: 100uF
-  capacitance_f: 9.999999999999999e-05
-  esl_h: 7.0e-10
-  esr_ohm: 0.009000000000000001
-  refs:
-  - C203
-  rated_v: 25.0
-  kept_at_rated_pct: 100.0
-  dielectric: ''
-  aging_pct_per_decade: 0.0
-  mfg_tolerance_pct: null
+  rated_v: 10.0
+  kept_at_rated_pct: 30.0
+  dielectric: X7S
+  aging_pct_per_decade: 2.5
+  mfg_tolerance_pct: 20.0
 probes:
 - name: U701 dsPIC VDD
   rail:
@@ -1552,7 +1572,7 @@ probes:
     - '43'
     - '45'
     - '49'
-  target_ohm: 1.10632295896
+  target_ohm: 2.816497482659
   target_hz: 91997076.93169999
   target_custom: false
   target_points: []
@@ -1587,17 +1607,17 @@ ac:
   f_stop_hz: 300000000.0
   points_per_decade: 250
   field_points_per_decade: 20
-  max_edge_mm: 1.0
+  max_edge_mm: 0.5
   grading: 0.3
   min_edge_mm: 0.03
   grade_near_rail_only: true
   loss_tangent: 0.02
   default_er: 4.3
-  rail: 12V
+  rail: +3.3V
   ground: GND
   html_report: true
-  report_format: html
-  dc_bias: false
+  report_format: pdf
+  dc_bias: true
   mfg_tolerance: false
   aging: false
   aging_hours: 87600.0
