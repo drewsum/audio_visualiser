@@ -740,55 +740,56 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
+          "show": false
+        },
+        {
+          "group_by": true,
+          "label": "display_footprint",
+          "name": "display_footprint",
           "show": true
         },
         {
+          "group_by": false,
           "group_by": true,
           "label": "Digi-Key PN",
           "name": "Digi-Key PN",
           "show": true
         },
         {
-          "group_by": false,
-          "label": "display_footprint",
-          "name": "display_footprint",
-          "show": true
-        },
-        {
           "group_by": true,
           "label": "Voltage",
           "name": "Voltage",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Dielectric",
           "name": "Dielectric",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -836,7 +837,7 @@
           "group_by": true,
           "label": "Tolerance",
           "name": "Tolerance",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -848,10 +849,10 @@
           "group_by": true,
           "label": "Wattage",
           "name": "Wattage",
-          "show": true
+          "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Ampacity",
           "name": "Ampacity",
           "show": false
@@ -909,8 +910,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "Digi-Key PN"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
