@@ -14,7 +14,7 @@ A graphical EQ display, based on a dsPIC33AK256MPS105 digital signal controller.
 * LED Panel Control
 
 ![DSP Board](hdw/DSP_board/rev_a/Audio_Visualiser_DSP/Renders/Audio_Visualiser_DSP_render.png)
-![DSP Board SPin Render](hdw/DSP_board/rev_a/Audio_Visualiser_DSP/Renders/Audio_Visualiser_DSP_render.gif)
+![Render](hdw/DSP_board/rev_a/Audio_Visualiser_DSP/Renders/Audio_Visualiser_DSP.gif)
 
 ## Continuous integration
 
