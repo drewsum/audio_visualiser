@@ -13,7 +13,7 @@ A graphical EQ display, based on a dsPIC33AK256MPS105 digital signal controller.
 * USB Port (virtual COM) for debug and settings
 * LED Panel Control
 
-![DSP Board](hdw/DSP_board/rev_a/Audio_Visualiser_DSP/Renders/Audio_Visualiser_DSP_render.png)
+![DSP Board](hdw/DSP_board/rev_a/Audio_Visualiser_DSP/Renders/DSP_blender.png)
 ![Render](hdw/DSP_board/rev_a/Audio_Visualiser_DSP/Renders/Audio_Visualiser_DSP.gif)
 
 ## Continuous integration
