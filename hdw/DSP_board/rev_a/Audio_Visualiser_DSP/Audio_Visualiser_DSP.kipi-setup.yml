@@ -27,10 +27,9 @@ vrms:
   acc_pct: true
   acc_dv: false
   load_line_mohm: 0.0
-  bandwidth_khz: null
+  bandwidth_khz: 30.0
   mesh_sense: false
   sense_points: []
-  nominal_v: null
 - name: +3.3V
   output:
     ref: L401
@@ -71,7 +70,6 @@ vrms:
   bandwidth_khz: 50.0
   mesh_sense: false
   sense_points: []
-  nominal_v: 3.32800316
 - name: +5V_USB
   output:
     ref: J901
@@ -103,7 +101,6 @@ vrms:
   bandwidth_khz: null
   mesh_sense: false
   sense_points: []
-  nominal_v: null
 - name: +3.3V_USB
   output:
     ref: U901
@@ -138,7 +135,6 @@ vrms:
   bandwidth_khz: null
   mesh_sense: false
   sense_points: []
-  nominal_v: null
 loads:
 - name: J2101
   supply:
@@ -155,7 +151,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 12.0
 - name: J2102
   supply:
     ref: J2102
@@ -171,7 +166,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 12.0
 - name: U701 dsPIC VDD
   supply:
     ref: U701
@@ -198,7 +192,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U701 dsPIC AVDD
   supply:
     ref: U701
@@ -216,7 +209,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: X601 oscillator
   supply:
     ref: X601
@@ -234,7 +226,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1301 MCP6N11
   supply:
     ref: U1301
@@ -253,7 +244,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1302 MCP6N11
   supply:
     ref: U1302
@@ -272,7 +262,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1401 MCP6N11
   supply:
     ref: U1401
@@ -291,7 +280,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1402 MCP6N11
   supply:
     ref: U1402
@@ -310,7 +298,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1502 MCP6024
   supply:
     ref: U1502
@@ -328,7 +315,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1601 MCP6024
   supply:
     ref: U1601
@@ -346,7 +332,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1701 MCP6024
   supply:
     ref: U1701
@@ -364,7 +349,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1501 TS3A24159
   supply:
     ref: U1501
@@ -383,7 +367,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1503 MCP4451
   supply:
     ref: U1503
@@ -410,7 +393,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1702 REF35
   supply:
     ref: U1702
@@ -429,7 +411,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U801 PCA9536
   supply:
     ref: U801
@@ -447,7 +428,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U803 TCA9801
   supply:
     ref: U803
@@ -466,7 +446,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1807 TCA9801
   supply:
     ref: U1807
@@ -485,7 +464,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1809 TCA9801
   supply:
     ref: U1809
@@ -504,7 +482,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1803 74VHC541
   supply:
     ref: U1803
@@ -523,7 +500,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1804 74VHC541
   supply:
     ref: U1804
@@ -542,7 +518,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U903 TXB0102 VCCB
   supply:
     ref: U903
@@ -560,7 +535,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: J1903 encoder module
   supply:
     ref: J1903
@@ -578,7 +552,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U401 74LVC1G97
   supply:
     ref: U401
@@ -597,7 +570,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U601 74LVC1G97
   supply:
     ref: U601
@@ -617,7 +589,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U802 74LVC1G97
   supply:
     ref: U802
@@ -637,7 +608,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U805 74LVC1G97
   supply:
     ref: U805
@@ -657,7 +627,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1101 74LVC1G97
   supply:
     ref: U1101
@@ -676,7 +645,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1102 74LVC1G97
   supply:
     ref: U1102
@@ -695,7 +663,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1103 74LVC1G97
   supply:
     ref: U1103
@@ -714,7 +681,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1104 74LVC1G97
   supply:
     ref: U1104
@@ -733,7 +699,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1105 74LVC1G97
   supply:
     ref: U1105
@@ -752,7 +717,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1106 74LVC1G97
   supply:
     ref: U1106
@@ -771,7 +735,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1201 74LVC1G97
   supply:
     ref: U1201
@@ -791,7 +754,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1202 74LVC1G97
   supply:
     ref: U1202
@@ -811,7 +773,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1203 74LVC1G97
   supply:
     ref: U1203
@@ -831,7 +792,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1801 74LVC1G97
   supply:
     ref: U1801
@@ -850,7 +810,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1802 74LVC1G97
   supply:
     ref: U1802
@@ -869,7 +828,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1805 74LVC1G97
   supply:
     ref: U1805
@@ -888,7 +846,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1806 74LVC1G97
   supply:
     ref: U1806
@@ -907,7 +864,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1808 74LVC1G97
   supply:
     ref: U1808
@@ -927,7 +883,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U1902 74LVC1G97
   supply:
     ref: U1902
@@ -947,7 +902,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: R1102 LED
   supply:
     ref: R1102
@@ -965,7 +919,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: R1103 LED
   supply:
     ref: R1103
@@ -983,7 +936,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: R1104 LED
   supply:
     ref: R1104
@@ -1001,7 +953,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: R1105 LED
   supply:
     ref: R1105
@@ -1019,7 +970,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: R1106 LED
   supply:
     ref: R1106
@@ -1037,7 +987,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: R1107 LED
   supply:
     ref: R1107
@@ -1055,7 +1004,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: R1203 LED
   supply:
     ref: R1203
@@ -1074,7 +1022,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: R1204 LED
   supply:
     ref: R1204
@@ -1093,7 +1040,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: R1206 LED
   supply:
     ref: R1206
@@ -1112,7 +1058,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: 3.3
 - name: U902 74LVC1G97
   supply:
     ref: U902
@@ -1132,7 +1077,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: null
 - name: U903 TXB0102 VCCA
   supply:
     ref: U903
@@ -1150,7 +1094,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: null
 - name: R901 LED
   supply:
     ref: R901
@@ -1169,7 +1112,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: null
 - name: R902 LED
   supply:
     ref: R902
@@ -1188,7 +1130,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: null
 - name: R906 LED
   supply:
     ref: R906
@@ -1207,7 +1148,6 @@ loads:
   tol_pct: true
   tol_dv: false
   groups: []
-  nominal_v: null
 links:
 - name: U201
   side_a:
@@ -1576,6 +1516,8 @@ probes:
   target_hz: 91997076.93169999
   target_custom: false
   target_points: []
+  step_a: null
+  slew_a_per_us: null
 - name: J2101
   rail:
     ref: J2101
@@ -1585,10 +1527,12 @@ probes:
     ref: J2101
     net: GND
     pins: []
-  target_ohm: 0.21286402822
+  target_ohm: 0.30864197530899995
   target_hz: 1637396.5339
   target_custom: false
   target_points: []
+  step_a: 1.944
+  slew_a_per_us: 10.0
 - name: J2102
   rail:
     ref: J2102
@@ -1598,10 +1542,12 @@ probes:
     ref: J2102
     net: GND
     pins: []
-  target_ohm: 0.20765694051400002
+  target_ohm: 0.30864197530899995
   target_hz: 1637396.5339
   target_custom: false
   target_points: []
+  step_a: 1.944
+  slew_a_per_us: 10.0
 ac:
   f_start_hz: 1000.0
   f_stop_hz: 300000000.0
@@ -1613,7 +1559,7 @@ ac:
   grade_near_rail_only: true
   loss_tangent: 0.02
   default_er: 4.3
-  rail: +3.3V
+  rail: 12V
   ground: GND
   html_report: true
   report_format: pdf
@@ -1663,7 +1609,27 @@ aggressors:
   - U701 dsPIC VDD
   min_ring_zeta: 0.075
   soft_edge_zeta: 0.5
-victims: []
+victims:
+- net: Net-(U402-PG)
+  name: Local PGOOD
+  preset: open_drain
+  driver:
+    ref: U402
+    net: Net-(U402-PG)
+    pins:
+    - '4'
+  receiver:
+    ref: U401
+    net: Net-(U402-PG)
+    pins:
+    - '6'
+  driver_ohm: 4700.0
+  receiver_ohm: 1000000.0
+  receiver_pf: 5.0
+  termination_ohm: null
+  logic_v: 3.3
+  noise_margin_v: null
+  driver_low_ohm: 20.0
 noise:
   aggressor: +3.3V
   f_max_hz: null
@@ -1674,7 +1640,7 @@ noise:
   window_mm: 3.0
   board_model: true
   field_per_decade: 10
-  victims: none
+  victims: Local PGOOD
   scan: false
   scan_radius_mm: 10.0
   scan_top_n: 10
