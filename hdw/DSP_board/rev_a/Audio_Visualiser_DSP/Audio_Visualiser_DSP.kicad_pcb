@@ -32788,7 +32788,7 @@
 			)
 		)
 	)
-	(footprint "Symbol:Polarity_Center_Positive_6mm_SilkScreen"
+	(footprint "project_lib:Polarity_Center_Positive_6mm_SilkScreen"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "56aa373d-d01b-4929-ac4a-2d18901db8c6")
@@ -132565,7 +132565,7 @@
 			)
 		)
 	)
-	(footprint "Custom Footprints Library:Owl_1_Logo"
+	(footprint "project_lib:Owl_1_Logo"
 		(locked yes)
 		(layer "B.Cu")
 		(uuid "8bf6a927-c0b4-45ee-b06c-6d1e6c00a0f9")
@@ -132620,7 +132620,7 @@
 				(justify mirror)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole board_only)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_poly
 			(pts

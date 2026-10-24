@@ -502,11 +502,19 @@ def classify(v, modes):
     return v["source"], v["severity"] == "error" and modes[v["source"]] == "enforce"
 
 
+def project_file(proj_dir):
+    """The project's .kicad_pro, ignoring hidden copies (e.g. a render tool's .<name>.*-src.kicad_pro)."""
+    pros = sorted(p for p in proj_dir.glob("*.kicad_pro") if not p.name.startswith("."))
+    if len(pros) != 1:
+        raise SystemExit(f"{rel(proj_dir)}: expected one .kicad_pro, found {[p.name for p in pros] or 'none'}")
+    return pros[0]
+
+
 def cmd_check(args):
     config = load_config()
     proj_dir = (REPO / args.project).resolve()
     proj_rel = rel(proj_dir)
-    pro = next(proj_dir.glob("*.kicad_pro"))
+    pro = project_file(proj_dir)
     name = pro.stem
     sch, pcb = proj_dir / f"{name}.kicad_sch", proj_dir / f"{name}.kicad_pcb"
     modes = project_modes(config, proj_rel)
@@ -619,7 +627,7 @@ def zip_dir(src, dest):
 def cmd_outputs(args):
     config = load_config()
     proj_dir = (REPO / args.project).resolve()
-    name = next(proj_dir.glob("*.kicad_pro")).stem
+    name = project_file(proj_dir).stem
     sch, pcb = proj_dir / f"{name}.kicad_sch", proj_dir / f"{name}.kicad_pcb"
     out = Path(args.out).resolve()
     if out.exists():
