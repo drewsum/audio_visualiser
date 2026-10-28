@@ -1,0 +1,210 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>DSP Board Rev A Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: single review column, a sticky tally bar, findings grouped by severity as checklist rows with a severity stripe */
+:root{
+  --bg:#f5f6f4; --panel:#ffffff; --fg:#1b2420; --muted:#5d6a64; --line:#d9dfdb;
+  --accent:#1f6f5c; --high:#b3261e; --med:#b86e00; --low:#4a6fa5; --ok:#2e7d4f;
+  --code:#eef1ef;
+  --f-display:"Archivo",system-ui,sans-serif; --f-body:"Archivo",system-ui,sans-serif; --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121715; --panel:#1a211e; --fg:#e3e9e5; --muted:#98a59f; --line:#2c3632;
+  --accent:#5cc2a6; --high:#ff7a6e; --med:#f0a840; --low:#8fb2e6; --ok:#6fcf97; --code:#222b27; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121715; --panel:#1a211e; --fg:#e3e9e5; --muted:#98a59f; --line:#2c3632;
+  --accent:#5cc2a6; --high:#ff7a6e; --med:#f0a840; --low:#8fb2e6; --ok:#6fcf97; --code:#222b27; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.55;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px}
+h1{font-family:var(--f-display);font-weight:800;font-size:2rem;margin:0 0 4px;text-wrap:balance;letter-spacing:-.01em}
+h2{font-family:var(--f-display);font-size:1.25rem;margin:36px 0 10px;display:flex;align-items:baseline;gap:10px;text-wrap:balance}
+h2 .n{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);font-weight:400}
+.meta{color:var(--muted);font-size:.9rem}
+code,.mono{font-family:var(--f-mono);font-size:.86em;background:var(--code);padding:1px 5px;border-radius:3px;word-break:break-word}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding-block:10px;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;font-size:.88rem}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.chip{font-family:var(--f-mono);font-size:.78rem;padding:2px 8px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.c-high{color:var(--high)}.c-med{color:var(--med)}.c-low{color:var(--low)}.c-ok{color:var(--ok)}
+.prog{flex:1 1 160px;min-width:0;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
+.summary div{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;min-width:0}
+.summary b{display:block;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+ul.items{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+li.it{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--sev);border-radius:4px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px}
+li.it.high{--sev:var(--high)} li.it.med{--sev:var(--med)} li.it.low{--sev:var(--low)}
+li.it input{width:18px;height:18px;margin-top:3px;accent-color:var(--accent);grid-row:span 3;cursor:pointer}
+li.it input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+li.it .t{font-weight:600;min-width:0}
+li.it .t .id{font-family:var(--f-mono);font-size:.78rem;color:var(--sev);margin-right:6px}
+li.it .d,li.it .f{grid-column:2;min-width:0;color:var(--fg)}
+li.it .f{color:var(--muted);font-size:.92rem}
+li.it .f::before{content:"Fix: ";font-weight:600;color:var(--fg)}
+li.it.done{opacity:.55} li.it.done .t{text-decoration:line-through}
+.oklist{columns:2 300px;column-gap:28px;padding-left:18px;margin:0}
+.oklist li{break-inside:avoid;margin-bottom:6px}
+.tblw{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+p{max-width:72ch}
+@media (prefers-reduced-motion:reduce){.prog i{transition:none}}
+</style>
+
+<div class="wrap">
+  <h1>Audio Visualiser DSP Board, Rev A</h1>
+  <div class="meta">Peer review of <code>hdw/DSP_board/rev_a/Audio_Visualiser_DSP</code> · KiCad 10.0.7 · repo HEAD <code>0819a8d</code> (clean, nothing committed) · 24 Oct 2026</div>
+
+  <div class="summary">
+    <div><b>Must fix before fab</b><span class="c-high" style="font-size:1.6rem;font-weight:800">3</span> high</div>
+    <div><b>Should fix / decide</b><span class="c-med" style="font-size:1.6rem;font-weight:800">11</span> medium</div>
+    <div><b>Cleanup &amp; notes</b><span class="c-low" style="font-size:1.6rem;font-weight:800">26</span> low</div>
+    <div><b>ERC / DRC (as saved)</b>ERC 4 warnings · DRC 13 errors, 234 warnings · 0 unrouted · 0 parity</div>
+  </div>
+
+  <div class="bar" role="status">
+    <span id="tally">0 of 40 reviewed</span>
+    <div class="prog" aria-hidden="true"><i id="pbar"></i></div>
+    <span class="chip c-high">high</span><span class="chip c-med">medium</span><span class="chip c-low">low</span>
+  </div>
+
+  <h2>High <span class="n">fix before ordering</span></h2>
+  <ul class="items">
+    <li class="it high"><input type="checkbox" id="H1"><div class="t"><span class="id">H1</span>J1903 Digi-Key PN is the wrong connector</div>
+      <div class="d"><code>35-PRPC003DAAN-RC-ND</code> is a Sullins PRPC003DAAN-RC, a 2×3 <em>male</em> header (confirmed on DigiKey). The footprint is <code>PinSocket_1x06_P2.54mm_Vertical</code> for the encoder module socket.</div>
+      <div class="f">Use a 1×6 female socket PN (e.g. Sullins PPPC061LFBN-RC family) and recheck height vs. the case.</div></li>
+    <li class="it high"><input type="checkbox" id="H2"><div class="t"><span class="id">H2</span>Fab outputs and zone fills are stale</div>
+      <div class="d"><code>gerbers/</code> and <code>gerbers.zip</code> are from 21 Oct 20:34; the <code>.kicad_pcb</code> was saved 24 Oct 13:03. The saved board also has unrefilled zones: 5 clearance errors on the <code>~{RESET_LED}</code> via at (93.68, 87.07) against GND / +3.3V on In1–In4/In6 (0.071 mm vs 0.15 mm). All 5 disappear when DRC runs with zone refill.</div>
+      <div class="f">Refill all zones (B), save, rerun DRC, then regenerate gerbers, drill, BOM and CPL from the current board.</div></li>
+    <li class="it high"><input type="checkbox" id="H3"><div class="t"><span class="id">H3</span>R406 (20 mΩ 3.3V shunt) has an invalid Digi-Key PN</div>
+      <div class="d"><code>P16010CT-ND</code> does not resolve to a product on DigiKey (search falls back to unrelated parts). The <code>P160xx</code> prefix is Panasonic's ERJ-P03 0603 series, not a 0612 wide-terminal 20 mΩ part. R406 is in series with the whole +3.3V rail, so a wrong part here breaks the board.</div>
+      <div class="f">Pick a real 0.02 Ω 1% 0612 part (e.g. ERJ-B2CFR02V or ERJ-B1CFR02U) to match R207's family, and confirm footprint.</div></li>
+  </ul>
+
+  <h2>Medium <span class="n">fix or consciously accept</span></h2>
+  <ul class="items">
+    <li class="it med"><input type="checkbox" id="M1"><div class="t"><span class="id">M1</span>TCA9801 vs TCA9803 is ambiguous</div>
+      <div class="d">U803/U1807/U1809 are valued TCA9801 (1.1 mA B-side current source), but the symbol is <code>project_lib:TCA9803</code>, the datasheet link is <code>tca9803.pdf</code>, and the schematic notes say "3.3 mA current source". The B-side source is the only pull-up on <code>I2C_SDA/SCL</code> and the panel buses, so the choice sets rise time and how hard every slave must sink (RILC ≤ 150 Ω).</div>
+      <div class="f">Pick one part. With several devices, the Adafruit cable and a 30-pin ribbon on the panel side, TCA9802/9803 give more rise-time margin. Make value, symbol, link, notes and PN agree.</div></li>
+    <li class="it med"><input type="checkbox" id="M2"><div class="t"><span class="id">M2</span>Encoder module pull-ups sit on a no-pull-up bus</div>
+      <div class="d">J1903 (Adafruit 5880) lands on <code>I2C_SDA/SCL</code>, which is U803's B side. TI says no external pull-ups on SDAB/SCLB because extra current defeats the IILC low-detection. STEMMA QT boards normally carry 10 kΩ pull-ups.</div>
+      <div class="f">Verify the module's pull-ups and cut/remove them, or move the module onto its own A-side bus. Also confirm J1903 order (pin 1 Vin, 2 NC, 3 GND, 4 SCL, 5 SDA, 6 INT) against the module pads.</div></li>
+    <li class="it med"><input type="checkbox" id="M3"><div class="t"><span class="id">M3</span>dsPIC I2C1 side relies on internal pull-ups</div>
+      <div class="d">The TCA9801 A side needs a pull-up. R802/R804 are DNP and the note says to use internal pull-ups. The dsPIC33A CN pull-up is 175–545 µA (≈6–19 kΩ). With D601 (16 pF/line), the header and the buffer, that works at 100 kHz but not reliably at 400 kHz.</div>
+      <div class="f">Run I2C1 at 100 kHz, or populate R802/R804 (~10 kΩ) and confirm the PICkit still programs. Keep the footprints either way.</div></li>
+    <li class="it med"><input type="checkbox" id="M4"><div class="t"><span class="id">M4</span>Panel PGOOD inputs float</div>
+      <div class="d"><code>LEFT/RIGHT_LED_POS3P3_PGOOD_BUF</code> and <code>LEFT/RIGHT_VLED_PGOOD_BUF</code> go straight from J2101/J2102 to 1G97 inputs with no resistor on this board. Unplugged panel means a floating CMOS input; if the panel's PG is open-drain it never reads high.</div>
+      <div class="f">Add a 10 k pull-down on each (or pull-up to +3.3V if the panel PG is open-drain).</div></li>
+    <li class="it med"><input type="checkbox" id="M5"><div class="t"><span class="id">M5</span>TPD3S014 has no input capacitor</div>
+      <div class="d">The datasheet asks for ≥0.1 µF on IN close to the IC. <code>Net-(U904-EN)</code> (IN + EN) only has FB901 to VBUS; cable inductance plus the bead can ring on hot-plug.</div>
+      <div class="f">Add 0.1–1 µF from U904 IN to GND.</div></li>
+    <li class="it med"><input type="checkbox" id="M6"><div class="t"><span class="id">M6</span>Input TVS is DNP and the chosen part clamps too high</div>
+      <div class="d">D201 SMAJ24CA is DNP. If fitted, its clamp is ~38.9 V at Ipp, above the TPS25947's 28 V absolute max on IN.</div>
+      <div class="f">Fit a TVS with standoff &gt;13.2 V and clamp &lt;28 V (SMAJ15A/SMAJ15CA class, Vc ≈ 24 V).</div></li>
+    <li class="it med"><input type="checkbox" id="M7"><div class="t"><span class="id">M7</span>Anti-alias filter does less than its note claims</div>
+      <div class="d">Each Sallen-Key stage is fc 23.2 kHz, Q ≈ 0.73 (C1603/C1601 = 1000/470 pF). Two equal-Q stages are not a 4-pole Butterworth: about −3.8 dB at 20 kHz and only about −5 dB at 22.05 kHz, so at 44.1 kS/s it barely suppresses aliases, contrary to "must filter hard".</div>
+      <div class="f">Either oversample (the ADC is fast) and decimate digitally, or rework to Q 0.54 / 1.31 with a lower fc. Update the note.</div></li>
+    <li class="it med"><input type="checkbox" id="M8"><div class="t"><span class="id">M8</span>Speaker input clips at ~12 Vrms</div>
+      <div class="d">21:1 divider, in-amp gain 2, output limited to 1.6 ± 1.6 V, so full scale is ±16.8 V peak differential (≈18 W into 8 Ω). Louder amps clip in U1401/U1402 before the digipot can attenuate. Each R1401–R1404 (0402, 1/16 W) is near its rating above ~35 Vrms per leg.</div>
+      <div class="f">Confirm the amplifier range you expect; consider ~40:1 and 0603/0805 resistors for the high-voltage leg.</div></li>
+    <li class="it med"><input type="checkbox" id="M9"><div class="t"><span class="id">M9</span>AVSS isolated from ground by a ferrite</div>
+      <div class="d">FB702 puts a bead between GND and <code>GNDA_DSP</code> (AVSS). The audio chain and the 1.6 V reference used as ADC negative input are referenced to GND, so AVSS noise shows up as ADC error. Microchip ties AVSS to VSS.</div>
+      <div class="f">Make FB702 a 0 Ω (keep the footprint as an option).</div></li>
+    <li class="it med"><input type="checkbox" id="M10"><div class="t"><span class="id">M10</span>Ferrite in the PICkit ground return</div>
+      <div class="d">FB602 sits between J601 pin 3 (GND) and board GND. Ground bounce on PGC/PGD edges can break programming and debug.</div>
+      <div class="f">Replace FB602 with 0 Ω.</div></li>
+    <li class="it med"><input type="checkbox" id="M11"><div class="t"><span class="id">M11</span>C203 bulk cap voltage derating</div>
+      <div class="d">C203 is 100 µF 25 V in a Kemet 7343-43 case (<code>399-8410-1-ND</code>). If it is a T491 MnO2 tantalum, 13.2 V exceeds the usual 50% derating.</div>
+      <div class="f">Confirm the series; prefer a polymer (T520/T521) or a 35 V rating.</div></li>
+  </ul>
+
+  <h2>Low <span class="n">cleanup, documentation, minor margin</span></h2>
+  <ul class="items">
+    <li class="it low"><input type="checkbox" id="L1"><div class="t"><span class="id">L1</span>ERC: PWR_FLAGs on op-amp-driven nets</div><div class="d">All 4 ERC warnings are #FLG01701/#FLG01702 on <code>+1.6V_AREF_LEFT/RIGHT</code>, which U1701 pins 1 and 7 already drive.</div><div class="f">Delete both PWR_FLAGs.</div></li>
+    <li class="it low"><input type="checkbox" id="L2"><div class="t"><span class="id">L2</span><code>~{RESET_LED}</code> polarity naming</div><div class="d">R1205 pulls it high in reset; U1203 (NOT) lights D1203 and U802 (NOT) holds I2C_EN low. Firmware drives it low to turn the LED off and enable I2C. The logic works but the net is effectively active-high.</div><div class="f">Rename to RESET_LED or add a note.</div></li>
+    <li class="it low"><input type="checkbox" id="L3"><div class="t"><span class="id">L3</span>Note: TCA980x EN pull-up is to VCCA</div><div class="d">Three notes say "Internal 250k pullup to VCCB". Datasheet 9.3.4 says VCCA. Same 3.3 V here.</div><div class="f">Correct the text.</div></li>
+    <li class="it low"><input type="checkbox" id="L4"><div class="t"><span class="id">L4</span>Note: PGOOD divider at 13.2 V</div><div class="d">R208/R209 give 13.2 × 3.65/13.65 = 3.53 V, not 3.58 V. Other eFuse note values check out.</div><div class="f">Change to 3.53 V.</div></li>
+    <li class="it low"><input type="checkbox" id="L5"><div class="t"><span class="id">L5</span>Note: PGA gain at reset</div><div class="d">Midscale wiper gives −5k/(1k+5k) = −0.83 (−1.6 dB), not 1, because R1502/R1503 add to the input leg.</div><div class="f">Fix the note, or set the startup wiper code in firmware.</div></li>
+    <li class="it low"><input type="checkbox" id="L6"><div class="t"><span class="id">L6</span>MCLR series resistor above recommendation</div><div class="d">R609 = 1 k; DS70005629 §2.5 recommends R1 ≤ 470 Ω.</div><div class="f">Use 470 Ω.</div></li>
+    <li class="it low"><input type="checkbox" id="L7"><div class="t"><span class="id">L7</span>3.3V regulator rating vs. intent</div><div class="d">TPS62150A is a 1 A part, but the telemetry note sizes the rail for 3.1 A and the symbol is TPS62130 (3 A). Output caps are 2×10 µF 0805 (≈12–14 µF at 3.3 V) vs. 22 µF recommended.</div><div class="f">Confirm the load budget and intended part; consider a third 10 µF or a 22 µF.</div></li>
+    <li class="it low"><input type="checkbox" id="L8"><div class="t"><span class="id">L8</span>VOS sensed after the shunt</div><div class="d">U402 VOS ties to +3.3V downstream of R406; the datasheet says sense at the output cap. Effect is small at these currents.</div><div class="f">Accept, or move VOS to the C406 node.</div></li>
+    <li class="it low"><input type="checkbox" id="L9"><div class="t"><span class="id">L9</span>POS12_PGOOD drives the dsPIC before 3.3V exists</div><div class="d">The R208/R209 divider (≈2.7 kΩ Thevenin, 3.2 V) feeds RC7 while VDD is still 0 V, injecting ~1 mA through the ESD diode until the buck starts.</div><div class="f">Add ~10 k series into U701 pin 26, or accept.</div></li>
+    <li class="it low"><input type="checkbox" id="L10"><div class="t"><span class="id">L10</span>ENCODER_INT has no pull-up</div><div class="d">J1903 pin 6 goes straight to RC6.</div><div class="f">Enable the internal pull-up in firmware or add one if the module's INT is open-drain.</div></li>
+    <li class="it low"><input type="checkbox" id="L11"><div class="t"><span class="id">L11</span>CP2104 VPP capacitor</div><div class="d">C906 is 10 µF; Silicon Labs specifies 4.7 µF, only needed for OTP programming.</div><div class="f">4.7 µF or DNP.</div></li>
+    <li class="it low"><input type="checkbox" id="L12"><div class="t"><span class="id">L12</span>TXB0102 VCCA can exceed VCCB</div><div class="d">VCCA is the CP2104 regulator (3.0–3.6 V), VCCB is +3.3V. VCCA ≤ VCCB can be violated by tens of mV. Your schematic note already flags this.</div><div class="f">Accept, or power VCCA from a rail guaranteed ≤ +3.3V.</div></li>
+    <li class="it low"><input type="checkbox" id="L13"><div class="t"><span class="id">L13</span>Unused op-amp bias wastes 3.3 mA</div><div class="d">U1701C/D are biased by 1 k/1 k dividers (R1701–R1704).</div><div class="f">Use 100 k.</div></li>
+    <li class="it low"><input type="checkbox" id="L14"><div class="t"><span class="id">L14</span>Pull-downs on actively driven nets</div><div class="d">R401, R605, R801, R807, R1801–R1805, R1907 sit on nets a push-pull output always drives.</div><div class="f">Optional: DNP to save parts.</div></li>
+    <li class="it low"><input type="checkbox" id="L15"><div class="t"><span class="id">L15</span>Symbol / datasheet / footprint mismatches</div><div class="d">X601 (ASE) links ASV.pdf; L701 is a Murata DFE252012F on a Würth PMCI-252012 footprint; D601/D2101–D2104 use the PESD3V3L5UY symbol for PESD5V0L5UYF; U402 uses the TPS62130 symbol.</div><div class="f">Align fields; check the L701 land pattern against Murata's drawing.</div></li>
+    <li class="it low"><input type="checkbox" id="L16"><div class="t"><span class="id">L16</span>Test points without a PN</div><div class="d">TP201, TP202, TP203, TP401, TP601, TP901 have no Digi-Key PN; TP701/TP1701/TP1702 use <code>36-5005-ND</code>.</div><div class="f">Fill in or mark as bare pads.</div></li>
+    <li class="it low"><input type="checkbox" id="L17"><div class="t"><span class="id">L17</span>0402 10 µF on USB rails</div><div class="d">CL05A106MP6NUN8 (10 V X5R 0402) keeps only a fraction of 10 µF at 3.3–5 V.</div><div class="f">Use 0603/0805 where it matters (C902, C903, C910).</div></li>
+    <li class="it low"><input type="checkbox" id="L18"><div class="t"><span class="id">L18</span>USB shield capacitor rating</div><div class="d">C911 is 10 nF 50 V 0402 between CHGND and GND.</div><div class="f">Consider a ≥100 V (ideally 1–2 kV) part.</div></li>
+    <li class="it low"><input type="checkbox" id="L19"><div class="t"><span class="id">L19</span>DRC: J901 hole clearance</div><div class="d">8 errors: shield PTH to NPTH peg at 0.266 mm vs JLC rule 0.28/0.30 mm. Comes from the JAE land pattern.</div><div class="f">Confirm with JLC DFM or nudge the shield slots within JAE's tolerance.</div></li>
+    <li class="it low"><input type="checkbox" id="L20"><div class="t"><span class="id">L20</span>DRC: dangling vias</div><div class="d"><code>I2C_SDA</code> (41.71, 36.63), <code>POS12_PGOOD</code> (42.01, 50.70), <code>POS3P3_PGOOD</code> (59.82, 51.49).</div><div class="f">Delete the stubs.</div></li>
+    <li class="it low"><input type="checkbox" id="L21"><div class="t"><span class="id">L21</span>DRC: silkscreen</div><div class="d">199 overlaps, 26 silk-over-edge (J201, J601, J901), D201 silk on J201 pads, non-mirrored copper text "8" on B.Cu at (128.17, 115.23).</div><div class="f">Clean up; mirror the B.Cu text.</div></li>
+    <li class="it low"><input type="checkbox" id="L22"><div class="t"><span class="id">L22</span>Floating copper zones</div><div class="d">Zone "EmptySpace" with no net on F.Cu, B.Cu and In5.Cu reports isolated fill.</div><div class="f">Tie to GND or remove.</div></li>
+    <li class="it low"><input type="checkbox" id="L23"><div class="t"><span class="id">L23</span>dsPIC core buck loop size</div><div class="d">L701 and C717 centers are about 6 mm from U701's center; Microchip asks for a compact Lx/VDDCORE loop on the same side.</div><div class="f">Check the Lx–L701–C717–VSS loop on the layout.</div></li>
+    <li class="it low"><input type="checkbox" id="L24"><div class="t"><span class="id">L24</span>JTAG pins carry live signals</div><div class="d">RB1/TMS carries <code>+1.6V_AREF_RIGHT</code> (pull-up active on an erased part); TCK/TDO/TDI carry the LED SPI lines.</div><div class="f">Set JTAGEN = 0 in config bits.</div></li>
+    <li class="it low"><input type="checkbox" id="L25"><div class="t"><span class="id">L25</span>Panel back-powering during bring-up</div><div class="d">LED_BUF_OE enables RUN, SPI, LAT and BLANK together, so the SPI lines can drive an unpowered panel.</div><div class="f">Firmware: hold SPI/LAT/BLANK low until the panel reports PGOOD.</div></li>
+    <li class="it low"><input type="checkbox" id="L26"><div class="t"><span class="id">L26</span>Digi-Key coverage was partial</div><div class="d">The DigiKey API credentials on this machine are not configured, so only J1903 and R406 were checked live. The rest were checked by distributor prefix and MPN pattern against value, footprint and rating.</div><div class="f">Upload the BOM to DigiKey's BOM manager before ordering.</div></li>
+  </ul>
+
+  <h2>Checked and found correct</h2>
+  <ul class="oklist">
+    <li>dsPIC33AK256MPS105 48-VQFN pinout vs DS70005629C Table 3; EP to GND; buck parts (10 µH, 10 µF VDDCORE, 10 µF SWVDD); decoupling count matches the note.</li>
+    <li>PPS notes match the nets (SCK1/SDO1/SCK2/SDO2, OCM1/OCM2, U1TX/U1RX, REFO1, INT1); ICSP on PGC1/PGD1.</li>
+    <li>Differential ADC: AD1AN1/AD1ANN2 and AD2AN1/AD2ANN2 can pair (independent PINSEL/NINSEL).</li>
+    <li>All 21 74LVC1G97 instances decode to the intended function (NOT, BUF, AND, gated PGOOD, NAND for LEDs).</li>
+    <li>TPS259474L: UVLO 10.37/9.42 V, OVLO 13.90/12.63 V, ILIM 6.07 A, blanking 0.84 ms, ramp ≈60 ms, PG 10.43 V. All match the note.</li>
+    <li>TPS62150A pinout; FB divider gives 3.328 V; 2.2 µH at 2.5 MHz; output discharge circuit (Q401/Q402) works.</li>
+    <li>INA231 CAL/LSB math (0x0800, 0x0A92) and shunt polarity; MCP9804 pinouts.</li>
+    <li>I2C addresses unique: MCP4451 0x2C, encoder 0x36, PCA9536 0x41, INA231 0x40/0x43, MCP9804 0x18–0x1A.</li>
+    <li>RCA divider 4.022:1 and speaker 21:1 notes correct; MCP6N11 pinout, gain 2, EN/CAL wiring.</li>
+    <li>MCP4451 QFN-20, TS3A24159 (Low = RCA), REF35160 pinout and 1 µF output cap, TXB0102 DCU, TPD3S014, CP2104 pin map, USB-C CC 5.1 k.</li>
+    <li>74VHC541 pinout, unused inputs tied, OE pulled to disabled in reset.</li>
+    <li>Every logic input is driven or biased except the items above; no net has two push-pull drivers.</li>
+    <li>Logic levels: dsPIC VIH is 0.8·VDD (2.64 V); every dsPIC input sees a 3.3 V CMOS source or the 3.2 V PGOOD divider (≥2.79 V at the PG threshold).</li>
+    <li>Schematic/PCB parity clean; no unrouted nets; no courtyard overlaps.</li>
+  </ul>
+
+  <h2>DRC as saved</h2>
+  <div class="tblw"><table>
+    <thead><tr><th>Type</th><th>Count</th><th>Item</th></tr></thead>
+    <tbody>
+      <tr><td>clearance (error)</td><td>5</td><td>H2, stale zone fill</td></tr>
+      <tr><td>hole_clearance (error)</td><td>8</td><td>L19</td></tr>
+      <tr><td>silk_overlap / silk_edge / silk_over_copper</td><td>199 / 26 / 2</td><td>L21</td></tr>
+      <tr><td>via_dangling</td><td>3</td><td>L20</td></tr>
+      <tr><td>isolated_copper</td><td>3</td><td>L22</td></tr>
+      <tr><td>nonmirrored_text_on_back_layer</td><td>1</td><td>L21</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<script>
+(function(){
+  var KEY='dsp-revA-review';
+  var boxes=[].slice.call(document.querySelectorAll('li.it input'));
+  var saved={};
+  try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+  function update(){
+    var n=0;
+    boxes.forEach(function(b){b.closest('li').classList.toggle('done',b.checked);if(b.checked)n++;});
+    document.getElementById('tally').textContent=n+' of '+boxes.length+' reviewed';
+    document.getElementById('pbar').style.width=(100*n/boxes.length)+'%';
+  }
+  boxes.forEach(function(b){
+    b.checked=!!saved[b.id];
+    b.addEventListener('change',function(){
+      saved[b.id]=b.checked;
+      try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(e){}
+      update();
+    });
+  });
+  update();
+})();
+</script>
+
+</body></html>

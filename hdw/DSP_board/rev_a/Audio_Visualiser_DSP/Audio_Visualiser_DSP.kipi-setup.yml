@@ -14,6 +14,7 @@ vrms:
     ref: J201
     net: GND
     pins: []
+  input_ground: null
   ground_sense: null
   phases: []
   current_limit_a: 5.0
@@ -51,6 +52,7 @@ vrms:
     ref: U402
     net: GND
     pins: []
+  input_ground: null
   ground_sense:
     ref: R410
     net: GND
@@ -85,6 +87,7 @@ vrms:
     ref: J901
     net: GND
     pins: []
+  input_ground: null
   ground_sense: null
   phases: []
   current_limit_a: null
@@ -119,6 +122,7 @@ vrms:
     ref: U901
     net: GND
     pins: []
+  input_ground: null
   ground_sense: null
   phases: []
   current_limit_a: 0.1
@@ -150,6 +154,14 @@ loads:
   tol_max: 5.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: J2102
   supply:
@@ -165,6 +177,14 @@ loads:
   tol_max: 5.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U701 dsPIC VDD
   supply:
@@ -191,6 +211,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U701 dsPIC AVDD
   supply:
@@ -208,6 +236,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: X601 oscillator
   supply:
@@ -225,6 +261,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1301 MCP6N11
   supply:
@@ -243,6 +287,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1302 MCP6N11
   supply:
@@ -261,6 +313,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1401 MCP6N11
   supply:
@@ -279,6 +339,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1402 MCP6N11
   supply:
@@ -297,6 +365,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1502 MCP6024
   supply:
@@ -314,6 +390,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1601 MCP6024
   supply:
@@ -331,6 +415,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1701 MCP6024
   supply:
@@ -348,6 +440,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1501 TS3A24159
   supply:
@@ -366,6 +466,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1503 MCP4451
   supply:
@@ -392,6 +500,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1702 REF35
   supply:
@@ -410,6 +526,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U801 PCA9536
   supply:
@@ -427,6 +551,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U803 TCA9801
   supply:
@@ -445,6 +577,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1807 TCA9801
   supply:
@@ -463,6 +603,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1809 TCA9801
   supply:
@@ -481,6 +629,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1803 74VHC541
   supply:
@@ -499,6 +655,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1804 74VHC541
   supply:
@@ -517,6 +681,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U903 TXB0102 VCCB
   supply:
@@ -534,6 +706,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: J1903 encoder module
   supply:
@@ -551,6 +731,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U401 74LVC1G97
   supply:
@@ -569,6 +757,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U601 74LVC1G97
   supply:
@@ -588,6 +784,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U802 74LVC1G97
   supply:
@@ -607,6 +811,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U805 74LVC1G97
   supply:
@@ -626,6 +838,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1101 74LVC1G97
   supply:
@@ -644,6 +864,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1102 74LVC1G97
   supply:
@@ -662,6 +890,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1103 74LVC1G97
   supply:
@@ -680,6 +916,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1104 74LVC1G97
   supply:
@@ -698,6 +942,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1105 74LVC1G97
   supply:
@@ -716,6 +968,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1106 74LVC1G97
   supply:
@@ -734,6 +994,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1201 74LVC1G97
   supply:
@@ -753,6 +1021,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1202 74LVC1G97
   supply:
@@ -772,6 +1048,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1203 74LVC1G97
   supply:
@@ -791,6 +1075,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1801 74LVC1G97
   supply:
@@ -809,6 +1101,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1802 74LVC1G97
   supply:
@@ -827,6 +1127,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1805 74LVC1G97
   supply:
@@ -845,6 +1153,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1806 74LVC1G97
   supply:
@@ -863,6 +1179,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1808 74LVC1G97
   supply:
@@ -882,6 +1206,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U1902 74LVC1G97
   supply:
@@ -901,6 +1233,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R1102 LED
   supply:
@@ -918,6 +1258,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R1103 LED
   supply:
@@ -935,6 +1283,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R1104 LED
   supply:
@@ -952,6 +1308,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R1105 LED
   supply:
@@ -969,6 +1333,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R1106 LED
   supply:
@@ -986,6 +1358,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R1107 LED
   supply:
@@ -1003,6 +1383,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R1203 LED
   supply:
@@ -1021,6 +1409,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R1204 LED
   supply:
@@ -1039,6 +1435,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R1206 LED
   supply:
@@ -1057,6 +1461,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U902 74LVC1G97
   supply:
@@ -1076,6 +1488,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: U903 TXB0102 VCCA
   supply:
@@ -1093,6 +1513,14 @@ loads:
   tol_max: 3.0
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R901 LED
   supply:
@@ -1111,6 +1539,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R902 LED
   supply:
@@ -1129,6 +1565,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 - name: R906 LED
   supply:
@@ -1147,6 +1591,14 @@ loads:
   tol_max: null
   tol_pct: true
   tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
   groups: []
 links:
 - name: U201
@@ -1160,7 +1612,7 @@ links:
     pins: []
   resistance: 0.0282
   esl_h: null
-  diode_vf: 0.0
+  spice: null
 - name: R207
   side_a:
     ref: R207
@@ -1172,7 +1624,7 @@ links:
     pins: []
   resistance: 0.01
   esl_h: null
-  diode_vf: 0.0
+  spice: null
 - name: R406
   side_a:
     ref: R406
@@ -1184,7 +1636,7 @@ links:
     pins: []
   resistance: 0.02
   esl_h: null
-  diode_vf: 0.0
+  spice: null
 - name: R610
   side_a:
     ref: R610
@@ -1196,7 +1648,7 @@ links:
     pins: []
   resistance: 10.0
   esl_h: null
-  diode_vf: 0.0
+  spice: null
 - name: FB701
   side_a:
     ref: FB701
@@ -1208,7 +1660,7 @@ links:
     pins: []
   resistance: 0.14
   esl_h: 3.50140803906e-07
-  diode_vf: 0.0
+  spice: null
 - name: FB702
   side_a:
     ref: FB702
@@ -1220,7 +1672,7 @@ links:
     pins: []
   resistance: 0.14
   esl_h: 3.50140803906e-07
-  diode_vf: 0.0
+  spice: null
 - name: FB901
   side_a:
     ref: FB901
@@ -1232,7 +1684,7 @@ links:
     pins: []
   resistance: 0.14
   esl_h: null
-  diode_vf: 0.0
+  spice: null
 - name: U904
   side_a:
     ref: U904
@@ -1244,7 +1696,7 @@ links:
     pins: []
   resistance: 0.097
   esl_h: null
-  diode_vf: 0.0
+  spice: null
 settings:
   max_edge_mm: 0.3
   min_angle_deg: 28.0
@@ -1405,6 +1857,7 @@ caps:
   dielectric: X7R
   aging_pct_per_decade: 2.0
   mfg_tolerance_pct: 10.0
+  spice: null
 - name: 100uF Tantalum
   capacitance_f: 9.999999999999999e-05
   esl_h: 2.5e-09
@@ -1416,6 +1869,7 @@ caps:
   dielectric: ''
   aging_pct_per_decade: 0.0
   mfg_tolerance_pct: 20.0
+  spice: null
 - name: 10uF 1206
   capacitance_f: 9.999999999999999e-06
   esl_h: 1.2e-09
@@ -1430,6 +1884,7 @@ caps:
   dielectric: X5R
   aging_pct_per_decade: 3.0
   mfg_tolerance_pct: 10.0
+  spice: null
 - name: 10uF 0805
   capacitance_f: 9.999999999999999e-06
   esl_h: 8.000000000000001e-10
@@ -1447,6 +1902,7 @@ caps:
   dielectric: X7R
   aging_pct_per_decade: 2.0
   mfg_tolerance_pct: 10.0
+  spice: null
 - name: 1000pF 0402
   capacitance_f: 1.0e-09
   esl_h: 5.0e-10
@@ -1458,6 +1914,7 @@ caps:
   dielectric: C0G
   aging_pct_per_decade: 0.0
   mfg_tolerance_pct: 5.0
+  spice: null
 - name: 10uF 0402
   capacitance_f: 9.999999999999999e-06
   esl_h: 5.0e-10
@@ -1472,6 +1929,7 @@ caps:
   dielectric: X5R
   aging_pct_per_decade: 3.0
   mfg_tolerance_pct: 23.0
+  spice: null
 - name: 1uF 0402
   capacitance_f: 1.0e-06
   esl_h: 5.0e-10
@@ -1491,6 +1949,7 @@ caps:
   dielectric: X7S
   aging_pct_per_decade: 2.5
   mfg_tolerance_pct: 20.0
+  spice: null
 probes:
 - name: U701 dsPIC VDD
   rail:
@@ -1518,6 +1977,8 @@ probes:
   target_points: []
   step_a: null
   slew_a_per_us: null
+  package: ''
+  die_port: 0
 - name: J2101
   rail:
     ref: J2101
@@ -1533,6 +1994,8 @@ probes:
   target_points: []
   step_a: 1.944
   slew_a_per_us: 10.0
+  package: ''
+  die_port: 0
 - name: J2102
   rail:
     ref: J2102
@@ -1548,6 +2011,9 @@ probes:
   target_points: []
   step_a: 1.944
   slew_a_per_us: 10.0
+  package: ''
+  die_port: 0
+packages: []
 ac:
   f_start_hz: 1000.0
   f_stop_hz: 300000000.0
@@ -1605,6 +2071,8 @@ aggressors:
     rds_on_hs_ohm: 0.09
     rds_on_ls_ohm: 0.04
     package_l_h: 0.0
+    inductor_axis: vertical
+    inductor_shielded: true
   ripple_probes:
   - U701 dsPIC VDD
   min_ring_zeta: 0.075
@@ -1612,7 +2080,7 @@ aggressors:
 victims:
 - net: Net-(U402-PG)
   name: Local PGOOD
-  preset: open_drain
+  preset: custom
   driver:
     ref: U402
     net: Net-(U402-PG)
@@ -1623,9 +2091,9 @@ victims:
     net: Net-(U402-PG)
     pins:
     - '6'
-  driver_ohm: 4700.0
+  driver_ohm: 10000.0
   receiver_ohm: 1000000.0
-  receiver_pf: 5.0
+  receiver_pf: 3.5
   termination_ohm: null
   logic_v: 3.3
   noise_margin_v: null
@@ -1642,7 +2110,7 @@ noise:
   field_per_decade: 10
   victims: Local PGOOD
   scan: false
-  scan_radius_mm: 10.0
+  scan_radius_mm: 50.0
   scan_top_n: 10
   scan_preset: hiz
   scan_driver_ohm: 33.0
