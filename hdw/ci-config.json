@@ -1,0 +1,27 @@
+{
+  "kicad_version": "10.0",
+  "project_roots": ["hdw"],
+
+  "defaults": {
+    "erc": "enforce",
+    "drc": "enforce",
+    "libraries": "report",
+    "project_lib": "off",
+    "pdf": "report"
+  },
+
+  "projects": {
+    "hdw/DSP_board/rev_a/Audio_Visualiser_DSP": {
+      "erc": "report",
+      "drc": "report",
+      "project_lib": "enforce",
+      "project_lib_dir": "../../../project_lib"
+    }
+  },
+
+  "bom": {
+    "fields": "Reference,Value,Footprint,Digi-Key PN,${QUANTITY},${DNP}",
+    "labels": "Refs,Value,Footprint,Digi-Key PN,Qty,DNP",
+    "group_by": "Value,Footprint,Digi-Key PN"
+  }
+}
