@@ -1392,331 +1392,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom_Library:ZXMS6004FFTA"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "ZXMS6004FFTA"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-				)
-			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Description" "Power Switch/Driver 1:1 N-Channel 1.3A 60V SOT-23F"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Digi-Key PN" "ZXMS6004FFCT-ND"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "N-Channel MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "ZXMS6004FFTA_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "ZXMS6004FFTA_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Diode:BAT48JFILM"
 			(pin_numbers
 				(hide yes)
@@ -3067,6 +2742,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 166.37) (xy 123.19 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25ab7213-bad6-49ba-be38-ebd720f90cad")
+	)
+	(wire
+		(pts
 			(xy 71.12 58.42) (xy 71.12 59.69)
 		)
 		(stroke
@@ -3254,6 +2939,16 @@
 			(type default)
 		)
 		(uuid "7b3f267c-373b-48fd-b100-28b986ad4805")
+	)
+	(wire
+		(pts
+			(xy 123.19 157.48) (xy 123.19 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e92f7c2-39dc-407d-8d7f-2b5abad78483")
 	)
 	(wire
 		(pts
@@ -3704,6 +3399,115 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BSS214NW")
+		(at 120.65 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "06095dc8-6b99-4777-914c-73b94e343b26")
+		(property "Reference" "Q19002"
+			(at 125.73 170.815 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS214NW"
+			(at 125.73 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project_lib:SOT-323_SC-70"
+			(at 125.73 174.625 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde"
+			(at 120.65 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "BSS214NWH6327XTSA1CT-ND"
+			(at 120.65 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 120.65 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "478de413-0677-4b26-afd4-a6de22ef0948")
+		)
+		(pin "2"
+			(uuid "4f0f6d43-f81b-44e3-9a87-c479250bb87f")
+		)
+		(pin "3"
+			(uuid "4bb64b1f-b4d4-4986-b75c-0cad44954ce9")
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "Q19002")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4245,7 +4049,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44ec7e51-5344-4323-8683-ebb3c28e6e49")
-		(property "Reference" "R19010"
+		(property "Reference" "R19011"
 			(at 223.774 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4362,7 +4166,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
-					(reference "R19010")
+					(reference "R19011")
 					(unit 1)
 				)
 			)
@@ -5229,7 +5033,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "71c94311-13f0-45ff-baf5-dd2b5e27b184")
-		(property "Reference" "R19009"
+		(property "Reference" "R19010"
 			(at 220.218 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5358,7 +5162,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
-					(reference "R19009")
+					(reference "R19010")
 					(unit 1)
 				)
 			)
@@ -6873,7 +6677,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b25a7630-d0f2-4010-9f18-abadbdca080e")
-		(property "Reference" "R19005"
+		(property "Reference" "R19006"
 			(at 191.77 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7000,7 +6804,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
-					(reference "R19005")
+					(reference "R19006")
 					(unit 1)
 				)
 			)
@@ -7189,7 +6993,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b73795ec-f315-4f30-8da2-974ce41fb642")
-		(property "Reference" "R19007"
+		(property "Reference" "R19008"
 			(at 195.58 72.39 90)
 			(hide yes)
 			(show_name no)
@@ -7304,7 +7108,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
-					(reference "R19007")
+					(reference "R19008")
 					(unit 1)
 				)
 			)
@@ -7328,7 +7132,7 @@
 		(in_pos_files no)
 		(dnp yes)
 		(uuid "c0dbc12b-606b-4e6f-a417-a6d2ecdd6624")
-		(property "Reference" "R19006"
+		(property "Reference" "R19007"
 			(at 190.754 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7445,7 +7249,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
-					(reference "R19006")
+					(reference "R19007")
 					(unit 1)
 				)
 			)
@@ -7728,7 +7532,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "dd375ced-f37c-45c8-aa7a-fbda04b14d52")
-		(property "Reference" "R19008"
+		(property "Reference" "R19009"
 			(at 204.47 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7855,7 +7659,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
-					(reference "R19008")
+					(reference "R19009")
 					(unit 1)
 				)
 			)
@@ -7869,7 +7673,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 123.19 167.64 0)
+		(at 123.19 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -7879,7 +7683,7 @@
 		(dnp no)
 		(uuid "e157f3ae-080e-415c-a711-48f20b4fe806")
 		(property "Reference" "#PWR019015"
-			(at 123.19 171.45 0)
+			(at 123.19 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7890,7 +7694,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 123.19 164.084 0)
+			(at 123.19 153.924 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7900,7 +7704,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 167.64 0)
+			(at 123.19 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7911,7 +7715,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 167.64 0)
+			(at 123.19 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7922,7 +7726,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 123.19 167.64 0)
+			(at 123.19 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8341,6 +8145,141 @@
 		)
 	)
 	(symbol
+		(lib_id "Custom_Library:R_Custom")
+		(at 123.19 162.56 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "edfc587d-2aa3-4ebb-a359-7912424286f3")
+		(property "Reference" "R19005"
+			(at 124.714 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1k"
+			(at 123.19 162.56 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "project_lib:R_0402"
+			(at 123.19 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "display_footprint" "0402"
+			(at 121.412 160.528 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 121.412 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Wattage" "1/16W"
+			(at 121.412 164.338 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Digi-Key PN" "311-1.00KLRCT-ND"
+			(at 115.57 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 123.19 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c0d92760-53c3-40ad-bfcd-75633ccd987f")
+		)
+		(pin "2"
+			(uuid "55a5fb41-b810-46b0-9bc0-d1f32ba7b66f")
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
+					(reference "R19005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Custom_Library:C_Custom")
 		(at 106.68 114.3 0)
 		(unit 1)
@@ -8560,121 +8499,6 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
 					(reference "#PWR0410")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Custom_Library:ZXMS6004FFTA")
-		(at 120.65 172.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f2959e98-448d-4cd0-86f9-edc845909671")
-		(property "Reference" "Q19002"
-			(at 125.73 170.815 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ZXMS6004FFTA"
-			(at 125.73 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 174.625 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ZXMS6004FF.pdf"
-			(at 120.65 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Description" ""
-			(at 120.65 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digi-Key PN" "ZXMS6004FFCT-ND"
-			(at 120.65 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 120.65 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d47ca884-d1bc-4e2f-b706-dae6d02ad1aa")
-		)
-		(pin "2"
-			(uuid "ca10f344-ac4a-4ad3-bc24-91fe971156dd")
-		)
-		(pin "3"
-			(uuid "e0f4241d-080f-4aed-8aa6-36177c67403e")
-		)
-		(instances
-			(project "LED Board"
-				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/89165fdd-d6f8-4a77-a44b-dc14e3719eaa"
-					(reference "Q19002")
-					(unit 1)
-				)
-			)
-			(project "Audio_Visualiser_DSP"
-				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b2362e66-49f5-4e26-9e9f-2de376dec3c9"
-					(reference "Q402")
 					(unit 1)
 				)
 			)
