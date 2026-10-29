@@ -2267,7 +2267,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0675c494-53b7-44a9-9450-b3a89452fa18")
-		(property "Reference" "D2101"
+		(property "Reference" "D20001"
 			(at 63.5 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2288,7 +2288,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 60.96 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2363,7 +2363,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2101")
+					(reference "D20001")
 					(unit 4)
 				)
 			)
@@ -2386,7 +2386,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0d533380-23b9-4113-b048-f7fc5e74234d")
-		(property "Reference" "D2103"
+		(property "Reference" "D20002"
 			(at 101.6 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2407,7 +2407,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 99.06 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2482,7 +2482,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2103")
+					(reference "D20002")
 					(unit 1)
 				)
 			)
@@ -2506,7 +2506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "157572d1-c436-4075-94ed-05818a6d6048")
-		(property "Reference" "#PWR02107"
+		(property "Reference" "#PWR020004"
 			(at 179.07 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -2567,7 +2567,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02107")
+					(reference "#PWR020004")
 					(unit 1)
 				)
 			)
@@ -2591,7 +2591,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1b6fbb26-ec99-487e-8dca-68078e7b1baa")
-		(property "Reference" "#PWR02118"
+		(property "Reference" "#PWR020012"
 			(at 204.47 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -2652,7 +2652,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02118")
+					(reference "#PWR020012")
 					(unit 1)
 				)
 			)
@@ -2676,7 +2676,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "25b6d48c-2b2f-47a9-8d28-b030da69deeb")
-		(property "Reference" "#PWR02139"
+		(property "Reference" "#PWR020020"
 			(at 200.66 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -2736,7 +2736,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02139")
+					(reference "#PWR020020")
 					(unit 1)
 				)
 			)
@@ -2756,10 +2756,10 @@
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2dd4f42c-7ac3-4a7f-b54b-1964bcacef15")
-		(property "Reference" "C2101"
+		(property "Reference" "C20001"
 			(at 224.155 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2781,7 +2781,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitors_SMD:C_1206"
+		(property "Footprint" "project_lib:C_1206"
 			(at 224.4852 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -2878,7 +2878,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "C2101")
+					(reference "C20001")
 					(unit 1)
 				)
 			)
@@ -2902,7 +2902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f0e6055-e8de-4def-b675-aff6bce44b58")
-		(property "Reference" "#PWR02108"
+		(property "Reference" "#PWR020005"
 			(at 179.07 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -2963,7 +2963,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02108")
+					(reference "#PWR020005")
 					(unit 1)
 				)
 			)
@@ -2986,7 +2986,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3620df1e-f00a-4ffb-af6b-e1155a309f94")
-		(property "Reference" "D2101"
+		(property "Reference" "D20001"
 			(at 44.45 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3007,7 +3007,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 41.91 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -3082,7 +3082,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2101")
+					(reference "D20001")
 					(unit 2)
 				)
 			)
@@ -3105,7 +3105,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3a272cde-2955-4b7c-a625-7b8218c98af8")
-		(property "Reference" "J2101"
+		(property "Reference" "J20001"
 			(at 191.77 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3125,7 +3125,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x15_P2.54mm_Vertical"
+		(property "Footprint" "project_lib:IDC-Header_2x15_P2.54mm_Vertical"
 			(at 190.5 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3262,7 +3262,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "J2101")
+					(reference "J20001")
 					(unit 1)
 				)
 			)
@@ -3286,7 +3286,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44996edb-357e-4157-84df-db50e23bc8ff")
-		(property "Reference" "#PWR02113"
+		(property "Reference" "#PWR020007"
 			(at 204.47 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3347,7 +3347,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02113")
+					(reference "#PWR020007")
 					(unit 1)
 				)
 			)
@@ -3371,7 +3371,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "44fa75ea-e7de-4037-958a-98d6c8c43396")
-		(property "Reference" "#PWR02115"
+		(property "Reference" "#PWR020009"
 			(at 204.47 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3432,7 +3432,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02115")
+					(reference "#PWR020009")
 					(unit 1)
 				)
 			)
@@ -3456,7 +3456,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4520418c-c814-4480-8c8d-570ac2187b4b")
-		(property "Reference" "#PWR02103"
+		(property "Reference" "#PWR020002"
 			(at 99.06 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3515,7 +3515,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02103")
+					(reference "#PWR020002")
 					(unit 1)
 				)
 			)
@@ -3538,7 +3538,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "497b97a0-84f5-4d18-8482-f4fb70061e48")
-		(property "Reference" "D2101"
+		(property "Reference" "D20001"
 			(at 69.85 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3559,7 +3559,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 67.31 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -3634,7 +3634,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2101")
+					(reference "D20001")
 					(unit 3)
 				)
 			)
@@ -3658,7 +3658,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a2748fb-475e-464f-8b31-4bb78ae42a0d")
-		(property "Reference" "#PWR02122"
+		(property "Reference" "#PWR020016"
 			(at 204.47 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -3719,7 +3719,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02122")
+					(reference "#PWR020016")
 					(unit 1)
 				)
 			)
@@ -3743,7 +3743,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "51af3f4e-6ed0-4682-90b0-2bac1ec00af9")
-		(property "Reference" "#PWR02141"
+		(property "Reference" "#PWR020021"
 			(at 223.52 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -3803,7 +3803,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02141")
+					(reference "#PWR020021")
 					(unit 1)
 				)
 			)
@@ -3826,7 +3826,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "61c00cf8-b96d-4408-9726-78eaa436769a")
-		(property "Reference" "#PWR02142"
+		(property "Reference" "#PWR020022"
 			(at 223.52 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -3886,7 +3886,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02142")
+					(reference "#PWR020022")
 					(unit 1)
 				)
 			)
@@ -3909,7 +3909,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "66aec01a-268a-4c7e-9dbf-fa2aaf9858a2")
-		(property "Reference" "D2101"
+		(property "Reference" "D20001"
 			(at 57.15 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3930,7 +3930,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 54.61 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -4005,7 +4005,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2101")
+					(reference "D20001")
 					(unit 5)
 				)
 			)
@@ -4028,7 +4028,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6eb58fa9-6eba-4d22-a9a8-20c9767bebd0")
-		(property "Reference" "#PWR02105"
+		(property "Reference" "#PWR020003"
 			(at 182.88 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -4088,7 +4088,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02105")
+					(reference "#PWR020003")
 					(unit 1)
 				)
 			)
@@ -4112,7 +4112,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "717b4fa5-f205-43d7-ad63-7f040274d330")
-		(property "Reference" "#PWR02119"
+		(property "Reference" "#PWR020013"
 			(at 204.47 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4173,7 +4173,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02119")
+					(reference "#PWR020013")
 					(unit 1)
 				)
 			)
@@ -4196,7 +4196,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7f7428b2-20dc-4f92-8b43-00544d8fe175")
-		(property "Reference" "D2103"
+		(property "Reference" "D20002"
 			(at 120.65 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4217,7 +4217,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 118.11 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -4292,7 +4292,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2103")
+					(reference "D20002")
 					(unit 3)
 				)
 			)
@@ -4316,7 +4316,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "848bcbc3-fe22-485c-89ab-cb7aad4653df")
-		(property "Reference" "#PWR02124"
+		(property "Reference" "#PWR020018"
 			(at 204.47 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4377,7 +4377,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02124")
+					(reference "#PWR020018")
 					(unit 1)
 				)
 			)
@@ -4401,7 +4401,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8525b214-5ade-4674-a98f-8f56d26595c3")
-		(property "Reference" "#PWR02114"
+		(property "Reference" "#PWR020008"
 			(at 204.47 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -4462,7 +4462,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02114")
+					(reference "#PWR020008")
 					(unit 1)
 				)
 			)
@@ -4485,7 +4485,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "85cd1e97-d9e3-4881-b529-c02bfb29a6ba")
-		(property "Reference" "D2103"
+		(property "Reference" "D20002"
 			(at 95.25 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4506,7 +4506,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 92.71 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -4581,7 +4581,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2103")
+					(reference "D20002")
 					(unit 2)
 				)
 			)
@@ -4605,7 +4605,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ab9a00b-a4f3-4876-8619-e136367247f2")
-		(property "Reference" "#PWR02109"
+		(property "Reference" "#PWR020006"
 			(at 179.07 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -4666,7 +4666,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02109")
+					(reference "#PWR020006")
 					(unit 1)
 				)
 			)
@@ -4689,7 +4689,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "98b4d3f1-1741-41f9-9bf2-6aa305f5ce95")
-		(property "Reference" "D2103"
+		(property "Reference" "D20002"
 			(at 107.95 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4710,7 +4710,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 105.41 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -4785,7 +4785,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2103")
+					(reference "D20002")
 					(unit 5)
 				)
 			)
@@ -4809,7 +4809,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a396cf33-6b1e-4554-8b35-400a865922bd")
-		(property "Reference" "#PWR02121"
+		(property "Reference" "#PWR020015"
 			(at 204.47 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -4870,7 +4870,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02121")
+					(reference "#PWR020015")
 					(unit 1)
 				)
 			)
@@ -4894,7 +4894,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a7280577-3550-44ea-bcec-614bdc78df82")
-		(property "Reference" "#PWR02101"
+		(property "Reference" "#PWR020001"
 			(at 48.26 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -4953,7 +4953,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02101")
+					(reference "#PWR020001")
 					(unit 1)
 				)
 			)
@@ -4976,7 +4976,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a81719a9-496e-4bec-a301-4df4fd10f7bc")
-		(property "Reference" "D2103"
+		(property "Reference" "D20002"
 			(at 114.3 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4997,7 +4997,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 111.76 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5072,7 +5072,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2103")
+					(reference "D20002")
 					(unit 4)
 				)
 			)
@@ -5096,7 +5096,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad57ccea-0990-41e7-8875-f5f69fc89529")
-		(property "Reference" "#PWR02123"
+		(property "Reference" "#PWR020017"
 			(at 204.47 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -5157,7 +5157,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02123")
+					(reference "#PWR020017")
 					(unit 1)
 				)
 			)
@@ -5181,7 +5181,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b1b252b2-445c-47dd-978d-8fc77ad10a69")
-		(property "Reference" "#PWR02116"
+		(property "Reference" "#PWR020010"
 			(at 204.47 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -5242,7 +5242,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02116")
+					(reference "#PWR020010")
 					(unit 1)
 				)
 			)
@@ -5265,7 +5265,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b76ac092-b2c6-40d9-8d78-3c753c4e1195")
-		(property "Reference" "D2101"
+		(property "Reference" "D20001"
 			(at 50.8 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5286,7 +5286,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+		(property "Footprint" "project_lib:SOT-323_SC-70"
 			(at 48.26 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5361,7 +5361,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "D2101")
+					(reference "D20001")
 					(unit 1)
 				)
 			)
@@ -5385,7 +5385,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf587c63-0449-4e6f-9082-ec5b207f087d")
-		(property "Reference" "#PWR02120"
+		(property "Reference" "#PWR020014"
 			(at 204.47 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5446,7 +5446,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02120")
+					(reference "#PWR020014")
 					(unit 1)
 				)
 			)
@@ -5470,7 +5470,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f28e748d-6b5c-4e86-a7c7-e52015da67a1")
-		(property "Reference" "#PWR02125"
+		(property "Reference" "#PWR020019"
 			(at 204.47 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -5531,7 +5531,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02125")
+					(reference "#PWR020019")
 					(unit 1)
 				)
 			)
@@ -5555,7 +5555,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb68b3ac-bd64-4de5-8099-b8b08aa435bc")
-		(property "Reference" "#PWR02117"
+		(property "Reference" "#PWR020011"
 			(at 204.47 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -5616,7 +5616,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/ea6fcf81-437e-4612-929d-18972fd90c24"
-					(reference "#PWR02117")
+					(reference "#PWR020011")
 					(unit 1)
 				)
 			)

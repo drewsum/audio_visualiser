@@ -302,7 +302,7 @@
   "schematic": {
     "annotate_start_num": 0,
     "annotation": {
-      "method": 0,
+      "method": 2,
       "sort_order": 0
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
@@ -379,12 +379,84 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Digi-Key PN",
+          "name": "Digi-Key PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Wattage",
+          "name": "Wattage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "display_footprint",
+          "name": "display_footprint",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Dielectric",
+          "name": "Dielectric",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Configuration",
+          "name": "Configuration",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Ampacity",
+          "name": "Ampacity",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -429,7 +501,7 @@
         "uuid": "073a84d5-f963-4c01-a807-6da62fd6dc7d"
       }
     ],
-    "used_designators": "D1-13,#PWR1-32,R1,U1-2",
+    "used_designators": "J20001,#FLG19001,L2001,L19001,Q19001-19002,U1-2,U2001,U3001,U4001,U5001,U6001,U7001,U8001,U9001,U10001,U11001,U12001,U13001,U14001,U15001,U16001,U17001,U18001,U19001-19002,TP19001,R1,R2001-2005,R3001-3005,R4001-4002,R5001-5002,R6001-6002,R7001-7002,R8001-8002,R9001-9002,R10001-10002,R11001-11002,R12001-12002,R13001-13002,R14001-14002,R15001-15002,R16001-16002,R17001-17002,R18001-18003,R19001-19010,#PWR1-32,#PWR2001-2009,#PWR3001-3010,#PWR4001-4007,#PWR5001-5007,#PWR6001-6007,#PWR7001-7007,#PWR8001-8007,#PWR9001-9007,#PWR10001-10007,#PWR11001-11007,#PWR12001-12007,#PWR13001-13007,#PWR14001-14007,#PWR15001-15007,#PWR16001-16007,#PWR17001-17007,#PWR18001-18008,#PWR19001-19024,#PWR20001-20022,C2001-2007,C3001,C4001,C5001,C6001,C7001,C8001,C9001,C10001,C11001,C12001,C13001,C14001,C15001,C16001,C17001,C18001,C19001-19007,C20001,D1-13,D3001-3016,D4001-4016,D5001-5016,D6001-6016,D7001-7016,D8001-8016,D9001-9016,D10001-10016,D11001-11016,D12001-12016,D13001-13016,D14001-14016,D15001-15016,D16001-16016,D17001-17016,D18001-18016,D19001,D20001-20002",
     "variants": []
   },
   "sheets": [
