@@ -388,205 +388,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Custom Library:C_Custom"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Custom"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "display_footprint" "Foot"
-				(at -3.81 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Voltage" "V"
-				(at -3.81 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Dielectric" "Er"
-				(at -3.81 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Digi-Key PN" "PN"
-				(at 10.795 12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Custom_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Custom_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Custom Library:L_Custom"
 			(pin_numbers
 				(hide yes)
@@ -1343,6 +1144,205 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "project_lib:C_Custom"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Custom"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "display_footprint" "Foot"
+				(at -3.81 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Voltage" "V"
+				(at -3.81 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Dielectric" "Er"
+				(at -3.81 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Digi-Key PN" "PN"
+				(at 10.795 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Custom_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Custom_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 186.69 77.47)
@@ -2049,7 +2049,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "022bfe0f-aef7-4104-90ed-4bec1b8a04b4")
-		(property "Reference" "R?"
+		(property "Reference" "R2001"
 			(at 41.91 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2069,7 +2069,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "project_lib:R_0402"
 			(at 44.45 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -2152,7 +2152,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "R?")
+					(reference "R2001")
 					(unit 1)
 				)
 			)
@@ -2169,7 +2169,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "10c198fe-b585-4ddb-9c97-cc8880d20a1c")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR02005"
 			(at 86.36 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -2229,14 +2229,14 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "#PWR016")
+					(reference "#PWR02005")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 114.3 129.54 0)
 		(unit 1)
 		(body_style 1)
@@ -2246,7 +2246,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "13e08a87-b9d5-4c48-b9d3-f915808f41f7")
-		(property "Reference" "C?"
+		(property "Reference" "C2005"
 			(at 114.935 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2268,7 +2268,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RHL14_2P05X2P05"
+		(property "Footprint" "project_lib:C_0402"
 			(at 115.2652 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -2354,7 +2354,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "C?")
+					(reference "C2005")
 					(unit 1)
 				)
 			)
@@ -2371,7 +2371,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b7ba25e-fd8f-437c-95f9-f4232a695540")
-		(property "Reference" "L?"
+		(property "Reference" "L2001"
 			(at 212.09 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2391,7 +2391,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm"
+		(property "Footprint" "project_lib:L_Vishay_IHLP-3232"
 			(at 212.09 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -2463,7 +2463,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "L?")
+					(reference "L2001")
 					(unit 1)
 				)
 			)
@@ -2480,7 +2480,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "313cfbdd-fa24-4caf-91dd-0cf74b8c548b")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR02004"
 			(at 82.55 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -2540,14 +2540,14 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "#PWR019")
+					(reference "#PWR02004")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 77.47 134.62 0)
 		(unit 1)
 		(body_style 1)
@@ -2557,7 +2557,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3cdf8812-64e8-41ea-9729-c3f85b4b1359")
-		(property "Reference" "C?"
+		(property "Reference" "C2002"
 			(at 78.105 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2579,7 +2579,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RHL14_2P05X2P05"
+		(property "Footprint" "project_lib:C_0402"
 			(at 78.4352 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -2665,14 +2665,14 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "C?")
+					(reference "C2002")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 96.52 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -2682,7 +2682,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4c479305-5a49-4369-9618-d64a5d3b1618")
-		(property "Reference" "C?"
+		(property "Reference" "C2004"
 			(at 97.155 143.51 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2704,7 +2704,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RHL14_2P05X2P05"
+		(property "Footprint" "project_lib:C_0402"
 			(at 97.4852 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -2790,7 +2790,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "C?")
+					(reference "C2004")
 					(unit 1)
 				)
 			)
@@ -2807,7 +2807,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4cb4ee8b-e701-4e67-8ef8-dc63e853009e")
-		(property "Reference" "U?"
+		(property "Reference" "U2001"
 			(at 163.576 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2827,7 +2827,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RHL14_2P05X2P05"
+		(property "Footprint" "project_lib:RHL14_2P05X2P05"
 			(at 115.57 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -2910,7 +2910,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "U?")
+					(reference "U2001")
 					(unit 1)
 				)
 			)
@@ -2927,7 +2927,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5cd08cbe-6643-45f6-8d98-530aeb2badf9")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR02008"
 			(at 240.03 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2987,7 +2987,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "#PWR012")
+					(reference "#PWR02008")
 					(unit 1)
 				)
 			)
@@ -3004,7 +3004,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "61ab071b-055f-4c0f-94dd-d75258096ecd")
-		(property "Reference" "R?"
+		(property "Reference" "R2005"
 			(at 237.49 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3024,7 +3024,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "project_lib:R_0402"
 			(at 240.03 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -3107,7 +3107,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "R?")
+					(reference "R2005")
 					(unit 1)
 				)
 			)
@@ -3124,7 +3124,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b1b8eb5-4287-44c2-8272-174525a47d8c")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR02001"
 			(at 44.45 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -3184,7 +3184,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "#PWR014")
+					(reference "#PWR02001")
 					(unit 1)
 				)
 			)
@@ -3201,7 +3201,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7420af0c-7590-4320-b876-b92a34b8bb4f")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR02006"
 			(at 185.42 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -3261,7 +3261,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "#PWR013")
+					(reference "#PWR02006")
 					(unit 1)
 				)
 			)
@@ -3278,7 +3278,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7e2aae99-7524-41f7-a188-07b534e7155f")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR02009"
 			(at 247.65 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -3338,14 +3338,14 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "#PWR015")
+					(reference "#PWR02009")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 82.55 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -3355,7 +3355,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7ee884ab-1b8e-49e4-b6ee-6667dc99b39a")
-		(property "Reference" "C?"
+		(property "Reference" "C2003"
 			(at 83.185 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3377,7 +3377,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RHL14_2P05X2P05"
+		(property "Footprint" "project_lib:C_1206"
 			(at 83.5152 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3463,7 +3463,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "C?")
+					(reference "C2003")
 					(unit 1)
 				)
 			)
@@ -3480,7 +3480,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9921494d-5b1a-4614-b6af-49887d3a9890")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR02007"
 			(at 224.79 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3540,7 +3540,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "#PWR017")
+					(reference "#PWR02007")
 					(unit 1)
 				)
 			)
@@ -3557,7 +3557,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9a6887d5-218b-46e2-bcbb-75243929982a")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR02003"
 			(at 64.77 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3617,7 +3617,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "#PWR020")
+					(reference "#PWR02003")
 					(unit 1)
 				)
 			)
@@ -3634,7 +3634,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9d7ade94-c8e5-4bf7-b2e7-59818cae9d37")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR02002"
 			(at 48.26 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3694,14 +3694,14 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "#PWR018")
+					(reference "#PWR02002")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 64.77 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -3711,7 +3711,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a7022ed7-41da-437f-8fa3-410dc20ce6f9")
-		(property "Reference" "C?"
+		(property "Reference" "C2001"
 			(at 65.405 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3733,7 +3733,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RHL14_2P05X2P05"
+		(property "Footprint" "project_lib:C_1206"
 			(at 65.7352 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -3819,14 +3819,14 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "C?")
+					(reference "C2001")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 194.31 66.04 0)
 		(unit 1)
 		(body_style 1)
@@ -3836,7 +3836,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aca84d4f-a07f-4ac9-a7a4-606564d906c2")
-		(property "Reference" "C?"
+		(property "Reference" "C2006"
 			(at 194.945 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3858,7 +3858,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RHL14_2P05X2P05"
+		(property "Footprint" "project_lib:C_0402"
 			(at 195.2752 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3944,7 +3944,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "C?")
+					(reference "C2006")
 					(unit 1)
 				)
 			)
@@ -3961,7 +3961,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4c2545d-b4ee-459d-ba2b-50d056333b1d")
-		(property "Reference" "R?"
+		(property "Reference" "R2002"
 			(at 57.15 127 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3981,7 +3981,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "project_lib:R_0402"
 			(at 59.69 127 0)
 			(hide yes)
 			(show_name no)
@@ -4064,7 +4064,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "R?")
+					(reference "R2002")
 					(unit 1)
 				)
 			)
@@ -4081,7 +4081,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cc085a3b-d681-470a-84a7-fb6e58d5bafc")
-		(property "Reference" "R?"
+		(property "Reference" "R2003"
 			(at 93.98 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4101,7 +4101,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "project_lib:R_0402"
 			(at 96.52 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4184,7 +4184,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "R?")
+					(reference "R2003")
 					(unit 1)
 				)
 			)
@@ -4201,7 +4201,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d10b2a88-9950-4289-9328-ecede852f95a")
-		(property "Reference" "R?"
+		(property "Reference" "R2004"
 			(at 237.49 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4221,7 +4221,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Array_SIP4"
+		(property "Footprint" "project_lib:R_0402"
 			(at 240.03 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -4304,14 +4304,14 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "R?")
+					(reference "R2004")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Custom Library:C_Custom")
+		(lib_id "project_lib:C_Custom")
 		(at 224.79 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -4321,7 +4321,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d7b5519b-1f21-4be0-986f-d32a05585a2f")
-		(property "Reference" "C?"
+		(property "Reference" "C2007"
 			(at 225.425 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4343,7 +4343,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RHL14_2P05X2P05"
+		(property "Footprint" "project_lib:C_1206"
 			(at 225.7552 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -4429,7 +4429,7 @@
 		(instances
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d/7d1d6f98-2d5a-43e3-858a-7611131c51dc"
-					(reference "C?")
+					(reference "C2007")
 					(unit 1)
 				)
 			)
