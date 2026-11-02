@@ -282,6 +282,52 @@
 		)
 	)
 	(sheet
+		(at 139.7 68.58)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "45dadfa6-f366-424f-b9df-6ee023718374")
+		(property "Sheetname" "POS3P3_Supply_Telemetry"
+			(at 139.7 67.8684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "POS3P3_Supply_Telemetry.kicad_sch"
+			(at 139.7 72.9746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 59.69 27.94)
 		(size 12.7 3.81)
 		(exclude_from_sim no)
@@ -553,6 +599,52 @@
 			(project "LED Board"
 				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d"
 					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 139.7 80.01)
+		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a76ae768-d09d-4b1d-9ee9-eaa390b03ae6")
+		(property "Sheetname" "LED_Power_Telemetry"
+			(at 139.7 79.2984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LED_Power_Telemetry.kicad_sch"
+			(at 139.7 84.4046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "LED Board"
+				(path "/073a84d5-f963-4c01-a807-6da62fd6dc7d"
+					(page "22")
 				)
 			)
 		)

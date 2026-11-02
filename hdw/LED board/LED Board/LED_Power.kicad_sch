@@ -1411,7 +1411,7 @@
 		(uuid "ccc9e3f4-1b18-4292-b610-0f70c6396cdb")
 	)
 	(junction
-		(at 240.03 115.57)
+		(at 265.43 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6970fce-c803-4cf7-9dcc-52fa631e41af")
@@ -1423,7 +1423,7 @@
 		(uuid "f10a1a9a-0d50-407b-bfab-acf227f1a20d")
 	)
 	(junction
-		(at 240.03 77.47)
+		(at 265.43 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1fac18d-cdfd-45c6-bfbd-7b99e0add951")
@@ -1435,7 +1435,7 @@
 		(uuid "f759542a-c224-48cf-9621-6e927480d82b")
 	)
 	(junction
-		(at 240.03 97.79)
+		(at 265.43 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7b6e423-2e8f-462c-922c-284ab274374d")
@@ -1622,7 +1622,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 111.76) (xy 240.03 115.57)
+			(xy 265.43 111.76) (xy 265.43 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1712,7 +1712,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 115.57) (xy 240.03 115.57)
+			(xy 189.23 115.57) (xy 265.43 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1762,7 +1762,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 115.57) (xy 240.03 123.19)
+			(xy 265.43 115.57) (xy 265.43 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1772,7 +1772,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 91.44) (xy 240.03 97.79)
+			(xy 265.43 91.44) (xy 265.43 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1812,7 +1812,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 77.47) (xy 247.65 77.47)
+			(xy 224.79 77.47) (xy 273.05 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1892,7 +1892,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 77.47) (xy 240.03 83.82)
+			(xy 265.43 77.47) (xy 265.43 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1952,7 +1952,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 97.79) (xy 240.03 97.79)
+			(xy 181.61 97.79) (xy 265.43 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1982,7 +1982,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 97.79) (xy 240.03 104.14)
+			(xy 265.43 97.79) (xy 265.43 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2132,7 +2132,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "311-10.0KLRCT-ND"
 			(at 52.07 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2334,7 +2334,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "490-3884-1-ND "
 			(at 125.095 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -2446,6 +2446,17 @@
 		)
 		(property "Tolerance" "20%"
 			(at 212.09 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "541-IHLP3232CZER2R2M11CT-ND "
+			(at 212.09 77.47 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2645,7 +2656,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "311-1021-1-ND"
 			(at 88.265 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -2770,7 +2781,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "4713-GMC04X7R103K50NTCT-ND"
 			(at 107.315 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -2862,6 +2873,17 @@
 				)
 			)
 		)
+		(property "Digi-Key PN" "296-49319-1-ND "
+			(at 115.57 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "9"
 			(uuid "1e36c81f-1bbb-413f-b061-fcbc107dd24f")
 		)
@@ -2918,7 +2940,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 240.03 123.19 0)
+		(at 265.43 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2928,7 +2950,7 @@
 		(dnp no)
 		(uuid "5cd08cbe-6643-45f6-8d98-530aeb2badf9")
 		(property "Reference" "#PWR02008"
-			(at 240.03 129.54 0)
+			(at 265.43 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2939,7 +2961,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 127 0)
+			(at 265.43 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2949,7 +2971,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 123.19 0)
+			(at 265.43 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2960,7 +2982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 123.19 0)
+			(at 265.43 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2971,7 +2993,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 123.19 0)
+			(at 265.43 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2995,7 +3017,7 @@
 	)
 	(symbol
 		(lib_id "Custom Library:R_Custom")
-		(at 240.03 107.95 0)
+		(at 265.43 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3005,7 +3027,7 @@
 		(dnp no)
 		(uuid "61ab071b-055f-4c0f-94dd-d75258096ecd")
 		(property "Reference" "R2005"
-			(at 237.49 107.95 90)
+			(at 262.89 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3015,7 +3037,7 @@
 			)
 		)
 		(property "Value" "2.49k"
-			(at 240.03 107.95 90)
+			(at 265.43 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3025,7 +3047,7 @@
 			)
 		)
 		(property "Footprint" "project_lib:R_0402"
-			(at 240.03 107.95 0)
+			(at 265.43 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3036,7 +3058,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 107.95 0)
+			(at 265.43 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3047,7 +3069,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 240.03 107.95 0)
+			(at 265.43 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3058,7 +3080,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 242.57 107.95 90)
+			(at 267.97 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3068,7 +3090,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 245.11 107.95 90)
+			(at 270.51 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3078,7 +3100,7 @@
 			)
 		)
 		(property "Wattage" "1/16W"
-			(at 247.65 107.95 90)
+			(at 273.05 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3087,8 +3109,8 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "PN"
-			(at 247.65 97.79 0)
+		(property "Digi-Key PN" "311-2.49KLRCT-ND"
+			(at 273.05 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3269,7 +3291,7 @@
 	)
 	(symbol
 		(lib_id "Custom Library:VLED")
-		(at 247.65 77.47 0)
+		(at 273.05 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3279,7 +3301,7 @@
 		(dnp no)
 		(uuid "7e2aae99-7524-41f7-a188-07b534e7155f")
 		(property "Reference" "#PWR02009"
-			(at 247.65 81.28 0)
+			(at 273.05 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3290,7 +3312,7 @@
 			)
 		)
 		(property "Value" "VLED"
-			(at 247.65 73.66 0)
+			(at 273.05 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3300,7 +3322,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 247.65 77.47 0)
+			(at 273.05 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3311,7 +3333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 247.65 77.47 0)
+			(at 273.05 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3322,7 +3344,7 @@
 			)
 		)
 		(property "Description" "power-flag symbol"
-			(at 247.65 77.47 0)
+			(at 273.05 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3443,7 +3465,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "445-6862-1-ND"
 			(at 93.345 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -3799,7 +3821,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "445-6862-1-ND"
 			(at 75.565 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -3924,7 +3946,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "490-10672-1-ND "
 			(at 205.105 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -4044,7 +4066,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "311-100KLRCT-ND"
 			(at 67.31 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4164,7 +4186,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "311-3.74KLRCT-ND"
 			(at 104.14 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -4192,7 +4214,7 @@
 	)
 	(symbol
 		(lib_id "Custom Library:R_Custom")
-		(at 240.03 87.63 0)
+		(at 265.43 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4202,7 +4224,7 @@
 		(dnp no)
 		(uuid "d10b2a88-9950-4289-9328-ecede852f95a")
 		(property "Reference" "R2004"
-			(at 237.49 87.63 90)
+			(at 262.89 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4212,7 +4234,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 240.03 87.63 90)
+			(at 265.43 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4222,7 +4244,7 @@
 			)
 		)
 		(property "Footprint" "project_lib:R_0402"
-			(at 240.03 87.63 0)
+			(at 265.43 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4233,7 +4255,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 87.63 0)
+			(at 265.43 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4244,7 +4266,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 240.03 87.63 0)
+			(at 265.43 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4255,7 +4277,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 242.57 87.63 90)
+			(at 267.97 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4265,7 +4287,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 245.11 87.63 90)
+			(at 270.51 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4275,7 +4297,7 @@
 			)
 		)
 		(property "Wattage" "1/16W"
-			(at 247.65 87.63 90)
+			(at 273.05 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4284,8 +4306,8 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "PN"
-			(at 247.65 77.47 0)
+		(property "Digi-Key PN" "311-10.0KLRCT-ND"
+			(at 273.05 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4409,7 +4431,7 @@
 				(justify right)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "490-GRM31CR61A107MEA8LCT-ND"
 			(at 235.585 73.66 0)
 			(hide yes)
 			(show_name no)
