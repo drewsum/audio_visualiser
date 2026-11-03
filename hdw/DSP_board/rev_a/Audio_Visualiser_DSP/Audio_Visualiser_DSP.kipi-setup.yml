@@ -1613,6 +1613,7 @@ links:
   resistance: 0.0282
   esl_h: null
   spice: null
+  more_sides: []
 - name: R207
   side_a:
     ref: R207
@@ -1625,6 +1626,7 @@ links:
   resistance: 0.01
   esl_h: null
   spice: null
+  more_sides: []
 - name: R406
   side_a:
     ref: R406
@@ -1637,6 +1639,7 @@ links:
   resistance: 0.02
   esl_h: null
   spice: null
+  more_sides: []
 - name: R610
   side_a:
     ref: R610
@@ -1649,6 +1652,7 @@ links:
   resistance: 10.0
   esl_h: null
   spice: null
+  more_sides: []
 - name: FB701
   side_a:
     ref: FB701
@@ -1661,6 +1665,7 @@ links:
   resistance: 0.14
   esl_h: 3.50140803906e-07
   spice: null
+  more_sides: []
 - name: FB702
   side_a:
     ref: FB702
@@ -1673,6 +1678,7 @@ links:
   resistance: 0.14
   esl_h: 3.50140803906e-07
   spice: null
+  more_sides: []
 - name: FB901
   side_a:
     ref: FB901
@@ -1685,6 +1691,7 @@ links:
   resistance: 0.14
   esl_h: null
   spice: null
+  more_sides: []
 - name: U904
   side_a:
     ref: U904
@@ -1697,6 +1704,7 @@ links:
   resistance: 0.097
   esl_h: null
   spice: null
+  more_sides: []
 settings:
   max_edge_mm: 0.3
   min_angle_deg: 28.0
@@ -1754,6 +1762,9 @@ settings:
   conductor_by_layer: {}
   tol: 1.0e-10
   max_iter: 2000
+  large_pads_as_copper: false
+  large_pad_mm2: 10.0
+  pad_contact_share: 0.25
 via_current_limit_a: null
 thermal:
   enabled: true
@@ -1764,6 +1775,7 @@ thermal:
   load_power: false
   max_temp_c: 65.0
   max_rise_c: 40.0
+  edges: []
 html_report: true
 report_format: pdf
 nets:
@@ -2023,6 +2035,8 @@ ac:
   grading: 0.3
   min_edge_mm: 0.03
   grade_near_rail_only: true
+  coarsen_far: true
+  far_max_edge_mm: 5.0
   loss_tangent: 0.02
   default_er: 4.3
   rail: 12V
