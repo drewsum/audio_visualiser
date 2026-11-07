@@ -1056,5 +1056,19 @@
       "version": 0
     },
     "tuning_profiles_impedance_geometric": []
+  },
+  "kicad_routing_tools": {
+    "fab_floor_origin": {
+      "min_track_width": 0.0889,
+      "min_via_diameter": 0.25,
+      "min_via_annular_width": 0.05,
+      "min_through_hole_diameter": 0.15,
+      "min_hole_clearance": 0.1158
+    },
+    "records_rev": 3,
+    "repo_rules": {
+      "min_via_drill": 0.2
+    },
+    "same_net_pad_clearance": 0.25
   }
 }
