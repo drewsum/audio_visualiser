@@ -6382,7 +6382,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1a64ef9b-cea6-4e36-ae69-f805e07da767")
 		(property "Reference" "R1809"
 			(at 211.582 116.078 0)
@@ -6484,6 +6484,16 @@
 		(property "Sim.Type" ""
 			(at 213.36 119.38 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Configuration" "Telemetry"
+			(at 219.71 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9606,7 +9616,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "71354a24-c251-41a4-90d8-4531ba5d3fba")
 		(property "Reference" "R1806"
 			(at 198.882 103.378 0)
@@ -9708,6 +9718,16 @@
 		(property "Sim.Type" ""
 			(at 200.66 106.68 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Configuration" "Telemetry"
+			(at 193.04 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10051,7 +10071,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7d27d2f0-f472-44a8-a97e-e61af9a89f2e")
 		(property "Reference" "C1807"
 			(at 226.695 25.4 0)
@@ -10154,6 +10174,16 @@
 		(property "Sim.Type" ""
 			(at 226.06 27.94 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Configuration" "Telemetry"
+			(at 232.41 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10423,7 +10453,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8aa329e7-fc9f-40ea-ad19-13a7befc1150")
 		(property "Reference" "U1807"
 			(at 207.01 40.64 0)
@@ -10470,6 +10500,16 @@
 		(property "Description" "Dual I2C/SMBus Address-Translator, DFN-16"
 			(at 215.9 57.15 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Configuration" "Telemetry"
+			(at 224.79 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12719,7 +12759,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ca0746d5-7945-48e4-973a-db633bfba3d9")
 		(property "Reference" "R1807"
 			(at 198.882 116.078 0)
@@ -12821,6 +12861,16 @@
 		(property "Sim.Type" ""
 			(at 200.66 119.38 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Configuration" "Telemetry"
+			(at 193.04 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14530,7 +14580,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f9590ac4-5262-4f67-a936-947ea9d44b46")
 		(property "Reference" "R1808"
 			(at 211.582 103.378 0)
@@ -14632,6 +14682,16 @@
 		(property "Sim.Type" ""
 			(at 213.36 106.68 0)
 			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Configuration" "Telemetry"
+			(at 219.71 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
