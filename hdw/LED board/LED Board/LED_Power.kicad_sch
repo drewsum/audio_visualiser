@@ -4,6 +4,11 @@
 	(generator_version "10.0")
 	(uuid "6c1260b3-4922-4139-9043-b150b78f5003")
 	(paper "A4")
+	(title_block
+		(title "Audio Visualiser - LED Board")
+		(rev "A")
+		(company "Drew Maatman and Drew Koetting")
+	)
 	(lib_symbols
 		(symbol "2026-09-26_02-14-27:TPS54623RHLR"
 			(pin_names
@@ -5085,7 +5090,7 @@
 				)
 			)
 		)
-		(property "Value" "0.02"
+		(property "Value" "0.01"
 			(at 243.84 77.47 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5128,7 +5133,7 @@
 				)
 			)
 		)
-		(property "display_footprint" "Foot"
+		(property "display_footprint" "0612"
 			(at 243.84 74.93 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5138,17 +5143,18 @@
 				)
 			)
 		)
-		(property "Tolerance" "Tol"
-			(at 243.84 72.39 90)
+		(property "Tolerance" "1%"
+			(at 244.856 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Wattage" "W"
+		(property "Wattage" "1W"
 			(at 243.84 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5158,7 +5164,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "PN"
+		(property "Digi-Key PN" "10-ERJ-B2CFR01VCT-ND"
 			(at 233.68 69.85 0)
 			(hide yes)
 			(show_name no)
