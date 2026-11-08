@@ -152328,18 +152328,6 @@
 			(justify bottom)
 		)
 	)
-	(gr_text "1461 Pads\n1382 Vias\n3396 Track Segments\n241 Nets\nxxx Components"
-		(at 149.4536 40.9448 0)
-		(layer "F.SilkS")
-		(uuid "6c28ae38-edf1-4139-acbd-88fd84629957")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify bottom)
-		)
-	)
 	(gr_text "MUX R"
 		(at 83.3628 59.0296 0)
 		(layer "F.SilkS")
@@ -152727,6 +152715,18 @@
 				(thickness 0.15)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text "1461 Pads\n1382 Vias\n3396 Track Segments\n241 Nets\n396 Components"
+		(at 75.2602 65.8876 -0)
+		(layer "B.SilkS")
+		(uuid "6c28ae38-edf1-4139-acbd-88fd84629957")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify bottom mirror)
 		)
 	)
 	(gr_text "8"
