@@ -1563,12 +1563,6 @@
 		(uuid "51ae778d-3582-408e-a886-fa54f3e23fa3")
 	)
 	(junction
-		(at 254 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5dc865c3-42b1-4aa0-82ec-28d32624cbc6")
-	)
-	(junction
 		(at 111.76 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1716,6 +1710,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 52.07) (xy 254 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2347faec-2c90-4590-8ab9-236c5bdfdefc")
+	)
+	(wire
+		(pts
 			(xy 77.47 130.81) (xy 77.47 115.57)
 		)
 		(stroke
@@ -1843,16 +1847,6 @@
 			(type default)
 		)
 		(uuid "4e697fbf-e0a0-4e79-bc0c-9c24f368b21a")
-	)
-	(wire
-		(pts
-			(xy 254 52.07) (xy 254 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f68cb5d-adce-48fa-b41d-e1d838366f06")
 	)
 	(wire
 		(pts
@@ -2253,16 +2247,6 @@
 			(type default)
 		)
 		(uuid "f8891112-eb18-4e95-9997-6a6884d47868")
-	)
-	(wire
-		(pts
-			(xy 254 54.61) (xy 254 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f91997fd-72e7-4eaf-baf9-08d0ed2d7772")
 	)
 	(global_label "LED_Power_Sense+"
 		(shape input)
@@ -5100,7 +5084,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+		(property "Footprint" "project_lib:R_0612"
 			(at 243.84 77.47 0)
 			(hide yes)
 			(show_name no)
