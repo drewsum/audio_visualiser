@@ -196,7 +196,7 @@ loads:
     - '36'
     - '41'
     - '46'
-  current: 0.0346
+  current: 0.0426
   ground:
     ref: U701
     net: GND
@@ -207,9 +207,9 @@ loads:
     - '43'
     - '45'
     - '49'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 3.0
+  tol_max: 3.6
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -232,9 +232,9 @@ loads:
     net: GNDA_DSP
     pins:
     - '6'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 3.0
+  tol_max: 3.6
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -257,9 +257,9 @@ loads:
     net: GND
     pins:
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 3.135
+  tol_max: 3.465
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -283,9 +283,9 @@ loads:
     pins:
     - '4'
     - '9'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.8
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -309,9 +309,9 @@ loads:
     pins:
     - '4'
     - '9'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.8
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -335,9 +335,9 @@ loads:
     pins:
     - '4'
     - '9'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.8
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -361,9 +361,9 @@ loads:
     pins:
     - '4'
     - '9'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.8
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -386,9 +386,9 @@ loads:
     net: GND
     pins:
     - '11'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 2.5
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -411,9 +411,9 @@ loads:
     net: GND
     pins:
     - '11'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 2.5
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -436,9 +436,9 @@ loads:
     net: GND
     pins:
     - '11'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 2.5
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -462,9 +462,9 @@ loads:
     pins:
     - '6'
     - '11'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 3.6
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -486,19 +486,11 @@ loads:
     ref: U1503
     net: GND
     pins:
-    - '2'
     - '5'
-    - '6'
-    - '7'
-    - '8'
-    - '9'
-    - '10'
-    - '11'
-    - '14'
     - '21'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 2.7
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -515,16 +507,16 @@ loads:
     net: +3.3V
     pins:
     - '4'
-  current: 3.0e-06
+  current: 0.0002
   ground:
     ref: U1702
     net: GND
     pins:
     - '1'
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.85
+  tol_max: 6.0
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -547,9 +539,9 @@ loads:
     net: GND
     pins:
     - '4'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 2.3
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -567,15 +559,15 @@ loads:
     pins:
     - '1'
     - '8'
-  current: 0.00275
+  current: 0.002912
   ground:
     ref: U803
     net: GND
     pins:
     - '4'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 3.6
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -585,49 +577,31 @@ loads:
   ac_tol_max: null
   ac_tol_pct: true
   ac_tol_dv: false
-  groups: []
-- name: U1807 TCA9801
+  groups:
+  - pins:
+    - '1'
+    current: 1.2e-05
+    name: VCCA
+  - pins:
+    - '8'
+    current: 0.0029
+    name: VCCB
+- name: U1807 LTC4317 (DNP)
   supply:
     ref: U1807
     net: +3.3V
     pins:
-    - '1'
-    - '8'
-  current: 0.00275
+    - '7'
+  current: 0.002
   ground:
     ref: U1807
     net: GND
     pins:
-    - '4'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
-  tol_dv: false
-  dc_tol_min: null
-  dc_tol_max: null
-  dc_tol_pct: true
-  dc_tol_dv: false
-  ac_tol_min: null
-  ac_tol_max: null
-  ac_tol_pct: true
-  ac_tol_dv: false
-  groups: []
-- name: U1809 TCA9801
-  supply:
-    ref: U1809
-    net: +3.3V
-    pins:
     - '1'
-    - '8'
-  current: 0.00275
-  ground:
-    ref: U1809
-    net: GND
-    pins:
-    - '4'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+    - '17'
+  tol_min: 2.25
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -651,9 +625,9 @@ loads:
     pins:
     - '10'
     - '21'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 2.0
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -677,9 +651,9 @@ loads:
     pins:
     - '10'
     - '21'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 2.0
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -702,9 +676,9 @@ loads:
     net: GND
     pins:
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -721,15 +695,15 @@ loads:
     net: +3.3V
     pins:
     - '1'
-  current: 0.045
+  current: 0.05
   ground:
     ref: J1903
     net: GND
     pins:
     - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 3.0
+  tol_max: 5.0
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -751,11 +725,10 @@ loads:
     ref: U401
     net: GND
     pins:
-    - '1'
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -778,11 +751,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-    - '6'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -798,7 +769,6 @@ loads:
     ref: U802
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -806,10 +776,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -832,11 +801,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-    - '6'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -852,7 +819,6 @@ loads:
     ref: U1101
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -860,9 +826,9 @@ loads:
     net: GND
     pins:
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -878,7 +844,6 @@ loads:
     ref: U1102
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -886,9 +851,9 @@ loads:
     net: GND
     pins:
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -904,7 +869,6 @@ loads:
     ref: U1103
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -912,9 +876,9 @@ loads:
     net: GND
     pins:
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -930,7 +894,6 @@ loads:
     ref: U1104
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -938,9 +901,9 @@ loads:
     net: GND
     pins:
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -956,7 +919,6 @@ loads:
     ref: U1105
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -964,9 +926,9 @@ loads:
     net: GND
     pins:
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -982,7 +944,6 @@ loads:
     ref: U1106
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -990,9 +951,9 @@ loads:
     net: GND
     pins:
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1008,7 +969,6 @@ loads:
     ref: U1201
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -1016,10 +976,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1035,7 +994,6 @@ loads:
     ref: U1202
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -1043,10 +1001,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1062,7 +1019,6 @@ loads:
     ref: U1203
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -1070,10 +1026,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1096,10 +1051,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1122,10 +1076,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1148,10 +1101,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1174,10 +1126,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1193,7 +1144,6 @@ loads:
     ref: U1808
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -1201,10 +1151,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1220,7 +1169,6 @@ loads:
     ref: U1902
     net: +3.3V
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -1228,10 +1176,212 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+- name: U1903 74LVC1G97 (DNP)
+  supply:
+    ref: U1903
+    net: +3.3V
+    pins:
+    - '5'
+  current: 1.0e-05
+  ground:
+    ref: U1903
+    net: GND
+    pins:
+    - '2'
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+- name: U301 INA231 (DNP)
+  supply:
+    ref: U301
+    net: +3.3V
+    pins:
+    - B1
+  current: 0.00042
+  ground:
+    ref: U301
+    net: GND
+    pins:
+    - C1
+  tol_min: 2.7
+  tol_max: 5.5
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+- name: U501 INA231 (DNP)
+  supply:
+    ref: U501
+    net: +3.3V
+    pins:
+    - B1
+  current: 0.00042
+  ground:
+    ref: U501
+    net: GND
+    pins:
+    - C1
+  tol_min: 2.7
+  tol_max: 5.5
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+- name: U302 MCP9804 (DNP)
+  supply:
+    ref: U302
+    net: +3.3V
+    pins:
+    - '8'
+  current: 0.0004
+  ground:
+    ref: U302
+    net: GND
+    pins:
+    - '4'
+    - '9'
+  tol_min: 2.7
+  tol_max: 5.5
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+- name: U502 MCP9804 (DNP)
+  supply:
+    ref: U502
+    net: +3.3V
+    pins:
+    - '8'
+  current: 0.0004
+  ground:
+    ref: U502
+    net: GND
+    pins:
+    - '4'
+    - '9'
+  tol_min: 2.7
+  tol_max: 5.5
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+- name: U1002 MCP9804 (DNP)
+  supply:
+    ref: U1002
+    net: +3.3V
+    pins:
+    - '8'
+  current: 0.0004
+  ground:
+    ref: U1002
+    net: GND
+    pins:
+    - '4'
+    - '9'
+  tol_min: 2.7
+  tol_max: 5.5
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+- name: U1001 DS1683 (DNP)
+  supply:
+    ref: U1001
+    net: Net-(D1001-K)
+    pins:
+    - '8'
+  current: 0.00036
+  ground:
+    ref: U1001
+    net: GND
+    pins:
+    - '4'
+  tol_min: 2.5
+  tol_max: 5.5
+  tol_pct: false
+  tol_dv: false
+  dc_tol_min: null
+  dc_tol_max: null
+  dc_tol_pct: true
+  dc_tol_dv: false
+  ac_tol_min: null
+  ac_tol_max: null
+  ac_tol_pct: true
+  ac_tol_dv: false
+  groups: []
+- name: U1901 AT42QT1010 (DNP)
+  supply:
+    ref: U1901
+    net: +3.3V
+    pins:
+    - '5'
+  current: 0.000729
+  ground:
+    ref: U1901
+    net: GND
+    pins:
+    - '2'
+  tol_min: 1.8
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1404,7 +1554,6 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
   tol_min: null
   tol_max: null
   tol_pct: true
@@ -1430,7 +1579,6 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
   tol_min: null
   tol_max: null
   tol_pct: true
@@ -1456,7 +1604,6 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
   tol_min: null
   tol_max: null
   tol_pct: true
@@ -1475,7 +1622,6 @@ loads:
     ref: U902
     net: +3.3V_USB
     pins:
-    - '1'
     - '5'
   current: 1.0e-05
   ground:
@@ -1483,10 +1629,9 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.65
+  tol_max: 5.5
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1509,9 +1654,9 @@ loads:
     net: GND
     pins:
     - '2'
-  tol_min: -3.0
-  tol_max: 3.0
-  tol_pct: true
+  tol_min: 1.2
+  tol_max: 3.6
+  tol_pct: false
   tol_dv: false
   dc_tol_min: null
   dc_tol_max: null
@@ -1586,7 +1731,6 @@ loads:
     net: GND
     pins:
     - '2'
-    - '3'
   tol_min: null
   tol_max: null
   tol_pct: true
@@ -1704,6 +1848,29 @@ links:
   resistance: 0.097
   esl_h: null
   spice: null
+  more_sides: []
+- name: D1001
+  side_a:
+    ref: D1001
+    net: +3.3V
+    pins:
+    - '2'
+  side_b:
+    ref: D1001
+    net: Net-(D1001-K)
+    pins:
+    - '1'
+  resistance: 1.0025864924621661
+  esl_h: null
+  spice:
+    subckt: VF330MV
+    netlist: '.model VF330MV D(is=3.89175e-57 n=0.1 rs=1)
+
+      '
+    file: the older setup's constant 0.33 V drop
+    use: true
+    values:
+      resistance: 1.0025864924621661
   more_sides: []
 settings:
   max_edge_mm: 0.3

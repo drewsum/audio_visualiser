@@ -3269,7 +3269,7 @@
 				)
 				(uuid "a62ad1d5-6f72-4038-b519-b6c7083ae880")
 			)
-			(table_cell "6"
+			(table_cell "4"
 				(exclude_from_sim no)
 				(at 57.15 151.13 0)
 				(size 21.59 2.54)
@@ -3286,7 +3286,7 @@
 				)
 				(uuid "1f984599-60cd-439b-97e4-06fb04779c23")
 			)
-			(table_cell "6.6mA"
+			(table_cell "4.4mA"
 				(exclude_from_sim no)
 				(at 78.74 151.13 0)
 				(size 21.59 2.54)
@@ -3643,7 +3643,7 @@
 				)
 				(uuid "2a0beb99-e48d-4d08-a875-ae488ce62b59")
 			)
-			(table_cell "I2C Buffers"
+			(table_cell "I2C Buffer (TCA9801)"
 				(exclude_from_sim no)
 				(at 13.97 168.91 0)
 				(size 21.59 2.54)
@@ -3660,7 +3660,7 @@
 				)
 				(uuid "94b4b3c0-508d-41b3-89d0-21abe7278c2f")
 			)
-			(table_cell "8.3mA"
+			(table_cell "2.9mA"
 				(exclude_from_sim no)
 				(at 35.56 168.91 0)
 				(size 21.59 2.54)
@@ -3677,7 +3677,7 @@
 				)
 				(uuid "6c02ccc7-4617-4b36-a3b7-b0f9555ebd15")
 			)
-			(table_cell "3"
+			(table_cell "1"
 				(exclude_from_sim no)
 				(at 57.15 168.91 0)
 				(size 21.59 2.54)
@@ -3694,7 +3694,7 @@
 				)
 				(uuid "ee031f98-23e6-4b04-87e7-0fe5feda663f")
 			)
-			(table_cell "24.9mA"
+			(table_cell "2.9mA"
 				(exclude_from_sim no)
 				(at 78.74 168.91 0)
 				(size 21.59 2.54)
@@ -3711,7 +3711,7 @@
 				)
 				(uuid "cba7d621-3aa1-442f-8b5c-fa56f6e7f60a")
 			)
-			(table_cell "Octal Buffers"
+			(table_cell "I2C Address Translator (LTC4317)"
 				(exclude_from_sim no)
 				(at 13.97 171.45 0)
 				(size 21.59 2.54)
@@ -3728,7 +3728,7 @@
 				)
 				(uuid "34bb35f3-7d52-4734-ae23-641c10826cf0")
 			)
-			(table_cell "1mA"
+			(table_cell "2mA"
 				(exclude_from_sim no)
 				(at 35.56 171.45 0)
 				(size 21.59 2.54)
@@ -3745,7 +3745,7 @@
 				)
 				(uuid "200ebc36-95fe-4e77-bb22-d6271f936142")
 			)
-			(table_cell "2"
+			(table_cell "1"
 				(exclude_from_sim no)
 				(at 57.15 171.45 0)
 				(size 21.59 2.54)
@@ -3779,7 +3779,7 @@
 				)
 				(uuid "9159c2fe-b860-4fed-905d-cb6c2e85000b")
 			)
-			(table_cell "LVC1G19s"
+			(table_cell "Octal Buffers"
 				(exclude_from_sim no)
 				(at 13.97 173.99 0)
 				(size 21.59 2.54)
@@ -3796,7 +3796,7 @@
 				)
 				(uuid "cc507aca-e3b3-4959-aaad-3801d5d334be")
 			)
-			(table_cell "0.01mA"
+			(table_cell "1mA"
 				(exclude_from_sim no)
 				(at 35.56 173.99 0)
 				(size 21.59 2.54)
@@ -3813,7 +3813,7 @@
 				)
 				(uuid "ba6df791-dcfe-41f4-b354-fdbbd5540183")
 			)
-			(table_cell "21"
+			(table_cell "2"
 				(exclude_from_sim no)
 				(at 57.15 173.99 0)
 				(size 21.59 2.54)
@@ -3830,7 +3830,7 @@
 				)
 				(uuid "5dbd69f3-12a2-41d0-a97e-78dc263f1463")
 			)
-			(table_cell "0.21mA"
+			(table_cell "2mA"
 				(exclude_from_sim no)
 				(at 78.74 173.99 0)
 				(size 21.59 2.54)
@@ -3847,7 +3847,7 @@
 				)
 				(uuid "914f1850-5006-4eb7-80b7-b6c78253a69e")
 			)
-			(table_cell "Rotary Encoder Module"
+			(table_cell "LVC1G97s"
 				(exclude_from_sim no)
 				(at 13.97 176.53 0)
 				(size 21.59 5.08)
@@ -3864,7 +3864,7 @@
 				)
 				(uuid "6b34e1a6-55a8-446a-805b-2b47d0b3af67")
 			)
-			(table_cell "50mA"
+			(table_cell "0.01mA"
 				(exclude_from_sim no)
 				(at 35.56 176.53 0)
 				(size 21.59 5.08)
@@ -3881,7 +3881,7 @@
 				)
 				(uuid "f94d3352-2a8b-4bce-83c5-acb16b3cc230")
 			)
-			(table_cell "1"
+			(table_cell "20"
 				(exclude_from_sim no)
 				(at 57.15 176.53 0)
 				(size 21.59 5.08)
@@ -3898,7 +3898,7 @@
 				)
 				(uuid "55feb34e-a016-4e76-b30b-e010e85b8ef2")
 			)
-			(table_cell "50mA"
+			(table_cell "0.2mA"
 				(exclude_from_sim no)
 				(at 78.74 176.53 0)
 				(size 21.59 5.08)
@@ -3915,7 +3915,7 @@
 				)
 				(uuid "ddbec988-e05a-4485-a4ea-a90801a31596")
 			)
-			(table_cell "LEDs"
+			(table_cell "Rotary Encoder Module"
 				(exclude_from_sim no)
 				(at 13.97 181.61 0)
 				(size 21.59 2.54)
@@ -3932,7 +3932,7 @@
 				)
 				(uuid "54b45e52-fe0d-4e80-8e3f-a3e6d051a279")
 			)
-			(table_cell "1.3mA"
+			(table_cell "50mA"
 				(exclude_from_sim no)
 				(at 35.56 181.61 0)
 				(size 21.59 2.54)
@@ -3949,7 +3949,7 @@
 				)
 				(uuid "415ef1bc-fc0c-4e2e-996c-aab65e4c9b9e")
 			)
-			(table_cell "11"
+			(table_cell "1"
 				(exclude_from_sim no)
 				(at 57.15 181.61 0)
 				(size 21.59 2.54)
@@ -3966,7 +3966,7 @@
 				)
 				(uuid "b4cde353-34db-4497-a52d-c845bb7c2fe5")
 			)
-			(table_cell "14.3mA"
+			(table_cell "50mA"
 				(exclude_from_sim no)
 				(at 78.74 181.61 0)
 				(size 21.59 2.54)
@@ -3983,7 +3983,7 @@
 				)
 				(uuid "ac0b2e4a-6ae8-4dae-a1a1-d2b2d8a7946f")
 			)
-			(table_cell "INA231"
+			(table_cell "LEDs"
 				(exclude_from_sim no)
 				(at 13.97 184.15 0)
 				(size 21.59 2.54)
@@ -4000,7 +4000,7 @@
 				)
 				(uuid "90735acd-6081-4c75-8526-f180983c0a76")
 			)
-			(table_cell "0.42mA"
+			(table_cell "1.3mA"
 				(exclude_from_sim no)
 				(at 35.56 184.15 0)
 				(size 21.59 2.54)
@@ -4017,7 +4017,7 @@
 				)
 				(uuid "4d6e96b0-78c8-4492-85c8-21f9f11e8503")
 			)
-			(table_cell "2"
+			(table_cell "9"
 				(exclude_from_sim no)
 				(at 57.15 184.15 0)
 				(size 21.59 2.54)
@@ -4034,7 +4034,7 @@
 				)
 				(uuid "a90bfd16-036c-4936-b9e4-1829d9ae1b68")
 			)
-			(table_cell "0.84mA"
+			(table_cell "11.7mA"
 				(exclude_from_sim no)
 				(at 78.74 184.15 0)
 				(size 21.59 2.54)
@@ -4051,7 +4051,7 @@
 				)
 				(uuid "c3cd1bef-4bbc-450b-8f3c-7e307facb837")
 			)
-			(table_cell "MCP9804"
+			(table_cell "INA231"
 				(exclude_from_sim no)
 				(at 13.97 186.69 0)
 				(size 21.59 2.54)
@@ -4068,7 +4068,7 @@
 				)
 				(uuid "515aab59-da0e-4560-8b38-20d373c3c934")
 			)
-			(table_cell "0.4mA"
+			(table_cell "0.42mA"
 				(exclude_from_sim no)
 				(at 35.56 186.69 0)
 				(size 21.59 2.54)
@@ -4085,7 +4085,7 @@
 				)
 				(uuid "d1b4d9f2-accf-4f71-a8ee-00bdf5472c90")
 			)
-			(table_cell "3"
+			(table_cell "2"
 				(exclude_from_sim no)
 				(at 57.15 186.69 0)
 				(size 21.59 2.54)
@@ -4102,7 +4102,7 @@
 				)
 				(uuid "8df8d3ab-b667-4376-bb9f-8c99f23aca01")
 			)
-			(table_cell "1.2mA"
+			(table_cell "0.84mA"
 				(exclude_from_sim no)
 				(at 78.74 186.69 0)
 				(size 21.59 2.54)
@@ -4119,7 +4119,7 @@
 				)
 				(uuid "3840ed9d-f4c6-4a9b-b34d-177884f17248")
 			)
-			(table_cell "ETC"
+			(table_cell "MCP9804"
 				(exclude_from_sim no)
 				(at 13.97 189.23 0)
 				(size 21.59 2.54)
@@ -4136,7 +4136,7 @@
 				)
 				(uuid "9f14d438-faa5-45c9-94a1-2a9148b9251e")
 			)
-			(table_cell "0.36mA"
+			(table_cell "0.4mA"
 				(exclude_from_sim no)
 				(at 35.56 189.23 0)
 				(size 21.59 2.54)
@@ -4153,7 +4153,7 @@
 				)
 				(uuid "6fa245ab-244d-4c91-bc83-d1cec4dfdf72")
 			)
-			(table_cell "1"
+			(table_cell "3"
 				(exclude_from_sim no)
 				(at 57.15 189.23 0)
 				(size 21.59 2.54)
@@ -4170,7 +4170,7 @@
 				)
 				(uuid "e2c62347-1d29-4bb8-82b4-f5668ba68b29")
 			)
-			(table_cell "0.36mA"
+			(table_cell "1.2mA"
 				(exclude_from_sim no)
 				(at 78.74 189.23 0)
 				(size 21.59 2.54)
@@ -4187,7 +4187,7 @@
 				)
 				(uuid "f5465788-cc58-4820-8993-02626e0e2282")
 			)
-			(table_cell "Cap Touch Sensor"
+			(table_cell "ETC"
 				(exclude_from_sim no)
 				(at 13.97 191.77 0)
 				(size 21.59 2.54)
@@ -4204,7 +4204,7 @@
 				)
 				(uuid "4f247122-8303-4946-b980-1e62d4daf1a9")
 			)
-			(table_cell "0.729mA"
+			(table_cell "0.36mA"
 				(exclude_from_sim no)
 				(at 35.56 191.77 0)
 				(size 21.59 2.54)
@@ -4238,7 +4238,7 @@
 				)
 				(uuid "2b8c8bfe-1d2c-4b85-a7c3-a01a74db67d4")
 			)
-			(table_cell "0.729mA"
+			(table_cell "0.36mA"
 				(exclude_from_sim no)
 				(at 78.74 191.77 0)
 				(size 21.59 2.54)
@@ -4255,7 +4255,7 @@
 				)
 				(uuid "4027e704-02f5-40a1-8085-191299152e18")
 			)
-			(table_cell ""
+			(table_cell "Cap Touch Sensor"
 				(exclude_from_sim no)
 				(at 13.97 194.31 0)
 				(size 21.59 2.54)
@@ -4272,7 +4272,7 @@
 				)
 				(uuid "9deffa62-8c2f-4300-8341-fcfbecd6136d")
 			)
-			(table_cell ""
+			(table_cell "0.729mA"
 				(exclude_from_sim no)
 				(at 35.56 194.31 0)
 				(size 21.59 2.54)
@@ -4289,7 +4289,7 @@
 				)
 				(uuid "2083c818-c39c-4f62-8f31-7233750f2163")
 			)
-			(table_cell ""
+			(table_cell "1"
 				(exclude_from_sim no)
 				(at 57.15 194.31 0)
 				(size 21.59 2.54)
@@ -4306,7 +4306,7 @@
 				)
 				(uuid "c730275f-c942-497e-af14-07f100422c86")
 			)
-			(table_cell ""
+			(table_cell "0.729mA"
 				(exclude_from_sim no)
 				(at 78.74 194.31 0)
 				(size 21.59 2.54)
@@ -4425,7 +4425,7 @@
 				)
 				(uuid "1857324c-830f-4008-aa4a-69d6cc9dc2ad")
 			)
-			(table_cell "0.579W"
+			(table_cell "0.497W"
 				(exclude_from_sim no)
 				(at 57.15 199.39 0)
 				(size 21.59 2.54)
@@ -4442,7 +4442,7 @@
 				)
 				(uuid "4523c1b4-1127-43a3-82a2-eaae837e36d8")
 			)
-			(table_cell "175.48mA"
+			(table_cell "150.669mA"
 				(exclude_from_sim no)
 				(at 78.74 199.39 0)
 				(size 21.59 2.54)
