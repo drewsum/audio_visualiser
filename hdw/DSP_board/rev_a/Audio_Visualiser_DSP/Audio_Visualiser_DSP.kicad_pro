@@ -535,6 +535,20 @@
       "wire_dangling": "error"
     }
   },
+  "kicad_routing_tools": {
+    "fab_floor_origin": {
+      "min_hole_clearance": 0.1158,
+      "min_through_hole_diameter": 0.15,
+      "min_track_width": 0.0889,
+      "min_via_annular_width": 0.05,
+      "min_via_diameter": 0.25
+    },
+    "records_rev": 3,
+    "repo_rules": {
+      "min_via_drill": 0.2
+    },
+    "same_net_pad_clearance": 0.25
+  },
   "libraries": {
     "pinned_footprint_libs": [],
     "pinned_symbol_libs": []
@@ -953,7 +967,7 @@
         "uuid": "97a4dfb8-0e16-46f1-9709-8d2007dd0cd3"
       }
     ],
-    "used_designators": "#PWR830,#PWR1863-1867,#PWR1870,#PWR1880-1881,R808,R1806-1809,U1807",
+    "used_designators": "#PWR830-832,#PWR947,#PWR1863-1867,#PWR1870,#PWR1880-1881,#PWR1901,C912,R808-811,R1806-1809,R1911,U1807",
     "variants": [
       {
         "name": "Default"
@@ -1056,19 +1070,5 @@
       "version": 0
     },
     "tuning_profiles_impedance_geometric": []
-  },
-  "kicad_routing_tools": {
-    "fab_floor_origin": {
-      "min_track_width": 0.0889,
-      "min_via_diameter": 0.25,
-      "min_via_annular_width": 0.05,
-      "min_through_hole_diameter": 0.15,
-      "min_hole_clearance": 0.1158
-    },
-    "records_rev": 3,
-    "repo_rules": {
-      "min_via_drill": 0.2
-    },
-    "same_net_pad_clearance": 0.25
   }
 }

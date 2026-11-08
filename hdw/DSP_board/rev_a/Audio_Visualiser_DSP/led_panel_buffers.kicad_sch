@@ -2743,7 +2743,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "XOR 0x20"
+	(text "XOR 0x20 (7bit)"
 		(exclude_from_sim no)
 		(at 255.27 60.96 0)
 		(effects
@@ -2753,7 +2753,7 @@
 		)
 		(uuid "5e3f1652-7667-4116-9493-9b87c22593e4")
 	)
-	(text "XOR 0x10"
+	(text "XOR 0x10 (7bit)"
 		(exclude_from_sim no)
 		(at 255.27 53.34 0)
 		(effects

@@ -3326,17 +3326,6 @@
 		)
 		(uuid "b2c2b427-81a1-45d8-917c-733ddf4a6677")
 	)
-	(text "3.3mA current source on SCLB/SDAB\nNo pulls allowed"
-		(exclude_from_sim no)
-		(at 146.05 151.13 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b651b1ba-9f6d-419e-a4fe-54eb0b78e70e")
-	)
 	(text "RP39 = INT1"
 		(exclude_from_sim no)
 		(at 236.22 77.47 0)
@@ -3394,10 +3383,22 @@
 		(uuid "595aeb3e-97f9-4cc2-ac73-744b1957bf51")
 	)
 	(junction
+		(at 173.99 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76acc755-6e52-45af-a6b2-2e11bafb9eda")
+	)
+	(junction
 		(at 222.25 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a13a58d-7cb1-44f3-ba80-32256ed8fa88")
+	)
+	(junction
+		(at 158.75 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ce8232a-46f9-4d7b-8090-f3e880c66a10")
 	)
 	(junction
 		(at 90.17 168.91)
@@ -3447,6 +3448,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 140.97) (xy 173.99 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19e75d35-b075-44af-9b3d-3fbd3d236a57")
+	)
+	(wire
+		(pts
 			(xy 92.71 140.97) (xy 123.19 140.97)
 		)
 		(stroke
@@ -3487,6 +3498,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 138.43) (xy 173.99 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48c8a72b-1f2e-4cdc-98c9-2425bd277cf8")
+	)
+	(wire
+		(pts
 			(xy 222.25 27.94) (xy 222.25 33.02)
 		)
 		(stroke
@@ -3524,6 +3545,26 @@
 			(type default)
 		)
 		(uuid "6c966b7c-7830-4e76-9e41-76f1781f26c4")
+	)
+	(wire
+		(pts
+			(xy 158.75 143.51) (xy 143.51 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78cd0991-9089-4779-a1cd-0eaa1ff89705")
+	)
+	(wire
+		(pts
+			(xy 173.99 140.97) (xy 143.51 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b287d98-b717-4f79-818e-c26106fe4d1c")
 	)
 	(wire
 		(pts
@@ -3647,6 +3688,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 143.51) (xy 158.75 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbc9c19f-4687-44ee-b46c-af7e12543afc")
+	)
+	(wire
+		(pts
 			(xy 224.79 27.94) (xy 222.25 27.94)
 		)
 		(stroke
@@ -3654,6 +3705,16 @@
 			(type default)
 		)
 		(uuid "fdaa50c1-459b-43fe-978e-541985e63dff")
+	)
+	(wire
+		(pts
+			(xy 158.75 138.43) (xy 158.75 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff54b31a-0191-4189-bdb9-501d9b2d38c3")
 	)
 	(global_label "I2C_SDA"
 		(shape bidirectional)
@@ -3775,9 +3836,33 @@
 			)
 		)
 	)
+	(global_label "POS12_PGOOD_DSPIC"
+		(shape input)
+		(at 199.39 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "24c3cf8b-7c8e-4f78-ae75-96934ab8046f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.6347 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "I2C_SCL"
 		(shape output)
-		(at 143.51 140.97 0)
+		(at 184.15 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3787,7 +3872,7 @@
 		)
 		(uuid "2b5d7b76-d6a6-46fb-a88f-3938211fed39")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.0547 140.97 0)
+			(at 194.6947 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3945,17 +4030,17 @@
 	)
 	(global_label "POS12_PGOOD"
 		(shape input)
-		(at 199.39 78.74 0)
+		(at 231.14 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "44ca05ef-349c-493d-b34e-49b28aeb9d04")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 216.0428 78.74 0)
+			(at 214.4872 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3963,7 +4048,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -4039,7 +4124,7 @@
 	)
 	(global_label "I2C_SDA"
 		(shape bidirectional)
-		(at 143.51 143.51 0)
+		(at 184.15 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4049,7 +4134,7 @@
 		)
 		(uuid "5e228bb4-4e19-4be1-9ca3-406f3cb3ed52")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 155.2265 143.51 0)
+			(at 195.8665 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4298,6 +4383,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "POS12_PGOOD_DSPIC"
+		(shape output)
+		(at 238.76 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a2a95064-9346-4b1b-8986-4c6b043bf580")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 262.0047 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -6757,6 +6866,138 @@
 		)
 	)
 	(symbol
+		(lib_id "project_lib:R_Custom")
+		(at 173.99 134.62 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6246fa97-06d7-4187-a629-aa57e404f626")
+		(property "Reference" "R811"
+			(at 175.514 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 173.99 134.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "project_lib:R_0402"
+			(at 173.99 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "display_footprint" "0402"
+			(at 169.164 132.588 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 169.418 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Wattage" "1/16W"
+			(at 168.656 136.398 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "311-10.0KLRCT-ND"
+			(at 166.37 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 173.99 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42dc6533-3dfd-4afe-9139-84417ee4bafb")
+		)
+		(pin "2"
+			(uuid "e8eac854-f8f6-45e1-9f38-3489ada3c867")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "R811")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "project_lib:GND")
 		(at 190.5 40.64 0)
 		(unit 1)
@@ -6979,6 +7220,83 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "#PWR0812")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "project_lib:+3.3V")
+		(at 173.99 130.81 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "75a2cadf-663f-480e-8b80-df3de0dbf258")
+		(property "Reference" "#PWR0831"
+			(at 173.99 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 173.99 127.254 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "39da646a-bb0a-4f0d-b73d-c5dc28a5eb70")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "#PWR0831")
 					(unit 1)
 				)
 			)
@@ -7660,6 +7978,138 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "#PWR0813")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "project_lib:R_Custom")
+		(at 158.75 134.62 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b895e0ad-db3b-4391-b668-1710c1a55b39")
+		(property "Reference" "R810"
+			(at 160.274 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 158.75 134.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "project_lib:R_0402"
+			(at 158.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 158.75 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "display_footprint" "0402"
+			(at 153.924 132.588 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 154.178 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Wattage" "1/16W"
+			(at 153.416 136.398 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "311-10.0KLRCT-ND"
+			(at 151.13 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 158.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ddf62a84-1600-46ef-b26b-1ca055b646bd")
+		)
+		(pin "2"
+			(uuid "5467dfdf-1418-4add-8102-299e07f250e1")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "R810")
 					(unit 1)
 				)
 			)
@@ -8802,7 +9252,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TCA9801"
+		(property "Value" "TCA9517ADGKR"
 			(at 138.43 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8824,7 +9274,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tca9803.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca9517a.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1794071633337&ref_url=https%253A%252F%252Fwww.ti.com%252Fgeneral%252Fdocs%252Fsuppproductinfo.tsp%253FdistId%253D10%2526gotoUrl%253Dhttps%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftca9517a"
 			(at 125.73 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -8835,7 +9285,7 @@
 				)
 			)
 		)
-		(property "Description" "Level-Translating I2C Bus Buffer/Repeater 3.3mA Current Source, VSSOP-8"
+		(property "Description" "TCA9517A Level-Shifting I2C Bus Repeater"
 			(at 133.35 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -8857,7 +9307,7 @@
 				)
 			)
 		)
-		(property "Digi-Key PN" "296-47828-1-ND"
+		(property "Digi-Key PN" "296-39220-1-ND"
 			(at 133.35 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -9259,6 +9709,83 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "#PWR0806")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "project_lib:+3.3V")
+		(at 158.75 130.81 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e8b41351-3383-4c16-b950-d9c5f4f1a97b")
+		(property "Reference" "#PWR0832"
+			(at 158.75 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 158.75 127.254 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 158.75 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a72311db-6e45-44e8-b984-c61ac3c744d7")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "#PWR0832")
 					(unit 1)
 				)
 			)
@@ -9708,6 +10235,136 @@
 			(project "Audio_Visualiser_DSP"
 				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
 					(reference "U802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "project_lib:R_Custom")
+		(at 234.95 140.97 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fec1b436-4638-4068-9c73-ea38114556a5")
+		(property "Reference" "R809"
+			(at 234.95 138.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 234.95 140.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "project_lib:R_0402"
+			(at 234.95 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 234.95 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "display_footprint" "0402"
+			(at 234.95 143.51 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 234.95 146.05 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Wattage" "1/16W"
+			(at 234.95 148.59 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digi-Key PN" "311-10.0KLRCT-ND"
+			(at 245.11 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 234.95 140.97 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bc655d93-37f0-431a-bed1-0917a1bb7201")
+		)
+		(pin "2"
+			(uuid "cd3935eb-0cc1-41f7-874b-097940ff5a42")
+		)
+		(instances
+			(project "Audio_Visualiser_DSP"
+				(path "/97a4dfb8-0e16-46f1-9709-8d2007dd0cd3/b9973229-0ab3-4009-9568-e1a3a7a57b16"
+					(reference "R809")
 					(unit 1)
 				)
 			)
