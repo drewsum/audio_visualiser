@@ -163,6 +163,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: J2102
   supply:
     ref: J2102
@@ -186,6 +187,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U701 dsPIC VDD
   supply:
     ref: U701
@@ -220,6 +222,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U701 dsPIC AVDD
   supply:
     ref: U701
@@ -245,6 +248,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: X601 oscillator
   supply:
     ref: X601
@@ -270,6 +274,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1301 MCP6N11
   supply:
     ref: U1301
@@ -296,6 +301,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1302 MCP6N11
   supply:
     ref: U1302
@@ -322,6 +328,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1401 MCP6N11
   supply:
     ref: U1401
@@ -348,6 +355,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1402 MCP6N11
   supply:
     ref: U1402
@@ -374,6 +382,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1502 MCP6024
   supply:
     ref: U1502
@@ -399,6 +408,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1601 MCP6024
   supply:
     ref: U1601
@@ -424,6 +434,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1701 MCP6024
   supply:
     ref: U1701
@@ -449,6 +460,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1501 TS3A24159
   supply:
     ref: U1501
@@ -475,6 +487,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1503 MCP4451
   supply:
     ref: U1503
@@ -501,6 +514,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1702 REF35
   supply:
     ref: U1702
@@ -527,6 +541,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U801 PCA9536
   supply:
     ref: U801
@@ -552,6 +567,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U803 TCA9801
   supply:
     ref: U803
@@ -586,6 +602,7 @@ loads:
     - '8'
     current: 0.0029
     name: VCCB
+  sources: false
 - name: U1807 LTC4317 (DNP)
   supply:
     ref: U1807
@@ -612,6 +629,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1803 74VHC541
   supply:
     ref: U1803
@@ -638,6 +656,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1804 74VHC541
   supply:
     ref: U1804
@@ -664,6 +683,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U903 TXB0102 VCCB
   supply:
     ref: U903
@@ -689,6 +709,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: J1903 encoder module
   supply:
     ref: J1903
@@ -714,6 +735,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U401 74LVC1G97
   supply:
     ref: U401
@@ -739,6 +761,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U601 74LVC1G97
   supply:
     ref: U601
@@ -764,6 +787,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U802 74LVC1G97
   supply:
     ref: U802
@@ -789,6 +813,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U805 74LVC1G97
   supply:
     ref: U805
@@ -814,6 +839,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1101 74LVC1G97
   supply:
     ref: U1101
@@ -839,6 +865,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1102 74LVC1G97
   supply:
     ref: U1102
@@ -864,6 +891,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1103 74LVC1G97
   supply:
     ref: U1103
@@ -889,6 +917,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1104 74LVC1G97
   supply:
     ref: U1104
@@ -914,6 +943,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1105 74LVC1G97
   supply:
     ref: U1105
@@ -939,6 +969,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1106 74LVC1G97
   supply:
     ref: U1106
@@ -964,6 +995,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1201 74LVC1G97
   supply:
     ref: U1201
@@ -989,6 +1021,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1202 74LVC1G97
   supply:
     ref: U1202
@@ -1014,6 +1047,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1203 74LVC1G97
   supply:
     ref: U1203
@@ -1039,6 +1073,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1801 74LVC1G97
   supply:
     ref: U1801
@@ -1064,6 +1099,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1802 74LVC1G97
   supply:
     ref: U1802
@@ -1089,6 +1125,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1805 74LVC1G97
   supply:
     ref: U1805
@@ -1114,6 +1151,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1806 74LVC1G97
   supply:
     ref: U1806
@@ -1139,6 +1177,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1808 74LVC1G97
   supply:
     ref: U1808
@@ -1164,6 +1203,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1902 74LVC1G97
   supply:
     ref: U1902
@@ -1189,6 +1229,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1903 74LVC1G97 (DNP)
   supply:
     ref: U1903
@@ -1214,6 +1255,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U301 INA231 (DNP)
   supply:
     ref: U301
@@ -1239,6 +1281,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U501 INA231 (DNP)
   supply:
     ref: U501
@@ -1264,6 +1307,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U302 MCP9804 (DNP)
   supply:
     ref: U302
@@ -1290,6 +1334,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U502 MCP9804 (DNP)
   supply:
     ref: U502
@@ -1316,6 +1361,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1002 MCP9804 (DNP)
   supply:
     ref: U1002
@@ -1342,6 +1388,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1001 DS1683 (DNP)
   supply:
     ref: U1001
@@ -1367,6 +1414,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U1901 AT42QT1010 (DNP)
   supply:
     ref: U1901
@@ -1392,6 +1440,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R1102 LED
   supply:
     ref: R1102
@@ -1417,6 +1466,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R1103 LED
   supply:
     ref: R1103
@@ -1442,6 +1492,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R1104 LED
   supply:
     ref: R1104
@@ -1467,6 +1518,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R1105 LED
   supply:
     ref: R1105
@@ -1492,6 +1544,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R1106 LED
   supply:
     ref: R1106
@@ -1517,6 +1570,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R1107 LED
   supply:
     ref: R1107
@@ -1542,6 +1596,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R1203 LED
   supply:
     ref: R1203
@@ -1567,6 +1622,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R1204 LED
   supply:
     ref: R1204
@@ -1592,6 +1648,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R1206 LED
   supply:
     ref: R1206
@@ -1617,6 +1674,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U902 74LVC1G97
   supply:
     ref: U902
@@ -1642,6 +1700,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: U903 TXB0102 VCCA
   supply:
     ref: U903
@@ -1667,6 +1726,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R901 LED
   supply:
     ref: R901
@@ -1693,6 +1753,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R902 LED
   supply:
     ref: R902
@@ -1719,6 +1780,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 - name: R906 LED
   supply:
     ref: R906
@@ -1744,6 +1806,7 @@ loads:
   ac_tol_pct: true
   ac_tol_dv: false
   groups: []
+  sources: false
 links:
 - name: U201
   side_a:
@@ -1968,18 +2031,18 @@ thermal:
   max_rise_c: 40.0
   edges: []
 html_report: true
-report_format: pdf
+report_format: html
 nets:
 - +12V
 - +12Vin
 - +3.3V
 - +3.3V_USB
-- +3.3VA_DSP
 - +5V_USB
 - Net-(C406-Pad1)
 - Net-(U201-OUT)
 - GND
 - GNDA_DSP
+- +3.3VA_DSP
 - Net-(FB901-Pad2)
 - Net-(U904-EN)
 - Net-(X601-Vdd)
@@ -2172,12 +2235,12 @@ probes:
     - '43'
     - '45'
     - '49'
-  target_ohm: 2.816497482659
-  target_hz: 91997076.93169999
+  target_ohm: 3.909507088028
+  target_hz: 74720630.5596
   target_custom: false
   target_points: []
-  step_a: null
-  slew_a_per_us: null
+  step_a: 0.0426
+  slew_a_per_us: 10.0
   package: ''
   die_port: 0
 - name: J2101
@@ -2189,7 +2252,7 @@ probes:
     ref: J2101
     net: GND
     pins: []
-  target_ohm: 0.30864197530899995
+  target_ohm: 0.21192396393000001
   target_hz: 1637396.5339
   target_custom: false
   target_points: []
@@ -2206,7 +2269,7 @@ probes:
     ref: J2102
     net: GND
     pins: []
-  target_ohm: 0.30864197530899995
+  target_ohm: 0.20654213684199998
   target_hz: 1637396.5339
   target_custom: false
   target_points: []

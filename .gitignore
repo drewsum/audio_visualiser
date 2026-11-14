@@ -16,3 +16,7 @@ hdw/DSP_board/rev_a/sim/spice_models/README.md
 # KiCad local project settings and backup files
 *.kicad_prl
 *.bak
+
+# Simulation outputs over GitHub's 100 MB file limit (kept locally only)
+/hdw/DSP_board/rev_a/sim/PI/Audio_Visualiser_DSP_2026-11-14_135001.kipi-dc-thermal-results
+/hdw/DSP_board/rev_a/sim/PI/Audio_Visualiser_DSP_12V_ac_report_2026-11-14_142731.html
