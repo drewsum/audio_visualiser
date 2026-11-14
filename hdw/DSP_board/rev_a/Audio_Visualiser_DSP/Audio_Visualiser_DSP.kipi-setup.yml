@@ -1860,17 +1860,41 @@ links:
     net: Net-(D1001-K)
     pins:
     - '1'
-  resistance: 1.0025864924621661
+  resistance: 1.556622133875151
   esl_h: null
   spice:
-    subckt: VF330MV
-    netlist: '.model VF330MV D(is=3.89175e-57 n=0.1 rs=1)
+    subckt: BAT43WS
+    netlist: '.MODEL BAT43WS D
+
+      + IS=840.87E-9
+
+      + N=1.4275
+
+      + RS=1.5197
+
+      + IKF=1.5434
+
+      + CJO=9.0005E-12
+
+      + M=.63613
+
+      + VJ=2.2548
+
+      + ISR=10.010E-21
+
+      + NR=4.9950
+
+      + BV=30
+
+      + IBV=1E-6
+
+      + TT=7.2135E-9
 
       '
-    file: the older setup's constant 0.33 V drop
+    file: BAT43WS.lib
     use: true
     values:
-      resistance: 1.0025864924621661
+      resistance: 1.556622133875151
   more_sides: []
 settings:
   max_edge_mm: 0.3
@@ -1997,6 +2021,7 @@ caps:
   - C907
   - C908
   - C909
+  - C912
   - C1005
   - C1101
   - C1102
@@ -2024,9 +2049,6 @@ caps:
   - C1805
   - C1806
   - C1807
-  - C1808
-  - C1809
-  - C1810
   - C1811
   - C1902
   - C1904
