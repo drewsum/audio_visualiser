@@ -113,7 +113,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -238,6 +237,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/4862d996-2637-490a-9bd4-0f4b31ab110a")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -685,6 +690,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/f28d334f-7eef-4213-b7a8-3b31caf1f960")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1132,6 +1143,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/2d12e28e-f197-4b6b-b396-31a737cd3edf")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1579,6 +1596,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/6777c86a-ca5c-4866-8381-a16b99b5cb8f")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2026,6 +2049,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/4f5cf8cd-a06d-4f86-9a50-e19d5dd940bd")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2473,6 +2502,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/a2900c80-705f-4437-a22c-a1d84735889a")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2920,6 +2955,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/700b4733-cd7a-42db-b4e7-b7aaacf6a7b5")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3288,7 +3329,7 @@
 	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "01649a18-7df5-426a-bc8a-ce774806ade7")
-		(at 119.625 160.94)
+		(at 126.6346 150.9732)
 		(descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0402")
 		(property "Reference" "R19011"
@@ -3636,6 +3677,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/2f6d75da-bfd6-477c-9f4d-941b11dda955")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4083,6 +4130,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/1354e32a-27f4-40e3-a7a1-cc89dc97cdb5")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4530,6 +4583,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/e39cc219-7430-4670-83b7-d61ea66387b0")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4977,6 +5036,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/a5601117-4bf7-43df-870e-32df3c415122")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5424,6 +5489,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/79bcc63e-3567-4f78-8f7a-f57c208cea7c")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5871,6 +5942,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/62e24538-9384-43d1-a576-4e6d9cffe25b")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6318,6 +6395,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/1827d7e1-6660-4fe4-b3b0-78446fa113ef")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6765,6 +6848,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/d2d12bce-78bc-49d1-8ae0-3f361c920aab")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7966,6 +8055,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/d68dd1e3-ae23-458e-8450-62fcb7da7451")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8413,6 +8508,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/1ba462d7-e7ed-4562-822f-44215305804c")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8860,6 +8961,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/b304be97-5d2e-4408-8468-a201a846f87a")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9307,6 +9414,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/814d2b0b-f3eb-4d7d-8b84-2b957aa51c74")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9754,6 +9867,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/6e20f6bd-2e2a-4f3a-bcd7-4587ed3bf4b4")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10201,6 +10320,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/6239b17a-8da8-40c5-974b-be611057d6a6")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10648,6 +10773,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/b046b5fe-f814-4b41-b046-d0113303ac0e")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11095,6 +11226,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/12beba6c-11ee-49a1-94b0-ca5ca9e6e45b")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11542,6 +11679,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/8860c404-8114-4803-9124-022b87ff4c42")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11989,6 +12132,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/54c60345-aedf-4253-afdf-d887205222dd")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12436,6 +12585,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/bb35b8af-13d1-494c-a90d-15dd4cef5c66")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12883,6 +13038,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/03c46eae-932a-43ab-ac69-b6ddfacac0dc")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13330,6 +13491,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/06000fdc-cc55-4038-a67b-99196584e12b")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13777,6 +13944,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/3dacfea8-1699-4aee-8c5c-084c10aaa87f")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14224,6 +14397,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/49f1138a-1fbd-41f8-9a18-614a0722941a")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14671,6 +14850,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/8e2f9d9f-5927-435b-b34b-d99bb068459e")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15118,6 +15303,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/2a870ea6-869e-4f7f-9309-53d33e88ab52")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15565,6 +15756,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/a9809b55-df0e-458a-aa13-808ab9667676")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16012,6 +16209,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/a4c5718a-2355-45ba-a72d-b949a57919b7")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16459,6 +16662,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/41571064-760e-443c-a8cb-6a12311f6fe2")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -16906,6 +17115,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/89c3008a-13d6-45f1-91e4-3fd57c949b9d")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17800,6 +18015,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/f4a955bc-dd24-4b1c-81d8-0c361b874bfe")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18247,6 +18468,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/e34ac60f-044a-41a2-92a1-c73d2bab60f6")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18694,6 +18921,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/a834765c-a152-4f94-8bad-76c24f587b61")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19141,6 +19374,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/f1b210ec-1cc1-4477-aada-17edc153744c")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19588,6 +19827,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/02ef5bc2-b216-4317-9529-5540f123a173")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20035,6 +20280,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/6ed170ed-e614-4df4-a65b-29cadcefc7ce")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20598,6 +20849,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/dd7b560d-01e5-4ac5-b910-966948be4e3f")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21045,6 +21302,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/01e7a681-bd82-413e-8ade-7da6f58037f5")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21492,6 +21755,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/1f5361f9-1107-4058-b10d-9bf85951a8a6")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22208,6 +22477,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/4c41b01f-d42d-4e13-a89d-9c9cdec30dc3")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22655,6 +22930,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/36fa4666-1733-4f92-8576-1405522a512e")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23023,7 +23304,7 @@
 	(footprint "project_lib:C_1206"
 		(layer "F.Cu")
 		(uuid "1864836e-da7e-4a5d-ae50-0d3debfd4c95")
-		(at 110.145 167.16)
+		(at 106.3498 156.845 180)
 		(descr "Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 1206")
 		(property "Reference" "C19007"
@@ -23072,7 +23353,7 @@
 			)
 		)
 		(property "display_footprint" "1206"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -23085,7 +23366,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -23098,7 +23379,7 @@
 			)
 		)
 		(property "Dielectric" "X5R"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -23111,7 +23392,7 @@
 			)
 		)
 		(property "Digi-Key PN" "1276-1075-1-ND"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -23124,7 +23405,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -23149,16 +23430,6 @@
 		(attr smd exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1 1.02)
-			(end 1 1.02)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3b0285de-c028-438d-b011-df58e73a363c")
-		)
-		(fp_line
 			(start 1 -1.02)
 			(end -1 -1.02)
 			(stroke
@@ -23169,34 +23440,14 @@
 			(uuid "e1c6a6b9-258c-4aa8-9513-19079b7afb6c")
 		)
 		(fp_line
-			(start -2.25 -1.05)
-			(end -2.25 1.05)
+			(start -1 1.02)
+			(end 1 1.02)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "bd673647-bb92-4bb7-8344-9670d2a470b6")
-		)
-		(fp_line
-			(start -2.25 -1.05)
-			(end 2.25 -1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "fca76203-a21f-4462-901c-0ad2db671764")
-		)
-		(fp_line
-			(start 2.25 1.05)
-			(end -2.25 1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "93512ab6-ba10-4e00-a023-c1b35cd2aa0d")
+			(layer "F.SilkS")
+			(uuid "3b0285de-c028-438d-b011-df58e73a363c")
 		)
 		(fp_line
 			(start 2.25 1.05)
@@ -23209,24 +23460,44 @@
 			(uuid "13bee031-5209-40c8-88e7-d3314235f88c")
 		)
 		(fp_line
-			(start -1.6 -0.8)
-			(end 1.6 -0.8)
+			(start 2.25 1.05)
+			(end -2.25 1.05)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "81c11824-7584-42ec-bb9c-7c9e63b1d17a")
+			(layer "F.CrtYd")
+			(uuid "93512ab6-ba10-4e00-a023-c1b35cd2aa0d")
 		)
 		(fp_line
-			(start -1.6 0.8)
-			(end -1.6 -0.8)
+			(start -2.25 -1.05)
+			(end 2.25 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "fca76203-a21f-4462-901c-0ad2db671764")
+		)
+		(fp_line
+			(start -2.25 -1.05)
+			(end -2.25 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bd673647-bb92-4bb7-8344-9670d2a470b6")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end -1.6 0.8)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "988f38b7-9d58-4599-becd-a686b4b941eb")
+			(uuid "f516e760-d15b-4ff0-a0ef-b23f5a6cd868")
 		)
 		(fp_line
 			(start 1.6 -0.8)
@@ -23239,14 +23510,24 @@
 			(uuid "21334786-5916-405e-988c-9a50a2fa8a47")
 		)
 		(fp_line
-			(start 1.6 0.8)
-			(end -1.6 0.8)
+			(start -1.6 0.8)
+			(end -1.6 -0.8)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "f516e760-d15b-4ff0-a0ef-b23f5a6cd868")
+			(uuid "988f38b7-9d58-4599-becd-a686b4b941eb")
+		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "81c11824-7584-42ec-bb9c-7c9e63b1d17a")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -1.75 0)
@@ -23260,7 +23541,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -1.5 0)
+			(at -1.5 0 180)
 			(size 1 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(C19006-Pad1)")
@@ -23268,7 +23549,7 @@
 			(uuid "c6005c1c-cdf0-40bf-a41e-231e99833442")
 		)
 		(pad "2" smd rect
-			(at 1.5 0)
+			(at 1.5 0 180)
 			(size 1 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -23370,6 +23651,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/0e0c6c8e-3979-4381-930e-142e6e65baa0")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -23817,6 +24104,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/539d6783-21a6-4a36-ad1c-64ddc77434c7")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24264,6 +24557,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/8ea29c3d-2904-477e-973e-10598e2099ae")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -24711,6 +25010,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/ecc27366-d84f-4455-aa0b-03a069404663")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25158,6 +25463,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/abd66d91-7a39-4d53-9302-19bc7000bc15")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -25605,6 +25916,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/d9e148c9-29af-449d-87b2-c69e25363bfb")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -26052,6 +26369,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/352f31f2-3ac6-4d1e-ad4b-52cefe6287bf")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27393,6 +27716,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/872537d8-bad4-4f20-8cf2-977a5b1a7070")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -27840,6 +28169,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/858b9acb-e26d-4faa-b167-cc4b738d47be")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28734,6 +29069,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/d335db29-338b-4f27-897a-38080b41c84f")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29181,6 +29522,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/c37bd7f6-e49d-468f-aac9-78ae2ebbf6c9")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30152,6 +30499,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/2b7316a3-013e-4632-94a9-1c5709366787")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30599,6 +30952,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/710afc52-830c-4362-9797-5f1fc8e88d7a")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31046,6 +31405,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/65d7f731-6ddc-4985-a0d8-59bdff14814d")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31493,6 +31858,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/5e28f15f-cb12-45ab-a877-f0d5611faf95")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31861,7 +32232,7 @@
 	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "22dc7f40-b3d9-4999-a03e-61008ee2f127")
-		(at 119.625 156.58)
+		(at 107.1554 159.9692)
 		(descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0402")
 		(property "Reference" "R19009"
@@ -32507,6 +32878,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/f76712d3-ad07-4e51-b87b-d262dd14c63f")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32954,6 +33331,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/29a28f84-6297-4fad-9c32-0a0aedd7684d")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33401,6 +33784,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/378d2174-651e-47f7-8370-fb9a7593e53a")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -33848,6 +34237,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/202e9fd2-e81e-4033-8611-4fbe1be5cbf9")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34295,6 +34690,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/2008683e-37e7-4c71-ba18-1d878a2f0d41")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34742,6 +35143,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/740d5e6a-c20d-45ff-a7ae-c95754d8fa4f")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -35636,6 +36043,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/9a36f95a-4680-4225-88c9-9283f5cd000c")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36530,6 +36943,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/59e45b08-700a-496e-97c1-9a68d916fcae")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -36977,6 +37396,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/4bde25b0-6a8f-4757-8da4-3965f1d3a4b6")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -37871,6 +38296,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/554fab3a-076d-47fd-a119-9894635e0bf3")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -38318,6 +38749,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/442fa174-aea0-435e-a4ef-7b09b468274c")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -38765,6 +39202,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/5d9c7740-aa35-44de-818c-c1267ea646d8")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39212,6 +39655,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/584e1dfa-36b0-4f91-9be5-202b0f6776ca")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -39659,6 +40108,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/6c034c9a-4b50-4b20-bf8c-6bae95646fc6")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -40106,6 +40561,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/1cd76448-0901-4da7-9e0d-c51d5175de1b")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41256,6 +41717,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/76d04097-e6d7-4ff0-b13e-c0131cc4bba5")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -41703,6 +42170,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/c55413ef-965a-46a6-bbc0-8a33bdc14694")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42150,6 +42623,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/439766f7-cfcd-4616-8fe0-6747a5a5e9de")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -42965,7 +43444,7 @@
 	(footprint "project_lib:QFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm"
 		(layer "F.Cu")
 		(uuid "2d9f1452-8f61-4cc0-859f-87e03b160c78")
-		(at 110.38 156.635)
+		(at 106.1613 153.3906 180)
 		(descr "QFN, 16 Pin (https://www.onsemi.com/pub/Collateral/NCN4555-D.PDF)")
 		(tags "QFN NoLead")
 		(property "Reference" "U19002"
@@ -43026,7 +43505,7 @@
 			)
 		)
 		(property "Digi-Key PN" "296-41757-1-ND"
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -43039,7 +43518,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 0 0 0)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -43057,72 +43536,22 @@
 		(units
 			(unit
 				(name "A")
-				(pins "11" "12" "10" "13" "4" "9" "8" "7" "6" "17" "15" "16" "1" "2"
-					"3" "14" "5"
+				(pins "12" "11" "10" "13" "4" "9" "8" "7" "6" "17" "15" "16" "3" "2"
+					"1" "14" "5"
 				)
 			)
 		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.61 -1.61)
-			(end -1.135 -1.61)
+			(start 1.61 1.61)
+			(end 1.135 1.61)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "3ed8d382-8b79-4007-b35e-ee0a51d1791e")
-		)
-		(fp_line
-			(start -1.61 -1.135)
-			(end -1.61 -1.61)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "af6990bc-d468-4f2e-aaaf-3848dabd8b69")
-		)
-		(fp_line
-			(start -1.61 1.61)
-			(end -1.61 1.135)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "244e453d-b646-4d82-bfc8-bcdff1e03c35")
-		)
-		(fp_line
-			(start -1.135 1.61)
-			(end -1.61 1.61)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "83ee7153-8bfa-4b9f-a903-cf155f645522")
-		)
-		(fp_line
-			(start 1.135 -1.61)
-			(end 1.61 -1.61)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a3a1c94c-33ed-4ac8-9b60-5bb5750fe6a9")
-		)
-		(fp_line
-			(start 1.61 -1.61)
-			(end 1.61 -1.135)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "89fa4c72-0d01-4a1c-8a21-ff70770071fc")
+			(uuid "1d3552cc-316f-413f-bcf3-f41955bd1a6a")
 		)
 		(fp_line
 			(start 1.61 1.135)
@@ -43135,14 +43564,64 @@
 			(uuid "650ec7af-8aa7-4d14-8956-0d13b6479d2a")
 		)
 		(fp_line
-			(start 1.61 1.61)
-			(end 1.135 1.61)
+			(start 1.61 -1.61)
+			(end 1.61 -1.135)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1d3552cc-316f-413f-bcf3-f41955bd1a6a")
+			(uuid "89fa4c72-0d01-4a1c-8a21-ff70770071fc")
+		)
+		(fp_line
+			(start 1.135 -1.61)
+			(end 1.61 -1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a3a1c94c-33ed-4ac8-9b60-5bb5750fe6a9")
+		)
+		(fp_line
+			(start -1.135 1.61)
+			(end -1.61 1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "83ee7153-8bfa-4b9f-a903-cf155f645522")
+		)
+		(fp_line
+			(start -1.61 1.61)
+			(end -1.61 1.135)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "244e453d-b646-4d82-bfc8-bcdff1e03c35")
+		)
+		(fp_line
+			(start -1.61 -1.135)
+			(end -1.61 -1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "af6990bc-d468-4f2e-aaaf-3848dabd8b69")
+		)
+		(fp_line
+			(start -1.61 -1.61)
+			(end -1.135 -1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3ed8d382-8b79-4007-b35e-ee0a51d1791e")
 		)
 		(fp_poly
 			(pts
@@ -43157,184 +43636,14 @@
 			(uuid "13a5aa6b-30b8-4e14-8343-008cc27e3343")
 		)
 		(fp_line
-			(start -2.1 -1.13)
-			(end -1.75 -1.13)
+			(start 2.1 1.13)
+			(end 1.75 1.13)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "b1a7b11f-318b-4234-a163-1d71be0809b6")
-		)
-		(fp_line
-			(start -2.1 1.13)
-			(end -2.1 -1.13)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "021af438-94a5-402e-a463-ca54e64ad3fd")
-		)
-		(fp_line
-			(start -1.75 -1.75)
-			(end -1.13 -1.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9942e91e-7b05-420d-9edb-d8f97c640f89")
-		)
-		(fp_line
-			(start -1.75 -1.13)
-			(end -1.75 -1.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e2359f32-611b-4552-a0b3-0a3b945d9fca")
-		)
-		(fp_line
-			(start -1.75 1.13)
-			(end -2.1 1.13)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "43649f22-c8df-41b4-915f-d58209392c3e")
-		)
-		(fp_line
-			(start -1.75 1.75)
-			(end -1.75 1.13)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a051a9cb-2ca5-4a64-aaa0-803306767dd5")
-		)
-		(fp_line
-			(start -1.13 -2.1)
-			(end 1.13 -2.1)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "f2e437e9-8bd6-4be9-8ad0-c8be3768b24e")
-		)
-		(fp_line
-			(start -1.13 -1.75)
-			(end -1.13 -2.1)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a5a29121-3905-40c9-91ce-d3d2b127dc70")
-		)
-		(fp_line
-			(start -1.13 1.75)
-			(end -1.75 1.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8a8e4759-679b-49bc-ab8d-ab5505704250")
-		)
-		(fp_line
-			(start -1.13 2.1)
-			(end -1.13 1.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "149d55fa-3bb1-429a-b9fb-515fb06c061f")
-		)
-		(fp_line
-			(start 1.13 -2.1)
-			(end 1.13 -1.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ff78727c-1b3f-4a05-a096-b112662ca685")
-		)
-		(fp_line
-			(start 1.13 -1.75)
-			(end 1.75 -1.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "bb8da634-6d8f-4772-985a-6c9e6ce99517")
-		)
-		(fp_line
-			(start 1.13 1.75)
-			(end 1.13 2.1)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "f3d9bf7b-98b4-44c0-b299-8fb183c83982")
-		)
-		(fp_line
-			(start 1.13 2.1)
-			(end -1.13 2.1)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "68307b5b-694b-481d-82dd-19492398f0e1")
-		)
-		(fp_line
-			(start 1.75 -1.75)
-			(end 1.75 -1.13)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "0981a0f8-4424-4f65-8ed0-adba41fdf5d4")
-		)
-		(fp_line
-			(start 1.75 -1.13)
-			(end 2.1 -1.13)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "4b820e3c-61a3-4014-9023-29e7dbd0ceaf")
-		)
-		(fp_line
-			(start 1.75 1.13)
-			(end 1.75 1.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "4f8f65c7-e76c-41a6-8118-2c3b5fd20a6f")
-		)
-		(fp_line
-			(start 1.75 1.75)
-			(end 1.13 1.75)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9fa04358-043f-4f06-babf-bf62e442b50a")
+			(uuid "9bbd8c03-34dc-4deb-8a54-92852401f403")
 		)
 		(fp_line
 			(start 2.1 -1.13)
@@ -43347,14 +43656,184 @@
 			(uuid "1d11c638-d6e2-4262-875f-c04e7d4d4f4a")
 		)
 		(fp_line
-			(start 2.1 1.13)
-			(end 1.75 1.13)
+			(start 1.75 1.75)
+			(end 1.13 1.75)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "9bbd8c03-34dc-4deb-8a54-92852401f403")
+			(uuid "9fa04358-043f-4f06-babf-bf62e442b50a")
+		)
+		(fp_line
+			(start 1.75 1.13)
+			(end 1.75 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4f8f65c7-e76c-41a6-8118-2c3b5fd20a6f")
+		)
+		(fp_line
+			(start 1.75 -1.13)
+			(end 2.1 -1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4b820e3c-61a3-4014-9023-29e7dbd0ceaf")
+		)
+		(fp_line
+			(start 1.75 -1.75)
+			(end 1.75 -1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0981a0f8-4424-4f65-8ed0-adba41fdf5d4")
+		)
+		(fp_line
+			(start 1.13 2.1)
+			(end -1.13 2.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "68307b5b-694b-481d-82dd-19492398f0e1")
+		)
+		(fp_line
+			(start 1.13 1.75)
+			(end 1.13 2.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f3d9bf7b-98b4-44c0-b299-8fb183c83982")
+		)
+		(fp_line
+			(start 1.13 -1.75)
+			(end 1.75 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bb8da634-6d8f-4772-985a-6c9e6ce99517")
+		)
+		(fp_line
+			(start 1.13 -2.1)
+			(end 1.13 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ff78727c-1b3f-4a05-a096-b112662ca685")
+		)
+		(fp_line
+			(start -1.13 2.1)
+			(end -1.13 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "149d55fa-3bb1-429a-b9fb-515fb06c061f")
+		)
+		(fp_line
+			(start -1.13 1.75)
+			(end -1.75 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8a8e4759-679b-49bc-ab8d-ab5505704250")
+		)
+		(fp_line
+			(start -1.13 -1.75)
+			(end -1.13 -2.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a5a29121-3905-40c9-91ce-d3d2b127dc70")
+		)
+		(fp_line
+			(start -1.13 -2.1)
+			(end 1.13 -2.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f2e437e9-8bd6-4be9-8ad0-c8be3768b24e")
+		)
+		(fp_line
+			(start -1.75 1.75)
+			(end -1.75 1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a051a9cb-2ca5-4a64-aaa0-803306767dd5")
+		)
+		(fp_line
+			(start -1.75 1.13)
+			(end -2.1 1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "43649f22-c8df-41b4-915f-d58209392c3e")
+		)
+		(fp_line
+			(start -1.75 -1.13)
+			(end -1.75 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e2359f32-611b-4552-a0b3-0a3b945d9fca")
+		)
+		(fp_line
+			(start -1.75 -1.75)
+			(end -1.13 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9942e91e-7b05-420d-9edb-d8f97c640f89")
+		)
+		(fp_line
+			(start -2.1 1.13)
+			(end -2.1 -1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "021af438-94a5-402e-a463-ca54e64ad3fd")
+		)
+		(fp_line
+			(start -2.1 -1.13)
+			(end -1.75 -1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b1a7b11f-318b-4234-a163-1d71be0809b6")
 		)
 		(fp_poly
 			(pts
@@ -43380,35 +43859,35 @@
 			)
 		)
 		(pad "" smd roundrect
-			(at -0.44 -0.44)
+			(at -0.44 -0.44 180)
 			(size 0.71 0.71)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "6b30c3d7-fe5e-488d-8bc2-af506c99b630")
 		)
 		(pad "" smd roundrect
-			(at -0.44 0.44)
+			(at -0.44 0.44 180)
 			(size 0.71 0.71)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "992ced07-7d91-458a-a9a3-20f0a05b594b")
 		)
 		(pad "" smd roundrect
-			(at 0.44 -0.44)
+			(at 0.44 -0.44 180)
 			(size 0.71 0.71)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "caa740aa-2ed6-4017-83a9-177a215cce95")
 		)
 		(pad "" smd roundrect
-			(at 0.44 0.44)
+			(at 0.44 0.44 180)
 			(size 0.71 0.71)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "1f7aab97-e813-47e1-b7c2-2c1cdcc2d1a6")
 		)
 		(pad "1" smd roundrect
-			(at -1.4625 -0.75)
+			(at -1.4625 -0.75 180)
 			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43418,7 +43897,7 @@
 			(uuid "20bad0e8-b77c-40e4-ada9-763f5bf5f6e3")
 		)
 		(pad "2" smd roundrect
-			(at -1.4625 -0.25)
+			(at -1.4625 -0.25 180)
 			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43428,7 +43907,7 @@
 			(uuid "593574a8-2e41-45b9-acdc-9a8361333e83")
 		)
 		(pad "3" smd roundrect
-			(at -1.4625 0.25)
+			(at -1.4625 0.25 180)
 			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43438,7 +43917,7 @@
 			(uuid "a381ad71-47ed-4f43-8ef4-e1bd9a4be6bc")
 		)
 		(pad "4" smd roundrect
-			(at -1.4625 0.75)
+			(at -1.4625 0.75 180)
 			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43448,7 +43927,7 @@
 			(uuid "32b9fed2-0ed5-4f83-a6ed-ec77ec77a200")
 		)
 		(pad "5" smd roundrect
-			(at -0.75 1.4625)
+			(at -0.75 1.4625 180)
 			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43458,7 +43937,7 @@
 			(uuid "936f5dfe-75d8-4ad5-b589-95bca317e85c")
 		)
 		(pad "6" smd roundrect
-			(at -0.25 1.4625)
+			(at -0.25 1.4625 180)
 			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43468,7 +43947,7 @@
 			(uuid "f36ea863-9a97-4493-b858-6922e1d91cc9")
 		)
 		(pad "7" smd roundrect
-			(at 0.25 1.4625)
+			(at 0.25 1.4625 180)
 			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43478,7 +43957,7 @@
 			(uuid "f2740c1f-a801-485f-9c73-55401cae333a")
 		)
 		(pad "8" smd roundrect
-			(at 0.75 1.4625)
+			(at 0.75 1.4625 180)
 			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43488,7 +43967,7 @@
 			(uuid "9351b4ac-49ab-4bb6-8a4e-efa8748cc405")
 		)
 		(pad "9" smd roundrect
-			(at 1.4625 0.75)
+			(at 1.4625 0.75 180)
 			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43498,7 +43977,7 @@
 			(uuid "9fac2bfa-22e1-4911-aa30-c012392c327f")
 		)
 		(pad "10" smd roundrect
-			(at 1.4625 0.25)
+			(at 1.4625 0.25 180)
 			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43508,7 +43987,7 @@
 			(uuid "b8d45a79-3596-4839-a428-21898d5f4593")
 		)
 		(pad "11" smd roundrect
-			(at 1.4625 -0.25)
+			(at 1.4625 -0.25 180)
 			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43518,7 +43997,7 @@
 			(uuid "c9149c60-4cc7-4071-bbb2-71c596cc6202")
 		)
 		(pad "12" smd roundrect
-			(at 1.4625 -0.75)
+			(at 1.4625 -0.75 180)
 			(size 0.775 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43528,7 +44007,7 @@
 			(uuid "551a96b1-1092-46d7-ba57-d24eaf4e69a7")
 		)
 		(pad "13" smd roundrect
-			(at 0.75 -1.4625)
+			(at 0.75 -1.4625 180)
 			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43538,7 +44017,7 @@
 			(uuid "f2a58b37-9865-46db-aff4-ce04196f9fef")
 		)
 		(pad "14" smd roundrect
-			(at 0.25 -1.4625)
+			(at 0.25 -1.4625 180)
 			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43548,7 +44027,7 @@
 			(uuid "17832292-040a-4192-bdab-37f965b1d945")
 		)
 		(pad "15" smd roundrect
-			(at -0.25 -1.4625)
+			(at -0.25 -1.4625 180)
 			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43558,7 +44037,7 @@
 			(uuid "6c0b878f-617e-48e7-adcb-57408452b613")
 		)
 		(pad "16" smd roundrect
-			(at -0.75 -1.4625)
+			(at -0.75 -1.4625 180)
 			(size 0.25 0.775)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -43568,7 +44047,7 @@
 			(uuid "1af783a3-8fcf-4ce9-a26f-dd9d9e1f061f")
 		)
 		(pad "17" smd rect
-			(at 0 0)
+			(at 0 0 180)
 			(size 1.75 1.75)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask")
@@ -43673,6 +44152,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/904511c7-1d9a-4296-91a2-ae74a52844bf")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -44567,6 +45052,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/b3da5388-24e0-426e-bc88-50a1ffc13751")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -45461,6 +45952,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/9a5ac64c-37db-421f-86c6-e2da7ec1f424")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -46355,6 +46852,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/9bcedf4f-b4dc-49b5-8adf-e810222ec2ad")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -46802,6 +47305,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/b5611db5-7dd9-4201-8faf-8c284607132a")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -47249,6 +47758,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/dd4d9b9c-d29b-4fc8-a1ae-9c477b203aa2")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -48143,6 +48658,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/4fee07ee-1cd5-467c-9278-fc330a683b2c")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -48590,6 +49111,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/449f21a9-bb3a-4da3-98da-3cd42471525f")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -49484,6 +50011,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/b8e10df4-5dfc-4d74-b300-b0c39af41cce")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -49931,6 +50464,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/4f8e62fa-da9c-4bbc-bae7-a1a1cd839cd7")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -50746,7 +51285,7 @@
 	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "35933825-35ea-4d1c-b7b8-481dfffedced")
-		(at 116.975 160.94)
+		(at 123.9846 150.9732)
 		(descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0402")
 		(property "Reference" "R19007"
@@ -51094,6 +51633,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/0db6dc98-80d4-48ba-93fe-66f6745d781f")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -51541,6 +52086,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/ca3fc3a3-b328-4da0-9fff-0f6b596dc233")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -51988,6 +52539,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/e23d2652-02f6-43e2-9ddc-1d626d73e430")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -52435,6 +52992,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/9e6d382b-40c5-47ad-8ad4-27a62d0406e7")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -52882,6 +53445,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/1c56076a-37a7-496d-9092-9174d82bd1e3")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -53329,6 +53898,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/b8bfb3c7-ea04-4f46-8fda-ef2324c38788")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -53776,6 +54351,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/87b4622f-4fa0-4227-b13f-908cae4c5c3f")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -54223,6 +54804,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/afe29ced-3e38-4d78-91a0-c2e49ad0adfa")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -54670,6 +55257,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/88da3541-ce80-441b-914f-f70859457525")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -55117,6 +55710,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/302d5129-d7ae-4af0-b487-3b5947072392")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -56011,6 +56610,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/50a29929-9657-44cf-b45d-78f3804b6618")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -56458,6 +57063,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/48fdfe69-bca9-4896-a8aa-cc9ef7962c3a")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -56905,6 +57516,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/cefe8338-4909-4f50-bf8d-8d336d61e60e")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -57352,6 +57969,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/6786226e-76fa-4565-8159-3dcd9ef832f2")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -57799,6 +58422,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/4bd92dd2-ee30-49ac-8c29-f4177d289a84")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -58693,6 +59322,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/918f0962-928c-4bfb-8823-32c5ccbbe38f")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -59140,6 +59775,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/34d55d95-72c6-45dc-a1a8-91fe53d89395")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -59587,6 +60228,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/f96544dc-2189-4c02-8a60-1c101b6d9d8f")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -60034,6 +60681,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/5415b3f6-6892-4921-9ef7-b5e348641f4b")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -60737,6 +61390,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/0fc2b660-e12b-4df5-833e-a1042bb76477")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -62078,6 +62737,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/c237519a-1141-40c9-888d-dafd4305cba8")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -62525,6 +63190,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/6ba3b660-d563-4450-94d1-e72ae74a8312")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -63419,6 +64090,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/8948bfe4-b5c3-4174-8d24-3ff276227fb6")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -63866,6 +64543,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/c176bdfc-4cbb-4bd3-982b-f5061318fc13")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -64313,6 +64996,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/668db369-f4ee-456e-9000-7c88e91cf278")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -65384,7 +66073,7 @@
 	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "47eef487-7cf0-4e7c-a096-b5bc78e59d2e")
-		(at 114.325 160.94)
+		(at 121.3346 150.9732)
 		(descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0402")
 		(property "Reference" "R19003"
@@ -65732,6 +66421,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/5ad714d1-c547-4d43-8a1e-089aabd4b587")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -66179,6 +66874,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/17cc5044-0119-4745-88b9-ceb365d24f7c")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -66626,6 +67327,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/4ee896da-bedd-4f28-a1cc-e3d654ae7ce8")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -67073,6 +67780,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/262616be-cb5a-4f85-bede-e4139671a8cc")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -67967,6 +68680,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/6ed106c9-8426-4f59-9711-d8f1dd1c94a4")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -68819,6 +69538,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/03afde20-3cc5-4b10-aa98-ad9cfe2d2050")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -69713,6 +70438,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/7dd276ba-864d-4c9a-8842-2b15e6ff39f0")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -70160,6 +70891,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/94ab8831-4d50-4a52-972c-3f56fd982f2e")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -70607,6 +71344,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/43f71055-ccff-42a9-8b72-314a6a84fd11")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -71501,6 +72244,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/bbbb9b8e-c837-42b7-8ccc-c01fc182e7ab")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -71948,6 +72697,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/5bffec48-1e78-4ab4-af40-7abb2dfc3b1d")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -72395,6 +73150,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/f59d4562-4092-4063-bc1a-c5e021b0c628")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -73289,6 +74050,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/0faaf125-091c-4914-801e-a7863345b274")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -73736,6 +74503,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/bff8c20e-3f9c-4cc0-9b57-5e2f92d39697")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -75077,6 +75850,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/e6db58db-7402-444b-a384-5b23a1f87a8b")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -75524,6 +76303,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/c9dafd40-6d69-4855-88c8-a5b397192022")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -75971,6 +76756,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/6bacc3cd-6054-4bd9-b79e-ad622a0676b8")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -76418,6 +77209,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/30e0d29c-a7a2-4d2b-a184-e334fee1ecc4")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -77697,6 +78494,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/270d14e9-789f-4d23-bc8e-9b99c7047e4e")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -78144,6 +78947,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/d32dce90-c740-4d77-ba15-5917613bc95a")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -78591,6 +79400,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/f92d085e-596a-4743-b3de-e94188001f4a")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -79038,6 +79853,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/84835b22-ffcd-4863-b52c-3b30d313ccef")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -81273,6 +82094,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/587428be-e8a9-450a-b5d4-00755f2551e0")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -81720,6 +82547,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/cb46f8f7-25db-481a-ab66-44d5226333b5")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -82869,6 +83702,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/c5267b4d-9244-4acb-aa57-1c7ae44f4b01")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -83316,6 +84155,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/6bfe1b9b-3c1b-4dea-8c93-390edf7c2599")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -83763,6 +84608,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/ad3e07c5-7e92-4201-94ce-7c868cb41361")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -84939,6 +85790,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/791dc893-53fa-4d18-a2ca-3a143dbc867b")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -86198,6 +87055,597 @@
 			)
 		)
 	)
+	(footprint "project_lib:QFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm"
+		(layer "F.Cu")
+		(uuid "61338a5d-4650-4c17-9eb8-6557d420b632")
+		(at 127.2494 186.0718)
+		(descr "QFN, 16 Pin (https://www.onsemi.com/pub/Collateral/NCN4555-D.PDF)")
+		(tags "QFN NoLead")
+		(property "Reference" "U19001"
+			(at 0 -2.8 0)
+			(layer "F.SilkS")
+			(uuid "0ab5f9dc-3131-4229-8784-8c33601ba66d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "74LVC1G97"
+			(at 0 2.8 0)
+			(layer "F.Fab")
+			(uuid "b5933c4f-1644-4582-a732-1239ddb6f978")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/sn74lvc1g97.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5539454e-5b0e-4470-b178-87b38f809829")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afbb462b-affb-466f-9148-c4f76ec79802")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/no_lead"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "55d5f63f-5b7f-4a9d-baf4-8c10054684d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Digi-Key PN" "296-15582-1-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a8a1534-051f-4bc8-83d9-dda2aac46c29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1eec3560-64c7-40e3-9c91-db0b2f3af5bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "SOT* SG-*")
+		(path "/89165fdd-d6f8-4a77-a44b-dc14e3719eaa/7ed6c834-2da9-4fb6-91bb-9df6f0edc245")
+		(sheetname "/POS3P3_Supply/")
+		(sheetfile "POS3P3_Supply.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "6" "3" "5" "1" "2" "4")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -1.61 -1.61)
+			(end -1.135 -1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "72a41c71-419f-4f00-822a-1a6ce1edffe8")
+		)
+		(fp_line
+			(start -1.61 -1.135)
+			(end -1.61 -1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5aa6902f-0068-4498-83e9-4f3f413e8f39")
+		)
+		(fp_line
+			(start -1.61 1.61)
+			(end -1.61 1.135)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9f6993a8-881d-47d3-ac92-6c604fcb7896")
+		)
+		(fp_line
+			(start -1.135 1.61)
+			(end -1.61 1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "55ac2d31-dbf9-4446-a6d7-5f731491d796")
+		)
+		(fp_line
+			(start 1.135 -1.61)
+			(end 1.61 -1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "75d83395-c633-4a17-b1f2-98559c62f2ed")
+		)
+		(fp_line
+			(start 1.61 -1.61)
+			(end 1.61 -1.135)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dc84de0b-7f17-4b55-9421-43d3839ef06e")
+		)
+		(fp_line
+			(start 1.61 1.135)
+			(end 1.61 1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "de37ffcb-1802-4de4-a789-763f23772e17")
+		)
+		(fp_line
+			(start 1.61 1.61)
+			(end 1.135 1.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7d9feac8-9830-4f6f-8231-8c2c32c801eb")
+		)
+		(fp_poly
+			(pts
+				(xy -2.12 -0.75) (xy -2.45 -0.51) (xy -2.45 -0.99)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "2775b7ae-e036-44fa-85ca-341e600b6e87")
+		)
+		(fp_line
+			(start -2.1 -1.13)
+			(end -1.75 -1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "002161f3-7a32-4077-8552-f9d80da1a714")
+		)
+		(fp_line
+			(start -2.1 1.13)
+			(end -2.1 -1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0f075106-d460-41cb-ab84-716f35cdfe7c")
+		)
+		(fp_line
+			(start -1.75 -1.75)
+			(end -1.13 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "053b21ac-0186-4a5f-b1c8-7217e9f4e138")
+		)
+		(fp_line
+			(start -1.75 -1.13)
+			(end -1.75 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "368b1087-63b2-4a44-8b64-412b54064e1f")
+		)
+		(fp_line
+			(start -1.75 1.13)
+			(end -2.1 1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bb972c37-7479-44b1-a2a3-3dccde1a2930")
+		)
+		(fp_line
+			(start -1.75 1.75)
+			(end -1.75 1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b30a2873-fd7b-4096-bc0c-171671877a7f")
+		)
+		(fp_line
+			(start -1.13 -2.1)
+			(end 1.13 -2.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dc3c8dc3-43b7-4509-93c2-fd5a18ba087a")
+		)
+		(fp_line
+			(start -1.13 -1.75)
+			(end -1.13 -2.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0945545d-a4dc-4bc2-b139-455cce9a4835")
+		)
+		(fp_line
+			(start -1.13 1.75)
+			(end -1.75 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "343268a1-7808-4119-b08d-d3cc1218bffa")
+		)
+		(fp_line
+			(start -1.13 2.1)
+			(end -1.13 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "297b88ac-2790-4abd-970c-d564f7e7140b")
+		)
+		(fp_line
+			(start 1.13 -2.1)
+			(end 1.13 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "80816cac-1bb3-4077-8b07-18044ac56bc7")
+		)
+		(fp_line
+			(start 1.13 -1.75)
+			(end 1.75 -1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "6eeeba9e-e812-421c-aff0-ff389ebe5db8")
+		)
+		(fp_line
+			(start 1.13 1.75)
+			(end 1.13 2.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1a71c183-32b7-4614-b51e-2bc4828b0b4c")
+		)
+		(fp_line
+			(start 1.13 2.1)
+			(end -1.13 2.1)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7ba25dcb-d501-406c-91e0-bcfa04a8d5c8")
+		)
+		(fp_line
+			(start 1.75 -1.75)
+			(end 1.75 -1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d35a2afd-7e22-4073-a9cc-95b0e3765550")
+		)
+		(fp_line
+			(start 1.75 -1.13)
+			(end 2.1 -1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d6829a87-6d72-4125-95cc-793e10d71ef6")
+		)
+		(fp_line
+			(start 1.75 1.13)
+			(end 1.75 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8844ba30-6e1e-4b81-a417-4ed732e0df5b")
+		)
+		(fp_line
+			(start 1.75 1.75)
+			(end 1.13 1.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "03b077ee-817f-411c-8763-bb0419d7a955")
+		)
+		(fp_line
+			(start 2.1 -1.13)
+			(end 2.1 1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9a64b591-f431-4342-9b70-354e65c68ad5")
+		)
+		(fp_line
+			(start 2.1 1.13)
+			(end 1.75 1.13)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "def866f1-3ea3-4f19-bc4c-6058a1bdab14")
+		)
+		(fp_poly
+			(pts
+				(xy -0.75 -1.5) (xy 1.5 -1.5) (xy 1.5 1.5) (xy -1.5 1.5) (xy -1.5 -0.75)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "2d4851fe-b781-4cb6-980a-59ae37273f9f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "aab70b95-5d52-48f5-8b27-e24ea4bafc98")
+			(effects
+				(font
+					(size 0.75 0.75)
+					(thickness 0.11)
+				)
+			)
+		)
+		(pad "" smd roundrect
+			(at -0.44 -0.44)
+			(size 0.71 0.71)
+			(layers "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "ee8de4a0-72e5-452b-975b-56196ab8b06c")
+		)
+		(pad "" smd roundrect
+			(at -0.44 0.44)
+			(size 0.71 0.71)
+			(layers "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "4b4a251e-14a9-4d7f-ab9e-80f5af4444d1")
+		)
+		(pad "" smd roundrect
+			(at 0.44 -0.44)
+			(size 0.71 0.71)
+			(layers "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "c02fc3cc-4a57-4ae4-bbf7-22acc6b99c4b")
+		)
+		(pad "" smd roundrect
+			(at 0.44 0.44)
+			(size 0.71 0.71)
+			(layers "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "61a3e310-3c66-41b9-8e34-fb8893ea31e6")
+		)
+		(pad "1" smd roundrect
+			(at -1.4625 -0.75)
+			(size 0.775 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "power_in")
+			(uuid "bd2f6e12-2237-4274-890d-5d6057e249cb")
+		)
+		(pad "2" smd roundrect
+			(at -1.4625 -0.25)
+			(size 0.775 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "power_in")
+			(uuid "ab9f745a-c5cb-455d-996f-736353db2649")
+		)
+		(pad "3" smd roundrect
+			(at -1.4625 0.25)
+			(size 0.775 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "POS3P3_RUN")
+			(pintype "input")
+			(uuid "27f33a77-4fb8-4f1c-a539-f16f05478634")
+		)
+		(pad "4" smd roundrect
+			(at -1.4625 0.75)
+			(size 0.775 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "POS3P3_PGOOD")
+			(pintype "output")
+			(uuid "b4d3a10c-6e63-44ce-8989-8551235fc80a")
+		)
+		(pad "5" smd roundrect
+			(at -0.75 1.4625)
+			(size 0.25 0.775)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pinfunction "VCC_5")
+			(pintype "power_in")
+			(uuid "d015ec17-0864-48f2-9f68-99d8430e790c")
+		)
+		(pad "6" smd roundrect
+			(at -0.25 1.4625)
+			(size 0.25 0.775)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U19002-PG)")
+			(pintype "input")
+			(uuid "5f76c41c-fe6a-4ca7-8bee-5626aeb0fca4")
+		)
+		(pad "7" smd roundrect
+			(at 0.25 1.4625)
+			(size 0.25 0.775)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "7eb79ff6-70e2-4f8f-83ae-ea218e117926")
+		)
+		(pad "8" smd roundrect
+			(at 0.75 1.4625)
+			(size 0.25 0.775)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "460ca842-49f1-414c-b82a-2412ea6f1464")
+		)
+		(pad "9" smd roundrect
+			(at 1.4625 0.75)
+			(size 0.775 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "3c44ee80-6307-4ceb-a116-b96c9ed2c284")
+		)
+		(pad "10" smd roundrect
+			(at 1.4625 0.25)
+			(size 0.775 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "c1506aa3-84a4-4828-a9de-43a2672ce65e")
+		)
+		(pad "11" smd roundrect
+			(at 1.4625 -0.25)
+			(size 0.775 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "54baeeda-d565-4155-b847-a51efd222f6d")
+		)
+		(pad "12" smd roundrect
+			(at 1.4625 -0.75)
+			(size 0.775 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "05bf940d-ea4c-4cf3-a3d9-dea03dc5fa48")
+		)
+		(pad "13" smd roundrect
+			(at 0.75 -1.4625)
+			(size 0.25 0.775)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "4632831b-2a69-4df5-9be8-fea3fc59c846")
+		)
+		(pad "14" smd roundrect
+			(at 0.25 -1.4625)
+			(size 0.25 0.775)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "c20e8b69-2c58-4f62-936c-282f7228b3fc")
+		)
+		(pad "15" smd roundrect
+			(at -0.25 -1.4625)
+			(size 0.25 0.775)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "349b1f97-537f-4e71-8862-d33e6fbf71bc")
+		)
+		(pad "16" smd roundrect
+			(at -0.75 -1.4625)
+			(size 0.25 0.775)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(uuid "37553c28-9763-4d5c-845a-8997d824f582")
+		)
+		(pad "17" smd rect
+			(at 0 0)
+			(size 1.75 1.75)
+			(property pad_prop_heatsink)
+			(layers "F.Cu" "F.Mask")
+			(zone_connect 2)
+			(uuid "55ce6f98-d5f8-4e6f-9079-dec944619122")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../../project_lib/3d_models/QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "project_lib:LED_LST676_AOS"
 		(layer "F.Cu")
 		(uuid "616f200e-e08a-4517-98d7-78e6bebe7271")
@@ -86280,6 +87728,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/9b06b497-4d0b-48e4-95d5-52b28e299622")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -86727,6 +88181,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/f8392f33-4bcc-4580-bd61-b5047c155c2f")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -87174,6 +88634,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/069cff1a-24d5-4833-b4d0-7cdd90c0f62a")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -87621,6 +89087,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/44fb85c5-694e-4695-ad06-0158902b88ef")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -88068,6 +89540,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/f8a5a274-6fa4-4e69-bc98-68d6c62572a7")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -88515,6 +89993,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/9a2706c0-a607-4549-9d11-c30778eacbea")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -88962,6 +90446,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/d106cbc4-83c7-443c-9eba-0a931cd54845")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -89409,6 +90899,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/a6cdeaee-e3d6-4ff9-9809-c1c1b559176f")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -89856,6 +91352,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/58dabc74-1b17-4f03-833c-d0b4944c3c6d")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -90303,6 +91805,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/745a4f92-b407-461c-8c2e-09d62f2a8910")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -90750,6 +92258,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/817832a1-e850-477a-a9c1-bdf27a3803e0")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -91644,6 +93158,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/c09eb2c9-3342-403e-9847-46a48506f749")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -93972,6 +95492,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/d60d6c61-3f47-45ed-8d5b-f9abeaba70a4")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -95313,6 +96839,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/3c70b69f-c789-401d-abdf-4518fc3dcd70")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -95760,6 +97292,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/553807a2-0336-484e-a223-cb612ca72485")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -96654,6 +98192,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/a40825f0-20a8-4bf0-b5ec-813aed2965e9")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -97101,6 +98645,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/54745908-90c1-41fd-9c70-871fcd1a1482")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -97995,6 +99545,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/faa7851c-5079-436f-8515-a6dd4cd26d56")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -98697,6 +100253,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/51529314-864d-4cdb-af93-19430af95f88")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -99569,6 +101131,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/5d862f17-9d71-480c-b475-4c071ca8bdd4")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -100016,6 +101584,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/32433b44-59cc-4999-91ad-03fb021e63d9")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -101357,6 +102931,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/cae3ec42-0e33-4791-9f18-ca2edcf33a85")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -101804,6 +103384,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/acf55242-6b23-4b3d-a3d3-ac07742815d6")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -102251,6 +103837,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/48663d0a-65b8-4c15-9bd9-811b742a1d12")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -102619,7 +104211,7 @@
 	(footprint "project_lib:Test_Point"
 		(layer "F.Cu")
 		(uuid "7537cb51-0df9-4f66-8544-02c95cb95a01")
-		(at 118.641 167.011)
+		(at 107.6198 162.2044)
 		(descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
 		(tags "Mesurement Point Round SMD Pad 1.5mm")
 		(property "Reference" "TP19001"
@@ -102805,6 +104397,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/c0014cc0-bf0e-41df-b65f-d0627db2cca6")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -103252,6 +104850,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/08f8f20d-f2f2-4329-977d-366a3771bc68")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -103620,11 +105224,11 @@
 	(footprint "project_lib:L_Vishay_IHLP-2020"
 		(layer "F.Cu")
 		(uuid "77826893-8422-4b07-8550-a2a9ad6c7b45")
-		(at 117.155 152.125)
+		(at 111.5822 154.0256 -90)
 		(descr "Inductor, Vishay, IHLP-2020, 5.18x5.18x3.0mm, (https://www.vishay.com/docs/34280/ihlp-2020cz-01.pdf)")
 		(tags "shielded SMT")
 		(property "Reference" "L19001"
-			(at 0 -3.54 0)
+			(at 0 -3.54 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "67f3338e-eb75-4442-803b-8643df583826")
@@ -103636,7 +105240,7 @@
 			)
 		)
 		(property "Value" "2.2uH"
-			(at 0 3.54 0)
+			(at 0 3.54 90)
 			(layer "F.Fab")
 			(uuid "8857fe4d-9bd4-4765-95c0-ab528293d4d1")
 			(effects
@@ -103647,7 +105251,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bff7d66c-7015-4c0b-a5ef-275a60c4fd4c")
@@ -103658,7 +105262,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "63fb634a-c6ee-4dfe-9644-01de99134509")
@@ -103669,7 +105273,7 @@
 			)
 		)
 		(property "KiLib_Generator" "inductor/SMD"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "38c8518c-e9f0-4737-b592-f75b7addfc60")
@@ -103681,7 +105285,7 @@
 			)
 		)
 		(property "display_footprint" "IHLP2020"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -103694,7 +105298,7 @@
 			)
 		)
 		(property "Ampacity" "5.8A"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -103707,7 +105311,7 @@
 			)
 		)
 		(property "Tolerance" "20%"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -103720,7 +105324,7 @@
 			)
 		)
 		(property "Digi-Key PN" "541-IHLP2020BZEK2R2M11CT-ND"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -103733,7 +105337,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -103758,26 +105362,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -2.7 -2.7)
-			(end 2.7 -2.7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7f46b2d9-387a-4489-b07f-3306a6a93705")
-		)
-		(fp_line
-			(start -2.7 -1.655)
-			(end -2.7 -2.7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4e5a22a8-d859-43e4-89bc-24151b855b57")
-		)
-		(fp_line
 			(start -2.7 2.7)
 			(end -2.7 1.655)
 			(stroke
@@ -103786,26 +105370,6 @@
 			)
 			(layer "F.SilkS")
 			(uuid "244bc3c0-5f4c-46a2-9558-9c2c9257bbdd")
-		)
-		(fp_line
-			(start 2.7 -2.7)
-			(end 2.7 -1.655)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c2913a16-e41e-453d-a985-e41e617fd918")
-		)
-		(fp_line
-			(start 2.7 1.655)
-			(end 2.7 2.7)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7717fa67-63a0-4343-8c32-c63d510cd3b8")
 		)
 		(fp_line
 			(start 2.7 2.7)
@@ -103818,54 +105382,44 @@
 			(uuid "c0b379ed-d40c-4b01-bbb0-6f87c68765da")
 		)
 		(fp_line
-			(start -3.63 -1.65)
-			(end -2.84 -1.65)
+			(start 2.7 1.655)
+			(end 2.7 2.7)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "1b8c16e3-9589-437c-b63e-9e19e7defdd5")
+			(layer "F.SilkS")
+			(uuid "7717fa67-63a0-4343-8c32-c63d510cd3b8")
 		)
 		(fp_line
-			(start -3.63 1.65)
-			(end -3.63 -1.65)
+			(start -2.7 -1.655)
+			(end -2.7 -2.7)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "3d1c82dd-8de4-4eca-b36b-2a3f693e676a")
+			(layer "F.SilkS")
+			(uuid "4e5a22a8-d859-43e4-89bc-24151b855b57")
 		)
 		(fp_line
-			(start -2.84 -2.84)
-			(end 2.84 -2.84)
+			(start -2.7 -2.7)
+			(end 2.7 -2.7)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "f3f688a2-439a-4ff5-bb1a-bf87cc568a6c")
+			(layer "F.SilkS")
+			(uuid "7f46b2d9-387a-4489-b07f-3306a6a93705")
 		)
 		(fp_line
-			(start -2.84 -1.65)
-			(end -2.84 -2.84)
+			(start 2.7 -2.7)
+			(end 2.7 -1.655)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "f72582f1-6cf0-4cbd-834d-2e5d0543a6d3")
-		)
-		(fp_line
-			(start -2.84 1.65)
-			(end -3.63 1.65)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9ffe9a58-e0fa-4efd-a83d-0f1a92aea461")
+			(layer "F.SilkS")
+			(uuid "c2913a16-e41e-453d-a985-e41e617fd918")
 		)
 		(fp_line
 			(start -2.84 2.84)
@@ -103878,24 +105432,34 @@
 			(uuid "6560ca92-26df-49aa-88f8-07622075d334")
 		)
 		(fp_line
-			(start 2.84 -2.84)
-			(end 2.84 -1.65)
+			(start 2.84 2.84)
+			(end -2.84 2.84)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "7eab390c-0aec-4f26-b715-951726e07194")
+			(uuid "6bb28485-7582-42ac-b9d9-a0b20d7aaae0")
 		)
 		(fp_line
-			(start 2.84 -1.65)
-			(end 3.63 -1.65)
+			(start -3.63 1.65)
+			(end -3.63 -1.65)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "c9e4b4d5-48d7-459a-9307-081e3e9dd880")
+			(uuid "3d1c82dd-8de4-4eca-b36b-2a3f693e676a")
+		)
+		(fp_line
+			(start -2.84 1.65)
+			(end -3.63 1.65)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9ffe9a58-e0fa-4efd-a83d-0f1a92aea461")
 		)
 		(fp_line
 			(start 2.84 1.65)
@@ -103908,14 +105472,44 @@
 			(uuid "e8f97890-1b2d-49c9-b959-06f362c805fb")
 		)
 		(fp_line
-			(start 2.84 2.84)
-			(end -2.84 2.84)
+			(start 3.63 1.65)
+			(end 2.84 1.65)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "6bb28485-7582-42ac-b9d9-a0b20d7aaae0")
+			(uuid "6f751248-1ef3-4829-b236-278d42d0daea")
+		)
+		(fp_line
+			(start -3.63 -1.65)
+			(end -2.84 -1.65)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1b8c16e3-9589-437c-b63e-9e19e7defdd5")
+		)
+		(fp_line
+			(start -2.84 -1.65)
+			(end -2.84 -2.84)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f72582f1-6cf0-4cbd-834d-2e5d0543a6d3")
+		)
+		(fp_line
+			(start 2.84 -1.65)
+			(end 3.63 -1.65)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c9e4b4d5-48d7-459a-9307-081e3e9dd880")
 		)
 		(fp_line
 			(start 3.63 -1.65)
@@ -103928,14 +105522,24 @@
 			(uuid "155674fa-ad87-4105-af4f-a8ae2b69a86c")
 		)
 		(fp_line
-			(start 3.63 1.65)
-			(end 2.84 1.65)
+			(start -2.84 -2.84)
+			(end 2.84 -2.84)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "6f751248-1ef3-4829-b236-278d42d0daea")
+			(uuid "f3f688a2-439a-4ff5-bb1a-bf87cc568a6c")
+		)
+		(fp_line
+			(start 2.84 -2.84)
+			(end 2.84 -1.65)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7eab390c-0aec-4f26-b715-951726e07194")
 		)
 		(fp_rect
 			(start -2.59 -2.59)
@@ -103949,7 +105553,7 @@
 			(uuid "c5a707f4-c6a9-445f-927c-364afa71c70e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "710e93b0-77c0-4bb0-9b2b-68324a24d5f3")
 			(effects
@@ -103960,7 +105564,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -2.4255 0)
+			(at -2.4255 0 270)
 			(size 1.905 2.79)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.131234)
@@ -103970,7 +105574,7 @@
 			(uuid "7c02004d-c8e3-4c0a-8a69-63df93df8c96")
 		)
 		(pad "2" smd roundrect
-			(at 2.4255 0)
+			(at 2.4255 0 270)
 			(size 1.905 2.79)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.131234)
@@ -104074,6 +105678,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/899683b8-4d00-4086-8b96-4a5562f943f3")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -105415,6 +107025,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/43500a62-fb9a-4911-99f4-d04ea141d805")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -106309,6 +107925,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/a3ba8edf-cd15-4854-a641-d3136295a400")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -106756,6 +108378,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/6e85488e-c593-4e20-b995-f528f012cae9")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -109885,6 +111513,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/82e57fca-6488-4ef5-a22a-eb7e9176f834")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -110332,6 +111966,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/17f9bcf3-1bba-4846-b3c5-313e91aa3c50")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -111673,6 +113313,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/1cc4637e-aa79-49e6-8740-2e2f3aecbd8b")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -112567,6 +114213,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/12871c94-1615-42fb-bfeb-28b14f7e1577")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -113014,6 +114666,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/bbeb4e0f-bfbf-44b7-91f0-e6ec701d9e94")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -113461,6 +115119,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/d572f5ce-67da-4724-9282-99d11da4b4d4")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -113826,274 +115490,6 @@
 			)
 		)
 	)
-	(footprint "project_lib:C_1206"
-		(layer "F.Cu")
-		(uuid "82c34839-fa5d-4f19-96d3-c9a18271584d")
-		(at 110.145 164)
-		(descr "Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)")
-		(tags "capacitor 1206")
-		(property "Reference" "C19006"
-			(at 0 -1.75 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "1a1abc3b-1cf9-4069-91fd-ec8631090128")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 0 2 0)
-			(layer "F.Fab")
-			(uuid "ef279844-3d96-4fc8-87c6-dd18d808af63")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0c5db04c-1c7f-49f8-ae0c-8033867fce28")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dbf8270f-68d7-420c-86a8-384a5ef0b720")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "display_footprint" "1206"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "12ba8b93-bd61-48e0-8ea3-63e244004007")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Voltage" "25V"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0bf0a61a-8427-405d-b6b1-e2c75d78928b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Dielectric" "X5R"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ca5dfa64-9359-42f1-98c4-79a0f98cabbc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Digi-Key PN" "1276-1075-1-ND"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "16297a4e-7be8-487b-b4c7-5e57b01b19ac")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "567be638-4d21-4d94-aa34-bbe13ee3aa43")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "C_*")
-		(path "/89165fdd-d6f8-4a77-a44b-dc14e3719eaa/8f872078-a6d0-4e8e-ad25-cb2033f7bfff")
-		(sheetname "/POS3P3_Supply/")
-		(sheetfile "POS3P3_Supply.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
-		(attr smd exclude_from_pos_files)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1 1.02)
-			(end 1 1.02)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3197039c-3058-4eb2-9ca0-2624f62074e1")
-		)
-		(fp_line
-			(start 1 -1.02)
-			(end -1 -1.02)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "f0bd6999-bdc8-4350-9f3b-984d80bb7ac0")
-		)
-		(fp_line
-			(start -2.25 -1.05)
-			(end -2.25 1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "20b1e911-683a-4c0f-afe3-4984bb3efe4c")
-		)
-		(fp_line
-			(start -2.25 -1.05)
-			(end 2.25 -1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ad8931a6-fda0-49a2-b78f-c74a481640ef")
-		)
-		(fp_line
-			(start 2.25 1.05)
-			(end -2.25 1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "6003c2a7-54eb-4221-a908-6b9ad6a1c71b")
-		)
-		(fp_line
-			(start 2.25 1.05)
-			(end 2.25 -1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "9caf2f2d-7cda-4b69-97b8-05eaef607b91")
-		)
-		(fp_line
-			(start -1.6 -0.8)
-			(end 1.6 -0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2dcb86dc-cf34-47c6-881f-5c8e2c2fa753")
-		)
-		(fp_line
-			(start -1.6 0.8)
-			(end -1.6 -0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "1a67580b-8f08-4d24-80ac-21d6b250e685")
-		)
-		(fp_line
-			(start 1.6 -0.8)
-			(end 1.6 0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "4683f542-3f57-4cc2-b742-c1de2be164d7")
-		)
-		(fp_line
-			(start 1.6 0.8)
-			(end -1.6 0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "c0396b81-3a8f-4783-aa86-04103dbe6e0c")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 -1.75 0)
-			(layer "F.Fab")
-			(uuid "8b56e83b-5a90-4625-b1c3-32145211b7c1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" smd rect
-			(at -1.5 0)
-			(size 1 1.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "Net-(C19006-Pad1)")
-			(pintype "passive")
-			(uuid "f6b0601b-4646-4b75-a30c-1bbe4916d1ec")
-		)
-		(pad "2" smd rect
-			(at 1.5 0)
-			(size 1 1.6)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net "GND")
-			(pintype "passive")
-			(uuid "edb5ee74-6b49-49e3-b989-2c93d230eb44")
-		)
-		(embedded_fonts no)
-		(model "${KIPRJMOD}/../../project_lib/3d_models/C_1206_3216Metric.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "project_lib:LED_LST676_AOS"
 		(layer "F.Cu")
 		(uuid "82efb5a7-89a6-4b8b-9fb5-f1b0b5d6535d")
@@ -114176,6 +115572,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/412b8881-d915-43a3-9039-879a130b636b")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -115070,6 +116472,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/669c7f57-9a36-40dc-ade7-9d1519c1ba8f")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -115964,6 +117372,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/661667c9-47e3-44b7-a293-503aa4accafc")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -116411,6 +117825,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/857d7547-a563-46d6-8e64-8fe54b592790")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -116858,6 +118278,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/3b56f601-075c-4d4f-98ca-edf201ee5921")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -118199,6 +119625,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/94552b3c-a2f4-4e0e-b4c2-6d51fa01a0cc")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -118646,6 +120078,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/8a5b10cc-8d45-41fd-b7c7-309a10ac7986")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -122031,6 +123469,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/059fa79f-68c3-4206-9159-531490b45356")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -122478,6 +123922,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/38239c41-142f-4b1f-9092-78d5eece558c")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -122925,6 +124375,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/9fb0f53c-afbf-47ff-b354-d19e4c950166")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -123819,6 +125275,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/76216b0c-a8cc-4468-9c2c-434e0c954cde")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -125160,6 +126622,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/841cef0f-00f9-407f-811f-088238375ab9")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -125528,11 +126996,11 @@
 	(footprint "project_lib:C_1206"
 		(layer "F.Cu")
 		(uuid "8f171a67-1d78-4155-81df-a5945c78d09b")
-		(at 110.145 160.84)
+		(at 102.743 155.448 -90)
 		(descr "Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 1206")
 		(property "Reference" "C19002"
-			(at 0 -1.75 0)
+			(at 0 -1.75 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4a4267e1-9029-4017-a1ef-740633f559b0")
@@ -125544,7 +127012,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 0 2 0)
+			(at 0 2 90)
 			(layer "F.Fab")
 			(uuid "20add3ac-2727-4025-8903-848df1a03dcb")
 			(effects
@@ -125555,7 +127023,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6becfc74-4301-458a-9ba5-ccf54efff63f")
@@ -125566,7 +127034,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "76a5a6d9-3786-45ce-80b4-d90ebe976e50")
@@ -125577,7 +127045,7 @@
 			)
 		)
 		(property "display_footprint" "1206"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -125590,7 +127058,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -125603,7 +127071,7 @@
 			)
 		)
 		(property "Dielectric" "X5R"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -125616,7 +127084,7 @@
 			)
 		)
 		(property "Digi-Key PN" "1276-1075-1-ND"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -125629,7 +127097,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -125674,26 +127142,6 @@
 			(uuid "9a4ef87f-fda0-41c9-a08e-cb92c5eff351")
 		)
 		(fp_line
-			(start -2.25 -1.05)
-			(end -2.25 1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "cbc2f439-1c71-441e-be22-b8d00eb90973")
-		)
-		(fp_line
-			(start -2.25 -1.05)
-			(end 2.25 -1.05)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e5108d42-7913-48bc-b266-ead1ca1042fb")
-		)
-		(fp_line
 			(start 2.25 1.05)
 			(end -2.25 1.05)
 			(stroke
@@ -125714,14 +127162,24 @@
 			(uuid "0cb898f7-518b-4c53-9efd-9ac7f97aa426")
 		)
 		(fp_line
-			(start -1.6 -0.8)
-			(end 1.6 -0.8)
+			(start -2.25 -1.05)
+			(end -2.25 1.05)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "fc5f71d3-64a8-42bd-bf2c-adeace894324")
+			(layer "F.CrtYd")
+			(uuid "cbc2f439-1c71-441e-be22-b8d00eb90973")
+		)
+		(fp_line
+			(start -2.25 -1.05)
+			(end 2.25 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e5108d42-7913-48bc-b266-ead1ca1042fb")
 		)
 		(fp_line
 			(start -1.6 0.8)
@@ -125734,16 +127192,6 @@
 			(uuid "d74d961d-5839-4439-9280-52754f0432df")
 		)
 		(fp_line
-			(start 1.6 -0.8)
-			(end 1.6 0.8)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "dcc9e98f-c2dc-47e0-9dce-f305361f62e6")
-		)
-		(fp_line
 			(start 1.6 0.8)
 			(end -1.6 0.8)
 			(stroke
@@ -125753,8 +127201,28 @@
 			(layer "F.Fab")
 			(uuid "e4a4d06c-dec3-4f32-9a12-bd3937f7689b")
 		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fc5f71d3-64a8-42bd-bf2c-adeace894324")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "dcc9e98f-c2dc-47e0-9dce-f305361f62e6")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.75 0)
+			(at 0 -1.75 90)
 			(layer "F.Fab")
 			(uuid "764a251d-61d0-404f-b576-9661ae467b63")
 			(effects
@@ -125765,7 +127233,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -1.5 0)
+			(at -1.5 0 270)
 			(size 1 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "+12V")
@@ -125773,7 +127241,7 @@
 			(uuid "e0d3d967-d848-4c14-a3d8-ec2c5cc0df4f")
 		)
 		(pad "2" smd rect
-			(at 1.5 0)
+			(at 1.5 0 270)
 			(size 1 1.6)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -125875,6 +127343,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/455e602c-d11c-4a87-a6c7-acd6e50a7513")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -127216,6 +128690,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/15d9be39-6508-45fe-85a0-2850c13087a0")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -128110,6 +129590,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/f775972f-e74c-4141-9cbe-2d787b8fe7e7")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -128557,6 +130043,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/b0860be7-21e2-4ddb-a4d2-ea9e18585e37")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -129004,6 +130496,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/a112e4ea-249b-4ac4-9c11-a2c80442e4c9")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -129898,6 +131396,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/85567db0-e9dc-4edd-b57a-c119da13fb5e")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -130345,6 +131849,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/d36653f8-b472-4bcf-8435-1740dbf35245")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -131239,6 +132749,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/004330ae-c245-441a-9535-147d9e9b40d1")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -131607,11 +133123,11 @@
 	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "94b76243-985a-42e5-8514-d11f75374fa0")
-		(at 122.475 160.64)
+		(at 103.5558 151.9428 90)
 		(descr "Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0402")
 		(property "Reference" "C19005"
-			(at 0 -1.27 0)
+			(at 0 -1.27 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ddb72552-8a49-4a21-ad64-59256dd3c70c")
@@ -131623,7 +133139,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.27 0)
+			(at 0 1.27 90)
 			(layer "F.Fab")
 			(uuid "72f44cf7-e12c-404a-a98f-725741f4bfeb")
 			(effects
@@ -131634,7 +133150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c83fc75b-fce1-4029-b31f-893d4adb1bbb")
@@ -131645,7 +133161,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2adebe8a-fd01-41ac-8dff-a47de9d2c6b5")
@@ -131656,7 +133172,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -131669,7 +133185,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -131682,7 +133198,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -131695,7 +133211,7 @@
 			)
 		)
 		(property "Digi-Key PN" "1276-CL05B104KB5NNNCCT-ND"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -131708,7 +133224,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -131733,16 +133249,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.25 0.47)
-			(end 0.25 0.47)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "91dc80d6-3327-42bb-a257-733f0b87496e")
-		)
-		(fp_line
 			(start 0.25 -0.47)
 			(end -0.25 -0.47)
 			(stroke
@@ -131753,14 +133259,14 @@
 			(uuid "ff9eb215-c95f-4f31-8a54-493aac954a22")
 		)
 		(fp_line
-			(start -1 -0.4)
-			(end -1 0.4)
+			(start -0.25 0.47)
+			(end 0.25 0.47)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "9ac7104f-12cb-4da4-ad72-4292fa879a6a")
+			(layer "F.SilkS")
+			(uuid "91dc80d6-3327-42bb-a257-733f0b87496e")
 		)
 		(fp_line
 			(start -1 -0.4)
@@ -131773,14 +133279,14 @@
 			(uuid "d0b92d43-2fbe-48cd-82eb-4dac000c7f39")
 		)
 		(fp_line
-			(start 1 0.4)
+			(start -1 -0.4)
 			(end -1 0.4)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "a5ad1ce9-7df0-47b2-8025-8147ae9b0017")
+			(uuid "9ac7104f-12cb-4da4-ad72-4292fa879a6a")
 		)
 		(fp_line
 			(start 1 0.4)
@@ -131793,24 +133299,14 @@
 			(uuid "c8d7a50a-be56-4061-b544-9f2ae15db9ec")
 		)
 		(fp_line
-			(start -0.5 -0.25)
-			(end 0.5 -0.25)
+			(start 1 0.4)
+			(end -1 0.4)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "03da2196-4075-4f42-b596-8587b53875a9")
-		)
-		(fp_line
-			(start -0.5 0.25)
-			(end -0.5 -0.25)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "40cff537-af82-478b-b0aa-3f8b21d289ca")
+			(layer "F.CrtYd")
+			(uuid "a5ad1ce9-7df0-47b2-8025-8147ae9b0017")
 		)
 		(fp_line
 			(start 0.5 -0.25)
@@ -131823,6 +133319,16 @@
 			(uuid "fef86d8b-ac81-46c2-9109-e2b625a7a665")
 		)
 		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "03da2196-4075-4f42-b596-8587b53875a9")
+		)
+		(fp_line
 			(start 0.5 0.25)
 			(end -0.5 0.25)
 			(stroke
@@ -131832,8 +133338,18 @@
 			(layer "F.Fab")
 			(uuid "447180fb-bd6b-4dde-aef3-07c8279dd101")
 		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "40cff537-af82-478b-b0aa-3f8b21d289ca")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.27 0)
+			(at 0 -1.27 90)
 			(layer "F.Fab")
 			(uuid "62aff7a2-a8c4-4abb-a6b2-af112da61339")
 			(effects
@@ -131844,7 +133360,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -0.55 0)
+			(at -0.55 0 90)
 			(size 0.6 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "+12V")
@@ -131852,7 +133368,7 @@
 			(uuid "fde587c8-2fbb-4576-9e32-6a7dcf54db42")
 		)
 		(pad "2" smd rect
-			(at 0.55 0)
+			(at 0.55 0 90)
 			(size 0.6 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -133765,6 +135281,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/ca290c93-cecf-45cf-8be2-6e87967eb706")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -134944,6 +136466,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/a7cfbb02-2f30-4b05-9ee1-b7e8025e5c56")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -135759,7 +137287,7 @@
 	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "97725be8-708f-409c-825d-eb72c57f73a8")
-		(at 114.325 156.58)
+		(at 116.9416 154.1272)
 		(descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0402")
 		(property "Reference" "R19001"
@@ -137448,6 +138976,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/aecbd6a7-78c2-4ac9-bac5-2a7b6f066547")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -138342,6 +139876,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/57747cf5-1a8d-4ab8-9d29-4c210df5f7d9")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -138710,11 +140250,11 @@
 	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "99f92683-4773-401a-95c3-0f5fc67eabc4")
-		(at 122.475 158.58)
+		(at 105.029 149.9616 90)
 		(descr "Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0402")
 		(property "Reference" "C19004"
-			(at 0 -1.27 0)
+			(at 0 -1.27 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "64a98df9-792e-4d12-80b2-6c36103fe916")
@@ -138726,7 +140266,7 @@
 			)
 		)
 		(property "Value" "10nF"
-			(at 0 1.27 0)
+			(at 0 1.27 90)
 			(layer "F.Fab")
 			(uuid "30655793-b823-4526-bee9-46f6e0dc121f")
 			(effects
@@ -138737,7 +140277,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "345a1e0e-6d35-4247-aa20-9059e40af5f3")
@@ -138748,7 +140288,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f6969c00-b371-487b-a58a-89b9eb2b8a4e")
@@ -138759,7 +140299,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -138772,7 +140312,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -138785,7 +140325,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -138798,7 +140338,7 @@
 			)
 		)
 		(property "Digi-Key PN" "490-4516-1-ND"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -138811,7 +140351,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -138836,16 +140376,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.25 0.47)
-			(end 0.25 0.47)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "22e0b8e1-13b9-4574-b128-13b1067338da")
-		)
-		(fp_line
 			(start 0.25 -0.47)
 			(end -0.25 -0.47)
 			(stroke
@@ -138856,14 +140386,14 @@
 			(uuid "df3f9b84-c39c-4a9e-8be8-f767663862cb")
 		)
 		(fp_line
-			(start -1 -0.4)
-			(end -1 0.4)
+			(start -0.25 0.47)
+			(end 0.25 0.47)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "fea20705-0be4-4702-8453-7acc709a6233")
+			(layer "F.SilkS")
+			(uuid "22e0b8e1-13b9-4574-b128-13b1067338da")
 		)
 		(fp_line
 			(start -1 -0.4)
@@ -138876,14 +140406,14 @@
 			(uuid "71b97cba-3d57-4876-984b-4a697d0fc122")
 		)
 		(fp_line
-			(start 1 0.4)
+			(start -1 -0.4)
 			(end -1 0.4)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "28f774bb-13f2-4efa-94db-f4c57f0eff3b")
+			(uuid "fea20705-0be4-4702-8453-7acc709a6233")
 		)
 		(fp_line
 			(start 1 0.4)
@@ -138896,24 +140426,14 @@
 			(uuid "2173b485-7d7e-4661-a9d0-771124868b47")
 		)
 		(fp_line
-			(start -0.5 -0.25)
-			(end 0.5 -0.25)
+			(start 1 0.4)
+			(end -1 0.4)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "4b10def1-0868-40c3-8600-85cecfc43939")
-		)
-		(fp_line
-			(start -0.5 0.25)
-			(end -0.5 -0.25)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "382e0492-07f3-4c92-a83f-f8c52a8ad30d")
+			(layer "F.CrtYd")
+			(uuid "28f774bb-13f2-4efa-94db-f4c57f0eff3b")
 		)
 		(fp_line
 			(start 0.5 -0.25)
@@ -138926,6 +140446,16 @@
 			(uuid "524554db-b734-407d-85ee-31b654adcc1d")
 		)
 		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4b10def1-0868-40c3-8600-85cecfc43939")
+		)
+		(fp_line
 			(start 0.5 0.25)
 			(end -0.5 0.25)
 			(stroke
@@ -138935,8 +140465,18 @@
 			(layer "F.Fab")
 			(uuid "f8f5702b-762d-4d39-a0dd-cd798e04c7fc")
 		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "382e0492-07f3-4c92-a83f-f8c52a8ad30d")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.27 0)
+			(at 0 -1.27 90)
 			(layer "F.Fab")
 			(uuid "5e8e4522-f86c-4689-a422-c27a7036228e")
 			(effects
@@ -138947,7 +140487,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -0.55 0)
+			(at -0.55 0 90)
 			(size 0.6 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U19002-SS{slash}TR)")
@@ -138955,7 +140495,7 @@
 			(uuid "6d8a0d84-f7d9-4fbd-98c3-7596f23756a9")
 		)
 		(pad "2" smd rect
-			(at 0.55 0)
+			(at 0.55 0 90)
 			(size 0.6 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -139951,6 +141491,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/0214ba8e-b9b4-43f9-96f1-5f29fafcf50a")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -140398,6 +141944,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/6009ecca-bd2a-47f1-a1b4-3f1868f54a4d")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -140845,6 +142397,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/1fcdc534-09a3-47ce-b303-942a6c789bed")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -141739,6 +143297,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/d3fa384c-4bfa-4eb1-adfa-e9748f18bb5a")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -142186,6 +143750,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/a6442b74-c2ff-4ee1-9667-8c516f00e998")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -142633,6 +144203,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/66b4f329-c0bf-4ca9-b35a-7156444fcd08")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -143080,6 +144656,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/39cfa51d-5fd4-49cb-9905-8153b515b35b")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -144342,11 +145924,11 @@
 	(footprint "project_lib:Texas_DSBGA-12_1.65x1.39mm_Layout3x4_P0.4mm"
 		(layer "F.Cu")
 		(uuid "a0a4e9ca-8cd4-4ee1-b331-da952671c506")
-		(at 83.725 168.35)
+		(at 103.1272 159.1818 90)
 		(descr "Texas Instruments, DSBGA, 1.36x1.86mm, 12 bump 3x4 (area) array, NSMD pad definition (http://www.ti.com/lit/ds/symlink/txs0104e.pdf, http://www.ti.com/lit/an/snva009ag/snva009ag.pdf)")
 		(tags "Texas Instruments DSBGA BGA")
 		(property "Reference" "U501"
-			(at 0 -2 0)
+			(at 0 -2 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3dfb7038-b86e-475b-9eb3-e0a0c59823e8")
@@ -144358,7 +145940,7 @@
 			)
 		)
 		(property "Value" "INA231A"
-			(at 0 2 0)
+			(at 0 2 90)
 			(layer "F.Fab")
 			(uuid "4ca2770d-0400-426f-9e9d-0d2413fa1d38")
 			(effects
@@ -144369,7 +145951,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina231.pdf"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ba494561-d49f-4d94-ab6e-ff11921cee56")
@@ -144380,7 +145962,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "647ef405-8110-43e9-b7c0-fbd77350d18b")
@@ -144391,7 +145973,7 @@
 			)
 		)
 		(property "Digi-Key PN" "296-41263-1-ND"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -144404,7 +145986,7 @@
 			)
 		)
 		(property "Configuration" "Telemetry"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -144417,7 +145999,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -144442,6 +146024,16 @@
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
+			(start 0 -1.25)
+			(end -1 -1.25)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "abaac5c7-6534-49c5-bf22-7a3e7ff2e7b8")
+		)
+		(fp_line
 			(start -1 -1.25)
 			(end -1 -1.25)
 			(stroke
@@ -144463,6 +146055,16 @@
 		)
 		(fp_line
 			(start -0.775 -1.025)
+			(end 0.765 -1.025)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b75ddafe-1512-4110-b2f0-6a7aa856e369")
+		)
+		(fp_line
+			(start -0.775 -1.025)
 			(end -0.775 1.025)
 			(stroke
 				(width 0.12)
@@ -144472,14 +146074,14 @@
 			(uuid "f003bbcd-0c86-4c45-80ce-bcea2279ca2f")
 		)
 		(fp_line
-			(start -0.775 -1.025)
-			(end 0.765 -1.025)
+			(start 0.775 1.025)
+			(end 0.775 -1.025)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "b75ddafe-1512-4110-b2f0-6a7aa856e369")
+			(uuid "d6a5e76d-cbfb-4ffb-9381-cc66feb21546")
 		)
 		(fp_line
 			(start -0.765 1.025)
@@ -144492,24 +146094,14 @@
 			(uuid "d4020818-0714-4bc7-9960-a29e7c7ca6ef")
 		)
 		(fp_line
-			(start 0 -1.25)
-			(end -1 -1.25)
+			(start 1.18 -1.43)
+			(end 1.18 1.43)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.SilkS")
-			(uuid "abaac5c7-6534-49c5-bf22-7a3e7ff2e7b8")
-		)
-		(fp_line
-			(start 0.775 1.025)
-			(end 0.775 -1.025)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d6a5e76d-cbfb-4ffb-9381-cc66feb21546")
+			(layer "F.CrtYd")
+			(uuid "ec7febf2-2a25-4d9d-be8c-5bf0049cd501")
 		)
 		(fp_line
 			(start -1.18 -1.43)
@@ -144542,14 +146134,14 @@
 			(uuid "f8bba318-0bca-4c99-8db2-ed4cb4f381f3")
 		)
 		(fp_line
-			(start 1.18 -1.43)
-			(end 1.18 1.43)
+			(start 0.68 -0.93)
+			(end -0.15 -0.93)
 			(stroke
-				(width 0.05)
+				(width 0.1)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "ec7febf2-2a25-4d9d-be8c-5bf0049cd501")
+			(layer "F.Fab")
+			(uuid "f4aa3162-806e-4676-8db7-e6a1b13e4f1b")
 		)
 		(fp_line
 			(start -0.68 -0.4)
@@ -144560,6 +146152,16 @@
 			)
 			(layer "F.Fab")
 			(uuid "9c82cba0-25f6-4124-a1fe-9dcb4747e9de")
+		)
+		(fp_line
+			(start 0.68 0.93)
+			(end 0.68 -0.93)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "08cc9eab-c4d8-4f2d-9c6a-40db2e2135fd")
 		)
 		(fp_line
 			(start -0.68 0.93)
@@ -144581,28 +146183,8 @@
 			(layer "F.Fab")
 			(uuid "14f556ca-4a72-4fc2-a011-cd55f5fc9aa1")
 		)
-		(fp_line
-			(start 0.68 -0.93)
-			(end -0.15 -0.93)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "f4aa3162-806e-4676-8db7-e6a1b13e4f1b")
-		)
-		(fp_line
-			(start 0.68 0.93)
-			(end 0.68 -0.93)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "08cc9eab-c4d8-4f2d-9c6a-40db2e2135fd")
-		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "1a4e7d13-819c-4730-b9df-0029757cfdba")
 			(effects
@@ -144613,79 +146195,79 @@
 			)
 		)
 		(pad "" smd rect
-			(at -0.4 -0.6)
+			(at -0.4 -0.6 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "43d84e09-29cf-47a5-92ba-1e87174a4d5f")
 		)
 		(pad "" smd rect
-			(at -0.4 -0.2)
+			(at -0.4 -0.2 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "6058a58c-a311-4df1-9fa0-55c324d8b95b")
 		)
 		(pad "" smd rect
-			(at -0.4 0.2)
+			(at -0.4 0.2 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "19836f96-9da3-4cf6-a1da-6bcb2c712223")
 		)
 		(pad "" smd rect
-			(at -0.4 0.6)
+			(at -0.4 0.6 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "8852362c-1f46-492b-ba20-16c4c33beb86")
 		)
 		(pad "" smd rect
-			(at 0 -0.6)
+			(at 0 -0.6 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "51d7fc6c-49ce-42b1-a27a-7839be0ff24c")
 		)
 		(pad "" smd rect
-			(at 0 -0.2)
+			(at 0 -0.2 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "2527c64b-ffdd-4dad-a3dc-b99a29632283")
 		)
 		(pad "" smd rect
-			(at 0 0.2)
+			(at 0 0.2 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "cb39bf2f-cc4d-4b14-a0c1-f0f680aca9a0")
 		)
 		(pad "" smd rect
-			(at 0 0.6)
+			(at 0 0.6 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "8f5785f9-fded-42c3-af2a-2d0313337d51")
 		)
 		(pad "" smd rect
-			(at 0.4 -0.6)
+			(at 0.4 -0.6 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "e5f04cc4-f46b-45a3-acb4-821e151eed59")
 		)
 		(pad "" smd rect
-			(at 0.4 -0.2)
+			(at 0.4 -0.2 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "27581445-d055-413a-a564-b96bdbc773cb")
 		)
 		(pad "" smd rect
-			(at 0.4 0.2)
+			(at 0.4 0.2 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "10ed1cb0-1e09-4fbb-9420-53f9980fd788")
 		)
 		(pad "" smd rect
-			(at 0.4 0.6)
+			(at 0.4 0.6 90)
 			(size 0.3 0.3)
 			(layers "F.Paste")
 			(uuid "38a44eb3-9d7a-4050-b341-a6bf94354865")
 		)
 		(pad "A1" smd circle
-			(at -0.4 -0.6)
+			(at -0.4 -0.6 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "I2C_SCL")
@@ -144694,7 +146276,7 @@
 			(uuid "6f411bf9-22e1-42cd-b299-22e30cff448e")
 		)
 		(pad "A2" smd circle
-			(at 0 -0.6)
+			(at 0 -0.6 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "I2C_SDA")
@@ -144703,7 +146285,7 @@
 			(uuid "68e5f93f-a844-4297-8369-2ca3c8ad6495")
 		)
 		(pad "A3" smd circle
-			(at 0.4 -0.6)
+			(at 0.4 -0.6 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "unconnected-(U501-~{Alert}-PadA3)")
@@ -144712,7 +146294,7 @@
 			(uuid "be1f3833-4657-4f2e-a3e6-de757446ab60")
 		)
 		(pad "B1" smd circle
-			(at -0.4 -0.2)
+			(at -0.4 -0.2 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "+3.3V")
@@ -144721,7 +146303,7 @@
 			(uuid "a572b2e1-d00c-4d17-9b2c-6c453a8cde38")
 		)
 		(pad "B2" smd circle
-			(at 0 -0.2)
+			(at 0 -0.2 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "unconnected-(U501-NC-PadB2)")
@@ -144730,7 +146312,7 @@
 			(uuid "f72236a0-5cbd-4ca5-9d34-c46a9bc46b62")
 		)
 		(pad "B3" smd circle
-			(at 0.4 -0.2)
+			(at 0.4 -0.2 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "GND")
@@ -144739,7 +146321,7 @@
 			(uuid "1a76929b-663c-4a26-8d6b-7f769e3191be")
 		)
 		(pad "C1" smd circle
-			(at -0.4 0.2)
+			(at -0.4 0.2 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "GND")
@@ -144748,7 +146330,7 @@
 			(uuid "ca00a6e1-8737-4804-a566-e2e44ac2ea18")
 		)
 		(pad "C2" smd circle
-			(at 0 0.2)
+			(at 0 0.2 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "unconnected-(U501-NC-PadC2)")
@@ -144757,7 +146339,7 @@
 			(uuid "76d9a6da-4f5f-4658-9e01-ff7ccd5f75b6")
 		)
 		(pad "C3" smd circle
-			(at 0.4 0.2)
+			(at 0.4 0.2 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "+3.3V")
@@ -144766,7 +146348,7 @@
 			(uuid "2daf5b36-55d2-44d9-9c62-67e78cfbef8b")
 		)
 		(pad "D1" smd circle
-			(at -0.4 0.6)
+			(at -0.4 0.6 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "+3.3V")
@@ -144775,7 +146357,7 @@
 			(uuid "8ab5defd-b39f-4744-97a6-996db5e6e76a")
 		)
 		(pad "D2" smd circle
-			(at 0 0.6)
+			(at 0 0.6 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "POS3P3_SNS-")
@@ -144784,7 +146366,7 @@
 			(uuid "206dc3d6-6b92-4c59-b0d7-70c5c341bb6f")
 		)
 		(pad "D3" smd circle
-			(at 0.4 0.6)
+			(at 0.4 0.6 90)
 			(size 0.265 0.265)
 			(layers "F.Cu" "F.Mask")
 			(net "POS3P3_SNS+")
@@ -144891,6 +146473,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/cdd1c7cc-734e-48f0-b7bc-8b599f3b53da")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -145338,6 +146926,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/7936c5e5-73a6-4b80-946f-c7304d381135")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -145785,6 +147379,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/7c615ff9-f79b-4336-aee6-6ef1e3f8af61")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -146232,6 +147832,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/88484cd5-f28f-4c97-9a83-ff4f1be9b937")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -147047,7 +148653,7 @@
 	(footprint "project_lib:SOT-323_SC-70"
 		(layer "F.Cu")
 		(uuid "a4fdceaa-78ed-496b-905d-ecbcbccd9765")
-		(at 119.025 163.725)
+		(at 116.7414 166.1066)
 		(descr "SOT, 3 Pin (https://home.jeita.or.jp/tsc/std-pdf/ED-7500A.pdf#page=148)")
 		(tags "SOT TO_SOT_SMD SC-70 SOT-323")
 		(property "Reference" "Q19001"
@@ -147962,6 +149568,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/df6149e1-8eb8-4a25-9ad2-836ade15c3b2")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -149480,11 +151092,11 @@
 	(footprint "project_lib:R_0612"
 		(layer "F.Cu")
 		(uuid "a80115c5-ccea-4d38-802d-766b190cbe9a")
-		(at 115.025 164.555)
+		(at 110.871 159.4992 -90)
 		(descr "Resistor SMD 0612, reflow solderinG")
 		(tags "resistor 0612 ")
 		(property "Reference" "R19008"
-			(at 0 -2.7 0)
+			(at 0 -2.7 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "743dd584-5323-49ae-8fbd-39e3535f5326")
@@ -149496,7 +151108,7 @@
 			)
 		)
 		(property "Value" "0.02"
-			(at 0 3.175 0)
+			(at 0 3.175 90)
 			(layer "F.Fab")
 			(uuid "2ca6a074-dc9e-4f6a-a8e7-3f5de7d3f1a1")
 			(effects
@@ -149507,7 +151119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0d598676-d573-4965-b7b4-339c03aa4a54")
@@ -149518,7 +151130,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "73fb9295-5936-4003-8a54-eff9dd10747d")
@@ -149529,7 +151141,7 @@
 			)
 		)
 		(property "Digi-Key PN" "P16010CT-ND"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -149542,7 +151154,7 @@
 			)
 		)
 		(property "display_footprint" "0612"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -149555,7 +151167,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -149568,7 +151180,7 @@
 			)
 		)
 		(property "Wattage" "1W"
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -149581,7 +151193,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 0 0 0)
+			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -149605,6 +151217,16 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
+			(start 0.5 1.8)
+			(end -0.5 1.8)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0497c51c-61bc-44a7-94d8-01f5b295b081")
+		)
+		(fp_line
 			(start -0.5 -1.8)
 			(end 0.5 -1.8)
 			(stroke
@@ -149615,14 +151237,14 @@
 			(uuid "6e40a51a-3b17-4e40-8e98-017fa039585f")
 		)
 		(fp_line
-			(start 0.5 1.8)
-			(end -0.5 1.8)
+			(start -1.5 2)
+			(end 1.5 2)
 			(stroke
-				(width 0.12)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.SilkS")
-			(uuid "0497c51c-61bc-44a7-94d8-01f5b295b081")
+			(layer "F.CrtYd")
+			(uuid "652edd7b-7c32-48ef-935a-db863e96bcd4")
 		)
 		(fp_line
 			(start -1.5 -2)
@@ -149645,16 +151267,6 @@
 			(uuid "e16e1919-0810-4fbe-9a7a-d516775a1a07")
 		)
 		(fp_line
-			(start -1.5 2)
-			(end 1.5 2)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "652edd7b-7c32-48ef-935a-db863e96bcd4")
-		)
-		(fp_line
 			(start 1.5 -2)
 			(end 1.5 2)
 			(stroke
@@ -149663,16 +151275,6 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "2f36a8f9-a470-45ed-bd95-a3dc2d1c95b1")
-		)
-		(fp_line
-			(start -0.8 -1.6)
-			(end 0.8 -1.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e28941c5-818a-4540-b3ea-51d27828f0d0")
 		)
 		(fp_line
 			(start -0.8 1.6)
@@ -149685,16 +151287,6 @@
 			(uuid "6b26e3ef-7729-4352-aabe-7d78a031d857")
 		)
 		(fp_line
-			(start 0.8 -1.6)
-			(end 0.8 1.6)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "493bc2ce-7e8b-4690-8263-6b014595b234")
-		)
-		(fp_line
 			(start 0.8 1.6)
 			(end -0.8 1.6)
 			(stroke
@@ -149704,8 +151296,28 @@
 			(layer "F.Fab")
 			(uuid "80358d61-4a40-452b-86e2-2012a7c7f5c5")
 		)
+		(fp_line
+			(start -0.8 -1.6)
+			(end 0.8 -1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e28941c5-818a-4540-b3ea-51d27828f0d0")
+		)
+		(fp_line
+			(start 0.8 -1.6)
+			(end 0.8 1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "493bc2ce-7e8b-4690-8263-6b014595b234")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "ece8a615-e9d9-4516-a9ca-2bfe85639c74")
 			(effects
@@ -149716,7 +151328,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -0.8 0)
+			(at -0.8 0 270)
 			(size 0.8 3.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(C19006-Pad1)")
@@ -149725,7 +151337,7 @@
 			(uuid "3fc0f6d6-fff4-40b5-a072-a0f33b641a1f")
 		)
 		(pad "2" smd rect
-			(at 0.8 0)
+			(at 0.8 0 270)
 			(size 0.8 3.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "+3.3V")
@@ -150275,6 +151887,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/9e846740-a55e-4d8f-9dfe-18b423caa921")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -151169,6 +152787,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/32468807-2a44-4bbb-8cc7-0e0541bd6b70")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -151616,6 +153240,12 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/4530b1ca-e187-44de-9bdb-0d5df1a9ec9a")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -152510,6 +154140,12 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/683cb728-2375-43e5-85f9-bab43d51eecb")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -152878,7 +154514,7 @@
 	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "ab885ef3-96e5-4a41-aeff-6e15533c8574")
-		(at 114.325 158.76)
+		(at 121.3346 148.7932)
 		(descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0402")
 		(property "Reference" "R19002"
@@ -153226,6 +154862,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/4a5c23be-85da-46af-bf02-d9494114d552")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -156355,6 +157997,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/6ae45b57-2f2a-473d-a4f2-aa5352897f15")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -157696,6 +159344,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/82ed9f92-382b-40b7-9716-579503cae8fc")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -158143,6 +159797,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/9764c915-4c2d-4306-9851-b862cd201484")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -159521,7 +161181,7 @@
 	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "b3c93800-1cb6-4792-b7e1-ada3b3886901")
-		(at 80.495 165.825)
+		(at 103.0986 161.0106)
 		(descr "Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0402")
 		(property "Reference" "C502"
@@ -160332,6 +161992,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/514659d7-7f10-429d-abf8-2458858ec99c")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -161673,6 +163339,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/29f3e373-9cf6-4000-866b-1ba21d16e2ad")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -162120,6 +163792,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/89432e2b-8f3b-4da9-bf54-5b241cf9d22f")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -162567,6 +164245,12 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/35c5ac12-cd4d-423e-b2f5-f58b375c2929")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -164193,6 +165877,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/c386e0f3-de67-4433-b484-2a0baf95a423")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -164640,6 +166330,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/415c7bdb-b75d-4fbb-a2ac-e0ddf26441f6")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -165923,6 +167619,12 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/fc37fcfe-ec34-46ad-bdaa-15460cfbb7f7")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -167519,6 +169221,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/3646b148-1796-4e98-9a19-80deaa8e8dbf")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -167966,6 +169674,12 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/0ee6b9d3-ccb3-45cf-b53f-9f5d9d001110")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -172861,6 +174575,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/7ca23bef-6d6e-461f-9272-a197c6159996")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -173308,6 +175028,12 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/203ce621-5783-4e78-bd83-7d35349209d2")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -173755,6 +175481,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/efbb4314-0831-459c-b08f-cae3be5722d2")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -175543,6 +177275,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/5e9429b6-52c8-4119-8546-8875c8f42dc1")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -175911,11 +177649,11 @@
 	(footprint "project_lib:C_0402"
 		(layer "F.Cu")
 		(uuid "c60f6e2e-f39b-4bb2-b01e-5eb92c23877b")
-		(at 80.495 163.765)
+		(at 105.156 159.3596 90)
 		(descr "Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)")
 		(tags "capacitor 0402")
 		(property "Reference" "C501"
-			(at 0 -1.27 0)
+			(at 0 -1.27 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "79a43194-d075-4b39-b0b0-96a32dd30439")
@@ -175927,7 +177665,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.27 0)
+			(at 0 1.27 90)
 			(layer "F.Fab")
 			(uuid "0adbce60-c5ac-479b-9ecb-7c60cecf6115")
 			(effects
@@ -175938,7 +177676,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1018e5ad-67cc-499c-8bbd-2cc40cd92d34")
@@ -175949,7 +177687,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1e650617-10a9-41b1-8828-e8cb15931368")
@@ -175960,7 +177698,7 @@
 			)
 		)
 		(property "display_footprint" "0402"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -175973,7 +177711,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -175986,7 +177724,7 @@
 			)
 		)
 		(property "Dielectric" "X7R"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -175999,7 +177737,7 @@
 			)
 		)
 		(property "Configuration" "Telemetry"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -176012,7 +177750,7 @@
 			)
 		)
 		(property "Digi-Key PN" "1276-CL05B104KB5NNNCCT-ND"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -176025,7 +177763,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -176050,16 +177788,6 @@
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.25 0.47)
-			(end 0.25 0.47)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "71425bc8-6b6a-45ca-86d0-0a902f73d8a5")
-		)
-		(fp_line
 			(start 0.25 -0.47)
 			(end -0.25 -0.47)
 			(stroke
@@ -176070,14 +177798,14 @@
 			(uuid "93cf9884-de5e-4d65-9f43-066255f52637")
 		)
 		(fp_line
-			(start -1 -0.4)
-			(end -1 0.4)
+			(start -0.25 0.47)
+			(end 0.25 0.47)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "bba2e445-4375-423e-b4ad-7939bb79362d")
+			(layer "F.SilkS")
+			(uuid "71425bc8-6b6a-45ca-86d0-0a902f73d8a5")
 		)
 		(fp_line
 			(start -1 -0.4)
@@ -176090,14 +177818,14 @@
 			(uuid "76cbf91d-b032-4b79-9cdb-d7e7e22972b3")
 		)
 		(fp_line
-			(start 1 0.4)
+			(start -1 -0.4)
 			(end -1 0.4)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "f84919ea-f9e0-46c4-9f9b-e8fb8d9ee369")
+			(uuid "bba2e445-4375-423e-b4ad-7939bb79362d")
 		)
 		(fp_line
 			(start 1 0.4)
@@ -176110,24 +177838,14 @@
 			(uuid "b9edb612-4b6a-4de9-b490-fd7a3b1d58d0")
 		)
 		(fp_line
-			(start -0.5 -0.25)
-			(end 0.5 -0.25)
+			(start 1 0.4)
+			(end -1 0.4)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "25e4f397-2b19-4c39-9501-a6052c6f8400")
-		)
-		(fp_line
-			(start -0.5 0.25)
-			(end -0.5 -0.25)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "7c5b3055-ca75-4aa3-9dcf-78c5aa301a44")
+			(layer "F.CrtYd")
+			(uuid "f84919ea-f9e0-46c4-9f9b-e8fb8d9ee369")
 		)
 		(fp_line
 			(start 0.5 -0.25)
@@ -176140,6 +177858,16 @@
 			(uuid "58362d84-c456-4fe5-82c0-e92b38e9dc57")
 		)
 		(fp_line
+			(start -0.5 -0.25)
+			(end 0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "25e4f397-2b19-4c39-9501-a6052c6f8400")
+		)
+		(fp_line
 			(start 0.5 0.25)
 			(end -0.5 0.25)
 			(stroke
@@ -176149,8 +177877,18 @@
 			(layer "F.Fab")
 			(uuid "f78a74f4-401b-453e-a7fc-dbb94ec15cc2")
 		)
+		(fp_line
+			(start -0.5 0.25)
+			(end -0.5 -0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7c5b3055-ca75-4aa3-9dcf-78c5aa301a44")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.27 0)
+			(at 0 -1.27 90)
 			(layer "F.Fab")
 			(uuid "e6d648df-6dc7-4ee9-8a33-56853ff67f06")
 			(effects
@@ -176161,7 +177899,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at -0.55 0)
+			(at -0.55 0 90)
 			(size 0.6 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "POS3P3_SNS+")
@@ -176169,7 +177907,7 @@
 			(uuid "c0057281-0a2f-4651-9880-c333c9a4de99")
 		)
 		(pad "2" smd rect
-			(at 0.55 0)
+			(at 0.55 0 90)
 			(size 0.6 0.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "POS3P3_SNS-")
@@ -178510,6 +180248,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/e7cd81dd-b9bc-4434-acce-c120a7693e01")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -179404,6 +181148,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/62375151-197c-4054-a7e6-a570a8d4fd76")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -179772,7 +181522,7 @@
 	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "c887bda6-b12d-4545-9ec1-a1860bb8359b")
-		(at 116.975 158.76)
+		(at 107.1808 158.8262)
 		(descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0402")
 		(property "Reference" "R19006"
@@ -182368,6 +184118,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/c134ddf2-5b55-45e2-a78d-bcc690cae6ff")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -182815,6 +184571,12 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/0d44cf00-c14f-4387-883d-9b3d5841bb4f")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -183262,6 +185024,12 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/39153330-a1ca-4d9f-a13b-44338802beed")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -185497,6 +187265,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/79399a71-9434-4c5c-9aa0-a73989b8e260")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -185944,6 +187718,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/3c866e67-6392-4cd9-b89e-2f4a3e7d4963")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -189788,6 +191568,12 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/92e4f64d-7ca3-43ca-812c-db919316b183")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -190235,6 +192021,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/b213816c-d9e3-4e53-9429-0ee4e3effbf1")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -192470,6 +194262,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/dd03fca5-c685-4f3c-b12c-97e33cda262d")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -203517,6 +205315,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/26fb5a75-d235-498d-ade5-cd010593e73a")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -205752,6 +207556,12 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/dd0503e9-74a2-4a9a-9926-8cb1c5ffeb90")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -206646,6 +208456,12 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/d659d3cf-71bd-4c1a-9ef0-dcca72e37e27")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -210222,6 +212038,12 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/9b877ad4-ea72-4692-bfc2-df12991fdcce")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -212010,6 +213832,12 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/2bec4bfb-a195-4f9c-a152-9c2fb4520a48")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -214066,6 +215894,12 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/1dcd8769-d81d-4da9-b9cd-04cc073443b2")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -214960,6 +216794,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/3d0cdfc5-395c-43af-9b6d-fad05d2ae955")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -220336,7 +222176,7 @@
 	(footprint "project_lib:R_0402"
 		(layer "F.Cu")
 		(uuid "e8cc5b6b-f15d-4cd2-acf6-b1790518ab0d")
-		(at 119.625 158.76)
+		(at 126.6346 148.7932)
 		(descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
 		(tags "resistor 0402")
 		(property "Reference" "R19010"
@@ -224728,7 +226568,7 @@
 			)
 		)
 		(property ki_fp_filters "SOT?363*")
-		(path "/ea6fcf81-437e-4612-929d-18972fd90c24/66aec01a-268a-4c7e-9dbf-fa2aaf9858a2")
+		(path "/ea6fcf81-437e-4612-929d-18972fd90c24/b76ac092-b2c6-40d9-8d78-3c753c4e1195")
 		(sheetname "/led_panel_connector/")
 		(sheetfile "led_panel_connector.kicad_sch")
 		(units
@@ -226828,6 +228668,12 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/44f31ce4-19de-4b0a-893d-8ab4e51e3220")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -230660,6 +232506,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/fe48e37e-995b-4a22-a96d-cba583429a63")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -236620,6 +238472,12 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/a777ada5-986b-43d3-b445-aaf1194a59fd")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -247590,6 +249448,14 @@
 		(path "/b234d8b7-dd96-4986-a8ff-fa277cd54c07/791e1e03-98d7-4d2b-8ea4-d109ebef1a21")
 		(sheetname "/LED_Driver_6/")
 		(sheetfile "LED_Driver_6.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -248142,6 +250008,14 @@
 		(path "/89e56578-e1b8-4f87-bf36-28eb1218f540/61e47f04-a1fe-435e-afd6-a478e9734922")
 		(sheetname "/LED_Driver_9/")
 		(sheetfile "LED_Driver_9.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -248694,6 +250568,14 @@
 		(path "/da30a0ee-a2e2-4710-9d2d-3a9c787c5ee9/79ac6f1d-dbd3-497b-a168-c5e8de5f05ff")
 		(sheetname "/LED_Driver_10/")
 		(sheetfile "LED_Driver_10.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -250040,6 +251922,14 @@
 		(path "/53a69b4f-9992-4c12-af17-8e927fea0a02/bbbbca4e-1a1d-4681-a26a-291048864128")
 		(sheetname "/LED_Driver_0/")
 		(sheetfile "LED_Driver_0.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -251917,6 +253807,14 @@
 		(path "/e03fe025-491a-4f31-9d24-9b174510127c/6cbe7740-2ead-403b-9997-ae6503b297b9")
 		(sheetname "/LED_Driver_7/")
 		(sheetfile "LED_Driver_7.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -253263,6 +255161,14 @@
 		(path "/23d02cb1-ce34-4b7f-86ca-54d0ca15e006/9a03de7d-7425-44e5-90fd-4d6225e64583")
 		(sheetname "/LED_Driver_14/")
 		(sheetfile "LED_Driver_14.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -255137,6 +257043,14 @@
 		(path "/20fee832-59ff-430e-a5e9-f557930cbe03/3f7355eb-0091-4e47-bed9-fc9d1f367db0")
 		(sheetname "/LED_Driver_8/")
 		(sheetfile "LED_Driver_8.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -255953,6 +257867,14 @@
 		(path "/a7cd7e45-7fe8-49fb-a954-735e8a7dc6b9/d46122a7-213f-4a08-a2e7-f319a66ff005")
 		(sheetname "/LED_Driver_2/")
 		(sheetfile "LED_Driver_2.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -257562,6 +259484,14 @@
 		(path "/74a24643-becc-4b92-826c-61c11335ca4e/69daeec8-12dc-4ae1-aa7d-bb150779ca0a")
 		(sheetname "/LED_Driver_4/")
 		(sheetfile "LED_Driver_4.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -258575,6 +260505,284 @@
 			)
 		)
 	)
+	(footprint "project_lib:C_1206"
+		(layer "B.Cu")
+		(uuid "82c34839-fa5d-4f19-96d3-c9a18271584d")
+		(at 106.3498 156.845 180)
+		(descr "Capacitor SMD 1206, reflow soldering, AVX (see smccp.pdf)")
+		(tags "capacitor 1206")
+		(property "Reference" "C19006"
+			(at 0 1.75 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "1a1abc3b-1cf9-4069-91fd-ec8631090128")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "10uF"
+			(at 0 -2 0)
+			(layer "B.Fab")
+			(uuid "ef279844-3d96-4fc8-87c6-dd18d808af63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0c5db04c-1c7f-49f8-ae0c-8033867fce28")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "dbf8270f-68d7-420c-86a8-384a5ef0b720")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "display_footprint" "1206"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "12ba8b93-bd61-48e0-8ea3-63e244004007")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Voltage" "25V"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0bf0a61a-8427-405d-b6b1-e2c75d78928b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ca5dfa64-9359-42f1-98c4-79a0f98cabbc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Digi-Key PN" "1276-1075-1-ND"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "16297a4e-7be8-487b-b4c7-5e57b01b19ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "567be638-4d21-4d94-aa34-bbe13ee3aa43")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/89165fdd-d6f8-4a77-a44b-dc14e3719eaa/8f872078-a6d0-4e8e-ad25-cb2033f7bfff")
+		(sheetname "/POS3P3_Supply/")
+		(sheetfile "POS3P3_Supply.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd exclude_from_pos_files)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 1 1.02)
+			(end -1 1.02)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "f0bd6999-bdc8-4350-9f3b-984d80bb7ac0")
+		)
+		(fp_line
+			(start -1 -1.02)
+			(end 1 -1.02)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "B.SilkS")
+			(uuid "3197039c-3058-4eb2-9ca0-2624f62074e1")
+		)
+		(fp_line
+			(start 2.25 -1.05)
+			(end 2.25 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "9caf2f2d-7cda-4b69-97b8-05eaef607b91")
+		)
+		(fp_line
+			(start 2.25 -1.05)
+			(end -2.25 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "6003c2a7-54eb-4221-a908-6b9ad6a1c71b")
+		)
+		(fp_line
+			(start -2.25 1.05)
+			(end 2.25 1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "ad8931a6-fda0-49a2-b78f-c74a481640ef")
+		)
+		(fp_line
+			(start -2.25 1.05)
+			(end -2.25 -1.05)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "20b1e911-683a-4c0f-afe3-4984bb3efe4c")
+		)
+		(fp_line
+			(start 1.6 0.8)
+			(end 1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "4683f542-3f57-4cc2-b742-c1de2be164d7")
+		)
+		(fp_line
+			(start 1.6 -0.8)
+			(end -1.6 -0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "c0396b81-3a8f-4783-aa86-04103dbe6e0c")
+		)
+		(fp_line
+			(start -1.6 0.8)
+			(end 1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "2dcb86dc-cf34-47c6-881f-5c8e2c2fa753")
+		)
+		(fp_line
+			(start -1.6 -0.8)
+			(end -1.6 0.8)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "B.Fab")
+			(uuid "1a67580b-8f08-4d24-80ac-21d6b250e685")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 1.75 0)
+			(layer "B.Fab")
+			(uuid "8b56e83b-5a90-4625-b1c3-32145211b7c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(pad "1" smd rect
+			(at -1.5 0 180)
+			(size 1 1.6)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "Net-(C19006-Pad1)")
+			(pintype "passive")
+			(uuid "f6b0601b-4646-4b75-a30c-1bbe4916d1ec")
+		)
+		(pad "2" smd rect
+			(at 1.5 0 180)
+			(size 1 1.6)
+			(layers "B.Cu" "B.Mask" "B.Paste")
+			(net "GND")
+			(pintype "passive")
+			(uuid "edb5ee74-6b49-49e3-b989-2c93d230eb44")
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../project_lib/3d_models/C_1206_3216Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "project_lib:QFN50P400X400X100-25N"
 		(layer "B.Cu")
 		(uuid "889e0d3c-bed5-4da2-91ea-640b569bc973")
@@ -258644,6 +260852,14 @@
 		(path "/2a5d437e-0d6c-4ecb-923e-c0346397dc87/29edc66a-e98b-4fe9-9e80-9c49c75f73dc")
 		(sheetname "/LED_Driver_12/")
 		(sheetfile "LED_Driver_12.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -259725,6 +261941,14 @@
 		(path "/6784ef38-3eb7-457d-9a5e-4021ea9ab35e/810834bf-c620-4110-a61f-361ed09d6ada")
 		(sheetname "/LED_Driver_1/")
 		(sheetfile "LED_Driver_1.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -260542,6 +262766,14 @@
 		(path "/21a94df0-fdef-44dc-a78d-b519f7ac9623/3dca3e19-71cd-4fe0-83cb-4d78df3b19c8")
 		(sheetname "/LED_Driver_3/")
 		(sheetfile "LED_Driver_3.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -262417,6 +264649,14 @@
 		(path "/f3edace2-12f0-48fc-99b4-be22d83981ff/c448511b-1ddb-44ac-9a9d-afafa1c03b19")
 		(sheetname "/LED_Driver_15/")
 		(sheetfile "LED_Driver_15.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -265547,6 +267787,14 @@
 		(path "/c1a0ed88-5506-486d-8870-c18f20a91031/27e3f1d5-c1dc-4a80-bfb6-364cf926a4f8")
 		(sheetname "/LED_Driver_13/")
 		(sheetfile "LED_Driver_13.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -266364,6 +268612,14 @@
 		(path "/01961748-201a-40d4-8dd1-adb4ed87399d/f5d5e8b4-43f0-4620-bc08-e153ded7c752")
 		(sheetname "/LED_Driver_11/")
 		(sheetfile "LED_Driver_11.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -269033,6 +271289,14 @@
 		(path "/26eaecb2-44c6-444e-aaea-75e846bca314/83245dc3-04aa-4544-aa5f-c8c2a2ccdde5")
 		(sheetname "/LED_Driver_5/")
 		(sheetfile "LED_Driver_5.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "18" "20" "1" "24" "23" "25" "21" "2" "3" "4" "5" "6" "7" "8" "9"
+					"10" "11" "12" "13" "14" "15" "16" "17" "19" "22"
+				)
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
